@@ -1,22 +1,56 @@
 const Anthropic = require('@anthropic-ai/sdk');
+const fs = require('fs');
+const path = require('path');
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+
+function cargarManual(marca, modelo, anio) {
+  const nombreArchivo = `${modelo.toLowerCase().replace(/ /g, '')}-${anio}.txt`;
+  const rutaArchivo = path.join(process.cwd(), 'manuales', marca.toLowerCase(), nombreArchivo);
+  if (fs.existsSync(rutaArchivo)) {
+    console.log(`Manual encontrado: ${rutaArchivo}`);
+    return fs.readFileSync(rutaArchivo, 'utf8');
+  }
+  console.log(`Manual no encontrado: ${rutaArchivo}`);
+  return null;
+}
 
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   if (req.method === 'OPTIONS') return res.status(200).end();
-  const { messages, brand, model } = req.body;
+
+  const { messages, brand, model, year } = req.body;
+  const manual = cargarManual(brand, model, year || '2020');
+
+  const systemPrompt = manual
+    ? `Eres Virtual Mechanic, mecánico experto en motos de enduro y offroad especializado en ${brand}.
+El usuario tiene una ${brand} ${model} ${year || ''}.
+Tienes acceso al manual oficial de esta moto. Úsalo como primera fuente para responder.
+Si la respuesta está en el manual, cítalo y sé preciso.
+Si no está en el manual, usa tu conocimiento general pero indícalo claramente.
+Nunca inventes información. Si no sabes algo, dilo.
+Responde en español, sé conciso y práctico.
+
+MANUAL OFICIAL ${brand} ${model}:
+${manual.substring(0, 80000)}`
+    : `Eres Virtual Mechanic, mecánico experto en motos de enduro y offroad especializado en ${brand}.
+El usuario tiene una ${brand} ${model}.
+No tienes el manual oficial de esta moto disponible, así que usa tu conocimiento general.
+Nunca inventes información. Si no sabes algo, dilo claramente.
+Responde en español, sé conciso y práctico.`;
+
   try {
     const response = await client.messages.create({
       model: 'claude-sonnet-4-5',
       max_tokens: 1000,
-      system: `Eres Virtual Mechanic, mecánico experto en motos de enduro y offroad. El usuario tiene una ${brand} ${model}. Da diagnósticos paso a paso en español.`,
+      system: systemPrompt,
       messages
     });
     res.json({ reply: response.content[0].text });
   } catch (error) {
+    console.error('Error:', error.message);
     res.status(500).json({ error: error.message });
   }
 };

@@ -118,6 +118,20 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <div id="model-list" style="display:flex;flex-direction:column;gap:8px;overflow-y:auto;flex:1"></div>
   </div>
 
+<!-- YEAR -->
+<div id="s-year" class="screen">
+  <div class="screen-header">
+    <button class="btn-back" onclick="showScreen('model')"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div><h2>Selecciona el año</h2><p>Paso 3 de 3</p></div>
+  </div>
+  <div style="height:3px;background:#F0EDE6;border-radius:2px"><div style="height:3px;width:100%;background:#EF9F27;border-radius:2px"></div></div>
+  <div style="padding:1rem 0;display:flex;flex-direction:column;gap:12px">
+    <p style="font-size:13px;color:#888">¿De qué año es tu moto?</p>
+    <input id="year-input" type="number" min="2000" max="2026" placeholder="Ej: 2020" style="width:100%;padding:13px 14px;background:#F8F7F3;border:1px solid #EFEFEF;border-radius:12px;font-size:16px;color:#111;outline:none"/>
+    <button onclick="selectYear()" style="width:100%;padding:14px;background:#EF9F27;border:none;border-radius:12px;font-size:15px;font-weight:600;color:#412402;cursor:pointer">Continuar →</button>
+  </div>
+</div>
+
   <!-- CHAT -->
   <div id="s-chat" class="screen" style="flex-direction:column">
     <div class="chat-header">
@@ -151,11 +165,28 @@ const brandsData = {
   Beta: { color: '#B5D4F4', text: '#042C53', dot: '#378ADD', sub: 'Racing DNA', models: ['RR 250 2T','RR 300 2T','RR 350 4T','RR 430 4T','RR 480 4T'] }
 };
 
-let currentBrand = '', currentModel = '', chatHistory = [];
+let currentBrand = '', currentModel = '', currentYear = '', chatHistory = [];
 
 function showScreen(name) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById('s-' + name).classList.add('active');
+}
+
+function selectYear() {
+  const yearInput = document.getElementById('year-input');
+  const year = yearInput.value.trim();
+  if (!year || year < 2000 || year > 2026) {
+    alert('Por favor introduce un año válido entre 2000 y 2026');
+    return;
+  }
+  currentYear = year;
+  document.getElementById('chat-title').textContent = currentBrand + ' ' + currentModel + ' ' + currentYear;
+  chatHistory = [];
+  document.getElementById('messages').innerHTML = '';
+  const welcome = `¡Hola! Soy tu mecánico virtual especializado en ${currentBrand}. Estoy aquí para ayudarte con tu ${currentModel} del ${currentYear}. Cuéntame qué le pasa y lo diagnosticamos juntos.`;
+  addBot(welcome);
+  chatHistory.push({ role: 'assistant', content: welcome });
+  showScreen('chat');
 }
 
 // Populate brands
@@ -188,12 +219,7 @@ function selectBrand(brand) {
 function selectModel(m) {
   currentModel = m;
   document.getElementById('chat-title').textContent = currentBrand + ' ' + currentModel;
-  chatHistory = [];
-  document.getElementById('messages').innerHTML = '';
-  const welcome = `¡Hola! Soy tu mecánico virtual especializado en ${currentBrand}. Estoy aquí para ayudarte con tu ${currentModel}. Cuéntame qué le pasa y lo diagnosticamos juntos.`;
-  addBot(welcome);
-  chatHistory.push({ role: 'assistant', content: welcome });
-  showScreen('chat');
+  showScreen('year');
 }
 
 function addBot(text) {
@@ -236,7 +262,7 @@ async function send() {
     const r = await fetch(`${SERVER}/chat`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ messages: chatHistory, brand: currentBrand, model: currentModel })
+      body: JSON.stringify({ messages: chatHistory, brand: currentBrand, model: currentModel, year: currentYear })
     });
     const data = await r.json();
     hideTyping();

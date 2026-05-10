@@ -348,24 +348,37 @@ function renderMd(text) {
   const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
   const fmt = s => esc(s)
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*([^*\n]+)\*/g, '<em>$1</em>');
+    .replace(/\*([^*\n]+)\*/g, '<em>$1</em>')
+    .replace(/`([^`]+)`/g, '<code style="background:#EEE;border-radius:3px;padding:1px 4px;font-size:12px">$1</code>');
   const lines = text.split('\n');
   let html = '', inList = false, listTag = '';
+  const closeList = () => { if (inList) { html += `</${listTag}>`; inList = false; listTag = ''; } };
   for (const line of lines) {
-    const ulM = line.match(/^[-*•]\s+(.*)/);
+    const hM  = line.match(/^(#{1,3})\s+(.*)/);
+    const hrM = line.match(/^(-{3,}|\*{3,}|_{3,})\s*$/);
+    const ulM = line.match(/^[-•]\s+(.*)/);
     const olM = line.match(/^(\d+)[.)]\s+(.*)/);
-    if (ulM || olM) {
-      const tag = ulM ? 'ul' : 'ol';
-      const content = fmt(ulM ? ulM[1] : olM[2]);
-      if (!inList) { html += `<${tag}>`; inList = true; listTag = tag; }
-      else if (listTag !== tag) { html += `</${listTag}><${tag}>`; listTag = tag; }
-      html += `<li>${content}</li>`;
+    if (hM) {
+      closeList();
+      const sizes = ['15px','14px','13px'];
+      html += `<div style="font-weight:700;font-size:${sizes[hM[1].length-1]};margin:6px 0 2px 0">${fmt(hM[2])}</div>`;
+    } else if (hrM) {
+      closeList();
+      html += '<hr style="border:none;border-top:1px solid #DDD;margin:6px 0">';
+    } else if (ulM) {
+      if (inList && listTag !== 'ul') closeList();
+      if (!inList) { html += '<ul>'; inList = true; listTag = 'ul'; }
+      html += `<li>${fmt(ulM[1])}</li>`;
+    } else if (olM) {
+      if (inList && listTag !== 'ol') closeList();
+      if (!inList) { html += '<ol>'; inList = true; listTag = 'ol'; }
+      html += `<li>${fmt(olM[2])}</li>`;
     } else {
-      if (inList) { html += `</${listTag}>`; inList = false; listTag = ''; }
+      closeList();
       html += line === '' ? '<br>' : fmt(line) + '<br>';
     }
   }
-  if (inList) html += `</${listTag}>`;
+  closeList();
   return html.replace(/<br>$/, '');
 }
 

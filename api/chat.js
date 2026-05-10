@@ -23,7 +23,7 @@ module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   if (req.method === 'OPTIONS') return res.status(200).end();
-  const { messages, brand, model, year } = req.body;
+  const { messages, brand, model, year, imageBase64, imageMediaType } = req.body;
   const manual = await cargarManual(brand, model, year || '2020');
   const systemPrompt = manual
     ? `Eres Virtual Mechanic, mecánico experto en motos de enduro y offroad especializado en ${brand}.
@@ -40,12 +40,23 @@ El usuario tiene una ${brand} ${model}.
 No tienes el manual oficial de esta moto disponible, usa tu conocimiento general.
 Nunca inventes información. Si no sabes algo, dilo claramente.
 Responde en español, sé conciso y práctico.`;
+
+  const apiMessages = imageBase64 && imageMediaType
+    ? [...messages, {
+        role: 'user',
+        content: [
+          { type: 'image', source: { type: 'base64', media_type: imageMediaType, data: imageBase64 } },
+          { type: 'text', text: 'Analiza esta foto de mi moto. ¿Qué observas? ¿Hay algún problema visible o algo que necesite atención?' }
+        ]
+      }]
+    : messages;
+
   try {
     const response = await client.messages.create({
       model: 'claude-sonnet-4-6',
       max_tokens: 1000,
       system: systemPrompt,
-      messages
+      messages: apiMessages
     });
     const textBlock = response.content.find(b => b.type === 'text');
     res.json({ reply: textBlock ? textBlock.text : 'No se pudo obtener respuesta.' });

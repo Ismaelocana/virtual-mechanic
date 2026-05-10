@@ -397,10 +397,42 @@ function handleKey(e) { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault
 function resize(el) { el.style.height = 'auto'; el.style.height = Math.min(el.scrollHeight, 80) + 'px'; }
 function handlePhoto(e) {
   const f = e.target.files[0]; if (!f) return;
-  addUser('📷 ' + f.name);
-  chatHistory.push({ role: 'user', content: 'El usuario ha mandado una foto del problema.' });
-  showTyping();
-  setTimeout(() => { hideTyping(); addBot('Foto recibida. Para afinar el diagnóstico, ¿puedes describirme también qué síntomas notas exactamente?'); }, 1200);
+  e.target.value = '';
+  const reader = new FileReader();
+  reader.onload = function(ev) {
+    const img = new Image();
+    img.onload = async function() {
+      const MAX = 1024;
+      let { width, height } = img;
+      if (width > MAX || height > MAX) {
+        if (width > height) { height = Math.round(height * MAX / width); width = MAX; }
+        else { width = Math.round(width * MAX / height); height = MAX; }
+      }
+      const canvas = document.createElement('canvas');
+      canvas.width = width; canvas.height = height;
+      canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+      const base64 = canvas.toDataURL('image/jpeg', 0.85).split(',')[1];
+      addUser('📷 ' + f.name);
+      showTyping();
+      try {
+        const r = await fetch(`${SERVER}/chat`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages: chatHistory, brand: currentBrand, model: currentModel, year: currentYear, imageBase64: base64, imageMediaType: 'image/jpeg' })
+        });
+        const data = await r.json();
+        hideTyping();
+        addBot(data.reply);
+        chatHistory.push({ role: 'user', content: '[Foto enviada para diagnóstico]' });
+        chatHistory.push({ role: 'assistant', content: data.reply });
+      } catch (err) {
+        hideTyping();
+        addBot('Error al analizar la foto. Inténtalo de nuevo.');
+      }
+    };
+    img.src = ev.target.result;
+  };
+  reader.readAsDataURL(f);
 }
 </script>
 </body>

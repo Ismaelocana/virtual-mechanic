@@ -42,7 +42,7 @@ Nunca inventes información. Si no sabes algo, dilo claramente.
 Responde en español, sé conciso y práctico.`;
   try {
     const response = await client.messages.create({
-      model: 'claude-sonnet-4-5',
+      model: 'claude-sonnet-4-6',
       max_tokens: 1000,
       system: systemPrompt,
       messages

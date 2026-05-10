@@ -2,8 +2,15 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Virtual Mechanic</title>
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#EF9F27">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Virtual Mechanic">
+<link rel="apple-touch-icon" href="/icons/icon.svg">
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #F5F5F0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
@@ -501,6 +508,10 @@ function handlePhoto(e) {
     img.src = ev.target.result;
   };
   reader.readAsDataURL(f);
+}
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').catch(() => {});
 }
 </script>
 </body>

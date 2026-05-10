@@ -350,10 +350,36 @@ function renderMd(text) {
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     .replace(/\*([^*\n]+)\*/g, '<em>$1</em>')
     .replace(/`([^`]+)`/g, '<code style="background:#EEE;border-radius:3px;padding:1px 4px;font-size:12px">$1</code>');
+  const cells = line => line.replace(/^\||\|$/g, '').split('|').map(c => c.trim());
+  const isSep  = line => cells(line).every(c => /^\s*:?-+:?\s*$/.test(c));
+  const isRow  = line => { const t = line.trim(); return t.startsWith('|') && t.endsWith('|') && t.length > 1; };
+
   const lines = text.split('\n');
-  let html = '', inList = false, listTag = '';
-  const closeList = () => { if (inList) { html += `</${listTag}>`; inList = false; listTag = ''; } };
+  let html = '', inList = false, listTag = '', tableRows = [];
+
+  const closeList  = () => { if (inList) { html += `</${listTag}>`; inList = false; listTag = ''; } };
+  const flushTable = () => {
+    if (!tableRows.length) return;
+    const sepIdx = tableRows.findIndex(isSep);
+    const head = sepIdx > 0 ? tableRows.slice(0, sepIdx) : [];
+    const body = sepIdx >= 0 ? tableRows.slice(sepIdx + 1) : tableRows;
+    const th = c => `<th style="border:1px solid #DDD;padding:4px 8px;background:#F0EDE6;text-align:left;white-space:nowrap">${fmt(c)}</th>`;
+    const td = c => `<td style="border:1px solid #DDD;padding:4px 8px">${fmt(c)}</td>`;
+    const row = (r, cell) => `<tr>${cells(r).map(cell).join('')}</tr>`;
+    html += '<div style="overflow-x:auto;margin:4px 0"><table style="border-collapse:collapse;width:100%;font-size:12px">';
+    if (head.length) html += `<thead>${head.map(r => row(r, th)).join('')}</thead>`;
+    if (body.length) html += `<tbody>${body.map(r => row(r, td)).join('')}</tbody>`;
+    html += '</table></div>';
+    tableRows = [];
+  };
+
   for (const line of lines) {
+    if (isRow(line)) {
+      closeList();
+      tableRows.push(line.trim());
+      continue;
+    }
+    flushTable();
     const hM  = line.match(/^(#{1,3})\s+(.*)/);
     const hrM = line.match(/^(-{3,}|\*{3,}|_{3,})\s*$/);
     const ulM = line.match(/^[-•]\s+(.*)/);
@@ -378,6 +404,7 @@ function renderMd(text) {
       html += line === '' ? '<br>' : fmt(line) + '<br>';
     }
   }
+  flushTable();
   closeList();
   return html.replace(/<br>$/, '');
 }

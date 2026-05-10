@@ -2,12 +2,30 @@ const Anthropic = require('@anthropic-ai/sdk');
 const { Pinecone } = require('@pinecone-database/pinecone');
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
-const pc = new Pinecone({ apiKey: process.env.PINECONE_API_KEY });
-const pineconeIndex = pc.index('virtual-mechanic');
+
+// Lazy singleton — no crashea si PINECONE_API_KEY no está configurada
+let _pineconeIndex = null;
+function getPineconeIndex() {
+  if (!_pineconeIndex && process.env.PINECONE_API_KEY) {
+    _pineconeIndex = new Pinecone({ apiKey: process.env.PINECONE_API_KEY }).index('virtual-mechanic');
+  }
+  return _pineconeIndex;
+}
+
+async function fetchWithTimeout(url, options, ms = 5000) {
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), ms);
+  try {
+    return await fetch(url, { ...options, signal: ctrl.signal });
+  } finally {
+    clearTimeout(timer);
+  }
+}
 
 async function buscarContexto(brand, model, year, query) {
+  if (!process.env.VOYAGE_API_KEY || !process.env.PINECONE_API_KEY) return null;
   try {
-    const embRes = await fetch('https://api.voyageai.com/v1/embeddings', {
+    const embRes = await fetchWithTimeout('https://api.voyageai.com/v1/embeddings', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -19,7 +37,7 @@ async function buscarContexto(brand, model, year, query) {
     const embJson = await embRes.json();
     const vector = embJson.data[0].embedding;
 
-    const result = await pineconeIndex.query({
+    const result = await getPineconeIndex().query({
       vector,
       topK: 5,
       filter: {

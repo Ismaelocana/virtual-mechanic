@@ -30,6 +30,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .feature span { font-size: 11px; color: #888; }
 .btn-main { width: 100%; padding: 14px; background: #EF9F27; border: none; border-radius: 12px; font-size: 15px; font-weight: 600; color: #412402; cursor: pointer; margin-top: auto; }
 .btn-main:hover { background: #d98e20; }
+.btn-install { width: 100%; padding: 12px; background: transparent; border: 1.5px solid #EF9F27; border-radius: 12px; font-size: 14px; font-weight: 600; color: #EF9F27; cursor: pointer; display: none; margin-top: 8px; }
+.btn-install:hover { background: #FFF7EC; }
 .step-screen { padding: 1.25rem; gap: .9rem; overflow-y: auto; }
 .screen-header { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
 .btn-back { width: 32px; height: 32px; border: 1px solid #E5E5E5; border-radius: 10px; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -109,6 +111,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       </div>
     </div>
     <button class="btn-main" onclick="showScreen('brand')">Empezar consulta →</button>
+    <button class="btn-install" id="btn-install" onclick="instalarPWA()">↓ Instalar app</button>
   </div>
 
   <!-- BRAND -->
@@ -508,6 +511,26 @@ function handlePhoto(e) {
     img.src = ev.target.result;
   };
   reader.readAsDataURL(f);
+}
+
+let _installPrompt = null;
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  _installPrompt = e;
+  document.getElementById('btn-install').style.display = 'block';
+});
+window.addEventListener('appinstalled', () => {
+  document.getElementById('btn-install').style.display = 'none';
+  _installPrompt = null;
+});
+async function instalarPWA() {
+  if (!_installPrompt) return;
+  _installPrompt.prompt();
+  const { outcome } = await _installPrompt.userChoice;
+  if (outcome === 'accepted') {
+    document.getElementById('btn-install').style.display = 'none';
+    _installPrompt = null;
+  }
 }
 
 if ('serviceWorker' in navigator) {

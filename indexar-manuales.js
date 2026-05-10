@@ -7,7 +7,8 @@ const pc = new Pinecone({ apiKey: process.env.PINECONE_API_KEY });
 const INDEX_NAME = 'virtual-mechanic';
 const CHUNK_WORDS = 500;
 const OVERLAP_WORDS = 75;
-const EMBED_BATCH = 50;
+const EMBED_BATCH = 4; // límite free tier: 3 RPM, 10K TPM
+const EMBED_DELAY_MS = 21000; // 21 s entre peticiones → ~2.8 RPM
 
 function limpiarTexto(text) {
   return text
@@ -50,12 +51,14 @@ async function indexarManual(brand, model, year, text) {
   for (let i = 0; i < chunks.length; i += EMBED_BATCH) {
     const lote = chunks.slice(i, i + EMBED_BATCH);
     const vectores = await obtenerEmbeddings(lote);
-    await idx.upsert(lote.map((chunkText, j) => ({
+    await idx.upsert({ records: lote.map((chunkText, j) => ({
       id: `${brand}-${model}-${year}-${i + j}`,
       values: vectores[j],
       metadata: { brand, model, year, text: chunkText }
-    })));
-    process.stdout.write(`  ${Math.min(i + EMBED_BATCH, chunks.length)}/${chunks.length} subidos\r`);
+    })) });
+    const done = Math.min(i + EMBED_BATCH, chunks.length);
+    process.stdout.write(`  ${done}/${chunks.length} subidos\r`);
+    if (done < chunks.length) await new Promise(r => setTimeout(r, EMBED_DELAY_MS));
   }
   console.log(`  ✓ ${chunks.length}/${chunks.length} subidos`);
 }

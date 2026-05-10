@@ -7,8 +7,8 @@ const pc = new Pinecone({ apiKey: process.env.PINECONE_API_KEY });
 const INDEX_NAME = 'virtual-mechanic';
 const CHUNK_WORDS = 500;
 const OVERLAP_WORDS = 75;
-const EMBED_BATCH = 3;
-const EMBED_DELAY_MS = 22000; // 22 s entre peticiones → ~2.7 RPM (bajo el límite de 3 RPM)
+const EMBED_BATCH = 20;
+const EMBED_DELAY_MS = 500; // pausa mínima entre peticiones (cuenta de pago)
 
 function limpiarTexto(text) {
   return text
@@ -39,9 +39,9 @@ async function obtenerEmbeddings(texts, intento = 1) {
     body: JSON.stringify({ model: 'voyage-3', input: texts })
   });
   if (res.status === 429) {
-    if (intento > 3) throw new Error('Voyage AI 429: demasiados reintentos');
-    const espera = 65000 * intento;
-    process.stdout.write(`\n  Rate limit, esperando ${espera / 1000}s (intento ${intento}/3)...\r`);
+    if (intento > 5) throw new Error('Voyage AI 429: demasiados reintentos');
+    const espera = 10000 * intento;
+    process.stdout.write(`\n  Rate limit, esperando ${espera / 1000}s (intento ${intento}/5)...\r`);
     await new Promise(r => setTimeout(r, espera));
     return obtenerEmbeddings(texts, intento + 1);
   }

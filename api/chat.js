@@ -22,6 +22,20 @@ async function fetchWithTimeout(url, options, ms = 5000) {
   }
 }
 
+// Mapea el modelo seleccionado en la UI al nombre de archivo en manuales/
+// Necesario porque un PDF puede cubrir varios modelos (ej. se250-300 cubre SE 250 y SE 300)
+function normalizarModelo(brand, model) {
+  if (brand.toLowerCase() !== 'sherco') {
+    return { model: model.toLowerCase().replace(/ /g, '') };
+  }
+  const m = model.toUpperCase().replace(/\s+/g, ' ').trim();
+  if (m === 'SE 250' || m === 'SE 300')   return { model: 'se250-300' };
+  if (m === 'SEF 250' || m === 'SEF 300') return { model: 'sef250-300' };
+  if (m === 'SEF 450' || m === 'SEF 500') return { model: { $in: ['sef450-500', 'sef450'] } };
+  if (m === 'ST 125' || m === 'ST 250' || m === 'ST 300') return { model: 'st' };
+  return { model: model.toLowerCase().replace(/ /g, '') };
+}
+
 async function buscarContexto(brand, model, year, query) {
   if (!process.env.VOYAGE_API_KEY || !process.env.PINECONE_API_KEY) return null;
   try {
@@ -37,12 +51,13 @@ async function buscarContexto(brand, model, year, query) {
     const embJson = await embRes.json();
     const vector = embJson.data[0].embedding;
 
+    const modelFilter = normalizarModelo(brand, model);
     const result = await getPineconeIndex().query({
       vector,
       topK: 5,
       filter: {
         brand: brand.toLowerCase(),
-        model: model.toLowerCase().replace(/ /g, ''),
+        ...modelFilter,
         year: String(year)
       },
       includeMetadata: true

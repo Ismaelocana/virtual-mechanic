@@ -333,7 +333,7 @@ function selectModel(m) {
     if (m.startsWith('ST')) fromYear = 2009;
     else if (m === 'SE 125') fromYear = 2018;
     else fromYear = 2016;
-  }
+  } else if (currentBrand === 'Beta' && m.startsWith('Xtrainer')) fromYear = 2016;
   for (let y = 2026; y >= fromYear; y--) {
     const btn = document.createElement('button');
     btn.className = 'year-btn';

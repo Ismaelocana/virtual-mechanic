@@ -324,7 +324,9 @@ function selectModel(m) {
   document.getElementById('year-selection').textContent = `${currentBrand} ${m}`;
   const grid = document.getElementById('year-grid');
   grid.innerHTML = '';
-  for (let y = 2026; y >= 2000; y--) {
+  let fromYear = 2000;
+  if (currentBrand === 'Sherco') fromYear = m.startsWith('ST') ? 2009 : 2016;
+  for (let y = 2026; y >= fromYear; y--) {
     const btn = document.createElement('button');
     btn.className = 'year-btn';
     btn.textContent = y;

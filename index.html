@@ -335,6 +335,7 @@ function selectModel(m) {
     else fromYear = 2016;
   } else if (currentBrand === 'Beta') {
     if (m.startsWith('Xtrainer')) fromYear = 2016;
+    else if ((m === 'RR 125' || m === 'RR 200') && currentEngine === '2T') fromYear = 2018;
     else if (m.startsWith('RR') && currentEngine === '2T') fromYear = 2013;
     else if (m.startsWith('RR') && currentEngine === '4T') fromYear = 2012;
   }

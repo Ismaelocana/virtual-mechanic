@@ -333,7 +333,11 @@ function selectModel(m) {
     if (m.startsWith('ST')) fromYear = 2009;
     else if (m === 'SE 125') fromYear = 2018;
     else fromYear = 2016;
-  } else if (currentBrand === 'Beta' && m.startsWith('Xtrainer')) fromYear = 2016;
+  } else if (currentBrand === 'Beta') {
+    if (m.startsWith('Xtrainer')) fromYear = 2016;
+    else if (m.startsWith('RR') && currentEngine === '2T') fromYear = 2013;
+    else if (m.startsWith('RR') && currentEngine === '4T') fromYear = 2012;
+  }
   for (let y = 2026; y >= fromYear; y--) {
     const btn = document.createElement('button');
     btn.className = 'year-btn';

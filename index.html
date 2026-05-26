@@ -329,7 +329,11 @@ function selectModel(m) {
   const grid = document.getElementById('year-grid');
   grid.innerHTML = '';
   let fromYear = 2000;
-  if (currentBrand === 'Sherco') fromYear = m.startsWith('ST') ? 2009 : 2016;
+  if (currentBrand === 'Sherco') {
+    if (m.startsWith('ST')) fromYear = 2009;
+    else if (m === 'SE 125') fromYear = 2018;
+    else fromYear = 2016;
+  }
   for (let y = 2026; y >= fromYear; y--) {
     const btn = document.createElement('button');
     btn.className = 'year-btn';

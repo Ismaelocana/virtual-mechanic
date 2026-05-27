@@ -338,6 +338,7 @@ function selectModel(m) {
     else if ((m === 'RR 125' || m === 'RR 200') && currentEngine === '2T') fromYear = 2018;
     else if (m.startsWith('RR') && currentEngine === '2T') fromYear = 2013;
     else if (m.startsWith('RR') && currentEngine === '4T') fromYear = 2012;
+    else if (m === 'EVO 300 SS') fromYear = 2017;
     else if (m.startsWith('EVO')) fromYear = 2009;
   }
   for (let y = 2026; y >= fromYear; y--) {

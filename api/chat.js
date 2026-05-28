@@ -25,14 +25,37 @@ async function fetchWithTimeout(url, options, ms = 5000) {
 // Mapea el modelo seleccionado en la UI al nombre de archivo en manuales/
 // Necesario porque un PDF puede cubrir varios modelos (ej. se250-300 cubre SE 250 y SE 300)
 function normalizarModelo(brand, model) {
-  if (brand.toLowerCase() !== 'sherco') {
-    return { model: model.toLowerCase().replace(/ /g, '') };
-  }
   const m = model.toUpperCase().replace(/\s+/g, ' ').trim();
-  if (m === 'SE 250' || m === 'SE 300')   return { model: 'se250-300' };
-  if (m === 'SEF 250' || m === 'SEF 300') return { model: 'sef250-300' };
-  if (m === 'SEF 450' || m === 'SEF 500') return { model: { $in: ['sef450-500', 'sef450'] } };
-  if (m === 'ST 125' || m === 'ST 250' || m === 'ST 300') return { model: 'st' };
+
+  if (brand.toLowerCase() === 'beta') {
+    // Enduro RR 2T
+    if (m === 'RR 125' || m === 'RR 200') return { model: 'rr125-200' };
+    if (m === 'RR 250' || m === 'RR 300') return { model: 'rr250-300' };
+    // Enduro Xtrainer
+    if (m === 'XTRAINER 250' || m === 'XTRAINER 300') return { model: 'xtrainer250-300' };
+    // Enduro RR 4T
+    if (m === 'RR 350' || m === 'RR 390' || m === 'RR 430' || m === 'RR 480') return { model: 'rr350-390-430-480' };
+    // Trial EVO 80 (nombre de archivo coincide con la normalización por defecto)
+    if (m === 'EVO 80') return { model: 'evo80' };
+    // Trial EVO 300 SS
+    if (m === 'EVO 300 SS') return { model: { $in: ['evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss'] } };
+    // Trial EVO 125
+    if (m === 'EVO 125') return { model: { $in: ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss'] } };
+    // Trial EVO 200 (solo 2T)
+    if (m === 'EVO 200') return { model: { $in: ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss', 'evo2t200'] } };
+    // Trial EVO 250 (2T y 4T)
+    if (m === 'EVO 250') return { model: { $in: ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss', 'evo4t250-300'] } };
+    // Trial EVO 300 (2T y 4T)
+    if (m === 'EVO 300') return { model: { $in: ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss', 'evo4t250-300', 'evo4t300'] } };
+  }
+
+  if (brand.toLowerCase() === 'sherco') {
+    if (m === 'SE 250' || m === 'SE 300')   return { model: 'se250-300' };
+    if (m === 'SEF 250' || m === 'SEF 300') return { model: 'sef250-300' };
+    if (m === 'SEF 450' || m === 'SEF 500') return { model: { $in: ['sef450-500', 'sef450'] } };
+    if (m === 'ST 125' || m === 'ST 250' || m === 'ST 300') return { model: 'st' };
+  }
+
   return { model: model.toLowerCase().replace(/ /g, '') };
 }
 

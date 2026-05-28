@@ -25,7 +25,6 @@ manuales/           → Manuales en .txt organizados por marca/modelo-año
     te300-2020.txt
     te300-2024.txt
     te125-2026.txt
-    te125-2026.pdf  → PDF original (no subir si es grande)
   (resto de carpetas vacías por ahora: ktm, beta, gasgas, sherco, etc.)
 ```
 

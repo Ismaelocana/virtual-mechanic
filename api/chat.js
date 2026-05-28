@@ -50,12 +50,10 @@ function normalizarModelo(brand, model) {
   }
 
   if (brand.toLowerCase() === 'ktm') {
-    // EXC 2T — un PDF cubre 125+200+250+300 (2015) o 250+300 (2020+)
-    if (m === 'EXC 125' || m === 'EXC 200') return { model: { $in: ['exc125-200-250-300', 'exc125-200'] } };
-    if (m === 'EXC 250' || m === 'EXC 300') return { model: { $in: ['exc125-200-250-300', 'exc250-300'] } };
+    if (m === 'EXC 125' || m === 'EXC 200') return { model: { $in: ['exc125-200-250-300', 'exc125-150-250-300', 'exc125-200'] } };
+    if (m === 'EXC 250' || m === 'EXC 300') return { model: { $in: ['exc125-200-250-300', 'exc125-150-250-300', 'exc250-300'] } };
     if (m === 'EXC 150') return { model: { $in: ['exc125-150-250-300', 'exc150-250-300', 'exc150'] } };
-    // EXC-F 4T — un PDF cubre 450+500
-    if (m === 'EXC-F 450' || m === 'EXC-F 500') return { model: { $in: ['exc-f450-500', 'exc-f450-500-2012'] } };
+    if (m === 'EXC-F 450' || m === 'EXC-F 500') return { model: 'exc-f450-500' };
     if (m === 'EXC-F 350') return { model: { $in: ['exc-f350-450-500', 'exc-f350'] } };
   }
 

@@ -49,6 +49,31 @@ function normalizarModelo(brand, model) {
     if (m === 'EVO 300') return { model: { $in: ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss', 'evo4t250-300', 'evo4t300'] } };
   }
 
+  if (brand.toLowerCase() === 'ktm') {
+    // EXC 2T — un PDF cubre 125+200+250+300 (2015) o 250+300 (2020+)
+    if (m === 'EXC 125' || m === 'EXC 200') return { model: { $in: ['exc125-200-250-300', 'exc125-200'] } };
+    if (m === 'EXC 250' || m === 'EXC 300') return { model: { $in: ['exc125-200-250-300', 'exc250-300'] } };
+    if (m === 'EXC 150') return { model: { $in: ['exc125-150-250-300', 'exc150-250-300', 'exc150'] } };
+    // EXC-F 4T — un PDF cubre 450+500
+    if (m === 'EXC-F 450' || m === 'EXC-F 500') return { model: { $in: ['exc-f450-500', 'exc-f450-500-2012'] } };
+    if (m === 'EXC-F 350') return { model: { $in: ['exc-f350-450-500', 'exc-f350'] } };
+  }
+
+  if (brand.toLowerCase() === 'husqvarna') {
+    // TE 2T — un PDF cubre 125+150+250+300 (2016–2017) o 250+300 (2020+)
+    if (m === 'TE 125' || m === 'TE 150') return { model: { $in: ['te125-150-250-300', 'te125-150'] } };
+    if (m === 'TE 250' || m === 'TE 300') return { model: { $in: ['te125-150-250-300', 'te250-300'] } };
+    // FE 4T
+    if (m === 'FE 450' || m === 'FE 501') return { model: { $in: ['fe450-501', 'fe450'] } };
+  }
+
+  if (brand.toLowerCase() === 'gasgas') {
+    // EC 2T — un PDF cubre 250+300
+    if (m === 'EC 250' || m === 'EC 300') return { model: { $in: ['ec250-300', 'ec125-250-300'] } };
+    // EC 4T — 450F y 500F comparten PDF
+    if (m === 'EC 450F' || m === 'EC 500F') return { model: { $in: ['ec450f-500f', 'ec450f'] } };
+  }
+
   if (brand.toLowerCase() === 'sherco') {
     if (m === 'SE 250' || m === 'SE 300')   return { model: 'se250-300' };
     if (m === 'SEF 250' || m === 'SEF 300') return { model: 'sef250-300' };

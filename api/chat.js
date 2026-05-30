@@ -55,6 +55,8 @@ function normalizarModelo(brand, model) {
     if (m === 'EXC 150') return { model: { $in: ['exc125-150-250-300', 'exc150-250-300', 'exc150'] } };
     if (m === 'EXC-F 450' || m === 'EXC-F 500') return { model: 'exc-f450-500' };
     if (m === 'EXC-F 350') return { model: { $in: ['exc-f350-450-500', 'exc-f350'] } };
+    if (m === 'SX 125' || m === 'SX 150') return { model: { $in: ['sx125-150-250', 'sx125-150', 'sx125'] } };
+    if (m === 'SX 250') return { model: { $in: ['sx125-150-250', 'sx250', 'sx250-300'] } };
   }
 
   if (brand.toLowerCase() === 'husqvarna') {
@@ -66,10 +68,9 @@ function normalizarModelo(brand, model) {
   }
 
   if (brand.toLowerCase() === 'gasgas') {
-    // EC 2T — un PDF cubre 250+300
     if (m === 'EC 250' || m === 'EC 300') return { model: { $in: ['ec250-300', 'ec125-250-300'] } };
-    // EC 4T — 450F y 500F comparten PDF
     if (m === 'EC 450F' || m === 'EC 500F') return { model: { $in: ['ec450f-500f', 'ec450f'] } };
+    if (m.startsWith('TXT')) return { model: 'txt125-250-280-300' };
   }
 
   if (brand.toLowerCase() === 'sherco') {

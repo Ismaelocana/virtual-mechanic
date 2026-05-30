@@ -68,8 +68,11 @@ function normalizarModelo(brand, model) {
   }
 
   if (brand.toLowerCase() === 'gasgas') {
-    if (m === 'EC 250' || m === 'EC 300') return { model: { $in: ['ec250-300', 'ec125-250-300'] } };
-    if (m === 'EC 450F' || m === 'EC 500F') return { model: { $in: ['ec450f-500f', 'ec450f'] } };
+    if (m === 'EC 250') return { model: { $in: ['ec250-300', 'ec125-250-300', 'ec250'] } };
+    if (m === 'EC 300') return { model: { $in: ['ec250-300', 'ec125-250-300', 'ec300'] } };
+    if (m === 'EC 450F') return { model: { $in: ['ec450f-500f', 'ec450f'] } };
+    if (m === 'EC 500F') return { model: { $in: ['ec450f-500f', 'ec450f', 'ec500f'] } };
+    if (m === 'MC 250') return { model: { $in: ['mc250', 'mc250-300'] } };
     if (m.startsWith('TXT')) return { model: 'txt125-250-280-300' };
   }
 

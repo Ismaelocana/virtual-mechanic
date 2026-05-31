@@ -71,6 +71,11 @@ function normalizarModelo(brand, model) {
     if (m.startsWith('TXT')) return { model: 'txt' };
   }
 
+  if (brand.toLowerCase() === 'triumph') {
+    if (m === 'TF 250-E' || m === 'TF 450-E') return { model: 'tf250e-450e' };
+    if (m === 'TF 250-X' || m === 'TF 450-X' || m === 'TF 450 RC EDITION') return { model: 'tf250x-450x-450rc' };
+  }
+
   if (brand.toLowerCase() === 'sherco') {
     if (m === 'SE 250' || m === 'SE 300')   return { model: 'se250-300' };
     if (m === 'SEF 250' || m === 'SEF 300') return { model: 'sef250-300' };

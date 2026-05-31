@@ -340,6 +340,9 @@ function selectModel(m) {
     else if (m.startsWith('RR') && currentEngine === '4T') fromYear = 2012;
     else if (m === 'EVO 300 SS') fromYear = 2017;
     else if (m.startsWith('EVO')) fromYear = 2009;
+  } else if (currentBrand === 'GasGas') {
+    if (m.startsWith('TXT')) fromYear = 2020;
+    else fromYear = 2021;
   }
   for (let y = 2026; y >= fromYear; y--) {
     const btn = document.createElement('button');

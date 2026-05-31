@@ -231,7 +231,7 @@ const brandsData = {
     bg: '#E85D00', text: '#FFFFFF', dot: '#E85D00', sub: 'Feel the Race',
     logo: '<text x="22" y="27" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="11" fill="white" letter-spacing="0.5">RIEJU</text>',
     categories: {
-      Enduro: { '2T': ['MR 300'] }
+      Enduro: { '2T': ['MR 200','MR 250','MR 300'] }
     }
   },
   Triumph: {
@@ -284,7 +284,11 @@ function selectBrand(brand) {
     btn.onclick = () => selectCategory(cat);
     list.appendChild(btn);
   });
-  showScreen('category');
+  if (Object.keys(data.categories).length === 1) {
+    selectCategory(Object.keys(data.categories)[0]);
+  } else {
+    showScreen('category');
+  }
 }
 
 function selectCategory(cat) {
@@ -332,7 +336,9 @@ function selectEngine(eng) {
 }
 
 function goBackFromModel() {
-  const engines = brandsData[currentBrand].categories[currentCategory];
+  const cats = brandsData[currentBrand].categories;
+  if (Object.keys(cats).length === 1) { showScreen('brand'); return; }
+  const engines = cats[currentCategory];
   showScreen(Object.keys(engines).length === 1 ? 'category' : 'engine');
 }
 
@@ -343,7 +349,7 @@ function selectModel(m) {
   document.getElementById('year-selection').textContent = `${currentBrand} ${m}`;
   const grid = document.getElementById('year-grid');
   grid.innerHTML = '';
-  let fromYear = 2000;
+  let fromYear = 2000, toYear = 2026;
   if (currentBrand === 'Sherco') {
     if (m.startsWith('ST')) fromYear = 2009;
     else if (m === 'SE 125') fromYear = 2018;
@@ -361,11 +367,12 @@ function selectModel(m) {
     else fromYear = 2021;
   } else if (currentBrand === 'Rieju') {
     fromYear = 2020;
+    if (m === 'MR 200' || m === 'MR 250') toYear = 2025;
   } else if (currentBrand === 'Triumph') {
     if (currentCategory === 'Enduro') fromYear = 2026;
     else fromYear = 2025;
   }
-  for (let y = 2026; y >= fromYear; y--) {
+  for (let y = toYear; y >= fromYear; y--) {
     const btn = document.createElement('button');
     btn.className = 'year-btn';
     btn.textContent = y;

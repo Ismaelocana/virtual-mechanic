@@ -342,6 +342,7 @@ function selectModel(m) {
     else if (m.startsWith('EVO')) fromYear = 2009;
   } else if (currentBrand === 'GasGas') {
     if (m.startsWith('TXT')) fromYear = 2020;
+    else if (m === 'EC 450F' || m === 'EC 500F') fromYear = 2024;
     else fromYear = 2021;
   }
   for (let y = 2026; y >= fromYear; y--) {

@@ -362,6 +362,9 @@ function selectModel(m) {
     else if (m === 'EVO 300 SS') fromYear = 2017;
     else if (m.startsWith('EVO')) fromYear = 2009;
     if (m === 'EVO 200') toYear = 2017;
+  } else if (currentBrand === 'KTM') {
+    if (m === 'SX-F 450') fromYear = 2007;
+    else if (m === 'SX-F 350') fromYear = 2011;
   } else if (currentBrand === 'Husqvarna') {
     if (m === 'TC 65') fromYear = 2017;
     else fromYear = 2014;

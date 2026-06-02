@@ -362,7 +362,8 @@ function selectModel(m) {
     else if (m === 'EVO 300 SS') fromYear = 2017;
     else if (m.startsWith('EVO')) fromYear = 2009;
   } else if (currentBrand === 'Husqvarna') {
-    fromYear = 2014;
+    if (m === 'TC 65') fromYear = 2017;
+    else fromYear = 2014;
   } else if (currentBrand === 'GasGas') {
     if (m.startsWith('TXT')) fromYear = 2020;
     else if (m === 'EC 450F' || m === 'EC 500F') fromYear = 2024;

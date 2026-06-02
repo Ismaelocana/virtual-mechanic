@@ -64,10 +64,7 @@ function normalizarModelo(brand, model) {
     if (m === 'EC 300') return { model: { $in: ['ec250-300', 'ec125-250-300', 'ec300'] } };
     if (m === 'EC 450F') return { model: { $in: ['ec450f-500f', 'ec450f'] } };
     if (m === 'EC 500F') return { model: { $in: ['ec450f-500f', 'ec450f', 'ec500f'] } };
-    if (m === 'MC 125') return { model: { $in: ['mc125', 'mc125-150'] } };
-    if (m === 'MC 150') return { model: 'mc125-150' };
-    if (m === 'MC 250') return { model: { $in: ['mc250', 'mc250-300'] } };
-    if (m === 'MC 300') return { model: 'mc250-300' };
+    if (m === 'MC 250') return { model: 'mc250' };
     if (m.startsWith('TXT')) return { model: 'txt' };
   }
 

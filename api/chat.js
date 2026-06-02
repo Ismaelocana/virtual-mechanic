@@ -53,10 +53,10 @@ function normalizarModelo(brand, model) {
   }
 
   if (brand.toLowerCase() === 'husqvarna') {
-    // TE 2T — un PDF cubre 125+150+250+300 (2016–2017) o 250+300 (2020+)
+    if (m === 'TC 125') return { model: { $in: ['tc125', 'tc125-250'] } };
+    if (m === 'TC 250') return { model: { $in: ['tc250', 'tc125-250'] } };
     if (m === 'TE 125' || m === 'TE 150') return { model: { $in: ['te125-150-250-300', 'te125-150'] } };
     if (m === 'TE 250' || m === 'TE 300') return { model: { $in: ['te125-150-250-300', 'te250-300'] } };
-    // FE 4T
     if (m === 'FE 450' || m === 'FE 501') return { model: { $in: ['fe450-501', 'fe450'] } };
   }
 

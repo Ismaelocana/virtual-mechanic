@@ -47,8 +47,9 @@ function normalizarModelo(brand, model) {
     if (m === 'EXC 150') return { model: { $in: ['exc125-150-250-300', 'exc150-250-300', 'exc150'] } };
     if (m === 'EXC-F 450' || m === 'EXC-F 500') return { model: 'exc-f450-500' };
     if (m === 'EXC-F 350') return { model: { $in: ['exc-f350-450-500', 'exc-f350'] } };
-    if (m === 'SX 125' || m === 'SX 150') return { model: { $in: ['sx125-150-250', 'sx125-150', 'sx125'] } };
-    if (m === 'SX 250') return { model: { $in: ['sx125-150-250', 'sx250', 'sx250-300'] } };
+    if (m === 'SX 125') return { model: { $in: ['sx125-250', 'sx125-150-250', 'sx125-150', 'sx125'] } };
+    if (m === 'SX 150') return { model: { $in: ['sx125-150-250', 'sx125-150'] } };
+    if (m === 'SX 250') return { model: { $in: ['sx125-250', 'sx125-150-250', 'sx250', 'sx250-300'] } };
     if (m === 'SX 300') return { model: 'sx250-300' };
   }
 

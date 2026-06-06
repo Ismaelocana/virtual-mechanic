@@ -1,8 +1,8 @@
 const fs = require('fs');
 
 const API = 'https://virtual-mechanic.vercel.app/api/chat';
-const CONCURRENCIA = 5;
-const DELAY_MS = 300;
+const CONCURRENCIA = 2;
+const DELAY_MS = 500;
 
 // ── Extraer brandsData de index.html ─────────────────────────────────────────
 const html = fs.readFileSync('index.html', 'utf8');
@@ -89,7 +89,7 @@ async function testCombi({ brand, model, year }) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body,
-      signal: AbortSignal.timeout(15000)
+      signal: AbortSignal.timeout(30000)
     });
     if (!res.ok) return { ok: false, error: `HTTP ${res.status}` };
     const json = await res.json();

@@ -1,0 +1,130 @@
+const fs = require('fs');
+const path = require('path');
+const { Pinecone } = require('@pinecone-database/pinecone');
+require('dotenv').config();
+
+const pc = new Pinecone({ apiKey: process.env.PINECONE_API_KEY });
+const INDEX_NAME = 'virtual-mechanic';
+const CHUNK_WORDS = 500;
+const OVERLAP_WORDS = 75;
+const EMBED_BATCH = 20;
+const EMBED_DELAY_MS = 500;
+const REGISTRO_PATH = path.join(__dirname, 'indexado.json');
+
+// ── Registro de archivos ya indexados ────────────────────────────────────────
+function cargarRegistro() {
+  if (fs.existsSync(REGISTRO_PATH)) {
+    return JSON.parse(fs.readFileSync(REGISTRO_PATH, 'utf8'));
+  }
+  return {};
+}
+
+function guardarRegistro(registro) {
+  fs.writeFileSync(REGISTRO_PATH, JSON.stringify(registro, null, 2));
+}
+
+// ── Procesado de texto ────────────────────────────────────────────────────────
+function limpiarTexto(text) {
+  return text
+    .replace(/\r\n/g, '\n')
+    .replace(/[ \t]+/g, ' ')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
+
+function trocear(text) {
+  const words = text.split(/\s+/).filter(Boolean);
+  const chunks = [];
+  let i = 0;
+  while (i < words.length) {
+    chunks.push(words.slice(i, i + CHUNK_WORDS).join(' '));
+    i += CHUNK_WORDS - OVERLAP_WORDS;
+  }
+  return chunks;
+}
+
+// ── Voyage AI ────────────────────────────────────────────────────────────────
+async function obtenerEmbeddings(texts, intento = 1) {
+  const res = await fetch('https://api.voyageai.com/v1/embeddings', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${process.env.VOYAGE_API_KEY}`
+    },
+    body: JSON.stringify({ model: 'voyage-3', input: texts })
+  });
+  if (res.status === 429) {
+    if (intento > 5) throw new Error('Voyage AI 429: demasiados reintentos');
+    const espera = 10000 * intento;
+    process.stdout.write(`\n  Rate limit, esperando ${espera / 1000}s...\r`);
+    await new Promise(r => setTimeout(r, espera));
+    return obtenerEmbeddings(texts, intento + 1);
+  }
+  if (!res.ok) throw new Error(`Voyage AI ${res.status}: ${await res.text()}`);
+  const json = await res.json();
+  return json.data.map(d => d.embedding);
+}
+
+// ── Indexar un manual ────────────────────────────────────────────────────────
+async function indexarManual(brand, model, year, text, firstCall) {
+  const chunks = trocear(limpiarTexto(text));
+  console.log(`  ${chunks.length} fragmentos`);
+  const idx = pc.index(INDEX_NAME);
+
+  for (let i = 0; i < chunks.length; i += EMBED_BATCH) {
+    if (!firstCall.value) await new Promise(r => setTimeout(r, EMBED_DELAY_MS));
+    firstCall.value = false;
+    const lote = chunks.slice(i, i + EMBED_BATCH);
+    const vectores = await obtenerEmbeddings(lote);
+    await idx.upsert({ records: lote.map((chunkText, j) => ({
+      id: `${brand}-${model}-${year}-${i + j}`,
+      values: vectores[j],
+      metadata: { brand, model, year, text: chunkText }
+    })) });
+    process.stdout.write(`  ${Math.min(i + EMBED_BATCH, chunks.length)}/${chunks.length} subidos\r`);
+  }
+  console.log(`  ✓ ${chunks.length}/${chunks.length} subidos`);
+}
+
+// ── Main ──────────────────────────────────────────────────────────────────────
+async function main() {
+  if (!process.env.VOYAGE_API_KEY) throw new Error('Falta VOYAGE_API_KEY en .env');
+  if (!process.env.PINECONE_API_KEY) throw new Error('Falta PINECONE_API_KEY en .env');
+
+  const registro = cargarRegistro();
+  const manualesDir = path.join(__dirname, 'manuales');
+  const firstCall = { value: true };
+  let nuevos = 0, saltados = 0;
+
+  for (const brand of fs.readdirSync(manualesDir).sort()) {
+    const brandDir = path.join(manualesDir, brand);
+    if (!fs.statSync(brandDir).isDirectory()) continue;
+
+    for (const file of fs.readdirSync(brandDir).filter(f => f.endsWith('.txt')).sort()) {
+      const filePath = path.join(brandDir, file);
+      const mtime = fs.statSync(filePath).mtimeMs.toString();
+      const key = `${brand}/${file}`;
+
+      if (registro[key] === mtime) {
+        saltados++;
+        continue;
+      }
+
+      const match = file.match(/^(.+)-(\d{4})\.txt$/);
+      if (!match) continue;
+      const [, model, year] = match;
+
+      console.log(`\nIndexando ${key}...`);
+      const text = fs.readFileSync(filePath, 'utf8');
+      await indexarManual(brand, model, year, text, firstCall);
+
+      registro[key] = mtime;
+      guardarRegistro(registro);
+      nuevos++;
+    }
+  }
+
+  console.log(`\n✅ ${nuevos} indexado(s), ${saltados} ya estaban al día`);
+}
+
+main().catch(e => { console.error(e.message); process.exit(1); });

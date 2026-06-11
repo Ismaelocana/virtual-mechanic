@@ -362,6 +362,8 @@ function selectModel(m) {
     else if (m === 'EVO 300 SS') fromYear = 2017;
     else if (m.startsWith('EVO')) fromYear = 2009;
     if (m === 'EVO 200') toYear = 2017;
+    if (m === 'EVO 80') toYear = 2023;
+    if ((m === 'EVO 250' || m === 'EVO 300') && currentEngine === '4T') toYear = 2025;
   } else if (currentBrand === 'KTM') {
     if (m === 'EXC 125' || m === 'EXC 200') { fromYear = 2005; toYear = 2016; }
     else if (m === 'EXC 150') { fromYear = 2020; toYear = 2025; }

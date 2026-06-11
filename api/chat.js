@@ -108,7 +108,7 @@ async function buscarContexto(brand, model, year, query) {
     const modelFilter = normalizarModelo(brand, model);
     const result = await getPineconeIndex().query({
       vector,
-      topK: 5,
+      topK: 15,
       filter: {
         brand: brand.toLowerCase(),
         ...modelFilter,

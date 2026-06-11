@@ -36,6 +36,10 @@ function normalizarModelo(brand, model) {
     if (m === 'EVO 80') return { model: 'evo80' };
     if (m === 'EVO 300 SS') return { model: { $in: ['evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss'] } };
     if (m === 'SINCRO 125' || m === 'SINCRO 200' || m === 'SINCRO 250' || m === 'SINCRO 300' || m === 'SINCRO 300 SS') return { model: 'sincro' };
+    if (m === 'RX 300') return { model: 'rx300' };
+    if (m === 'RX 250') return { model: 'rx250' };
+    if (m === 'RX 350') return { model: 'rx350' };
+    if (m === 'RX 450') return { model: 'rx450' };
     if (m === 'EVO 125') return { model: { $in: ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss'] } };
     if (m === 'EVO 200') return { model: { $in: ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss'] } };
     if (m === 'EVO 250') return { model: { $in: ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss', 'evo4t250-300'] } };

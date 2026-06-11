@@ -58,4 +58,7 @@ res.json({ reply: textBlock ? textBlock.text : 'No se pudo obtener respuesta.' }
   }
 });
 
+app.get('/admin', (req, res) => res.sendFile(path.join(__dirname, 'admin.html')));
+app.get('/api/admin', require('./api/admin'));
+
 app.listen(3000, () => console.log('Virtual Mechanic servidor corriendo en puerto 3000'));

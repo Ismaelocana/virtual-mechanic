@@ -129,6 +129,29 @@ async function buscarContexto(brand, model, year, query) {
   }
 }
 
+async function logConsulta(brand, model, year, usedManual) {
+  const url = process.env.UPSTASH_REDIS_REST_URL;
+  const token = process.env.UPSTASH_REDIS_REST_TOKEN;
+  if (!url || !token) return;
+  try {
+    const today = new Date().toISOString().slice(0, 10);
+    const entry = JSON.stringify({ brand, model, year, usedManual, t: Date.now() });
+    await fetch(`${url}/pipeline`, {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify([
+        ['INCR', 'vm:total'],
+        ['INCR', `vm:day:${today}`],
+        ['EXPIRE', `vm:day:${today}`, '7776000'],
+        ['ZINCRBY', 'vm:brands', '1', `${brand}|${model}`],
+        ['INCR', usedManual ? 'vm:manual' : 'vm:general'],
+        ['LPUSH', 'vm:recent', entry],
+        ['LTRIM', 'vm:recent', '0', '199'],
+      ])
+    });
+  } catch (_) { /* logging no debe romper la respuesta principal */ }
+}
+
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -193,7 +216,9 @@ Responde siempre en español. Sé directo y práctico, como lo sería un buen me
       messages: apiMessages
     });
     const textBlock = response.content.find(b => b.type === 'text');
-    res.json({ reply: textBlock ? textBlock.text : 'No se pudo obtener respuesta.' });
+    const reply = textBlock ? textBlock.text : 'No se pudo obtener respuesta.';
+    res.json({ reply });
+    logConsulta(brand, model, year, !!context);
   } catch (error) {
     console.error('Error:', error.message);
     res.status(500).json({ error: error.message });

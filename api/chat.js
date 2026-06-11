@@ -29,19 +29,18 @@ function normalizarModelo(brand, model) {
 
   if (brand.toLowerCase() === 'beta') {
     // Enduro RR 2T
-    if (m === 'RR 125' || m === 'RR 200') return { model: 'rr125-200' };
-    if (m === 'RR 250' || m === 'RR 300') return { model: 'rr250-300' };
+    if (m === 'RR 125' || m === 'RR 200') return { model: { $in: ['rr125-200', 'rr125-200-250-300'] } };
+    if (m === 'RR 250' || m === 'RR 300') return { model: { $in: ['rr250-300', 'rr125-200-250-300'] } };
     if (m === 'XTRAINER 250' || m === 'XTRAINER 300') return { model: 'xtrainer' };
     if (m === 'RR 350' || m === 'RR 390' || m === 'RR 430' || m === 'RR 480') return { model: 'rr350-390-430-480' };
     if (m === 'EVO 80') return { model: 'evo80' };
     if (m === 'EVO 300 SS') return { model: { $in: ['evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss'] } };
-    if (m === 'SINCRO 125' || m === 'SINCRO 200' || m === 'SINCRO 250' || m === 'SINCRO 300' || m === 'SINCRO 300 SS') return { model: 'sincro' };
+    if (m === 'SINCRO 125' || m === 'SINCRO 200' || m === 'SINCRO 250' || m === 'SINCRO 300' || m === 'SINCRO 300 SS') return { model: 'sincro2t-125-200-250-300-300ss' };
     if (m === 'RX 300') return { model: 'rx300' };
-    if (m === 'RX 250') return { model: 'rx250' };
-    if (m === 'RX 350') return { model: 'rx350' };
+    if (m === 'RX 250' || m === 'RX 350') return { model: 'rx250-350' };
     if (m === 'RX 450') return { model: 'rx450' };
     if (m === 'EVO 125') return { model: { $in: ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss'] } };
-    if (m === 'EVO 200') return { model: { $in: ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss'] } };
+    if (m === 'EVO 200') return { model: { $in: ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss', 'evo2t200'] } };
     if (m === 'EVO 250') return { model: { $in: ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss', 'evo4t250-300'] } };
     if (m === 'EVO 300') return { model: { $in: ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss', 'evo4t250-300'] } };
   }

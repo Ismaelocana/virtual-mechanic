@@ -7,7 +7,7 @@ const match = html.match(/const brandsData = (\{[\s\S]+?\});\s*\nconst catIcons/
 if (!match) { console.error('No se pudo extraer brandsData de index.html'); process.exit(1); }
 const brandsData = eval('(' + match[1] + ')');
 
-// ── Replicar lógica de años (igual que test-manuales.js) ─────────────────────
+// ── Replicar lógica de años (sincronizada con index.html) ─────────────────────
 function getYears(brand, model, engine) {
   let fromYear = 2000, toYear = 2026;
   if (brand === 'Sherco') {
@@ -19,12 +19,19 @@ function getYears(brand, model, engine) {
     else if ((model === 'RR 125' || model === 'RR 200') && engine === '2T') fromYear = 2018;
     else if (model.startsWith('RR') && engine === '2T') fromYear = 2013;
     else if (model.startsWith('RR') && engine === '4T') fromYear = 2012;
+    else if (model === 'RX 300') { fromYear = 2021; toYear = 2025; }
+    else if (model === 'RX 250' || model === 'RX 350') { fromYear = 2026; toYear = 2026; }
+    else if (model === 'RX 450') { fromYear = 2024; toYear = 2026; }
     else if (model === 'EVO 300 SS') fromYear = 2017;
     else if (model.startsWith('EVO')) fromYear = 2009;
-    if (model === 'EVO 200') toYear = 2017;
+    else if (model.startsWith('Sincro')) { fromYear = 2026; toYear = 2026; }
+    if (model === 'EVO 200') toYear = 2025;
+    if (model === 'EVO 80') toYear = 2023;
+    if ((model === 'EVO 250' || model === 'EVO 300') && engine === '4T') toYear = 2025;
+    if (model === 'EVO 125' || model === 'EVO 250' || model === 'EVO 300' || model === 'EVO 300 SS') toYear = 2025;
   } else if (brand === 'KTM') {
     if (model === 'EXC 125' || model === 'EXC 200') { fromYear = 2005; toYear = 2016; }
-    else if (model === 'EXC 150') fromYear = 2020;
+    else if (model === 'EXC 150') { fromYear = 2020; toYear = 2025; }
     else if (model === 'EXC 250' || model === 'EXC 300') fromYear = 2005;
     else if (model === 'EXC-F 250') fromYear = 2007;
     else if (model === 'EXC-F 350') fromYear = 2012;
@@ -54,21 +61,25 @@ function getYears(brand, model, engine) {
   return years;
 }
 
-// ── Replicar normalizarModelo (igual que api/chat.js) ────────────────────────
+// ── Replicar normalizarModelo (sincronizada con api/chat.js) ─────────────────
 function normalizarModelo(brand, model) {
   const m = model.toUpperCase().replace(/\s+/g, ' ').trim();
 
   if (brand.toLowerCase() === 'beta') {
-    if (m === 'RR 125' || m === 'RR 200') return ['rr125-200'];
-    if (m === 'RR 250' || m === 'RR 300') return ['rr250-300'];
+    if (m === 'RR 125' || m === 'RR 200') return ['rr125-200', 'rr125-200-250-300'];
+    if (m === 'RR 250' || m === 'RR 300') return ['rr250-300', 'rr125-200-250-300'];
     if (m === 'XTRAINER 250' || m === 'XTRAINER 300') return ['xtrainer'];
     if (m === 'RR 350' || m === 'RR 390' || m === 'RR 430' || m === 'RR 480') return ['rr350-390-430-480'];
     if (m === 'EVO 80') return ['evo80'];
-    if (m === 'EVO 300 SS') return ['evo2t125-200-250-300-300ss'];
-    if (m === 'EVO 125') return ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss'];
-    if (m === 'EVO 200') return ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss'];
-    if (m === 'EVO 250') return ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss', 'evo4t250-300'];
-    if (m === 'EVO 300') return ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss', 'evo4t250-300'];
+    if (m === 'EVO 300 SS') return ['evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss'];
+    if (m === 'SINCRO 125' || m === 'SINCRO 200' || m === 'SINCRO 250' || m === 'SINCRO 300' || m === 'SINCRO 300 SS') return ['sincro2t-125-200-250-300-300ss'];
+    if (m === 'RX 300') return ['rx300'];
+    if (m === 'RX 250' || m === 'RX 350') return ['rx250-350'];
+    if (m === 'RX 450') return ['rx450'];
+    if (m === 'EVO 125') return ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss'];
+    if (m === 'EVO 200') return ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss', 'evo2t200'];
+    if (m === 'EVO 250') return ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss', 'evo4t250-300'];
+    if (m === 'EVO 300') return ['evo2t125-200-250-300', 'evo2t125-200-250-300-300ss', 'evo2t125-250-300-300ss', 'evo4t250-300'];
   }
   if (brand.toLowerCase() === 'ktm') {
     if (m === 'EXC 125' || m === 'EXC 200') return ['exc125-200-250-300', 'exc125-150-250-300', 'exc125-200'];
@@ -124,7 +135,6 @@ function tieneManual(brand, modelKeys, year) {
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 const sinManual = {};
-const conManual = {};
 let totalCon = 0, totalSin = 0;
 
 for (const [brand, data] of Object.entries(brandsData)) {
@@ -133,19 +143,19 @@ for (const [brand, data] of Object.entries(brandsData)) {
       for (const model of models) {
         const years = getYears(brand, model, eng);
         const keys = normalizarModelo(brand, model);
-        const faltanAños = [];
+        // Deduplicar años (mismo modelo puede aparecer en 2T y 4T)
+        const yearsSeen = new Set();
         for (const year of years) {
+          if (yearsSeen.has(year)) continue;
+          yearsSeen.add(year);
           if (tieneManual(brand, keys, year)) {
             totalCon++;
           } else {
             totalSin++;
-            faltanAños.push(year);
+            const k = `${brand} | ${model}`;
+            if (!sinManual[k]) sinManual[k] = { años: new Set(), keys };
+            sinManual[k].años.add(year);
           }
-        }
-        if (faltanAños.length > 0) {
-          const k = `${brand} | ${model}`;
-          if (!sinManual[k]) sinManual[k] = { años: [], keys };
-          sinManual[k].años.push(...faltanAños);
         }
       }
     }
@@ -166,12 +176,12 @@ if (Object.keys(sinManual).length === 0) {
 } else {
   console.log('SIN MANUAL — combinaciones sin .txt en manuales/:\n');
   for (const [key, { años, keys: modelKeys }] of Object.entries(sinManual)) {
-    años.sort((a, b) => a - b);
+    const sorted = [...años].sort((a, b) => a - b);
     const rangos = [];
-    let start = años[0], end = años[0];
-    for (let i = 1; i < años.length; i++) {
-      if (años[i] === end + 1) { end = años[i]; }
-      else { rangos.push(start === end ? `${start}` : `${start}-${end}`); start = end = años[i]; }
+    let start = sorted[0], end = sorted[0];
+    for (let i = 1; i < sorted.length; i++) {
+      if (sorted[i] === end + 1) { end = sorted[i]; }
+      else { rangos.push(start === end ? `${start}` : `${start}-${end}`); start = end = sorted[i]; }
     }
     rangos.push(start === end ? `${start}` : `${start}-${end}`);
     console.log(`  ✗  ${key.padEnd(40)} ${rangos.join(', ')}`);

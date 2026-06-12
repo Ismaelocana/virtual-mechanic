@@ -683,21 +683,36 @@ async function loginConEmail() {
   btn.textContent = 'Enviando...';
   document.getElementById('login-err').textContent = '';
 
-  try {
-    const signIn = await window.Clerk.client.signIn.create({ identifier: email });
-    const factor = signIn.supportedFirstFactors?.find(f => f.strategy === 'email_link');
-    if (!factor) throw new Error('Magic links no disponibles para este correo');
+  const redirectUrl = window.location.origin + '/';
 
+  try {
+    let flowFn, flowArgs;
+
+    // Intentar sign-in (usuario existente)
+    try {
+      const si = await window.Clerk.client.signIn.create({ identifier: email });
+      const factor = si.supportedFirstFactors?.find(f => f.strategy === 'email_link');
+      if (!factor) throw new Error('Magic links no disponibles');
+      const { startMagicLinkFlow } = si.createMagicLinkFlow();
+      flowFn = startMagicLinkFlow;
+      flowArgs = { emailAddressId: factor.emailAddressId, redirectUrl };
+    } catch (siErr) {
+      // Si el usuario no existe, crear cuenta con sign-up
+      const code = siErr.errors?.[0]?.code;
+      if (code !== 'form_identifier_not_found' && code !== 'identifier_not_found') throw siErr;
+      const su = await window.Clerk.client.signUp.create({ emailAddress: email });
+      const { startMagicLinkFlow } = su.createMagicLinkFlow();
+      flowFn = startMagicLinkFlow;
+      flowArgs = { redirectUrl };
+    }
+
+    // Mostrar "revisa tu correo"
     document.getElementById('login-email-sent').textContent = email;
     document.getElementById('login-fields').style.display = 'none';
     document.getElementById('login-sent').style.display   = 'flex';
 
-    const { startMagicLinkFlow } = signIn.createMagicLinkFlow();
-    const result = await startMagicLinkFlow({
-      emailAddressId: factor.emailAddressId,
-      redirectUrl: window.location.origin + '/',
-    });
-
+    // Esperar a que el usuario haga clic en el enlace (polling same-tab)
+    const result = await flowFn(flowArgs);
     if (result.status === 'complete') {
       await window.Clerk.setSession(result.createdSessionId);
       showScreen('home');

@@ -1,8 +1,6 @@
-const CACHE = 'virtual-mechanic-v1';
-const SHELL = ['/', '/index.html'];
+const CACHE = 'virtual-mechanic-v2';
 
 self.addEventListener('install', e => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)));
   self.skipWaiting();
 });
 
@@ -16,14 +14,32 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
-  // Las llamadas a la API siempre van a la red
   if (e.request.url.includes('/api/')) return;
 
+  const isHTML = e.request.mode === 'navigate' ||
+                 e.request.headers.get('accept')?.includes('text/html');
+
+  if (isHTML) {
+    // Network-first para HTML: el usuario siempre recibe la versión más reciente.
+    // Fallback a caché solo si está offline.
+    e.respondWith(
+      fetch(e.request).then(res => {
+        if (res.ok) {
+          const copy = res.clone();
+          caches.open(CACHE).then(c => c.put(e.request, copy));
+        }
+        return res;
+      }).catch(() => caches.match(e.request))
+    );
+    return;
+  }
+
+  // Cache-first para el resto de assets (iconos, etc.)
   e.respondWith(
     caches.match(e.request).then(cached => {
       const network = fetch(e.request).then(res => {
         if (res.ok && e.request.method === 'GET') {
-          const copy = res.clone(); // clonar síncronamente antes de consumir res
+          const copy = res.clone();
           caches.open(CACHE).then(c => c.put(e.request, copy));
         }
         return res;

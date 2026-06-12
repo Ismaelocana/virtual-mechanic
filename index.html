@@ -664,13 +664,25 @@ if ('serviceWorker' in navigator) {
   script.src = `https://${CLERK_DOMAIN}/npm/@clerk/clerk-js@latest/dist/clerk.browser.js`;
   await new Promise(r => { script.onload = r; document.head.appendChild(script); });
   await window.Clerk.load();
+  console.log('[Clerk] load() completado');
 
   // Detectar si venimos de un clic en magic link
   const params = new URLSearchParams(window.location.search);
-  const isMagicLink = params.has('__clerk_ticket');
+  const ticket = params.get('__clerk_ticket');
+  const clerkStatus = params.get('__clerk_status');
+  const isMagicLink = !!ticket;
+
+  console.log('[Clerk] URL params → __clerk_ticket:', ticket, '| __clerk_status:', clerkStatus);
+  console.log('[Clerk] Clerk.user tras load():', window.Clerk.user);
+  console.log('[Clerk] Clerk.session tras load():', window.Clerk.session);
+
+  const si = window.Clerk.client?.signIn;
+  const su = window.Clerk.client?.signUp;
+  console.log('[Clerk] client.signIn → status:', si?.status, '| createdSessionId:', si?.createdSessionId);
+  console.log('[Clerk] client.signUp → status:', su?.status, '| createdSessionId:', su?.createdSessionId);
 
   // Limpiar parámetros de Clerk de la URL
-  if (isMagicLink || params.has('__clerk_status')) {
+  if (isMagicLink || clerkStatus) {
     params.delete('__clerk_ticket');
     params.delete('__clerk_status');
     window.history.replaceState({}, '', window.location.pathname + (params.toString() ? '?' + params : ''));
@@ -679,27 +691,31 @@ if ('serviceWorker' in navigator) {
   // Si venimos del magic link y Clerk no completó la sesión automáticamente,
   // completarla manualmente leyendo el estado del cliente
   if (isMagicLink && !window.Clerk.user) {
+    console.log('[Clerk] magic link detectado pero sin user — intentando setSession manual');
     try {
-      const si = window.Clerk.client?.signIn;
       if (si?.status === 'complete' && si.createdSessionId) {
+        console.log('[Clerk] setSession desde signIn:', si.createdSessionId);
         await window.Clerk.setSession(si.createdSessionId);
         showScreen('home');
         return;
       }
-    } catch (_) {}
+    } catch (e) { console.warn('[Clerk] setSession signIn falló:', e); }
     try {
-      const su = window.Clerk.client?.signUp;
       if (su?.status === 'complete' && su.createdSessionId) {
+        console.log('[Clerk] setSession desde signUp:', su.createdSessionId);
         await window.Clerk.setSession(su.createdSessionId);
         showScreen('home');
         return;
       }
-    } catch (_) {}
+    } catch (e) { console.warn('[Clerk] setSession signUp falló:', e); }
+    console.warn('[Clerk] no se pudo completar la sesión — mostrando login');
   }
 
   if (window.Clerk.user) {
+    console.log('[Clerk] usuario autenticado → home');
     showScreen('home');
   } else {
+    console.log('[Clerk] sin sesión → login');
     showScreen('login');
   }
 })();

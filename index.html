@@ -665,6 +665,38 @@ if ('serviceWorker' in navigator) {
   await new Promise(r => { script.onload = r; document.head.appendChild(script); });
   await window.Clerk.load();
 
+  // Detectar si venimos de un clic en magic link
+  const params = new URLSearchParams(window.location.search);
+  const isMagicLink = params.has('__clerk_ticket');
+
+  // Limpiar parámetros de Clerk de la URL
+  if (isMagicLink || params.has('__clerk_status')) {
+    params.delete('__clerk_ticket');
+    params.delete('__clerk_status');
+    window.history.replaceState({}, '', window.location.pathname + (params.toString() ? '?' + params : ''));
+  }
+
+  // Si venimos del magic link y Clerk no completó la sesión automáticamente,
+  // completarla manualmente leyendo el estado del cliente
+  if (isMagicLink && !window.Clerk.user) {
+    try {
+      const si = window.Clerk.client?.signIn;
+      if (si?.status === 'complete' && si.createdSessionId) {
+        await window.Clerk.setSession(si.createdSessionId);
+        showScreen('home');
+        return;
+      }
+    } catch (_) {}
+    try {
+      const su = window.Clerk.client?.signUp;
+      if (su?.status === 'complete' && su.createdSessionId) {
+        await window.Clerk.setSession(su.createdSessionId);
+        showScreen('home');
+        return;
+      }
+    } catch (_) {}
+  }
+
   if (window.Clerk.user) {
     showScreen('home');
   } else {

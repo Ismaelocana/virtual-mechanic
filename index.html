@@ -656,7 +656,7 @@ if ('serviceWorker' in navigator) {
 }
 
 // ── Clerk auth ────────────────────────────────────────────────────────────────
-const CLERK_ENABLED = false; // cambiar a true para reactivar el login
+const CLERK_ENABLED = true;
 
 (async () => {
   if (!CLERK_ENABLED) { showScreen('home'); return; }

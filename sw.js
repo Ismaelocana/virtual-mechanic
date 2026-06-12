@@ -23,7 +23,8 @@ self.addEventListener('fetch', e => {
     caches.match(e.request).then(cached => {
       const network = fetch(e.request).then(res => {
         if (res.ok && e.request.method === 'GET') {
-          caches.open(CACHE).then(c => c.put(e.request, res.clone()));
+          const copy = res.clone(); // clonar síncronamente antes de consumir res
+          caches.open(CACHE).then(c => c.put(e.request, copy));
         }
         return res;
       }).catch(() => cached);

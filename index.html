@@ -656,7 +656,11 @@ if ('serviceWorker' in navigator) {
 }
 
 // ── Clerk auth ────────────────────────────────────────────────────────────────
+const CLERK_ENABLED = false; // cambiar a true para reactivar el login
+
 (async () => {
+  if (!CLERK_ENABLED) { showScreen('home'); return; }
+
   const PUBLISHABLE_KEY = 'pk_live_Y2xlcmsudmlydHVhbG1lY2hhbmljLmVzJA';
   const CLERK_DOMAIN    = 'clerk.virtualmechanic.es';
 

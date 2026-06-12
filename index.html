@@ -705,9 +705,10 @@ const CLERK_ENABLED = true;
 
   // Caso 2: venimos del redirect de magic link pero la sesión no se estableció sola
   if (isMagicLink) {
-    console.log('[Clerk] magic link sin sesión automática — intentando setSession manual');
+    console.log('[Clerk] magic link sin sesión automática — intentando completar');
+    console.log('[Clerk] signUp.verifications:', JSON.stringify(su?.verifications ?? null));
 
-    // Intentar con signIn (no exigir status=complete, basta con que haya sessionId)
+    // signIn con sessionId directo
     try {
       if (si?.createdSessionId) {
         await window.Clerk.setSession(si.createdSessionId);
@@ -717,7 +718,24 @@ const CLERK_ENABLED = true;
       }
     } catch (e) { console.warn('[Clerk] setSession signIn error:', e.message); }
 
-    // Intentar con signUp
+    // signUp: si el email está verificado pero el sign-up está en missing_requirements,
+    // llamar a update({}) para que Clerk lo finalice y genere la sesión
+    try {
+      const emailVerified = su?.verifications?.emailAddress?.status === 'verified';
+      if (emailVerified || su?.status === 'missing_requirements') {
+        console.log('[Clerk] llamando signUp.update({}) para completar sign-up...');
+        const completed = await window.Clerk.client.signUp.update({});
+        console.log('[Clerk] signUp.update → status:', completed.status, '| sessionId:', completed.createdSessionId);
+        if (completed.status === 'complete' && completed.createdSessionId) {
+          await window.Clerk.setSession(completed.createdSessionId);
+          console.log('[Clerk] → home (signUp.update completo)');
+          showScreen('home');
+          return;
+        }
+      }
+    } catch (e) { console.warn('[Clerk] signUp.update error:', e.message); }
+
+    // signUp con sessionId directo (fallback)
     try {
       if (su?.createdSessionId) {
         await window.Clerk.setSession(su.createdSessionId);
@@ -727,7 +745,7 @@ const CLERK_ENABLED = true;
       }
     } catch (e) { console.warn('[Clerk] setSession signUp error:', e.message); }
 
-    // Último recurso: escuchar el evento de sesión async (Clerk puede tardar unos ms más)
+    // Último recurso: listener para sesión asíncrona
     console.log('[Clerk] esperando sesión por listener (6s timeout)...');
     let sessionOk = false;
     await new Promise(resolve => {
@@ -796,8 +814,16 @@ async function loginConEmail() {
     if (result?.status === 'complete' && result?.createdSessionId) {
       await window.Clerk.setSession(result.createdSessionId);
       showScreen('home');
+    } else if (result?.status === 'missing_requirements') {
+      // El email fue verificado pero el sign-up necesita completarse explícitamente
+      const completed = await window.Clerk.client.signUp.update({});
+      console.log('[Clerk] signUp.update → status:', completed.status, '| sessionId:', completed.createdSessionId);
+      if (completed.status === 'complete' && completed.createdSessionId) {
+        await window.Clerk.setSession(completed.createdSessionId);
+        showScreen('home');
+      }
     } else if (window.Clerk.session || window.Clerk.user) {
-      showScreen('home'); // Clerk ya estableció la sesión internamente
+      showScreen('home');
     }
   } catch (e) {
     document.getElementById('login-fields').style.display = 'flex';

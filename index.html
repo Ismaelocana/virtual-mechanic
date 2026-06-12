@@ -669,84 +669,49 @@ const CLERK_ENABLED = true;
   script.src = `https://${CLERK_DOMAIN}/npm/@clerk/clerk-js@latest/dist/clerk.browser.js`;
   await new Promise(r => { script.onload = r; document.head.appendChild(script); });
   await window.Clerk.load();
-  console.log('[Clerk] load() completado');
 
-  // Detectar CUALQUIER parámetro que Clerk pueda incluir en el redirect del magic link.
-  // En producción puede llegar __clerk_ticket, __clerk_status, __clerk_db_jwt o __clerk_handshake.
+  // Detectar redirect de magic link (__clerk_ticket, __clerk_status, __clerk_db_jwt, __clerk_handshake)
   const params = new URLSearchParams(window.location.search);
-  const ticket    = params.get('__clerk_ticket');
-  const clStatus  = params.get('__clerk_status');
-  const dbJwt     = params.get('__clerk_db_jwt');
-  const handshake = params.get('__clerk_handshake');
-  const isMagicLink = !!(ticket || clStatus || dbJwt || handshake);
-
-  console.log('[Clerk] URL completa:', window.location.href);
-  console.log('[Clerk] __clerk_ticket:', ticket, '| __clerk_status:', clStatus, '| db_jwt:', !!dbJwt, '| handshake:', !!handshake);
-  console.log('[Clerk] Clerk.user:', window.Clerk.user?.id ?? null);
-  console.log('[Clerk] Clerk.session:', window.Clerk.session?.id ?? null);
-
-  const si = window.Clerk.client?.signIn;
-  const su = window.Clerk.client?.signUp;
-  console.log('[Clerk] signIn.status:', si?.status, '| createdSessionId:', si?.createdSessionId ?? null);
-  console.log('[Clerk] signUp.status:', su?.status, '| createdSessionId:', su?.createdSessionId ?? null);
-
-  // Limpiar todos los parámetros de Clerk de la URL
+  const isMagicLink = ['__clerk_ticket','__clerk_status','__clerk_db_jwt','__clerk_handshake'].some(k => params.has(k));
   if (isMagicLink) {
     ['__clerk_ticket','__clerk_status','__clerk_db_jwt','__clerk_handshake'].forEach(k => params.delete(k));
     window.history.replaceState({}, '', window.location.pathname + (params.toString() ? '?' + params : ''));
   }
 
-  // Caso 1: Clerk.load() ya estableció la sesión automáticamente → ir directo a home
-  if (window.Clerk.user || window.Clerk.session) {
-    console.log('[Clerk] → home (sesión activa tras load)');
-    showScreen('home');
-    return;
-  }
+  if (window.Clerk.user || window.Clerk.session) { showScreen('home'); return; }
 
-  // Caso 2: venimos del redirect de magic link pero la sesión no se estableció sola
   if (isMagicLink) {
-    console.log('[Clerk] magic link sin sesión automática — intentando completar');
-    console.log('[Clerk] signUp.verifications:', JSON.stringify(su?.verifications ?? null));
+    const si = window.Clerk.client?.signIn;
+    const su = window.Clerk.client?.signUp;
 
-    // signIn con sessionId directo
     try {
       if (si?.createdSessionId) {
         await window.Clerk.setSession(si.createdSessionId);
-        console.log('[Clerk] → home (setSession signIn)');
-        showScreen('home');
-        return;
+        showScreen('home'); return;
       }
-    } catch (e) { console.warn('[Clerk] setSession signIn error:', e.message); }
+    } catch (e) { console.warn('[Clerk] setSession signIn:', e.message); }
 
-    // signUp: si el email está verificado pero el sign-up está en missing_requirements,
-    // llamar a update({}) para que Clerk lo finalice y genere la sesión
+    // Clerk verifica el email pero deja el sign-up en missing_requirements;
+    // update({}) lo completa y genera la sesión
     try {
       const emailVerified = su?.verifications?.emailAddress?.status === 'verified';
       if (emailVerified || su?.status === 'missing_requirements') {
-        console.log('[Clerk] llamando signUp.update({}) para completar sign-up...');
         const completed = await window.Clerk.client.signUp.update({});
-        console.log('[Clerk] signUp.update → status:', completed.status, '| sessionId:', completed.createdSessionId);
         if (completed.status === 'complete' && completed.createdSessionId) {
           await window.Clerk.setSession(completed.createdSessionId);
-          console.log('[Clerk] → home (signUp.update completo)');
-          showScreen('home');
-          return;
+          showScreen('home'); return;
         }
       }
-    } catch (e) { console.warn('[Clerk] signUp.update error:', e.message); }
+    } catch (e) { console.warn('[Clerk] signUp.update:', e.message); }
 
-    // signUp con sessionId directo (fallback)
     try {
       if (su?.createdSessionId) {
         await window.Clerk.setSession(su.createdSessionId);
-        console.log('[Clerk] → home (setSession signUp)');
-        showScreen('home');
-        return;
+        showScreen('home'); return;
       }
-    } catch (e) { console.warn('[Clerk] setSession signUp error:', e.message); }
+    } catch (e) { console.warn('[Clerk] setSession signUp:', e.message); }
 
-    // Último recurso: listener para sesión asíncrona
-    console.log('[Clerk] esperando sesión por listener (6s timeout)...');
+    // Listener de último recurso para sesión asíncrona
     let sessionOk = false;
     await new Promise(resolve => {
       const unsub = window.Clerk.addListener(({ user, session }) => {
@@ -754,16 +719,9 @@ const CLERK_ENABLED = true;
       });
       setTimeout(() => { unsub(); resolve(); }, 6000);
     });
-    if (sessionOk || window.Clerk.user || window.Clerk.session) {
-      console.log('[Clerk] → home (sesión via listener)');
-      showScreen('home');
-      return;
-    }
-    console.warn('[Clerk] sesión no establecida tras magic link → login');
+    if (sessionOk || window.Clerk.user || window.Clerk.session) { showScreen('home'); return; }
   }
 
-  // Caso 3: sin ningún indicio de sesión → pantalla de login
-  console.log('[Clerk] → login');
   showScreen('login');
 })();
 
@@ -806,18 +764,12 @@ async function loginConEmail() {
     document.getElementById('login-fields').style.display = 'none';
     document.getElementById('login-sent').style.display   = 'flex';
 
-    // Esperar a que el usuario haga clic en el enlace (polling same-tab).
-    // Nota: si el usuario abre el enlace en la misma pestaña, esta promesa nunca
-    // resuelve porque la página navega. La sesión se retoma en el reload vía el IIFE.
     const result = await flowFn(flowArgs);
-    console.log('[Clerk] flowFn result → status:', result?.status, '| sessionId:', result?.createdSessionId);
     if (result?.status === 'complete' && result?.createdSessionId) {
       await window.Clerk.setSession(result.createdSessionId);
       showScreen('home');
     } else if (result?.status === 'missing_requirements') {
-      // El email fue verificado pero el sign-up necesita completarse explícitamente
       const completed = await window.Clerk.client.signUp.update({});
-      console.log('[Clerk] signUp.update → status:', completed.status, '| sessionId:', completed.createdSessionId);
       if (completed.status === 'complete' && completed.createdSessionId) {
         await window.Clerk.setSession(completed.createdSessionId);
         showScreen('home');

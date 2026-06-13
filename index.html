@@ -201,7 +201,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   <!-- BRAND -->
   <div id="s-brand" class="screen step-screen">
     <div class="screen-header">
-      <button class="btn-back" onclick="showScreen('home')"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="btn-back" onclick="volverDesdeMarcas()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <div><h2>Selecciona tu marca</h2><p>Paso 1 de 5</p></div>
     </div>
     <div class="progress"><div class="progress-fill" style="width:20%"></div></div>
@@ -524,7 +524,12 @@ function selectYear(year) {
   currentChatId = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
   currentChatCreatedAt = new Date().toISOString();
   chatReturnScreen = 'year';
-  if (addingToGarage) { addingToGarage = false; guardarEnGaraje(); chatReturnScreen = 'garage'; }
+  if (addingToGarage) {
+    addingToGarage = false;
+    guardarEnGaraje();
+    mostrarGaraje();
+    return;
+  }
   document.getElementById('chat-title').textContent = `${currentBrand} ${currentModel} ${currentYear}`;
   chatHistory = [];
   document.getElementById('messages').innerHTML = '';
@@ -876,6 +881,7 @@ async function signOut() {
 function irAlHome() {
   window.currentUserId = window.Clerk?.user?.id || null;
   document.getElementById('btn-historial').style.display = window.currentUserId ? 'block' : 'none';
+  document.getElementById('btn-mi-garaje').style.display = '';
   showScreen('home');
 }
 
@@ -980,8 +986,13 @@ async function eliminarChat(chatId, btn) {
 
 // ── Garaje ─────────────────────────────────────────────────────────────────
 
+function volverDesdeMarcas() {
+  if (addingToGarage) { addingToGarage = false; document.getElementById('btn-mi-garaje').style.display = ''; mostrarGaraje(); }
+  else { showScreen('home'); }
+}
+
 async function mostrarGaraje() {
-  addingToGarage = false;
+  document.getElementById('btn-mi-garaje').style.display = 'none';
   showScreen('garage');
   const list = document.getElementById('garage-list');
   list.innerHTML = '<div class="history-empty">Cargando...</div>';
@@ -993,7 +1004,7 @@ async function mostrarGaraje() {
     const r = await fetch(`/api/garage?userId=${window.currentUserId}`);
     const motos = await r.json();
     if (!motos.length) {
-      list.innerHTML = '<div class="history-empty">Tu garaje está vacío.<br>Añade tu primera moto abajo.</div>';
+      list.innerHTML = '<div class="history-empty">Tu garaje está vacío.<br>Añade tu primera moto.</div>';
       return;
     }
     list.innerHTML = '';
@@ -1069,7 +1080,7 @@ async function eliminarMoto(bikeId, btn) {
     item.remove();
     const list = document.getElementById('garage-list');
     if (!list.children.length) {
-      list.innerHTML = '<div class="history-empty">Tu garaje está vacío.<br>Añade tu primera moto abajo.</div>';
+      list.innerHTML = '<div class="history-empty">Tu garaje está vacío.<br>Añade tu primera moto.</div>';
     }
   } catch {
     item.style.opacity = '1';

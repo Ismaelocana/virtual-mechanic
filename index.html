@@ -489,7 +489,7 @@ function selectYear(year) {
   currentYear = year;
   currentChatId = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
   currentChatCreatedAt = new Date().toISOString();
-  chatReturnScreen = 'brand';
+  chatReturnScreen = 'year';
   document.getElementById('chat-title').textContent = `${currentBrand} ${currentModel} ${currentYear}`;
   chatHistory = [];
   document.getElementById('messages').innerHTML = '';

@@ -63,5 +63,8 @@ app.get('/api/admin', require('./api/admin'));
 app.get('/api/history', require('./api/history'));
 app.post('/api/history', require('./api/history'));
 app.delete('/api/history', require('./api/history'));
+app.get('/api/garage', require('./api/garage'));
+app.post('/api/garage', require('./api/garage'));
+app.delete('/api/garage', require('./api/garage'));
 
 app.listen(3000, () => console.log('Virtual Mechanic servidor corriendo en puerto 3000'));

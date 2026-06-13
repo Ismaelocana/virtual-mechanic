@@ -816,6 +816,7 @@ async function loginConEmail() {
 
   const redirectUrl = window.location.origin + '/';
 
+  let unsubListener = null;
   try {
     let flowFn, flowArgs;
 
@@ -828,7 +829,6 @@ async function loginConEmail() {
       flowFn = startMagicLinkFlow;
       flowArgs = { emailAddressId: factor.emailAddressId, redirectUrl };
     } catch (siErr) {
-      // Si el usuario no existe, crear cuenta con sign-up
       const code = siErr.errors?.[0]?.code;
       if (code !== 'form_identifier_not_found' && code !== 'identifier_not_found') throw siErr;
       const su = await window.Clerk.client.signUp.create({ emailAddress: email });
@@ -842,20 +842,33 @@ async function loginConEmail() {
     document.getElementById('login-fields').style.display = 'none';
     document.getElementById('login-sent').style.display   = 'flex';
 
+    let sessionDone = false;
+    const handleSessionReady = async (sessionId) => {
+      if (sessionDone) return;
+      sessionDone = true;
+      if (unsubListener) { unsubListener(); unsubListener = null; }
+      if (sessionId) await window.Clerk.setSession(sessionId).catch(() => {});
+      irAlHome();
+    };
+
+    // Listener cross-tab: detecta la sesión aunque el enlace se abra en otra pestaña
+    unsubListener = window.Clerk.addListener(({ user }) => {
+      if (user) handleSessionReady(null);
+    });
+
     const result = await flowFn(flowArgs);
     if (result?.status === 'complete' && result?.createdSessionId) {
-      await window.Clerk.setSession(result.createdSessionId);
-      showScreen('home');
+      await handleSessionReady(result.createdSessionId);
     } else if (result?.status === 'missing_requirements') {
-      const completed = await window.Clerk.client.signUp.update({});
-      if (completed.status === 'complete' && completed.createdSessionId) {
-        await window.Clerk.setSession(completed.createdSessionId);
-        showScreen('home');
+      const completed = await window.Clerk.client.signUp.update({}).catch(() => null);
+      if (completed?.status === 'complete' && completed?.createdSessionId) {
+        await handleSessionReady(completed.createdSessionId);
       }
     } else if (window.Clerk.session || window.Clerk.user) {
-      showScreen('home');
+      await handleSessionReady(null);
     }
   } catch (e) {
+    if (unsubListener) { unsubListener(); unsubListener = null; }
     document.getElementById('login-fields').style.display = 'flex';
     document.getElementById('login-sent').style.display   = 'none';
     btn.disabled = false;

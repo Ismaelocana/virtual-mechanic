@@ -239,7 +239,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   <!-- CHAT -->
   <div id="s-chat" class="screen" style="flex-direction:column">
     <div class="chat-header">
-      <button class="btn-back" style="border:none;background:transparent" onclick="showScreen('brand')"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="btn-back" style="border:none;background:transparent" onclick="showScreen(chatReturnScreen)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <div class="chat-avatar">VM</div>
       <div><h3 id="chat-title">Virtual Mechanic</h3><p>Mecánico IA</p></div>
       <div class="online-dot"></div>
@@ -329,7 +329,7 @@ const catIcons = {
 };
 
 let currentBrand = '', currentCategory = '', currentEngine = '', currentModel = '', currentYear = '', chatHistory = [];
-let currentChatId = null, currentChatCreatedAt = null;
+let currentChatId = null, currentChatCreatedAt = null, chatReturnScreen = 'brand';
 
 function showScreen(n) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
@@ -489,6 +489,7 @@ function selectYear(year) {
   currentYear = year;
   currentChatId = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
   currentChatCreatedAt = new Date().toISOString();
+  chatReturnScreen = 'brand';
   document.getElementById('chat-title').textContent = `${currentBrand} ${currentModel} ${currentYear}`;
   chatHistory = [];
   document.getElementById('messages').innerHTML = '';
@@ -915,6 +916,7 @@ async function cargarChat(chatId) {
     currentYear  = chat.year;
     currentChatId = chat.chatId;
     currentChatCreatedAt = chat.createdAt;
+    chatReturnScreen = 'history';
     chatHistory = chat.messages;
     document.getElementById('chat-title').textContent = `${chat.brand} ${chat.model} ${chat.year}`;
     const msgs = document.getElementById('messages');

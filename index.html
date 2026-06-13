@@ -1034,7 +1034,7 @@ async function mostrarGaraje() {
       el.className = 'history-item';
       const main = document.createElement('div');
       main.className = 'history-item-main';
-      main.innerHTML = `<div class="garage-moto">${escapeHtml(bike.brand)} ${escapeHtml(bike.model)} ${bike.year}</div>`;
+      main.innerHTML = `<div class="garage-moto">${escapeHtml(bike.brand)} ${escapeHtml(bike.model)}</div><div class="garage-meta">${bike.year}${bike.engine ? ' · ' + escapeHtml(bike.engine) : ''}</div>`;
       main.onclick = () => cargarMoto(bike);
       const del = document.createElement('button');
       del.className = 'history-del';

@@ -526,8 +526,7 @@ function selectYear(year) {
   chatReturnScreen = 'year';
   if (addingToGarage) {
     addingToGarage = false;
-    guardarEnGaraje();
-    mostrarGaraje();
+    guardarEnGaraje().then(() => mostrarGaraje());
     return;
   }
   document.getElementById('chat-title').textContent = `${currentBrand} ${currentModel} ${currentYear}`;
@@ -1035,9 +1034,9 @@ function añadirMoto() {
 }
 
 function guardarEnGaraje() {
-  if (!window.currentUserId) return;
+  if (!window.currentUserId) return Promise.resolve();
   const bikeId = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
-  fetch('/api/garage', {
+  return fetch('/api/garage', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({

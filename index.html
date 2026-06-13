@@ -134,7 +134,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <div id="login-fields" class="login-fields">
       <input type="email" id="login-email" class="login-input" placeholder="tu@correo.com" autocomplete="email" />
       <div id="clerk-captcha"></div>
-      <button class="btn-main" id="btn-login" onclick="loginConEmail()">Enviar enlace →</button>
+      <button class="btn-main" id="btn-login" onclick="loginConEmail()">Enviar</button>
       <div id="login-err" class="login-err"></div>
     </div>
     <div id="login-sent" class="login-sent">
@@ -169,7 +169,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
         <div><p>Especializado en enduro, mx y trial</p><span>Para todas las principales marcas</span></div>
       </div>
     </div>
-    <button class="btn-main" onclick="showScreen('brand')">Empezar consulta →</button>
+    <button class="btn-main" onclick="showScreen('brand')">Empezar consulta</button>
     <button class="btn-historial" id="btn-historial" onclick="mostrarHistorial()">Mis consultas</button>
     <button class="btn-install" id="btn-install" onclick="instalarPWA()">↓ Instalar app</button>
     <div class="home-user">
@@ -850,7 +850,7 @@ async function loginConEmail() {
     document.getElementById('login-fields').style.display = 'flex';
     document.getElementById('login-sent').style.display   = 'none';
     btn.disabled = false;
-    btn.textContent = 'Enviar enlace →';
+    btn.textContent = 'Enviar';
     document.getElementById('login-err').textContent = e.errors?.[0]?.longMessage || e.message || 'Error al enviar el enlace';
   }
 }
@@ -860,7 +860,7 @@ function volverAlLogin() {
   document.getElementById('login-sent').style.display   = 'none';
   const btn = document.getElementById('btn-login');
   btn.disabled = false;
-  btn.textContent = 'Enviar enlace →';
+  btn.textContent = 'Enviar';
   document.getElementById('login-email').value = '';
   document.getElementById('login-err').textContent = '';
 }

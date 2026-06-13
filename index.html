@@ -94,6 +94,19 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .login-sent small { font-size: 11px; color: #BBB; }
 .btn-text { background: none; border: none; font-size: 13px; color: #EF9F27; cursor: pointer; padding: 4px 0; font-family: inherit; }
 .home-user { display: flex; align-items: center; gap: 12px; }
+/* ── History ── */
+.btn-historial { width: 100%; padding: 12px; background: transparent; border: 1.5px solid #E0DDD6; border-radius: 12px; font-size: 14px; font-weight: 500; color: #555; cursor: pointer; display: none; }
+.btn-historial:hover { background: #F8F7F3; }
+.history-item { display: flex; align-items: stretch; background: #F8F7F3; border: 1px solid #EFEFEF; border-radius: 12px; overflow: hidden; flex-shrink: 0; }
+.history-item-main { flex: 1; padding: 11px 13px; cursor: pointer; min-width: 0; }
+.history-item-main:hover { background: #F0EDE6; }
+.history-moto { font-size: 14px; font-weight: 600; color: #111; }
+.history-year { font-weight: 400; color: #999; }
+.history-preview { font-size: 12px; color: #888; margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.history-meta { font-size: 11px; color: #BBB; margin-top: 4px; }
+.history-del { width: 42px; border: none; border-left: 1px solid #EFEFEF; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.history-del:hover { background: #FFF0F0; }
+.history-empty { text-align: center; color: #BBB; font-size: 13px; padding: 3rem 1.5rem; line-height: 1.6; }
 </style>
 </head>
 <body>
@@ -151,12 +164,22 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       </div>
     </div>
     <button class="btn-main" onclick="showScreen('brand')">Empezar consulta →</button>
+    <button class="btn-historial" id="btn-historial" onclick="mostrarHistorial()">Mis consultas</button>
     <button class="btn-install" id="btn-install" onclick="instalarPWA()">↓ Instalar app</button>
     <div class="home-user">
       <a href="mailto:soporte@virtualmechanic.es" style="font-size:11px;color:#aaa;text-decoration:none">Soporte</a>
       <span style="font-size:11px;color:#DDD">·</span>
       <button id="btn-signout" onclick="signOut()" style="font-size:11px;color:#aaa;background:none;border:none;cursor:pointer;font-family:inherit;padding:0">Cerrar sesión</button>
     </div>
+  </div>
+
+  <!-- HISTORY -->
+  <div id="s-history" class="screen step-screen">
+    <div class="screen-header">
+      <button class="btn-back" onclick="showScreen('home')"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div><h2>Mis consultas</h2></div>
+    </div>
+    <div id="history-list" class="list-container"></div>
   </div>
 
   <!-- BRAND -->
@@ -306,6 +329,7 @@ const catIcons = {
 };
 
 let currentBrand = '', currentCategory = '', currentEngine = '', currentModel = '', currentYear = '', chatHistory = [];
+let currentChatId = null, currentChatCreatedAt = null;
 
 function showScreen(n) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
@@ -463,6 +487,8 @@ function selectModel(m) {
 
 function selectYear(year) {
   currentYear = year;
+  currentChatId = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+  currentChatCreatedAt = new Date().toISOString();
   document.getElementById('chat-title').textContent = `${currentBrand} ${currentModel} ${currentYear}`;
   chatHistory = [];
   document.getElementById('messages').innerHTML = '';
@@ -583,6 +609,7 @@ async function send() {
     hideTyping();
     addBot(data.reply);
     chatHistory.push({ role: 'assistant', content: data.reply });
+    guardarChat();
   } catch (e) {
     hideTyping();
     addBot('Error al conectar con el servidor. Inténtalo de nuevo.');
@@ -621,6 +648,7 @@ function handlePhoto(e) {
         addBot(data.reply);
         chatHistory.push({ role: 'user', content: '[Foto enviada para diagnóstico]' });
         chatHistory.push({ role: 'assistant', content: data.reply });
+        guardarChat();
       } catch (err) {
         hideTyping();
         addBot('Error al analizar la foto. Inténtalo de nuevo.');
@@ -659,7 +687,7 @@ if ('serviceWorker' in navigator) {
 const CLERK_ENABLED = true;
 
 (async () => {
-  if (!CLERK_ENABLED) { showScreen('home'); return; }
+  if (!CLERK_ENABLED) { window.currentUserId = null; showScreen('home'); return; }
 
   const PUBLISHABLE_KEY = 'pk_live_Y2xlcmsudmlydHVhbG1lY2hhbmljLmVzJA';
   const CLERK_DOMAIN    = 'clerk.virtualmechanic.es';
@@ -678,7 +706,7 @@ const CLERK_ENABLED = true;
     window.history.replaceState({}, '', window.location.pathname + (params.toString() ? '?' + params : ''));
   }
 
-  if (window.Clerk.user || window.Clerk.session) { showScreen('home'); return; }
+  if (window.Clerk.user || window.Clerk.session) { irAlHome(); return; }
 
   if (isMagicLink) {
     const si = window.Clerk.client?.signIn;
@@ -687,7 +715,7 @@ const CLERK_ENABLED = true;
     try {
       if (si?.createdSessionId) {
         await window.Clerk.setSession(si.createdSessionId);
-        showScreen('home'); return;
+        irAlHome(); return;
       }
     } catch (e) { console.warn('[Clerk] setSession signIn:', e.message); }
 
@@ -699,7 +727,7 @@ const CLERK_ENABLED = true;
         const completed = await window.Clerk.client.signUp.update({});
         if (completed.status === 'complete' && completed.createdSessionId) {
           await window.Clerk.setSession(completed.createdSessionId);
-          showScreen('home'); return;
+          irAlHome(); return;
         }
       }
     } catch (e) { console.warn('[Clerk] signUp.update:', e.message); }
@@ -707,7 +735,7 @@ const CLERK_ENABLED = true;
     try {
       if (su?.createdSessionId) {
         await window.Clerk.setSession(su.createdSessionId);
-        showScreen('home'); return;
+        irAlHome(); return;
       }
     } catch (e) { console.warn('[Clerk] setSession signUp:', e.message); }
 
@@ -719,7 +747,7 @@ const CLERK_ENABLED = true;
       });
       setTimeout(() => { unsub(); resolve(); }, 6000);
     });
-    if (sessionOk || window.Clerk.user || window.Clerk.session) { showScreen('home'); return; }
+    if (sessionOk || window.Clerk.user || window.Clerk.session) { irAlHome(); return; }
   }
 
   showScreen('login');
@@ -802,8 +830,115 @@ document.getElementById('login-email')?.addEventListener('keydown', e => {
 
 async function signOut() {
   await window.Clerk.signOut();
+  window.currentUserId = null;
+  document.getElementById('btn-historial').style.display = 'none';
   showScreen('login');
   volverAlLogin();
+}
+
+// ── Historial ─────────────────────────────────────────────────────────────────
+function irAlHome() {
+  window.currentUserId = window.Clerk?.user?.id || null;
+  document.getElementById('btn-historial').style.display = window.currentUserId ? 'block' : 'none';
+  showScreen('home');
+}
+
+function guardarChat() {
+  if (!window.currentUserId || !currentChatId) return;
+  if (!chatHistory.some(m => m.role === 'user')) return;
+  fetch('/api/history', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      userId: window.currentUserId,
+      chatId: currentChatId,
+      brand: currentBrand,
+      model: currentModel,
+      year: currentYear,
+      messages: chatHistory,
+      createdAt: currentChatCreatedAt,
+    }),
+  }).catch(() => {});
+}
+
+function escapeHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function formatFecha(iso) {
+  const d = new Date(iso), ahora = new Date();
+  const dias = Math.floor((ahora - d) / 86400000);
+  if (dias === 0) return 'Hoy';
+  if (dias === 1) return 'Ayer';
+  if (dias < 7) return `Hace ${dias} días`;
+  return d.toLocaleDateString('es', { day: 'numeric', month: 'short', year: dias > 365 ? 'numeric' : undefined });
+}
+
+async function mostrarHistorial() {
+  showScreen('history');
+  const list = document.getElementById('history-list');
+  list.innerHTML = '<div class="history-empty">Cargando...</div>';
+  try {
+    const r = await fetch(`/api/history?userId=${window.currentUserId}`);
+    const chats = await r.json();
+    if (!chats.length) {
+      list.innerHTML = '<div class="history-empty">Todavía no tienes consultas guardadas.<br>Empieza una consulta y quedará guardada aquí.</div>';
+      return;
+    }
+    list.innerHTML = '';
+    chats.forEach(chat => {
+      const el = document.createElement('div');
+      el.className = 'history-item';
+      el.innerHTML = `
+        <div class="history-item-main" onclick="cargarChat('${escapeHtml(chat.chatId)}')">
+          <div class="history-moto">${escapeHtml(chat.brand)} ${escapeHtml(chat.model)} <span class="history-year">${chat.year}</span></div>
+          ${chat.preview ? `<div class="history-preview">${escapeHtml(chat.preview)}</div>` : ''}
+          <div class="history-meta">${formatFecha(chat.updatedAt)} · ${chat.messageCount} ${chat.messageCount === 1 ? 'mensaje' : 'mensajes'}</div>
+        </div>
+        <button class="history-del" onclick="eliminarChat('${escapeHtml(chat.chatId)}', this)" title="Eliminar">
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M2 4h12M5 4V3h6v1M6 7v5M10 7v5M3 4l1 9h8l1-9" stroke="#BBB" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>`;
+      list.appendChild(el);
+    });
+  } catch {
+    list.innerHTML = '<div class="history-empty">Error al cargar el historial.</div>';
+  }
+}
+
+async function cargarChat(chatId) {
+  try {
+    const r = await fetch(`/api/history?userId=${window.currentUserId}&chatId=${chatId}`);
+    const chat = await r.json();
+    if (!chat) return;
+    currentBrand = chat.brand;
+    currentModel = chat.model;
+    currentYear  = chat.year;
+    currentChatId = chat.chatId;
+    currentChatCreatedAt = chat.createdAt;
+    chatHistory = chat.messages;
+    document.getElementById('chat-title').textContent = `${chat.brand} ${chat.model} ${chat.year}`;
+    const msgs = document.getElementById('messages');
+    msgs.innerHTML = '';
+    chat.messages.forEach(m => m.role === 'assistant' ? addBot(m.content) : addUser(m.content));
+    showScreen('chat');
+  } catch { /* silencioso */ }
+}
+
+async function eliminarChat(chatId, btn) {
+  const item = btn.closest('.history-item');
+  item.style.opacity = '0.4';
+  item.style.pointerEvents = 'none';
+  try {
+    await fetch(`/api/history?userId=${window.currentUserId}&chatId=${chatId}`, { method: 'DELETE' });
+    item.remove();
+    const list = document.getElementById('history-list');
+    if (!list.children.length) {
+      list.innerHTML = '<div class="history-empty">Todavía no tienes consultas guardadas.<br>Empieza una consulta y quedará guardada aquí.</div>';
+    }
+  } catch {
+    item.style.opacity = '1';
+    item.style.pointerEvents = '';
+  }
 }
 </script>
 </body>

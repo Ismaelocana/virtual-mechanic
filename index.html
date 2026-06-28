@@ -256,7 +256,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   <div id="s-chat" class="screen" style="flex-direction:column">
     <div class="chat-header">
       <button class="btn-back" style="border:none;background:transparent" onclick="showScreen(chatReturnScreen)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-      <div class="chat-avatar">VM</div>
+      <div class="chat-avatar" id="chat-avatar">VM</div>
       <div><h3 id="chat-title">Virtual Mechanic</h3><p>Mecánico IA</p></div>
       <div class="online-dot"></div>
     </div>
@@ -529,6 +529,14 @@ function selectModel(m) {
   showScreen('year');
 }
 
+function updateChatAvatar(brand) {
+  const bd = brandsData[brand];
+  if (!bd) return;
+  const av = document.getElementById('chat-avatar');
+  av.style.background = bd.bg;
+  av.innerHTML = `<svg viewBox="0 0 44 44" width="32" height="32">${bd.logo}</svg>`;
+}
+
 function selectYear(year) {
   currentYear = year;
   currentChatId = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
@@ -540,6 +548,7 @@ function selectYear(year) {
     return;
   }
   document.getElementById('chat-title').textContent = `${currentBrand} ${currentModel} ${currentYear}`;
+  updateChatAvatar(currentBrand);
   chatHistory = [];
   document.getElementById('messages').innerHTML = '';
   const welcome = `¡Hola! Soy tu mecánico virtual especializado en ${currentBrand}. Estoy aquí para ayudarte con tu ${currentModel} del ${currentYear}. Cuéntame qué le pasa y lo diagnosticamos juntos.`;
@@ -621,7 +630,7 @@ function addBot(text) {
   const msgs = document.getElementById('messages');
   const d = document.createElement('div');
   d.className = 'msg-bot';
-  d.innerHTML = `<div class="msg-avatar">VM</div><div class="msg-bubble-bot">${renderMd(text)}</div>`;
+  d.innerHTML = `<img src="/icons/icon.png" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0;margin-top:2px"><div class="msg-bubble-bot">${renderMd(text)}</div>`;
   msgs.appendChild(d);
   msgs.scrollTop = msgs.scrollHeight;
 }
@@ -986,6 +995,7 @@ async function cargarChat(chatId) {
     chatReturnScreen = 'history';
     chatHistory = chat.messages;
     document.getElementById('chat-title').textContent = `${chat.brand} ${chat.model} ${chat.year}`;
+    updateChatAvatar(chat.brand);
     const msgs = document.getElementById('messages');
     msgs.innerHTML = '';
     chat.messages.forEach(m => m.role === 'assistant' ? addBot(m.content) : addUser(m.content));
@@ -1089,6 +1099,7 @@ function cargarMoto(bike) {
   currentChatCreatedAt = new Date().toISOString();
   chatReturnScreen = 'garage';
   document.getElementById('chat-title').textContent = `${currentBrand} ${currentModel} ${currentYear}`;
+  updateChatAvatar(currentBrand);
   chatHistory = [];
   document.getElementById('messages').innerHTML = '';
   const welcome = `¡Hola! Soy tu mecánico virtual especializado en ${currentBrand}. Estoy aquí para ayudarte con tu ${currentModel} del ${currentYear}. Cuéntame qué le pasa y lo diagnosticamos juntos.`;

@@ -604,8 +604,12 @@ function renderMd(text) {
       if (!inList) { html += '<ol>'; inList = true; listTag = 'ol'; }
       html += `<li>${fmt(olM[2])}</li>`;
     } else {
-      closeList();
-      html += line === '' ? '<br>' : fmt(line) + '<br>';
+      if (line === '' && inList) {
+        // blank line between list items — don't close the list
+      } else {
+        closeList();
+        html += line === '' ? '<br>' : fmt(line) + '<br>';
+      }
     }
   }
   flushTable();

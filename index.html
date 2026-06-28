@@ -648,7 +648,7 @@ function showTyping() {
   const msgs = document.getElementById('messages');
   const d = document.createElement('div');
   d.className = 'msg-bot'; d.id = 'typing';
-  d.innerHTML = `<div class="msg-avatar">VM</div><div class="msg-bubble-bot" style="color:#888">Analizando...</div>`;
+  d.innerHTML = `<img src="/icons/icon.png" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0;margin-top:2px"><div class="msg-bubble-bot" style="color:#888">Analizando...</div>`;
   msgs.appendChild(d); msgs.scrollTop = msgs.scrollHeight;
 }
 

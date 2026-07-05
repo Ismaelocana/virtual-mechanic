@@ -359,6 +359,45 @@ const brandsData = {
       Motocross: { '2T': ['YZ 65','YZ 85','YZ 125','YZ 250'], '4T': ['YZ 250F','YZ 450F'] },
       Enduro: { '4T': ['WR 250F','WR 450F','YZ 250FX','YZ 450FX'] }
     }
+  },
+  Fantic: {
+    bg: '#1A237E', text: '#FFD600', dot: '#FFD600', sub: 'Feel the Passion',
+    logo: '<text x="40" y="15" text-anchor="middle" dominant-baseline="central" font-family="Arial Black,sans-serif" font-weight="900" font-size="10" fill="#FFD600">FANTIC</text>',
+    categories: {
+      Enduro: { '2T': ['XE 125','XE 250','XE 300'], '4T': ['XEF 125','XEF 250','XEF 300','XEF 450'] },
+      Motocross: { '2T': ['MX 125'], '4T': ['MXF 250','MXF 450'] },
+      Trial: { '2T': ['Section 80','Section 125','Section 200','Section 250','Section 300'] }
+    }
+  },
+  Suzuki: {
+    bg: '#1565C0', text: '#FFFFFF', dot: '#1565C0', sub: 'Way of Life',
+    logo: '<text x="40" y="15" text-anchor="middle" dominant-baseline="central" font-family="Arial Black,sans-serif" font-weight="900" font-size="10" fill="white">SUZUKI</text>',
+    categories: {
+      Motocross: { '2T': ['RM 85','RM 125','RM 250'], '4T': ['RM-Z 250','RM-Z 450'] },
+      Enduro: { '4T': ['RMX 450Z'] }
+    }
+  },
+  TM: {
+    bg: '#B71C1C', text: '#FFFFFF', dot: '#B71C1C', sub: 'Racing',
+    logo: '<text x="40" y="15" text-anchor="middle" dominant-baseline="central" font-family="Arial Black,sans-serif" font-weight="900" font-size="10" fill="white">TM</text>',
+    categories: {
+      Enduro: { '2T': ['EN 125','EN 144','EN 250','EN 300'], '4T': ['ENF 250F','ENF 450F','ENF 530F'] },
+      Motocross: { '2T': ['MX 85','MX 125','MX 144','MX 250','MX 300'], '4T': ['MXF 250','MXF 450','MXF 530'] }
+    }
+  },
+  TRS: {
+    bg: '#263238', text: '#FFFFFF', dot: '#90A4AE', sub: 'Trial',
+    logo: '<text x="40" y="15" text-anchor="middle" dominant-baseline="central" font-family="Arial Black,sans-serif" font-weight="900" font-size="10" fill="white">TRS</text>',
+    categories: {
+      Trial: { '2T': ['One 125','One 250','One 280','One 300'], '4T': ['One 300 RR'] }
+    }
+  },
+  Vertigo: {
+    bg: '#00695C', text: '#FFFFFF', dot: '#00695C', sub: 'Trial',
+    logo: '<text x="40" y="15" text-anchor="middle" dominant-baseline="central" font-family="Arial Black,sans-serif" font-weight="900" font-size="10" fill="white">VERTIGO</text>',
+    categories: {
+      Trial: { '2T': ['Carbon 250','Carbon 300','Nitro 250','Nitro 300'] }
+    }
   }
 };
 
@@ -541,6 +580,21 @@ function selectModel(m) {
   } else if (currentBrand === 'Triumph') {
     if (currentCategory === 'Enduro') fromYear = 2026;
     else fromYear = 2025;
+  } else if (currentBrand === 'Suzuki') {
+    if (m === 'RM 85') fromYear = 2002;
+    else if (m === 'RM 125') { fromYear = 2001; toYear = 2012; }
+    else if (m === 'RM 250') { fromYear = 2001; toYear = 2008; }
+    else if (m === 'RM-Z 250') fromYear = 2004;
+    else if (m === 'RM-Z 450') fromYear = 2005;
+    else if (m === 'RMX 450Z') { fromYear = 2010; toYear = 2019; }
+  } else if (currentBrand === 'Fantic') {
+    fromYear = 2020;
+  } else if (currentBrand === 'TM') {
+    fromYear = 2000;
+  } else if (currentBrand === 'TRS') {
+    fromYear = 2016;
+  } else if (currentBrand === 'Vertigo') {
+    fromYear = 2014;
   }
   for (let y = toYear; y >= fromYear; y--) {
     const btn = document.createElement('button');

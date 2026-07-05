@@ -349,7 +349,8 @@ const brandsData = {
     logo: '<text x="40" y="15" text-anchor="middle" dominant-baseline="central" font-family="Arial Black,sans-serif" font-weight="900" font-size="10" fill="white">HONDA</text>',
     categories: {
       Motocross: { '4T': ['CRF 125R','CRF 150R','CRF 250R','CRF 450R'] },
-      Enduro: { '4T': ['CRF 250RX','CRF 450RX'] }
+      Enduro: { '4T': ['CRF 250RX','CRF 450RX'] },
+      Trial: { '2T': ['Montesa Cota 315R'], '4T': ['Montesa Cota 260','Montesa Cota 300','Montesa Cota 301RR'] }
     }
   },
   Yamaha: {
@@ -580,6 +581,10 @@ function selectModel(m) {
   } else if (currentBrand === 'Triumph') {
     if (currentCategory === 'Enduro') fromYear = 2026;
     else fromYear = 2025;
+  } else if (currentBrand === 'Honda') {
+    if (m === 'Montesa Cota 315R') { fromYear = 1999; toYear = 2004; }
+    else if (m === 'Montesa Cota 260' || m === 'Montesa Cota 300') fromYear = 2005;
+    else if (m === 'Montesa Cota 301RR') fromYear = 2019;
   } else if (currentBrand === 'Suzuki') {
     if (m === 'RM 85') fromYear = 2002;
     else if (m === 'RM 125') { fromYear = 2001; toYear = 2012; }

@@ -129,11 +129,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   <div id="s-magic-ok" class="screen" style="align-items:center;padding:2rem 1.5rem;gap:0;text-align:center">
     <img src="/icons/icon.png" style="width:64px;height:64px;border-radius:18px;object-fit:cover">
     <div class="login-head">
-      <h1>¡Enlace verificado!</h1>
-      <p>Entrando en la app…</p>
+      <h1>Correo verificado</h1>
+      <p>Ya puedes disfrutar de la app</p>
     </div>
     <div style="font-size:48px;margin:0.5rem 0 1.5rem">✓</div>
-    <button class="btn-main" onclick="window.location.replace(window.location.origin + '/')">Entrar ahora</button>
+    <button class="btn-main" onclick="window.location.replace(window.location.origin + '/')">Entrar</button>
   </div>
 
   <div id="s-login" class="screen">
@@ -916,9 +916,7 @@ const CLERK_ENABLED = true;
     });
     sessionStorage.removeItem('vm_magic');
     if (sessionOk || window.Clerk.user || window.Clerk.session) { irAlHome(); return; }
-    showScreen('magic-ok');
-    setTimeout(() => window.location.replace(window.location.origin + '/'), 2000);
-    return;
+    showScreen('magic-ok'); return;
   }
 
   showScreen('login');

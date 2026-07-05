@@ -41,13 +41,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .item-btn { display: flex; align-items: center; justify-content: space-between; padding: 13px 14px; background: #F8F7F3; border: 1px solid #EFEFEF; border-radius: 12px; cursor: pointer; width: 100%; text-align: left; transition: background .15s; flex-shrink: 0; }
 .item-btn:hover { background: #F0EDE6; }
 .item-btn-inner { display: flex; align-items: center; gap: 12px; }
-.brand-logo { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; }
+.brand-logo { width: 40px; height: 40px; border-radius: 9px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; }
 .item-btn h3 { font-size: 14px; font-weight: 600; color: #111; }
 .item-btn span { font-size: 11px; color: #888; }
 .item-btn-text { font-size: 14px; font-weight: 500; color: #111; }
 .list-container { display: flex; flex-direction: column; gap: 8px; overflow-y: auto; flex: 1; }
 .brand-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; overflow-y: auto; flex: 1; align-content: start; }
-.brand-card { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 14px 8px 12px; background: #F8F7F3; border: 1px solid #EFEFEF; border-radius: 12px; cursor: pointer; width: 100%; font-family: inherit; transition: background .15s; }
+.brand-card { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 11px 8px 9px; background: #F8F7F3; border: 1px solid #EFEFEF; border-radius: 12px; cursor: pointer; width: 100%; font-family: inherit; transition: background .15s; }
 .brand-card:hover { background: #F0EDE6; }
 .brand-card-name { font-size: 13px; font-weight: 600; color: #111; }
 .cat-icon-wrap { width: 40px; height: 40px; border-radius: 10px; background: #F0EDE6; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -390,7 +390,7 @@ const brandList = document.getElementById('brand-list');
   btn.id = 'btn-mi-garaje';
   btn.innerHTML = `
     <div class="brand-logo" style="background:#F0EDE6">
-      <svg viewBox="0 0 44 44" width="44" height="44" fill="none">
+      <svg viewBox="0 0 44 44" width="40" height="40" fill="none">
         <!-- Tejado -->
         <path d="M3 21L22 5L41 21Z" fill="#D4C9B4" stroke="#8B7355" stroke-width="1.8" stroke-linejoin="round"/>
         <!-- Paredes -->
@@ -412,7 +412,7 @@ const brandList = document.getElementById('brand-list');
 Object.entries(brandsData).forEach(([name, data]) => {
   const btn = document.createElement('button');
   btn.className = 'brand-card';
-  btn.innerHTML = `<div class="brand-logo" style="background:${data.bg}"><svg viewBox="0 0 44 44" width="44" height="44">${data.logo}</svg></div><span class="brand-card-name">${name}</span>`;
+  btn.innerHTML = `<div class="brand-logo" style="background:${data.bg}"><svg viewBox="0 0 44 44" width="40" height="40">${data.logo}</svg></div><span class="brand-card-name">${name}</span>`;
   btn.onclick = () => selectBrand(name);
   brandList.appendChild(btn);
 });

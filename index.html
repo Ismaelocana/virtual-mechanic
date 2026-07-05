@@ -59,7 +59,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .selection-text { font-size: 12px; font-weight: 500; color: #111; }
 #s-chat { height: 100%; }
 .chat-header { padding: .9rem 1.1rem; border-bottom: 1px solid #F0EDE6; display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
-.chat-avatar { width: 36px; height: 36px; border-radius: 10px; background: #EF9F27; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 10px; font-weight: 700; font-family: monospace; color: #412402; }
+.chat-avatar { width: 72px; height: 28px; border-radius: 8px; background: #EF9F27; display: flex; align-items: center; justify-content: center; flex-shrink: 0; overflow: hidden; }
 .chat-header h3 { font-size: 13px; font-weight: 600; color: #111; }
 .chat-header p { font-size: 11px; color: #888; }
 .online-dot { width: 7px; height: 7px; border-radius: 50%; background: #4CAF50; margin-left: auto; flex-shrink: 0; }
@@ -616,7 +616,7 @@ function updateChatAvatar(brand) {
   if (!bd) return;
   const av = document.getElementById('chat-avatar');
   av.style.background = bd.bg;
-  av.innerHTML = `<svg viewBox="0 0 80 30" width="34" height="13">${bd.logo}</svg>`;
+  av.innerHTML = `<svg viewBox="0 0 80 30" style="width:100%;height:100%;display:block">${bd.logo}</svg>`;
 }
 
 function selectYear(year) {

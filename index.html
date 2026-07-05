@@ -126,6 +126,17 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   </div>
 
   <!-- LOGIN -->
+  <div id="s-magic-ok" class="screen" style="align-items:center;padding:2rem 1.5rem;gap:0;text-align:center">
+    <img src="/icons/icon.png" style="width:64px;height:64px;border-radius:18px;object-fit:cover">
+    <div class="login-head">
+      <h1>¡Enlace verificado!</h1>
+      <p>Vuelve a la pestaña anterior<br>para continuar en la app.</p>
+    </div>
+    <div style="font-size:48px;margin:0.5rem 0 1.5rem">✓</div>
+    <p style="font-size:13px;color:#888;margin-bottom:1.5rem;line-height:1.6">Si cerraste esa pestaña o no funciona,<br>abre la app de nuevo con este botón.</p>
+    <button class="btn-main" onclick="window.location.replace(window.location.origin + '/')">Abrir la app</button>
+  </div>
+
   <div id="s-login" class="screen">
     <img src="/icons/icon.png" style="width:64px;height:64px;border-radius:18px;object-fit:cover">
     <div class="login-head">
@@ -837,21 +848,32 @@ const CLERK_ENABLED = true;
   const PUBLISHABLE_KEY = 'pk_live_Y2xlcmsudmlydHVhbG1lY2hhbmljLmVzJA';
   const CLERK_DOMAIN    = 'clerk.virtualmechanic.es';
 
+  // Leer params ANTES de cualquier cosa — Clerk puede hacer redirect interno durante load()
+  // y en esa segunda carga los params ya no estarán en la URL
+  const params = new URLSearchParams(window.location.search);
+  const hasMagicParams = ['__clerk_ticket','__clerk_status','__clerk_db_jwt','__clerk_handshake'].some(k => params.has(k));
+
+  // sessionStorage sobrevive al redirect interno de Clerk; lo usamos como bandera persistente
+  if (hasMagicParams) sessionStorage.setItem('vm_magic', '1');
+
   const script = document.createElement('script');
   script.setAttribute('data-clerk-publishable-key', PUBLISHABLE_KEY);
   script.src = `https://${CLERK_DOMAIN}/npm/@clerk/clerk-js@latest/dist/clerk.browser.js`;
   await new Promise(r => { script.onload = r; document.head.appendChild(script); });
   await window.Clerk.load();
 
-  // Detectar redirect de magic link (__clerk_ticket, __clerk_status, __clerk_db_jwt, __clerk_handshake)
-  const params = new URLSearchParams(window.location.search);
-  const isMagicLink = ['__clerk_ticket','__clerk_status','__clerk_db_jwt','__clerk_handshake'].some(k => params.has(k));
-  if (isMagicLink) {
+  // Después del load (y del posible redirect), verificar si venimos de un magic link
+  const isMagicLink = hasMagicParams || sessionStorage.getItem('vm_magic') === '1';
+
+  if (hasMagicParams) {
     ['__clerk_ticket','__clerk_status','__clerk_db_jwt','__clerk_handshake'].forEach(k => params.delete(k));
     window.history.replaceState({}, '', window.location.pathname + (params.toString() ? '?' + params : ''));
   }
 
-  if (window.Clerk.user || window.Clerk.session) { irAlHome(); return; }
+  if (window.Clerk.user || window.Clerk.session) {
+    sessionStorage.removeItem('vm_magic');
+    irAlHome(); return;
+  }
 
   if (isMagicLink) {
     const si = window.Clerk.client?.signIn;
@@ -860,18 +882,18 @@ const CLERK_ENABLED = true;
     try {
       if (si?.createdSessionId) {
         await window.Clerk.setSession(si.createdSessionId);
+        sessionStorage.removeItem('vm_magic');
         irAlHome(); return;
       }
     } catch (e) { console.warn('[Clerk] setSession signIn:', e.message); }
 
-    // Clerk verifica el email pero deja el sign-up en missing_requirements;
-    // update({}) lo completa y genera la sesión
     try {
       const emailVerified = su?.verifications?.emailAddress?.status === 'verified';
       if (emailVerified || su?.status === 'missing_requirements') {
         const completed = await window.Clerk.client.signUp.update({});
         if (completed.status === 'complete' && completed.createdSessionId) {
           await window.Clerk.setSession(completed.createdSessionId);
+          sessionStorage.removeItem('vm_magic');
           irAlHome(); return;
         }
       }
@@ -880,19 +902,22 @@ const CLERK_ENABLED = true;
     try {
       if (su?.createdSessionId) {
         await window.Clerk.setSession(su.createdSessionId);
+        sessionStorage.removeItem('vm_magic');
         irAlHome(); return;
       }
     } catch (e) { console.warn('[Clerk] setSession signUp:', e.message); }
 
-    // Listener de último recurso para sesión asíncrona
+    // Esperar hasta 8 s a que Clerk establezca la sesión de forma asíncrona
     let sessionOk = false;
     await new Promise(resolve => {
       const unsub = window.Clerk.addListener(({ user, session }) => {
         if (user || session) { sessionOk = true; unsub(); resolve(); }
       });
-      setTimeout(() => { unsub(); resolve(); }, 6000);
+      setTimeout(() => { unsub(); resolve(); }, 8000);
     });
+    sessionStorage.removeItem('vm_magic');
     if (sessionOk || window.Clerk.user || window.Clerk.session) { irAlHome(); return; }
+    showScreen('magic-ok'); return;
   }
 
   showScreen('login');

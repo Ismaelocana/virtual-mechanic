@@ -984,7 +984,10 @@ async function mostrarHistorial() {
     chats.forEach(chat => {
       const el = document.createElement('div');
       el.className = 'history-item';
+      const bd = brandsData[chat.brand];
+      const logoHtml = bd ? `<div style="width:50px;min-width:50px;background:${bd.bg};border-radius:10px;display:flex;align-items:center;justify-content:center;margin:7px 0 7px 8px;flex-shrink:0;align-self:center"><svg viewBox="0 0 80 30" width="44" height="17">${bd.logo}</svg></div>` : '';
       el.innerHTML = `
+        ${logoHtml}
         <div class="history-item-main" onclick="cargarChat('${escapeHtml(chat.chatId)}')">
           <div class="history-moto">${escapeHtml(chat.brand)} ${escapeHtml(chat.model)} <span class="history-year">${chat.year}</span></div>
           ${chat.preview ? `<div class="history-preview">${escapeHtml(chat.preview)}</div>` : ''}

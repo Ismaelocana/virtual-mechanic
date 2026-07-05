@@ -1073,6 +1073,13 @@ async function mostrarGaraje() {
       del.title = 'Eliminar';
       del.innerHTML = `<svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M2 4h12M5 4V3h6v1M6 7v5M10 7v5M3 4l1 9h8l1-9" stroke="#BBB" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
       del.onclick = () => eliminarMoto(bike.bikeId, del);
+      const bd = brandsData[bike.brand];
+      if (bd) {
+        const logoEl = document.createElement('div');
+        logoEl.style.cssText = `width:50px;min-width:50px;background:${bd.bg};border-radius:10px;display:flex;align-items:center;justify-content:center;margin:7px 0 7px 8px;flex-shrink:0;align-self:center`;
+        logoEl.innerHTML = `<svg viewBox="0 0 80 30" width="44" height="17">${bd.logo}</svg>`;
+        el.appendChild(logoEl);
+      }
       el.appendChild(main);
       el.appendChild(del);
       list.appendChild(el);

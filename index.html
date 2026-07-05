@@ -919,13 +919,14 @@ const CLERK_ENABLED = true;
       }
     } catch (e) { console.warn('[Clerk] setSession signUp:', e.message); }
 
-    // Esperar hasta 8 s a que Clerk establezca la sesión de forma asíncrona
+    // Polling cada 300 ms + listener de evento, máximo 3 s
+    // (el evento puede haberse disparado antes de suscribirnos, por eso el polling)
     let sessionOk = false;
     await new Promise(resolve => {
-      const unsub = window.Clerk.addListener(({ user, session }) => {
-        if (user || session) { sessionOk = true; unsub(); resolve(); }
-      });
-      setTimeout(() => { unsub(); resolve(); }, 8000);
+      const done = () => { sessionOk = true; clearInterval(poll); unsub(); resolve(); };
+      const unsub = window.Clerk.addListener(({ user, session }) => { if (user || session) done(); });
+      const poll = setInterval(() => { if (window.Clerk.user || window.Clerk.session) done(); }, 300);
+      setTimeout(() => { clearInterval(poll); unsub(); resolve(); }, 3000);
     });
     sessionStorage.removeItem('vm_magic');
     if (sessionOk || window.Clerk.user || window.Clerk.session) { irAlHome(); return; }

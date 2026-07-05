@@ -930,9 +930,7 @@ const CLERK_ENABLED = true;
     });
     sessionStorage.removeItem('vm_magic');
     if (sessionOk || window.Clerk.user || window.Clerk.session) { irAlHome(); return; }
-    showScreen('magic-ok');
-    setTimeout(() => window.location.replace(window.location.origin + '/'), 1500);
-    return;
+    showScreen('magic-ok'); return;
   }
 
   showScreen('login');

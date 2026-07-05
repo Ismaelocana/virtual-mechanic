@@ -126,14 +126,46 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   </div>
 
   <!-- LOGIN -->
-  <div id="s-magic-ok" class="screen" style="align-items:center;padding:2rem 1.5rem;gap:0;text-align:center">
-    <img src="/icons/icon.png" style="width:64px;height:64px;border-radius:18px;object-fit:cover">
-    <div class="login-head">
-      <h1>Correo verificado</h1>
-      <p>Ya puedes disfrutar de la app</p>
+  <div id="s-magic-ok" class="screen" style="align-items:stretch;gap:0;padding:0">
+    <!-- Hero -->
+    <div style="background:linear-gradient(180deg,#FFF3E0 0%,#ffffff 100%);padding:2.25rem 1.5rem 1.75rem;display:flex;flex-direction:column;align-items:center;gap:1.25rem;flex-shrink:0">
+      <div style="position:relative;display:inline-block">
+        <img src="/icons/icon.png" style="width:68px;height:68px;border-radius:18px;object-fit:cover;box-shadow:0 6px 20px rgba(0,0,0,0.1)">
+        <div style="position:absolute;bottom:-6px;right:-6px;width:26px;height:26px;border-radius:50%;background:#4CAF50;border:2.5px solid white;display:flex;align-items:center;justify-content:center">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2.5 6.5L5.5 9.5L10.5 3.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+      <div style="text-align:center">
+        <h1 style="font-size:22px;font-weight:700;color:#111;letter-spacing:-0.3px">Correo verificado</h1>
+        <p style="font-size:13px;color:#888;margin-top:6px;line-height:1.5">Ya puedes disfrutar de la app</p>
+      </div>
+      <div style="width:36px;height:3px;background:#EF9F27;border-radius:2px"></div>
     </div>
-    <div style="font-size:48px;margin:0.5rem 0 1.5rem">✓</div>
-    <button class="btn-main" onclick="window.location.replace(window.location.origin + '/')">Entrar</button>
+    <!-- Features -->
+    <div style="padding:1.25rem;display:flex;flex-direction:column;gap:8px;flex:1">
+      <div style="display:flex;align-items:center;gap:12px;padding:12px 13px;background:#F8F7F3;border-radius:12px">
+        <div style="width:34px;height:34px;border-radius:9px;background:#FAC775;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2L9.5 5.5H13.5L10.5 7.5L11.5 11L8 9L4.5 11L5.5 7.5L2.5 5.5H6.5L8 2Z" stroke="#633806" stroke-width="1.2" stroke-linejoin="round"/></svg>
+        </div>
+        <div><p style="font-size:13px;font-weight:500;color:#111">Basado en manuales oficiales</p><span style="font-size:11px;color:#888">Información precisa para tu moto exacta</span></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;padding:12px 13px;background:#F8F7F3;border-radius:12px">
+        <div style="width:34px;height:34px;border-radius:9px;background:#FAC775;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="4" width="12" height="9" rx="2" stroke="#633806" stroke-width="1.2"/><circle cx="8" cy="8.5" r="2" stroke="#633806" stroke-width="1.2"/></svg>
+        </div>
+        <div><p style="font-size:13px;font-weight:500;color:#111">Diagnóstico por foto o texto</p><span style="font-size:11px;color:#888">Muestra el problema y lo analizamos</span></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;padding:12px 13px;background:#F8F7F3;border-radius:12px">
+        <div style="width:34px;height:34px;border-radius:9px;background:#FAC775;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 5H13M3 8H10M3 11H7" stroke="#633806" stroke-width="1.3" stroke-linecap="round"/></svg>
+        </div>
+        <div><p style="font-size:13px;font-weight:500;color:#111">Especializado en enduro, MX y trial</p><span style="font-size:11px;color:#888">Todas las marcas principales</span></div>
+      </div>
+    </div>
+    <!-- CTA -->
+    <div style="padding:0 1.25rem 1.75rem">
+      <button class="btn-main" onclick="window.location.replace(window.location.origin + '/')">Entrar</button>
+    </div>
   </div>
 
   <div id="s-login" class="screen">

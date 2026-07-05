@@ -409,7 +409,7 @@ const brandList = document.getElementById('brand-list');
   brandList.appendChild(btn);
 })();
 
-Object.entries(brandsData).forEach(([name, data]) => {
+Object.entries(brandsData).sort(([a], [b]) => a.localeCompare(b)).forEach(([name, data]) => {
   const btn = document.createElement('button');
   btn.className = 'brand-card';
   btn.innerHTML = `<div class="brand-logo" style="background:${data.bg}"><svg viewBox="0 0 44 44" width="40" height="40">${data.logo}</svg></div><span class="brand-card-name">${name}</span>`;

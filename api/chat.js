@@ -210,7 +210,7 @@ Responde siempre en español. Sé directo y práctico, como lo sería un buen me
 
   try {
     const response = await client.messages.create({
-      model: 'claude-sonnet-5',
+      model: 'claude-sonnet-4-6',
       max_tokens: 2000,
       system: systemPrompt,
       messages: apiMessages

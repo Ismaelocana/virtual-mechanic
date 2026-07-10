@@ -1,18 +1,54 @@
+const crypto = require('crypto');
 const Anthropic = require('@anthropic-ai/sdk');
 const { Pinecone } = require('@pinecone-database/pinecone');
-const { verifyToken } = require('@clerk/backend');
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
+// Dominio del Frontend API de Clerk (mismo que usa index.html). El JWKS público
+// para verificar los JWT de sesión está en /.well-known/jwks.json de este dominio.
+const CLERK_DOMAIN = 'clerk.virtualmechanic.es';
+
+// Cache del JWKS en memoria (se refresca cada hora). Evita pedirlo en cada request.
+let _jwksCache = null;
+let _jwksFetchedAt = 0;
+async function getClerkJwks() {
+  const now = Date.now();
+  if (_jwksCache && (now - _jwksFetchedAt) < 3600000) return _jwksCache;
+  const res = await fetchWithTimeout(`https://${CLERK_DOMAIN}/.well-known/jwks.json`, {}, 5000);
+  if (!res.ok) throw new Error(`JWKS ${res.status}`);
+  const json = await res.json();
+  _jwksCache = json.keys || [];
+  _jwksFetchedAt = now;
+  return _jwksCache;
+}
+
 // Verifica el JWT de sesión de Clerk enviado en el header Authorization.
+// Comprueba la firma RS256 contra el JWKS de Clerk y la expiración.
 // Devuelve el userId (claim `sub`) si es válido, o null si falta/es inválido.
+// Verificación manual con crypto nativo: sin dependencias que empaquetar.
 async function verificarSesion(req) {
   const auth = req.headers['authorization'] || req.headers['Authorization'];
   if (!auth || !auth.startsWith('Bearer ')) return null;
   const token = auth.slice(7).trim();
-  if (!token) return null;
+  const parts = token.split('.');
+  if (parts.length !== 3) return null;
   try {
-    const payload = await verifyToken(token, { secretKey: process.env.CLERK_SECRET_KEY });
+    const header = JSON.parse(Buffer.from(parts[0], 'base64url').toString('utf8'));
+    const payload = JSON.parse(Buffer.from(parts[1], 'base64url').toString('utf8'));
+    const signature = Buffer.from(parts[2], 'base64url');
+    if (header.alg !== 'RS256' || !header.kid) return null;
+
+    const jwk = (await getClerkJwks()).find(k => k.kid === header.kid);
+    if (!jwk) return null;
+    const pubKey = crypto.createPublicKey({ key: jwk, format: 'jwk' });
+
+    const signingInput = Buffer.from(`${parts[0]}.${parts[1]}`);
+    if (!crypto.verify('RSA-SHA256', signingInput, pubKey, signature)) return null;
+
+    const nowSec = Math.floor(Date.now() / 1000);
+    if (payload.exp && nowSec >= payload.exp) return null;       // caducado
+    if (payload.nbf && nowSec < payload.nbf - 5) return null;    // aún no válido (5s de margen)
+
     return payload.sub || null;
   } catch (e) {
     console.error('verificarSesion error:', e.message);

@@ -1,7 +1,24 @@
 const Anthropic = require('@anthropic-ai/sdk');
 const { Pinecone } = require('@pinecone-database/pinecone');
+const { verifyToken } = require('@clerk/backend');
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+
+// Verifica el JWT de sesión de Clerk enviado en el header Authorization.
+// Devuelve el userId (claim `sub`) si es válido, o null si falta/es inválido.
+async function verificarSesion(req) {
+  const auth = req.headers['authorization'] || req.headers['Authorization'];
+  if (!auth || !auth.startsWith('Bearer ')) return null;
+  const token = auth.slice(7).trim();
+  if (!token) return null;
+  try {
+    const payload = await verifyToken(token, { secretKey: process.env.CLERK_SECRET_KEY });
+    return payload.sub || null;
+  } catch (e) {
+    console.error('verificarSesion error:', e.message);
+    return null;
+  }
+}
 
 // Lazy singleton — no crashea si PINECONE_API_KEY no está configurada
 let _pineconeIndex = null;
@@ -155,8 +172,12 @@ async function logConsulta(brand, model, year, usedManual) {
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   if (req.method === 'OPTIONS') return res.status(200).end();
+
+  // Fase 1: exigir sesión válida de Clerk antes de procesar nada
+  const userId = await verificarSesion(req);
+  if (!userId) return res.status(401).json({ error: 'No autenticado' });
 
   const { messages, brand, model, year, imageBase64, imageMediaType } = req.body;
 

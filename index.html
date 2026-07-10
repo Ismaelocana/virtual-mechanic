@@ -756,6 +756,16 @@ function showTyping() {
 
 function hideTyping() { const el = document.getElementById('typing'); if (el) el.remove(); }
 
+// Construye los headers para /api/chat incluyendo el token de sesión de Clerk
+async function chatHeaders() {
+  const headers = { 'Content-Type': 'application/json' };
+  try {
+    const token = window.Clerk?.session ? await window.Clerk.session.getToken() : null;
+    if (token) headers['Authorization'] = 'Bearer ' + token;
+  } catch (e) { console.warn('[Clerk] getToken:', e.message); }
+  return headers;
+}
+
 async function send() {
   const inp = document.getElementById('msg-input');
   const text = inp.value.trim();
@@ -767,7 +777,7 @@ async function send() {
   try {
     const r = await fetch(`${SERVER}/chat`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: await chatHeaders(),
       body: JSON.stringify({ messages: chatHistory, brand: currentBrand, model: currentModel, year: currentYear })
     });
     const data = await r.json();
@@ -805,7 +815,7 @@ function handlePhoto(e) {
       try {
         const r = await fetch(`${SERVER}/chat`, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: await chatHeaders(),
           body: JSON.stringify({ messages: chatHistory, brand: currentBrand, model: currentModel, year: currentYear, imageBase64: base64, imageMediaType: 'image/jpeg' })
         });
         const data = await r.json();

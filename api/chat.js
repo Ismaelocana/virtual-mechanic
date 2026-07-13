@@ -205,29 +205,34 @@ async function logConsulta(brand, model, year, usedManual) {
   } catch (_) { /* logging no debe romper la respuesta principal */ }
 }
 
-// Rate limiting por usuario: ventana diaria sobre Upstash Redis.
-// Clave vm:rl:{userId}:{fecha}, INCR + EXPIRE 25h. Devuelve { ok, limit, count }.
+// Rate limiting por usuario: ventana rodante de 24h desde la 1ª consulta.
+// Clave vm:rl:{userId}, INCR + EXPIRE 24h NX (el TTL solo se fija en la primera
+// consulta, así el contador y su reinicio "ruedan" 24h desde entonces).
+// Devuelve { ok, limit, count, resetAt } (resetAt = epoch ms de reactivación).
 // Fail-open: si Redis no está configurado o falla, permite pasar (no bloquea el chat).
 async function comprobarRateLimit(userId) {
   const url = process.env.UPSTASH_REDIS_REST_URL;
   const token = process.env.UPSTASH_REDIS_REST_TOKEN;
   const limit = parseInt(process.env.RATE_LIMIT_PER_DAY, 10) || 10;
+  const WINDOW = 86400;                                            // 24h en segundos
   if (!url || !token) return { ok: true, limit };
   try {
-    const today = new Date().toISOString().slice(0, 10);           // YYYY-MM-DD (UTC)
-    const key = `vm:rl:${userId}:${today}`;
+    const key = `vm:rl:${userId}`;
     const res = await fetchWithTimeout(`${url}/pipeline`, {
       method: 'POST',
       headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
       body: JSON.stringify([
         ['INCR', key],
-        ['EXPIRE', key, '90000'],                                  // ~25h: la clave caduca sola tras su día
+        ['EXPIRE', key, String(WINDOW), 'NX'],                     // fija TTL solo si aún no lo tiene (1ª consulta)
+        ['PTTL', key],                                             // ms que quedan hasta el reinicio
       ])
     }, 3000);
     if (!res.ok) return { ok: true, limit };                       // fail-open si Redis responde mal
     const data = await res.json();
     const count = Array.isArray(data) && data[0] ? Number(data[0].result) : 0;
-    return { ok: count <= limit, limit, count };
+    const pttl = Array.isArray(data) && data[2] ? Number(data[2].result) : -1;
+    const resetAt = pttl > 0 ? Date.now() + pttl : null;
+    return { ok: count <= limit, limit, count, resetAt };
   } catch (e) {
     console.error('comprobarRateLimit error:', e.message);
     return { ok: true, limit };                                    // fail-open ante cualquier fallo
@@ -247,7 +252,7 @@ module.exports = async (req, res) => {
   // Fase 2: limitar consultas por usuario y día
   const rl = await comprobarRateLimit(userId);
   if (!rl.ok) {
-    return res.status(429).json({ error: 'Has alcanzado el límite diario de consultas. Vuelve a intentarlo mañana.' });
+    return res.status(429).json({ error: 'Has agotado tus consultas.', resetAt: rl.resetAt || null });
   }
 
   const { messages, brand, model, year, imageBase64, imageMediaType } = req.body;

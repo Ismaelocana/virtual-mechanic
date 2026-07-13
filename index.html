@@ -766,10 +766,21 @@ async function chatHeaders() {
   return headers;
 }
 
-// Mensaje amigable según el código de error HTTP de /api/chat
-function mensajeErrorChat(status) {
-  if (status === 429) return 'Has alcanzado el límite diario de consultas. Vuelve a intentarlo mañana.';
-  if (status === 401) return 'Tu sesión ha caducado. Vuelve a iniciar sesión.';
+// Mensaje amigable según el error HTTP de /api/chat. Para el 429 lee resetAt
+// del cuerpo y muestra la hora exacta (en horario local del usuario).
+async function mensajeErrorChat(r) {
+  if (r.status === 429) {
+    let resetAt = null;
+    try { resetAt = (await r.json()).resetAt; } catch (e) {}
+    if (resetAt) {
+      const f = new Date(resetAt);
+      const dia = f.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' });
+      const hora = f.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
+      return `Has agotado tus consultas. Vuelven a estar disponibles el ${dia} a las ${hora}.`;
+    }
+    return 'Has agotado tus consultas. Vuelve a intentarlo más tarde.';
+  }
+  if (r.status === 401) return 'Tu sesión ha caducado. Vuelve a iniciar sesión.';
   return 'Error al conectar con el servidor. Inténtalo de nuevo.';
 }
 
@@ -788,7 +799,7 @@ async function send() {
       body: JSON.stringify({ messages: chatHistory, brand: currentBrand, model: currentModel, year: currentYear })
     });
     hideTyping();
-    if (!r.ok) { addBot(mensajeErrorChat(r.status)); return; }
+    if (!r.ok) { addBot(await mensajeErrorChat(r)); return; }
     const data = await r.json();
     addBot(data.reply);
     chatHistory.push({ role: 'assistant', content: data.reply });
@@ -827,7 +838,7 @@ function handlePhoto(e) {
           body: JSON.stringify({ messages: chatHistory, brand: currentBrand, model: currentModel, year: currentYear, imageBase64: base64, imageMediaType: 'image/jpeg' })
         });
         hideTyping();
-        if (!r.ok) { addBot(mensajeErrorChat(r.status)); return; }
+        if (!r.ok) { addBot(await mensajeErrorChat(r)); return; }
         const data = await r.json();
         addBot(data.reply);
         chatHistory.push({ role: 'user', content: '[Foto enviada para diagnóstico]' });

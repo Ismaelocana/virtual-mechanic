@@ -11,9 +11,9 @@ const CLERK_DOMAIN = 'clerk.virtualmechanic.es';
 // Cache del JWKS en memoria (se refresca cada hora). Evita pedirlo en cada request.
 let _jwksCache = null;
 let _jwksFetchedAt = 0;
-async function getClerkJwks() {
+async function getClerkJwks(forzarRefresco = false) {
   const now = Date.now();
-  if (_jwksCache && (now - _jwksFetchedAt) < 3600000) return _jwksCache;
+  if (!forzarRefresco && _jwksCache && (now - _jwksFetchedAt) < 3600000) return _jwksCache;
   const res = await fetchWithTimeout(`https://${CLERK_DOMAIN}/.well-known/jwks.json`, {}, 5000);
   if (!res.ok) throw new Error(`JWKS ${res.status}`);
   const json = await res.json();
@@ -38,16 +38,21 @@ async function verificarSesion(req) {
     const signature = Buffer.from(parts[2], 'base64url');
     if (header.alg !== 'RS256' || !header.kid) return null;
 
-    const jwk = (await getClerkJwks()).find(k => k.kid === header.kid);
+    // Busca la clave por kid; si no está (Clerk rotó sus claves), refresca el JWKS y reintenta
+    let jwk = (await getClerkJwks()).find(k => k.kid === header.kid);
+    if (!jwk) jwk = (await getClerkJwks(true)).find(k => k.kid === header.kid);
     if (!jwk) return null;
     const pubKey = crypto.createPublicKey({ key: jwk, format: 'jwk' });
 
     const signingInput = Buffer.from(`${parts[0]}.${parts[1]}`);
     if (!crypto.verify('RSA-SHA256', signingInput, pubKey, signature)) return null;
 
+    // Margen de 60s para el desfase de reloj y los tokens de Clerk (viven ~60s):
+    // evita 401 esporádicos cuando el token llega al servidor al límite de su vida.
     const nowSec = Math.floor(Date.now() / 1000);
-    if (payload.exp && nowSec >= payload.exp) return null;       // caducado
-    if (payload.nbf && nowSec < payload.nbf - 5) return null;    // aún no válido (5s de margen)
+    const LEEWAY = 60;
+    if (payload.exp && nowSec >= payload.exp + LEEWAY) return null;   // caducado (con margen)
+    if (payload.nbf && nowSec < payload.nbf - LEEWAY) return null;    // aún no válido (con margen)
 
     return payload.sub || null;
   } catch (e) {

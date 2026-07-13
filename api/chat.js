@@ -205,23 +205,23 @@ async function logConsulta(brand, model, year, usedManual) {
   } catch (_) { /* logging no debe romper la respuesta principal */ }
 }
 
-// Rate limiting por usuario: ventana fija de 1 minuto sobre Upstash Redis.
-// Clave vm:rl:{userId}:{minuto}, INCR + EXPIRE 60s. Devuelve { ok, limit, count }.
+// Rate limiting por usuario: ventana diaria sobre Upstash Redis.
+// Clave vm:rl:{userId}:{fecha}, INCR + EXPIRE 25h. Devuelve { ok, limit, count }.
 // Fail-open: si Redis no está configurado o falla, permite pasar (no bloquea el chat).
 async function comprobarRateLimit(userId) {
   const url = process.env.UPSTASH_REDIS_REST_URL;
   const token = process.env.UPSTASH_REDIS_REST_TOKEN;
-  const limit = parseInt(process.env.RATE_LIMIT_PER_MIN, 10) || 10;
+  const limit = parseInt(process.env.RATE_LIMIT_PER_DAY, 10) || 10;
   if (!url || !token) return { ok: true, limit };
   try {
-    const bucket = Math.floor(Date.now() / 60000);
-    const key = `vm:rl:${userId}:${bucket}`;
+    const today = new Date().toISOString().slice(0, 10);           // YYYY-MM-DD (UTC)
+    const key = `vm:rl:${userId}:${today}`;
     const res = await fetchWithTimeout(`${url}/pipeline`, {
       method: 'POST',
       headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
       body: JSON.stringify([
         ['INCR', key],
-        ['EXPIRE', key, '60'],
+        ['EXPIRE', key, '90000'],                                  // ~25h: la clave caduca sola tras su día
       ])
     }, 3000);
     if (!res.ok) return { ok: true, limit };                       // fail-open si Redis responde mal
@@ -244,11 +244,10 @@ module.exports = async (req, res) => {
   const userId = await verificarSesion(req);
   if (!userId) return res.status(401).json({ error: 'No autenticado' });
 
-  // Fase 2: limitar peticiones por usuario y minuto
+  // Fase 2: limitar consultas por usuario y día
   const rl = await comprobarRateLimit(userId);
   if (!rl.ok) {
-    res.setHeader('Retry-After', '60');
-    return res.status(429).json({ error: 'Demasiadas peticiones. Espera un momento e inténtalo de nuevo.' });
+    return res.status(429).json({ error: 'Has alcanzado el límite diario de consultas. Vuelve a intentarlo mañana.' });
   }
 
   const { messages, brand, model, year, imageBase64, imageMediaType } = req.body;

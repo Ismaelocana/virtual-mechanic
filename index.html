@@ -768,7 +768,7 @@ async function chatHeaders() {
 
 // Mensaje amigable según el código de error HTTP de /api/chat
 function mensajeErrorChat(status) {
-  if (status === 429) return 'Vas muy rápido 🙂 Espera un momento antes de enviar otro mensaje.';
+  if (status === 429) return 'Has alcanzado el límite diario de consultas. Vuelve a intentarlo mañana.';
   if (status === 401) return 'Tu sesión ha caducado. Vuelve a iniciar sesión.';
   return 'Error al conectar con el servidor. Inténtalo de nuevo.';
 }

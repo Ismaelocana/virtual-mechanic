@@ -766,6 +766,13 @@ async function chatHeaders() {
   return headers;
 }
 
+// Mensaje amigable según el código de error HTTP de /api/chat
+function mensajeErrorChat(status) {
+  if (status === 429) return 'Vas muy rápido 🙂 Espera un momento antes de enviar otro mensaje.';
+  if (status === 401) return 'Tu sesión ha caducado. Vuelve a iniciar sesión.';
+  return 'Error al conectar con el servidor. Inténtalo de nuevo.';
+}
+
 async function send() {
   const inp = document.getElementById('msg-input');
   const text = inp.value.trim();
@@ -780,8 +787,9 @@ async function send() {
       headers: await chatHeaders(),
       body: JSON.stringify({ messages: chatHistory, brand: currentBrand, model: currentModel, year: currentYear })
     });
-    const data = await r.json();
     hideTyping();
+    if (!r.ok) { addBot(mensajeErrorChat(r.status)); return; }
+    const data = await r.json();
     addBot(data.reply);
     chatHistory.push({ role: 'assistant', content: data.reply });
     guardarChat();
@@ -818,8 +826,9 @@ function handlePhoto(e) {
           headers: await chatHeaders(),
           body: JSON.stringify({ messages: chatHistory, brand: currentBrand, model: currentModel, year: currentYear, imageBase64: base64, imageMediaType: 'image/jpeg' })
         });
-        const data = await r.json();
         hideTyping();
+        if (!r.ok) { addBot(mensajeErrorChat(r.status)); return; }
+        const data = await r.json();
         addBot(data.reply);
         chatHistory.push({ role: 'user', content: '[Foto enviada para diagnóstico]' });
         chatHistory.push({ role: 'assistant', content: data.reply });

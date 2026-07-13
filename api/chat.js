@@ -205,6 +205,35 @@ async function logConsulta(brand, model, year, usedManual) {
   } catch (_) { /* logging no debe romper la respuesta principal */ }
 }
 
+// Rate limiting por usuario: ventana fija de 1 minuto sobre Upstash Redis.
+// Clave vm:rl:{userId}:{minuto}, INCR + EXPIRE 60s. Devuelve { ok, limit, count }.
+// Fail-open: si Redis no está configurado o falla, permite pasar (no bloquea el chat).
+async function comprobarRateLimit(userId) {
+  const url = process.env.UPSTASH_REDIS_REST_URL;
+  const token = process.env.UPSTASH_REDIS_REST_TOKEN;
+  const limit = parseInt(process.env.RATE_LIMIT_PER_MIN, 10) || 10;
+  if (!url || !token) return { ok: true, limit };
+  try {
+    const bucket = Math.floor(Date.now() / 60000);
+    const key = `vm:rl:${userId}:${bucket}`;
+    const res = await fetchWithTimeout(`${url}/pipeline`, {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify([
+        ['INCR', key],
+        ['EXPIRE', key, '60'],
+      ])
+    }, 3000);
+    if (!res.ok) return { ok: true, limit };                       // fail-open si Redis responde mal
+    const data = await res.json();
+    const count = Array.isArray(data) && data[0] ? Number(data[0].result) : 0;
+    return { ok: count <= limit, limit, count };
+  } catch (e) {
+    console.error('comprobarRateLimit error:', e.message);
+    return { ok: true, limit };                                    // fail-open ante cualquier fallo
+  }
+}
+
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -214,6 +243,13 @@ module.exports = async (req, res) => {
   // Fase 1: exigir sesión válida de Clerk antes de procesar nada
   const userId = await verificarSesion(req);
   if (!userId) return res.status(401).json({ error: 'No autenticado' });
+
+  // Fase 2: limitar peticiones por usuario y minuto
+  const rl = await comprobarRateLimit(userId);
+  if (!rl.ok) {
+    res.setHeader('Retry-After', '60');
+    return res.status(429).json({ error: 'Demasiadas peticiones. Espera un momento e inténtalo de nuevo.' });
+  }
 
   const { messages, brand, model, year, imageBase64, imageMediaType } = req.body;
 

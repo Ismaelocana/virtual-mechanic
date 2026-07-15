@@ -99,6 +99,10 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .login-sent small { font-size: 11px; color: #BBB; }
 .btn-text { background: none; border: none; font-size: 13px; color: #EF9F27; cursor: pointer; padding: 4px 0; font-family: inherit; }
 .home-user { display: flex; align-items: center; gap: 12px; }
+.legal-footer { display: flex; gap: 7px; align-items: center; justify-content: center; flex-wrap: wrap; }
+.legal-footer a { font-size: 11px; color: #aaa; text-decoration: none; }
+.legal-footer a:hover { color: #EF9F27; }
+.legal-footer .sep { font-size: 11px; color: #DDD; }
 /* ── History ── */
 .btn-historial { width: 100%; padding: 12px; background: transparent; border: 1.5px solid #E0DDD6; border-radius: 12px; font-size: 14px; font-weight: 500; color: #555; cursor: pointer; display: none; }
 .btn-historial:hover { background: #F8F7F3; }
@@ -170,6 +174,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <small>El enlace caduca en 10 minutos</small>
       <button class="btn-text" onclick="volverAlLogin()">← Usar otro correo</button>
     </div>
+    <div class="legal-footer" style="margin-top:auto;padding-top:20px">
+      <a href="/aviso-legal">Aviso legal</a><span class="sep">·</span>
+      <a href="/privacidad">Privacidad</a><span class="sep">·</span>
+      <a href="/terminos">Términos</a>
+    </div>
   </div>
 
   <!-- HOME -->
@@ -200,6 +209,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <a href="mailto:soporte@virtualmechanic.es" style="font-size:11px;color:#aaa;text-decoration:none">Soporte</a>
       <span style="font-size:11px;color:#DDD">·</span>
       <button id="btn-signout" onclick="signOut()" style="font-size:11px;color:#aaa;background:none;border:none;cursor:pointer;font-family:inherit;padding:0">Cerrar sesión</button>
+    </div>
+    <div class="legal-footer">
+      <a href="/aviso-legal">Aviso legal</a><span class="sep">·</span>
+      <a href="/privacidad">Privacidad</a><span class="sep">·</span>
+      <a href="/terminos">Términos</a>
     </div>
   </div>
 

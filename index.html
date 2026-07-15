@@ -98,7 +98,10 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .login-sent p { font-size: 13px; color: #888; line-height: 1.5; }
 .login-sent small { font-size: 11px; color: #BBB; }
 .btn-text { background: none; border: none; font-size: 13px; color: #EF9F27; cursor: pointer; padding: 4px 0; font-family: inherit; }
-.home-user { display: flex; align-items: center; gap: 12px; }
+.home-user { display: flex; align-items: center; justify-content: center; gap: 7px; flex-wrap: wrap; }
+.home-user a, .home-user button { font-size: 11px; color: #aaa; text-decoration: none; background: none; border: none; cursor: pointer; font-family: inherit; padding: 0; }
+.home-user a:hover, .home-user button:hover { color: #EF9F27; }
+.home-user .sep { font-size: 11px; color: #DDD; }
 .legal-footer { display: flex; gap: 7px; align-items: center; justify-content: center; flex-wrap: wrap; }
 .legal-footer a { font-size: 11px; color: #aaa; text-decoration: none; }
 .legal-footer a:hover { color: #EF9F27; }
@@ -206,14 +209,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <button class="btn-historial" id="btn-historial" onclick="mostrarHistorial()">Mis consultas</button>
     <button class="btn-install" id="btn-install" onclick="instalarPWA()">↓ Instalar app</button>
     <div class="home-user">
-      <a href="mailto:soporte@virtualmechanic.es" style="font-size:11px;color:#aaa;text-decoration:none">Soporte</a>
-      <span style="font-size:11px;color:#DDD">·</span>
-      <button id="btn-signout" onclick="signOut()" style="font-size:11px;color:#aaa;background:none;border:none;cursor:pointer;font-family:inherit;padding:0">Cerrar sesión</button>
-    </div>
-    <div class="legal-footer">
       <a href="/aviso-legal">Aviso legal</a><span class="sep">·</span>
       <a href="/privacidad">Privacidad</a><span class="sep">·</span>
-      <a href="/terminos">Términos</a>
+      <a href="/terminos">Términos</a><span class="sep">·</span>
+      <a href="mailto:soporte@virtualmechanic.es">Atención al cliente</a><span class="sep">·</span>
+      <button id="btn-signout" onclick="signOut()">Cerrar sesión</button>
     </div>
   </div>
 

@@ -13,13 +13,17 @@
     { "src": "api/chat.js", "use": "@vercel/node" },
     { "src": "api/admin.js", "use": "@vercel/node" },
     { "src": "api/history.js", "use": "@vercel/node" },
-    { "src": "api/garage.js", "use": "@vercel/node" }
+    { "src": "api/garage.js", "use": "@vercel/node" },
+    { "src": "api/stripe-checkout.js", "use": "@vercel/node" },
+    { "src": "api/subscription.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/api/chat", "dest": "/api/chat.js" },
     { "src": "/api/admin", "dest": "/api/admin.js" },
     { "src": "/api/history", "dest": "/api/history.js" },
     { "src": "/api/garage", "dest": "/api/garage.js" },
+    { "src": "/api/stripe-checkout", "dest": "/api/stripe-checkout.js" },
+    { "src": "/api/subscription", "dest": "/api/subscription.js" },
     { "src": "/admin", "dest": "/admin.html" },
     { "src": "/aviso-legal", "dest": "/aviso-legal.html" },
     { "src": "/privacidad", "dest": "/privacidad.html" },

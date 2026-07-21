@@ -1,15 +1,8 @@
 // POST /api/stripe-checkout — crea una sesión de Stripe Checkout (suscripción)
 // asociada al userId de Clerk autenticado. Devuelve { url } para redirigir.
 // El estado premium NO se marca aquí: solo lo hará el webhook al confirmarse el pago.
-const Stripe = require('stripe');
 const { verificarSesion, getSubscription, hsetSubscription, mapCustomerToUser } = require('./_common');
-
-// Lazy init: no construir Stripe en la carga del módulo (evita crashear si falta la clave).
-let _stripe = null;
-function getStripe() {
-  if (!_stripe) _stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-  return _stripe;
-}
+const { stripeRequest } = require('./_stripe');
 
 const PRICES = {
   monthly: process.env.STRIPE_PRICE_MONTHLY,
@@ -38,13 +31,11 @@ module.exports = async (req, res) => {
   }
 
   try {
-    const stripe = getStripe();
-
     // 3) Reutiliza el Customer del usuario si ya existe; si no, lo crea y lo guarda
     const sub = await getSubscription(userId);
     let customerId = sub.customerId;
     if (!customerId) {
-      const customer = await stripe.customers.create({ metadata: { clerkUserId: userId } });
+      const customer = await stripeRequest('customers', { metadata: { clerkUserId: userId } });
       customerId = customer.id;
       await hsetSubscription(userId, { customerId });
       await mapCustomerToUser(customerId, userId);
@@ -55,7 +46,7 @@ module.exports = async (req, res) => {
 
     // 5) Sesión de Checkout. client_reference_id y metadata llevan el userId de Clerk
     //    para que el webhook sepa a quién marcar como premium.
-    const session = await stripe.checkout.sessions.create({
+    const session = await stripeRequest('checkout/sessions', {
       mode: 'subscription',
       customer: customerId,
       client_reference_id: userId,

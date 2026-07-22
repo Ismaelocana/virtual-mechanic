@@ -29,7 +29,7 @@ module.exports = async (req, res) => {
     return res.status(503).json({ error: 'Redis no configurado' });
   }
 
-  const { messageId, brand, model, year, question, usedManual, vote } = req.body || {};
+  const { messageId, brand, model, year, question, answer, usedManual, vote } = req.body || {};
   if (!messageId || (vote !== 'up' && vote !== 'down')) {
     return res.status(400).json({ error: 'Datos de feedback inválidos' });
   }
@@ -40,6 +40,7 @@ module.exports = async (req, res) => {
       model: model || '',
       year: year || '',
       question: String(question || '').slice(0, 300),
+      answer: String(answer || '').slice(0, 8000),
       usedManual: !!usedManual,
       vote,
       t: Date.now()

@@ -824,7 +824,7 @@ function addBot(text, opts = {}) {
   if (usedManual !== undefined && messageId) {
     feedbackHtml = feedback
       ? `<div class="msg-feedback"><span class="fb-done">✓ Gracias por tu opinión</span></div>`
-      : `<div id="fb-${messageId}" class="msg-feedback" data-question="${escapeHtml(question || '')}" data-used-manual="${usedManual ? '1' : '0'}">
+      : `<div id="fb-${messageId}" class="msg-feedback" data-question="${escapeHtml(question || '')}" data-answer="${escapeHtml(text || '')}" data-used-manual="${usedManual ? '1' : '0'}">
           <button class="fb-btn" onclick="votarFeedback('${messageId}','up')" title="Respuesta útil">👍</button>
           <button class="fb-btn" onclick="votarFeedback('${messageId}','down')" title="Respuesta poco útil">👎</button>
         </div>`;
@@ -843,6 +843,7 @@ async function votarFeedback(id, vote) {
   if (!row || row.dataset.voted) return;
   row.dataset.voted = '1';
   const question = row.dataset.question || '';
+  const answer = row.dataset.answer || '';
   const usedManual = row.dataset.usedManual === '1';
   row.innerHTML = `<span class="fb-done">✓ Gracias por tu opinión</span>`;
 
@@ -861,6 +862,7 @@ async function votarFeedback(id, vote) {
         model: currentModel,
         year: currentYear,
         question,
+        answer,
         usedManual
       })
     });

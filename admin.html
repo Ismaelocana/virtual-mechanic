@@ -74,6 +74,17 @@
     table { width: 100%; border-collapse: collapse; }
     th { padding: 10px 14px; text-align: left; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); border-bottom: 1px solid var(--border); }
     td { padding: 10px 14px; font-size: 0.875rem; border-bottom: 1px solid var(--border); }
+    .fb-row { cursor: pointer; }
+    .fb-row:hover { background: rgba(255,255,255,0.03); }
+    .fb-row-down { background: rgba(255,107,53,0.06); }
+    .fb-row-down:hover { background: rgba(255,107,53,0.1); }
+    .fb-chevron { display: inline-block; transition: transform .15s; color: var(--muted); }
+    .fb-detail-row td { padding: 0; border-bottom: 1px solid var(--border); }
+    .fb-detail { padding: 14px 18px; }
+    .fb-detail-down { border-left: 3px solid var(--accent); }
+    .fb-detail-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); margin-bottom: 4px; }
+    .fb-detail-text { font-size: 0.875rem; color: var(--text); white-space: pre-wrap; line-height: 1.5; margin-bottom: 12px; }
+    .fb-detail-text:last-child { margin-bottom: 0; }
     tr:last-child td { border-bottom: none; }
     tr:hover td { background: rgba(255,255,255,0.02); }
     .bar-inline { height: 4px; background: var(--accent); border-radius: 2px; margin-top: 4px; opacity: 0.5; }
@@ -154,7 +165,7 @@
       <div class="cards" id="fbCards" style="margin-bottom:14px"></div>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Moto</th><th>Pregunta</th><th>Fuente</th><th style="text-align:center">Voto</th><th style="text-align:right">Cuándo</th></tr></thead>
+          <thead><tr><th style="width:20px"></th><th>Moto</th><th>Pregunta</th><th>Fuente</th><th style="text-align:center">Voto</th><th style="text-align:right">Cuándo</th></tr></thead>
           <tbody id="fbTable"></tbody>
         </table>
       </div>
@@ -173,6 +184,15 @@ let password = sessionStorage.getItem('vm_admin_pwd') || '';
 
 function escapeHtml(s) {
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function toggleFbDetail(i) {
+  const row = document.getElementById('fb-detail-' + i);
+  const chev = document.getElementById('fb-chevron-' + i);
+  if (!row) return;
+  const abriendo = row.style.display === 'none';
+  row.style.display = abriendo ? 'table-row' : 'none';
+  if (chev) chev.style.transform = abriendo ? 'rotate(90deg)' : 'rotate(0deg)';
 }
 
 function timeAgo(ms) {
@@ -306,15 +326,31 @@ function renderDashboard(data) {
     </div>
   `;
 
-  document.getElementById('fbTable').innerHTML = (data.fbRecent || []).slice(0, 20).map(f => `
-    <tr>
+  // Cada valoracion pinta una fila resumen (clicable) + una fila de detalle
+  // oculta con la pregunta y la respuesta completas. Las 👎 se destacan
+  // visualmente (fondo y borde) porque son las que hay que revisar.
+  document.getElementById('fbTable').innerHTML = (data.fbRecent || []).slice(0, 20).map((f, i) => {
+    const esNegativo = f.vote !== 'up';
+    return `
+    <tr class="fb-row ${esNegativo ? 'fb-row-down' : ''}" onclick="toggleFbDetail(${i})">
+      <td><span class="fb-chevron" id="fb-chevron-${i}">▸</span></td>
       <td><strong>${escapeHtml(f.brand)}</strong> ${escapeHtml(f.model || '')} <span style="color:var(--muted)">${escapeHtml(f.year || '')}</span></td>
       <td style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${escapeHtml(f.question || '')}">${escapeHtml(f.question || '')}</td>
       <td>${f.usedManual ? '📖' : '🧠'}</td>
       <td style="text-align:center">${f.vote === 'up' ? '👍' : '👎'}</td>
       <td style="text-align:right;color:var(--muted)">${timeAgo(f.t)}</td>
-    </tr>`
-  ).join('') || '<tr><td colspan="5" style="color:var(--muted);text-align:center">Sin valoraciones todavía</td></tr>';
+    </tr>
+    <tr class="fb-detail-row" id="fb-detail-${i}" style="display:none">
+      <td colspan="6">
+        <div class="fb-detail ${esNegativo ? 'fb-detail-down' : ''}">
+          <div class="fb-detail-label">Pregunta</div>
+          <div class="fb-detail-text">${escapeHtml(f.question || '(sin pregunta)')}</div>
+          <div class="fb-detail-label">Respuesta del bot</div>
+          <div class="fb-detail-text">${escapeHtml(f.answer || '(sin respuesta guardada — feedback anterior a esta función)')}</div>
+        </div>
+      </td>
+    </tr>`;
+  }).join('') || '<tr><td colspan="6" style="color:var(--muted);text-align:center">Sin valoraciones todavía</td></tr>';
 
   // Recent queries
   document.getElementById('queryList').innerHTML = data.recent.slice(0, 20).map(q =>

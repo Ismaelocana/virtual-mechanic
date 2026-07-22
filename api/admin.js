@@ -23,7 +23,7 @@ module.exports = async (req, res) => {
   }
 
   if (!process.env.UPSTASH_REDIS_REST_URL) {
-    return res.json({ total: 0, today: 0, manual: 0, general: 0, days: [], brands: [], recent: [] });
+    return res.json({ total: 0, today: 0, manual: 0, general: 0, days: [], brands: [], recent: [], sinManual: [] });
   }
 
   const today = new Date().toISOString().slice(0, 10);
@@ -43,13 +43,14 @@ module.exports = async (req, res) => {
     ['GET', `vm:day:${today}`],
     ['ZREVRANGE', 'vm:brands', '0', '19', 'WITHSCORES'],
     ['LRANGE', 'vm:recent', '0', '49'],
+    ['ZREVRANGE', 'vm:sin_manual', '0', '19', 'WITHSCORES'],
     ...dayKeys.map(d => ['GET', `vm:day:${d}`])
   ];
 
   const results = await redisPipeline(pipeline);
-  if (!results) return res.json({ total: 0, today: 0, manual: 0, general: 0, days: [], brands: [], recent: [] });
+  if (!results) return res.json({ total: 0, today: 0, manual: 0, general: 0, days: [], brands: [], recent: [], sinManual: [] });
 
-  const [totalR, manualR, generalR, todayR, brandsR, recentR, ...dayResults] = results.map(r => r.result);
+  const [totalR, manualR, generalR, todayR, brandsR, recentR, sinManualR, ...dayResults] = results.map(r => r.result);
 
   // Marcas: sorted set viene como array [nombre, score, nombre, score, ...]
   const brands = [];
@@ -64,6 +65,16 @@ module.exports = async (req, res) => {
     ? recentR.map(r => { try { return JSON.parse(r); } catch { return null; } }).filter(Boolean)
     : [];
 
+  // Sin manual: sorted set brand|model|year -> nº de veces que se respondió sin manual.
+  // Agregado persistente (no se pierde al salir de las últimas 200 de "recent").
+  const sinManual = [];
+  if (Array.isArray(sinManualR)) {
+    for (let i = 0; i < sinManualR.length; i += 2) {
+      const [brand, model, year] = String(sinManualR[i]).split('|');
+      sinManual.push({ brand, model, year, count: parseInt(sinManualR[i + 1]) || 0 });
+    }
+  }
+
   // Días: ordenar de antiguo a reciente
   const days = dayKeys.map((date, i) => ({ date, count: parseInt(dayResults[i]) || 0 })).reverse();
 
@@ -74,6 +85,7 @@ module.exports = async (req, res) => {
     general: parseInt(generalR) || 0,
     days,
     brands,
-    recent
+    recent,
+    sinManual
   });
 };

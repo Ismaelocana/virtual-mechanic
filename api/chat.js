@@ -195,18 +195,25 @@ async function logConsulta(brand, model, year, usedManual) {
   try {
     const today = new Date().toISOString().slice(0, 10);
     const entry = JSON.stringify({ brand, model, year, usedManual, t: Date.now() });
+    const comandos = [
+      ['INCR', 'vm:total'],
+      ['INCR', `vm:day:${today}`],
+      ['EXPIRE', `vm:day:${today}`, '7776000'],
+      ['ZINCRBY', 'vm:brands', '1', `${brand}|${model}`],
+      ['INCR', usedManual ? 'vm:manual' : 'vm:general'],
+      ['LPUSH', 'vm:recent', entry],
+      ['LTRIM', 'vm:recent', '0', '199'],
+    ];
+    // Agregado persistente (no se pierde al salir de las últimas 200 consultas)
+    // de qué combinación marca+modelo+año se responde sin manual, para priorizar
+    // qué manuales indexar o qué mapeos de normalizarModelo revisar.
+    if (!usedManual) {
+      comandos.push(['ZINCRBY', 'vm:sin_manual', '1', `${brand}|${model}|${year}`]);
+    }
     await fetch(`${url}/pipeline`, {
       method: 'POST',
       headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify([
-        ['INCR', 'vm:total'],
-        ['INCR', `vm:day:${today}`],
-        ['EXPIRE', `vm:day:${today}`, '7776000'],
-        ['ZINCRBY', 'vm:brands', '1', `${brand}|${model}`],
-        ['INCR', usedManual ? 'vm:manual' : 'vm:general'],
-        ['LPUSH', 'vm:recent', entry],
-        ['LTRIM', 'vm:recent', '0', '199'],
-      ])
+      body: JSON.stringify(comandos)
     });
   } catch (_) { /* logging no debe romper la respuesta principal */ }
 }

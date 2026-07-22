@@ -1152,21 +1152,46 @@ function irAlHome() {
 }
 
 // ── Suscripción / Premium ─────────────────────────────────────────────────────
+const SUB_CACHE_PREFIX = 'vm_sub_';
+
+function leerCacheSuscripcion(userId) {
+  try {
+    const raw = localStorage.getItem(SUB_CACHE_PREFIX + userId);
+    return raw ? JSON.parse(raw) : null;
+  } catch (e) { return null; }
+}
+
+function guardarCacheSuscripcion(userId, premium) {
+  try { localStorage.setItem(SUB_CACHE_PREFIX + userId, JSON.stringify({ premium })); } catch (e) {}
+}
+
+function renderSubStatus(el, premium) {
+  el.innerHTML = premium
+    ? `<div class="premium-badge">⭐ Premium</div><div><button class="btn-text" onclick="abrirPortal()">Gestionar suscripción</button></div>`
+    : `<button class="btn-text" onclick="mostrarModalPremium()">Hazte Premium</button>`;
+}
+
+// Muestra al instante el último estado de suscripción conocido (localStorage,
+// por usuario) mientras se confirma en segundo plano contra el servidor —
+// evita el hueco vacío en cada visita mientras se resuelve la red (Clerk +
+// Vercel + Redis). Si no hay nada guardado (primera vez), se ve el hueco
+// solo esa vez.
 async function cargarEstadoSuscripcion() {
   const el = document.getElementById('sub-status');
   if (!el || !window.currentUserId) { if (el) el.innerHTML = ''; return; }
+
+  const cache = leerCacheSuscripcion(window.currentUserId);
+  if (cache) renderSubStatus(el, cache.premium);
+
   try {
     const r = await fetch('/api/subscription', { headers: await chatHeaders() });
-    if (!r.ok) { el.innerHTML = ''; return; }
+    if (!r.ok) { if (!cache) el.innerHTML = ''; return; }
     const data = await r.json();
-    if (data.premium) {
-      el.innerHTML = `<div class="premium-badge">⭐ Premium</div><div><button class="btn-text" onclick="abrirPortal()">Gestionar suscripción</button></div>`;
-    } else {
-      el.innerHTML = `<button class="btn-text" onclick="mostrarModalPremium()">Hazte Premium</button>`;
-    }
+    renderSubStatus(el, data.premium);
+    guardarCacheSuscripcion(window.currentUserId, data.premium);
   } catch (e) {
     console.warn('[subscription] error:', e.message);
-    el.innerHTML = '';
+    if (!cache) el.innerHTML = '';
   }
 }
 

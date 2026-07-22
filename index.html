@@ -118,6 +118,27 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .history-empty { text-align: center; color: #BBB; font-size: 13px; padding: 3rem 1.5rem; line-height: 1.6; }
 .garage-moto { font-size: 14px; font-weight: 600; color: #111; }
 .garage-meta { font-size: 11px; color: #888; margin-top: 2px; }
+
+/* ── Suscripción / Premium ── */
+.sub-status { min-height: 20px; }
+.premium-badge { display: inline-flex; align-items: center; gap: 5px; padding: 4px 12px; background: #FFF7EC; border: 1px solid #F5D9A8; border-radius: 20px; font-size: 12px; font-weight: 600; color: #8a5a00; }
+.sub-status .btn-text { font-size: 12px; }
+.modal-overlay { position: absolute; inset: 0; background: rgba(20,15,5,.5); display: none; align-items: center; justify-content: center; padding: 1.5rem; z-index: 100; }
+.modal-overlay.show { display: flex; }
+.modal-box { background: #fff; border-radius: 20px; padding: 1.75rem 1.5rem; width: 100%; max-width: 320px; text-align: center; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,.25); }
+.modal-close { position: absolute; top: 12px; right: 12px; width: 28px; height: 28px; border: none; background: #F5F5F0; border-radius: 50%; color: #999; font-size: 14px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.modal-close:hover { background: #EFEDE7; }
+.modal-icon { font-size: 30px; margin-bottom: 4px; }
+.modal-box h2 { font-size: 18px; font-weight: 700; color: #111; margin-bottom: 8px; }
+.modal-msg { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 18px; }
+.premium-plans { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+.plan-btn { position: relative; width: 100%; padding: 14px 16px; border: 1.5px solid #E5E5E5; border-radius: 14px; background: #FAFAFA; cursor: pointer; font-family: inherit; display: flex; align-items: center; justify-content: space-between; text-align: left; }
+.plan-btn:hover { border-color: #EF9F27; background: #FFF7EC; }
+.plan-btn-highlight { border-color: #EF9F27; background: #FFF7EC; }
+.plan-name { font-size: 14px; font-weight: 600; color: #111; }
+.plan-price { font-size: 15px; font-weight: 700; color: #412402; }
+.plan-price small { font-size: 11px; font-weight: 500; color: #999; }
+.plan-badge { position: absolute; top: -9px; left: 14px; background: #EF9F27; color: #412402; font-size: 10px; font-weight: 700; padding: 2px 9px; border-radius: 10px; }
 </style>
 </head>
 <body>
@@ -193,6 +214,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <h1>Virtual Mechanic</h1>
       <p>Tu mecánico de motos con IA</p>
     </div>
+    <div id="sub-status" class="sub-status"></div>
     <div class="features">
       <div class="feature">
         <div class="feature-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2L9.5 5.5H13.5L10.5 7.5L11.5 11L8 9L4.5 11L5.5 7.5L2.5 5.5H6.5L8 2Z" stroke="#633806" stroke-width="1.2" stroke-linejoin="round"/></svg></div>
@@ -314,6 +336,28 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <button class="btn-send" onclick="send()">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="#412402" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
+    </div>
+  </div>
+
+  <!-- MODAL PREMIUM -->
+  <div id="modal-premium" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close" onclick="cerrarModalPremium()">✕</button>
+      <div class="modal-icon">⭐</div>
+      <h2>Hazte Premium</h2>
+      <p id="modal-premium-msg" class="modal-msg">Disfruta de consultas ilimitadas con tu mecánico de IA.</p>
+      <div class="premium-plans">
+        <button class="plan-btn" onclick="iniciarCheckout('monthly')">
+          <span class="plan-name">Mensual</span>
+          <span class="plan-price">4,99&euro;<small>/mes</small></span>
+        </button>
+        <button class="plan-btn plan-btn-highlight" onclick="iniciarCheckout('annual')">
+          <span class="plan-badge">Ahorra 2 meses</span>
+          <span class="plan-name">Anual</span>
+          <span class="plan-price">49,99&euro;<small>/año</small></span>
+        </button>
+      </div>
+      <button class="btn-text" onclick="cerrarModalPremium()">Seguir con el plan gratuito</button>
     </div>
   </div>
 
@@ -786,21 +830,21 @@ async function chatHeaders() {
   return headers;
 }
 
-// Mensaje amigable según el error HTTP de /api/chat. Para el 429 lee resetAt
-// del cuerpo y muestra la hora exacta (en horario local del usuario).
-async function mensajeErrorChat(r) {
-  if (r.status === 429) {
-    let resetAt = null;
-    try { resetAt = (await r.json()).resetAt; } catch (e) {}
-    if (resetAt) {
-      const f = new Date(resetAt);
-      const dia = f.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' });
-      const hora = f.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
-      return `Has agotado tus consultas. Vuelven a estar disponibles el ${dia} a las ${hora}.`;
-    }
+// Formatea un epoch ms como "<día> a las <hora>" en horario local del usuario
+function formatoFecha(epochMs) {
+  const f = new Date(epochMs);
+  const dia = f.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' });
+  const hora = f.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
+  return `${dia} a las ${hora}`;
+}
+
+// Mensaje amigable según el error HTTP de /api/chat y el cuerpo ya parseado.
+function mensajeErrorChat(status, data) {
+  if (status === 429) {
+    if (data && data.resetAt) return `Has agotado tus consultas. Vuelven a estar disponibles el ${formatoFecha(data.resetAt)}.`;
     return 'Has agotado tus consultas. Vuelve a intentarlo más tarde.';
   }
-  if (r.status === 401) return 'Tu sesión ha caducado. Vuelve a iniciar sesión.';
+  if (status === 401) return 'Tu sesión ha caducado. Vuelve a iniciar sesión.';
   return 'Error al conectar con el servidor. Inténtalo de nuevo.';
 }
 
@@ -819,7 +863,12 @@ async function send() {
       body: JSON.stringify({ messages: chatHistory, brand: currentBrand, model: currentModel, year: currentYear })
     });
     hideTyping();
-    if (!r.ok) { addBot(await mensajeErrorChat(r)); return; }
+    if (!r.ok) {
+      const errData = await r.json().catch(() => ({}));
+      addBot(mensajeErrorChat(r.status, errData));
+      if (r.status === 429) mostrarModalPremium(errData.resetAt);
+      return;
+    }
     const data = await r.json();
     addBot(data.reply);
     chatHistory.push({ role: 'assistant', content: data.reply });
@@ -858,7 +907,12 @@ function handlePhoto(e) {
           body: JSON.stringify({ messages: chatHistory, brand: currentBrand, model: currentModel, year: currentYear, imageBase64: base64, imageMediaType: 'image/jpeg' })
         });
         hideTyping();
-        if (!r.ok) { addBot(await mensajeErrorChat(r)); return; }
+        if (!r.ok) {
+          const errData = await r.json().catch(() => ({}));
+          addBot(mensajeErrorChat(r.status, errData));
+          if (r.status === 429) mostrarModalPremium(errData.resetAt);
+          return;
+        }
         const data = await r.json();
         addBot(data.reply);
         chatHistory.push({ role: 'user', content: '[Foto enviada para diagnóstico]' });
@@ -1085,6 +1139,64 @@ function irAlHome() {
   document.getElementById('btn-historial').style.display = window.currentUserId ? 'block' : 'none';
   document.getElementById('btn-mi-garaje').style.display = '';
   showScreen('home');
+  cargarEstadoSuscripcion();
+}
+
+// ── Suscripción / Premium ─────────────────────────────────────────────────────
+async function cargarEstadoSuscripcion() {
+  const el = document.getElementById('sub-status');
+  if (!el || !window.currentUserId) { if (el) el.innerHTML = ''; return; }
+  try {
+    const r = await fetch('/api/subscription', { headers: await chatHeaders() });
+    if (!r.ok) { el.innerHTML = ''; return; }
+    const data = await r.json();
+    if (data.premium) {
+      el.innerHTML = `<div class="premium-badge">⭐ Premium</div><div><button class="btn-text" onclick="abrirPortal()">Gestionar suscripción</button></div>`;
+    } else {
+      el.innerHTML = `<button class="btn-text" onclick="mostrarModalPremium()">Hazte Premium</button>`;
+    }
+  } catch (e) {
+    console.warn('[subscription] error:', e.message);
+    el.innerHTML = '';
+  }
+}
+
+function mostrarModalPremium(resetAt) {
+  const msgEl = document.getElementById('modal-premium-msg');
+  msgEl.textContent = resetAt
+    ? `Has agotado tus 10 consultas gratuitas de hoy. Vuelven a estar disponibles el ${formatoFecha(resetAt)}. Hazte Premium para consultas ilimitadas.`
+    : 'Disfruta de consultas ilimitadas con tu mecánico de IA.';
+  document.getElementById('modal-premium').classList.add('show');
+}
+
+function cerrarModalPremium() {
+  document.getElementById('modal-premium').classList.remove('show');
+}
+
+async function iniciarCheckout(plan) {
+  try {
+    const r = await fetch('/api/stripe-checkout', {
+      method: 'POST',
+      headers: await chatHeaders(),
+      body: JSON.stringify({ plan })
+    });
+    const data = await r.json();
+    if (r.ok && data.url) { window.location.href = data.url; return; }
+    alert(data.error || 'No se pudo iniciar el pago. Inténtalo de nuevo.');
+  } catch (e) {
+    alert('Error al conectar con el servidor. Inténtalo de nuevo.');
+  }
+}
+
+async function abrirPortal() {
+  try {
+    const r = await fetch('/api/stripe-portal', { method: 'POST', headers: await chatHeaders() });
+    const data = await r.json();
+    if (r.ok && data.url) { window.location.href = data.url; return; }
+    alert(data.error || 'No se pudo abrir la gestión de tu suscripción.');
+  } catch (e) {
+    alert('Error al conectar con el servidor. Inténtalo de nuevo.');
+  }
 }
 
 function guardarChat() {

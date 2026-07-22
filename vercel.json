@@ -18,8 +18,7 @@
     { "src": "api/stripe-webhook.js", "use": "@vercel/node" },
     { "src": "api/stripe-portal.js", "use": "@vercel/node" },
     { "src": "api/subscription.js", "use": "@vercel/node" },
-    { "src": "api/feedback.js", "use": "@vercel/node" },
-    { "src": "api/stream-test.js", "use": "@vercel/node" }
+    { "src": "api/feedback.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/api/chat", "dest": "/api/chat.js" },
@@ -31,7 +30,6 @@
     { "src": "/api/stripe-portal", "dest": "/api/stripe-portal.js" },
     { "src": "/api/subscription", "dest": "/api/subscription.js" },
     { "src": "/api/feedback", "dest": "/api/feedback.js" },
-    { "src": "/api/stream-test", "dest": "/api/stream-test.js" },
     { "src": "/admin", "dest": "/admin.html" },
     { "src": "/aviso-legal", "dest": "/aviso-legal.html" },
     { "src": "/privacidad", "dest": "/privacidad.html" },

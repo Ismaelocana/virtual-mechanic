@@ -1,6 +1,7 @@
 const crypto = require('crypto');
 const Anthropic = require('@anthropic-ai/sdk');
 const { Pinecone } = require('@pinecone-database/pinecone');
+const { esPremium } = require('./_common');
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
@@ -254,10 +255,16 @@ module.exports = async (req, res) => {
   const userId = await verificarSesion(req);
   if (!userId) return res.status(401).json({ error: 'No autenticado' });
 
-  // Fase 2: limitar consultas por usuario y día
-  const rl = await comprobarRateLimit(userId);
-  if (!rl.ok) {
-    return res.status(429).json({ error: 'Has agotado tus consultas.', resetAt: rl.resetAt || null });
+  // Los usuarios premium no tienen límite de consultas.
+  // (esPremium es fail-safe: ante cualquier fallo devuelve false y se aplica el límite)
+  const premium = await esPremium(userId);
+
+  // Fase 2: limitar consultas por usuario y día — solo para el plan gratuito
+  if (!premium) {
+    const rl = await comprobarRateLimit(userId);
+    if (!rl.ok) {
+      return res.status(429).json({ error: 'Has agotado tus consultas.', resetAt: rl.resetAt || null });
+    }
   }
 
   const { messages, brand, model, year, imageBase64, imageMediaType } = req.body;

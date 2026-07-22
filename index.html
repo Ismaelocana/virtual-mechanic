@@ -85,6 +85,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .fb-btn { width: 22px; height: 22px; border: 1px solid #EFEDE7; background: transparent; border-radius: 6px; cursor: pointer; font-size: 12px; padding: 0; line-height: 1; display: flex; align-items: center; justify-content: center; opacity: .85; }
 .fb-btn:hover { background: #F8F7F3; border-color: #EF9F27; opacity: 1; }
 .fb-done { font-size: 10px; color: #999; }
+.chips-sugeridos { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 0 4px 34px; }
+.chip-sugerido { padding: 7px 12px; background: #F8F7F3; border: 1px solid #EFEFEF; border-radius: 16px; font-size: 12px; font-weight: 500; color: #333; cursor: pointer; font-family: inherit; white-space: nowrap; }
+.chip-sugerido:hover { background: #F0EDE6; border-color: #EF9F27; }
 .msg-user { display: flex; justify-content: flex-end; }
 .msg-bubble-user { background: #EF9F27; border-radius: 12px 0 12px 12px; padding: 10px 12px; max-width: 260px; font-size: 13px; color: #412402; line-height: 1.6; }
 .chat-input { padding: .75rem 1rem; border-top: 1px solid #F0EDE6; display: flex; gap: 8px; align-items: flex-end; flex-shrink: 0; }
@@ -737,6 +740,7 @@ function selectYear(year) {
   const welcome = `¡Hola! Soy tu mecánico virtual especializado en ${currentBrand}. Estoy aquí para ayudarte con tu ${currentModel} del ${currentYear}. Cuéntame qué le pasa y lo diagnosticamos juntos.`;
   addBot(welcome);
   chatHistory.push({ role: 'assistant', content: welcome });
+  insertarChipsSugeridos();
   showScreen('chat');
 }
 
@@ -963,6 +967,43 @@ function addUser(text) {
   msgs.scrollTop = msgs.scrollHeight;
 }
 
+// ── Chips de preguntas sugeridas (solo al empezar una consulta nueva) ────────
+// Genéricos para cualquier moto; se insertan una vez tras el saludo y
+// desaparecen en cuanto el usuario manda su primer mensaje (texto, foto o
+// pulsando uno de los propios chips). No forman parte de chatHistory: al
+// pulsar uno se envía como una pregunta normal, indistinguible de una
+// escrita a mano.
+const CHIPS_SUGERIDOS = [
+  { label: '🛢️ Cambio de aceite', pregunta: '¿Cada cuánto y con qué aceite toca hacer el cambio en esta moto?' },
+  { label: '🔧 Pares de apriete', pregunta: '¿Cuáles son los pares de apriete más importantes de esta moto?' },
+  { label: '🗓️ Mantenimiento por horas', pregunta: '¿Qué mantenimiento toca según las horas de uso de esta moto?' },
+  { label: '⚠️ No arranca', pregunta: 'Mi moto no arranca, ¿qué puede ser y cómo lo reviso?' },
+];
+
+function insertarChipsSugeridos() {
+  const msgs = document.getElementById('messages');
+  const row = document.createElement('div');
+  row.id = 'chips-sugeridos';
+  row.className = 'chips-sugeridos';
+  row.innerHTML = CHIPS_SUGERIDOS.map((c, i) =>
+    `<button class="chip-sugerido" onclick="preguntarSugerencia(${i})">${c.label}</button>`
+  ).join('');
+  msgs.appendChild(row);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function quitarChipsSugeridos() {
+  const el = document.getElementById('chips-sugeridos');
+  if (el) el.remove();
+}
+
+function preguntarSugerencia(i) {
+  const chip = CHIPS_SUGERIDOS[i];
+  if (!chip) return;
+  document.getElementById('msg-input').value = chip.pregunta;
+  send();
+}
+
 function showTyping() {
   const msgs = document.getElementById('messages');
   const d = document.createElement('div');
@@ -1006,6 +1047,7 @@ async function send() {
   const text = inp.value.trim();
   if (!text) return;
   inp.value = ''; resize(inp);
+  quitarChipsSugeridos();
   addUser(text);
   chatHistory.push({ role: 'user', content: text });
   showTyping();
@@ -1034,6 +1076,7 @@ function resize(el) { el.style.height = 'auto'; el.style.height = Math.min(el.sc
 function handlePhoto(e) {
   const f = e.target.files[0]; if (!f) return;
   e.target.value = '';
+  quitarChipsSugeridos();
   const reader = new FileReader();
   reader.onload = function(ev) {
     const img = new Image();
@@ -1574,6 +1617,7 @@ function cargarMoto(bike) {
   const welcome = `¡Hola! Soy tu mecánico virtual especializado en ${currentBrand}. Estoy aquí para ayudarte con tu ${currentModel} del ${currentYear}. Cuéntame qué le pasa y lo diagnosticamos juntos.`;
   addBot(welcome);
   chatHistory.push({ role: 'assistant', content: welcome });
+  insertarChipsSugeridos();
   showScreen('chat');
 }
 

@@ -34,35 +34,47 @@ async function getClerkJwks(forzarRefresco = false) {
   return _jwksCache;
 }
 
+// Log de diagnóstico: registra POR QUÉ se rechaza una sesión, sin loguear
+// nunca el token ni datos sensibles. Temporal, para distinguir en los logs
+// de Vercel "sin token" de "caducado de verdad" de "firma inválida".
+function rechazarSesion(motivo, detalle) {
+  console.warn(`[verificarSesion] 401: ${motivo}${detalle ? ' | ' + detalle : ''}`);
+  return null;
+}
+
 // Devuelve el userId (claim `sub`) si el token es válido, o null si falta/es inválido.
 async function verificarSesion(req) {
   const auth = req.headers['authorization'] || req.headers['Authorization'];
-  if (!auth || !auth.startsWith('Bearer ')) return null;
+  if (!auth || !auth.startsWith('Bearer ')) return rechazarSesion('sin header Authorization Bearer');
   const token = auth.slice(7).trim();
   const parts = token.split('.');
-  if (parts.length !== 3) return null;
+  if (parts.length !== 3) return rechazarSesion('token con formato inválido (no son 3 partes)');
   try {
     const header = JSON.parse(Buffer.from(parts[0], 'base64url').toString('utf8'));
     const payload = JSON.parse(Buffer.from(parts[1], 'base64url').toString('utf8'));
     const signature = Buffer.from(parts[2], 'base64url');
-    if (header.alg !== 'RS256' || !header.kid) return null;
+    if (header.alg !== 'RS256' || !header.kid) return rechazarSesion('alg/kid inválido', `alg=${header.alg}`);
 
     let jwk = (await getClerkJwks()).find(k => k.kid === header.kid);
     if (!jwk) jwk = (await getClerkJwks(true)).find(k => k.kid === header.kid);
-    if (!jwk) return null;
+    if (!jwk) return rechazarSesion('kid no encontrado en el JWKS de Clerk', `kid=${header.kid}`);
     const pubKey = crypto.createPublicKey({ key: jwk, format: 'jwk' });
 
     const signingInput = Buffer.from(`${parts[0]}.${parts[1]}`);
-    if (!crypto.verify('RSA-SHA256', signingInput, pubKey, signature)) return null;
+    if (!crypto.verify('RSA-SHA256', signingInput, pubKey, signature)) return rechazarSesion('firma inválida');
 
     const nowSec = Math.floor(Date.now() / 1000);
     const LEEWAY = 60;
-    if (payload.exp && nowSec >= payload.exp + LEEWAY) return null;
-    if (payload.nbf && nowSec < payload.nbf - LEEWAY) return null;
+    if (payload.exp && nowSec >= payload.exp + LEEWAY) {
+      return rechazarSesion('token caducado', `caducado hace ${nowSec - payload.exp}s (margen ${LEEWAY}s)`);
+    }
+    if (payload.nbf && nowSec < payload.nbf - LEEWAY) {
+      return rechazarSesion('token aún no válido (nbf)', `faltan ${payload.nbf - nowSec}s`);
+    }
 
     return payload.sub || null;
   } catch (e) {
-    console.error('verificarSesion error:', e.message);
+    console.error('verificarSesion error (excepción):', e.message);
     return null;
   }
 }

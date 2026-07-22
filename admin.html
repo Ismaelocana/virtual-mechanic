@@ -150,6 +150,17 @@
     </div>
 
     <div class="section">
+      <h2>Feedback de usuarios</h2>
+      <div class="cards" id="fbCards" style="margin-bottom:14px"></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Moto</th><th>Pregunta</th><th>Fuente</th><th style="text-align:center">Voto</th><th style="text-align:right">Cuándo</th></tr></thead>
+          <tbody id="fbTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
       <h2>Últimas consultas</h2>
       <div class="query-list" id="queryList"></div>
     </div>
@@ -159,6 +170,10 @@
 <script>
 const API = '/api/admin';
 let password = sessionStorage.getItem('vm_admin_pwd') || '';
+
+function escapeHtml(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
 
 function timeAgo(ms) {
   const s = Math.floor((Date.now() - ms) / 1000);
@@ -271,6 +286,35 @@ function renderDashboard(data) {
       <td style="text-align:right"><strong style="color:var(--accent)">${s.count}</strong></td>
     </tr>`
   ).join('') || '<tr><td colspan="2" style="color:var(--muted);text-align:center">Sin datos — ninguna consulta se ha respondido sin manual</td></tr>';
+
+  // Feedback: tarjetas resumen + tabla de votos recientes
+  const fbTotal = data.fbUp + data.fbDown;
+  const fbPct = fbTotal > 0 ? Math.round(data.fbUp / fbTotal * 100) : 0;
+  document.getElementById('fbCards').innerHTML = `
+    <div class="card">
+      <div class="label">👍 Positivo</div>
+      <div class="value" style="color:var(--green)">${data.fbUp}</div>
+    </div>
+    <div class="card">
+      <div class="label">👎 Negativo</div>
+      <div class="value" style="color:var(--accent)">${data.fbDown}</div>
+    </div>
+    <div class="card">
+      <div class="label">Satisfacción</div>
+      <div class="value">${fbTotal > 0 ? fbPct + '%' : '—'}</div>
+      <div class="sub">${fbTotal} valoraciones</div>
+    </div>
+  `;
+
+  document.getElementById('fbTable').innerHTML = (data.fbRecent || []).slice(0, 20).map(f => `
+    <tr>
+      <td><strong>${escapeHtml(f.brand)}</strong> ${escapeHtml(f.model || '')} <span style="color:var(--muted)">${escapeHtml(f.year || '')}</span></td>
+      <td style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${escapeHtml(f.question || '')}">${escapeHtml(f.question || '')}</td>
+      <td>${f.usedManual ? '📖' : '🧠'}</td>
+      <td style="text-align:center">${f.vote === 'up' ? '👍' : '👎'}</td>
+      <td style="text-align:right;color:var(--muted)">${timeAgo(f.t)}</td>
+    </tr>`
+  ).join('') || '<tr><td colspan="5" style="color:var(--muted);text-align:center">Sin valoraciones todavía</td></tr>';
 
   // Recent queries
   document.getElementById('queryList').innerHTML = data.recent.slice(0, 20).map(q =>

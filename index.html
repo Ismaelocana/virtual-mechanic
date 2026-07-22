@@ -77,6 +77,10 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .msg-source { display: flex; width: fit-content; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 600; margin-bottom: 6px; }
 .msg-source-manual { background: #EAF7EE; color: #1F6F44; }
 .msg-source-general { background: #EFEDE7; color: #777; }
+.msg-feedback { display: flex; gap: 6px; margin-top: 8px; }
+.fb-btn { width: 26px; height: 26px; border: 1px solid #E5E5E5; background: #fff; border-radius: 8px; cursor: pointer; font-size: 13px; padding: 0; line-height: 1; display: flex; align-items: center; justify-content: center; }
+.fb-btn:hover { background: #F8F7F3; border-color: #EF9F27; }
+.fb-done { font-size: 11px; color: #999; }
 .msg-user { display: flex; justify-content: flex-end; }
 .msg-bubble-user { background: #EF9F27; border-radius: 12px 0 12px 12px; padding: 10px 12px; max-width: 260px; font-size: 13px; color: #412402; line-height: 1.6; }
 .chat-input { padding: .75rem 1rem; border-top: 1px solid #F0EDE6; display: flex; gap: 8px; align-items: flex-end; flex-shrink: 0; }
@@ -797,7 +801,15 @@ function renderMd(text) {
   return html.replace(/<br>$/, '');
 }
 
-function addBot(text, usedManual) {
+// Genera un ID único por respuesta del bot, para asociar el feedback 👍/👎
+// a esa consulta concreta (y evitar votarla dos veces).
+function generarId() {
+  if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
+  return 'fb_' + Date.now() + '_' + Math.random().toString(36).slice(2, 10);
+}
+
+function addBot(text, opts = {}) {
+  const { usedManual, messageId, question, feedback } = opts;
   const msgs = document.getElementById('messages');
   const d = document.createElement('div');
   d.className = 'msg-bot';
@@ -805,9 +817,56 @@ function addBot(text, usedManual) {
     usedManual
       ? `<div class="msg-source msg-source-manual">📖 Manual oficial</div>`
       : `<div class="msg-source msg-source-general">🧠 Conocimiento general</div>`;
-  d.innerHTML = `<img src="/icons/icon.png" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0;margin-top:2px"><div class="msg-bubble-bot">${badge}${renderMd(text)}</div>`;
+
+  // Los botones de feedback solo aplican a respuestas reales (mismo criterio
+  // que el badge): no en el saludo inicial ni en mensajes de error.
+  let feedbackHtml = '';
+  if (usedManual !== undefined && messageId) {
+    feedbackHtml = feedback
+      ? `<div class="msg-feedback"><span class="fb-done">✓ Gracias por tu opinión</span></div>`
+      : `<div id="fb-${messageId}" class="msg-feedback" data-question="${escapeHtml(question || '')}" data-used-manual="${usedManual ? '1' : '0'}">
+          <button class="fb-btn" onclick="votarFeedback('${messageId}','up')" title="Respuesta útil">👍</button>
+          <button class="fb-btn" onclick="votarFeedback('${messageId}','down')" title="Respuesta poco útil">👎</button>
+        </div>`;
+  }
+
+  d.innerHTML = `<img src="/icons/icon.png" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0;margin-top:2px"><div class="msg-bubble-bot">${badge}${renderMd(text)}${feedbackHtml}</div>`;
   msgs.appendChild(d);
   msgs.scrollTop = msgs.scrollHeight;
+}
+
+// Registra el voto: feedback optimista (se deshabilita al instante, antes de
+// esperar respuesta del servidor) + se persiste en chatHistory para que al
+// reabrir el chat no se pueda volver a votar esa respuesta.
+async function votarFeedback(id, vote) {
+  const row = document.getElementById('fb-' + id);
+  if (!row || row.dataset.voted) return;
+  row.dataset.voted = '1';
+  const question = row.dataset.question || '';
+  const usedManual = row.dataset.usedManual === '1';
+  row.innerHTML = `<span class="fb-done">✓ Gracias por tu opinión</span>`;
+
+  const msg = chatHistory.find(m => m.id === id);
+  if (msg) msg.feedback = vote;
+  guardarChat();
+
+  try {
+    await fetch('/api/feedback', {
+      method: 'POST',
+      headers: await chatHeaders(),
+      body: JSON.stringify({
+        messageId: id,
+        vote,
+        brand: currentBrand,
+        model: currentModel,
+        year: currentYear,
+        question,
+        usedManual
+      })
+    });
+  } catch (e) {
+    console.warn('[feedback] error:', e.message);
+  }
 }
 
 function addUser(text) {
@@ -879,8 +938,9 @@ async function send() {
       return;
     }
     const data = await r.json();
-    addBot(data.reply, data.usedManual);
-    chatHistory.push({ role: 'assistant', content: data.reply, usedManual: data.usedManual });
+    const messageId = generarId();
+    addBot(data.reply, { usedManual: data.usedManual, messageId, question: text });
+    chatHistory.push({ role: 'assistant', content: data.reply, usedManual: data.usedManual, id: messageId });
     guardarChat();
   } catch (e) {
     hideTyping();
@@ -923,9 +983,10 @@ function handlePhoto(e) {
           return;
         }
         const data = await r.json();
-        addBot(data.reply, data.usedManual);
+        const messageId = generarId();
+        addBot(data.reply, { usedManual: data.usedManual, messageId, question: '[Foto enviada para diagnóstico]' });
         chatHistory.push({ role: 'user', content: '[Foto enviada para diagnóstico]' });
-        chatHistory.push({ role: 'assistant', content: data.reply, usedManual: data.usedManual });
+        chatHistory.push({ role: 'assistant', content: data.reply, usedManual: data.usedManual, id: messageId });
         guardarChat();
       } catch (err) {
         hideTyping();
@@ -1314,7 +1375,14 @@ async function cargarChat(chatId) {
     updateChatAvatar(chat.brand);
     const msgs = document.getElementById('messages');
     msgs.innerHTML = '';
-    chat.messages.forEach(m => m.role === 'assistant' ? addBot(m.content, m.usedManual) : addUser(m.content));
+    chat.messages.forEach((m, i) => {
+      if (m.role === 'assistant') {
+        const prev = chat.messages[i - 1];
+        addBot(m.content, { usedManual: m.usedManual, messageId: m.id, question: prev ? prev.content : '', feedback: m.feedback });
+      } else {
+        addUser(m.content);
+      }
+    });
     showScreen('chat');
   } catch { /* silencioso */ }
 }

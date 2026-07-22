@@ -23,7 +23,7 @@ module.exports = async (req, res) => {
   }
 
   if (!process.env.UPSTASH_REDIS_REST_URL) {
-    return res.json({ total: 0, today: 0, manual: 0, general: 0, days: [], brands: [], recent: [], sinManual: [] });
+    return res.json({ total: 0, today: 0, manual: 0, general: 0, days: [], brands: [], recent: [], sinManual: [], fbUp: 0, fbDown: 0, fbRecent: [] });
   }
 
   const today = new Date().toISOString().slice(0, 10);
@@ -44,13 +44,16 @@ module.exports = async (req, res) => {
     ['ZREVRANGE', 'vm:brands', '0', '19', 'WITHSCORES'],
     ['LRANGE', 'vm:recent', '0', '49'],
     ['ZREVRANGE', 'vm:sin_manual', '0', '19', 'WITHSCORES'],
+    ['GET', 'vm:fb:up'],
+    ['GET', 'vm:fb:down'],
+    ['LRANGE', 'vm:fb:recent', '0', '49'],
     ...dayKeys.map(d => ['GET', `vm:day:${d}`])
   ];
 
   const results = await redisPipeline(pipeline);
-  if (!results) return res.json({ total: 0, today: 0, manual: 0, general: 0, days: [], brands: [], recent: [], sinManual: [] });
+  if (!results) return res.json({ total: 0, today: 0, manual: 0, general: 0, days: [], brands: [], recent: [], sinManual: [], fbUp: 0, fbDown: 0, fbRecent: [] });
 
-  const [totalR, manualR, generalR, todayR, brandsR, recentR, sinManualR, ...dayResults] = results.map(r => r.result);
+  const [totalR, manualR, generalR, todayR, brandsR, recentR, sinManualR, fbUpR, fbDownR, fbRecentR, ...dayResults] = results.map(r => r.result);
 
   // Marcas: sorted set viene como array [nombre, score, nombre, score, ...]
   const brands = [];
@@ -75,6 +78,11 @@ module.exports = async (req, res) => {
     }
   }
 
+  // Feedback: 👍/👎 recientes (registro completo, mismo patrón que vm:recent)
+  const fbRecent = Array.isArray(fbRecentR)
+    ? fbRecentR.map(r => { try { return JSON.parse(r); } catch { return null; } }).filter(Boolean)
+    : [];
+
   // Días: ordenar de antiguo a reciente
   const days = dayKeys.map((date, i) => ({ date, count: parseInt(dayResults[i]) || 0 })).reverse();
 
@@ -86,6 +94,9 @@ module.exports = async (req, res) => {
     days,
     brands,
     recent,
-    sinManual
+    sinManual,
+    fbUp: parseInt(fbUpR) || 0,
+    fbDown: parseInt(fbDownR) || 0,
+    fbRecent
   });
 };

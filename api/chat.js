@@ -326,7 +326,7 @@ Responde siempre en español. Sé directo y práctico, como lo sería un buen me
     });
     const textBlock = response.content.find(b => b.type === 'text');
     const reply = textBlock ? textBlock.text : 'No se pudo obtener respuesta.';
-    res.json({ reply });
+    res.json({ reply, usedManual: !!context });
     logConsulta(brand, model, year, !!context);
   } catch (error) {
     console.error('Error:', error.message);

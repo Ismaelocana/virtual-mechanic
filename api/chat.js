@@ -324,19 +324,48 @@ Responde siempre en español. Sé directo y práctico, como lo sería un buen me
       }]
     : messages;
 
+  // Respuesta en streaming: NDJSON (una línea = un evento JSON), no SSE real.
+  // El frontend lee con fetch()+ReadableStream (no EventSource, que solo admite
+  // GET y no puede llevar el header Authorization con el token de Clerk).
   try {
-    const response = await client.messages.create({
+    res.setHeader('Content-Type', 'application/x-ndjson; charset=utf-8');
+    res.setHeader('Cache-Control', 'no-cache, no-transform');
+    res.setHeader('X-Accel-Buffering', 'no'); // por si hay algún proxy intermedio
+
+    const enviar = (obj) => {
+      res.write(JSON.stringify(obj) + '\n');
+      if (res.flush) res.flush();
+    };
+
+    // usedManual ya se conoce (viene de la búsqueda en Pinecone, previa a Claude):
+    // se manda antes de empezar a generar texto para que el frontend pinte el
+    // badge "Manual oficial"/"Conocimiento general" de inmediato.
+    enviar({ type: 'meta', usedManual: !!context });
+
+    const stream = client.messages.stream({
       model: 'claude-sonnet-4-6',
       max_tokens: 2000,
       system: systemPrompt,
       messages: apiMessages
     });
-    const textBlock = response.content.find(b => b.type === 'text');
-    const reply = textBlock ? textBlock.text : 'No se pudo obtener respuesta.';
-    res.json({ reply, usedManual: !!context });
+
+    stream.on('text', (delta) => enviar({ type: 'delta', text: delta }));
+
+    await stream.finalMessage();
+
+    enviar({ type: 'done' });
+    res.end();
     logConsulta(brand, model, year, !!context);
   } catch (error) {
     console.error('Error:', error.message);
-    res.status(500).json({ error: error.message });
+    if (!res.headersSent) {
+      // Fallo antes de escribir nada: aún podemos responder con un error normal.
+      res.status(500).json({ error: error.message });
+    } else {
+      // Ya se envió el meta/algún delta: no se puede cambiar el status code.
+      // Se señaliza el error dentro del propio stream NDJSON.
+      try { res.write(JSON.stringify({ type: 'error', message: error.message }) + '\n'); } catch (_) {}
+      res.end();
+    }
   }
 };

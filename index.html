@@ -879,6 +879,81 @@ async function votarFeedback(id, vote) {
   }
 }
 
+// Lee la respuesta NDJSON en streaming de /api/chat y va renderizando el
+// texto progresivamente. Reutiliza la burbuja de "Analizando..." (#typing)
+// como burbuja real, para que la transición sea continua. `question` es el
+// texto de la pregunta del usuario (o el aviso de foto), para el feedback.
+async function procesarRespuestaStream(r, question) {
+  const messageId = generarId();
+  const msgs = document.getElementById('messages');
+  const bubble = document.getElementById('typing');
+  bubble.id = ''; // libera el id: la próxima showTyping() debe crear el suyo propio
+  bubble.innerHTML = `<img src="/icons/icon.png" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0;margin-top:2px"><div class="msg-bubble-bot"><div id="stream-badge-${messageId}"></div><div id="stream-text-${messageId}"></div></div>`;
+  const badgeEl = document.getElementById(`stream-badge-${messageId}`);
+  const textEl = document.getElementById(`stream-text-${messageId}`);
+
+  const reader = r.body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = '';
+  let acumulado = '';
+  let usedManual;
+  let huboError = null;
+
+  try {
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+      const lineas = buffer.split('\n');
+      buffer = lineas.pop(); // el último trozo puede estar incompleto; se queda para la próxima vuelta
+
+      for (const linea of lineas) {
+        if (!linea.trim()) continue;
+        let evento;
+        try { evento = JSON.parse(linea); } catch (e) { continue; }
+
+        if (evento.type === 'meta') {
+          usedManual = evento.usedManual;
+          badgeEl.innerHTML = usedManual
+            ? `<div class="msg-source msg-source-manual">📖 Manual oficial</div>`
+            : `<div class="msg-source msg-source-general">🧠 Conocimiento general</div>`;
+        } else if (evento.type === 'delta') {
+          acumulado += evento.text;
+          textEl.innerHTML = renderMd(acumulado);
+        } else if (evento.type === 'error') {
+          huboError = evento.message || 'Error al generar la respuesta';
+        }
+      }
+      msgs.scrollTop = msgs.scrollHeight;
+    }
+  } catch (e) {
+    // Conexión cortada a media lectura (no un error explícito del backend)
+    console.warn('[stream] conexión interrumpida:', e.message);
+    huboError = huboError || 'Se perdió la conexión mientras se generaba la respuesta.';
+  }
+
+  if (huboError) {
+    // No se guarda en el historial ni se anade feedback sobre una respuesta
+    // incompleta/fallida; se deja visible lo que llego a generarse, si algo.
+    textEl.innerHTML = renderMd(acumulado
+      ? acumulado + '\n\n*⚠️ La respuesta se interrumpió. Vuelve a intentarlo.*'
+      : 'Error al conectar con el servidor. Inténtalo de nuevo.');
+    return;
+  }
+
+  // Finaliza: botones de feedback (solo ahora que el texto está completo) y
+  // se persiste en el historial, igual que la respuesta no-streaming de antes.
+  const feedbackHtml = `<div id="fb-${messageId}" class="msg-feedback" data-question="${escapeHtml(question || '')}" data-answer="${escapeHtml(acumulado)}" data-used-manual="${usedManual ? '1' : '0'}">
+      <button class="fb-btn" onclick="votarFeedback('${messageId}','up')" title="Respuesta útil">👍</button>
+      <button class="fb-btn" onclick="votarFeedback('${messageId}','down')" title="Respuesta poco útil">👎</button>
+    </div>`;
+  textEl.insertAdjacentHTML('afterend', feedbackHtml);
+  msgs.scrollTop = msgs.scrollHeight;
+
+  chatHistory.push({ role: 'assistant', content: acumulado, usedManual, id: messageId });
+  guardarChat();
+}
+
 function addUser(text) {
   const msgs = document.getElementById('messages');
   const d = document.createElement('div');
@@ -940,18 +1015,14 @@ async function send() {
       headers: await chatHeaders(),
       body: JSON.stringify({ messages: chatHistory, brand: currentBrand, model: currentModel, year: currentYear })
     });
-    hideTyping();
     if (!r.ok) {
+      hideTyping();
       const errData = await r.json().catch(() => ({}));
       addBot(mensajeErrorChat(r.status, errData));
       if (r.status === 429) mostrarModalPremium(errData.resetAt);
       return;
     }
-    const data = await r.json();
-    const messageId = generarId();
-    addBot(data.reply, { usedManual: data.usedManual, messageId, question: text });
-    chatHistory.push({ role: 'assistant', content: data.reply, usedManual: data.usedManual, id: messageId });
-    guardarChat();
+    await procesarRespuestaStream(r, text);
   } catch (e) {
     hideTyping();
     addBot('Error al conectar con el servidor. Inténtalo de nuevo.');
@@ -985,18 +1056,15 @@ function handlePhoto(e) {
           headers: await chatHeaders(),
           body: JSON.stringify({ messages: chatHistory, brand: currentBrand, model: currentModel, year: currentYear, imageBase64: base64, imageMediaType: 'image/jpeg' })
         });
-        hideTyping();
         if (!r.ok) {
+          hideTyping();
           const errData = await r.json().catch(() => ({}));
           addBot(mensajeErrorChat(r.status, errData));
           if (r.status === 429) mostrarModalPremium(errData.resetAt);
           return;
         }
-        const data = await r.json();
-        const messageId = generarId();
-        addBot(data.reply, { usedManual: data.usedManual, messageId, question: '[Foto enviada para diagnóstico]' });
         chatHistory.push({ role: 'user', content: '[Foto enviada para diagnóstico]' });
-        chatHistory.push({ role: 'assistant', content: data.reply, usedManual: data.usedManual, id: messageId });
+        await procesarRespuestaStream(r, '[Foto enviada para diagnóstico]');
         guardarChat();
       } catch (err) {
         hideTyping();

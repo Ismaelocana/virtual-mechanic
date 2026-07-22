@@ -16,6 +16,7 @@
     { "src": "api/garage.js", "use": "@vercel/node" },
     { "src": "api/stripe-checkout.js", "use": "@vercel/node" },
     { "src": "api/stripe-webhook.js", "use": "@vercel/node" },
+    { "src": "api/stripe-portal.js", "use": "@vercel/node" },
     { "src": "api/subscription.js", "use": "@vercel/node" }
   ],
   "routes": [
@@ -25,6 +26,7 @@
     { "src": "/api/garage", "dest": "/api/garage.js" },
     { "src": "/api/stripe-checkout", "dest": "/api/stripe-checkout.js" },
     { "src": "/api/stripe-webhook", "dest": "/api/stripe-webhook.js" },
+    { "src": "/api/stripe-portal", "dest": "/api/stripe-portal.js" },
     { "src": "/api/subscription", "dest": "/api/subscription.js" },
     { "src": "/admin", "dest": "/admin.html" },
     { "src": "/aviso-legal", "dest": "/aviso-legal.html" },

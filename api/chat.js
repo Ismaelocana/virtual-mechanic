@@ -406,13 +406,19 @@ async function manejarComparacionAnios(res, brand, model, yearA, yearB) {
 
     const systemPrompt = `Eres un mecánico experto en motos de enduro y offroad, especializado en ${brand}. Te voy a dar el manual oficial COMPLETO de la ${brand} ${model} de dos años distintos: ${yearA} y ${yearB}.
 
-Tu tarea es comparar ambos manuales y explicar en español, de forma clara y organizada (agrupando por categorías si aplica: motor, electrónica, chasis, suspensión, mantenimiento, etc.), qué cambia realmente entre un año y otro.
+Tu tarea es escribir un resumen breve, para el propietario de la moto (no un informe técnico exhaustivo), de qué cambia realmente entre un año y otro y por qué le importa a quien la conduce.
 
-Reglas importantes:
-- Basa la respuesta ÚNICAMENTE en diferencias que puedas confirmar comparando ambos textos.
-- Si una sección es igual en ambos manuales, no la menciones como cambio.
-- Si no encuentras diferencias claras en ninguna parte, dilo directamente en vez de forzar una lista de cambios inventados.
-- No asumas ni supongas cambios de motor/chasis/electrónica por conocimiento general si el texto no lo confirma explícitamente.
+Cómo decidir qué incluir:
+- Prioriza cambios que el piloto nota o le afectan de verdad: suspensión (marca/modelo del componente, no solo un ajuste de clics), frenos, embrague, electrónica/tecnología (instrumentación, mapas de encendido, arranque eléctrico, etc.), chasis/geometría, motor (solo si cambia algo relevante: cilindrada, relación de compresión, arquitectura), y equipamiento o extras de serie.
+- Ignora por completo diferencias menores de pares de apriete, tornillería, o cifras técnicas de detalle (mm, Nm, ml) que no cambian cómo se comporta o se mantiene la moto de forma perceptible. Si solo cambia un par de apriete puntual, no lo menciones.
+- No es un catálogo de especificaciones: no vuelques tablas comparando cada parámetro exista o no diferencia. Si algo es igual en ambos años, simplemente no lo menciones — nunca escribas una fila o frase solo para decir "esto no cambió".
+- Si un componente entero se sustituye por otro modelo/tecnología distinta (p. ej. cambia la marca o el tipo de horquilla, se añade quickshifter, cambia el sistema de frenos), eso sí es lo más importante y debe ir primero.
+
+Formato:
+- Responde en español, con un breve encabezado por categoría solo si esa categoría tiene cambios reales, y dentro una explicación corta en prosa o bullets — no tablas gigantes con cada especificación.
+- Sé conciso: el objetivo es que alguien lo lea entero en menos de un minuto, no una comparativa exhaustiva.
+- Basa todo en diferencias que puedas confirmar comparando ambos textos — no inventes ni asumas cambios por conocimiento general si el manual no lo confirma.
+- Si de verdad no hay cambios relevantes para el usuario (aunque haya diferencias menores de tornillería), dilo directamente en una frase.
 
 MANUAL ${yearA}:
 ${comparacion.textoA}
@@ -424,13 +430,20 @@ ${comparacion.textoB}`;
 
     const stream = client.messages.stream({
       model: 'claude-sonnet-4-6',
-      max_tokens: 2000,
+      max_tokens: 3000,
       system: systemPrompt,
-      messages: [{ role: 'user', content: `Compara qué cambia entre el año ${yearA} y el año ${yearB} de esta moto.` }]
+      messages: [{ role: 'user', content: `Compara qué cambia entre el año ${yearA} y el año ${yearB} de esta moto — solo lo relevante para el propietario, sin tablas de especificaciones completas.` }]
     });
 
     stream.on('text', (delta) => enviar({ type: 'delta', text: delta }));
-    await stream.finalMessage();
+    const finalMsg = await stream.finalMessage();
+
+    // Con las instrucciones de ser conciso no debería pasar, pero si aun así
+    // se corta por límite de tokens, mejor avisarlo que dejar la respuesta
+    // incompleta sin explicación.
+    if (finalMsg.stop_reason === 'max_tokens') {
+      enviar({ type: 'delta', text: '\n\n*⚠️ La respuesta se ha cortado por ser demasiado larga. Pregunta por una categoría concreta (p. ej. "¿qué cambia en la suspensión?") para más detalle.*' });
+    }
 
     enviar({ type: 'done' });
     res.end();

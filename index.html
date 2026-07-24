@@ -36,10 +36,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .step-screen { padding: 1.25rem; gap: .9rem; overflow-y: auto; }
 .screen-header { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
 .btn-back { width: 32px; height: 32px; border: 1px solid #E5E5E5; border-radius: 10px; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.btn-newchat { height: 28px; padding: 0 9px; border: 1px solid #E5E5E5; border-radius: 8px; background: transparent; cursor: pointer; display: flex; align-items: center; gap: 4px; flex-shrink: 0; margin-left: auto; font-size: 11px; font-weight: 600; color: #333; font-family: inherit; white-space: nowrap; }
-.btn-newchat:hover { background: #F8F7F3; border-color: #EF9F27; }
-.chat-title-wrap { flex: 1; min-width: 0; overflow: hidden; }
-.chat-title-wrap h3, .chat-title-wrap p { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .screen-header h2 { font-size: 17px; font-weight: 600; color: #111; }
 .screen-header p { font-size: 11px; color: #888; }
 .progress { height: 3px; background: #F0EDE6; border-radius: 2px; flex-shrink: 0; }
@@ -68,7 +64,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .chat-avatar { width: 72px; height: 28px; border-radius: 8px; background: #EF9F27; display: flex; align-items: center; justify-content: center; flex-shrink: 0; overflow: hidden; }
 .chat-header h3 { font-size: 13px; font-weight: 600; color: #111; }
 .chat-header p { font-size: 11px; color: #888; }
-.online-dot { width: 7px; height: 7px; border-radius: 50%; background: #4CAF50; flex-shrink: 0; }
+.online-dot { width: 7px; height: 7px; border-radius: 50%; background: #4CAF50; margin-left: auto; flex-shrink: 0; }
+.chat-title-wrap { flex: 1; min-width: 0; overflow: hidden; }
+.chat-title-wrap h3, .chat-title-wrap p { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.btn-comparar { height: 28px; padding: 0 9px; border: 1px solid #E5E5E5; border-radius: 8px; background: transparent; cursor: pointer; display: flex; align-items: center; gap: 4px; flex-shrink: 0; font-size: 11px; font-weight: 600; color: #333; font-family: inherit; white-space: nowrap; }
+.btn-comparar:hover { background: #F8F7F3; border-color: #EF9F27; }
 .messages { flex: 1; overflow-y: auto; padding: 1rem; display: flex; flex-direction: column; gap: 12px; }
 .messages::-webkit-scrollbar { width: 3px; }
 .messages::-webkit-scrollbar-thumb { background: #DDD; border-radius: 2px; }
@@ -155,6 +155,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .mant-add-fields { display: flex; gap: 8px; }
 .mant-select { flex: 1.4; padding: 10px; border: 1.5px solid #E5E5E5; border-radius: 10px; font-size: 13px; font-family: inherit; color: #111; background: #fff; }
 .mant-empty { font-size: 12px; color: #BBB; text-align: center; padding: 10px 0; }
+.comparar-anio-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; max-height: 320px; overflow-y: auto; margin-top: 6px; }
 
 /* ── Suscripción / Premium ── */
 .sub-status { min-height: 20px; display: flex; flex-direction: column; align-items: center; gap: 4px; }
@@ -361,9 +362,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <button class="btn-back" style="border:none;background:transparent" onclick="showScreen(chatReturnScreen)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <div class="chat-avatar" id="chat-avatar">VM</div>
       <div class="chat-title-wrap"><h3 id="chat-title">Virtual Mechanic</h3><p>Mecánico IA</p></div>
-      <button class="btn-newchat" onclick="showScreen('brand')" title="Empezar consulta con otra moto">
-        <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><circle cx="4" cy="12" r="2.2" stroke="#333" stroke-width="1.3"/><circle cx="13" cy="12" r="2.2" stroke="#333" stroke-width="1.3"/><path d="M4 12L7 7H10L13 12M7 7L9 4H11.5" stroke="#333" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span>Nueva</span>
+      <button class="btn-comparar" id="btn-comparar-anio" onclick="abrirModalComparar()" title="Comparar con otro año" style="display:none">
+        <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M2 6H12M12 6L9 3M12 6L9 9" stroke="#333" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 10H4M4 10L7 7M4 10L7 13" stroke="#333" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Comparar</span>
       </button>
       <div class="online-dot"></div>
     </div>
@@ -446,6 +447,16 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
         <input type="date" id="mant-entrada-fecha" class="mant-input">
         <button class="mant-btn-save" onclick="anadirEntradaMantenimiento()">Añadir al historial</button>
       </div>
+    </div>
+  </div>
+
+  <!-- MODAL COMPARAR AÑO -->
+  <div id="modal-comparar" class="modal-overlay">
+    <div class="modal-box modal-box-wide">
+      <button class="modal-close" onclick="cerrarModalComparar()">✕</button>
+      <h2 style="font-size:16px;font-weight:700;color:#111;margin-bottom:2px">Comparar con otro año</h2>
+      <p style="font-size:12px;color:#999;margin-bottom:4px">Elige el año con el que comparar tu moto actual</p>
+      <div id="comparar-anio-list" class="comparar-anio-grid"></div>
     </div>
   </div>
 
@@ -701,23 +712,21 @@ function goBackFromModel() {
   showScreen(Object.keys(cats).length === 1 ? 'brand' : 'category');
 }
 
-function selectModel(m) {
-  currentModel = m;
-  const data = brandsData[currentBrand];
-  document.getElementById('year-brand-dot').style.background = data.dot;
-  document.getElementById('year-selection').textContent = `${currentBrand} ${m}`;
-  const grid = document.getElementById('year-grid');
-  grid.innerHTML = '';
+// Calcula el rango de años [fromYear, toYear] disponible para un modelo.
+// Extraído de selectModel() para poder reutilizarlo también en el
+// comparador de años (que necesita la lista de años sin pasar por la
+// pantalla de selección, p. ej. al entrar a un chat desde el garaje).
+function rangoAniosModelo(brand, category, engine, m) {
   let fromYear = 2000, toYear = 2026;
-  if (currentBrand === 'Sherco') {
+  if (brand === 'Sherco') {
     if (m.startsWith('ST')) fromYear = 2009;
     else if (m === 'SE 125') fromYear = 2018;
     else fromYear = 2016;
-  } else if (currentBrand === 'Beta') {
+  } else if (brand === 'Beta') {
     if (m.startsWith('Xtrainer')) fromYear = 2016;
-    else if ((m === 'RR 125' || m === 'RR 200') && currentEngine === '2T') fromYear = 2018;
-    else if (m.startsWith('RR') && currentEngine === '2T') fromYear = 2013;
-    else if (m.startsWith('RR') && currentEngine === '4T') fromYear = 2012;
+    else if ((m === 'RR 125' || m === 'RR 200') && engine === '2T') fromYear = 2018;
+    else if (m.startsWith('RR') && engine === '2T') fromYear = 2013;
+    else if (m.startsWith('RR') && engine === '4T') fromYear = 2012;
     else if (m === 'RX 300') { fromYear = 2021; toYear = 2025; }
     else if (m === 'RX 250' || m === 'RX 350') { fromYear = 2026; toYear = 2026; }
     else if (m === 'RX 450') { fromYear = 2024; toYear = 2026; }
@@ -725,10 +734,10 @@ function selectModel(m) {
     else if (m.startsWith('EVO')) fromYear = 2009;
     if (m === 'EVO 200') toYear = 2025;
     if (m === 'EVO 80') toYear = 2023;
-    if ((m === 'EVO 250' || m === 'EVO 300') && currentEngine === '4T') toYear = 2025;
+    if ((m === 'EVO 250' || m === 'EVO 300') && engine === '4T') toYear = 2025;
     if (m === 'EVO 125' || m === 'EVO 250' || m === 'EVO 300' || m === 'EVO 300 SS') toYear = 2025;
     if (m.startsWith('Sincro')) { fromYear = 2026; toYear = 2026; }
-  } else if (currentBrand === 'KTM') {
+  } else if (brand === 'KTM') {
     if (m === 'EXC 125' || m === 'EXC 200') { fromYear = 2005; toYear = 2016; }
     else if (m === 'EXC 150') { fromYear = 2020; toYear = 2025; }
     else if (m === 'EXC 250' || m === 'EXC 300') fromYear = 2005;
@@ -741,39 +750,50 @@ function selectModel(m) {
     else if (m === 'SX-F 250') fromYear = 2005;
     else if (m === 'SX-F 350') fromYear = 2011;
     else if (m === 'SX-F 450') fromYear = 2007;
-  } else if (currentBrand === 'Husqvarna') {
+  } else if (brand === 'Husqvarna') {
     if (m === 'TC 65') fromYear = 2017;
     else fromYear = 2014;
-  } else if (currentBrand === 'GasGas') {
+  } else if (brand === 'GasGas') {
     if (m.startsWith('TXT')) fromYear = 2020;
     else if (m === 'EC 450F' || m === 'EC 500F') fromYear = 2024;
     else fromYear = 2021;
-  } else if (currentBrand === 'Rieju') {
+  } else if (brand === 'Rieju') {
     fromYear = 2020;
     if (m === 'MR 200' || m === 'MR 250') toYear = 2025;
-  } else if (currentBrand === 'Triumph') {
-    if (currentCategory === 'Enduro') fromYear = 2026;
+  } else if (brand === 'Triumph') {
+    if (category === 'Enduro') fromYear = 2026;
     else fromYear = 2025;
-  } else if (currentBrand === 'Honda') {
+  } else if (brand === 'Honda') {
     if (m === 'Montesa Cota 315R') { fromYear = 1999; toYear = 2004; }
     else if (m === 'Montesa Cota 260' || m === 'Montesa Cota 300') fromYear = 2005;
     else if (m === 'Montesa Cota 301RR') fromYear = 2019;
-  } else if (currentBrand === 'Suzuki') {
+  } else if (brand === 'Suzuki') {
     if (m === 'RM 85') fromYear = 2002;
     else if (m === 'RM 125') { fromYear = 2001; toYear = 2012; }
     else if (m === 'RM 250') { fromYear = 2001; toYear = 2008; }
     else if (m === 'RM-Z 250') fromYear = 2004;
     else if (m === 'RM-Z 450') fromYear = 2005;
     else if (m === 'RMX 450Z') { fromYear = 2010; toYear = 2019; }
-  } else if (currentBrand === 'Fantic') {
+  } else if (brand === 'Fantic') {
     fromYear = 2020;
-  } else if (currentBrand === 'TM') {
+  } else if (brand === 'TM') {
     fromYear = 2000;
-  } else if (currentBrand === 'TRS') {
+  } else if (brand === 'TRS') {
     fromYear = 2016;
-  } else if (currentBrand === 'Vertigo') {
+  } else if (brand === 'Vertigo') {
     fromYear = 2014;
   }
+  return { fromYear, toYear };
+}
+
+function selectModel(m) {
+  currentModel = m;
+  const data = brandsData[currentBrand];
+  document.getElementById('year-brand-dot').style.background = data.dot;
+  document.getElementById('year-selection').textContent = `${currentBrand} ${m}`;
+  const grid = document.getElementById('year-grid');
+  grid.innerHTML = '';
+  const { fromYear, toYear } = rangoAniosModelo(currentBrand, currentCategory, currentEngine, m);
   for (let y = toYear; y >= fromYear; y--) {
     const btn = document.createElement('button');
     btn.className = 'year-btn';
@@ -812,6 +832,7 @@ function selectYear(year) {
   addBot(welcome);
   chatHistory.push({ role: 'assistant', content: welcome });
   insertarChipsSugeridos();
+  actualizarBotonComparar();
   showScreen('chat');
 }
 
@@ -1587,6 +1608,7 @@ async function cargarChat(chatId) {
         addUser(m.content);
       }
     });
+    actualizarBotonComparar();
     showScreen('chat');
   } catch { /* silencioso */ }
 }
@@ -1710,6 +1732,7 @@ function cargarMoto(bike) {
   addBot(welcome);
   chatHistory.push({ role: 'assistant', content: welcome });
   insertarChipsSugeridos();
+  actualizarBotonComparar();
   showScreen('chat');
 }
 
@@ -1847,6 +1870,62 @@ async function eliminarEntradaMantenimiento(entryId) {
       renderLogMantenimiento(currentMantBike);
     }
   } catch {}
+}
+
+// Muestra u oculta el botón "Comparar" de la cabecera del chat según si el
+// modelo actual tiene más de un año disponible (si no hay con qué comparar,
+// no tiene sentido mostrarlo).
+function actualizarBotonComparar() {
+  const btn = document.getElementById('btn-comparar-anio');
+  const { fromYear, toYear } = rangoAniosModelo(currentBrand, currentCategory, currentEngine, currentModel);
+  btn.style.display = (toYear > fromYear) ? '' : 'none';
+}
+
+function abrirModalComparar() {
+  const { fromYear, toYear } = rangoAniosModelo(currentBrand, currentCategory, currentEngine, currentModel);
+  const list = document.getElementById('comparar-anio-list');
+  list.innerHTML = '';
+  for (let y = toYear; y >= fromYear; y--) {
+    if (y === currentYear) continue;
+    const btn = document.createElement('button');
+    btn.className = 'year-btn';
+    btn.textContent = y;
+    btn.onclick = () => iniciarComparacion(y);
+    list.appendChild(btn);
+  }
+  document.getElementById('modal-comparar').classList.add('show');
+}
+
+function cerrarModalComparar() {
+  document.getElementById('modal-comparar').classList.remove('show');
+}
+
+async function iniciarComparacion(yearB) {
+  cerrarModalComparar();
+  quitarChipsSugeridos();
+  const yearA = currentYear;
+  const pregunta = `Compara qué cambia entre el año ${yearA} y el año ${yearB} de esta moto.`;
+  addUser(pregunta);
+  chatHistory.push({ role: 'user', content: pregunta });
+  showTyping();
+  try {
+    const r = await fetch(`${SERVER}/chat`, {
+      method: 'POST',
+      headers: await chatHeaders(),
+      body: JSON.stringify({ messages: chatHistory, brand: currentBrand, model: currentModel, year: yearA, compareYear: yearB })
+    });
+    if (!r.ok) {
+      hideTyping();
+      const errData = await r.json().catch(() => ({}));
+      addBot(mensajeErrorChat(r.status, errData));
+      if (r.status === 429) mostrarModalPremium(errData.resetAt);
+      return;
+    }
+    await procesarRespuestaStream(r, pregunta);
+  } catch (e) {
+    hideTyping();
+    addBot('Error al conectar con el servidor. Inténtalo de nuevo.');
+  }
 }
 </script>
 </body>

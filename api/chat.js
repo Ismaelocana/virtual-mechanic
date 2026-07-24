@@ -167,6 +167,68 @@ function normalizarModelo(brand, model) {
   return { model: model.toLowerCase().replace(/ /g, '') };
 }
 
+// URL base del propio despliegue: los .txt de manuales/ se sirven como
+// estáticos (vercel.json), no están empaquetados en la función serverless,
+// así que para leer un manual completo (comparador de años) hay que pedirlo
+// por HTTP en vez de con fs.readFileSync.
+const BASE_URL = 'https://virtual-mechanic.vercel.app';
+
+// normalizarModelo() devuelve un filtro de Pinecone ({model: 'token'} o
+// {model: {$in: [...]}}) — aquí solo nos interesan los tokens candidatos,
+// que son los mismos nombres de archivo usados en manuales/{marca}/.
+function extraerTokensDeFiltro(filtro) {
+  if (!filtro || !filtro.model) return [];
+  if (typeof filtro.model === 'string') return [filtro.model];
+  if (filtro.model.$in) return filtro.model.$in;
+  return [];
+}
+
+// Intenta descargar el manual completo (.txt) de un modelo+año probando cada
+// token de archivo candidato. Devuelve { texto, token } del primero que
+// exista, o null si ninguno existe (no hay manual para ese año).
+async function obtenerManualCompleto(brand, model, year) {
+  const tokens = extraerTokensDeFiltro(normalizarModelo(brand, model));
+  for (const token of tokens) {
+    try {
+      const url = `${BASE_URL}/manuales/${brand.toLowerCase()}/${token}-${year}.txt`;
+      const res = await fetchWithTimeout(url, {}, 8000);
+      if (res.ok) return { texto: await res.text(), token };
+    } catch (e) {
+      console.error('obtenerManualCompleto error:', e.message);
+    }
+  }
+  return null;
+}
+
+// Resuelve los dos manuales completos para el comparador de años. No usa RAG:
+// una comparación "qué cambió" necesita ver los documentos enteros, no
+// fragmentos relevantes a una pregunta semántica (los cambios reales entre
+// años consecutivos no suelen "destacar" en una búsqueda vectorial genérica).
+// Devuelve { ok:false, motivo } si falta algún manual o si ambos años
+// resuelven al mismo archivo (nada que comparar), para que el caller pueda
+// avisar la limitación en vez de arriesgarse a que Claude invente diferencias.
+async function resolverComparacionAnios(brand, model, yearA, yearB) {
+  const [manualA, manualB] = await Promise.all([
+    obtenerManualCompleto(brand, model, yearA),
+    obtenerManualCompleto(brand, model, yearB),
+  ]);
+
+  const faltantes = [];
+  if (!manualA) faltantes.push(yearA);
+  if (!manualB) faltantes.push(yearB);
+  if (faltantes.length) return { ok: false, motivo: 'sin_manual', faltantes };
+
+  // Cada año tiene su propio archivo por convención de nombres (.../{token}-{año}.txt),
+  // así que nunca comparten literalmente la misma ruta — pero el mismo PDF de origen
+  // puede haberse guardado sin cambios bajo dos años distintos. Comparamos el
+  // contenido, no la ruta, para detectar ese caso.
+  if (manualA.texto === manualB.texto) {
+    return { ok: false, motivo: 'mismo_manual' };
+  }
+
+  return { ok: true, textoA: manualA.texto, textoB: manualB.texto };
+}
+
 async function buscarContexto(brand, model, year, query) {
   if (!process.env.VOYAGE_API_KEY || !process.env.PINECONE_API_KEY) return null;
   try {
@@ -310,6 +372,80 @@ async function comprobarRateLimit(userId) {
   }
 }
 
+// Maneja una petición de comparación de años (flag compareYear). Independiente
+// del flujo normal de chat: no usa RAG, no añade bloque de mantenimiento, y
+// construye su propio system prompt a partir de los manuales completos.
+// Devuelve la misma respuesta NDJSON en streaming que el resto de /api/chat,
+// para que el frontend pueda reusar exactamente el mismo lector.
+async function manejarComparacionAnios(res, brand, model, yearA, yearB) {
+  res.setHeader('Content-Type', 'application/x-ndjson; charset=utf-8');
+  res.setHeader('Cache-Control', 'no-cache, no-transform');
+  res.setHeader('X-Accel-Buffering', 'no');
+  const enviar = (obj) => {
+    res.write(JSON.stringify(obj) + '\n');
+    if (res.flush) res.flush();
+  };
+
+  try {
+    const comparacion = await resolverComparacionAnios(brand, model, yearA, yearB);
+
+    if (!comparacion.ok) {
+      // Sin llamar a Claude: son mensajes deterministas, no hay nada que
+      // "generar" y así evitamos cualquier riesgo de que invente una
+      // diferencia que no puede confirmar.
+      const mensaje = comparacion.motivo === 'sin_manual'
+        ? `No tengo el manual oficial de ${brand} ${model} del año ${comparacion.faltantes.join(' ni del ')}, así que no puedo comparar con precisión. Prefiero avisarte de esto antes que arriesgarme a inventar diferencias que no puedo confirmar.`
+        : `El manual oficial de ${brand} ${model} no distingue entre ${yearA} y ${yearB} — ambos años comparten el mismo documento, así que no hay diferencias documentadas entre ellos.`;
+      enviar({ type: 'meta', usedManual: false });
+      enviar({ type: 'delta', text: mensaje });
+      enviar({ type: 'done' });
+      res.end();
+      logConsulta(brand, model, `${yearA}vs${yearB}`, false);
+      return;
+    }
+
+    const systemPrompt = `Eres un mecánico experto en motos de enduro y offroad, especializado en ${brand}. Te voy a dar el manual oficial COMPLETO de la ${brand} ${model} de dos años distintos: ${yearA} y ${yearB}.
+
+Tu tarea es comparar ambos manuales y explicar en español, de forma clara y organizada (agrupando por categorías si aplica: motor, electrónica, chasis, suspensión, mantenimiento, etc.), qué cambia realmente entre un año y otro.
+
+Reglas importantes:
+- Basa la respuesta ÚNICAMENTE en diferencias que puedas confirmar comparando ambos textos.
+- Si una sección es igual en ambos manuales, no la menciones como cambio.
+- Si no encuentras diferencias claras en ninguna parte, dilo directamente en vez de forzar una lista de cambios inventados.
+- No asumas ni supongas cambios de motor/chasis/electrónica por conocimiento general si el texto no lo confirma explícitamente.
+
+MANUAL ${yearA}:
+${comparacion.textoA}
+
+MANUAL ${yearB}:
+${comparacion.textoB}`;
+
+    enviar({ type: 'meta', usedManual: true });
+
+    const stream = client.messages.stream({
+      model: 'claude-sonnet-4-6',
+      max_tokens: 2000,
+      system: systemPrompt,
+      messages: [{ role: 'user', content: `Compara qué cambia entre el año ${yearA} y el año ${yearB} de esta moto.` }]
+    });
+
+    stream.on('text', (delta) => enviar({ type: 'delta', text: delta }));
+    await stream.finalMessage();
+
+    enviar({ type: 'done' });
+    res.end();
+    logConsulta(brand, model, `${yearA}vs${yearB}`, true);
+  } catch (error) {
+    console.error('manejarComparacionAnios error:', error.message);
+    if (!res.headersSent) {
+      res.status(500).json({ error: error.message });
+    } else {
+      try { res.write(JSON.stringify({ type: 'error', message: error.message }) + '\n'); } catch (_) {}
+      res.end();
+    }
+  }
+}
+
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -332,8 +468,15 @@ module.exports = async (req, res) => {
     }
   }
 
-  const { messages, brand, model, year, imageBase64, imageMediaType, bikeId, checkMaintenance } = req.body;
+  const { messages, brand, model, year, imageBase64, imageMediaType, bikeId, checkMaintenance, compareYear } = req.body;
   console.log(`[mantenimiento] checkMaintenance=${!!checkMaintenance} bikeId=${bikeId ? 'presente' : 'ausente'}`);
+
+  // Comparador de años: flujo totalmente aparte del chat normal (sin RAG, sin
+  // bloque de mantenimiento), con su propio system prompt y sus propias
+  // salvaguardas. Termina la petición aquí.
+  if (compareYear) {
+    return manejarComparacionAnios(res, brand, model, year, compareYear);
+  }
 
   // For images use last text user message as query; for text use the last user message
   const lastTextUser = [...messages].reverse().find(m => m.role === 'user' && typeof m.content === 'string');

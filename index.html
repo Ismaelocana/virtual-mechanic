@@ -418,18 +418,26 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <div class="mant-label">Historial de mantenimiento</div>
       <div id="mant-log-list"></div>
 
-      <div class="mant-label">Añadir entrada</div>
+      <div class="mant-label">Añadir mantenimiento</div>
       <div class="mant-add-row">
         <div class="mant-add-fields">
           <select id="mant-tipo-select" class="mant-select">
-            <option value="aceite">Cambio de aceite</option>
-            <option value="filtro">Cambio de filtro</option>
-            <option value="piston">Cambio de pistón</option>
+            <option value="aceite">Aceite motor/cambio</option>
+            <option value="filtro_aire">Filtro de aire</option>
+            <option value="piston">Pistón</option>
             <option value="segmentos">Segmentos</option>
             <option value="bujia">Bujía</option>
-            <option value="cadena">Cadena/piñones</option>
+            <option value="kit_arrastre">Kit de arrastre</option>
             <option value="frenos">Pastillas de freno</option>
-            <option value="otro">Otro</option>
+            <option value="anticongelante">Anticongelante</option>
+            <option value="biela">Biela</option>
+            <option value="valvulas">Reglaje de válvulas</option>
+            <option value="horquilla">Horquilla</option>
+            <option value="amortiguador">Amortiguador</option>
+            <option value="embrague">Discos de embrague</option>
+            <option value="bomba_aceite">Bomba de aceite</option>
+            <option value="filtro_aceite">Filtro de aceite</option>
+            <option value="filtro_gasolina">Filtro de gasolina</option>
           </select>
           <input type="number" id="mant-entrada-horas" class="mant-input" placeholder="Horas" style="flex:0.8">
         </div>
@@ -1725,8 +1733,11 @@ async function eliminarMoto(bikeId, btn) {
 }
 
 const MANT_LABELS = {
-  aceite: 'Cambio de aceite', filtro: 'Cambio de filtro', piston: 'Cambio de pistón',
-  segmentos: 'Segmentos', bujia: 'Bujía', cadena: 'Cadena/piñones', frenos: 'Pastillas de freno', otro: 'Otro'
+  aceite: 'Aceite motor/cambio', filtro_aire: 'Filtro de aire', piston: 'Pistón',
+  segmentos: 'Segmentos', bujia: 'Bujía', kit_arrastre: 'Kit de arrastre', frenos: 'Pastillas de freno',
+  anticongelante: 'Anticongelante', biela: 'Biela', valvulas: 'Reglaje de válvulas',
+  horquilla: 'Horquilla', amortiguador: 'Amortiguador', embrague: 'Discos de embrague',
+  bomba_aceite: 'Bomba de aceite', filtro_aceite: 'Filtro de aceite', filtro_gasolina: 'Filtro de gasolina'
 };
 
 function abrirModalMantenimiento(bike) {

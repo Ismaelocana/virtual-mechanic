@@ -37,6 +37,7 @@
     { "src": "/manifest.json", "dest": "/manifest.json" },
     { "src": "/sw.js", "dest": "/sw.js" },
     { "src": "/icons/(.*)", "dest": "/icons/$1" },
+    { "src": "/manuales/(.*)", "dest": "/manuales/$1" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }

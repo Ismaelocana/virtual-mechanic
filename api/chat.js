@@ -1,7 +1,7 @@
 const crypto = require('crypto');
 const Anthropic = require('@anthropic-ai/sdk');
 const { Pinecone } = require('@pinecone-database/pinecone');
-const { esPremium } = require('./_common');
+const { esPremium, redisCommand } = require('./_common');
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
@@ -202,6 +202,47 @@ async function buscarContexto(brand, model, year, query) {
   }
 }
 
+// Construye (si procede) el bloque de mantenimiento proactivo, solo para el
+// primer mensaje de una conversación abierta desde el garaje. Devuelve null
+// si no hay datos suficientes para razonar con confianza (sin horas
+// registradas, la moto ya no está en el garaje, o el manual no cubre
+// intervalos de mantenimiento) — así se evita que la IA invente un intervalo
+// que no existe, y no se paga el coste extra cuando no hay nada que aportar.
+async function construirBloqueMantenimiento(userId, bikeId, brand, model, year) {
+  try {
+    const raw = await redisCommand(['GET', `vm:garage:${userId}`]);
+    if (!raw) return null;
+    const garage = JSON.parse(raw);
+    const bike = garage.find(b => b.bikeId === bikeId);
+    if (!bike || bike.hours == null) return null;
+
+    const contextoMantenimiento = await buscarContexto(
+      brand, model, year,
+      'intervalos de mantenimiento programado, revisión periódica por horas, cambio de aceite y filtros'
+    );
+    if (!contextoMantenimiento) return null;
+
+    const historial = (bike.maintenanceLog || []).length
+      ? bike.maintenanceLog.map(e => `- ${e.label} a las ${e.hours != null ? e.hours + 'h' : '?'} (${e.date})`).join('\n')
+      : '(sin ningún mantenimiento registrado todavía)';
+
+    return `
+
+DATOS DE MANTENIMIENTO DE ESTA MOTO (proporcionados por el usuario en su garaje — trátalos como datos reales, no los cuestiones):
+- Horas actuales: ${bike.hours}h
+- Historial registrado:
+${historial}
+
+FRAGMENTOS DEL MANUAL SOBRE INTERVALOS DE MANTENIMIENTO:
+${contextoMantenimiento}
+
+INSTRUCCIÓN IMPORTANTE: Si, comparando las horas actuales y el historial contra los intervalos del manual de arriba, hay algún mantenimiento que parece pendiente o cercano, menciónalo de forma breve y proactiva al principio de tu respuesta (antes de responder a lo que te pregunte el usuario). Si los fragmentos del manual no dejan claro el intervalo exacto, o no tienes datos suficientes para estar seguro, NO menciones nada al respecto — no inventes ni supongas un intervalo que no esté explícito.`;
+  } catch (e) {
+    console.error('construirBloqueMantenimiento error:', e.message);
+    return null;
+  }
+}
+
 async function logConsulta(brand, model, year, usedManual) {
   const url = process.env.UPSTASH_REDIS_REST_URL;
   const token = process.env.UPSTASH_REDIS_REST_TOKEN;
@@ -288,7 +329,7 @@ module.exports = async (req, res) => {
     }
   }
 
-  const { messages, brand, model, year, imageBase64, imageMediaType } = req.body;
+  const { messages, brand, model, year, imageBase64, imageMediaType, bikeId, checkMaintenance } = req.body;
 
   // For images use last text user message as query; for text use the last user message
   const lastTextUser = [...messages].reverse().find(m => m.role === 'user' && typeof m.content === 'string');
@@ -298,7 +339,14 @@ module.exports = async (req, res) => {
 
   const context = searchQuery ? await buscarContexto(brand, model, year, searchQuery) : null;
 
-  const systemPrompt = context
+  // Mantenimiento proactivo: solo en el primer mensaje de una conversación
+  // abierta desde el garaje (el frontend manda checkMaintenance+bikeId una
+  // única vez por sesión). No añade coste en el resto de la conversación.
+  const bloqueMantenimiento = (checkMaintenance && bikeId)
+    ? await construirBloqueMantenimiento(userId, bikeId, brand, model, year)
+    : null;
+
+  const systemPromptBase = context
     ? `Eres un mecánico experto en motos de enduro y offroad con décadas de experiencia, especializado en ${brand}. Estás hablando con alguien que tiene una ${brand} ${model} ${year || ''} y necesita tu ayuda.
 
 Tienes delante el manual oficial de esta moto. Lo usas igual que lo usaría cualquier mecánico profesional: lo consultas cuando necesitas un dato exacto (par de apriete, cantidad de aceite, especificación técnica), no como guion para responder.
@@ -327,6 +375,8 @@ Cómo trabajas:
 - No te niegas a responder ni mandas al usuario a buscar en otro sitio. Siempre hay algo útil que aportar.
 
 Responde siempre en español. Sé directo y práctico, como lo sería un buen mecánico de confianza.`;
+
+  const systemPrompt = systemPromptBase + (bloqueMantenimiento || '');
 
   const apiMessages = imageBase64 && imageMediaType
     ? [...messages, {

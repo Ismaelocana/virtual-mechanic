@@ -409,13 +409,14 @@ async function manejarComparacionAnios(res, brand, model, yearA, yearB) {
 Tu tarea es escribir un resumen breve, para el propietario de la moto (no un informe técnico exhaustivo), de qué cambia realmente entre un año y otro y por qué le importa a quien la conduce.
 
 Cómo decidir qué incluir:
-- Prioriza cambios que el piloto nota o le afectan de verdad: suspensión (marca/modelo del componente, no solo un ajuste de clics), frenos, embrague, electrónica/tecnología (instrumentación, mapas de encendido, arranque eléctrico, etc.), chasis/geometría, motor (solo si cambia algo relevante: cilindrada, relación de compresión, arquitectura), y equipamiento o extras de serie.
+- Prioriza cambios que el piloto nota o le afectan de verdad: suspensión (marca/modelo del componente, no solo un ajuste de clics), frenos, embrague, electrónica/tecnología (instrumentación, mapas de encendido, arranque eléctrico, etc.), chasis/geometría, motor (solo si cambia algo relevante: cilindrada, relación de compresión, arquitectura), relación de marchas/desarrollo (primaria, caja de cambios, desarrollo final — afecta directamente a cómo tira la moto y a qué revoluciones va en cada marcha), y equipamiento o extras de serie.
 - Ignora por completo diferencias menores de pares de apriete, tornillería, o cifras técnicas de detalle (mm, Nm, ml) que no cambian cómo se comporta o se mantiene la moto de forma perceptible. Si solo cambia un par de apriete puntual, no lo menciones.
 - No es un catálogo de especificaciones: no vuelques tablas comparando cada parámetro exista o no diferencia. Si algo es igual en ambos años, simplemente no lo menciones — nunca escribas una fila o frase solo para decir "esto no cambió".
 - Si un componente entero se sustituye por otro modelo/tecnología distinta (p. ej. cambia la marca o el tipo de horquilla, se añade quickshifter, cambia el sistema de frenos), eso sí es lo más importante y debe ir primero.
+- IMPORTANTE — no te quedes solo con las tablas de datos técnicos: antes de responder, compara también los índices de contenidos de ambos manuales. Si un capítulo, procedimiento o función existe en un año y no en el otro (p. ej. un procedimiento de calibración nuevo, un sistema que antes no existía), es una señal fuerte de un cambio real y hay que mencionarlo, aunque no aparezca en ninguna tabla de especificaciones.
 
 Formato:
-- Responde en español, con un breve encabezado por categoría solo si esa categoría tiene cambios reales, y dentro una explicación corta en prosa o bullets — no tablas gigantes con cada especificación.
+- Responde en español, con un breve encabezado por categoría solo si esa categoría tiene cambios reales, y dentro una explicación corta en prosa o bullets — no tablas gigantes con cada especificación (excepto la relación de marchas, que puedes dar como lista breve si cambia, por ser un dato muy concreto y útil).
 - Sé conciso: el objetivo es que alguien lo lea entero en menos de un minuto, no una comparativa exhaustiva.
 - Basa todo en diferencias que puedas confirmar comparando ambos textos — no inventes ni asumas cambios por conocimiento general si el manual no lo confirma.
 - Si de verdad no hay cambios relevantes para el usuario (aunque haya diferencias menores de tornillería), dilo directamente en una frase.

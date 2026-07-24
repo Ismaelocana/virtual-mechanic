@@ -211,16 +211,19 @@ async function buscarContexto(brand, model, year, query) {
 async function construirBloqueMantenimiento(userId, bikeId, brand, model, year) {
   try {
     const raw = await redisCommand(['GET', `vm:garage:${userId}`]);
-    if (!raw) return null;
+    if (!raw) { console.log('[mantenimiento] sin garaje en Redis para este userId'); return null; }
     const garage = JSON.parse(raw);
     const bike = garage.find(b => b.bikeId === bikeId);
-    if (!bike || bike.hours == null) return null;
+    if (!bike) { console.log(`[mantenimiento] bikeId=${bikeId} no encontrado en el garaje (motos guardadas: ${garage.length})`); return null; }
+    if (bike.hours == null) { console.log(`[mantenimiento] bikeId=${bikeId} encontrado pero sin horas registradas`); return null; }
+    console.log(`[mantenimiento] moto encontrada: hours=${bike.hours}, entradas en historial=${(bike.maintenanceLog || []).length}`);
 
     const contextoMantenimiento = await buscarContexto(
       brand, model, year,
       'intervalos de mantenimiento programado, revisión periódica por horas, cambio de aceite y filtros'
     );
-    if (!contextoMantenimiento) return null;
+    if (!contextoMantenimiento) { console.log('[mantenimiento] buscarContexto devolvió null (sin matches en Pinecone para brand/model/year)'); return null; }
+    console.log(`[mantenimiento] contexto de manual encontrado, longitud=${contextoMantenimiento.length} caracteres`);
 
     const historial = (bike.maintenanceLog || []).length
       ? bike.maintenanceLog.map(e => `- ${e.label} a las ${e.hours != null ? e.hours + 'h' : '?'} (${e.date})`).join('\n')
@@ -330,6 +333,7 @@ module.exports = async (req, res) => {
   }
 
   const { messages, brand, model, year, imageBase64, imageMediaType, bikeId, checkMaintenance } = req.body;
+  console.log(`[mantenimiento] checkMaintenance=${!!checkMaintenance} bikeId=${bikeId ? 'presente' : 'ausente'}`);
 
   // For images use last text user message as query; for text use the last user message
   const lastTextUser = [...messages].reverse().find(m => m.role === 'user' && typeof m.content === 'string');

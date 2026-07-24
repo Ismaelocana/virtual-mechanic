@@ -438,8 +438,10 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
             <option value="bomba_aceite">Bomba de aceite</option>
             <option value="filtro_aceite">Filtro de aceite</option>
             <option value="filtro_gasolina">Filtro de gasolina</option>
+            <option value="liquido_frenos">Líquido de frenos</option>
+            <option value="liquido_embrague">Líquido de embrague</option>
           </select>
-          <input type="number" id="mant-entrada-horas" class="mant-input" placeholder="Horas" style="flex:0.8">
+          <input type="number" id="mant-entrada-horas" class="mant-input" min="0" placeholder="Horas" style="flex:0.8">
         </div>
         <input type="date" id="mant-entrada-fecha" class="mant-input">
         <button class="mant-btn-save" onclick="anadirEntradaMantenimiento()">Añadir al historial</button>
@@ -1737,7 +1739,8 @@ const MANT_LABELS = {
   segmentos: 'Segmentos', bujia: 'Bujía', kit_arrastre: 'Kit de arrastre', frenos: 'Pastillas de freno',
   anticongelante: 'Anticongelante', biela: 'Biela', valvulas: 'Reglaje de válvulas',
   horquilla: 'Horquilla', amortiguador: 'Amortiguador', embrague: 'Discos de embrague',
-  bomba_aceite: 'Bomba de aceite', filtro_aceite: 'Filtro de aceite', filtro_gasolina: 'Filtro de gasolina'
+  bomba_aceite: 'Bomba de aceite', filtro_aceite: 'Filtro de aceite', filtro_gasolina: 'Filtro de gasolina',
+  liquido_frenos: 'Líquido de frenos', liquido_embrague: 'Líquido de embrague'
 };
 
 function abrirModalMantenimiento(bike) {
@@ -1783,8 +1786,13 @@ function renderLogMantenimiento(bike) {
 
 async function guardarHorasMoto() {
   if (!currentMantBike || !window.currentUserId) return;
-  const hours = Number(document.getElementById('mant-hours-input').value);
-  if (!Number.isFinite(hours) || hours < 0) return;
+  const input = document.getElementById('mant-hours-input');
+  const hours = Number(input.value);
+  if (!Number.isFinite(hours) || hours < 0) {
+    alert('Introduce un número de horas válido (0 o más).');
+    input.value = currentMantBike.hours != null ? currentMantBike.hours : '';
+    return;
+  }
   try {
     const r = await fetch('/api/garage', {
       method: 'POST',
@@ -1804,6 +1812,10 @@ async function anadirEntradaMantenimiento() {
   const tipo = document.getElementById('mant-tipo-select').value;
   const horas = document.getElementById('mant-entrada-horas').value;
   const fecha = document.getElementById('mant-entrada-fecha').value;
+  if (horas !== '' && (!Number.isFinite(Number(horas)) || Number(horas) < 0)) {
+    alert('Introduce un número de horas válido (0 o más), o déjalo en blanco.');
+    return;
+  }
   const entry = {
     type: tipo,
     label: MANT_LABELS[tipo] || 'Otro',

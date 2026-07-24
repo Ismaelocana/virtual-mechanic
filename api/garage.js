@@ -62,6 +62,8 @@ module.exports = async (req, res) => {
       if (action === 'addMaintenance') {
         const { entry } = req.body ?? {};
         if (!entry || !entry.label) return res.status(400).json({ error: 'entry.label requerido' });
+        if (entry.hours != null && (!Number.isFinite(Number(entry.hours)) || Number(entry.hours) < 0))
+          return res.status(400).json({ error: 'entry.hours inválido' });
         const nuevaEntrada = {
           id: generarId(),
           type: String(entry.type || 'otro').slice(0, 30),

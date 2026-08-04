@@ -3,14 +3,18 @@
   "builds": [
     { "src": "index.html", "use": "@vercel/static" },
     { "src": "landing.html", "use": "@vercel/static" },
+    { "src": "motos.html", "use": "@vercel/static" },
     { "src": "admin.html", "use": "@vercel/static" },
     { "src": "aviso-legal.html", "use": "@vercel/static" },
     { "src": "privacidad.html", "use": "@vercel/static" },
     { "src": "terminos.html", "use": "@vercel/static" },
     { "src": "manifest.json", "use": "@vercel/static" },
     { "src": "sw.js", "use": "@vercel/static" },
+    { "src": "robots.txt", "use": "@vercel/static" },
+    { "src": "sitemap.xml", "use": "@vercel/static" },
     { "src": "icons/**", "use": "@vercel/static" },
     { "src": "manuales/**", "use": "@vercel/static" },
+    { "src": "paginas/**", "use": "@vercel/static" },
     { "src": "api/chat.js", "use": "@vercel/node" },
     { "src": "api/admin.js", "use": "@vercel/node" },
     { "src": "api/history.js", "use": "@vercel/node" },
@@ -39,7 +43,11 @@
     { "src": "/sw.js", "dest": "/sw.js" },
     { "src": "/icons/(.*)", "dest": "/icons/$1" },
     { "src": "/manuales/(.*)", "dest": "/manuales/$1" },
+    { "src": "/robots.txt", "dest": "/robots.txt" },
+    { "src": "/sitemap.xml", "dest": "/sitemap.xml" },
+    { "src": "/motos", "dest": "/motos.html" },
     { "src": "/app", "dest": "/index.html" },
+    { "src": "/(ktm|husqvarna|gasgas|sherco|beta|rieju|triumph)/(.*)", "dest": "/paginas/$1/$2.html" },
     { "src": "/(.*)", "dest": "/landing.html" }
   ]
 }

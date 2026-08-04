@@ -2,6 +2,7 @@
   "version": 2,
   "builds": [
     { "src": "index.html", "use": "@vercel/static" },
+    { "src": "landing.html", "use": "@vercel/static" },
     { "src": "admin.html", "use": "@vercel/static" },
     { "src": "aviso-legal.html", "use": "@vercel/static" },
     { "src": "privacidad.html", "use": "@vercel/static" },
@@ -38,6 +39,7 @@
     { "src": "/sw.js", "dest": "/sw.js" },
     { "src": "/icons/(.*)", "dest": "/icons/$1" },
     { "src": "/manuales/(.*)", "dest": "/manuales/$1" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "/app", "dest": "/index.html" },
+    { "src": "/(.*)", "dest": "/landing.html" }
   ]
 }

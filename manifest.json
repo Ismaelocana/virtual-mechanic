@@ -2,7 +2,7 @@
   "name": "Virtual Mechanic",
   "short_name": "VM",
   "description": "Tu mecánico de enduro con IA",
-  "start_url": "/",
+  "start_url": "/app",
   "display": "standalone",
   "background_color": "#F5F5F0",
   "theme_color": "#EF9F27",

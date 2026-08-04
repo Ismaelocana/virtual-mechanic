@@ -27,7 +27,7 @@ module.exports = async (req, res) => {
 
     const session = await stripeRequest('billing_portal/sessions', {
       customer: sub.customerId,
-      return_url: `${origin}/`,
+      return_url: `${origin}/app`,
     });
 
     return res.status(200).json({ url: session.url });

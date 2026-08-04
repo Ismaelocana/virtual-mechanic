@@ -53,8 +53,8 @@ module.exports = async (req, res) => {
       line_items: [{ price, quantity: 1 }],
       subscription_data: { metadata: { clerkUserId: userId } },
       allow_promotion_codes: true,
-      success_url: `${origin}/?checkout=success`,
-      cancel_url: `${origin}/?checkout=cancel`,
+      success_url: `${origin}/app?checkout=success`,
+      cancel_url: `${origin}/app?checkout=cancel`,
     });
 
     return res.status(200).json({ url: session.url });

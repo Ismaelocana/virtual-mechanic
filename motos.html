@@ -28,12 +28,14 @@
   .hero h1 { font-size:clamp(24px,4.5vw,32px); font-weight:800; color:#111; letter-spacing:-0.4px; margin-bottom:10px; }
   .hero p { font-size:14.5px; color:#666; max-width:560px; margin:0 auto; }
 
-  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; padding-bottom:60px; }
-  .card { background:#fff; border:1px solid #EFEFEF; border-radius:16px; padding:20px; display:block; }
+  .brand-section { margin-bottom:36px; }
+  .brand-section h2 { font-size:15px; font-weight:800; color:#111; margin-bottom:12px; padding-bottom:8px; border-bottom:1px solid #EFEDE7; }
+  .model-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:10px; }
+  .card { background:#fff; border:1px solid #EFEFEF; border-radius:12px; padding:14px 16px; display:block; }
   .card:hover { border-color:#EF9F27; }
-  .card .pill { display:inline-block; background:#FFF7EC; color:#8a5a00; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; margin-bottom:10px; }
-  .card h2 { font-size:16px; font-weight:700; color:#111; margin-bottom:6px; }
-  .card p { font-size:13px; color:#888; }
+  .card h3 { font-size:14px; font-weight:700; color:#111; margin-bottom:3px; }
+  .card p { font-size:12px; color:#888; }
+  .end-spacer { padding-bottom:50px; }
 
   footer { padding:24px 0 40px; border-top:1px solid #EFEDE7; }
   .footrow { display:flex; align-items:center; justify-content:center; gap:14px; flex-wrap:wrap; font-size:12px; color:#999; }
@@ -56,32 +58,43 @@
     <p>Datos técnicos, mantenimiento y averías comunes, extraídos de los manuales oficiales. Vamos añadiendo modelos poco a poco.</p>
   </div>
 
-  <div class="grid">
-    <a class="card" href="/ktm/exc-300">
-      <span class="pill">KTM</span>
-      <h2>KTM EXC 300</h2>
-      <p>Ficha técnica, mantenimiento y averías comunes</p>
-    </a>
-    <a class="card" href="/husqvarna/te-300">
-      <span class="pill">Husqvarna</span>
-      <h2>Husqvarna TE 300</h2>
-      <p>Ficha técnica, mantenimiento y averías comunes</p>
-    </a>
-    <a class="card" href="/gasgas/ec-300">
-      <span class="pill">GasGas</span>
-      <h2>GasGas EC 300</h2>
-      <p>Ficha técnica, mantenimiento y averías comunes</p>
-    </a>
-    <a class="card" href="/sherco/se-300">
-      <span class="pill">Sherco</span>
-      <h2>Sherco SE 300</h2>
-      <p>Ficha técnica, mantenimiento y puntos de atención</p>
-    </a>
-    <a class="card" href="/beta/rr-300">
-      <span class="pill">Beta</span>
-      <h2>Beta RR 300</h2>
-      <p>Ficha técnica, mantenimiento y averías comunes</p>
-    </a>
+  <div class="brand-section">
+    <h2>KTM</h2>
+    <div class="model-grid">
+      <a class="card" href="/ktm/exc-125"><h3>EXC 125</h3><p>Ficha técnica y mantenimiento</p></a>
+      <a class="card" href="/ktm/exc-150"><h3>EXC 150</h3><p>Ficha técnica y mantenimiento</p></a>
+      <a class="card" href="/ktm/exc-200"><h3>EXC 200</h3><p>Ficha técnica y mantenimiento</p></a>
+      <a class="card" href="/ktm/exc-250"><h3>EXC 250</h3><p>Ficha técnica y averías comunes</p></a>
+      <a class="card" href="/ktm/exc-300"><h3>EXC 300</h3><p>Ficha técnica y averías comunes</p></a>
+    </div>
+  </div>
+
+  <div class="brand-section">
+    <h2>Husqvarna</h2>
+    <div class="model-grid">
+      <a class="card" href="/husqvarna/te-300"><h3>TE 300</h3><p>Ficha técnica y averías comunes</p></a>
+    </div>
+  </div>
+
+  <div class="brand-section">
+    <h2>GasGas</h2>
+    <div class="model-grid">
+      <a class="card" href="/gasgas/ec-300"><h3>EC 300</h3><p>Ficha técnica y averías comunes</p></a>
+    </div>
+  </div>
+
+  <div class="brand-section">
+    <h2>Sherco</h2>
+    <div class="model-grid">
+      <a class="card" href="/sherco/se-300"><h3>SE 300</h3><p>Ficha técnica y puntos de atención</p></a>
+    </div>
+  </div>
+
+  <div class="brand-section end-spacer">
+    <h2>Beta</h2>
+    <div class="model-grid">
+      <a class="card" href="/beta/rr-300"><h3>RR 300</h3><p>Ficha técnica y averías comunes</p></a>
+    </div>
   </div>
 </div>
 

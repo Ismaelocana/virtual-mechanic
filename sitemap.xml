@@ -20,7 +20,21 @@
   <url><loc>https://virtualmechanic.es/ktm/sx-f-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/ktm/sx-f-350</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/ktm/sx-f-450</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/husqvarna/te-125</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/husqvarna/te-150</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/husqvarna/te-250</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://virtualmechanic.es/husqvarna/te-300</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://virtualmechanic.es/husqvarna/fe-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/husqvarna/fe-350</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/husqvarna/fe-450</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/husqvarna/fe-501</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/husqvarna/tc-65</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://virtualmechanic.es/husqvarna/tc-85</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://virtualmechanic.es/husqvarna/tc-125</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/husqvarna/tc-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/husqvarna/fc-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/husqvarna/fc-350</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/husqvarna/fc-450</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/gasgas/ec-300</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://virtualmechanic.es/sherco/se-300</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://virtualmechanic.es/beta/rr-300</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>

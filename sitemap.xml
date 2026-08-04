@@ -7,6 +7,19 @@
   <url><loc>https://virtualmechanic.es/ktm/exc-200</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/ktm/exc-250</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://virtualmechanic.es/ktm/exc-300</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://virtualmechanic.es/ktm/exc-f-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/ktm/exc-f-350</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/ktm/exc-f-450</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/ktm/exc-f-500</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/ktm/sx-65</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://virtualmechanic.es/ktm/sx-85</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://virtualmechanic.es/ktm/sx-125</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/ktm/sx-150</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/ktm/sx-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/ktm/sx-300</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/ktm/sx-f-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/ktm/sx-f-350</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/ktm/sx-f-450</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/husqvarna/te-300</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://virtualmechanic.es/gasgas/ec-300</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://virtualmechanic.es/sherco/se-300</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>

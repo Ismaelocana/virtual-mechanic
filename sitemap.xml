@@ -35,7 +35,23 @@
   <url><loc>https://virtualmechanic.es/husqvarna/fc-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/husqvarna/fc-350</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/husqvarna/fc-450</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/gasgas/ec-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/gasgas/ec-300</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://virtualmechanic.es/gasgas/ec-250f</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/gasgas/ec-350f</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/gasgas/ec-450f</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/gasgas/ec-500f</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://virtualmechanic.es/gasgas/mc-65</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://virtualmechanic.es/gasgas/mc-85</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://virtualmechanic.es/gasgas/mc-125</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/gasgas/mc-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/gasgas/mc-250f</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/gasgas/mc-350f</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/gasgas/mc-450f</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://virtualmechanic.es/gasgas/txt-125</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/gasgas/txt-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/gasgas/txt-280</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/gasgas/txt-300</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/sherco/se-300</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://virtualmechanic.es/beta/rr-300</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://virtualmechanic.es/aviso-legal</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>

@@ -62,7 +62,33 @@
   <url><loc>https://virtualmechanic.es/sherco/sef-300</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/sherco/sef-450</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/sherco/sef-500</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/rr-125</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/rr-200</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/rr-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/beta/rr-300</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/rr-350</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/rr-390</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/rr-430</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/rr-480</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/xtrainer-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/xtrainer-300</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/rx-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/rx-300</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/rx-350</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/rx-450</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/evo-80</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/evo-125</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/evo-200</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/evo-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/evo-300</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/evo-300ss</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/sincro-125</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/sincro-200</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/sincro-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/sincro-300</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/sincro-300ss</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/evo4t-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/beta/evo4t-300</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/aviso-legal</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
   <url><loc>https://virtualmechanic.es/privacidad</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
   <url><loc>https://virtualmechanic.es/terminos</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>

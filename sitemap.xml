@@ -89,6 +89,14 @@
   <url><loc>https://virtualmechanic.es/beta/sincro-300ss</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/beta/evo4t-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/beta/evo4t-300</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/rieju/mr-200</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/rieju/mr-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/rieju/mr-300</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://virtualmechanic.es/triumph/tf250-e</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/triumph/tf450-e</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://virtualmechanic.es/triumph/tf250-x</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/triumph/tf450-x</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/triumph/tf450-rc</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://virtualmechanic.es/aviso-legal</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
   <url><loc>https://virtualmechanic.es/privacidad</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
   <url><loc>https://virtualmechanic.es/terminos</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>

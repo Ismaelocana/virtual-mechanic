@@ -52,7 +52,16 @@
   <url><loc>https://virtualmechanic.es/gasgas/txt-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/gasgas/txt-280</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/gasgas/txt-300</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/sherco/se-125</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/sherco/se-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/sherco/se-300</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://virtualmechanic.es/sherco/st-125</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/sherco/st-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/sherco/st-300</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/sherco/sef-250</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/sherco/sef-300</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/sherco/sef-450</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://virtualmechanic.es/sherco/sef-500</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://virtualmechanic.es/beta/rr-300</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://virtualmechanic.es/aviso-legal</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
   <url><loc>https://virtualmechanic.es/privacidad</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>

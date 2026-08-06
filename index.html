@@ -94,6 +94,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .msg-bubble-user { background: #EF9F27; border-radius: 12px 0 12px 12px; padding: 10px 12px; max-width: 260px; font-size: 13px; color: #412402; line-height: 1.6; }
 .chat-input { padding: .75rem 1rem; border-top: 1px solid #F0EDE6; display: flex; gap: 8px; align-items: flex-end; flex-shrink: 0; }
 .btn-photo { width: 36px; height: 36px; border: 1px solid #E5E5E5; border-radius: 10px; background: #F8F7F3; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.btn-mic { width: 36px; height: 36px; border: 1px solid #E5E5E5; border-radius: 10px; background: #F8F7F3; color: #888; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.btn-mic.listening { background: #FDEAEA; border-color: #E5484D; color: #E5484D; animation: pulse 1.2s ease-in-out infinite; }
 #msg-input { flex: 1; border: 1px solid #E5E5E5; border-radius: 12px; padding: 9px 12px; font-size: 13px; font-family: inherit; resize: none; min-height: 36px; max-height: 80px; line-height: 1.4; color: #111; background: white; outline: none; }
 #msg-input:focus { border-color: #EF9F27; }
 .btn-send { width: 36px; height: 36px; border: none; background: #EF9F27; border-radius: 10px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -377,6 +379,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="4" width="12" height="9" rx="2" stroke="#888" stroke-width="1.2"/><circle cx="8" cy="8.5" r="2" stroke="#888" stroke-width="1.2"/><path d="M6 4L6.8 2.5H9.2L10 4" stroke="#888" stroke-width="1.2"/></svg>
       </button>
       <textarea id="msg-input" placeholder="Describe el problema..." rows="1" onkeydown="handleKey(event)" oninput="resize(this)"></textarea>
+      <button class="btn-mic" id="btn-mic" style="display:none" onclick="toggleDictado()" title="Dictar por voz">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="6" y="1.5" width="4" height="8" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M4 8v.5a4 4 0 0 0 8 0V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M8 12.5V14.5M5.5 14.5H10.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+      </button>
       <button class="btn-send" onclick="send()">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="#412402" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
@@ -1367,6 +1372,85 @@ async function instalarPWA() {
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js').catch(() => {});
+}
+
+// ── Dictado por voz ──────────────────────────────────────────────────────────
+// Web Speech API: soporte nativo en Chrome/Edge/Android, pero Firefox no la
+// implementa y Safari (sobre todo la PWA instalada en iOS) es poco fiable.
+// Por eso el botón está oculto por defecto en el HTML y solo se muestra aquí
+// si el navegador realmente lo soporta — mejor no mostrarlo que mostrar un
+// botón roto que no hace nada al pulsarlo.
+const SpeechRecognitionCtor = window.SpeechRecognition || window.webkitSpeechRecognition;
+let reconocimiento = null;
+let escuchando = false;
+
+if (SpeechRecognitionCtor) {
+  document.getElementById('btn-mic').style.display = 'flex';
+}
+
+function toggleDictado() {
+  if (escuchando) { reconocimiento.stop(); return; }
+  iniciarDictado();
+}
+
+const btnMicHtmlOriginal = document.getElementById('btn-mic').innerHTML;
+
+// Sustituye brevemente el icono del micro por un aviso visible y lo restaura
+// después. El `title` (tooltip) no sirve en móvil, que es el dispositivo
+// principal de esta función — no hay hover en pantallas táctiles.
+function avisarErrorMic(mensaje) {
+  const btn = document.getElementById('btn-mic');
+  btn.innerHTML = '🚫';
+  btn.title = mensaje;
+  clearTimeout(btn._avisoTimeout);
+  btn._avisoTimeout = setTimeout(() => {
+    btn.innerHTML = btnMicHtmlOriginal;
+    btn.title = 'Dictar por voz';
+  }, 2200);
+}
+
+function iniciarDictado() {
+  const inp = document.getElementById('msg-input');
+  const btn = document.getElementById('btn-mic');
+  // Si ya había texto escrito, el dictado continúa a partir de ahí en vez de borrarlo.
+  const prefijo = inp.value.trim() ? inp.value.trim() + ' ' : '';
+  let huboErrorPermiso = false;
+
+  reconocimiento = new SpeechRecognitionCtor();
+  reconocimiento.lang = 'es-ES';
+  reconocimiento.interimResults = true;
+  reconocimiento.continuous = false;
+
+  reconocimiento.onresult = (e) => {
+    let texto = '';
+    for (let i = 0; i < e.results.length; i++) texto += e.results[i][0].transcript;
+    inp.value = prefijo + texto;
+    resize(inp);
+  };
+
+  reconocimiento.onerror = (e) => {
+    // 'no-speech' y 'aborted' son parte del uso normal (silencio, stop manual):
+    // no hace falta avisar. 'not-allowed'/'audio-capture' sí son un fallo real.
+    if (e.error === 'not-allowed' || e.error === 'audio-capture') {
+      huboErrorPermiso = true;
+      avisarErrorMic('Sin permiso de micrófono');
+    }
+  };
+
+  // El evento 'end' se dispara SIEMPRE, incluso justo después de 'error' — por
+  // eso aquí solo se toca la clase/estado de "escuchando", nunca el innerHTML
+  // del botón: si lo hiciera, borraría el aviso de avisarErrorMic() antes de
+  // que el usuario llegue a verlo.
+  reconocimiento.onend = () => {
+    escuchando = false;
+    btn.classList.remove('listening');
+    if (!huboErrorPermiso) btn.title = 'Dictar por voz';
+  };
+
+  reconocimiento.start();
+  escuchando = true;
+  btn.classList.add('listening');
+  btn.title = 'Escuchando… toca para detener';
 }
 
 // ── Clerk auth ────────────────────────────────────────────────────────────────

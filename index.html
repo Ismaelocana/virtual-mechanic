@@ -85,6 +85,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .msg-feedback { display: flex; gap: 4px; margin-top: 6px; }
 .fb-btn { width: 22px; height: 22px; border: 1px solid #EFEDE7; background: transparent; border-radius: 6px; cursor: pointer; font-size: 12px; padding: 0; line-height: 1; display: flex; align-items: center; justify-content: center; opacity: .85; }
 .fb-btn:hover { background: #F8F7F3; border-color: #EF9F27; opacity: 1; }
+.fb-btn:disabled { cursor: not-allowed; opacity: .5; }
 .fb-done { font-size: 10px; color: #999; }
 .chips-sugeridos { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 0 4px 34px; }
 .chip-sugerido { padding: 7px 12px; background: #F8F7F3; border: 1px solid #EFEFEF; border-radius: 16px; font-size: 12px; font-weight: 500; color: #333; cursor: pointer; font-family: inherit; white-space: nowrap; }
@@ -458,6 +459,26 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <h2 style="font-size:16px;font-weight:700;color:#111;margin-bottom:2px">Comparar con otro año</h2>
       <p style="font-size:12px;color:#999;margin-bottom:4px">Elige el año con el que comparar tu moto actual</p>
       <div id="comparar-anio-list" class="comparar-anio-grid"></div>
+    </div>
+  </div>
+
+  <!-- Tarjeta oculta para exportar una respuesta como imagen (compartir por WhatsApp/Telegram).
+       Va DENTRO de #app (que tiene overflow:hidden + position:relative) y se posiciona con
+       top:0/left:0 + z-index:-1, en vez de sacarla del viewport con left:-9999px: algunos
+       navegadores no pintan (y por tanto html-to-image captura en blanco) los nodos con
+       position:fixed muy lejos del área visible. Con overflow:hidden en el contenedor padre
+       queda recortada visualmente sin necesidad de esas coordenadas extremas. -->
+  <div id="share-card" style="position:absolute;top:0;left:0;z-index:-1;width:600px;background:#fff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
+    <div style="background:#EF9F27;padding:24px 28px;display:flex;align-items:center;gap:14px;">
+      <img src="/icons/icon.png" style="width:44px;height:44px;border-radius:11px;object-fit:cover;flex-shrink:0;">
+      <div style="min-width:0;">
+        <div style="font-size:19px;font-weight:800;color:#412402;">Virtual Mechanic</div>
+        <div id="share-moto-context" style="font-size:13px;font-weight:600;color:#6b4a12;margin-top:2px;"></div>
+      </div>
+    </div>
+    <div id="share-body" style="padding:28px;font-size:16px;line-height:1.65;color:#111;"></div>
+    <div style="padding:16px 28px 26px;border-top:1px solid #F0EDE6;font-size:12px;color:#999;text-align:center;">
+      Diagnosticado por Virtual Mechanic · virtualmechanic.es
     </div>
   </div>
 
@@ -925,13 +946,17 @@ function addBot(text, opts = {}) {
 
   // Los botones de feedback solo aplican a respuestas reales (mismo criterio
   // que el badge): no en el saludo inicial ni en mensajes de error.
+  // El botón de compartir (📤) se muestra siempre, haya voto o no, por eso
+  // data-answer vive en el contenedor #fb-${id} independientemente del estado.
   let feedbackHtml = '';
   if (usedManual !== undefined && messageId) {
-    feedbackHtml = feedback
-      ? `<div class="msg-feedback"><span class="fb-done">✓ Gracias por tu opinión</span></div>`
-      : `<div id="fb-${messageId}" class="msg-feedback" data-question="${escapeHtml(question || '')}" data-answer="${escapeHtml(text || '')}" data-used-manual="${usedManual ? '1' : '0'}">
-          <button class="fb-btn" onclick="votarFeedback('${messageId}','up')" title="Respuesta útil">👍</button>
-          <button class="fb-btn" onclick="votarFeedback('${messageId}','down')" title="Respuesta poco útil">👎</button>
+    const votoInner = feedback
+      ? `<span class="fb-done">✓ Gracias por tu opinión</span>`
+      : `<button class="fb-btn" onclick="votarFeedback('${messageId}','up')" title="Respuesta útil">👍</button>
+          <button class="fb-btn" onclick="votarFeedback('${messageId}','down')" title="Respuesta poco útil">👎</button>`;
+    feedbackHtml = `<div id="fb-${messageId}" class="msg-feedback" data-question="${escapeHtml(question || '')}" data-answer="${escapeHtml(text || '')}" data-used-manual="${usedManual ? '1' : '0'}">
+          ${votoInner}
+          <button class="fb-btn" onclick="compartirRespuesta('${messageId}')" title="Compartir como imagen">📤</button>
         </div>`;
   }
 
@@ -950,7 +975,8 @@ async function votarFeedback(id, vote) {
   const question = row.dataset.question || '';
   const answer = row.dataset.answer || '';
   const usedManual = row.dataset.usedManual === '1';
-  row.innerHTML = `<span class="fb-done">✓ Gracias por tu opinión</span>`;
+  row.innerHTML = `<span class="fb-done">✓ Gracias por tu opinión</span>
+    <button class="fb-btn" onclick="compartirRespuesta('${id}')" title="Compartir como imagen">📤</button>`;
 
   const msg = chatHistory.find(m => m.id === id);
   if (msg) msg.feedback = vote;
@@ -973,6 +999,95 @@ async function votarFeedback(id, vote) {
     });
   } catch (e) {
     console.warn('[feedback] error:', e.message);
+  }
+}
+
+// Carga html-to-image bajo demanda (solo al pulsar "compartir" por primera
+// vez), para no penalizar el arranque de la PWA con una librería que la
+// mayoría de sesiones no llega a usar.
+let htmlToImagePromise = null;
+function cargarHtmlToImage() {
+  if (window.htmlToImage) return Promise.resolve();
+  if (htmlToImagePromise) return htmlToImagePromise;
+  htmlToImagePromise = new Promise((resolve, reject) => {
+    const s = document.createElement('script');
+    s.src = 'https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.min.js';
+    s.onload = resolve;
+    s.onerror = () => { htmlToImagePromise = null; reject(new Error('No se pudo cargar la librería de imagen')); };
+    document.head.appendChild(s);
+  });
+  return htmlToImagePromise;
+}
+
+// Límite de caracteres para la tarjeta compartible: las respuestas largas se
+// cortan por el espacio en blanco más cercano y se completan con una nota
+// que invita a abrir la app (motivo: dar un formato práctico para reenviar
+// y, de paso, promocionar la app cuando la imagen circula suelta).
+const SHARE_MAX_CHARS = 900;
+
+// Rellena la tarjeta oculta #share-card con el texto (truncado si hace
+// falta) y la rasteriza a PNG. Devuelve un Blob listo para compartir/descargar.
+async function generarImagenRespuesta(texto) {
+  let cuerpo = texto || '';
+  if (cuerpo.length > SHARE_MAX_CHARS) {
+    let corte = cuerpo.slice(0, SHARE_MAX_CHARS);
+    const ultimoEspacio = corte.lastIndexOf(' ');
+    if (ultimoEspacio > SHARE_MAX_CHARS * 0.6) corte = corte.slice(0, ultimoEspacio);
+    cuerpo = corte + '\n\n*…continúa en la app*';
+  }
+
+  document.getElementById('share-moto-context').textContent =
+    currentBrand ? `${currentBrand} ${currentModel} ${currentYear}` : '';
+  document.getElementById('share-body').innerHTML = renderMd(cuerpo);
+
+  const card = document.getElementById('share-card');
+  // Un pequeño margen para que el navegador aplique el layout del texto
+  // recién insertado antes de que html-to-image mida y rasterice el nodo.
+  // Se usa setTimeout en vez de requestAnimationFrame porque rAF no se
+  // dispara de forma fiable si la pestaña no está compositando en primer
+  // plano (pestaña en background, PWA minimizada, ahorro de energía).
+  await new Promise(r => setTimeout(r, 50));
+  return htmlToImage.toBlob(card, { pixelRatio: 2, backgroundColor: '#ffffff' });
+}
+
+// Comparte una respuesta del bot como imagen (WhatsApp/Telegram/etc. vía
+// Web Share API en móvil, o descarga del PNG como fallback en desktop).
+async function compartirRespuesta(id) {
+  const fb = document.getElementById('fb-' + id);
+  const btn = fb ? fb.querySelector('[onclick^="compartirRespuesta"]') : null;
+  if (!fb) return;
+  const texto = fb.dataset.answer || '';
+  if (!texto) return;
+
+  const btnHtmlOriginal = btn ? btn.innerHTML : '';
+  if (btn) { btn.disabled = true; btn.innerHTML = '⏳'; }
+
+  try {
+    await cargarHtmlToImage();
+    const blob = await generarImagenRespuesta(texto);
+    const file = new File([blob], 'virtual-mechanic.png', { type: 'image/png' });
+
+    if (navigator.canShare && navigator.canShare({ files: [file] })) {
+      await navigator.share({
+        files: [file],
+        title: 'Virtual Mechanic',
+        text: currentBrand ? `${currentBrand} ${currentModel} ${currentYear} · Virtual Mechanic` : 'Virtual Mechanic'
+      });
+    } else {
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'virtual-mechanic.png';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 4000);
+    }
+  } catch (e) {
+    // AbortError: el usuario cerró el selector nativo de compartir, no es un fallo real.
+    if (e.name !== 'AbortError') console.warn('[compartir] error:', e.message);
+  } finally {
+    if (btn) { btn.disabled = false; btn.innerHTML = btnHtmlOriginal; }
   }
 }
 
@@ -1043,6 +1158,7 @@ async function procesarRespuestaStream(r, question) {
   const feedbackHtml = `<div id="fb-${messageId}" class="msg-feedback" data-question="${escapeHtml(question || '')}" data-answer="${escapeHtml(acumulado)}" data-used-manual="${usedManual ? '1' : '0'}">
       <button class="fb-btn" onclick="votarFeedback('${messageId}','up')" title="Respuesta útil">👍</button>
       <button class="fb-btn" onclick="votarFeedback('${messageId}','down')" title="Respuesta poco útil">👎</button>
+      <button class="fb-btn" onclick="compartirRespuesta('${messageId}')" title="Compartir como imagen">📤</button>
     </div>`;
   textEl.insertAdjacentHTML('afterend', feedbackHtml);
   msgs.scrollTop = msgs.scrollHeight;

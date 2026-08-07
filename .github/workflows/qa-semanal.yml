@@ -1,0 +1,81 @@
+name: QA semanal
+
+on:
+  schedule:
+    # Todos los lunes a las 07:00 UTC (08:00/09:00 hora de España según horario)
+    - cron: '0 7 * * 1'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          cache: 'npm'
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Instalar navegador de Playwright
+        run: npx playwright install chromium --with-deps
+
+      - name: Ejecutar comprobaciones QA
+        id: qa
+        env:
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+        run: node qa-checks.js
+
+      - name: Subir informe como artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa-informe
+          path: qa-informe.md
+          retention-days: 30
+
+      - name: Crear o actualizar issue si algo falla
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const informe = fs.existsSync('qa-informe.md')
+              ? fs.readFileSync('qa-informe.md', 'utf8')
+              : 'El QA falló antes de generar el informe (ver logs del workflow).';
+
+            const titulo = 'QA semanal: fallo detectado';
+            const cuerpo = `${informe}\n\n---\n[Ver ejecución del workflow](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`;
+
+            const abiertas = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'qa-semanal',
+            });
+
+            if (abiertas.data.length > 0) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: abiertas.data[0].number,
+                body: cuerpo,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: titulo,
+                body: cuerpo,
+                labels: ['qa-semanal'],
+              });
+            }

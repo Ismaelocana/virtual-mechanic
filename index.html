@@ -208,6 +208,17 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .foot a, .foot button { font-size: 11px; color: var(--text-tertiary); text-decoration: none; background: none; border: none; cursor: pointer; font-family: inherit; padding: 0; }
 .foot a:hover, .foot button:hover { color: var(--brand); }
 .foot .sep { font-size: 11px; color: var(--text-muted); }
+/* ── Onboarding ── */
+.onboarding { align-items: center; padding: 1.25rem 1.75rem 2rem; text-align: center; }
+.onb-top { width: 100%; display: flex; justify-content: flex-end; min-height: 30px; }
+.onb-skip { font-size: 13px; }
+.onb-content { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; }
+.onboarding-icon { width: 88px; height: 88px; border-radius: 50%; background: var(--brand-soft-bg); color: var(--brand); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.onb-content h1 { font-size: 21px; font-weight: 700; color: var(--text-primary); line-height: 1.3; }
+.onb-content p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; max-width: 280px; }
+.onb-dots { display: flex; gap: 6px; justify-content: center; margin: 20px 0 18px; }
+.onb-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--border); transition: background .15s, width .15s; }
+.onb-dot.active { background: var(--brand); width: 18px; border-radius: 4px; }
 /* ── History ── */
 .btn-historial { width: 100%; padding: 12px; background: transparent; border: 1.5px solid var(--border); border-radius: 12px; font-size: 14px; font-weight: 500; color: var(--text-body); cursor: pointer; display: none; }
 .btn-historial:hover { background: var(--surface-soft); }
@@ -299,6 +310,24 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <div style="padding:0 1.25rem 1.75rem">
       <button class="btn-main" onclick="window.location.replace(window.location.origin + '/app')">Entrar</button>
     </div>
+  </div>
+
+  <!-- ONBOARDING -->
+  <div id="s-onboarding" class="screen onboarding">
+    <div class="onb-top">
+      <button class="btn-text onb-skip" id="onb-skip-btn" onclick="finalizarOnboarding()">Saltar</button>
+    </div>
+    <div class="onb-content">
+      <div class="onboarding-icon" id="onb-icon"></div>
+      <h1 id="onb-title"></h1>
+      <p id="onb-desc"></p>
+    </div>
+    <div class="onb-dots" id="onb-dots">
+      <span class="onb-dot" data-dot="0"></span>
+      <span class="onb-dot" data-dot="1"></span>
+      <span class="onb-dot" data-dot="2"></span>
+    </div>
+    <button class="btn-main" id="onb-next-btn" onclick="onboardingSiguiente()">Siguiente</button>
   </div>
 
   <div id="s-login" class="screen">
@@ -1585,6 +1614,53 @@ function iniciarDictado() {
   btn.title = 'Escuchando… toca para detener';
 }
 
+// ── Onboarding (solo la primera vez, antes del login) ──────────────────────────
+const ONBOARDING_STORAGE_KEY = 'vm_onboarding_visto';
+const onboardingSlides = [
+  {
+    icon: `<svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2-2 2.5-2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+    title: 'Tu mecánico de moto con IA',
+    desc: 'Resuelve dudas técnicas, diagnostica averías y recibe pasos de reparación al instante, como si tuvieras un mecánico experto en el bolsillo.'
+  },
+  {
+    icon: `<svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M4 5.5C4 4.67 4.67 4 5.5 4H12v16H5.5A1.5 1.5 0 0 1 4 18.5v-13Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M20 5.5c0-.83-.67-1.5-1.5-1.5H12v16h6.5a1.5 1.5 0 0 0 1.5-1.5v-13Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>`,
+    title: 'Basado en manuales oficiales',
+    desc: 'No son respuestas genéricas: consultamos los manuales oficiales de tu marca y modelo para darte datos técnicos precisos — pares de apriete, procedimientos, especificaciones.'
+  },
+  {
+    icon: `<svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M12 2c3 2 5 6 5 10 0 2-.5 4-1.5 6l-1.5-2h-4l-1.5 2c-1-2-1.5-4-1.5-6 0-4 2-8 5-10Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="10" r="1.7" stroke="currentColor" stroke-width="1.5"/></svg>`,
+    title: 'Empieza gratis, sin compromiso',
+    desc: 'Tienes 10 consultas gratis cada día. Sin tarjeta, sin registro complicado — solo tu correo.'
+  }
+];
+let onboardingStep = 0;
+
+function pintarOnboarding() {
+  const s = onboardingSlides[onboardingStep];
+  document.getElementById('onb-icon').innerHTML = s.icon;
+  document.getElementById('onb-title').textContent = s.title;
+  document.getElementById('onb-desc').textContent = s.desc;
+  document.querySelectorAll('#onb-dots .onb-dot').forEach((d, i) => d.classList.toggle('active', i === onboardingStep));
+  document.getElementById('onb-skip-btn').style.visibility = onboardingStep < onboardingSlides.length - 1 ? 'visible' : 'hidden';
+  document.getElementById('onb-next-btn').textContent = onboardingStep < onboardingSlides.length - 1 ? 'Siguiente' : 'Empezar';
+}
+
+function onboardingSiguiente() {
+  if (onboardingStep < onboardingSlides.length - 1) { onboardingStep++; pintarOnboarding(); return; }
+  finalizarOnboarding();
+}
+
+function finalizarOnboarding() {
+  localStorage.setItem(ONBOARDING_STORAGE_KEY, '1');
+  showScreen('login');
+}
+
+function mostrarOnboardingSiNecesario() {
+  onboardingStep = 0;
+  pintarOnboarding();
+  showScreen('onboarding');
+}
+
 // ── Clerk auth ────────────────────────────────────────────────────────────────
 const CLERK_ENABLED = true;
 
@@ -1667,6 +1743,7 @@ const CLERK_ENABLED = true;
     showScreen('magic-ok'); return;
   }
 
+  if (!localStorage.getItem(ONBOARDING_STORAGE_KEY)) { mostrarOnboardingSiNecesario(); return; }
   showScreen('login');
 })();
 

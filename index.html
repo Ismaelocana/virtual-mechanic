@@ -66,7 +66,11 @@
     --brand-soft-bg: #3A2C13;
     --brand-soft-border: #5C4720;
     --brand-soft-text: #E8B85B;
-    --accent-soft: #5C4620;
+    /* --accent-soft NO se sobrescribe a propósito: el icono de .feature-icon
+       usa un trazo marrón oscuro (#633806) fijo en el HTML, pensado para
+       contrastar sobre un fondo claro tipo melocotón. Si este token se
+       oscureciera aquí, el icono quedaría prácticamente invisible (marrón
+       oscuro sobre marrón oscuro). */
     --success-soft-bg: #16321F;
     --success-soft-text: #6FCB93;
     --danger: #F16565;
@@ -90,7 +94,6 @@
   --brand-soft-bg: #3A2C13;
   --brand-soft-border: #5C4720;
   --brand-soft-text: #E8B85B;
-  --accent-soft: #5C4620;
   --success-soft-bg: #16321F;
   --success-soft-text: #6FCB93;
   --danger: #F16565;
@@ -118,12 +121,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .btn-install:hover { background: var(--brand-soft-bg); }
 .step-screen { padding: 1.25rem; gap: .9rem; overflow-y: auto; }
 .screen-header { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
-.btn-back { width: 32px; height: 32px; border: 1px solid var(--border); border-radius: 10px; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.btn-back { width: 32px; height: 32px; border: 1px solid var(--border); border-radius: 10px; background: transparent; color: var(--text-primary); cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .screen-header h2 { font-size: 17px; font-weight: 600; color: var(--text-primary); }
 .screen-header p { font-size: 11px; color: var(--text-secondary); }
 .progress { height: 3px; background: var(--surface-hover); border-radius: 2px; flex-shrink: 0; }
 .progress-fill { height: 3px; background: var(--brand); border-radius: 2px; transition: width .3s; }
-.item-btn { display: flex; align-items: center; justify-content: space-between; padding: 13px 14px; background: var(--surface-soft); border: 1px solid var(--border-soft); border-radius: 12px; cursor: pointer; width: 100%; text-align: left; transition: background .15s; flex-shrink: 0; }
+.item-btn { display: flex; align-items: center; justify-content: space-between; padding: 13px 14px; background: var(--surface-soft); border: 1px solid var(--border-soft); border-radius: 12px; cursor: pointer; width: 100%; text-align: left; transition: background .15s; flex-shrink: 0; color: var(--text-tertiary); }
 .item-btn:hover { background: var(--surface-hover); }
 .item-btn-inner { display: flex; align-items: center; gap: 12px; }
 .brand-logo { width: 100%; height: 50px; border-radius: 8px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; }
@@ -135,7 +138,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .brand-card { display: flex; flex-direction: column; align-items: stretch; padding: 6px; background: var(--surface-soft); border: 1px solid var(--border-soft); border-radius: 12px; cursor: pointer; width: 100%; font-family: inherit; transition: background .15s; }
 .brand-card:hover { background: var(--surface-hover); }
 .brand-card-name { font-size: 13px; font-weight: 600; color: var(--text-primary); }
-.cat-icon-wrap { width: 40px; height: 40px; border-radius: 10px; background: var(--surface-hover); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.cat-icon-wrap { width: 40px; height: 40px; border-radius: 10px; background: var(--surface-hover); color: var(--text-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .year-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; overflow-y: auto; flex: 1; }
 .year-btn { padding: 12px 8px; background: var(--surface-soft); border: 1px solid var(--border-soft); border-radius: 10px; cursor: pointer; font-size: 14px; font-weight: 500; color: var(--text-primary); text-align: center; transition: all .15s; }
 .year-btn:hover { background: var(--brand); color: #412402; border-color: var(--brand); }
@@ -175,7 +178,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .msg-user { display: flex; justify-content: flex-end; }
 .msg-bubble-user { background: var(--brand); border-radius: 12px 0 12px 12px; padding: 10px 12px; max-width: 260px; font-size: 13px; color: #412402; line-height: 1.6; }
 .chat-input { padding: .75rem 1rem; border-top: 1px solid var(--divider); display: flex; gap: 8px; align-items: flex-end; flex-shrink: 0; }
-.btn-photo { width: 36px; height: 36px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-soft); cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.btn-photo { width: 36px; height: 36px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-soft); color: var(--text-secondary); cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .btn-mic { width: 36px; height: 36px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-soft); color: var(--text-secondary); cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .btn-mic.listening { background: var(--danger-soft-bg); border-color: var(--danger); color: var(--danger); animation: pulse 1.2s ease-in-out infinite; }
 #msg-input { flex: 1; border: 1px solid var(--border); border-radius: 12px; padding: 9px 12px; font-size: 13px; font-family: inherit; resize: none; min-height: 36px; max-height: 80px; line-height: 1.4; color: var(--text-primary); background: var(--surface); outline: none; }
@@ -215,13 +218,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .history-year { font-weight: 400; color: var(--text-secondary); }
 .history-preview { font-size: 12px; color: var(--text-secondary); margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .history-meta { font-size: 11px; color: var(--text-tertiary); margin-top: 4px; }
-.history-del { width: 42px; border: none; border-left: 1px solid var(--border-soft); background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.history-del { width: 42px; border: none; border-left: 1px solid var(--border-soft); background: transparent; color: var(--text-tertiary); cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .history-del:hover { background: var(--danger-soft-bg); }
 .history-empty { text-align: center; color: var(--text-tertiary); font-size: 13px; padding: 3rem 1.5rem; line-height: 1.6; }
 .garage-moto { font-size: 14px; font-weight: 600; color: var(--text-primary); }
 .garage-meta { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
 .garage-summary { font-size: 11px; color: var(--brand); margin-top: 2px; }
-.history-edit { width: 42px; border: none; border-left: 1px solid var(--border-soft); background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.history-edit { width: 42px; border: none; border-left: 1px solid var(--border-soft); background: transparent; color: var(--text-tertiary); cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .history-edit:hover { background: var(--surface-hover); }
 
 /* ── Modal mantenimiento ── */
@@ -374,7 +377,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   <!-- HISTORY -->
   <div id="s-history" class="screen step-screen">
     <div class="screen-header">
-      <button class="btn-back" onclick="showScreen('home')"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="btn-back" onclick="showScreen('home')"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <div><h2>Mis consultas</h2></div>
     </div>
     <div id="history-list" class="list-container"></div>
@@ -383,7 +386,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   <!-- GARAJE -->
   <div id="s-garage" class="screen" style="padding:1.25rem;gap:.9rem">
     <div class="screen-header" style="flex-shrink:0">
-      <button class="btn-back" onclick="document.getElementById('btn-mi-garaje').style.display='';showScreen('brand')"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="btn-back" onclick="document.getElementById('btn-mi-garaje').style.display='';showScreen('brand')"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <div><h2>Mi garaje</h2></div>
     </div>
     <div id="garage-list" class="list-container"></div>
@@ -393,7 +396,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   <!-- BRAND -->
   <div id="s-brand" class="screen step-screen">
     <div class="screen-header">
-      <button class="btn-back" onclick="volverDesdeMarcas()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="btn-back" onclick="volverDesdeMarcas()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <div><h2>Selecciona tu marca</h2><p>Paso 1 de 5</p></div>
     </div>
     <div class="progress"><div class="progress-fill" style="width:20%"></div></div>
@@ -403,7 +406,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   <!-- CATEGORY -->
   <div id="s-category" class="screen step-screen">
     <div class="screen-header">
-      <button class="btn-back" onclick="showScreen('brand')"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="btn-back" onclick="showScreen('brand')"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <div><h2>Selecciona la categoría</h2><p>Paso 2 de 5</p></div>
     </div>
     <div class="progress"><div class="progress-fill" style="width:40%"></div></div>
@@ -414,7 +417,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   <!-- ENGINE TYPE -->
   <div id="s-engine" class="screen step-screen">
     <div class="screen-header">
-      <button class="btn-back" onclick="goBackFromEngine()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="btn-back" onclick="goBackFromEngine()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <div><h2>Tipo de motor</h2><p>Paso 3 de 5</p></div>
     </div>
     <div class="progress"><div class="progress-fill" style="width:60%"></div></div>
@@ -425,7 +428,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   <!-- MODEL -->
   <div id="s-model" class="screen step-screen">
     <div class="screen-header">
-      <button class="btn-back" onclick="goBackFromModel()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="btn-back" onclick="goBackFromModel()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <div><h2>Selecciona el modelo</h2><p>Paso 4 de 5</p></div>
     </div>
     <div class="progress"><div class="progress-fill" style="width:80%"></div></div>
@@ -436,7 +439,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   <!-- YEAR -->
   <div id="s-year" class="screen step-screen">
     <div class="screen-header">
-      <button class="btn-back" onclick="showScreen('model')"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="btn-back" onclick="showScreen('model')"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <div><h2>Selecciona el año</h2><p>Paso 5 de 5</p></div>
     </div>
     <div class="progress"><div class="progress-fill" style="width:100%"></div></div>
@@ -447,11 +450,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   <!-- CHAT -->
   <div id="s-chat" class="screen" style="flex-direction:column">
     <div class="chat-header">
-      <button class="btn-back" style="border:none;background:transparent" onclick="showScreen(chatReturnScreen)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="btn-back" style="border:none;background:transparent" onclick="showScreen(chatReturnScreen)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <div class="chat-avatar" id="chat-avatar">VM</div>
       <div class="chat-title-wrap"><h3 id="chat-title">Virtual Mechanic</h3><p>Mecánico IA</p></div>
       <button class="btn-comparar" id="btn-comparar-anio" onclick="abrirModalComparar()" title="Comparar con otro año" style="display:none">
-        <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M2 6H12M12 6L9 3M12 6L9 9" stroke="#333" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 10H4M4 10L7 7M4 10L7 13" stroke="#333" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M2 6H12M12 6L9 3M12 6L9 9" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 10H4M4 10L7 7M4 10L7 13" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <span>Comparar</span>
       </button>
       <div class="online-dot"></div>
@@ -460,7 +463,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <div class="chat-input">
       <input type="file" id="photo-input" accept="image/*" style="display:none" onchange="handlePhoto(event)"/>
       <button class="btn-photo" onclick="document.getElementById('photo-input').click()">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="4" width="12" height="9" rx="2" stroke="#888" stroke-width="1.2"/><circle cx="8" cy="8.5" r="2" stroke="#888" stroke-width="1.2"/><path d="M6 4L6.8 2.5H9.2L10 4" stroke="#888" stroke-width="1.2"/></svg>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="4" width="12" height="9" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8" cy="8.5" r="2" stroke="currentColor" stroke-width="1.2"/><path d="M6 4L6.8 2.5H9.2L10 4" stroke="currentColor" stroke-width="1.2"/></svg>
       </button>
       <textarea id="msg-input" placeholder="Describe el problema..." rows="1" onkeydown="handleKey(event)" oninput="resize(this)"></textarea>
       <button class="btn-mic" id="btn-mic" style="display:none" onclick="toggleDictado()" title="Dictar por voz">
@@ -738,7 +741,7 @@ function showScreen(n) {
 }
 
 function arrowSvg() {
-  return `<svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M6 4L10 8L6 12" stroke="#CCC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  return `<svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 }
 
 const brandList = document.getElementById('brand-list');
@@ -1910,7 +1913,7 @@ async function mostrarHistorial() {
           <div class="history-meta">${formatFecha(chat.updatedAt)} · ${chat.messageCount} ${chat.messageCount === 1 ? 'mensaje' : 'mensajes'}</div>
         </div>
         <button class="history-del" onclick="eliminarChat('${escapeHtml(chat.chatId)}', this)" title="Eliminar">
-          <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M2 4h12M5 4V3h6v1M6 7v5M10 7v5M3 4l1 9h8l1-9" stroke="#BBB" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M2 4h12M5 4V3h6v1M6 7v5M10 7v5M3 4l1 9h8l1-9" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>`;
       list.appendChild(el);
     });
@@ -1999,12 +2002,12 @@ async function mostrarGaraje() {
       const edit = document.createElement('button');
       edit.className = 'history-edit';
       edit.title = 'Mantenimiento';
-      edit.innerHTML = `<svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M11.3 2.3a1 1 0 0 1 1.4 0l1 1a1 1 0 0 1 0 1.4l-7.6 7.6-3 .7.7-3 7.5-7.7Z" stroke="#BBB" stroke-width="1.3" stroke-linejoin="round"/></svg>`;
+      edit.innerHTML = `<svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M11.3 2.3a1 1 0 0 1 1.4 0l1 1a1 1 0 0 1 0 1.4l-7.6 7.6-3 .7.7-3 7.5-7.7Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>`;
       edit.onclick = () => abrirModalMantenimiento(bike);
       const del = document.createElement('button');
       del.className = 'history-del';
       del.title = 'Eliminar';
-      del.innerHTML = `<svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M2 4h12M5 4V3h6v1M6 7v5M10 7v5M3 4l1 9h8l1-9" stroke="#BBB" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+      del.innerHTML = `<svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M2 4h12M5 4V3h6v1M6 7v5M10 7v5M3 4l1 9h8l1-9" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
       del.onclick = () => eliminarMoto(bike.bikeId, del);
       const bd = brandsData[bike.brand];
       if (bd) {

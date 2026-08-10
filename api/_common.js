@@ -18,6 +18,17 @@ async function fetchWithTimeout(url, options, ms = 5000) {
   }
 }
 
+// Fecha (YYYY-MM-DD, UTC) del lunes de la semana que contiene `fecha`. Usado
+// como sufijo de las claves Redis ':week:{semana}' — chat.js, feedback.js y
+// admin.js deben calcular la misma clave para una fecha dada.
+function mondayOf(fecha = new Date()) {
+  const d = new Date(Date.UTC(fecha.getUTCFullYear(), fecha.getUTCMonth(), fecha.getUTCDate()));
+  const dia = d.getUTCDay();                          // 0=domingo .. 6=sábado
+  const diff = (dia === 0 ? -6 : 1) - dia;             // retrocede hasta el lunes
+  d.setUTCDate(d.getUTCDate() + diff);
+  return d.toISOString().slice(0, 10);
+}
+
 // ── Verificación del JWT de sesión de Clerk (idéntica a la de chat.js) ───────
 const CLERK_DOMAIN = 'clerk.virtualmechanic.es';
 
@@ -167,4 +178,5 @@ module.exports = {
   hsetSubscription,
   mapCustomerToUser,
   getUserByCustomer,
+  mondayOf,
 };

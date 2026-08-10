@@ -1,0 +1,28 @@
+name: Informe semanal
+
+on:
+  schedule:
+    # Todos los lunes a las 08:00 UTC (09:00/10:00 hora de España según horario)
+    - cron: '0 8 * * 1'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  informe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+
+      - name: Generar y enviar el informe semanal
+        env:
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: node informe-semanal.js

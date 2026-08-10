@@ -1,7 +1,7 @@
 const crypto = require('crypto');
 const Anthropic = require('@anthropic-ai/sdk');
 const { Pinecone } = require('@pinecone-database/pinecone');
-const { esPremium, redisCommand } = require('./_common');
+const { esPremium, redisCommand, mondayOf } = require('./_common');
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
@@ -308,12 +308,13 @@ INSTRUCCIÓN IMPORTANTE: Si, comparando las horas actuales y el historial contra
   }
 }
 
-async function logConsulta(brand, model, year, usedManual) {
+async function logConsulta(brand, model, year, usedManual, userId) {
   const url = process.env.UPSTASH_REDIS_REST_URL;
   const token = process.env.UPSTASH_REDIS_REST_TOKEN;
   if (!url || !token) return;
   try {
     const today = new Date().toISOString().slice(0, 10);
+    const semana = mondayOf();
     const entry = JSON.stringify({ brand, model, year, usedManual, t: Date.now() });
     const comandos = [
       ['INCR', 'vm:total'],
@@ -323,7 +324,17 @@ async function logConsulta(brand, model, year, usedManual) {
       ['INCR', usedManual ? 'vm:manual' : 'vm:general'],
       ['LPUSH', 'vm:recent', entry],
       ['LTRIM', 'vm:recent', '0', '199'],
+      // Contadores por semana (lunes-domingo, UTC) para el informe semanal —
+      // independientes de los acumulados de arriba, con TTL de 14 días.
+      ['ZINCRBY', `vm:brands:week:${semana}`, '1', `${brand}|${model}`],
+      ['EXPIRE', `vm:brands:week:${semana}`, '1209600', 'NX'],
     ];
+    if (userId) {
+      comandos.push(
+        ['SADD', `vm:active:week:${semana}`, userId],
+        ['EXPIRE', `vm:active:week:${semana}`, '1209600', 'NX']
+      );
+    }
     // Agregado persistente (no se pierde al salir de las últimas 200 consultas)
     // de qué combinación marca+modelo+año se responde sin manual, para priorizar
     // qué manuales indexar o qué mapeos de normalizarModelo revisar.
@@ -396,7 +407,7 @@ async function comprobarRateLimit(userId) {
 // construye su propio system prompt a partir de los manuales completos.
 // Devuelve la misma respuesta NDJSON en streaming que el resto de /api/chat,
 // para que el frontend pueda reusar exactamente el mismo lector.
-async function manejarComparacionAnios(res, brand, model, yearA, yearB) {
+async function manejarComparacionAnios(res, userId, brand, model, yearA, yearB) {
   res.setHeader('Content-Type', 'application/x-ndjson; charset=utf-8');
   res.setHeader('Cache-Control', 'no-cache, no-transform');
   res.setHeader('X-Accel-Buffering', 'no');
@@ -419,7 +430,7 @@ async function manejarComparacionAnios(res, brand, model, yearA, yearB) {
       enviar({ type: 'delta', text: mensaje });
       enviar({ type: 'done' });
       res.end();
-      logConsulta(brand, model, `${yearA}vs${yearB}`, false);
+      logConsulta(brand, model, `${yearA}vs${yearB}`, false, userId);
       return;
     }
 
@@ -467,7 +478,7 @@ ${comparacion.textoB}`;
 
     enviar({ type: 'done' });
     res.end();
-    logConsulta(brand, model, `${yearA}vs${yearB}`, true);
+    logConsulta(brand, model, `${yearA}vs${yearB}`, true, userId);
   } catch (error) {
     console.error('manejarComparacionAnios error:', error.message);
     if (!res.headersSent) {
@@ -508,7 +519,7 @@ module.exports = async (req, res) => {
   // bloque de mantenimiento), con su propio system prompt y sus propias
   // salvaguardas. Termina la petición aquí.
   if (compareYear) {
-    return manejarComparacionAnios(res, brand, model, year, compareYear);
+    return manejarComparacionAnios(res, userId, brand, model, year, compareYear);
   }
 
   // For images use last text user message as query; for text use the last user message
@@ -599,7 +610,7 @@ Responde siempre en español. Sé directo y práctico, como lo sería un buen me
 
     enviar({ type: 'done' });
     res.end();
-    logConsulta(brand, model, year, !!context);
+    logConsulta(brand, model, year, !!context, userId);
   } catch (error) {
     console.error('Error:', error.message);
     if (!res.headersSent) {

@@ -1,6 +1,6 @@
 // POST /api/feedback — registra un voto 👍/👎 sobre una respuesta concreta del chat.
 // Autenticado (mismo patrón que /api/chat). El estado de suscripción no interviene aquí.
-const { verificarSesion, fetchWithTimeout, redisCommand } = require('./_common');
+const { verificarSesion, fetchWithTimeout, redisCommand, mondayOf } = require('./_common');
 
 async function redisPipeline(commands) {
   const url = process.env.UPSTASH_REDIS_REST_URL;
@@ -51,10 +51,14 @@ module.exports = async (req, res) => {
     const setResult = await redisCommand(['SET', `vm:fb:msg:${messageId}`, entry, 'NX']);
 
     if (setResult === 'OK') {
+      const semana = mondayOf();
       await redisPipeline([
         ['INCR', vote === 'up' ? 'vm:fb:up' : 'vm:fb:down'],
         ['LPUSH', 'vm:fb:recent', entry],
         ['LTRIM', 'vm:fb:recent', '0', '199'],
+        // Contador semanal (lunes-domingo, UTC) para el informe semanal.
+        ['INCR', `vm:fb:${vote === 'up' ? 'up' : 'down'}:week:${semana}`],
+        ['EXPIRE', `vm:fb:${vote === 'up' ? 'up' : 'down'}:week:${semana}`, '1209600', 'NX'],
       ]);
     }
 

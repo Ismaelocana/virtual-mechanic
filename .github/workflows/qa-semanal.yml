@@ -79,3 +79,31 @@ jobs:
                 labels: ['qa-semanal'],
               });
             }
+
+      - name: Avisar por email si algo falla
+        if: failure()
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          node -e '
+            const fs = require("fs");
+            const informe = fs.existsSync("qa-informe.md")
+              ? fs.readFileSync("qa-informe.md", "utf8")
+              : "El QA falló antes de generar el informe (ver logs del workflow de GitHub Actions).";
+            const html = "<pre style=\"font-family:monospace;font-size:13px;white-space:pre-wrap\">" +
+              informe.replace(/&/g, "&amp;").replace(/</g, "&lt;") + "</pre>";
+            fetch("https://api.resend.com/emails", {
+              method: "POST",
+              headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, "Content-Type": "application/json" },
+              body: JSON.stringify({
+                from: "Virtual Mechanic <onboarding@resend.dev>",
+                to: ["soporte@virtualmechanic.es"],
+                subject: "QA semanal: fallo detectado",
+                html,
+              }),
+            }).then(async r => {
+              const body = await r.text();
+              if (!r.ok) { console.error("Resend HTTP " + r.status + ": " + body); process.exit(1); }
+              console.log("Email de aviso enviado:", body);
+            });
+          '

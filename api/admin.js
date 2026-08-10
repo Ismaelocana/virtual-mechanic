@@ -1,3 +1,5 @@
+const { mondayOf } = require('./_common');
+
 async function redisPipeline(commands) {
   const url = process.env.UPSTASH_REDIS_REST_URL;
   const token = process.env.UPSTASH_REDIS_REST_TOKEN;
@@ -22,8 +24,14 @@ module.exports = async (req, res) => {
     return res.status(401).json({ error: 'No autorizado' });
   }
 
+  const vacio = {
+    total: 0, today: 0, manual: 0, general: 0, days: [], brands: [], recent: [], sinManual: [],
+    fbUp: 0, fbDown: 0, fbRecent: [],
+    week: { desde: null, hasta: null, total: 0, activeUsers: 0, brands: [], fbUp: 0, fbDown: 0 },
+  };
+
   if (!process.env.UPSTASH_REDIS_REST_URL) {
-    return res.json({ total: 0, today: 0, manual: 0, general: 0, days: [], brands: [], recent: [], sinManual: [], fbUp: 0, fbDown: 0, fbRecent: [] });
+    return res.json(vacio);
   }
 
   const today = new Date().toISOString().slice(0, 10);
@@ -36,6 +44,15 @@ module.exports = async (req, res) => {
     dayKeys.push(d.toISOString().slice(0, 10));
   }
 
+  // Última semana completa (lunes-domingo, UTC) anterior a hoy — la que resume
+  // el informe semanal cuando se ejecuta el lunes siguiente.
+  const semanaPasada = mondayOf(new Date(Date.now() - 7 * 86400000));
+  const fechasSemanaPasada = Array.from({ length: 7 }, (_, i) => {
+    const d = new Date(`${semanaPasada}T00:00:00Z`);
+    d.setUTCDate(d.getUTCDate() + i);
+    return d.toISOString().slice(0, 10);
+  });
+
   const pipeline = [
     ['GET', 'vm:total'],
     ['GET', 'vm:manual'],
@@ -47,13 +64,21 @@ module.exports = async (req, res) => {
     ['GET', 'vm:fb:up'],
     ['GET', 'vm:fb:down'],
     ['LRANGE', 'vm:fb:recent', '0', '49'],
+    ['SCARD', `vm:active:week:${semanaPasada}`],
+    ['ZREVRANGE', `vm:brands:week:${semanaPasada}`, '0', '9', 'WITHSCORES'],
+    ['GET', `vm:fb:up:week:${semanaPasada}`],
+    ['GET', `vm:fb:down:week:${semanaPasada}`],
     ...dayKeys.map(d => ['GET', `vm:day:${d}`])
   ];
 
   const results = await redisPipeline(pipeline);
-  if (!results) return res.json({ total: 0, today: 0, manual: 0, general: 0, days: [], brands: [], recent: [], sinManual: [], fbUp: 0, fbDown: 0, fbRecent: [] });
+  if (!results) return res.json(vacio);
 
-  const [totalR, manualR, generalR, todayR, brandsR, recentR, sinManualR, fbUpR, fbDownR, fbRecentR, ...dayResults] = results.map(r => r.result);
+  const [
+    totalR, manualR, generalR, todayR, brandsR, recentR, sinManualR, fbUpR, fbDownR, fbRecentR,
+    activeUsersWeekR, brandsWeekR, fbUpWeekR, fbDownWeekR,
+    ...dayResults
+  ] = results.map(r => r.result);
 
   // Marcas: sorted set viene como array [nombre, score, nombre, score, ...]
   const brands = [];
@@ -86,6 +111,21 @@ module.exports = async (req, res) => {
   // Días: ordenar de antiguo a reciente
   const days = dayKeys.map((date, i) => ({ date, count: parseInt(dayResults[i]) || 0 })).reverse();
 
+  // Total de la semana pasada: suma de los 7 días correspondientes (ya están
+  // dentro de los 30 días que se piden arriba, sin llamada extra a Redis)
+  const totalWeek = fechasSemanaPasada.reduce((sum, fecha) => {
+    const dia = days.find(d => d.date === fecha);
+    return sum + (dia ? dia.count : 0);
+  }, 0);
+
+  // Modelos más consultados de la semana pasada (mismo formato que 'brands')
+  const brandsWeek = [];
+  if (Array.isArray(brandsWeekR)) {
+    for (let i = 0; i < brandsWeekR.length; i += 2) {
+      brandsWeek.push({ name: brandsWeekR[i], count: parseInt(brandsWeekR[i + 1]) || 0 });
+    }
+  }
+
   res.json({
     total: parseInt(totalR) || 0,
     today: parseInt(todayR) || 0,
@@ -97,6 +137,15 @@ module.exports = async (req, res) => {
     sinManual,
     fbUp: parseInt(fbUpR) || 0,
     fbDown: parseInt(fbDownR) || 0,
-    fbRecent
+    fbRecent,
+    week: {
+      desde: semanaPasada,
+      hasta: fechasSemanaPasada[6],
+      total: totalWeek,
+      activeUsers: parseInt(activeUsersWeekR) || 0,
+      brands: brandsWeek,
+      fbUp: parseInt(fbUpWeekR) || 0,
+      fbDown: parseInt(fbDownWeekR) || 0,
+    },
   });
 };

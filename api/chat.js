@@ -338,37 +338,56 @@ async function logConsulta(brand, model, year, usedManual) {
   } catch (_) { /* logging no debe romper la respuesta principal */ }
 }
 
-// Rate limiting por usuario: ventana rodante de 24h desde la 1ª consulta.
-// Clave vm:rl:{userId}, INCR + EXPIRE 24h NX (el TTL solo se fija en la primera
-// consulta, así el contador y su reinicio "ruedan" 24h desde entonces).
-// Devuelve { ok, limit, count, resetAt } (resetAt = epoch ms de reactivación).
+// Rate limiting por usuario: doble límite con ventanas rodantes independientes.
+// Claves vm:rl:d:{userId} (24h) y vm:rl:w:{userId} (7 días), cada una con
+// INCR + EXPIRE NX (el TTL solo se fija en la primera consulta de esa ventana,
+// así el contador y su reinicio "ruedan" desde entonces). El límite semanal
+// evita que alguien agote el diario todos los días y acabe con un uso casi
+// ilimitado.
+// Devuelve { ok, limitType, resetAt } si se supera algún límite (limitType
+// indica cuál: 'week' tiene prioridad sobre 'day' porque es el techo real —
+// se puede superar el semanal sin haber agotado el diario de hoy).
 // Fail-open: si Redis no está configurado o falla, permite pasar (no bloquea el chat).
 async function comprobarRateLimit(userId) {
   const url = process.env.UPSTASH_REDIS_REST_URL;
   const token = process.env.UPSTASH_REDIS_REST_TOKEN;
-  const limit = parseInt(process.env.RATE_LIMIT_PER_DAY, 10) || 10;
-  const WINDOW = 86400;                                            // 24h en segundos
-  if (!url || !token) return { ok: true, limit };
+  const limitDay = parseInt(process.env.RATE_LIMIT_PER_DAY, 10) || 5;
+  const limitWeek = parseInt(process.env.RATE_LIMIT_PER_WEEK, 10) || 20;
+  const WINDOW_DAY = 86400;                                        // 24h en segundos
+  const WINDOW_WEEK = 604800;                                      // 7 días en segundos
+  if (!url || !token) return { ok: true };
   try {
-    const key = `vm:rl:${userId}`;
+    const keyDay = `vm:rl:d:${userId}`;
+    const keyWeek = `vm:rl:w:${userId}`;
     const res = await fetchWithTimeout(`${url}/pipeline`, {
       method: 'POST',
       headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
       body: JSON.stringify([
-        ['INCR', key],
-        ['EXPIRE', key, String(WINDOW), 'NX'],                     // fija TTL solo si aún no lo tiene (1ª consulta)
-        ['PTTL', key],                                             // ms que quedan hasta el reinicio
+        ['INCR', keyDay],
+        ['EXPIRE', keyDay, String(WINDOW_DAY), 'NX'],
+        ['PTTL', keyDay],
+        ['INCR', keyWeek],
+        ['EXPIRE', keyWeek, String(WINDOW_WEEK), 'NX'],
+        ['PTTL', keyWeek],
       ])
     }, 3000);
-    if (!res.ok) return { ok: true, limit };                       // fail-open si Redis responde mal
+    if (!res.ok) return { ok: true };                               // fail-open si Redis responde mal
     const data = await res.json();
-    const count = Array.isArray(data) && data[0] ? Number(data[0].result) : 0;
-    const pttl = Array.isArray(data) && data[2] ? Number(data[2].result) : -1;
-    const resetAt = pttl > 0 ? Date.now() + pttl : null;
-    return { ok: count <= limit, limit, count, resetAt };
+    const countDay = Array.isArray(data) && data[0] ? Number(data[0].result) : 0;
+    const pttlDay = Array.isArray(data) && data[2] ? Number(data[2].result) : -1;
+    const countWeek = Array.isArray(data) && data[3] ? Number(data[3].result) : 0;
+    const pttlWeek = Array.isArray(data) && data[5] ? Number(data[5].result) : -1;
+
+    if (countWeek > limitWeek) {
+      return { ok: false, limitType: 'week', resetAt: pttlWeek > 0 ? Date.now() + pttlWeek : null };
+    }
+    if (countDay > limitDay) {
+      return { ok: false, limitType: 'day', resetAt: pttlDay > 0 ? Date.now() + pttlDay : null };
+    }
+    return { ok: true };
   } catch (e) {
     console.error('comprobarRateLimit error:', e.message);
-    return { ok: true, limit };                                    // fail-open ante cualquier fallo
+    return { ok: true };                                            // fail-open ante cualquier fallo
   }
 }
 
@@ -478,7 +497,7 @@ module.exports = async (req, res) => {
   if (!premium) {
     const rl = await comprobarRateLimit(userId);
     if (!rl.ok) {
-      return res.status(429).json({ error: 'Has agotado tus consultas.', resetAt: rl.resetAt || null });
+      return res.status(429).json({ error: 'Has agotado tus consultas.', limitType: rl.limitType, resetAt: rl.resetAt || null });
     }
   }
 

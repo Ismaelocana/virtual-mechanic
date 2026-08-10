@@ -1415,7 +1415,8 @@ function formatoFecha(epochMs) {
 // Mensaje amigable según el error HTTP de /api/chat y el cuerpo ya parseado.
 function mensajeErrorChat(status, data) {
   if (status === 429) {
-    if (data && data.resetAt) return `Has agotado tus consultas. Vuelven a estar disponibles el ${formatoFecha(data.resetAt)}.`;
+    const cual = data && data.limitType === 'week' ? 'semanales' : 'diarias';
+    if (data && data.resetAt) return `Has agotado tus consultas ${cual}. Vuelven a estar disponibles el ${formatoFecha(data.resetAt)}.`;
     return 'Has agotado tus consultas. Vuelve a intentarlo más tarde.';
   }
   if (status === 401) return 'Tu sesión ha caducado. Vuelve a iniciar sesión.';
@@ -1447,7 +1448,7 @@ async function send() {
       hideTyping();
       const errData = await r.json().catch(() => ({}));
       addBot(mensajeErrorChat(r.status, errData));
-      if (r.status === 429) mostrarModalPremium(errData.resetAt);
+      if (r.status === 429) mostrarModalPremium(errData.resetAt, errData.limitType);
       return;
     }
     await procesarRespuestaStream(r, text);
@@ -1495,7 +1496,7 @@ function handlePhoto(e) {
           hideTyping();
           const errData = await r.json().catch(() => ({}));
           addBot(mensajeErrorChat(r.status, errData));
-          if (r.status === 429) mostrarModalPremium(errData.resetAt);
+          if (r.status === 429) mostrarModalPremium(errData.resetAt, errData.limitType);
           return;
         }
         chatHistory.push({ role: 'user', content: '[Foto enviada para diagnóstico]' });
@@ -1630,7 +1631,7 @@ const onboardingSlides = [
   {
     icon: `<svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M12 2c3 2 5 6 5 10 0 2-.5 4-1.5 6l-1.5-2h-4l-1.5 2c-1-2-1.5-4-1.5-6 0-4 2-8 5-10Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="10" r="1.7" stroke="currentColor" stroke-width="1.5"/></svg>`,
     title: 'Empieza gratis, sin compromiso',
-    desc: 'Tienes 10 consultas gratis cada día. Sin tarjeta, sin registro complicado — solo tu correo.'
+    desc: 'Tienes 5 consultas gratis cada día (hasta 20 a la semana). Sin tarjeta, sin registro complicado — solo tu correo.'
   }
 ];
 let onboardingStep = 0;
@@ -1896,11 +1897,15 @@ async function cargarEstadoSuscripcion() {
   }
 }
 
-function mostrarModalPremium(resetAt) {
+function mostrarModalPremium(resetAt, limitType) {
   const msgEl = document.getElementById('modal-premium-msg');
-  msgEl.textContent = resetAt
-    ? `Has agotado tus 10 consultas gratuitas de hoy. Vuelven a estar disponibles el ${formatoFecha(resetAt)}. Hazte Premium para consultas ilimitadas.`
-    : 'Disfruta de consultas ilimitadas con tu mecánico de IA.';
+  if (!resetAt) {
+    msgEl.textContent = 'Disfruta de consultas ilimitadas con tu mecánico de IA.';
+  } else if (limitType === 'week') {
+    msgEl.textContent = `Has alcanzado el límite semanal de 20 consultas gratuitas. Vuelven a estar disponibles el ${formatoFecha(resetAt)}. Hazte Premium para consultas ilimitadas.`;
+  } else {
+    msgEl.textContent = `Has agotado tus 5 consultas gratuitas de hoy. Vuelven a estar disponibles el ${formatoFecha(resetAt)}. Hazte Premium para consultas ilimitadas.`;
+  }
   document.getElementById('modal-premium').classList.add('show');
 }
 
@@ -2333,7 +2338,7 @@ async function iniciarComparacion(yearB) {
       hideTyping();
       const errData = await r.json().catch(() => ({}));
       addBot(mensajeErrorChat(r.status, errData));
-      if (r.status === 429) mostrarModalPremium(errData.resetAt);
+      if (r.status === 429) mostrarModalPremium(errData.resetAt, errData.limitType);
       return;
     }
     await procesarRespuestaStream(r, pregunta);

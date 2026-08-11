@@ -526,6 +526,17 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     </div>
   </div>
 
+  <!-- MODAL RETORNO DE CHECKOUT (éxito / procesando / cancelado) -->
+  <div id="modal-checkout" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close" onclick="cerrarModalCheckout()">✕</button>
+      <div class="modal-icon" id="modal-checkout-icon">🎉</div>
+      <h2 id="modal-checkout-title">¡Pago completado!</h2>
+      <p id="modal-checkout-msg" class="modal-msg">Ya eres Premium.</p>
+      <button class="btn-main" onclick="cerrarModalCheckout()">Entendido</button>
+    </div>
+  </div>
+
   <!-- MODAL MANTENIMIENTO -->
   <div id="modal-mantenimiento" class="modal-overlay">
     <div class="modal-box modal-box-wide">
@@ -1851,6 +1862,7 @@ function irAlHome() {
   document.getElementById('btn-mi-garaje').style.display = '';
   showScreen('home');
   cargarEstadoSuscripcion();
+  manejarRetornoCheckout();
 }
 
 // ── Suscripción / Premium ─────────────────────────────────────────────────────
@@ -1895,6 +1907,75 @@ async function cargarEstadoSuscripcion() {
     console.warn('[subscription] error:', e.message);
     if (!cache) el.innerHTML = '';
   }
+}
+
+// ── Retorno de Stripe Checkout (?checkout=success|cancel) ──────────────────────
+// success_url/cancel_url en api/stripe-checkout.js redirigen aquí. El parámetro
+// se limpia de la URL de inmediato para que una recarga posterior no repita
+// el modal, incluso si el polling de abajo aún no ha terminado.
+const CHECKOUT_POLL_INTENTOS = 10;
+const CHECKOUT_POLL_INTERVALO_MS = 1500;
+
+function esperar(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+function mostrarModalCheckout({ icono, titulo, mensaje }) {
+  document.getElementById('modal-checkout-icon').textContent = icono;
+  document.getElementById('modal-checkout-title').textContent = titulo;
+  document.getElementById('modal-checkout-msg').textContent = mensaje;
+  document.getElementById('modal-checkout').classList.add('show');
+}
+
+function cerrarModalCheckout() {
+  document.getElementById('modal-checkout').classList.remove('show');
+}
+
+async function manejarRetornoCheckout() {
+  const params = new URLSearchParams(window.location.search);
+  const checkout = params.get('checkout');
+  if (!checkout) return;
+
+  params.delete('checkout');
+  window.history.replaceState({}, '', window.location.pathname + (params.toString() ? '?' + params : ''));
+
+  if (checkout === 'cancel') {
+    mostrarModalCheckout({
+      icono: '↩️',
+      titulo: 'Pago cancelado',
+      mensaje: 'No se te ha cobrado nada. Puedes intentarlo de nuevo cuando quieras desde "Hazte Premium".',
+    });
+    return;
+  }
+
+  if (checkout !== 'success' || !window.currentUserId) return;
+
+  for (let intento = 0; intento < CHECKOUT_POLL_INTENTOS; intento++) {
+    try {
+      const r = await fetch('/api/subscription', { headers: await chatHeaders() });
+      if (r.ok) {
+        const data = await r.json();
+        if (data.premium) {
+          const el = document.getElementById('sub-status');
+          if (el) renderSubStatus(el, true);
+          guardarCacheSuscripcion(window.currentUserId, true);
+          mostrarModalCheckout({
+            icono: '🎉',
+            titulo: '¡Pago completado!',
+            mensaje: 'Ya eres Premium. Disfruta de consultas ilimitadas con tu mecánico de IA.',
+          });
+          return;
+        }
+      }
+    } catch (e) { console.warn('[checkout] error comprobando suscripción:', e.message); }
+    await esperar(CHECKOUT_POLL_INTERVALO_MS);
+  }
+
+  // Se agotó el margen sin confirmación del webhook — mensaje prudente, no
+  // afirmamos que ya es premium si el badge todavía no lo refleja.
+  mostrarModalCheckout({
+    icono: '⏳',
+    titulo: 'Pago recibido',
+    mensaje: 'Estamos activando tu cuenta Premium — puede tardar un minuto. Si no se actualiza, recarga la página en breve.',
+  });
 }
 
 function mostrarModalPremium(resetAt, limitType) {

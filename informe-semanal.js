@@ -11,10 +11,11 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 const BASE = 'https://www.virtualmechanic.es';
-const DESTINATARIO = 'soporte@virtualmechanic.es';
-// Remitente de pruebas de Resend: funciona sin verificar un dominio propio.
-// Cuando se verifique virtualmechanic.es en Resend, cambiar por algo como
-// 'Virtual Mechanic <informes@virtualmechanic.es>'.
+// TEMPORAL: sin dominio verificado en Resend, el remitente de pruebas
+// (onboarding@resend.dev) solo puede enviar al email de la cuenta de Resend.
+// Cuando se verifique virtualmechanic.es, volver a soporte@virtualmechanic.es
+// y cambiar el remitente a algo como 'Virtual Mechanic <informes@virtualmechanic.es>'.
+const DESTINATARIO = 'ismaelocaa@gmail.com';
 const REMITENTE = 'Virtual Mechanic <onboarding@resend.dev>';
 
 function formatoFecha(iso) {

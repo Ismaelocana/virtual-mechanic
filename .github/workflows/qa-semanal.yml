@@ -97,7 +97,10 @@ jobs:
               headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, "Content-Type": "application/json" },
               body: JSON.stringify({
                 from: "Virtual Mechanic <onboarding@resend.dev>",
-                to: ["soporte@virtualmechanic.es"],
+                // TEMPORAL: sin dominio verificado en Resend, solo se puede enviar
+                // al email de la cuenta de Resend. Volver a soporte@virtualmechanic.es
+                // en cuanto se verifique virtualmechanic.es.
+                to: ["ismaelocaa@gmail.com"],
                 subject: "QA semanal: fallo detectado",
                 html,
               }),

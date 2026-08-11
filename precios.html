@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Precios — Virtual Mechanic</title>
+<meta name="description" content="Precios del plan Premium de Virtual Mechanic: consultas ilimitadas a tu mecánico de enduro con IA. Plan gratuito con 5 consultas al día, sin tarjeta.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://virtualmechanic.es/precios">
+<meta name="theme-color" content="#EF9F27">
+<link rel="icon" href="/icons/icon.png">
+<link rel="apple-touch-icon" href="/icons/icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Precios — Virtual Mechanic">
+<meta property="og:description" content="Consultas ilimitadas a tu mecánico de enduro con IA. Plan gratuito con 5 consultas al día, sin tarjeta.">
+<meta property="og:image" content="https://virtualmechanic.es/icons/icon.png">
+<meta property="og:url" content="https://virtualmechanic.es/precios">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; background:#F5F5F0; color:#222; line-height:1.6; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1080px; margin:0 auto; padding:0 20px; }
+
+  header { padding:20px 0; }
+  .nav { display:flex; align-items:center; justify-content:space-between; }
+  .brand { display:flex; align-items:center; gap:10px; font-weight:700; font-size:16px; color:#111; }
+  .brand img { width:34px; height:34px; border-radius:9px; }
+  .btn { display:inline-flex; align-items:center; justify-content:center; padding:10px 20px; border-radius:12px; font-weight:600; font-size:14px; cursor:pointer; border:none; font-family:inherit; }
+  .btn-primary { background:#EF9F27; color:#412402; }
+  .btn-primary:hover { background:#E08E14; }
+  .btn-ghost { background:transparent; border:1.5px solid #E0DDD6; color:#333; }
+  .btn-ghost:hover { background:#fff; }
+
+  .hero { padding:52px 0 20px; text-align:center; }
+  .hero h1 { font-size:clamp(26px,4.5vw,40px); font-weight:800; color:#111; letter-spacing:-0.5px; max-width:700px; margin:0 auto 14px; }
+  .hero h1 span { color:#EF9F27; }
+  .hero p { font-size:16px; color:#555; max-width:560px; margin:0 auto; }
+
+  .plans { padding:40px 0 20px; }
+  .plans-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px; max-width:660px; margin:0 auto; }
+  .plan-card { background:#fff; border:1.5px solid #EFEFEF; border-radius:18px; padding:28px 24px; position:relative; text-align:center; }
+  .plan-card.highlight { border-color:#EF9F27; }
+  .plan-badge { position:absolute; top:-11px; left:50%; transform:translateX(-50%); background:#EF9F27; color:#412402; font-size:11px; font-weight:700; padding:3px 12px; border-radius:10px; white-space:nowrap; }
+  .plan-name { font-size:14px; font-weight:700; color:#666; text-transform:uppercase; letter-spacing:.4px; margin-bottom:10px; }
+  .plan-price { font-size:34px; font-weight:800; color:#111; }
+  .plan-price small { font-size:14px; font-weight:500; color:#888; }
+  .plan-sub { font-size:12.5px; color:#999; margin:6px 0 20px; min-height:16px; }
+  .plan-card .btn { width:100%; padding:12px; font-size:14.5px; }
+  .plan-loading { color:#bbb; }
+
+  .compare { padding:50px 0; }
+  .compare h2 { text-align:center; font-size:24px; font-weight:800; color:#111; margin-bottom:36px; }
+  table.compare-table { width:100%; max-width:640px; margin:0 auto; border-collapse:collapse; background:#fff; border-radius:16px; overflow:hidden; border:1px solid #EFEFEF; }
+  .compare-table th, .compare-table td { padding:14px 16px; font-size:13.5px; text-align:center; border-bottom:1px solid #F3F1EB; }
+  .compare-table th { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.3px; color:#666; background:#FAFAF7; }
+  .compare-table td:first-child, .compare-table th:first-child { text-align:left; color:#333; font-weight:600; }
+  .compare-table tr:last-child td { border-bottom:none; }
+  .compare-table .yes { color:#4CAF50; font-weight:700; }
+  .compare-table .premium-col { color:#8a5a00; font-weight:700; }
+
+  .faq { padding:50px 0 60px; background:#fff; border-top:1px solid #EFEDE7; border-bottom:1px solid #EFEDE7; }
+  .faq h2 { text-align:center; font-size:24px; font-weight:800; color:#111; margin-bottom:32px; }
+  .faq-list { max-width:640px; margin:0 auto; display:flex; flex-direction:column; gap:16px; }
+  .faq-item h3 { font-size:14.5px; font-weight:700; color:#111; margin-bottom:4px; }
+  .faq-item p { font-size:13.5px; color:#666; }
+
+  .cta-final { padding:60px 0; text-align:center; }
+  .cta-final h2 { font-size:24px; font-weight:800; color:#111; margin-bottom:10px; }
+  .cta-final p { color:#666; font-size:14.5px; margin-bottom:22px; }
+
+  footer { padding:28px 0 40px; border-top:1px solid #EFEDE7; }
+  .footrow { display:flex; align-items:center; justify-content:center; gap:14px; flex-wrap:wrap; font-size:12.5px; color:#999; }
+  .footrow a:hover { color:#EF9F27; }
+  .footrow .sep { color:#DDD; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/"><img src="/icons/icon.png" alt=""> Virtual Mechanic</a>
+    <div style="display:flex;align-items:center;gap:16px">
+      <a href="/motos" style="font-size:13.5px;color:#555;font-weight:600">Fichas técnicas</a>
+      <a class="btn btn-ghost" href="/app">Entrar</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Consultas <span>ilimitadas</span> con tu mecánico de IA</h1>
+    <p>Empieza gratis. Si necesitas más de 5 consultas al día, hazte Premium cuando quieras — sin permanencia.</p>
+  </div>
+</section>
+
+<section class="plans">
+  <div class="wrap">
+    <div class="plans-grid">
+      <div class="plan-card">
+        <div class="plan-name">Mensual</div>
+        <div class="plan-price" id="precio-mensual"><span class="plan-loading">Cargando…</span></div>
+        <div class="plan-sub">Cancela cuando quieras</div>
+        <a class="btn btn-primary" href="/app">Empezar</a>
+      </div>
+      <div class="plan-card highlight">
+        <div class="plan-badge" id="badge-ahorro">Ahorra</div>
+        <div class="plan-name">Anual</div>
+        <div class="plan-price" id="precio-anual"><span class="plan-loading">Cargando…</span></div>
+        <div class="plan-sub">Pago único al año</div>
+        <a class="btn btn-primary" href="/app">Empezar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="compare">
+  <div class="wrap">
+    <h2>Qué incluye cada plan</h2>
+    <table class="compare-table">
+      <thead>
+        <tr><th>&nbsp;</th><th>Gratis</th><th>Premium</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Consultas</td><td>5/día · 20/semana</td><td class="premium-col">Ilimitadas</td></tr>
+        <tr><td>Manuales oficiales por marca y modelo</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+        <tr><td>Diagnóstico con foto</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+        <tr><td>Mantenimiento por horas</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+        <tr><td>Comparador de años y modelos</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>¿Puedo cancelar cuándo quiera?</h3>
+        <p>Sí, sin permanencia. Gestionas o cancelas tu suscripción en cualquier momento desde la propia app.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Qué incluye el plan gratuito?</h3>
+        <p>Todas las funciones de la app — fotos, manuales oficiales, mantenimiento — con un límite de 5 consultas al día y 20 a la semana. Premium solo quita ese límite.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Cómo se paga?</h3>
+        <p>Con tarjeta a través de Stripe, en modalidad mensual o anual. No guardamos tus datos de pago, los gestiona Stripe directamente.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Necesito cuenta para ver los precios?</h3>
+        <p>No, esta página es pública. Para suscribirte necesitas iniciar sesión con tu email — sin contraseñas, con enlace mágico.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="wrap">
+    <h2>Empieza ahora, es gratis</h2>
+    <p>Sin tarjeta. Hazte Premium más adelante si lo necesitas.</p>
+    <a class="btn btn-primary" href="/app" style="padding:13px 30px;font-size:15px">Entrar a Virtual Mechanic</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footrow">
+    <span>© 2026 Virtual Mechanic</span>
+    <span class="sep">·</span>
+    <a href="/aviso-legal">Aviso legal</a>
+    <span class="sep">·</span>
+    <a href="/privacidad">Privacidad</a>
+    <span class="sep">·</span>
+    <a href="/terminos">Términos</a>
+    <span class="sep">·</span>
+    <a href="/motos">Fichas técnicas</a>
+    <span class="sep">·</span>
+    <a href="mailto:soporte@virtualmechanic.es">Contacto</a>
+  </div>
+</footer>
+
+<script>
+function formatoPrecio(centimos, moneda) {
+  const valor = centimos / 100;
+  const simbolo = moneda === 'eur' ? '€' : moneda.toUpperCase() + ' ';
+  const texto = valor % 1 === 0 ? valor.toFixed(0) : valor.toFixed(2).replace('.', ',');
+  return `${texto}${simbolo}`;
+}
+
+async function cargarPrecios() {
+  try {
+    const r = await fetch('/api/precios');
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const data = await r.json();
+
+    document.getElementById('precio-mensual').innerHTML =
+      `${formatoPrecio(data.monthly.amount, data.monthly.currency)}<small>/mes</small>`;
+    document.getElementById('precio-anual').innerHTML =
+      `${formatoPrecio(data.annual.amount, data.annual.currency)}<small>/año</small>`;
+
+    const ahorroCentimos = (data.monthly.amount * 12) - data.annual.amount;
+    const badge = document.getElementById('badge-ahorro');
+    if (ahorroCentimos > 0) {
+      badge.textContent = `Ahorra ${formatoPrecio(ahorroCentimos, data.annual.currency)} al año`;
+    } else {
+      badge.style.display = 'none';
+    }
+  } catch (e) {
+    document.getElementById('precio-mensual').innerHTML = '<span class="plan-loading">No disponible</span>';
+    document.getElementById('precio-anual').innerHTML = '<span class="plan-loading">No disponible</span>';
+    document.getElementById('badge-ahorro').style.display = 'none';
+    console.warn('[precios] error cargando /api/precios:', e.message);
+  }
+}
+cargarPrecios();
+</script>
+
+</body>
+</html>

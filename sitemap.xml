@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://virtualmechanic.es/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
   <url><loc>https://virtualmechanic.es/motos</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://virtualmechanic.es/precios</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://virtualmechanic.es/ktm/exc-125</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/ktm/exc-150</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://virtualmechanic.es/ktm/exc-200</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>

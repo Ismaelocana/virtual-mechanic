@@ -5,6 +5,7 @@
     { "src": "landing.html", "use": "@vercel/static" },
     { "src": "motos.html", "use": "@vercel/static" },
     { "src": "admin.html", "use": "@vercel/static" },
+    { "src": "precios.html", "use": "@vercel/static" },
     { "src": "aviso-legal.html", "use": "@vercel/static" },
     { "src": "privacidad.html", "use": "@vercel/static" },
     { "src": "terminos.html", "use": "@vercel/static" },
@@ -23,7 +24,8 @@
     { "src": "api/stripe-webhook.js", "use": "@vercel/node" },
     { "src": "api/stripe-portal.js", "use": "@vercel/node" },
     { "src": "api/subscription.js", "use": "@vercel/node" },
-    { "src": "api/feedback.js", "use": "@vercel/node" }
+    { "src": "api/feedback.js", "use": "@vercel/node" },
+    { "src": "api/precios.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/api/chat", "dest": "/api/chat.js" },
@@ -35,7 +37,9 @@
     { "src": "/api/stripe-portal", "dest": "/api/stripe-portal.js" },
     { "src": "/api/subscription", "dest": "/api/subscription.js" },
     { "src": "/api/feedback", "dest": "/api/feedback.js" },
+    { "src": "/api/precios", "dest": "/api/precios.js" },
     { "src": "/admin", "dest": "/admin.html" },
+    { "src": "/precios", "dest": "/precios.html" },
     { "src": "/aviso-legal", "dest": "/aviso-legal.html" },
     { "src": "/privacidad", "dest": "/privacidad.html" },
     { "src": "/terminos", "dest": "/terminos.html" },

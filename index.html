@@ -514,12 +514,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <div class="premium-plans">
         <button class="plan-btn" onclick="iniciarCheckout('monthly')">
           <span class="plan-name">Mensual</span>
-          <span class="plan-price">4,99&euro;<small>/mes</small></span>
+          <span class="plan-price" id="modal-precio-mensual">…</span>
         </button>
         <button class="plan-btn plan-btn-highlight" onclick="iniciarCheckout('annual')">
-          <span class="plan-badge">Ahorra 2 meses</span>
+          <span class="plan-badge" id="modal-badge-ahorro" style="display:none">Ahorra</span>
           <span class="plan-name">Anual</span>
-          <span class="plan-price">49,99&euro;<small>/año</small></span>
+          <span class="plan-price" id="modal-precio-anual">…</span>
         </button>
       </div>
       <button class="btn-text" onclick="cerrarModalPremium()">Seguir con el plan gratuito</button>
@@ -1978,6 +1978,54 @@ async function manejarRetornoCheckout() {
   });
 }
 
+// Precios del modal Premium: misma fuente que la página pública /precios
+// (/api/precios, que a su vez lee Stripe) — un único sitio que sincronizar.
+let _preciosModalCache = null;
+
+function formatoPrecioModal(centimos, moneda) {
+  const valor = centimos / 100;
+  const simbolo = moneda === 'eur' ? '€' : moneda.toUpperCase() + ' ';
+  const texto = valor % 1 === 0 ? valor.toFixed(0) : valor.toFixed(2).replace('.', ',');
+  return `${texto}${simbolo}`;
+}
+
+async function cargarPreciosModal() {
+  const elMensual = document.getElementById('modal-precio-mensual');
+  const elAnual = document.getElementById('modal-precio-anual');
+  const elBadge = document.getElementById('modal-badge-ahorro');
+
+  if (_preciosModalCache) {
+    pintarPreciosModal(_preciosModalCache);
+    return;
+  }
+
+  try {
+    const r = await fetch('/api/precios');
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const data = await r.json();
+    _preciosModalCache = data;
+    pintarPreciosModal(data);
+  } catch (e) {
+    elMensual.textContent = '—';
+    elAnual.textContent = '—';
+    console.warn('[precios] error cargando /api/precios:', e.message);
+  }
+}
+
+function pintarPreciosModal(data) {
+  document.getElementById('modal-precio-mensual').innerHTML =
+    `${formatoPrecioModal(data.monthly.amount, data.monthly.currency)}<small>/mes</small>`;
+  document.getElementById('modal-precio-anual').innerHTML =
+    `${formatoPrecioModal(data.annual.amount, data.annual.currency)}<small>/año</small>`;
+
+  const ahorroCentimos = (data.monthly.amount * 12) - data.annual.amount;
+  const badge = document.getElementById('modal-badge-ahorro');
+  if (ahorroCentimos > 0) {
+    badge.textContent = `Ahorra ${formatoPrecioModal(ahorroCentimos, data.annual.currency)}`;
+    badge.style.display = '';
+  }
+}
+
 function mostrarModalPremium(resetAt, limitType) {
   const msgEl = document.getElementById('modal-premium-msg');
   if (!resetAt) {
@@ -1988,6 +2036,7 @@ function mostrarModalPremium(resetAt, limitType) {
     msgEl.textContent = `Has agotado tus 5 consultas gratuitas de hoy. Vuelven a estar disponibles el ${formatoFecha(resetAt)}. Hazte Premium para consultas ilimitadas.`;
   }
   document.getElementById('modal-premium').classList.add('show');
+  cargarPreciosModal();
 }
 
 function cerrarModalPremium() {

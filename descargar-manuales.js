@@ -85,8 +85,13 @@ const MANUALES = [
   // de Akamai Bot Manager — descartado (mismo motivo que KTM con Cloudflare).
   // CRF125R: no existe manual publicado en ningún registro (US ni EU) — es un
   // modelo de competición sin homologación, probablemente nunca se publicó.
-  // 2024 (CRF250R/450R): solo visor web (webom.hondamotopub.com), no PDF
-  // descargable — se dejó sin cubrir en vez de scrapear el visor.
+  // 2024 (CRF450R/RX): solo visor web en HMEE (webom.hondamotopub.com), no PDF
+  // descargable. Se probó la región Argentina (HAR), que sí tenía un PDF para
+  // "CRF450R" 2024 — pero resultó ser la CRF450RL (variante homologada para
+  // calle, un modelo distinto), no la R/RX de competición. Se descartó tras
+  // comprobar el contenido convertido. 2024 queda sin cubrir para 450.
+  // 2024 (CRF250R/RX): sí se encontró en la región Argentina (HAR), y el
+  // contenido confirma que es el modelo correcto (aunque en español, no inglés).
 
   { marca: 'honda', modelo: 'crf450r-450rx', año: 2019, url: 'https://2rom-prd-data.hondamotopub.com/om/HMEE/CRF450R/2019/CRF450R.RX_3RMKE621_0_Eng.pdf' },
   { marca: 'honda', modelo: 'crf450r-450rx', año: 2020, url: 'https://2rom-prd-data.hondamotopub.com/om/HMEE/CRF450R/2020/CRF450R.RX_3RMKE630_0_Eng.pdf' },
@@ -101,10 +106,38 @@ const MANUALES = [
   { marca: 'honda', modelo: 'crf250r-250rx', año: 2022, url: 'https://2rom-prd-data.hondamotopub.com/om/HMEE/CRF250R/2022/INDEX%E7%84%A1%E3%81%97_20210720082638_32K958110_eng_BOOK.pdf' },
   { marca: 'honda', modelo: 'crf250r-250rx', año: 2025, url: 'https://2rom-prd-data.hondamotopub.com/om/HMEE/CRF250R/2025/CRF250R_RX_RWE%20OM%2032K95830_eng_WEB.pdf' },
   { marca: 'honda', modelo: 'crf250r-250rx', año: 2026, url: 'https://2rom-prd-data.hondamotopub.com/om/HMEE/CRF250R/2026/CRF250R_RX_RWE_32K958400_OM_EN_web.pdf' },
+  { marca: 'honda', modelo: 'crf250r-250rx', año: 2024, url: 'https://2rom-prd-data.hondamotopub.com/om/HAR/CRF250R/2024/CRF250R_35K958210_0.pdf' },
 
   // Un solo PDF cubre 2022-2025 (mismo manual, sin cambios) — se descarga una
   // vez y se copia a los 4 años; por eso no aparece aquí como 4 URLs.
   { marca: 'honda', modelo: 'crf150r', año: '2022-2023-2024-2025', url: 'https://2rom-prd-data.hondamotopub.com/om/HMEE/CRF150RB/2022-2023-2024-2025/INDEX%E7%84%A1%E3%81%97_20210720082851_32KSE8110_eng_BOOK.pdf' },
+
+  // ── MONTESA (Honda) — trial ──────────────────────────────────────────────
+  // Fuente: montesa.com (sitio oficial propio de Montesa, WordPress) —
+  // página /en/manuals/ lista todos los PDFs de propietario y de repuestos,
+  // sin login. Cota 315R (2T, descontinuada en 2004, antes de esta web) no
+  // tiene manual público conocido.
+  // Cota 300(RR): descontinuada al llegar la 301RR — último manual es 2018.
+
+  { marca: 'honda', modelo: 'cota301rr', año: 2020, url: 'https://montesa.com/wp-content/uploads/2020/03/OSM-301RR-2020-EN-Web_V04.pdf' },
+  { marca: 'honda', modelo: 'cota301rr', año: 2021, url: 'https://montesa.com/wp-content/uploads/2020/09/OSM-301RR-2021-EN-Web_V01.pdf' },
+  { marca: 'honda', modelo: 'cota301rr', año: 2022, url: 'https://montesa.com/wp-content/uploads/2021/10/OSM-301RR-22YM-EN-Web_V05-1.pdf' },
+  { marca: 'honda', modelo: 'cota301rr', año: 2023, url: 'https://montesa.com/wp-content/uploads/2022/09/OSM-301RR_23YM-EN-Web-V02.pdf' },
+  { marca: 'honda', modelo: 'cota301rr', año: 2024, url: 'https://montesa.com/wp-content/uploads/2023/09/OSM-301RR_24YM-EN-Web-V05.pdf' },
+  { marca: 'honda', modelo: 'cota301rr', año: 2025, url: 'https://montesa.com/wp-content/uploads/2025/01/OSM-301RR_25YM-EN-Web-V07.pdf' },
+  { marca: 'honda', modelo: 'cota301rr', año: 2026, url: 'https://montesa.com/wp-content/uploads/2025/09/OSM-COTA_4RT_301RR_26YM-EN-Web-V01.pdf' },
+
+  { marca: 'honda', modelo: 'cota260', año: 2017, url: 'https://montesa.com/wp-content/uploads/2020/03/2017%E2%80%93COTA-260-4RT-OSM-EN.pdf' },
+  { marca: 'honda', modelo: 'cota260', año: 2018, url: 'https://montesa.com/wp-content/uploads/2020/03/2018-COTA-260-4RT-OSM-EN.pdf' },
+  { marca: 'honda', modelo: 'cota260', año: 2020, url: 'https://montesa.com/wp-content/uploads/2020/09/OSM-4RT-MRT260L_2020-EN-Web_V04.pdf' },
+  { marca: 'honda', modelo: 'cota260', año: 2022, url: 'https://montesa.com/wp-content/uploads/2021/11/OSM-4RT-MRT260_22YM_EN-Web-V04.pdf' },
+  { marca: 'honda', modelo: 'cota260', año: 2023, url: 'https://montesa.com/wp-content/uploads/2022/09/OSM-4RT_MRT260_23YM-EN-Web-V03.pdf' },
+  { marca: 'honda', modelo: 'cota260', año: 2024, url: 'https://montesa.com/wp-content/uploads/2023/09/OSM-4RT_MRT260_24YM-EN-Web-V06.pdf' },
+  { marca: 'honda', modelo: 'cota260', año: 2025, url: 'https://montesa.com/wp-content/uploads/2025/01/OSM-4RT_MRT260_25YM-EN-Web-V06.pdf' },
+  { marca: 'honda', modelo: 'cota260', año: 2026, url: 'https://montesa.com/wp-content/uploads/2025/09/OSM-4RT_MRT260_26YM-EN-Web-V01-1.pdf' },
+
+  { marca: 'honda', modelo: 'cota300', año: 2017, url: 'https://montesa.com/wp-content/uploads/2020/03/2017-COTA-300-RR-OSM-EN.pdf' },
+  { marca: 'honda', modelo: 'cota300', año: 2018, url: 'https://montesa.com/wp-content/uploads/2020/03/2018-COTA-300RR-OSM-EN.pdf' },
 
 ];
 

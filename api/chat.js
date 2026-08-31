@@ -163,6 +163,11 @@ function normalizarModelo(brand, model) {
     if (m === 'CRF 150R') return { model: 'crf150r' };
     if (m === 'CRF 250R' || m === 'CRF 250RX') return { model: 'crf250r-250rx' };
     if (m === 'CRF 450R' || m === 'CRF 450RX') return { model: 'crf450r-450rx' };
+    // Montesa Cota (trial) — fuente: montesa.com (sitio oficial de Montesa).
+    if (m === 'MONTESA COTA 260') return { model: 'cota260' };
+    if (m === 'MONTESA COTA 300') return { model: 'cota300' };
+    if (m === 'MONTESA COTA 301RR') return { model: 'cota301rr' };
+    // Montesa Cota 315R (2T, 1999-2004): sin manual público conocido.
   }
 
   if (brand.toLowerCase() === 'sherco') {

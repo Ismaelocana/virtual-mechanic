@@ -978,7 +978,9 @@ function rangoAniosModelo(brand, category, engine, m) {
     else fromYear = 2025;
   } else if (brand === 'Honda') {
     if (m === 'Montesa Cota 315R') { fromYear = 1999; toYear = 2004; }
-    else if (m === 'Montesa Cota 260' || m === 'Montesa Cota 300') fromYear = 2005;
+    else if (m === 'Montesa Cota 260') fromYear = 2005;
+    // Descontinuada al llegar la 301RR — último manual oficial es de 2018.
+    else if (m === 'Montesa Cota 300') { fromYear = 2005; toYear = 2018; }
     else if (m === 'Montesa Cota 301RR') fromYear = 2019;
   } else if (brand === 'Suzuki') {
     if (m === 'RM 85') fromYear = 2002;

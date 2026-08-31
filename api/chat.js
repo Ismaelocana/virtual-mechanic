@@ -157,6 +157,14 @@ function normalizarModelo(brand, model) {
     if (m === 'TF 250-X' || m === 'TF 450-X' || m === 'TF 450 RC EDITION') return { model: 'tf250x-450x-450rc' };
   }
 
+  if (brand.toLowerCase() === 'honda') {
+    // El manual oficial europeo cubre R y RX en un mismo documento para cada
+    // cilindrada, así que comparten token de archivo.
+    if (m === 'CRF 150R') return { model: 'crf150r' };
+    if (m === 'CRF 250R' || m === 'CRF 250RX') return { model: 'crf250r-250rx' };
+    if (m === 'CRF 450R' || m === 'CRF 450RX') return { model: 'crf450r-450rx' };
+  }
+
   if (brand.toLowerCase() === 'sherco') {
     if (m === 'SE 250' || m === 'SE 300')   return { model: 'se250-300' };
     if (m === 'SEF 250' || m === 'SEF 300') return { model: 'sef250-300' };

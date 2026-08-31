@@ -1,0 +1,1614 @@
+CRF250R/RX/RWE
+OWNER’S MANUAL
+This manual should be considered a permanent part of the vehicle
+and should remain with the vehicle when it is resold.
+This publication includes the latest production information available
+before printing. Honda Motor Co., Ltd. reserves the right to make
+changes at any time without notice and without incurring any
+obligation.
+No part of this publication may be reproduced without written
+permission.
+The vehicle pictured in this owner’s manual may not match your
+actual vehicle.
+© 2024 Honda Motor Co., Ltd.
+IMPORTANT NOTICE
+THIS VEHICLE IS DESIGNED AND MANUFACTURED FOR
+COMPETITION USE ONLY AND IS SOLD “AS IS” WITH NO
+WARRANTY. IT DOES NOT CONFORM TO FEDERAL MOTOR
+VEHICLE SAFETY STANDARDS AND OPERATION ON PUBLIC
+STREETS, ROADS, OR HIGHWAYS IS ILLEGAL.
+STATE LAWS PROHIBIT OPERATION OF THIS VEHICLE EXCEPT IN
+AN ORGANIZED RACING OR COMPETITIVE EVENT UPON A
+CLOSED COURSE WHICH IS CONDUCTED UNDER THE AUSPICES
+OF A RECOGNIZED SANCTIONING BODY OR BY PERMIT ISSUED BY
+THE LOCAL GOVERNMENTAL AUTHORITY HAVING JURISDICTION.
+FIRST DETERMINE THAT OPERATION IS LEGAL.
+OPERATOR ONLY, NO PASSENGERS.
+This vehicle is designed and constructed as an operator-only model.
+The vehicle load limit and seating configuration do not safely permit
+the carrying of a passenger.
+READ THIS MANUAL CAREFULLY.
+Welcome
+Congratulations on your purchase of a new  |  Be aware that off-road racing/motocross is a
+Honda vehicle. Your selection of a Honda  |  physically demanding sport that requires
+makes you part of a worldwide family of  |  more than just a fine vehicle. To do well, you
+satisfied customers who appreciate Honda's  |  must be in excellent physical condition and
+reputation for building quality into every  |  be a skillful rider. For the best results, work
+product.  |  diligently on your physical conditioning and
+practice frequently.
+Your vehicle is a high performance racing
+motorcycle that utilizes the latest off-road
+racing/motocross technology and is intended
+for competition use in sanctioned, closed-
+course events by experienced riders only.
+To ensure your safety and riding pleasure:  |  ● The following codes in this manual
+● Read this owner's manual and  |  indicate each destination.
+competition handbook carefully.  |  ● The illustrations here in are based on the
+● Follow all recommendations and  |  CRF250RX LA type.
+procedures contained in this owner's
+manual and competition handbook.  |  Destination Codes
+● Pay close attention to safety messages  |  Code Destination
+contained in this owner's manual,  |  CRF250RX
+competition handbook, and on the  |  ED  |  European direct sales, United Kingdom,
+vehicle.  |  Philippines, South Africa, Madagascar,
+Mozambique, Tanzania, Uganda,
+Democratic Republic of the Congo,
+Zambia, Zimbabwe, Malawi, Angola,
+Mauritius, Republic of Seychelles
+U  |  Australia, New Zealand
+LA  |  Colombia, Brazil, Argentina, Chile, Bolivia,
+Ecuador, Paraguay, Uruguay, Guyana,
+Guatemala, El Salvador, Costa Rica,
+Honduras, Nicaragua, Dominican
+Republic, Panama, Bermuda, Belize,
+Jamaica, Barbados, Trinidad and Tobago
+MX  |  Mexico
+Code Destination  |  Code Destination
+CRF250R  |  CRF250RWE
+ED  |  European direct sales, United Kingdom,  |  ED  |  Italy, United Kingdom, Spain, France,
+Philippines, South Africa, Madagascar,  |  Portugal, Netherlands, Austria, Czech
+Mozambique, Tanzania, Uganda,  |  Republic, Hungary, Belgium, Poland
+Democratic Republic of the Congo,  |  U  |  Australia
+Zambia, Zimbabwe, Malawi, Angola,
+*The specifications may vary with each locale.
+Mauritius, Republic of Seychelles, Vietnam
+U  |  Australia, New Zealand
+GS  |  United Arab Emirates, Saudi Arabia,
+Qatar, Oman, Kuwait, Bahrain, Lebanon,
+Jordan
+LA  |  Colombia, Brazil, Argentina, Peru, Chile,
+Bolivia, Ecuador, Paraguay, Uruguay,
+Guyana, Guatemala, El Salvador, Costa
+Rica, Honduras, Nicaragua, Dominican
+Republic, Panama, Belize, Jamaica,
+Trinidad and Tobago
+MX  |  Mexico
+A Few Words About Safety
+Your safety, and the safety of others, is very
+3 DANGER
+important. Operating this vehicle safely is an
+important responsibility.  |  You WILL be KILLED or SERIOUSLY
+To help you make informed decisions about  |  HURT if you don’t follow instructions.
+safety, we have provided operating
+procedures and other information on safety  |  3 WARNING
+labels in this owner's manual, and  |  You CAN be KILLED or SERIOUSLY
+competition handbook. This information  |  HURT if you don’t follow instructions.
+alerts you to potential hazards that could
+hurt you or others.  |  3 CAUTION
+Of course, it is not practical or possible to
+You CAN be HURT if you don’t follow
+warn you about all hazards associated with
+instructions.
+operating or maintaining a vehicle. You must
+use your own good judgement.
+Other important information is
+You will find important safety information in a  |  provided under the following titles:
+variety of forms, including:
+NOTICE Information to help you avoid
+● Safety labels on the vehicle
+damage to your vehicle, other
+● Safety Messages preceded by a safety alert
+property, or the environment.
+symbol  |  and one of three signal words:
+DANGER, WARNING, or CAUTION.
+These signal words mean:
+
+Contents
+Vehicle Safety  |  P. 2
+Operation Guide  |  P. 16
+Maintenance  |  P. 35
+Troubleshooting  |  P. 54
+Information  |  P. 60
+Specifications  |  P. 71
+Vehicle Safety
+This section contains important information for safe riding of your vehicle.
+Please read this section carefully.
+Safety Guidelines ................................................. P. 3
+Image Labels......................................................... P. 6
+Safety Precautions............................................. P. 10
+Riding Precautions ............................................ P. 11
+Accessories & Modifications........................... P. 14
+Safety Guidelines
+Safety Guidelines  |  Before Riding
+Vehicle Safety
+Make sure that you are physically fit, mentally
+Follow these guidelines to enhance your safety:
+focused, and free of alcohol and drugs. Check
+● Perform all routine and regular inspections
+that you are wearing an approved helmet and
+specified in this owner's manual and
+protective apparel.
+competition handbook.
+● Stop the engine and keep sparks and flames  |  Take Time to Get to Know Your Vehicle
+away before filling the fuel tank.
+Because every vehicle is unique, take time to
+● Do not run the engine in enclosed or partly
+become thoroughly familiar with how this one
+enclosed areas. Carbon monoxide in
+operates and responds to your commands
+exhaust gases is toxic and can kill you.
+before placing your machine, and yourself, in
+Always Wear a Helmet  |  competition.
+It's a proven fact: helmets and protective  |  Ride within Your Limits
+apparel significantly reduce the number and
+Never ride beyond your personal abilities or
+severity of head and other injuries. So always
+faster than conditions warrant. Fatigue and
+wear an approved helmet and protective
+inattention can impair your ability to use good
+apparel. 2 P. 10
+judgement and ride safely.
+Never Carry a Passenger
+There are no handholds, seat, or footrests to
+carry a passenger.
+Continued 3
+Safety Guidelines
+Don't Drink or Use Drugs and Ride  |  Lithium-Ion (Li-Ion) Battery
+Vehicle Safety
+Alcohol or drugs and riding don't mix. Even one  |  If you smell an unusual odor coming from the
+alcoholic drink can reduce your ability to  |  lithium-ion (li-ion) battery, park your vehicle in a
+respond to changing conditions, and your  |  safe place outside and away from flammable
+reaction time gets worse with every additional  |  objects, then stop the engine. Have your vehicle
+drink. The same is true for drug use. Don't drink  |  inspected by your dealer immediately.
+or use and ride, and don't let your friends do it
+either.
+Keep Your Honda in Safe Condition
+Maintaining your vehicle properly is critical to
+your safety. A loose bolt, for example, can cause
+a breakdown in which you can be seriously
+injured.
+4
+Safety Guidelines
+Carbon Monoxide Hazard  |  3 WARNING
+Vehicle Safety
+Exhaust contains poisonous carbon monoxide, a
+Running the engine of your vehicle
+colourless, odorless gas. Breathing carbon
+while in an enclosed or even partially
+monoxide can cause loss of consciousness and
+enclosed area can cause a rapid build-
+may lead to death.
+up of toxic carbon monoxide gas.
+If you run the engine in a confined or even
+partly enclosed area, the air you breathe could  |  Breathing this colourless, odorless gas
+contain a dangerous amount of carbon  |  can quickly cause unconsciousness and
+monoxide.  |  lead to death.
+Never run your vehicle inside a garage or other
+enclosure.  |  Only run your vehicle's engine when it
+is located in a well ventilated area
+outdoors.
+5
+Image Labels
+Image Labels
+Vehicle Safety
+The following pages describe the label  |  Read instructions contained in Owner's
+meanings. Some labels warn you of  |  Manual and Competition Handbook
+potential hazards that could cause serious  |  carefully.
+injury. Others provide important safety
+information. Read this information carefully  |  Read instructions contained in Competition
+and don't remove the labels.  |  Handbook and Shop Manual carefully. In
+the interest of safety, take the vehicle to be
+If a label comes off or becomes hard to  |  serviced only by your dealer.
+read, contact your dealer for a replacement.
+DANGER (with RED background)
+You WILL be KILLED or SERIOUSLY HURT if
+There is a specific symbol on each label.
+you don't follow instructions.
+The meanings of each symbol and label are
+WARNING (with ORANGE background)
+as follows.
+You CAN be KILLED or SERIOUSLY HURT if
+you don't follow instructions.
+CAUTION (with YELLOW background)
+You CAN be HURT if you don't follow
+instructions.
+6
+Image Labels
+BATTERY LABEL
+Vehicle Safety
+DANGER
+• Carefully read this manual.
+If this product is handled incorrectly, it may lead to damage to
+the vehicle, heat generation, explosion, fire, loss of vision or
+burns.
+• Keep this product away from fires and high temperature heat
+sources.
+Do not bring or cause fires (matches, lighters, cigarettes, sparks
+at terminals or from welding machines or grinders) close to the
+battery.
+Doing so may cause heat generation, explosion or fire.
+• Do not allow children and other people to touch a battery
+unless they understand proper handling and hazards of the
+battery very well.
+• Do not dismantle, modify or solder the main unit and battery
+terminals.
+Doing so may cause leakage, heat generation, explosion, fire or
+loss of vision due to leaked electrolyte.
+If electrolyte gets into one's eye, immediately wash the eye with
+plenty of water, and receive treatment from an eye specialist
+(ophthalmologist) as soon as possible.
+Continued 7
+Image Labels
+RADIATOR CAP LABEL
+Vehicle Safety
+DANGER
+NEVER OPEN WHEN HOT.
+Hot coolant will scald you.
+Relief pressure valve begins to open at 1.1 kgf/cm 2 .
+CRF250R/RX
+REAR CUSHION LABEL
+GAS FILLED
+Do not open. Do not heat.
+ED type only
+FUEL LABEL
+Unleaded petrol only
+ETHANOL up to 10 % by volume
+8
+Image Labels
+CAUTION LABEL IMPORTANT INFORMATION
+Vehicle Safety
+• Operator only. No passengers.
+• This vehicle is sold as is without warranty, and the entire risk as to
+quality and performance is with the buyer. READ OWNER’S MANUAL.
+• This vehicle is designed and manufactured for competition use only.
+• It does not conform to federal motor vehicle safety standards and
+operation on public streets, roads, or highways is illegal.
+• State laws prohibit operation of this vehicle expert in an organized
+racing or competitive event upon a closed course which is conducted
+under the auspices of a recognized sanctioning body or by permit
+issued by the local governmental authority having jurisdiction.
+• First determine that operation is legal.
+9
+Safety Precautions
+Safety Precautions  |  3 WARNING
+Vehicle Safety
+Not wearing a helmet increases the
+Protective Apparel
+chance of serious injury or death in a
+Make sure that you are wearing an approved
+crash.
+helmet, eye protection, and other appropriate
+riding gear.
+Make sure that you always wear an
+# Helmet  |  approved helmet, eye protection, and
+Safety-standard certified, high-visibility, correct  |  protective apparel.
+size for your head
+● Must fit comfortably but securely, with the  |  # Protective Gear
+chin strap fastened
+Whether you’re practicing to improve your skills
+● Approved eye protection
+or riding in competition, always wear an
+approved helmet, eye protection, and proper
+protective gear.
+10
+Riding Precautions
+Riding Precautions  |  Parking
+Vehicle Safety
+CRF250RX
+Running-in Period  |  ● Park on a firm, level surface.
+During the first operating day or 25 km (15  |  ● If you must park on a slight incline or loose
+miles) of running, follow these guidelines to  |  surface, park so that the vehicle cannot
+ensure your vehicle's future reliability and  |  move or fall over.
+performance.  |  ● Make sure that high-temperature parts
+● Avoid full-throttle starts and rapid  |  cannot come into contact with flammable
+acceleration.  |  materials.
+● Avoid hard braking and rapid down-shifts.  |  ● Do not touch the engine, muffler, brakes
+● Ride conservatively.  |  and other high-temperature parts until they
+cool down.
+This same procedure should be followed each
+time when:  |  # Parking with the Side Stand
+1. Stop the engine.
+● Piston is replaced
+2. Push the side stand down.
+● Piston rings are replaced
+3. Slowly lean the vehicle to the left until its
+● Cylinder is replaced
+weight rests on the side stand.
+● Crankshaft or crank bearings are replaced
+4. Turn the handlebar fully to the left.
+u Turning the handlebar to the right
+reduces stability and may cause the
+vehicle to fall.
+Continued 11
+Riding Precautions
+Refuelling and Fuel Guidelines
+Vehicle Safety
+Follow these guidelines to protect the engine
+and fuel system:
+● Use only unleaded petrol.
+● Use the recommended octane number.
+Using lower octane petrol will result in
+decreased engine performance.
+● Do not use fuels containing a high
+concentration of alcohol. 2 P. 70
+● Do not use stale or contaminated petrol or
+an oil/petrol mixture.
+● Avoid getting dirt or water in the fuel tank.
+12
+Riding Precautions
+Honda Selectable Torque Control  |  as well as your skills and condition, when
+applying throttle.  |  Vehicle Safety
+When the Honda Selectable Torque Control
+(Torque Control) detects rear wheel spin during
+Always use the recommended tyres and
+acceleration, the system will limit the amount of
+sprockets to ensure correct Torque Control
+torque applied to the rear wheel based on the
+operation.
+Torque Control level selected.
+Torque Control will allow some wheel spin
+during acceleration at the lower Torque Control
+setting levels. Select a level that is appropriate
+for your skill and riding conditions.
+Torque Control does not work during
+deceleration and will not prevent the rear wheel
+from skidding due to engine braking. Do not
+close the throttle suddenly, especially when
+riding on slippery surfaces.
+Torque Control may not compensate for rough
+track conditions or rapid throttle operation.
+Always consider track and weather conditions,
+13
+Accessories & Modifications
+Accessories &  |  Do not pull a trailer with, or attach a sidecar to,
+Vehicle Safety  |  your vehicle. Your vehicle was not designed for
+Modifications
+these attachments, and their use can seriously
+We strongly advise that you do not add any  |  impair your vehicle's handling.
+accessories that were not specifically designed
+for your vehicle by Honda or make  |  Do not attempt to modify the vehicle to carry a
+modifications to your vehicle from its original  |  passenger. The subframe was not designed to
+design. Doing so can make it unsafe.  |  carry the additional weight of a passenger.
+3 WARNING
+Improper accessories or modifications
+can cause a crash in which you can be
+seriously hurt or killed.
+Follow all instructions in this owner's
+manual regarding accessories and
+modifications.
+14
+Vehicle Safety
+15
+Parts Location
+Operation Guide  |  Throttle grip
+Front brake lever
+Engine oil fill cap
+Rear brake pedal
+Engine oil inspection
+window
+16
+Clutch lever
+Fuel fill cap ( P.33 )
+Battery ( P.51 )  |  Operation Guide
+Left side cover ( P.53 )
+Main fuse ( P.58 )
+Fast idle knob
+(Engine idle speed) ( P.28 )
+Shift lever ( P.32 )
+CRF250RX Side stand
+17
+Indicators
+PGM-FI malfunction indicator lamp (MIL) (amber)
+Operation Guide  |  Comes on briefly when the engine is started.
+If it comes on while engine is running: ( P.56 )
+Engine mode indicator (blue)
+Indicates the currently selected mode by blinking the
+mode number once when the engine is started.
+Indicates the currently selected mode. ( P.20 )
+Launch control system indicator (purple)
+Indicates the condition of HRC-Launch Control System.
+( P.25 )
+Torque control indicator (green)
+Indicates the currently selected mode by blinking the
+mode number thrice when the engine is started. The
+Torque Control indicator (green) comes on while the
+system is operating.
+18
+Switches
+Engine mode select button ( P.20 )
+Operation Guide
+Start button ( P.28 )
+Torque control button ( P.23 )
+Engine stop button ( P.31 )
+Continued 19
+Switches (Continued)
+Operation Guide # Engine Mode  |  Engine mode indicator (blue)
+You can change the engine output
+characteristic depending on track
+conditions by using the engine mode
+select button.
+● PGM-FI mode 1: standard setting
+● PGM-FI mode 2: smooth setting
+(reduce throttle response from the
+standard setting)
+● PGM-FI mode 3: aggressive setting
+(increase throttle response from the
+Engine mode select button
+standard setting)
+20
+# Current Mode
+Start the engine and push the engine mode  |  The engine mode indicator also indicates the  |  Operation Guide
+select button with your vehicle stopped. The  |  currently selected mode by blinking the mode
+engine mode indicator under the engine  |  number once when the engine is started.
+mode select button indicates the selected
+PGM-FI mode 1:
+mode by blinking the mode number in blue
+The blue indicator blinks
+3 times.
+once 3 times.
+Engine mode indicator (blue)
+PGM-FI mode 2:
+The blue indicator blinks
+twice 3 times.
+PGM-FI mode 3:
+The blue indicator blinks
+thrice 3 times.
+If the engine mode indicator stays on or does
+not come on when it should, have your dealer
+Engine mode select button
+check it for problems.
+Continued 21
+Switches (Continued)
+Mode Selection
+Operation Guide  |  PGM-FI mode 1
+a Start the engine.
+b With your vehicle stopped and the throttle
+closed, push and hold the engine mode
+select button for 1 or more seconds.
+PGM-FI mode 2
+Make sure that the fast idle knob is pushed
+in. ( P.28 )
+If the fast idle knob is pulled out, the engine
+mode will not change.  |  PGM-FI mode 3
+c Release the engine mode select button. The
+engine mode indicator will indicate a
+selected mode by the number of times the
+indicator (blue) blinks.
+d Repeat steps 2 – 3 until the desired mode is
+indicated.
+22
+Honda Selectable Torque Control
+Torque Control level can be selected or  |  # Current Mode
+turned on/off, according to your skill and  |  Start the engine. The Torque Control
+track conditions by using the Torque Control  |  indicator indicates the selected mode by  |  Operation Guide
+button.  |  blinking the mode number 3 times.
+Torque Control mode  |  Rear wheel slip
+The Torque Control indicator (green) comes  |  1  |  High
+on while the system is operating.  |  2  |  Middle
+3  |  Low
+Torque Control indicator (green)
+OFF  |  No operation
+Torque Control mode 1:
+The indicator blinks once 3
+times.
+Torque Control mode 2:
+The indicator blinks twice 3
+times.
+Torque Control button
+Torque Control mode 3:
+The indicator blinks thrice 3
+times.
+Torque Control off:
+The indicator does not light up.
+Continued 23
+Honda Selectable Torque Control (Continued)
+# Mode Selection
+1. Start the engine.  |  Torque Control mode 1
+Operation Guide 2. Press the Torque Control button to select
+a mode level. The mode changes every
+Torque Control mode 2  |  Torque Control off
+time you press the button.
+u The Torque Control indicator (green) will
+indicate a selected mode by the number  |  Torque Control mode 3
+of times the indicator blinks.
+u The last mode selected will be saved.  |  : Pressing the Torque Control button
+: Pressing and holding the Torque Control button
+u The factory setting is mode 2.
+u Torque Control can be turned on and off
+by press and hold the Torque Control
+button.
+24
+HRC-Launch Control System
+The HRC-Launch Control System reduces slip  |  u The system may become disabled if you
+and assists for an effective start by  |  snap the throttle excessively.
+temporarily decreasing the rev limit when  |  u If the idle speed is low, the system may  |  Operation Guide
+starting.  |  not go into standby. Set the idle speed
+to standard rpm.
+You can select the rev limit level while the  |  u To disable the system, quickly press the
+system is operating according to your skill  |  start button. The launch control system
+indicator stops blinking.
+and track conditions.
+Start button
+# To change the level
+a Start the engine and wait more than 2
+seconds.
+b Close the throttle completely, press and
+hold the start button while pulling the clutch
+lever in until the launch control system
+indicator blinks (purple).
+u The system goes into standby, and the
+launch control system indicator indicates
+the selected level by blinking (purple).  |  Launch control system indicator
+u From standby, the control to decrease
+(purple)
+the rev limit starts.
+Continued 25
+HRC-Launch Control System (Continued)
+c Press and hold the start button. The level  |  Rev limit
+Total number of times the
+changes every time you press and hold.  |  during
+Level  |  launch control system
+launch
+Operation Guide u The level selected last is saved.  |  indicator blinks
+control
+u The factory setting is level 2.
+1  |  High  |  1
+d To continue using the system, refer to step 2
+2  |  Middle  |  2
+in “To operate the system” (next page). To
+3  |  Low  |  3
+disable the system, quickly press the start
+button. The launch control system indicator
+stops blinking and the system is disabled.
+Level 1
+Level 2
+Level 3
+Pressing and holding the start button while the
+launch control system is in standby
+26
+# To operate the system  |  u When the launch control system
+a Perform steps 1 and 2 in “To change the  |  operates, these following conditions will
+level”.  |  disable launch control:  |  Operation Guide
+b Shift into 1st or 2nd gear.  |  ● Vehicle is in 3rd gear
+c When launching, open the throttle halfway  |  ● The throttle is completely closed
+or more. The system operates.  |  d Make sure that the launch control system
+u The reduced rev limit is controlled and  |  indicator is off. If it is not off, the system is
+will gradually return to normal in a few  |  not disabled. Quickly press the start button
+seconds. Once the rev limit returns to  |  to disable the system.
+normal, the system is disabled.
+u The launch control system indicator
+comes on (purple) while the system is
+operating.
+u If you open the throttle halfway or more
+before starting, the control system stops
+before starting and there is no effect.
+u If you close the throttle immediately, the
+system may not operate.
+27
+Starting the Engine
+Start your engine using the following  |  To restart a warm engine, follow the
+procedure.  |  procedure for “Warm Engine Starting”.
+Operation Guide  |  NOTICE
+• If the engine does not start within 5 seconds,
+wait 10 seconds before trying to start the
+engine again to recover battery voltage.
+• Extended fast idling and revving the engine
+can damage the engine and the exhaust
+system.
+• Snapping the throttle or fast idling for more
+than about 5 minutes may cause exhaust
+pipe discolouration.
+28
+This vehicle does not have a start inhibitor.  |  Cold Engine Starting
+Pull the clutch lever all the way in when  |  a Shift the transmission to neutral.
+pressing the start button.  |  b If the temperature is 10 °C (50 °F) or below,  |  Operation Guide
+u The vehicle can move when pressing the  |  pull the fast idle knob fully up.
+start button if the transmission is in gear and  |  c With the throttle completely closed, pull the
+the clutch lever is not pulled.  |  clutch lever all the way in and press the start
+button.
+3 WARNING  |  d About a minute after the engine starts, push
+Pressing the start button when the  |  the fast idle knob back all the way to fully
+transmission is in gear and the clutch  |  off. If idling is unstable, open the throttle
+lever is not pulled in can cause the  |  slightly.
+vehicle to move suddenly, which can
+cause serious injury or death.
+Always pull the clutch lever in when
+pressing the start button.
+Continued 29
+Starting the Engine (Continued)
+Warm Engine Starting  |  When starting the engine, the PGM-FI
+a Shift the transmission into neutral.  |  malfunction indicator lamp (MIL) (amber) will
+Operation Guide b With the throttle completely closed, pull the  |  stay on for 2 seconds, then go off. Then, the
+clutch lever all the way in and press the start  |  engine mode indicator (blue) indicates the
+button.  |  current engine mode for 0.8 seconds, then
+goes off. If the PGM-FI malfunction indicator
+Starting the engine excessively charged  |  lamp (MIL)/engine mode indicator does not
+with fuel by throttle blipping or other  |  come on or go off when it should, have your
+reasons  |  dealer check it for problems.
+a Shift the transmission into neutral.
+b With the throttle fully opened, pull the clutch
+lever and press the start button for 5
+seconds to discharge excessive fuel from the
+engine.
+c With the throttle completely closed, pull the
+clutch lever all the way in and press the start
+button.
+PGM-FI malfunction indicator lamp
+(MIL) (amber)/
+# If Engine Will Not Start ( P.55 )  |  engine mode indicator (blue)
+30
+When you stop the engine
+# Normal Engine Stop
+Operation Guide
+a Shift the transmission into neutral.
+b Push and hold the engine stop button until
+the engine stops completely.
+Engine stop button
+# Emergency Engine Stop
+To stop the engine in an emergency, push
+and hold the engine stop button.
+31
+Shifting Gears
+Your vehicle transmission has 5 forward
+gears in a one-down, four-up shift pattern.
+Operation Guide
+32
+Refuelling
+Steering stem nut  |  Fuel type: Unleaded petrol only
+Breather tube  |  Fuel octane number: Your vehicle is
+designed to use Research Octane Number  |  Operation Guide
+(RON) 95 or higher.
+CRF250RX
+Tank capacity:
+8.0 L (2.11 US gal, 1.76 Imp gal)
+CRF250R/RWE
+Tank capacity:
+Filler neck  |  6.3 L (1.66 US gal, 1.39 Imp gal)
+Fuel fill cap  |  bottom
+# Refuelling and Fuel Guidelines ( P.12 )
+Be careful not to damage the fuel pump
+while filling the fuel tank.  |  Opening the Fuel Fill Cap
+Avoid overfilling the tank. There should be no  |  a Pull the breather tube out of the steering
+fuel in the filler neck.  |  stem nut.
+b Turn the fuel fill cap counterclockwise and
+remove it.
+Continued 33
+Refuelling (Continued)
+Closing the Fuel Fill Cap
+a After refuelling, close the fuel fill cap
+Operation Guide securely.
+b Insert the breather tube into the steering
+stem nut.
+3 WARNING
+Petrol is highly flammable and
+explosive. You can be burned or
+seriously injured when handling fuel.
+• Stop the engine, and keep heat,
+sparks, and flames away.
+• Only handle fuel outdoors.
+• Wipe up spills immediately.
+34
+Maintenance
+Please read “Importance of Maintenance”, “Maintenance Fundamentals” and “Competition
+Handbook” carefully before attempting any maintenance. Refer to “Competition
+Handbook” for service data.
+Importance of Maintenance ........................... P. 36
+Maintenance Schedule..................................... P. 38
+Maintenance Fundamentals ........................... P. 42
+Removing & Installing Body Components.. P. 51
+Battery .................................................................... P. 51
+Left Side Cover..................................................... P. 53
+Importance of Maintenance
+Importance of Maintenance  |  Maintenance Safety
+Keeping your vehicle well-maintained is  |  Always read the maintenance instructions
+absolutely essential to your safety and to  |  before you begin each task and make sure that
+protect your investment, obtain maximum  |  you have the tools, parts, and skills required.
+Maintenance
+performance, avoid breakdowns, and reduce air  |  We cannot warn you of every conceivable
+pollution. Maintenance is the owner's  |  hazard that can arise in performing
+responsibility. Be sure to inspect your vehicle  |  maintenance. Only you can decide whether or
+before each ride and perform the periodic  |  not you should perform a given task.
+checks specified in the Maintenance Schedule.
+2 P. 38  |  Follow these guidelines when performing
+maintenance.
+3 WARNING
+● Stop the engine.
+Improperly maintaining your vehicle or  |  ● CRF250RX
+failing to correct a problem before you  |  Place your vehicle on a firm, level surface
+ride can cause a crash in which you can  |  using the side stand, an optional workstand
+be seriously hurt or killed.  |  or a maintenance stand to provide support.
+CRF250R/RWE
+Place your vehicle on a firm, level surface
+Always follow the inspection and
+using an optional workstand or a
+maintenance recommendations and
+maintenance stand to provide support.
+schedules in this owner's manual and
+competition handbook.
+36
+Importance of Maintenance
+● Allow the engine, muffler, brakes, and other
+high-temperature parts to cool before
+servicing as you can get burned.
+● Run the engine only when instructed, and
+do so in a well-ventilated area.  |  Maintenance
+37
+Maintenance Schedule
+To maintain the safety and reliability of your  |  CRF250RX
+vehicle, regular inspection and service is  |  Service intervals in the maintenance schedule
+required as shown in the Maintenance Schedule  |  are expressed in terms of races and riding
+that follows.  |  hours. To avoid overlooking required service,
+Maintenance  |  we urge you to develop a convenient way to
+The Maintenance Schedule lists items that can  |  record the number of races and/or hours you
+be performed with basic mechanical skills and  |  ride.
+hand tools. Procedures for these items are  |  CRF250R/RWE
+provided in Competition Handbook. The  |  Service intervals in the maintenance schedule
+Maintenance Schedule also includes items that  |  are expressed in terms of heats and riding
+involve more extensive procedures and may  |  hours. To avoid overlooking required service,
+require special training, tools, and equipment.  |  we urge you to develop a convenient way to
+Therefore, we recommend that you have your  |  record the number of heats and/or hours you
+dealer perform these tasks unless you have  |  ride.
+advanced mechanical skills and the required
+tools. Procedures for items in this schedule are  |  If you do not feel capable of performing a given
+provided in an official Honda Shop Manual  |  task or need assistance, remember that your
+available for purchase from your dealer.  |  Honda dealer knows your vehicle best and is
+fully equipped to maintain and repair it. If you
+decide to do your own maintenance, use only
+Honda Genuine Parts or their equivalents for
+repair or replacement to ensure the best quality
+and reliability.
+38
+Maintenance Schedule
+Perform the Pre-ride Inspection ( 2 P. 42) at each scheduled maintenance period.
+Each race or  |  Every 3 races or Every 6 races or Every 9 races or Every 12 races or
+CRF250R/RWE
+FREQUENCY  |  about 2.5 hours about 7.5 hours about 15.0 hours about 22.5 hours about 30.0 hours
+NOTE
+ITEMS  |  Each race or  |  Every 2 races or Every 4 races or Every 6 races or Every 8 races or
+CRF250RX
+about 3.5 hours about 7.5 hours about 15.0 hours about 22.5 hours about 30.0 hours
+Fuel Line  |  NOTE 6
+Maintenance
+Fuel Pump Filter  |  NOTE 6
+Throttle Operation
+Air Filter  |  NOTE 1
+Crankcase Breather
+Spark Plug
+Valve Clearance/Decompressor
+NOTE 4
+System
+Engine Oil  |  NOTE 3, 5
+Engine Oil Filter  |  NOTE 3
+Engine Idle Speed
+WE RECOMMEND THESE ITEMS BE SERVICED BY REFERRING TO THE OFFICIAL HONDA SHOP
+MANUAL.
+This maintenance schedule is based upon average riding condition. Machine subjected to severe use
+require more frequent servicing.
+Maintenance Legend
+: Inspect (clean, adjust, lubricate, or replace, if necessary)
+: Lubricate
+: Replace
+: Clean
+Continued 39
+Maintenance Schedule
+Each race or  |  Every 3 races or Every 6 races or Every 9 races or Every 12 races or
+CRF250R/RWE
+FREQUENCY  |  about 2.5 hours about 7.5 hours about 15.0 hours about 22.5 hours about 30.0 hours
+NOTE
+ITEMS  |  Each race or  |  Every 2 races or Every 4 races or Every 6 races or Every 8 races or
+CRF250RX
+about 3.5 hours about 7.5 hours about 15.0 hours about 22.5 hours about 30.0 hours
+Piston and Piston Rings
+Piston Pin
+Maintenance
+Radiator Coolant  |  NOTE 2
+Cooling System
+Drive Chain
+Drive Chain Slider
+Drive Chain Roller
+Drive Sprocket
+Driven Sprocket
+Brake Fluid  |  NOTE 2
+Brake Pads Wear
+Brake System
+40
+Maintenance Schedule
+Each race or  |  Every 3 races or Every 6 races or Every 9 races or Every 12 races or
+CRF250R/RWE
+FREQUENCY  |  about 2.5 hours about 7.5 hours about 15.0 hours about 22.5 hours about 30.0 hours
+NOTE
+ITEMS  |  Each race or  |  Every 2 races or Every 4 races or Every 6 races or Every 8 races or
+CRF250RX
+about 3.5 hours about 7.5 hours about 15.0 hours about 22.5 hours about 30.0 hours
+Clutch Fluid (Only RWE type)  |  NOTE 2
+Clutch System  |  NOTE 5
+Maintenance
+Control Cables
+Exhaust Pipe/Muffler
+Suspension
+Swingarm/Shock Linkage
+Fork Oil  |  NOTE 3
+Nuts, Bolts, Fasteners
+Wheels/Tyres
+Steering Head Bearings
+Side Stand  |  NOTE 7
+Notes: 1 : Clean after every heat/race for dusty riding condition.  |  4 : Inspect after the first break-in ride.
+2 : Replace every 2 years. Replacement requires  |  5 : Replace the engine oil, if the clutch discs and
+mechanical skill.  |  plates are replaced.
+3 : Replace after the first break-in ride.  |  6 : Replace every year.
+7 : Only RX type.
+41
+Maintenance Fundamentals
+Pre-ride Inspection  |  ● Clutch lever freeplay
+● Breather drain for cleaning
+To ensure safety, it is your responsibility to
+● Steering head bearing and related parts for
+perform a pre-ride inspection and make sure
+condition
+that any problem you find is corrected. A pre-
+Maintenance  |  ● Throttle operation
+ride inspection is a must, not only for safety, but
+● Tyres for damage or improper inflation pressure
+because having a breakdown, or even a flat
+● Spokes for looseness
+tyre, can be a major inconvenience.
+● Rim locks for looseness
+Refer to the Competition Handbook for procedures.  |  ● Front and rear suspension for proper operation
+● Front and rear brakes, check operation
+Competitive riding can be tough on a vehicle,  |  ● Drive chain for correct slack and adequate
+so it’s important to inspect your vehicle and  |  lubrication
+correct any problems you find before each ride.  |  ● Drive chain sliders and drive chain rollers for
+damage or wear
+● Exhaust pipe/Muffler for looseness
+Check the following before each ride:
+● Every possible part for looseness (such as
+● Engine oil level
+cylinder head bolts, engine mounting bolts/
+● Fuel line for condition
+nuts, axle nuts, handlebar holder bolts, fork
+● Coolant for proper level
+bridge pinch bolts, drive chain adjuster, lock
+● Cooling system and hoses for condition
+nuts, drive chain roller bolt/nut, wire harness
+● Spark plug for proper heat range, carbon  |  connectors)
+fouling and spark plug wire terminal for  |  PGM-FI malfunction indicator lamp (MIL)
+●
+looseness  |  operation
+● Air cleaner for condition and contamination
+42
+Maintenance Fundamentals
+Between Races/Heats & Practice
+Maintenance
+CRF250RX
+After practice, or between races, you have a
+Maintenance
+chance to make additional checks and
+adjustments.
+CRF250R/RWE
+After practice, or between heats, you have a
+chance to make additional checks and
+adjustments.
+• Clean accumulated dirt from under the  |  • Check to make sure the sprocket bolts and
+fenders and off the wheels, suspension  |  nuts are secure.
+components, handgrips, controls, and  |  • Clean the sides of the drive chain with a stiff,
+footpegs. A stiff, nylon parts cleaning brush  |  nylon parts-cleaning brush. Lubricate and
+works well.  |  adjust the chain as necessary.
+• Check tyre air pressure.  |  Do not perform maintenance while the engine
+• Check spoke tension, and make sure the rim  |  is running. Injury to your fingers or hands may
+locks are secure.  |  result.
+Continued 43
+Maintenance Fundamentals
+• After adjustment, check that the chain  |  • Suspend the front wheel above the ground
+adjuster index marks are in the same  |  and use the pressure release screws to
+position on each side. This will ensure that  |  release the built-up pressure in the forks.
+the rear wheel is in proper alignment and  |  This pressure is caused by normal fork
+Maintenance allow maximum performance from the rear  |  action while riding.
+disc brake.
+Pressure release screw
+Maintaining proper wheel alignment will also
+extend brake pad lifespan.
+Chain adjuster index marks
+Tighten the pressure release screw to the
+specified torque:
+Torque: 1.3 N·m (0.1 kgf·m, 1.0 lbf·ft)
+44
+Maintenance Fundamentals
+After Competition Maintenance  |  Take care to prevent catching your fingers
+between the chain and sprocket.
+It is important to the long term performance of
+your vehicle to practice a consistent
+Remove the drive chain, and clean and lubricate it.
+maintenance program. Right after an event is a
+Be sure the chain is wiped clean and is dry  |  Maintenance
+good time to begin your next maintenance
+before lubricating the chain.
+cycle.
+# After Race Lubrication
+Apply a light coating of rust-inhibiting oil to the
+drive sprocket and any steel portions of the
+chassis or engine where the paint has worn
+away.
+This will prevent rusting of the exposed metal.
+Apply rust-inhibiting oil more heavily if the
+event was particularly wet or muddy. Take care
+to avoid spraying any oil near the brake pads or
+the brake discs.
+# Routine Cleaning
+If your vehicle is only slightly dirty, it is best to
+clean it by hand with the aid of a stiff bristled
+nylon brush and some clean rags.
+Continued 45
+Maintenance Fundamentals
+Take care to prevent catching your fingers  |  Replacing Parts
+between the chain and sprocket.
+Always use Honda Genuine Parts or their
+equivalents to ensure reliability and safety.
+A variety of reasonably priced cleaning brushes
+Maintenance are available from variety, drug, food, and
+hardware stores. Some of these brushes are  |  3 WARNING
+extremely useful in removing dirt from the many
+Installing non-Honda parts may make
+tight contours of the metal pieces of your
+vehicle.  |  your vehicle unsafe and cause a crash in
+Avoid using stiff, abrasive brushes on the plastic  |  which you can be seriously hurt or
+or rubber parts.  |  killed.
+If your vehicle was exposed to sea air or salt  |  Always use Honda Genuine Parts or
+water, rinse it as soon as possible after the  |  equivalents that have been designed
+event, dry it, and apply a spray lubricant to all  |  and approved for your vehicle.
+metal parts.
+If you decide to wash your vehicle or use
+cleaners, refer to "Caring for Your Vehicle".
+2 P. 61
+46
+Maintenance Fundamentals
+Lithium-Ion (Li-Ion) Battery  |  ● Electrolyte splashes into your mouth
+u Rinse mouth thoroughly with water, and
+Your vehicle has a lithium-ion (li-ion) battery.  |  do not swallow.
+Clean the battery terminals if they become dirty
+or corroded.  |  3 WARNING
+This symbol on the battery means that  |  Maintenance
+The battery contains flammable organic
+this product must not be treated as
+solvent as electrolyte.
+household waste.
+NOTICE  |  You can be burned or seriously injured
+An improperly disposed of battery can be  |  if the battery is handled improperly.
+harmful to the environment and human health.
+Always confirm local regulations for proper
+● Keep the battery away from heat,
+battery disposal instruction.
+sparks, and flames.
+# What to do in an emergency  |  ● Keep the battery out of the reach of
+If any of the following occurs, immediately see  |  children.
+your doctor.
+● Do not disassemble or modify the
+● Electrolyte splashes into your eyes:
+battery or battery terminals.
+u Wash your eyes repeatedly with cool
+● Do not short-circuit the battery with
+water for at 15 minutes. Using water
+under pressure can damage your eyes.  |  metal tools or other metal objects.
+● Electrolyte splashes onto your skin:  |  ● Do not subject the battery to
+u Remove affected clothing and wash your  |  impacts.
+skin thoroughly using water.
+Continued 47
+Maintenance Fundamentals
+# Cleaning the Battery Terminals  |  NOTICE
+1. Remove the battery. 2 P. 51  |  Installing non-Honda electrical accessories can
+2. If the terminals are starting to corrode and  |  overload the electrical system, discharging the
+are coated with a white substance, wash  |  battery and possibly damaging the system.
+Maintenance with warm water and wipe clean.
+3. If the terminals are heavily corroded, clean  |  Fuses
+and polish the terminals with a wire brush or
+Fuses protect the electrical circuits on your
+sandpaper. Wear safety glasses.
+vehicle. If something electrical on your vehicle
+stops working, check for and replace any blown
+fuses. 2 P. 58
+# Inspecting and Replacing Fuses
+Turn the engine off to remove and inspect the
+fuses. If a fuse is blown, replace with a fuse of
+the same rating. For fuse ratings, see
+“Specifications.” 2 P. 74
+4. After cleaning, reinstall the battery.
+Blown fuse
+The battery has a limited life span. Consult your
+dealer about when you should replace the
+battery. Always replace the battery with another
+lithium-ion (li-ion) battery of the same type.
+48
+Maintenance Fundamentals
+NOTICE  |  tread. Also inspect for any unusual bumps or
+Replacing a fuse with one that has a higher rating greatly  |  bulges in the side walls of the tyres.
+increases the chance of damage to the electrical system.
+# Inspecting for Abnormal Wear
+If a fuse fails repeatedly, you likely have an  |  Inspect the tyres for signs of abnormal wear on
+Maintenance
+electrical fault. Have your vehicle inspected by  |  the contact surface.
+your dealer.
+# Inspecting Rims and Valve Stems
+Tyres (Inspecting/Replacing)  |  Inspect the rims for damage and loose spokes.
+# Checking the Air Pressure  |  Also inspect the valve stems for their positions.
+Visually inspect your tyres and use an air  |  A tilted valve stem indicates the tube is slipping
+pressure gauge to measure the air pressure  |  inside the tyre or the tyre is slipping on the rim.
+before each ride.  |  See your dealer.
+Always check air pressure when your tyres are
+cold.  |  3 WARNING
+If you decide to adjust the tyre pressure for a  |  Riding on tyres that are excessively worn
+particular riding condition, make changes a little  |  or improperly inflated can cause a crash
+at a time.  |  in which you can be seriously hurt or
+killed.
+# Inspecting for Damage
+Inspect the tyres for cuts, slits, or cracks that
+Follow all instructions in this owner's
+expose fabric or cords, or nails or other foreign
+manual regarding tyre inflation and
+objects embedded in the side of the tyre or the
+maintenance.
+Continued 49
+Maintenance Fundamentals
+Have your tyres replaced by your dealer.
+3 WARNING
+For recommended tyres and air pressure, see
+“Specifications.” 2 P. 72  |  Installing improper tyres on your
+Follow these guidelines whenever you replace  |  vehicle can adversely affect handling
+Maintenance tyres:  |  and stability, and can cause a crash in
+● Use the recommended tyres or their  |  which you can be seriously hurt or
+equivalents of the same size, construction,  |  killed.
+speed rating, and load range.
+● Remember to replace the inner tube
+Always use the size and type of tyres
+whenever you replace a tyre. The old tube
+recommended in this owner's manual.
+will probably be stretched, and it could fail if
+installed in a new tyre.
+● If a tube is punctured or damaged, you
+should replace it as soon as possible. A
+repaired tube may not have the same
+reliability as a new one, and it may fail while
+you are riding.
+Use a replacement tube equivalent to the
+original.
+50
+Removing & Installing Body Components
+Battery  |  Battery
+-mark
+Negative terminal  |  Battery lid  |  Negative
+terminal
+Battery assembly  |  +mark
+Maintenance
+Positive
+terminal  |  Battery rubber
+# Removal
+1. Remove the battery lid by removing the
+bolts.
+2. Disconnect the negative - terminal from
+the battery.
+3. Disconnect the positive + terminal from
+the battery.
+Battery band  |  Bolts
+4. Remove the battery band.
+Positive terminal  |  5. Remove the battery assembly, taking care
+not to drop the terminal nuts.
+6. Separate the battery and battery rubber.
+Continued 51
+Removing & Installing Body Components u Battery
+# Installation  |  6. Install the battery lid and tighten the bolts
+to the specified torque:
+1. Assemble the battery and battery rubber.
+u Make sure the + and - marks on the  |  Torque: 5.2 N·m (0.5 kgf·m, 3.8 lbf·ft)
+bottom of the battery rubber align
+Maintenance
+with the positive + and negative - of
+For proper handling of the battery, see
+the battery terminals.
+“Maintenance Fundamentals.” 2 P. 47
+2. Install the battery assembly.
+“Battery Goes Dead.” 2 P. 57
+3. Install and tighten the battery terminal
+bolts. Always connect the positive +
+terminal first. Make sure that bolts and
+nuts are tight.
+4. Tighten the positive + terminal bolt and
+negative - terminal bolt to the specified
+torque:
+Torque: 2.0 N·m (0.2 kgf·m, 1.5 lbf·ft)
+5. Install the battery band.
+52
+Removing & Installing Body Components u Left Side Cover
+Left Side Cover  |  # Installation
+1. Install the left side cover by sliding it
+Groove  |  forward.
+Hook
+Slot  |  Left side  |  u Make sure that align the hook with the
+cover  |  Maintenance
+groove of the rear fender and tab with
+the slot of the radiator shroud.
+2. Install the left side cover bolt and tighten
+it to the specified torque:
+Torque: 10 N·m (1.0 kgf·m, 7 lbf·ft)
+Tab  |  Left side cover bolt
+# Removal
+1. Remove the left side cover bolt.
+2. Remove the left side cover by sliding it
+backward.
+53
+Troubleshooting
+Engine Will Not Start........................................ P. 55
+Warning Indicators On or Flashing............... P. 56
+PGM-FI (Programmed Fuel Injection)
+Malfunction Indicator Lamp (MIL)................. P. 56
+Electrical Trouble ............................................... P. 57
+Battery Goes Dead .............................................. P. 57
+Blown Fuse ............................................................ P. 58
+Engine Will Not Start
+Starter Motor Operates But  |  Starter Motor Does Not
+Engine Does Not Start  |  Operate
+Check the following items:  |  Check the following items:
+● Check the correct engine starting  |  ● Check the correct engine starting
+sequence. 2 P. 28  |  sequence. 2 P. 28  |  Troubleshooting
+● Check that there is petrol in the fuel tank.  |  ● Check for a blown fuse. 2 P. 58
+● Check if the PGM-FI malfunction indicator  |  ● Check for a loose battery connection
+lamp (MIL) is on.  |  ( 2 P. 51) or battery terminal corrosion
+( 2 P. 48).
+● Check the condition of the battery.
+2 P. 57
+If the problem continues, have your vehicle
+inspected by your dealer as soon as possible
+or refer to an official Honda Shop Manual
+available for purchase from your dealer.
+55
+Warning Indicators On or Flashing
+PGM-FI (Programmed Fuel
+Injection) Malfunction
+Indicator Lamp (MIL)
+If the indicator comes on while riding, you
+Troubleshooting
+may have a serious problem with the PGM-FI
+system.
+Reduce speed and have your vehicle
+inspected by your dealer as soon as possible
+or refer to an official Honda Shop Manual
+available for purchase from your dealer.
+56
+Electrical Trouble
+Battery Goes Dead  |  If the battery does not recover after
+recharging, contact your dealer.
+Battery charging is needed.
+NOTICE
+A battery charger recommended by your  |  Do not jump-start, as this can damage your
+lithium-ion (li-ion) battery manufacturer is  |  vehicle's electrical system and battery.
+needed for battery charging.
+Troubleshooting
+Contact your dealer before charging the
+battery.
+Remove the battery from the vehicle before
+charging.
+NOTICE
+Only use a charger recommended by your
+lithium-ion (li-ion) battery manufacturer. Using a
+battery charger that is not recommended can
+cause permanent damage to your battery.
+57
+Electrical Trouble u Blown Fuse
+Blown Fuse  |  3. Pull the tab of the ECM rubber and
+remove the ECM from the air cleaner
+Before handling fuses, see “Inspecting and  |  housing.
+Replacing Fuses.” 2 P. 48  |  4. Remove the starter magnetic switch stay
+bolt.
+# Main fuse  |  5. Pull back the coupler cover.
+Troubleshooting
+1. Remove the left side cover. 2 P. 53  |  6. Disconnect the connector from the starter
+2. Disconnect the negative - terminal from  |  magnetic switch.
+the battery. 2 P. 51  |  7. Remove the starter magnetic switch
+cover.
+ECM rubber
+8. Pull the main fuse and check for a blown
+fuse. Always replace a blown fuse with a
+spare of the same rating.
+ECM
+Tab
+Starter magnetic switch stay bolt
+58
+Electrical Trouble u Blown Fuse
+Starter magnetic  |  9. Install the starter magnetic switch cover.
+Coupler cover  |  switch cover  |  10. Install the connector and coupler cover.
+11. Install and tighten the starter magnetic
+switch stay bolt.
+12. Install the ECM and ECM rubber to the air
+cleaner housing.
+Troubleshooting
+13. Connect the negative - terminal to the
+battery. 2 P. 52
+14. Install the left side cover. 2 P. 53
+NOTICE
+If a fuse fails repeatedly, you likely have an
+Main fuse  |  electrical problem. Have your vehicle inspected
+by your dealer.
+Connector
+Spare main fuse
+Starter magnetic switch
+59
+Information
+Caring for Your Vehicle.................................... P. 61
+Storing Your Vehicle......................................... P. 65
+Transporting Your Vehicle .............................. P. 66
+You & the Environment.................................... P. 68
+Serial Numbers................................................... P. 69
+Fuels Containing Alcohol................................. P. 70
+Caring for Your Vehicle
+Caring for Your Vehicle  |  maroon is for removing stains on the
+non-coated aluminium frame only.
+Frequent cleaning and polishing is important to  |  3. Thoroughly rinse your vehicle with plenty of
+ensure the life of your Honda. A clean vehicle  |  clean water and dry with a soft, clean cloth.
+makes it easier to spot potential problems.  |  4. After the vehicle dries, lubricate any moving
+While you're cleaning, be sure to look for  |  parts.
+damage, wear, and petrol or oil leaks.  |  u Make sure that no lubricant spills onto
+the brakes or tyres. Brake discs, pads,
+Washing  |  Information
+drum or shoes contaminated with oil will
+Allow the engine, muffler, brakes, and other  |  suffer greatly reduced braking
+high-temperature parts to cool before washing.  |  effectiveness and can lead to a crash.
+1. Rinse your vehicle thoroughly using a low  |  5. Lubricate the drive chain immediately after
+pressure garden hose to remove loose dirt.  |  washing and drying the vehicle.
+2. If necessary, use a sponge or a soft towel  |  6. Apply a coat of wax to prevent corrosion.
+with mild cleaner to remove road grime.  |  u Avoid products that contain harsh
+u Clean the plastic components with extra  |  detergents or chemical solvents. These
+care to avoid scratching them.  |  can damage the metal, paint, and plastic
+Avoid directing water into the air cleaner,  |  on your vehicle.
+muffler, and electrical parts.  |  Keep the wax clear of the tyres and brakes.
+u Do not use steel wool to clean the frame  |  u If your vehicle has any mat painted parts,
+as it could damage or discolor the frame  |  do not apply a coat of wax to the mat
+surface. Scotch Brite Hand Pad #7447-  |  painted surface.
+Continued 61
+Caring for Your Vehicle
+# Washing Precautions  |  Steering head bearings
+Follow these guidelines when washing:
+● Do not use high-pressure washers:
+u High-pressure water cleaners can
+damage moving parts and electrical
+parts, rendering them inoperable.
+u Water in the air intake can be drawn into
+the throttle body and/or enter the air
+Information
+cleaner.
+u If you use a high pressure washer, avoid
+spraying the following areas:  |  Suspension pivot points
+brake master cylinders
+● Do not direct water at the muffler:
+clutch master cylinder (Only RWE type)
+u Water in the muffler can prevent starting
+drive chain
+and causes rust in the muffler.
+electrical circuit
+● Dry the brakes:
+engine stop button
+u Water adversely affects braking
+muffler outlet
+effectiveness. After washing, apply the
+steering head bearings
+brakes intermittently at low speed to
+suspension pivot points
+help dry them.
+throttle body
+● Do not direct water at the air cleaner:
+under fuel tank
+u Water in the air cleaner can prevent the
+under seat
+engine from starting.
+62
+Caring for Your Vehicle
+● Do not use wax or polishing compounds on  |  NOTICE
+mat painted surfaces:  |  Do not use steel wool to clean the frame as it
+u Use a soft cloth or sponge, plenty of  |  could damage or discolor the frame surface.
+water, and a mild detergent to clean mat  |  Scotch Brite Hand Pad #7447-maroon is for
+painted surfaces. Dry with a soft clean  |  removing stains on the non-coated aluminium
+cloth.  |  frame only.
+Aluminium Frame Maintenance  |  Titanium Fuel Tank Maintenance
+Aluminium corrodes when it comes in contact  |  Information
+CRF250R/RWE
+with dust, mud and road salt.  |  The fuel tank is made of titanium material.
+To remove mud or dust, use a sponge or soft
+To remove stains, use Scotch Brite Hand Pad  |  cloth and a stainless steel kitchen detergent,
+#7447 (maroon) or an equivalent. Wet the pad  |  then rinse well with clean water.
+and polish the surface using strokes parallel to  |  After washing, rinse with plenty of water and dry
+the length of the frame.  |  with a clean cloth.
+Clean the frame using a wet sponge and a mild
+detergent, then rinse well with clean water. Dry
+the frame with a soft clean cloth, using strokes
+parallel to the length of the frame.
+Continued 63
+Caring for Your Vehicle
+Exhaust Pipe and Muffler  |  CRF250RWE
+The exhaust pipe and muffler are titanium but
+CRF250R/RX
+may become stained by mud or dust.
+The exhaust pipe and muffler are stainless steel
+but may become stained by mud or dust.
+To remove mud or dust, use a wet sponge and
+a liquid kitchen abrasive, then rinse well with
+To remove mud or dust, use a wet sponge and
+clean water. Dry with chamois or a soft towel.
+a liquid kitchen abrasive, then rinse well with
+Information clean water. Dry with chamois or a soft towel.
+If necessary, remove heat stains by using a
+commercially available fine texture compound.
+If necessary, remove heat stains by using a
+Then, rinse by the same manner as removing
+commercially available fine texture compound.
+mud or dust.
+Then, rinse by the same manner as removing
+mud or dust.  |  NOTICE
+Even though the exhaust is made of titanium, it
+NOTICE
+can become stained. Remove all marks and
+Even though the exhaust is made of stainless
+blemishes as soon as they are noticed.
+steel, it can become stained. Remove all marks
+and blemishes as soon as they are noticed.
+64
+Storing Your Vehicle
+Storing Your Vehicle  |  ● Store your vehicle in an unheated area, free
+of dampness, away from sunlight, with a
+If you won't be riding for an extended period,  |  minimum of daily temperature variation.
+follow these guidelines:  |  ● Cover your vehicle with a porous material.
+● Wash your vehicle.  |  Avoid using plastic or similar non-breathing,
+● Drain the coolant.  |  coated materials that restrict air flow and
+● Lubricate the drive chain.  |  allow heat and moisture to accumulate.
+● Place your vehicle on an optional workstand
+or equivalent to raise both tyres off the  |  Information
+ground.
+● Relieve the fuel pressure and drain the fuel
+from the fuel tank into an approved petrol
+container.
+● Remove the battery ( 2 P. 51) to prevent
+discharge. Fully charge the battery and then
+place it in a shaded, well-ventilated area.
+u If you leave the battery in place,
+disconnect the negative - terminal to
+prevent discharge.
+● Stuff a rag into the muffler outlet. Then, tie a
+plastic bag over the end of the muffler to
+prevent moisture from entering.
+Continued 65
+Transporting Your Vehicle
+To remove your vehicle from storage, follow  |  Transporting Your Vehicle
+these guidelines:
+● Uncover and clean your vehicle.  |  If your vehicle needs to be transported, it
+● Change the engine oil if more than 4  |  should be carried on a motorcycle trailer or a
+months have passed since the start of  |  flatbed truck or trailer that has a loading ramp
+storage.  |  or lifting platform and motorcycle tie-down
+● Uncover the end of the muffler and remove  |  straps. Never try to tow your vehicle with a
+the rag from the muffler outlet.  |  wheel or wheels on the ground.
+Information ● Fill the fuel tank with the recommended fuel.
+NOTICE
+2 P. 33
+Towing your vehicle with a wheel or wheels on
+● Charge the battery as required. 2 P. 47  |  the ground can cause serious damage to the
+Install the battery.  |  transmission.
+● Pour a fresh recommended coolant mixture
+slowly into the radiator fill hole up to the
+filler neck.
+● Increase the fuel pressure.
+● Perform all maintenance checks. 2 P. 42
+66
+Transporting Your Vehicle
+If you use a truck or motorcycle trailer to  |  To secure your vehicle, brace the front wheel
+transport your vehicle, we recommend that you  |  against the front of the truck bed or trailer rail.
+follow these guidelines:  |  Attach the lower ends of two straps to the tie-
+● Use a loading ramp.  |  down hooks on truck bed or trailer rail. Attach
+● Relieve the fuel pressure and drain the fuel  |  the upper ends of the straps to the handlebar
+from the fuel tank into an approved petrol  |  (one on the right side, the other on the left),
+container.  |  close to the fork.
+● Secure the vehicle in an upright position,
+using motorcycle tie-down straps. Avoid  |  Check that the tie-down straps do not contact  |  Information
+using rope, which can loosen and allow the  |  any control cables or electrical wiring.
+vehicle to fall over.
+Tighten both straps until the front suspension is
+compressed about half-way. Too much pressure
+is unnecessary and could damage the fork seals.
+Use another tie-down strap to keep the rear of
+the vehicle from moving.
+We recommend that you do not transport your
+vehicle on its side. This can damage the vehicle,
+and leaking petrol could be a hazard.
+67
+You & the Environment
+You & the Environment  |  Recycle Wastes
+Put oil and other toxic wastes in approved
+Owning and riding a vehicle can be enjoyable,
+containers and take them to a recycling centre.
+but you must do your part to protect the
+Call your local or state office of public works or
+environment.
+environmental services to find a recycling centre
+Choose Sensible Cleaners  |  in your area and to get instructions on how to
+dispose of non-recyclable wastes. Do not place
+Use a biodegradable detergent when you wash
+Information  |  used engine oil in the trash or pour it down a
+your vehicle. Avoid aerosol spray cleaners that
+drain or on the ground. Used oil, petrol,
+contain chlorofluorocarbons (CFCs) which
+coolant, and cleaning solvents contain poisons
+damage the atmosphere's protective ozone
+that can hurt refuse workers and contaminate
+layer.
+drinking water, lakes, rivers, and oceans.
+68
+Serial Numbers
+Serial Numbers
+The frame and engine serial numbers uniquely
+identify your vehicle and are required in order
+to register your vehicle. They may also be
+required when ordering replacement parts.
+You should record these numbers and keep
+them in a safe place.  |  Information
+Frame number
+Engine number
+69
+Fuels Containing Alcohol
+Fuels Containing Alcohol  |  The use of petrol containing more than 10%
+ethanol may:
+Except Brazil  |  ● Damage the painting of the fuel tank.
+Some conventional fuels blended with alcohol  |  ● Damage the rubber tubes of the fuel line.
+are available in some locales to help reduce  |  ● Cause corrosion of the fuel tank.
+emissions to meet clean air standards. If you  |  ● Cause poor drivability.
+plan to use blended fuel, check that it is
+NOTICE
+unleaded and meets the minimum octane
+Information  |  Use of blended fuels containing higher than
+rating requirement.
+approved percentages can damage metal,
+rubber, plastic parts of your fuel system.
+The following fuel blends can be used in your
+vehicle:  |  If you notice any undesirable operating
+● Ethanol (ethyl alcohol) up to 10% by volume.  |  symptoms or performance problems, try a
+u Petrol containing ethanol may be  |  different brand of petrol.
+marketed under the name Gasohol.
+70
+Specifications
+■ Dimension  |  CRF250RX  |  116 mm (4.6 in)
+CRF250RX  |  2,178 mm (85.7 in)  |  Trail length  |  CRF250R  |  117 mm (4.6 in)
+Overall length  |  CRF250R  |  2,179 mm (85.8 in)  |  CRF250RWE  |  115 mm (4.5 in)
+CRF250RWE  |  2,189 mm (86.2 in)
+CRF250RX  |  839 mm (33.0 in)
+Overall width
+CRF250R/RWE 827 mm (32.6 in)
+CRF250RX  |  1,278 mm (50.3 in)
+Overall height  |  CRF250R  |  1,262 mm (49.7 in)
+CRF250RWE  |  1,265 mm (49.8 in)
+CRF250RX  |  1,478 mm (58.2 in)
+Wheelbase
+CRF250R/RWE 1,483 mm (58.1 in)  |  Specifications
+CRF250RX  |  958 mm (37.7 in)
+Seat height  |  CRF250R  |  955 mm (37.6 in)
+CRF250RWE  |  962 mm (37.9 in)
+CRF250RX  |  424 mm (16.7 in)
+Footpeg height  |  CRF250R  |  422 mm (16.6 in)
+CRF250RWE  |  427 mm (16.8 in)
+CRF250RX  |  331 mm (13.0 in)
+Minimum ground
+CRF250R  |  330 mm (13.0 in)
+clearance
+CRF250RWE  |  334 mm (13.1 in)
+CRF250RX  |  27°26'
+ED, U type 28°24'
+Caster angle  |  CRF250R
+GS, LA, MX type 27°33'
+CRF250RWE  |  27°14'
+71
+Specifications
+■ Frame  |  8.0 L (2.11 US gal,
+CRF250RX
+CRF250RX  |  90/90-21 54M  |  1.76 Imp gal)
+Fuel tank capacity
+80/100-21 M/C 51M  |  6.3 L (1.66 US gal,
+Front CRF250R  |  CRF250R/RWE
+MST  |  1.39 Imp gal)
+Tyre size  |  CRF250RWE  |  80/100-21 51M
+CRF250RX  |  110/100-18 64M
+Rear  |  CRF250R  |  100/90-19 57M NHS
+CRF250RWE  |  110/90-19 62M
+Tyre type  |  Bias-ply, tube
+CRF250RX  |  DUNLOP AT81F
+PIRELLI SCORPION
+Specifications  |  Front CRF250R
+MX32 MID SOFT
+Recommended  |  CRF250RWE  |  DUNLOP MX33F
+tyre  |  CRF250RX  |  DUNLOP AT81
+PIRELLI SCORPION
+Rear  |  CRF250R
+MX32 MID SOFT
+CRF250RWE  |  DUNLOP MX33
+Tyre pressure Front 100 kPa (1.0 kgf/cm 2 , 15 psi)
+(cold)  |  Rear  |  100 kPa (1.0 kgf/cm 2 , 15 psi)
+Unleaded petrol, research octane number of
+Fuel
+95 or higher
+Except Brazil
+Fuel containing alcohol
+ETHANOL up to 10 % by volume
+72
+Specifications
+■ Engine  |  ■ Cooling system
+Bore x stroke  |  79.000 x 50.887 mm (3.1102 x 2.0034 in)  |  Pro Honda HP Coolant
+Recommended
+Displacement  |  249.43 cm 3 (15.215 cu-in)  |  Philippines, Vietnam
+coolant
+Compression  |  HONDA PRE-MIX COOLANT
+13.9 : 1
+ratio  |  1.04 L (1.10 US qt, 0.92
+After draining
+0.10 ± 0.03 mm (0.004  |  Imp qt)
+Intake  |  Cooling capacity
+Valve clearance  |  ± 0.001 in)  |  After  |  1.15 L (1.22 US qt, 1.01
+(cold)  |  0.20 ± 0.03 mm (0.008  |  disassembly  |  Imp qt)
+Exhaust
+± 0.001 in)
+Honda 4-stroke motorcycle oil API Service  |  ■ Drive train
+Classification SJ or higher, excluding oils  |  Primary reduction  |  3.047
+Recommended
+marked as “Energy Conserving” or “Resource  |  1st  |  2.384  |  Specifications
+engine oil
+Conserving,” SAE 10W-30, JASO T 903  |  2nd  |  1.933
+standard MA
+Gear ratio  |  3rd  |  1.600
+1.05 L (1.11 US qt, 0.92
+After draining  |  4th  |  1.350
+Imp qt)
+5th  |  1.153
+After draining
+Engine oil  |  1.08 L (1.14 US qt, 0.95  |  Final reduction  |  3.846
+and oil filter
+capacity  |  Imp qt)  |  Left foot-operated return system
+change  |  Gear shift pattern
+1-N-2-3-4-5
+After  |  1.35 L (1.43 US qt, 1.19
+disassembly  |  Imp qt)
+Idle speed  |  2,000 ± 100 rpm
+73
+Specifications
+■ Electrical
+HJ12L lithium-ion (li-ion)
+Battery
+12 V-2.3 Ah (20 HR)
+Spark plug  |  NGK SILMAR9A9S
+Spark plug gap  |  0.8 - 0.9 mm (0.03 - 0.04 in)
+■ Fuses
+Main fuse  |  10 A
+■ Torque specifications
+Fork air pressure release screw 1.3 N·m (0.1 kgf·m, 1.0 lbf·ft)
+Specifications Battery terminal bolt  |  2.0 N·m (0.2 kgf·m, 1.5 lbf·ft)
+Battery lid bolt  |  5.2 N·m (0.5 kgf·m, 3.8 lbf·ft)
+Left side cover bolt  |  10 N·m (1.0 kgf·m, 7 lbf·ft)
+74
+Specifications
+Manufacturer, Authorised Representative and Importer
+Honda Motor Co., Ltd.
+Manufacturer  |  2-1-1 Minami-Aoyama, Minato-ku,
+Tokyo 107-8556, JAPAN
+Honda Motor Europe Ltd - Aalst Office
+Authorised representative and
+Wijngaardveld 1 (Noord V)
+importer for EU market
+9300 Aalst - Belgium
+Honda Motor Europe Ltd
+Authorised representative and
+Cain Road, Bracknell, Berkshire,  |  Specifications
+importer for UK market
+RG12 1HL, United Kingdom
+75
+Online Owner’s Manual
+https://www.hondamotopub.com/
+32K95830  |  XXX.XXXX.XX.S
+00X32-K95-8300  |  PRINTED IN XXXXX

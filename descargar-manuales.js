@@ -73,6 +73,39 @@ const MANUALES = [
   // No se encontraron URLs públicas directas equivalentes a ktmshop.se
   // Los manuales TE/FE ya indexados vienen de PDFs convertidos manualmente
 
+  // ── HONDA ─────────────────────────────────────────────────────────────────
+  // Fuente: hondamotopub.com (portal oficial global de Honda) — sin login,
+  // sin protección anti-bot. Región Europa (HMEE): el manual cubre R y RX en
+  // un mismo documento para cada cilindrada, de ahí el token compartido.
+  // API de búsqueda (JSON, sin necesidad de navegador):
+  //   GET /ajax/get_model_names/HMEE/{cc}          cc: "1-125"|"126-400"|"401-750"|"751-"
+  //   GET /ajax/get_model_years/HMEE/{model_name}
+  //   Página con el PDF real: /om/HMEE/{model_name}/{year}
+  // powersports.honda.com (EE.UU.) tiene URLs más recientes pero está detrás
+  // de Akamai Bot Manager — descartado (mismo motivo que KTM con Cloudflare).
+  // CRF125R: no existe manual publicado en ningún registro (US ni EU) — es un
+  // modelo de competición sin homologación, probablemente nunca se publicó.
+  // 2024 (CRF250R/450R): solo visor web (webom.hondamotopub.com), no PDF
+  // descargable — se dejó sin cubrir en vez de scrapear el visor.
+
+  { marca: 'honda', modelo: 'crf450r-450rx', año: 2019, url: 'https://2rom-prd-data.hondamotopub.com/om/HMEE/CRF450R/2019/CRF450R.RX_3RMKE621_0_Eng.pdf' },
+  { marca: 'honda', modelo: 'crf450r-450rx', año: 2020, url: 'https://2rom-prd-data.hondamotopub.com/om/HMEE/CRF450R/2020/CRF450R.RX_3RMKE630_0_Eng.pdf' },
+  { marca: 'honda', modelo: 'crf450r-450rx', año: 2021, url: 'https://2rom-prd-data.hondamotopub.com/om/HMEE/CRF450R/2021/42MKE602%20OM%20CRF450R-RX%2021_eng_WEB.pdf' },
+  { marca: 'honda', modelo: 'crf450r-450rx', año: 2022, url: 'https://2rom-prd-data.hondamotopub.com/om/HMEE/CRF450R/2022/42MKE6020_eng_BOOK.pdf' },
+  { marca: 'honda', modelo: 'crf450r-450rx', año: 2023, url: 'https://2rom-prd-data.hondamotopub.com/om/HMEE/CRF450R/2023/English%20file_42MKE6100_eng_BOOK.pdf' },
+  { marca: 'honda', modelo: 'crf450r-450rx', año: 2025, url: 'https://2rom-prd-data.hondamotopub.com/om/HMEE/CRF450R/2025/CRF450R_RX_RWE-S_42MKE630_eng_WEB.pdf' },
+  { marca: 'honda', modelo: 'crf450r-450rx', año: 2026, url: 'https://2rom-prd-data.hondamotopub.com/om/HMEE/CRF450R/2026/CRF450R_RX_RWE_32MKEB00_OM_eng_WEB.pdf' },
+
+  { marca: 'honda', modelo: 'crf250r-250rx', año: 2019, url: 'https://2rom-prd-data.hondamotopub.com/om/HMEE/CRF250R/2019/CRF250R.RX_3RK95610_0_Eng.pdf' },
+  { marca: 'honda', modelo: 'crf250r-250rx', año: 2020, url: 'https://2rom-prd-data.hondamotopub.com/om/HMEE/CRF250R/2020/CRF250R.RX_3RK95621_0_Eng.pdf' },
+  { marca: 'honda', modelo: 'crf250r-250rx', año: 2022, url: 'https://2rom-prd-data.hondamotopub.com/om/HMEE/CRF250R/2022/INDEX%E7%84%A1%E3%81%97_20210720082638_32K958110_eng_BOOK.pdf' },
+  { marca: 'honda', modelo: 'crf250r-250rx', año: 2025, url: 'https://2rom-prd-data.hondamotopub.com/om/HMEE/CRF250R/2025/CRF250R_RX_RWE%20OM%2032K95830_eng_WEB.pdf' },
+  { marca: 'honda', modelo: 'crf250r-250rx', año: 2026, url: 'https://2rom-prd-data.hondamotopub.com/om/HMEE/CRF250R/2026/CRF250R_RX_RWE_32K958400_OM_EN_web.pdf' },
+
+  // Un solo PDF cubre 2022-2025 (mismo manual, sin cambios) — se descarga una
+  // vez y se copia a los 4 años; por eso no aparece aquí como 4 URLs.
+  { marca: 'honda', modelo: 'crf150r', año: '2022-2023-2024-2025', url: 'https://2rom-prd-data.hondamotopub.com/om/HMEE/CRF150RB/2022-2023-2024-2025/INDEX%E7%84%A1%E3%81%97_20210720082851_32KSE8110_eng_BOOK.pdf' },
+
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────

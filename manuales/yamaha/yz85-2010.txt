@@ -1,0 +1,1545 @@
+Read this manual carefully before operating this vehicle.
+Il convient de lire attentivement ce manuel avant la pre-
+mière utilisation du véhicule.
+Bitte lesen Sie diese Bedienungsanleitung sorgfältig
+durch, bevor Sie das Fahrzeug in Betrieb nehmen.
+OWNER’S MANUAL
+MANUEL DU PROPRIÉTAIRE
+BEDIENUNGSANLEITUNG
+YZ85(Z)
+YZ85LW(Z)
+5PA-28199-88
+YAMAHA MOTOR CO., LTD.
+PRINTED ON RECYCLED PAPER  |  PRINTED IN JAPAN
+IMPRIMÉ SUR PAPIER RECYCLÉ  |  2009.06-0.3 × 1 CR
+AUF RECYCLINGPAPIER GEDRUCKT  |  (E,F,G)
+YZ85(Z)
+5PA-28199-88-E0
+YZ85LW(Z)
+OWNER’S MANUAL
+Read this manual carefully before operating this vehicle.
+EAU46090
+Read this manual carefully before operating this vehicle. This manual should stay with this vehicle if it is sold.
+EAU41544  |  EWA10031  |  EWA14351
+INTRODUCTION
+WARNING WARNING  |  Read this manual completely before operating your motorcycle. Make sure you understand all instructions. Pay close attention to the warning and notice labels on the motorcycle. Never operate a motorcycle without proper training or instruction.
+  
+Congratulations on your purchase of the Yamaha YZ85(Z)/YZ85LW(Z). This model is the result of Yamaha’s vast experience in the production of fine sporting, touring, and pacesetting racing machines. It represents the high degree of craftsmanship and reliability that have made Yamaha a leader in these fields. This manual will give you an understanding of the operation, inspection, and basic maintenance of this motorcycle. If you have any questions concerning the operation or maintenance of your motorcycle, please consult a Yamaha dealer. Yamaha continually seeks advancements in product design and quality. Therefore, while this manual contains the most cur- rent product information available at the time of printing, there may be minor discrepancies between your motorcycle and this manual. If there is any question concerning this manual, please consult a Yamaha dealer. Please read this manual carefully and completely before operating this motorcycle. This motorcycle is designed and manufactured for off-road use only. It is illegal to operate this motorcycle on any public street, road or highway. Such use is prohibited by law. This motorcycle complies with almost all state off- highway noise level and spark arrester laws and regulations. Please check your local riding laws and regulations before operating this motorcycle. AN IMPORTANT SAFETY MESSAGE:
+Obtain thorough instructions from a competent source on all aspects of motorcycle operation. Observe the warnings and maintenance requirements in this Owner’s Manual. Obtain qualified training in safe and proper riding techniques. Obtain professional technical service as indicated in this Owner’s Manual and/or when made necessary by mechanical conditions.
+   
+INTRODUCTION AN IMPORTANT NOTE TO PARENTS: This motorcycle is not a toy. Before you let your child ride this motorcycle, you should understand the instructions and warn- ings in this Owner’s Manual. Then be sure your child understands and will follow them. Children differ in skills, physical abil- ities, and judgment. Some children may not be able to operate a motorcycle safely. Parents should supervise their child’s use of the motorcycle at all times. Parents should permit continued use only if they determine that the child has the ability to operate the motorcycle safely. Motorcycles are single track vehicles. Their safe use and operation are dependent upon the use of proper riding techniques as well as the expertise of the operator. Every operator should know the following requirements before riding this motorcycle. He or she should:
+EAU10132
+IMPORTANT MANUAL INFORMATION
+This is the safety alert symbol. It is used to alert you to potential personal injury hazards. Obey all safety messages that follow this symbol to avoid possible injury or death. A WARNING indicates a hazardous situation which, if not avoided, could result in death or serious injury. A NOTICE indicates special precautions that must be taken to avoid damage to the vehicle or other property. A TIP provides key information to make procedures easier or clearer.
+WARNING
+NOTICE TIP
+Particularly important information is distinguished in this manual by the following notations:
+EAU10200
+Printed in Japan.
+YZ85(Z)/YZ85LW(Z) OWNER’S MANUAL All rights reserved.
+1st edition, May 2009
+Yamaha Motor Co., Ltd. is expressly prohibited.
+©2009 by Yamaha Motor Co., Ltd. without the written permission of
+Any reprinting or unauthorized use
+IMPORTANT MANUAL INFORMATION
+.......................................... 8-1
+pads .......................................... 7-19 chain ......................................... 7-22 the cables ................................. 7-23 the throttle grip and cable ......... 7-23 the brake and clutch levers ....... 7-23 the brake pedal ......................... 7-24
+Checking the shift pedal ............... 7-19 Checking the front and rear brake Checking the brake fluid level ...... 7-20 Changing the brake fluid .............. 7-21 Drive chain slack .......................... 7-21 Cleaning and lubricating the drive Checking and lubricating Checking and lubricating Checking and lubricating Checking and lubricating Lubricating the swingarm pivots ... 7-24 Lubricating the rear suspension ... 7-25 Checking the front fork ................. 7-25 Checking the steering .................. 7-26 Checking the wheel bearings ....... 7-26 Supporting the motorcycle ........... 7-26 Front wheel .................................. 7-27 Rear wheel ................................... 7-28 Troubleshooting ........................... 7-29 Troubleshooting charts ................. 7-31 Matte color caution ......................... 8-1 Care ............................................... 8-1
+TABLE OF CONTENTS  |  MOTORCYCLE CARE AND STORAGE
+............. 5-1
+................................ 6-1
+................................... 7-1
+engine ......................................... 6-1 lubrication chart .......................... 7-2 speed ........................................ 7-14 play ........................................... 7-14 play ........................................... 7-17 free play .................................... 7-18
+Starting and warming up a cold Starting a warm engine .................. 6-1 Shifting ........................................... 6-2 Engine break-in .............................. 6-3 Parking ........................................... 6-4 Periodic maintenance and Checking the spark plug ................ 7-8 Transmission oil ............................. 7-9 Coolant ........................................ 7-10 Cleaning the air filter element ...... 7-12 Adjusting the carburetor ............... 7-14 Adjusting the engine idling Adjusting the throttle cable free Tires ............................................. 7-15 Spoke wheels .............................. 7-17 Adjusting the clutch lever free Checking the front brake lever
+FOR YOUR SAFETY – PRE-OPERATION CHECKS OPERATION AND IMPORTANT RIDING POINTS  |  PERIODIC MAINTENANCE AND ADJUSTMENT
+..................2-1
+..................................3-1
+.......................................4-1
+............................................1-1
+assembly .....................................4-9
+Left view ..........................................3-1 Right view ........................................3-2 Controls and instruments ................3-3 Handlebar switch ............................4-1 Clutch lever ....................................4-1 Shift pedal ......................................4-1 Brake lever .....................................4-2 Brake pedal ....................................4-2 Fuel tank cap ..................................4-3 Fuel ................................................4-3 Fuel tank breather hose .................4-5 Fuel cock ........................................4-5 Starter (choke) knob .......................4-6 Kickstarter ......................................4-6 Seat ................................................4-7 Adjusting the front fork ...................4-7 Front fork bleeding .........................4-9 Adjusting the shock absorber Removable sidestand ...................4-12
+LOCATION OF IMPORTANT LABELS SAFETY INFORMATION DESCRIPTION INSTRUMENT AND CONTROL FUNCTIONS
+...........10-1
+.............................9-1
+Storage ...........................................8-3 Identification numbers ..................10-1
+TABLE OF CONTENTS SPECIFICATIONS CONSUMER INFORMATION
+1
+EAU48112
+6,7,8,9
+10
+11
+5
+LOCATION OF IMPORTANT LABELS  |  1-1
+12
+4
+1,2,3
+Read and understand all of the labels on your vehicle. They contain important information for safe and proper operation of your vehicle. Never remove any labels from your vehicle. If a label becomes difficult to read or comes off, a replacement label is available from your Yamaha dealer. For Canada
+3XJ-2151H-A1
+véhicule
+Equipment de
+3JK-82377-00
+Causing
+étincelle
+3XJ-2415E-B1
+par  |  WARNING
+Interference
+d’allumage  |  ride as a passenger.
+Canadian
+the système
+Riding as a passenger can cause the vehicle to go out of control. Loss of control can cause a collision or rollover, which can result in severe injury or death. NEVER
+Utiliser de préférence un mélange huile/super sans plomb. This spark ignition system meets all requirements of Regulations. Ce respecte toutes les exigences du Règlement sur le matériel brouilleur du Canada.
+2  |  4  |  6
+1-2
+4AA-22259-60
+4SR-2416E-00
+3XJ-2415E-A1
+Use premium unleaded gasoline / oil premix only.
+1  |  3  |  5
+LOCATION OF IMPORTANT LABELS For Canada
+1
+1
+3RV-21668-A0
+5PA-2118K-00
+2 }, 15psi 2 }, 15psi
+WARNING
+V A C •
+S  |  T
+TIRE INFORMATION N  |  R
+•
+: 100kPa, {1.00kgf/cm  |  O
+A
+D  |  P
+A  |  S
+N  |  506 N
+A
+C  |  A
+Cold tire normal pressure should be set as follows. FRONT : 100kPa, {1.00kgf/cm REAR  |  •  |  • R
+BEFORE YOU OPERATE THIS VEHICLE, READ THE OWNER’S MANUAL AND ALL LABELS. NEVER CARRY A PASSENGER. You increase your risk of losing control if you carry a passenger. NEVER OPERATE THIS VEHICLE ON PUBLIC ROADS. You can collide with another vehicle if you operate this vehicle on a public road. ALWAYS WEAR AN APPROVED MOTORCYCLE HELMET, eye protection, and protective clothing. EXPERIENCED RIDER ONLY.  |  S S V M C T
+8
+10  |  12
+LOCATION OF IMPORTANT LABELS  |  1-3
+3XJ-2151H-B1
+3RV-21668-B0
+5PA-2118K-10
+2 }, 15psi 2 }, 15psi
+AVERTISSEMENT
+passager permis. AVERTISSEMENT
+INFORMATION SUR LES PNEUS
+Un passager pourrait causer une perte de contrôle du véhicule. Une perte de contrôle peut provoquer une collision ou un renversement, résultant en des blessures sérieuses, voire mortelles. AUCUN  |  La pression des pneus à froid doit normalement être réglée comme suit. AVANT : 100kPa, {1.00kgf/cm ARRIERE : 100kPa, {1.00kgf/cm
+LIRE LE MANUEL DU PROPRIETAIRE AINSI QUE TOUTES LES ETIQUETTES AVANT D’UTILISER CE VEHICULE. NE JAMAIS TRANSPORTER DE PASSAGER. La conduite avec passager augmente les risques de perte de contrôle. NE JAMAIS ROULER SUR DES CHEMINS PUBLICS. Vous pourriez entrer en collision avec un autre véhicule. TOUJOURS PORTER UN CASQUE DE MOTOCYCLISTE APPROUVE, des lunettes et des vêtements de protection. EXCLUSIVEMENT POUR L’USAGE D’UN CONDUCTEUR EXPERIMENTE.
+7  |  9
+For Canada  |  11
+2
+1
+1-4
+3
+LOCATION OF IMPORTANT LABELS For Europe
+1
+1
+100 kPa 15 psi 5PG-2816R-00
+1.00 kgf/cm²
+100 kPa 15 psi
+1.00 kgf/cm²
+2
+LOCATION OF IMPORTANT LABELS  |  1-5
+4AA-22259-40
+4GB-2155A-00
+SHIZUOKA JAPAN
+YAMAHA MOTOR CO., LTD.
+YAMAHA
+1  |  3
+For Europe
+Use unleaded gasoline only. Measure tire pressure when tires are cold.  |  Adjust tire pressure. Improper tire pressure can cause loss of control. Loss of control can result in severe injury or death.
+**.* kPa *.** kgf/cm² *.* psi
+**.* kPa *.** kgf/cm² *.* psi
+1-6
+Read the Owner’s manual. This unit contains high-pressure nitrogen gas. Mishandling can cause explosion. Do not incinerate, puncture or open. Turn off the main switch after riding to avoid draining the battery.
+LOCATION OF IMPORTANT LABELS Familiarize yourself with the following pictograms and read the explanatory text.
+1
+1
+2
+3
+1
+LOCATION OF IMPORTANT LABELS  |  1-7
+For Oceania and South Africa
+5PA-21568-01
+Before you operate this vehicle, read the owner’s manual. Prima di usare il veicolo, leggete il manuale di istruzioni. Lire le manuel du propriétaire avant d’utiliser ce véhicule. Lesen Sie die Bedienungsanleitung bevor Sie dieses Fahrzeug fahren. Antes de conducir este vehículo, lea el Manual del Propietario.
+2
+1-8
+3RV-21668-A0
+2}, 15psi 2 }, 15psi
+INFORMATION
+4AA-22259-40
+TIRE
+: 100kPa, {1.00kgf/cm
+Cold tire normal pressure should be set as follows. FRONT : 100kPa, {1.00kgf/cm REAR
+1  |  3
+LOCATION OF IMPORTANT LABELS For Oceania and South Africa
+1
+2
+limits.
+passing
+and
+and
+skills
+your
+approaching through intersections, since in- tersections are the most likely places for motorcycle accidents to occur. see you. Avoid riding in another motorist’s blind spot. and that you only lend your mo- torcycle to other qualified opera- tors. Staying within your limits may help you to avoid an accident. tice riding your motorcycle until you have become thoroughly fa- miliar with the motorcycle and all of its controls.
+yourself conspicuous appears to be very effective in reducing the chance of this type of accident. Therefore: • Wear a brightly colored jacket. • Use extra caution when you are • Ride where other motorists can Many accidents involve inexperi- enced operators. • Make sure that you are qualified • Know • We recommend that you prac-
+
+SAFETY INFORMATION
+streets,
+accidents.
+public
+on
+it  |  2-1
+operate
+This motorcycle is designed for off- road use only, therefore, it is illegal to roads, or highways, even a dirt or gravel one. Off-road use on public lands may be illegal. Please check local regulations before riding. This motorcycle is designed to car- ry the operator only. No passen- gers. The failure of motorists to detect and recognize motorcycles in traf- fic is the predominating cause of automobile/motorcycle Many accidents have been caused by an automobile driver who did not see the motorcycle. Making
+  |    |  
+Safe Riding Perform the pre-operation checks each time you use the vehicle to make sure it is in safe operating condition. Failure to inspect or maintain the vehicle properly increases the possibility of an accident or equipment damage. See page 5-1 for a list of pre-operation checks.
+safe
+EAU41462
+should  |  in
+operator  |  training
+Every
+qualified
+operator. Obtain thorough instructions from a competent source on all aspects of motorcycle operation. Observe the warnings and mainte- nance requirements in this Own- er’s Manual. Obtain and proper riding techniques. Obtain professional technical ser- vice as indicated in this Owner’s Manual and/or when made neces- sary by mechanical conditions.
+  |    |    |  
+Be a Responsible Owner As the vehicle’s owner, you are respon- sible for the safe and proper operation of your motorcycle. Motorcycles are single-track vehicles. Their safe use and operation are de- pendent upon the use of proper riding techniques as well as the expertise of the know the following requirements before riding this motorcycle. He or she should:
+be
+carbon
+may
+contains  |  which
+gas
+exhaust
+tasteless
+engine  |  Do not run engine indoors. Even if you try to ventilate engine exhaust with fans or open windows and doors, carbon monoxide can rap- idly reach dangerous levels. Do not run engine in poorly venti- lated or partially enclosed areas such as barns, garages, or car- ports.
+  |  
+Avoid Carbon Monoxide Poisoning All monoxide, a deadly gas. Breathing car- bon monoxide can cause headaches, dizziness, drowsiness, nausea, confu- sion, and eventually death. Carbon Monoxide is a colorless, odor- less, present even if you do not see or smell any engine exhaust. Deadly levels of carbon monoxide can collect rapidly and you can quickly be overcome and unable to save yourself. Also, deadly levels of carbon monoxide can linger for hours or days in enclosed or poorly ventilated areas. If you experience any symptoms of carbon monoxide poison- ing, leave the area immediately, get fresh air, and SEEK MEDICAL TREAT- MENT.
+eyes
+clothing
+unprotected  |  protective
+2-2
+your
+wear
+in
+Always wear an approved helmet. Wear a face shield or goggles. Wind could contribute to an impairment of vision that could delay seeing a hazard. The use of a jacket, heavy boots, trousers, gloves, etc., is effective in preventing or reducing abrasions or lacerations. Never wear loose-fitting clothes, otherwise they could catch on the control levers, footrests, or wheels and cause injury or an accident. Always that covers your legs, ankles, and feet. The engine or exhaust sys- tem become very hot during or af- ter operation and can cause burns.
+   |    |    |  
+Protective apparel The majority of fatalities from motorcy- cle accidents are the result of head in- juries. The use of a safety helmet is the single most critical factor in the preven- tion or reduction of head injuries.
+SAFETY INFORMATION Many accidents have been caused by error of the motorcycle opera- tor. A typical error made by the op- erator is veering wide on a turn due to excessive speed or under- cornering (insufficient lean angle for the speed). Never travel faster than warranted by conditions. Ride cautiously in unfamiliar ar- eas. You may encounter hidden obstacles that could cause an ac- cident. The posture of the operator is im- portant for proper control. The op- erator should keep both hands on the handlebar and both feet on the operator footrests during operation to maintain control of the motorcy- cle. Never ride under the influence of alcohol or other drugs. Be sure the transmission is in neu- tral before starting the engine.
+  |    |    |    |  
+2
+2
+dis-
+can
+accessories
+bar or the front fork area can create instability due to improper weight distribution. If accesso- ries are added to the handlebar or front fork area, they must be as lightweight as possible and should be kept to a minimum. seriously affect the stability of the motorcycle. Wind may at- tempt to lift the motorcycle, or the motorcycle may become un- stable in cross winds. place the operator from his or her normal riding position. This improper position limits the free- dom of movement of the opera- tor and may limit control ability, therefore, such accessories are not recommended.
+cornering clearance, limit suspen- sion travel, steering travel or con- trol operation. • Accessories fitted to the handle- • Bulky or large accessories may • Certain  |  Use caution when adding electri- cal accessories. If electrical acces- sories exceed the capacity of the motorcycle’s electrical system, an
+
+SAFETY INFORMATION
+that
+operation
+or
+accessories
+design  |  2-3
+install
+vehicle’s
+Never would impair the performance of your motorcycle. Carefully inspect the accessory before using it to make sure that it does not in any way reduce ground clearance or
+the
+
+Aftermarket Parts, Accessories, and Modifications While you may find aftermarket prod- ucts similar in design and quality to genuine Yamaha accessories, recog- nize that some aftermarket accessories or modifications are not suitable be- cause of potential safety hazards to you or others. Installing aftermarket prod- ucts or having other modifications per- formed to your vehicle that change any of characteristics can put you and others at greater risk of serious injury or death. You are responsible for injuries related to changes in the vehicle. Keep the following guidelines in mind, as well as those provided under “Load- ing” when mounting accessories.
+or
+en-
+recom-
+Genuine  |  produce.
+neither Yamaha
+can by
+decision.  |  specifically
+sold
+companies not
+Yamaha not
+important
+Do not run engine outdoors where engine exhaust can be drawn into a building through openings such as windows and doors.
+an
+
+Genuine Yamaha Accessories Choosing accessories for your vehicle is Yamaha accessories, which are avail- able only from a Yamaha dealer, have been designed, tested, and approved by Yamaha for use on your vehicle. Many companies with no connection to Yamaha manufacture parts and acces- sories or offer other modifications for Yamaha vehicles. Yamaha is not in a position to test the products that these aftermarket Therefore, dorse nor recommend the use of ac- cessories modifications mended by Yamaha, even if sold and installed by a Yamaha dealer.
+2-4
+be
+not
+may
+combinations
+SAFETY INFORMATION electric failure could result, which could cause a dangerous loss of lights or engine power. and
+Aftermarket Tires and Rims The tires and rims that came with your motorcycle were designed to match the performance capabilities and to provide the best combination of handling, brak- ing, and comfort. Other tires, rims, siz- es, appropriate. Refer to page 7-15 for tire specifications and more information on replacing your tires.
+2
+3
+EAU10410
+DESCRIPTION
+3-1
+Left view  |  1. Radiator cap (page 7-10) 2. Fuel cock (page 4-5) 3. Shock absorber assembly spring preload adjusting nut (page 4-9) 4. Air filter element (page 7-12) 5. Seat (page 4-7) 6. Shift pedal (page 4-1) 7. Throttle stop screw (page 7-14) 8. Starter (choke) knob (page 4-6)
+EAU10420
+(page 4-9)
+9. Brake pedal (page 4-2) 10.Transmission oil drain bolt (page 7-9) 11.Shock absorber assembly rebound damping force adjusting screw
+3-2
+(page 4-9)
+DESCRIPTION Right view  |  1. Shock absorber assembly compression damping force adjusting screw 2. Kickstarter (page 4-6) 3. Front fork rebound damping force adjusting screw (page 4-7) 4. Bleed screw (page 4-9) 5. Front fork compression damping force adjusting screw (page 4-7) 6. Spark plug cap (page 7-8) 7. Transmission oil filler cap (page 7-9) 8. Coolant drain bolt (page 7-11)
+3
+3
+EAU10430
+DESCRIPTION
+3-3
+Controls and instruments  |  1. Clutch lever (page 4-1) 2. Engine stop button (page 4-1) 3. Brake lever (page 4-2) 4. Throttle grip (page 7-14) 5. Fuel tank cap (page 4-3)
+EAU12870  |  when
+lever
+clutch
+the
+with
+Shift pedal  |  1. Shift pedal The shift pedal is located on the left side of the engine and is used in com- bination shifting the gears of the 6-speed con- stant-mesh transmission equipped on this motorcycle.
+the
+EAU12850
+disengage
+To  |  4-1
+grip.
+Clutch lever  |  1. Clutch lever The clutch lever is located at the left handlebar clutch, pull the lever toward the handle- bar grip. To engage the clutch, release the lever. The lever should be pulled rapidly and released slowly for smooth clutch operation.
+EAU40660  |  EAU12670
+INSTRUMENT AND CONTROL FUNCTIONS Handlebar switch  |  1. Engine stop button “ENGINE STOP” “ENGINE STOP” button Hold this button pushed until the engine stops in case of an emergency, such as when the vehicle overturns or when the throttle cable is stuck.
+4
+4
+rear
+EAU12941
+the
+apply
+To
+motorcycle.
+Brake pedal  |  1. Brake pedal The brake pedal is on the right side of the brake, press down on the brake pedal.
+pushed
+lever
+the
+4-2
+holding
+INSTRUMENT AND CONTROL FUNCTIONS 76 mm (2.99 in) 95 mm (3.74 in) 97 mm (3.82 in)
+away from the handlebar grip, turn the adjusting bolt in direction (a) to increase the distance, and in direc- tion (b) to decrease it. Minimum (shortest): Standard: Maximum (longest):
+2. While  |  Distance between the brake lever and the handlebar grip: 3. Tighten the locknut.
+front
+EAU41261
+the
+apply
+To
+grip.
+grip  |  1. Loosen the locknut.
+Brake lever The brake lever is located at the right handlebar brake, pull the lever toward the handle- bar grip.  |  1. Brake lever 2. Locknut 3. Adjusting bolt 4. Distance between brake lever and handlebar The brake lever is equipped with a po- sition adjusting bolt. Adjust the distance between the brake lever and the han- dlebar grip as follows.
+ECA15590  |  parts,
+engine
+internal
+to
+Premium unleaded gasoline only See page 9-1. 5.0 L (1.32 US gal, 1.10 Imp.gal) Break-in period: 15:1 After break-in: 30:1
+Recommended fuel: Recommended 2-stroke engine oil: Fuel tank capacity: Mixing ratios (gasoline to oil):
+1. 2-stroke engine oil 2. Gasoline 3. Container  |  NOTICE Use only unleaded gasoline. The use of leaded gasoline will cause severe damage such as the piston rings as well as to the exhaust system.
+EAU41833  |  ECA15601
+4-3
+Fuel This motorcycle has been designed to use a premixed fuel of gasoline and 2- stroke engine oil. Always mix the gaso- line and oil in a clean container before filling the fuel tank. NOTICE Always use fresh gasoline, and fill the fuel tank with a fresh mix just be- fore riding. Do not use premixed fuel that is more than a few hours old. Mixing gasoline and 2-stroke engine oil Pour 2-stroke engine oil into a clean container, and then add gasoline. To mix the fuel thoroughly, shake the con- tainer from side to side.
+EAU13182  |  fuel.
+EWA11091
+filling
+after
+closed
+WARNING
+INSTRUMENT AND CONTROL FUNCTIONS Fuel tank cap  |  1. Fuel tank cap To remove the fuel tank cap, turn it counterclockwise, and then pull it off. To install the fuel tank cap, insert it into the tank opening, and then turn it clock- wise.  |  Make sure that the fuel tank cap is properly Leaking fuel is a fire hazard.
+4
+4
+can
+EWA15151
+and
+Immediately wipe
+poisonous
+[ECA10071]  |  is
+NOTICE:
+other sources of ignition such as the pilot lights of water heaters and clothes dryers. filling when the fuel reaches the bottom of the filler tube. Because fuel expands when it heats up, heat from the engine or the sun can cause fuel to spill out of the fuel tank. ately. off spilled fuel with a clean, dry, soft cloth, since fuel may deteri- orate painted surfaces or plastic parts. tank cap. WARNING
+2. Do not overfill the fuel tank. Stop 3. Wipe up any spilled fuel immedi- 4. Be sure to securely close the fuel
+Gasoline cause injury or death. Handle gaso- line with care. Never siphon gaso- line by mouth. If you should swallow some gasoline or inhale a lot of gas- oline vapor, or get some gasoline in your eyes, see your doctor immedi- ately. If gasoline spills on your skin,
+EWA10881
+4-4
+INSTRUMENT AND CONTROL FUNCTIONS
+WARNING  |  gine and be sure that no one is sit- ting on the vehicle. Never refuel while smoking, or while in the vi- cinity of sparks, open flames, or
+1. Before refueling, turn off the en-
+Filling the fuel tank  |  1. Maximum fuel level 2. Fuel tank filler tube Make sure there is sufficient gasoline in the tank. Gasoline and gasoline vapors are extremely flammable. To avoid fires and explosions and to reduce the risk of injury when refueling, follow these instructions.
+If
+ECA15551
+number
+higher.
+or
+octane
+95
+of
+pump
+a
+number
+with
+Your Yamaha engine has been de- signed to use premium unleaded gaso- line [(R+M)/2] of 91 or higher, or a research octane knocking (or pinging) occurs, use a gasoline of a different brand. If the recommended 2-stroke engine oil is not available, use an equivalent oil. NOTICE Never mix two brands of 2-stroke en- gine oil in the same batch. Always use the same type of oil to ensure maximum engine performance. Should it be necessary to use a dif- ferent oil brand, be sure to drain the fuel tank and the carburetor float chamber of the old premixed fuel prior to filling with the new type.
+EAU41280
+Fuel cock The fuel cock supplies fuel from the tank to the carburetor while filtering it al- so. The fuel cock has two positions: OFF  |  1. Arrow mark positioned over “OFF” With the lever in this position, fuel will not flow. Always return the lever to this position when the engine is not running.
+EAU41360
+4-5
+Check the fuel tank breather hose connection. Check the fuel tank breather hose for cracks or damage, and replace it if damaged. Make sure that the end of the fuel tank breather hose is not blocked, and clean it if necessary.
+  |    |  
+Fuel tank breather hose 1. Fuel tank breather hose 2. One-way valve Before operating the motorcycle: TIP If the fuel tank breather hose falls out, reinstall it on the fuel tank cap with the arrow mark on the one-way valve point- ed downward as shown.
+INSTRUMENT AND CONTROL FUNCTIONS wash with soap and water. If gaso- line spills on your clothing, change your clothes.
+4
+4
+the
+EAU13650
+shifting
+However,
+Kickstarter  |  1. Kickstarter lever To start the engine, fold out the kick- starter lever, move it down lightly with your foot until the gears engage, and then push it down smoothly but force- fully. This model is equipped with a pri- mary kickstarter, allowing the engine to be started in any gear if the clutch is disengaged. transmission into the neutral position before starting is recommended.
+EAU13640
+4-6
+INSTRUMENT AND CONTROL FUNCTIONS
+Starter (choke) knob 1. Starter (choke) knob Starting a cold engine requires a richer air-fuel mixture, which is supplied by the starter (choke). Move the knob in direction (a) to turn on the starter (choke). Move the knob in direction (b) to turn off the starter (choke).
+ON  |  1. Arrow mark positioned over “ON” With the lever in this position, fuel flows to the carburetor. Normal riding is done with the lever in this position.
+EAU41471 EWA10180  |  ECA10101
+WARNING
+Adjusting the front fork Always adjust both fork legs equal- ly, otherwise poor handling and loss of stability may result. This front fork is equipped with rebound damping force adjusting screws and compression damping force adjusting screws. NOTICE To avoid damaging the mechanism, do not attempt to turn beyond the maximum or minimum settings. Rebound damping force 1. Rebound damping force adjusting screw
+2
+4-7
+1
+tion, and then tighten the bolts.
+2 3  |  2. Place the seat in the original posi-
+1. Slot 2. Projection 3. Seat holder TIP Make sure that the seat is properly se- cured before riding.
+EAU46280
+jection on the fuel tank, and insert the projection on the seat into the seat holder as shown.
+1. Fit the slot in the seat onto the pro-
+INSTRUMENT AND CONTROL FUNCTIONS Seat To remove the seat Remove the bolts, and then pull the seat off.  |  1. Bolt To install the seat
+4
+4
+mechanism
+adjusting
+force
+20 click(s) in direction (b)* YZ85(Z): 10 click(s) in direction (b)* YZ85LW(Z): 9 click(s) in direction (b)* 1 click(s) in direction (b)*
+Minimum (soft): Standard: Maximum (hard): in direction (a)
+Compression damping setting: * With the adjusting screw fully turned
+3. Install the rubber cap.
+TIP Although the total number of clicks of a damping may not exactly match the above spec- ifications due to small differences in production, the actual number of clicks always represents the entire adjusting range. To obtain a precise adjustment, it would be advisable to check the num- ber of clicks of each damping force ad- justing mechanism and to modify the specifications as necessary.
+the
+compression  |  compression
+decrease
+the  |  the
+To
+4-8
+(a).
+soften
+increase
+INSTRUMENT AND CONTROL FUNCTIONS
+it out of the front fork leg. damping force and thereby harden the compression damping, turn the adjusting screw on each fork leg in direction compression damping force and thereby damping, turn the adjusting screw on each fork leg in direction (b).
+1. Remove the rubber cap by pulling 2. To
+Compression damping force 1. Rubber cap 2. Compression damping force adjusting screw
+20 click(s) in direction (b)* 7 click(s) in direction (b)* 1 click(s) in direction (b)*
+Minimum (soft): Standard: Maximum (hard): in direction (a)
+Rebound damping setting: * With the adjusting screw fully turned
+To increase the rebound damping force and thereby harden the rebound damp- ing, turn the adjusting screw on each fork leg in direction (a). To decrease the rebound damping force and thereby soften the rebound damping, turn the adjusting screw on each fork leg in di- rection (b).
+is
+EAU41332  |  ECA10101
+assembly compression
+a
+and
+absorber
+screw
+shock
+NOTICE  |  1. Loosen the locknut.
+Adjusting the shock absorber assembly This equipped with a spring preload adjust- ing nut, a rebound damping force ad- justing damping force adjusting screw. To avoid damaging the mechanism, do not attempt to turn beyond the maximum or minimum settings. Spring preload Adjust the spring preload as follows. 1. Locknut 2. Spring preload adjusting nut
+there
+fork,
+front
+the  |  4-9
+bleeding
+low all of the air to escape from each fork leg.
+2. Remove the bleed screws and al- 3. Install the bleed screws.
+TIP When should be no weight on the front end of the vehicle.
+EAU14791  |  EWA10200
+occurs,
+this
+If
+suspension.
+WARNING  |  front  |  a suitable stand under the engine.
+1. Elevate the front wheel by placing
+INSTRUMENT AND CONTROL FUNCTIONS Front fork bleeding  |  1. Bleed screw Always bleed both fork legs, other- wise poor handling and loss of sta- bility may result. When riding in extremely rough condi- tions, the air temperature and pressure in the front fork will rise. This will in- crease the spring preload and harden the bleed the front fork as follows.
+4
+4
+35 Nm (3.5 m·kgf, 25 ft·lbf)
+Locknut:
+Tightening torque:
+Rebound damping force To increase the rebound damping force and thereby harden the rebound damp- ing, turn the adjusting screw in direction (a). To decrease the rebound damping force and thereby soften the rebound damping, turn the adjusting screw in di- rection (b).  |  1. Rebound damping force adjusting screw
+Always tighten
+4-10
+and then tighten the
+NOTICE:
+INSTRUMENT AND CONTROL FUNCTIONS Distance A = 218.5 mm (8.60 in) Distance A = 215.0 mm (8.46 in) For Europe only: Distance A = 212.0 mm (8.35 in) Distance A = 207.0 mm (8.15 in) For Europe only: Distance A = 212.0 mm (8.35 in) Distance A = 202.5 mm (7.97 in)
+Minimum (soft): Standard:YZ85(Z) Standard:YZ85LW(Z) Maximum (hard): torque. the locknut against the adjust- ing nut, locknut to the specified torque. [ECA10121]
+Spring preload:  |  3. Tighten the locknut to the specified
+1. Distance A
+preload.
+suspension,
+the  |  spring
+the
+harden
+A special wrench can be ob- tained at a Yamaha dealer to make this adjustment. The spring preload setting is determined by measuring dis- tance A, shown in the illustra- tion. The longer distance A is, the lower the spring preload; the shorter distance A is, the higher With each complete turn of the adjusting nut, distance A is changed by 1.5 mm (0.06 in).
+  |  
+thereby turn the adjusting nut in direction (a). To decrease the spring pre- load and thereby soften the sus- pension, turn the adjusting nut in direction (b).
+2. To increase the spring preload and
+gas  |  as-
+EWA10221  |  open  |  poor
+nitrogen  |  an  |  Cylinder in
+to
+way.  |  absorber
+excessive
+result
+to  |  any
+pressurized  |  will  |  shock
+in
+assembly due
+highly
+WARNING  |  Do not tamper with or attempt to open the cylinder assembly. Do not subject the shock ab- sorber flame or other high heat source. This may cause the unit to ex- plode pressure. Do not deform or damage the cylinder damage damping performance. Do not dispose of a damaged or worn-out sembly yourself. Take the shock absorber assembly to a Yamaha dealer for any service.
+  |    |    |  
+adjusting mechanism. This adjustment range may not exactly match the spec- ifications listed due to small differences in production. This shock absorber assembly con- tains gas. Read and understand the fol- lowing information before handling the shock absorber assembly.
+4-11
+20 click(s) in direction (b)* 9 click(s) in direction (b)* For Europe only: 12 click(s) in di- rection (b)* 7 click(s) in direction (b)* For Europe only: 12 click(s) in di- rection (b)* 1 click(s) in direction (b)*
+Minimum (soft): Standard:YZ85(Z) Standard:YZ85LW(Z) Maximum (hard): in direction (a)
+Compression damping setting: * With the adjusting screw fully turned
+1. Compression damping force adjusting screw  |  TIP To obtain a precise adjustment, it is ad- visable to check the actual total number of clicks or turns of each damping force
+20 click(s) in direction (b)* 6 click(s) in direction (b)* For Europe only: 12 click(s) in di- rection (b)* 7 click(s) in direction (b)* For Europe only: 12 click(s) in di- rection (b)* 1 click(s) in direction (b)*
+Minimum (soft): Standard:YZ85(Z) Standard:YZ85LW(Z) Maximum (hard): in direction (a)
+Rebound damping setting:  |  * With the adjusting screw fully turned
+INSTRUMENT AND CONTROL FUNCTIONS Compression damping force To increase the compression damping force and thereby harden the compres- sion damping, turn the adjusting screw in direction (a). To decrease the com- pression damping force and thereby soften the compression damping, turn the adjusting screw in direction (b).
+4
+4
+4-12
+INSTRUMENT AND CONTROL FUNCTIONS
+EAU41381  |  EWA14601  |  side-
+sidestand
+the
+remove
+WARNING Never apply force on the motor- cycle while it is on the stand. Always before starting out.
+  |  
+Removable sidestand 1. Sidestand This motorcycle is equipped with a re- movable sidestand. TIP Make sure that the sidestand is proper- ly secured when the motorcycle is be- ing supported or is being transported.
+EAU15596  |  EWA11151
+4-3  |  7-9  |  7-10
+PAGE
+7-19, 7-20
+5-1
+CHECKS
+• Check fuel level in fuel tank. • Always use a fresh mixture of gasoline and oil. • Check fuel line for leakage. • Check oil level in transmission case. • If necessary, add recommended oil to specified level. • Check coolant level. • If necessary, add recommended coolant to specified level. • Check cooling system for leakage. • Check operation. • If soft or spongy, have Yamaha dealer bleed hydraulic system. • Check brake pads for wear. • Replace if necessary. • Check fluid level in reservoir. • If necessary, add recommended brake fluid to specified level. • Check hydraulic system for leakage.
+ITEM
+WARNING
+Fuel Transmission oil Coolant  |  Front brake
+FOR YOUR SAFETY – PRE-OPERATION CHECKS Inspect your vehicle each time you use it to make sure the vehicle is in safe operating condition. Always follow the inspection and maintenance procedures and schedules described in the Owner’s Manual. Failure to inspect or maintain the vehicle properly increases the possibility of an accident or equipment damage. Do not operate the vehicle if you find any problem. If a problem cannot be corrected by the procedures provided in this manual, have the vehicle inspected by a Yamaha dealer. Before using this vehicle, check the following points:
+5
+5
+PAGE  |  7-17  |  7-19 7-24 7-23 7-26
+7-19, 7-20  |  7-14, 7-23 7-21, 7-22 7-15, 7-17
+5-2
+CHECKS
+FOR YOUR SAFETY – PRE-OPERATION CHECKS
+grip housing.
+• Check operation. • If soft or spongy, have Yamaha dealer bleed hydraulic system. • Check brake pads for wear. • Replace if necessary. • Check fluid level in reservoir. • If necessary, add recommended brake fluid to specified level. • Check hydraulic system for leakage. • Check operation. • Lubricate cable if necessary. • Check lever free play. • Adjust if necessary. • Make sure that operation is smooth. • Check cable free play. • If necessary, have Yamaha dealer adjust cable free play and lubricate cable and • Check chain slack. • Adjust if necessary. • Check chain condition. • Lubricate if necessary. • Check for damage. • Check tire condition and tread depth. • Check air pressure. • Correct if necessary. • Check for loose spokes and tighten if necessary. • Make sure that operation is smooth. • Correct if necessary. • Make sure that operation is smooth. • Lubricate pedal pivoting point if necessary. • Make sure that operation is smooth. • Lubricate lever pivoting points if necessary. • Check that the handlebar can be turned smoothly and has no excessive play.
+ITEM
+Rear brake  |  Clutch  |  Throttle grip Drive chain Wheels and tires Shift pedal Brake pedal Brake and clutch levers Steering
+—  |  — 7-8
+PAGE
+4-7, 4-9, 4-9, 7-25
+7-23, 7-23, 7-24, 7-25
+5-3
+CHECKS
+when the front forks travel up and down.
+• Check that they operate smoothly and there is no oil leakage. • Make sure that all nuts, bolts and screws are properly tightened. • Tighten if necessary. • Check that the control cables move smoothly. • Check that the control cables are not caught when the handlebars are turned or • Lubricate moving parts and cables if necessary. • Check that the exhaust pipe is tightly mounted and has no cracks. • Check for leakage. • Check that all leads and cables are properly connected.
+ITEM
+Front fork and rear shock ab- sorber assembly Chassis fasteners Moving parts and cables Exhaust system Ignition system
+FOR YOUR SAFETY – PRE-OPERATION CHECKS
+5
+6
+EAU16660
+slightly
+throttle
+the
+with
+engine
+Starting a warm engine Follow the same procedure as for start- ing a cold engine with the exception that the starter (choke) is not required when the engine is warm. Instead, start the open. TIP If the engine does not start after several kicks, try again with the throttle 1/4 to 1/2 open.
+en-
+EAU41305
+the
+NOTICE:
+when
+[ECA11041]  |  6-1
+hard
+tral position. completely close the throttle. (See page 4-6.) kickstarter lever down. For maximum engine life, never accelerate gine is cold! starter (choke) off.
+1. Turn the fuel cock lever to “ON”. 2. Shift the transmission into the neu- 3. Turn the starter (choke) on and 4. Start the engine by pushing the 5. When the engine is warm, turn the
+OPERATION AND IMPORTANT RIDING POINTS Starting and warming up a cold engine  |  TIP The engine is warm when it responds normally to the throttle with the starter (choke) turned off.
+If
+EAU15951  |  EWA10271
+controls.
+all
+with
+familiar
+WARNING
+Read the Owner’s Manual carefully to become there is a control or function you do not understand, ask your Yamaha dealer. Failure to familiarize yourself with the controls can lead to loss of con- trol, which could cause an accident or injury.
+and
+EAU16710
+halfway
+throttle
+the
+a speed high enough to change gears, close the throttle, and at the same time, quickly pull the clutch lever in. gear. (Make sure not to shift the transmission into the neutral posi- tion.) gradually release the clutch lever. shifting to the next gear. the front and the rear brakes to slow the motorcycle. shift the transmission into the neu- tral position when the motorcycle is almost completely stopped.
+4. Once the motorcycle has reached 5. Shift the transmission into second 6. Open 7. Follow the same procedure when 1. Close the throttle and apply both 2. Downshift through the gears and
+To decelerate
+is
+not  |  the  |  first
+ECA10260  |  while  |  EAU16690
+Inade-
+do  |  into
+clutch transmission,
+running.  |  withstand
+transmission
+position,  |  the
+is  |  6-2
+to
+transmission
+The  |  use engine,
+neutral  |  the
+engine  |  the
+Even with the transmission in the coast for long periods of time with the engine off, and do not tow the motorcycle for long dis- tances. properly lubricated only when the quate lubrication may damage the transmission. Always changing gears to avoid damag- ing and drive train, which are not designed shock of forced shifting. the clutch. gear. multaneously release the clutch le- ver slowly.
+  |    |  1. Pull the clutch lever to disengage 2. Shift 3. Open the throttle gradually and si-
+NOTICE  |  To start out and accelerate
+the
+EAU16671
+control
+you
+lets
+gears
+OPERATION AND IMPORTANT RIDING POINTS Shifting  |  1. Shift pedal 2. Neutral position Shifting amount of engine power available for starting off, accelerating, climbing hills, etc. The gear positions are shown in the il- lustration. TIP To shift the transmission into the neu- tral position, press the shift pedal down repeatedly until it reaches the end of its travel, and then slightly raise it.
+6
+6
+loose  |  ECA15560
+and
+transmission
+slack  |  or
+chain  |  rings
+drive
+eration of the motorcycle through- out its entire operating range. Stop the engine and check the spark plug condition. Restart the motor- cycle and ride it for about 10 to 15 more minutes. The motorcycle will now be ready to ride normally.  |  When any of the following parts have been replaced, they must be broken in. Cylinder or crankshaft: About one hour of break-in op- eration is necessary. Piston, gears:
+8. Start the engine and check the op-  |  
+After the engine break-in period, thor- oughly check the motorcycle for loose parts, oil leakage and any other prob- lems. Be sure to inspect and make ad- justments thoroughly, especially cable and spokes. In addition, check all fittings and fasteners for looseness, and tight- en if necessary. NOTICE
+Full
+cylinder.
+minutes.  |  and
+more  |  piston  |  6-3
+five  |  the
+for
+plug condition (see page 7-8); it will show a rich condition during break-in. the engine and operate the motor- cycle as in the step above for five minutes. Then, very briefly shift to the higher gears and check the full-throttle response. Stop the en- gine and check the spark plug. cool, restart and run the motorcy- cle throttle and the higher gears may be used, but sustained full-throttle operation should be avoided. Stop the engine and check the spark plug again. the cylinder head and cylinder, and inspect Remove any high spots on the pis- ton with #600-grit wet sandpaper. Clean all components and careful- ly reassemble the cylinder head and cylinder. from the fuel tank and refill with the specified mix. (See page 4-3.)
+4. Allow the engine to cool. Restart 5. After again allowing the engine to 6. Allow the engine to cool, remove 7. Drain the break-in oil-fuel mixture
+OPERATION AND IMPORTANT RIDING POINTS
+EAU41503 EWA10321
+engine.
+increase
+the
+may  |  up
+warm
+and
+incorrectly
+WARNING  |  fuel tank with a break-in oil-fuel mixture as follows. See page 9-1. 15:1  |  Check the operation of the controls and the engine stop button. (See page 4-1.) er gears at moderate throttle open- ings for five to eight minutes. Stop the engine and check the spark
+1. Before starting the engine, fill the Recommended 2-stroke engine oil: Mixing ratio (gasoline to oil): 2. Start  |  3. Operate the motorcycle in the low-
+Engine break-in Failure to properly maintain the ve- hicle or performing maintenance ac- tivities your risk of injury or death during service or while using the vehicle. If you are not familiar with vehicle ser- vice, have a Yamaha dealer perform service.
+the
+EAU17191  |  EWA10311
+which
+vehicle
+the
+increasing
+materials
+6-4
+otherwise
+overturn,
+WARNING Since the engine and exhaust system can become very hot, park in a place where pedestri- ans or children are not likely to touch them and be burned. Do not park on a slope or on soft ground, may risk of a fuel leak and fire. Do not park near grass or other flammable might catch fire.
+  |    |  
+Parking When parking, stop the engine, and then turn the fuel cock lever to “OFF”.
+a
+30
+have
+about
+require
+immediately
+parts
+These minutes of break-in operation at half-throttle or less. Observe the condition of the engine carefully during operation. If any engine trouble should oc- cur during the engine break-in period, Yamaha dealer check the vehi- cle.
+
+OPERATION AND IMPORTANT RIDING POINTS
+6
+7
+EWA15121
+otherwise
+unless  |  7-1
+WARNING A running engine has moving parts that can catch on body parts or clothing and electrical parts that can cause shocks or fires. Running the engine while ser- vicing can lead to eye injury, burns, fire, or carbon monoxide poisoning – possibly leading to death. See page 2-1 for more in- formation about carbon monox- ide.
+  |  
+PERIODIC MAINTENANCE AND ADJUSTMENT Turn off the engine when performing maintenance specified.
+the
+EAU17241  |  chart  |  EWA10321
+adjust-  |  on
+periodic
+increase
+the
+in  |  may
+lubrication
+inspection,  |  depending
+given and
+vehicle
+incorrectly
+of  |  However,
+intervals  |  WARNING
+Periodic inspection, adjustment, and lu- brication will keep your vehicle in the safest and most efficient condition pos- sible. Safety is an obligation of the vehi- cle owner/operator. The most important points ment, and lubrication are explained on the following pages. The maintenance should be simply considered as a gen- eral guide under normal riding condi- tions. weather, terrain, geographical location, and individual use, the maintenance in- tervals may need to be shortened. Failure to properly maintain the ve- hicle or performing maintenance ac- tivities your risk of injury or death during service or while using the vehicle. If you are not familiar with vehicle ser- vice, have a Yamaha dealer perform service.
+EAU41796  |  As  |  √  |  √  |  √  |  √
+required
+√
+Every
+fifth race
+√
+Every
+third race
+√  |  √  |  √  |  √  |  √
+Every race
+√  |  √  |  √  |  √
+After
+break-in
+7-2
+ROUTINE
+age.
+• Check piston for carbon deposits and cracks or dam- • Clean. • Replace. • Check piston ring end gap and rings for damage. • Replace. • Check piston pin and small end bearing for damage. • Replace. • Check cylinder head for carbon deposits. • Clean. • Check cylinder head gasket for damage. • Tighten cylinder head nuts if necessary. • Replace cylinder head gasket.
+ITEM
+Piston Piston rings Piston pin and small end bearing Cylinder head
+From the seventh race, repeat the maintenance intervals starting from “Every race”. Items marked with an asterisk should be performed by a Yamaha dealer as they require special tools, data and technical skills.  |  *  |  *  |  *  |  *
+   |  NO.  |  1  |  2  |  3  |  4
+PERIODIC MAINTENANCE AND ADJUSTMENT Periodic maintenance and lubrication chart The following chart is intended as a general guide to maintenance and lubrication. Bear in mind that such factors as weather, terrain, geographical location, and individual usage will alter the required maintenance and lubrication intervals. If you are in doubt as to what intervals to follow in maintaining and lubricating your motorcycle, consult your Yamaha dealer. TIP
+7
+7
+√  |  √  |  √ √  |  √  |  √  |  √ √
+As
+required
+√  |  √  |  √ √ √
+Every
+fifth race
+Every
+third race
+√  |  √  |  √
+Every race
+√  |  √  |  √  |  √  |  √
+After
+break-in
+7-3
+ROUTINE
+PERIODIC MAINTENANCE AND ADJUSTMENT
+and clutch springs for wear or damage.
+• Check cylinder for score marks or wear. • Clean. • Replace. • Check clutch housing, friction plates, clutch plates • Adjust. • Replace. • Change the transmission oil. • Check transmission for damage. • Replace bearings. • Check all parts for wear and damage. • Replace if necessary. • Tighten. • Check idle gear for damage. • Replace if necessary. • Check exhaust pipe and muffler for carbon deposits. • Clean. • Check crankshaft for carbon deposits and damage. • Clean.
+ITEM
+Cylinder Clutch  |  Transmission Shift forks, guide bars, shift cam Rotor nut (flywheel magneto) Kickstarter system Exhaust system Crankshaft
+*  |  *  |  *  |  *  |  *  |  *  |  *  |  *
+NO.  |  5  |  6  |  7  |  8  |  9  |  10  |  11  |  12
+As  |  √  |  √  |  √ √  |  √
+required
+Every
+fifth race
+√
+Every
+third race
+√ √  |  √  |  √  |  √ √  |  Every 2 years √  |  √  |  √
+Every race
+√ √  |  √  |  √  |  √  |  √  |  √  |  √ √
+After
+break-in
+7-4
+ROUTINE
+• Check carburetor settings and for obstructions. • Adjust and clean. • Check condition. • Clean and regap. • Replace. chain and cable lube or equivalent.
+• Check chain slack, alignment and condition. • Adjust and thoroughly lubricate chain with Yamaha • Replace. • Check coolant level and for leakage. • Check hoses for cracks or damage. • Check radiator cap spring operation. • Change coolant. • Check all chassis fitting and fasteners. • Correct or tighten if necessary. • Clean. • Replace. • Clean and check for damage. • Clean and check for leakage.
+ITEM
+Carburetor Spark plug Drive chain Cooling system Chassis fasteners Air filter element Frame Fuel line
+*  |  *  |  *  |  *  |  *  |  * *
+NO.  |  13  |  14  |  15  |  16  |  17  |  18  |  19 20
+PERIODIC MAINTENANCE AND ADJUSTMENT
+7
+7
+As  |  √ √  |  √  |  √  |  the
+(After
+required  |  washing the rain)
+motorcycle or riding in
+√
+Every
+fifth race
+√
+Every
+third race
+√  |  Every year √  |  √
+Every race
+√  |  √  |  √  |  √
+After
+break-in
+7-5
+ROUTINE
+PERIODIC MAINTENANCE AND ADJUSTMENT
+bolts and union bolts. grease.
+• Adjust lever position and pedal height. • Lubricate pivot points. • Check brake disk surface. • Check fluid level and for leakage. • Tighten brake disk bolts, caliper bolts, master cylinder • Replace brake pads. • Replace brake fluid. • Check operation and for oil leakage. • Adjust if necessary. • Clean dust seal and lubricate with lithium-soap-based • Replace fork oil. • Replace oil seals. • Check operation and adjust. • Tighten if necessary. • Lubricate with lithium-soap-based grease.
+ITEM
+Brakes  |  Front fork  |  Shock absorber assem- bly
+*  |  *  |  *
+NO.  |  21  |  22  |  23
+As  |  √  |  √  |  √  |  EAU42011
+required
+√
+Every
+fifth race
+√  |  √
+Every
+third race
+√ √ √  |  √  |  √  |  √  |  √
+Every race
+√ √ √  |  √  |  √  |  √  |  √
+After
+break-in
+7-6
+ROUTINE
+looseness, and tires for wear. grease.
+• Check for wear or damage. • Replace if necessary. • Check operation and tighten if necessary. • Lubricate with lithium-soap-based grease. • Check operation, free play, and tighten if necessary. • Clean and lubricate with lithium-soap-based grease. • Replace bearings. • Check tire air pressure, wheel runout, spokes for • Tighten sprocket bolts if necessary. • Check wheel bearings for looseness. • Lubricate wheel bearings with lithium-soap-based • Replace wheel bearings. • Lubricate. • Check operation and free play. • Adjust the throttle cable free play if necessary. • Lubricate the throttle grip housing and cable.
+ITEM
+Drive chain roller and support guide Rear suspension Steering head Tires and wheels Moving parts and ca- bles Throttle grip housing and cable
+*  |  *  |  *  |  *  |  *  |  *  |  Hydraulic brake service • Regularly check and, if necessary, correct the brake fluid levels.
+NO.  |  
+PERIODIC MAINTENANCE AND ADJUSTMENT 24  |  25  |  26  |  27  |  28  |  29  |  TIP
+7
+7
+7-7
+PERIODIC MAINTENANCE AND ADJUSTMENT
+fluid.
+• Every two years replace the internal components of the brake master cylinders and calipers, and change the brake • Replace the brake hoses every four years and if cracked or damaged.
+erosion and excessive carbon or other deposits, and replace it if necessary. NGK/BR10EG wire thickness gauge and, if nec- essary, adjust the gap to specifica- tion.  |  0.5–0.6 mm (0.020–0.024 in)
+2. Check the spark plug for electrode Specified spark plug: 3. Measure the spark plug gap with a  |  Spark plug gap:
+1. Spark plug gap
+to
+attempt
+not
+Do  |  7-8
+improperly.
+around the center electrode of the spark plug is a medium-to-light tan (the ideal color when the vehicle is ridden normally).
+1. Check that the porcelain insulator
+1. Spark plug wrench To check the spark plug TIP If the spark plug shows a distinctly dif- ferent color, the engine could be oper- ating diagnose such problems yourself. In- stead, have a Yamaha dealer check the vehicle.
+EAU19613
+with a spark plug wrench available at a Yamaha dealer.
+1. Remove the spark plug cap. 2. Remove the spark plug as shown,
+PERIODIC MAINTENANCE AND ADJUSTMENT Checking the spark plug The spark plug is an important engine component, which is easy to check. Since heat and deposits will cause any spark plug to slowly erode, the spark plug should be removed and checked in accordance with the periodic mainte- nance and lubrication chart. In addition, the condition of the spark plug can re- veal the condition of the engine. To remove the spark plug  |  1. Spark plug cap
+7
+7
+and then
+1  |  transmission
+2
+oil drain bolt,
+3  |  2
+recommended
+10 Nm (1.0 m·kgf, 7.2 ft·lbf)
+mission tighten the bolt to the specified torque. Transmission oil drain bolt: the oil, and then install and tighten the oil filler cap.
+5. Install a new gasket and the trans- Tightening torque: 6. Refill with the specified amount of
+1. Transmission oil filler cap 2. Transmission oil drain bolt 3. Gasket
+EAU41445
+7-9
+several minutes, and then turn it off. surface and hold it in an upright po- sition. mission to collect the used oil. bolt and the gasket to drain the oil from the transmission.
+PERIODIC MAINTENANCE AND ADJUSTMENT 1. Start the engine, warm it up for 2. Place the motorcycle on a level 3. Place an oil pan under the trans- 4. Remove the oil filler cap, the drain
+Transmission oil The transmission must be checked for oil leakage before each ride. If any leakage is found, have a Yamaha deal- er check and repair the motorcycle. In addition, the transmission oil must be changed at the intervals specified in the periodic maintenance and lubrication chart.
+the
+with
+plug
+spark
+the
+20 Nm (2.0 m·kgf, 14 ft·lbf)
+gasket and its mating surface, and then wipe off any grime from the spark plug threads. spark plug wrench, and then tight- en it to the specified torque. Spark plug:
+1. Clean the surface of the spark plug 2. Install Tightening torque:  |  3. Install the spark plug cap.
+To install the spark plug  |  TIP If a torque wrench is not available when installing a spark plug, a good estimate of the correct torque is 1/4–1/2 turn past finger tight. However, the spark plug should be tightened to the speci- fied torque as soon as possible.
+If coolant
+NOTICE:
+The coolant level must be checked on a cold engine since the level varies with engine temperature. Make sure that the vehicle is posi- tioned straight up when checking the coolant level. A slight tilt to the side can result in a false reading.  |  add coolant, and then install the radiator cap.
+  |    |  3. If the coolant is below this level,
+TIP  |  TIP The coolant should be at the bottom of the radiator filler neck. The level will change with variation of engine temper- ature.  |  1. Correct coolant level
+and
+EAU20070  |  EAUM1294
+cap
+[EWA10381]
+radiator
+7-10
+the
+WARNING! Never attempt
+face and hold it in an upright posi- tion. check the coolant level in the radi- ator. to remove the radiator cap when the engine is hot.
+1. Place the vehicle on a level sur- 2. Remove
+Coolant The coolant level should be checked before each ride. In addition, the cool- ant must be changed at the intervals specified in the periodic maintenance and lubrication chart. To check the coolant level  |  1. Radiator cap
+ECA10452
+See page 9-1. 0.50 L (0.53 US qt, 0.44 Imp.qt) In order to prevent clutch slip- page (since the transmission oil also lubricates the clutch), do not mix any chemical additives. Do not use oils with a diesel specification of “CD” or oils of a higher quality than specified. In addition, do not use oils labeled “ENERGY CONSERVING II” or higher. Make sure that no foreign mate- rial enters the transmission. for several minutes while checking the transmission for oil leakage. If oil is leaking, immediately turn the engine off and check for the cause.
+Recommended transmission oil: Oil change quantity:   |    |  7. Start the engine, and then let it idle
+PERIODIC MAINTENANCE AND ADJUSTMENT NOTICE
+7
+7
+coolant
+recommended
+the
+10 Nm (1.0 m·kgf, 7.2 ft·lbf)  |  0.54 L (0.57 US qt, 0.48 Imp.qt)
+ant drain bolt, and then tighten the bolt to the specified torque. Coolant drain bolt: into the radiator until it is full. 1:1 High-quality ethylene glycol anti- freeze containing corrosion inhibitors for aluminum engines Radiator capacity (including all routes):  |  engine, let it idle for several min- utes, and then turn it off. the coolant level in the radiator. If necessary, add sufficient coolant until it reaches the bottom of the radiator filler neck, and then install the radiator cap.
+5. Install a new gasket and the cool- Tightening torque: 6. Pour Antifreeze/water mixture ratio: Recommended antifreeze: Coolant quantity: 7. Install the radiator cap, start the 8. Remove the radiator cap to check
+2  |  1
+completely
+is
+[EWA10381]  |  1
+7-11
+coolant
+the
+WARNING! Never attempt to re- move the radiator cap when the engine is hot.  |  drained, thoroughly flush the cool- ing system with clean tap water.
+PERIODIC MAINTENANCE AND ADJUSTMENT 4. After
+1. Coolant drain bolt 2. Gasket  |  1. Radiator cap
+been  |  EAUM1314
+have a
+has
+water coolant,
+If  |  [ECA10472]
+is not available, use distilled wa- ter or soft tap water instead. Do not use hard water or salt water since it is harmful to the engine. If water has been used instead of coolant, replace it with cool- ant as soon as possible, other- wise the cooling system will not be protected against frost and corrosion. added to the Yamaha dealer check the anti- freeze content of the coolant as soon as possible, otherwise the effectiveness of the coolant will be reduced. face and let the engine cool if nec- essary. to collect the used coolant. the gasket, and then the radiator cap to drain the cooling system.
+1. Place the vehicle on a level sur- 2. Place a container under the engine 3. Remove the coolant drain bolt and
+To change the coolant
+removing the wing bolt and wash- er.  |  the air filter element frame.
+3. Remove the air filter element by  |  4. Remove the sponge material from
+1. Wing bolt 2. Washer 3. Air filter element
+EAU41433  |  more
+element
+filter  |  7-12
+air
+the
+shown.
+1. Remove the seat. (See page 4-7.) 2. Remove the air filter case cover as
+Cleaning the air filter element The air filter element should be cleaned or replaced at the intervals specified in the periodic maintenance and lubrica- tion chart. Clean or, if necessary, re- place frequently if you are riding in unusually wet or dusty areas.  |  1. Air filter case cover
+the vehicle for coolant leakage. If coolant is leaking, have a Yamaha dealer check the cooling system.
+9. Start the engine, and then check
+PERIODIC MAINTENANCE AND ADJUSTMENT
+7
+7
+original position as shown.
+9. Install the air filter case cover in the
+1. Air filter element 2. Projection  |  10. Install the seat.
+in-
+engine
+NOTICE:
+The element
+[ECA10481]
+filter
+case.  |  7-13
+air
+filter the
+Yamaha foam air filter oil or other quality foam air filter oil air filter element frame. air filter case with the projection facing upward, and then install the washer and wing bolt. Make sure that the air filter ele- ment is properly seated in the air should never be operated with- out stalled, otherwise the piston(s) and/or cylinder(s) may become excessively worn.
+Recommended oil: 7. Pull the sponge material over the 8. Insert the air filter element into the
+PERIODIC MAINTENANCE AND ADJUSTMENT TIP The sponge material should be wet but not dripping.
+with
+material
+sponge
+the
+solvent, and then squeeze the re- maining solvent out.  |  to the entire surface of the sponge material, and then squeeze the ex- cess oil out.
+5. Clean  |  6. Apply oil of the recommended type
+1. Sponge material 2. Air filter element frame
+the
+EAU21370
+check
+Periodically
+grip.
+1. Loosen the locknut.
+Adjusting the throttle cable free play  |  1. Throttle cable free play The throttle cable free play should mea- sure 3.0–5.0 mm (0.12–0.20 in) at the throttle throttle cable free play and, if neces- sary, adjust it as follows. TIP The engine idling speed must be cor- rectly adjusted before checking and ad- justing the throttle cable free play.
+EAU44390  |  idling
+engine
+the
+7-14
+increase
+warm it up. the engine runs at the lowest pos- sible speed. speed, turn the throttle stop screw in direction (a). To decrease the engine idling speed, turn the throt- tle stop screw in direction (b).
+1. Start the engine and thoroughly 2. Turn the throttle stop screw until 3. To
+Adjusting the engine idling speed The engine idling speed must be ad- justed when necessary.  |  1. Throttle stop screw
+EAU42110  |  ECA10550
+perfor-
+settings
+poor
+these in
+result
+Changing may
+PERIODIC MAINTENANCE AND ADJUSTMENT Adjusting the carburetor The carburetor is an important part of the engine and requires very sophisti- cated adjustment. Therefore, most car- buretor adjustments should be left to a Yamaha dealer, who has the neces- sary professional knowledge and expe- rience. The adjustment described in the following section, however, may be ser- viced by the owner as part of routine maintenance. NOTICE The carburetor has been set and ex- tensively tested at the Yamaha fac- tory. without sufficient technical knowl- edge mance of or damage to the engine.
+7
+7
+ECA15580
+2
+1
+100 kPa (1.00 kgf/cm², 15 psi) 100 kPa (1.00 kgf/cm², 15 psi)
+Front: Rear:  |  Be sure the bead stoppers are tightened. Loose bead stoppers will cause the tire to slip off the rim if tire pressure is too low.
+Standard tire air pressure:  |  
+Tire inspection  |  1. Tire sidewall 2. Tire tread depth The tires must be checked before each ride. NOTICE
+EAU41821  |  EWA14381
+condi-
+riding
+the
+7-15
+and
+WARNING  |  The tire air pressure must be checked and adjusted on cold tires (i.e., when the temperature of the tires equals the ambient temperature). The tire air pressure must be ad- justed in accordance with the weight of the rider, the riding speed, tions.
+  |  
+PERIODIC MAINTENANCE AND ADJUSTMENT Tires To maximize the performance, durabil- ity, and safe operation of your motorcy- cle, note the following points regarding the specified tires. Tire air pressure The tire air pressure should be checked and, if necessary, adjusted before each ride.  |  Operation of this vehicle with im- proper tire pressure may cause se- vere injury or death from loss of control.
+play, turn the adjusting nut in direc- tion (a). To decrease the throttle cable free play, turn the adjusting nut in direction (b).
+2. To increase the throttle cable free  |  3. Tighten the locknut.
+1. Locknut 2. Throttle cable free play adjusting nut
+the
+EWA14390
+has  |  unavoid-
+decreases
+If
+who
+tires
+tube.
+dealer,
+worn
+punctured
+WARNING Have a Yamaha dealer replace excessively worn tires. Operat- ing the motorcycle with exces- sively riding stability and can lead to loss of control. The replacement of all wheel- and brake-related parts, includ- ing the tires, should be left to a Yamaha necessary professional knowl- edge and experience. It is not recommended to patch a able, however, patch the tube very carefully and replace it as soon as possible with a high- quality product.
+  |    |  
+7-16
+YZ85 70/100-17 40M YZ85LW 70/100-19 42M YZ85LWZ 70/100-19 42M YZ85Z 70/100-17 40M YZ85 DUNLOP/D739FA (ZAF) YZ85 DUNLOP/D756F (AUT)(BEL)(CHE)(DEU)(DNK)(ES P)(FIN)(FRA)(GBR)(GRC)(IRL)(IT A)(NLD)(NOR)(POL)(PRT)(SVN)( SWE) YZ85LW DUNLOP/D739FA (ZAF) YZ85LW DUNLOP/D756F (AUT)(BEL)(CHE)(DEU)(DNK)(ES P)(FIN)(FRA)(GBR)(GRC)(IRL)(IT A)(NLD)(NOR)(POL)(PRT)(SVN)( SWE) YZ85LWZ DUNLOP/D756F YZ85Z DUNLOP/D756F YZ85 90/100-14 49M YZ85LW 90/100-16 52M YZ85LWZ 90/100-16 52M YZ85Z 90/100-14 49M DUNLOP/D756
+Size:  |  Manufacturer/model:  |  Size:  |  Manufacturer/model:
+Front tire:  |  Rear tire:
+After extensive tests, only the tires list- ed below have been approved for this model by Yamaha Motor Co., Ltd.
+valve  |  EWA10461
+tilted
+A
+straight.
+Be sure the valve stem is posi- tioned stem indicates that the tire has slipped from its original posi- tion on the rim. Rotate the tire so that the valve stem is posi- tioned straight.  |  4.0 mm (0.16 in) WARNING
+  |  Minimum tire tread depth (front and rear):
+PERIODIC MAINTENANCE AND ADJUSTMENT If the center tread depth reaches the specified limit, if the tire has a nail or glass fragments in it, or if the sidewall is cracked, have a Yamaha dealer re- place the tire immediately. Tire information This motorcycle is equipped with spoke wheels and tube tires. The front and rear tires should be of the same make and design, other- wise the handling characteristics of the vehicle may be different, which could lead to an accident.
+7
+7
+decrease the clutch lever free play, turn the adjusting bolt in direction (b).  |  rection (a) to loosen the clutch ca- ble. the clutch cable.  |  play, turn the clutch lever free play adjusting nut in direction (a). To
+4. Fully turn the adjusting bolt in di- 5. Loosen the locknut further down cable) 6. To increase the clutch lever free
+TIP If the specified clutch lever free play could be obtained as described above, skip steps 4–7.  |  1. Locknut (clutch cable) 2. Clutch lever free play adjusting nut (clutch
+4
+EAU22034
+(a)
+3
+2
+7-17
+clutch lever. play, turn the clutch lever free play adjusting bolt in direction (a). To
+1
+PERIODIC MAINTENANCE AND ADJUSTMENT 1. Slide the rubber cover back at the 2. Loosen the locknut. 3. To increase the clutch lever free
+Adjusting the clutch lever free play  |  1. Clutch lever free play 2. Locknut (clutch lever) 3. Clutch lever free play adjusting bolt 4. Rubber cover The clutch lever free play should mea- sure 10.0–15.0 mm (0.39–0.59 in) as shown. Periodically check the clutch le- ver free play and, if necessary, adjust it as follows.
+in
+EAU48320 EWA10610
+Yamaha  |  balanced result
+a
+be  |  can
+have
+should wheel
+found,
+is  |  wheel
+WARNING  |  The wheel rims should be checked for cracks, bends or warpage, and the spokes for looseness or dam- age before each ride. If any dam- age dealer replace the wheel. Do not attempt even the smallest repair to the wheel. A deformed or cracked wheel must be replaced. The whenever either the tire or wheel has been changed or replaced. An unbalanced poor performance, adverse han- dling characteristics, and a short- ened tire life.
+  |  
+Spoke wheels The wheels on this model are not de- signed for use with tubeless tires. Do not attempt to use tubeless tires on this model. To maximize the performance, durabil- ity, and safe operation of your motorcy- cle, note the following points regarding the specified wheels.
+braking performance, which may re- sult in loss of control and an acci- dent.
+a
+the
+EAU37912  |  EWA14211
+have
+inspect
+system,
+dealer
+7-18
+Yamaha  |  hydraulic
+a
+WARNING
+the
+Checking the front brake lever free play  |  1. No brake lever free play There should be no free play at the brake lever end. If there is free play, have brake system. A soft or spongy feeling in the brake lever can indicate the presence of air in the hydraulic system. If there is air in Yamaha dealer bleed the system be- fore operating the vehicle. Air in the hydraulic system will diminish the
+decrease the clutch lever free play, turn the adjusting nut in direction (b). cable. ver, and then slide the rubber cov- er to its original position.
+7. Tighten the locknut at the clutch 8. Tighten the locknut at the clutch le-
+PERIODIC MAINTENANCE AND ADJUSTMENT
+7
+7
+EAU46291  |  allow
+which
+grooves,
+that the wear indicator almost  |  indicator
+point touches the brake disc, have a Yamaha dealer replace the brake pads as a set. Rear brake pads  |  1. Brake pad wear indicator groove Each rear brake pad is provided with wear you to check the brake pad wear with- out having to disassemble the brake. To check the brake pad wear, check the wear indicator grooves. If a brake pad has worn to the point that a wear indicator groove almost appears, have a Yamaha dealer replace the brake pads as a set.
+to
+EAU22390  |  EAU22410
+you
+allows
+which  |  7-19
+indicator,
+PERIODIC MAINTENANCE AND ADJUSTMENT Checking the front and rear brake pads The front and rear brake pads must be checked for wear at the intervals spec- ified in the periodic maintenance and lubrication chart. Front brake pads  |  1. Brake pad wear indicator Each front brake pad is provided with a wear check the brake pad wear without hav- ing to disassemble the brake. To check the brake pad wear, check the position of the wear indicator while applying the brake. If a brake pad has worn to the
+EAU44820
+Checking the shift pedal The operation of the shift pedal should be checked before each ride. If opera- tion is not smooth, have a Yamaha dealer check the vehicle.
+the
+fluid
+if  |  dealer
+significantly
+spilled
+will  |  However, Yamaha
+up
+a
+Water  |  down.
+clean  |  have
+go
+Be careful that water does not en- ter the brake fluid reservoir when refilling. lower the boiling point of the fluid and may result in vapor lock. Brake fluid may deteriorate paint- ed surfaces or plastic parts. Al- ways immediately. As the brake pads wear, it is nor- mal for the brake fluid level to grad- ually brake fluid level goes down sud- denly, check the cause.
+  |    |  
+and
+level,
+causing
+fluid
+reaction
+the
+deteriorate,  |  7-20
+chemical
+checking  |  may
+When make sure that the top of the brake fluid reservoir is level. Use only the recommended quality brake fluid, otherwise the rubber seals leakage and poor braking perfor- mance. DOT 4 Refill with the same type of brake fluid. Mixing fluids may result in a harmful lead to poor braking performance.
+  |    |  Recommended brake fluid: 
+Before riding, check that the brake fluid is above the minimum level mark and replenish if necessary. A low brake fluid level may indicate worn brake pads and/or brake system leakage. If the brake fluid level is low, be sure to check the brake pads for wear and the brake system for leakage. Observe these precautions:
+EAU22580
+PERIODIC MAINTENANCE AND ADJUSTMENT Checking the brake fluid level Front brake  |  1. Minimum level mark Rear brake  |  1. Minimum level mark Insufficient brake fluid may allow air to enter the brake system, possibly caus- ing it to become ineffective.
+7
+7
+EAU41482
+Improper drive
+NOTICE:
+adjust it as follows. nut on each side of the swingarm. drive chain slack adjusting bolt on each side of the swingarm in direc- tion (a). To loosen the drive chain, turn the adjusting bolt on each side of the swingarm in direction (b), and then push the rear wheel for- ward. chain slack will overload the en- gine as well as other vital parts of the motorcycle and can lead
+4. If the drive chain slack is incorrect, 1. Loosen the axle nut and the lock- 2. To tighten the drive chain, turn the
+1. Drive chain slack To adjust the drive chain slack
+be
+EAU22760  |  EAU41410
+sidestand
+should
+slack
+removable  |  7-21
+chain  |  the
+drive
+and place the motorcycle on it. tral position. the motorcycle to locate the tight- est portion of the drive chain, and then measure the drive chain slack as shown. 35.0–45.0 mm (1.38–1.77 in)
+1. Install  |  2. Shift the transmission into the neu- 3. Move the rear wheel by pushing Drive chain slack:
+PERIODIC MAINTENANCE AND ADJUSTMENT Drive chain slack The checked before each ride and adjusted if necessary. To check the drive chain slack TIP When checking and adjusting the drive chain slack, there should be no weight on the motorcycle.
+the  |  two
+EAU22731
+change  |  every
+dealer
+Replace
+seals:
+a Yamaha
+Oil years. Brake hoses: Replace every four years.
+  |  
+Changing the brake fluid Have brake fluid at the intervals specified in the TIP after the periodic maintenance and lubrication chart. In addition, have the oil seals of the master cylinders and calipers as well as the brake hoses re- placed at the intervals listed below or whenever they are damaged or leak- ing.
+a
+EAU23015  |  ECA10582
+have
+cleaning,
+thorough
+drive chain with a brush or cloth. a  |  Lube or a high-quality spray-type drive chain lubricant on the entire chain, making sure that all side plates and rollers have been suffi- ciently oiled.
+NOTICE  |  1. Remove all dirt and mud from the 2. Spray Yamaha Chain and Cable
+Cleaning and lubricating the drive chain The drive chain must be cleaned and lubricated at the intervals specified in the periodic maintenance and lubrica- tion chart, otherwise it will quickly wear out, especially when riding in dusty or wet areas. Service the drive chain as follows. The drive chain must be lubricated after washing the motorcycle and riding in the rain or wet areas. TIP For Yamaha dealer remove the drive chain and soak it in solvent.
+7-22
+16 Nm (1.6 m·kgf, 11 ft·lbf) 90 Nm (9.0 m·kgf, 65 ft·lbf)
+Locknut: Axle nut:
+Tightening torques:
+4
+[ECA10571]
+3
+2
+5
+to chain slippage or breakage. To prevent this from occurring, keep the drive chain slack with- in the specified limits.  |  nut to the specified torques.
+3. Tighten both locknuts and the axle
+PERIODIC MAINTENANCE AND ADJUSTMENT TIP Using the alignment marks on each drive chain puller, make sure that both drive chain pullers are in the same po- sition for proper wheel alignment. 1. Axle nut 2. Drive chain puller 3. Locknut 4. Drive chain slack adjusting bolt 5. Alignment marks
+7
+7
+EAU23142
+Checking and lubricating the brake and clutch levers Brake lever  |  Clutch lever  |  The operation of the brake and clutch levers should be checked before each ride, and the lever pivots should be lu- bricated if necessary.
+EAU23111
+7-23
+PERIODIC MAINTENANCE AND ADJUSTMENT Checking and lubricating the throttle grip and cable The operation of the throttle grip should be checked before each ride. In addi- tion, the cable should be lubricated at the intervals specified in the periodic maintenance chart.
+it.
+EAU41842  |  outer
+interfer-
+replace the
+conditions.
+or to
+cause
+check  |  unsafe
+and
+Damage
+dealer
+rusting prevent
+to  |  Yamaha Chain and Cable Lube or 4- stroke engine oil
+Recommended lubricant:
+Checking and lubricating the cables The operation of all control cables and the condition of the cables should be checked before each ride, and the ca- bles and cable ends should be lubricat- ed if necessary. If a cable is damaged or does not move smoothly, have a Yamaha WARNING! housing of cables may result in in- ternal ence with cable movement. Replace damaged cables as soon as possi- ble [EWA10711]
+EAUM1650
+Lithium-soap-based grease
+Recommended lubricant:
+Lubricating the swingarm piv- ots  |  The swingarm pivots must be lubricat- ed at the intervals specified in the peri- odic maintenance and lubrication chart.
+EAU23182  |  pedal
+brake
+the
+of  |  7-24
+operation
+Lithium-soap-based grease
+Recommended lubricant:
+Checking and lubricating the brake pedal  |  The should be checked before each ride, and the pedal pivot should be lubricat- ed if necessary.
+Silicone grease Lithium-soap-based grease
+Brake lever: Clutch lever:
+Recommended lubricants:
+PERIODIC MAINTENANCE AND ADJUSTMENT
+7
+7
+ECA10590
+smoothly,
+operate
+not
+does
+NOTICE If any damage is found or the front fork have a Yamaha dealer check or re- pair it.
+EAU23272  |  brake,
+rebounds
+front
+and
+the
+7-25
+applying
+WARNING! To avoid injury, [EWA10751]  |  compresses
+face and hold it in an upright posi- tion. securely support the vehicle so there is no danger of it falling over. push down hard on the handlebars several times to check if the front fork smoothly.
+PERIODIC MAINTENANCE AND ADJUSTMENT 1. Place the vehicle on a level sur- 2. While
+Checking the front fork The condition and operation of the front fork must be checked as follows at the intervals specified in the periodic main- tenance and lubrication chart. To check the condition Check the inner tubes for scratches, damage and excessive oil leakage. To check the operation
+EAU23250
+Lithium-soap-based grease
+Recommended lubricant:
+Lubricating the rear suspen- sion  |  The pivoting points of the rear suspen- sion must be lubricated at the intervals specified in the periodic maintenance and lubrication chart.
+rear  |  the
+EAU24350
+wooden  |  off
+and
+motorcycle
+a
+front  |  strong  |  wheel
+A
+the  |  using
+front
+by
+the
+removing
+maintenance.  |  by using a motorcycle stand or, if an additional motorcycle stand is not available, by placing a jack un- der the frame in front of the rear wheel. ground stand.
+1. Stabilize the rear of the motorcycle 2. Raise
+Supporting the motorcycle Since this model is not equipped with a centerstand, follow these precautions when wheel or performing other maintenance requiring the motorcycle to stand up- right. Check that the motorcycle is in a stable and level position before starting any box can be placed under the engine for added stability. To service the front wheel To service the rear wheel Raise the rear wheel off the ground by using a motorcycle stand or, if a motor- cycle stand is not available, by placing
+turn
+EAU23291
+not
+does
+7-26
+wheel
+the
+if
+or
+Checking the wheel bearings The front and rear wheel bearings must be checked at the intervals specified in the periodic maintenance and lubrica- tion chart. If there is play in the wheel hub smoothly, have a Yamaha dealer check the wheel bearings.
+the To
+EAU23283
+off
+lubrication
+and  |  wheel
+[EWA10751]
+WARNING!
+front
+the
+maintenance
+raise ground. (See page 7-26 for more information.) avoid injury, securely support the vehicle so there is no danger of it falling over. fork legs and try to move them for- ward and backward. If any free play can be felt, have a Yamaha dealer check or repair the steering.
+1. Place a stand under the engine to 2. Hold the lower ends of the front
+PERIODIC MAINTENANCE AND ADJUSTMENT Checking the steering Worn or loose steering bearings may cause danger. Therefore, the operation of the steering must be checked as fol- lows at the intervals specified in the pe- riodic chart.
+7
+7
+EAU41421
+70 Nm (7.0 m·kgf, 50 ft·lbf)
+legs. side. on the ground, install the remov- able sidestand, and then rest the motorcycle on it. and then tighten the axle nut to the specified torque. Axle nut:
+1. Lift the wheel up between the fork 2. Insert the wheel axle from the right 3. Lower the front wheel so that it is 4. Install the washer and axle nut, Tightening torque:
+1. Wheel axle To install the front wheel
+on
+EAU24360 EAU41341 EWA10821
+procedure
+the
+7-27
+to
+WARNING  |  according page 7-26. remove the wheel.
+PERIODIC MAINTENANCE AND ADJUSTMENT 1. Loosen the axle nut.  |  2. Lift the front wheel off the ground 3. Remove the axle nut and washer. 4. Pull the wheel axle out, and then
+Front wheel To remove the front wheel To avoid injury, securely support the vehicle so there is no danger of it falling over.  |  1. Washer 2. Axle nut
+a jack either under each side of the frame in front of the rear wheel or under each side of the swingarm.
+Do the to-
+EAU41325
+after
+NOTICE: removed
+brake
+been  |  [ECA11071]
+the
+has
+apply
+and slightly lifting the wheel, pull the wheel axle out.  |  not wheel gether with the brake disc, oth- erwise the brake pads will be forced shut. sprocket.
+6. While supporting the brake caliper  |  7. Remove the wheel. 1. Install the drive chain onto the rear
+1. Wheel axle TIP A rubber mallet may be useful to tap the wheel axle out.  |  To install the rear wheel
+upward
+wheel
+the
+7-28
+lift
+then
+remove the drive chain from the rear sprocket. If the drive chain is difficult to re- move, remove the wheel axle first, and enough to remove the drive chain from the rear sprocket. The drive chain does not need to be disassembled in order to re- move and install the rear wheel.
+5. Push the wheel forward, and then   |  
+1. Axle nut 2. Washer 3. Locknut 4. Drive chain slack adjusting bolt TIP
+on
+EAU25080 EAU41312 EWA10821
+procedure
+the
+to
+WARNING  |  according page 7-26. adjusting bolt on each side of the swingarm.
+1. Loosen the axle nut. 2. Lift the rear wheel off the ground 3. Loosen the locknut and drive chain 4. Remove the axle nut and washer.
+PERIODIC MAINTENANCE AND ADJUSTMENT Rear wheel To remove the rear wheel To avoid injury, securely support the vehicle so there is no danger of it falling over.
+7
+7
+EAU25871  |  charts  |  EWA15141
+replace-
+Yamaha
+troubleshooting
+genuine
+following  |  only  |  WARNING
+Troubleshooting Although Yamaha motorcycles receive a thorough inspection before shipment from the factory, trouble may occur dur- ing operation. Any problem in the fuel, compression, or ignition systems, for example, can cause poor starting and loss of power. The represent quick and easy procedures for checking these vital systems your- self. However, should your motorcycle require any repair, take it to a Yamaha dealer, whose skilled technicians have the necessary tools, experience, and know-how to service the motorcycle properly. Use ment parts. Imitation parts may look like Yamaha parts, but they are often inferi- or, have a shorter service life and can lead to expensive repair bills. When checking the fuel system, do not smoke, and make sure there are no open flames or sparks in the ar- ea, including pilot lights from water
+7-29
+16 Nm (1.6 m·kgf, 11 ft·lbf) 90 Nm (9.0 m·kgf, 65 ft·lbf)
+page 7-21.) nut to their specified torques. Locknut: Axle nut:
+5. Adjust the drive chain slack. (See 6. Tighten the locknuts and the axle Tightening torque:
+PERIODIC MAINTENANCE AND ADJUSTMENT
+1
+2
+iper bracket by inserting the wheel axle from the right-hand side. Make sure that the slot in the brake caliper bracket is fit over the retain- er on the swingarm. Make sure that there is enough space between the brake pads be- fore installing the wheel.  |  on the ground, install the remov- able sidestand, and then rest the motorcycle on it.
+2. Install the wheel and the brake cal-   |    |  3. Install the washer and axle nut. 4. Lower the rear wheel so that it is
+TIP  |  1. Retainer 2. Slot
+7-30
+or  |  or
+injury
+Gasoline
+severe
+furnaces.
+or
+causing
+PERIODIC MAINTENANCE AND ADJUSTMENT heaters gasoline vapors can ignite or ex- plode, property damage.
+7
+7
+EAU41492
+Open the throttle halfway and operate the kickstarter. The engine does not start. Have a Yamaha dealer check the vehicle.
+The engine does not start. Check the compression.
+Check the ignition. Have a Yamaha dealer check the vehicle.
+7-31
+Check the compression. Supply fuel.
+Wipe off with a dry cloth and correct the spark plug gap, or replace the spark plug. Have a Yamaha dealer check the vehicle.
+PERIODIC MAINTENANCE AND ADJUSTMENT
+Wet  |  Dry
+There is enough fuel. There is no fuel.  |  There is compression. There is no compression.
+1. Fuel Check the fuel level in the fuel tank. 2. Compression Operate the kickstarter. 3. Ignition Remove the spark plug and check the electrodes.
+Troubleshooting charts Starting problems or poor engine performance
+EWAT1040
+Have a Yamaha dealer check and repair the cooling system. Add coolant. (See TIP.)
+There is leakage. There is no leakage.
+Start the engine. If the engine overheats again, have a Yamaha dealer check and repair the cooling system.
+7-32
+The coolant level is low. Check the cooling system for leakage. The coolant level is OK.
+Check the coolant level in the radiator.
+WARNING Do not remove the radiator cap when the engine and radiator are hot. Scalding hot fluid and steam may be blown out under pressure, which could cause serious injury. Be sure to wait until the engine has cooled. Place a thick rag, like a towel, over the radiator cap, and then slowly rotate the cap counterclockwise to the de- tent to allow any residual pressure to escape. When the hissing sound has stopped, press down on the cap while turning it counterclockwise, and then remove the cap. Wait until the engine has cooled.
+  |  
+PERIODIC MAINTENANCE AND ADJUSTMENT Engine overheating  |  TIP If coolant is not available, tap water can be temporarily used instead, provided that it is changed to the recommended coolant as soon as possible.
+7
+8
+are
+wheel  |  ECA10772
+headlight
+and
+products
+chain
+such
+drive  |  If  |  windshields,
+the
+ucts onto seals, gaskets, sprock- ets, axles. Always rinse the dirt and de- greaser off with water. Avoid using strong acidic wheel cleaners, especially on spoked wheels. used on hard-to-remove dirt, do not leave the cleaner on the af- fected area any longer than in- structed. Also, thoroughly rinse the area off with water, immedi- ately dry it, and then apply a cor- rosion protection spray. Improper cleaning can damage plastic parts (such as cowlings, panels, lenses, meter lenses, etc.) and the mufflers. Use only a soft, clean cloth or sponge with wa- ter to clean plastic. However, if the plastic parts cannot be thor- oughly cleaned with water, di- luted mild detergent with water may be used. Be sure to rinse
+  |  
+Cleaning NOTICE
+a  |  a
+are  |  the in-
+EAU41356
+with  |  and
+tightly
+outlet  |  including  |  agent
+are
+components
+cap,  |  8-1
+muffler
+MOTORCYCLE CARE AND STORAGE
+the  |  plug  |  degreasing
+connectors, a
+high-quality
+if
+plastic bag after the engine has cooled down. as well as all electrical couplers and spark stalled. like oil burnt onto the crankcase, with brush, but never apply such prod-
+1. Cover 2. Make sure that all caps and covers 3. Remove extremely stubborn dirt,
+Care While the open design of a motorcycle reveals the attractiveness of the tech- nology, it also makes it more vulnera- ble. Rust and corrosion can develop even used. A rusty exhaust pipe may go un- noticed on a car, however, it detracts from the overall appearance of a motor- cycle. Frequent and proper care does not only comply with the terms of the warranty, but it will also keep your mo- torcycle looking good, extend its life and optimize its performance. Before cleaning
+Be
+with
+EAU37833 ECA15192
+parts.
+equipped
+are finished
+models colored
+Matte color caution NOTICE Some matte sure to consult a Yamaha dealer for advice on what products to use be- fore cleaning the vehicle. Using a brush, harsh chemical products or cleaning compounds when cleaning these parts will scratch or damage their surface. Wax also should not be applied to any matte colored fin- ished parts.
+shine  |  metal,
+to  |  damage
+all
+paint
+polish  |  on
+minor
+chrome  |  spray
+up
+a
+on all metal, including chrome- and nickel-plated, surfaces to prevent corrosion. or an absorbing cloth. and lubricate it to prevent it from rusting. chrome, aluminum and stainless- steel parts, including the exhaust system. mended to apply a corrosion pro- tection including chrome- and nickel-plat- ed, surfaces. er to remove any remaining dirt. caused by stones, etc. before storing or covering it.
+2. Apply a corrosion protection spray 1. Dry the motorcycle with a chamois 2. Immediately dry the drive chain 3. Use  |  4. To prevent corrosion, it is recom- 5. Use spray oil as a universal clean- 6. Touch 7. Wax all painted surfaces. 8. Let the motorcycle dry completely
+After cleaning
+after
+down.
+[ECA10791]
+cooled
+compound  |  8-2
+has Do not use warm water
+Test the product on a small hid- den part of the windshield to make sure that it does not leave any marks. If the windshield is scratched, use a quality plastic polishing washing.  |  ter and a mild detergent, after the engine NOTICE: since it increases the corrosive action of the salt.
+1. Clean the motorcycle with cold wa-
+After normal use Remove dirt with warm water, a mild detergent, and a soft, clean sponge, and then rinse thoroughly with clean water. Use a toothbrush or bottlebrush for hard-to-reach areas. Stubborn dirt and insects will come off more easily if the area is covered with a wet cloth for a few minutes before cleaning. After riding in the rain or near the sea Since sea salt is extremely corrosive, carry out the following steps after each ride in the rain or near the sea.
+Be in  |  or  |  as or
+leave
+been  |  breather
+parts.
+solvent  |  dulling may windshield.
+instruments, sponges
+have
+lights),  |  the
+plastic  |  hard
+cause plastic
+on
+on which products,  |  and  |  or
+for
+will
+off any detergent residue using plenty of water, as it is harmful to plastic parts. Do not use any harsh chemical products sure to avoid using cloths or sponges contact with strong or abrasive cleaning thinner, fuel (gasoline), rust re- movers or inhibitors, brake flu- id, antifreeze or electrolyte. Do not use high-pressure wash- ers or steam-jet cleaners since they cause water seepage and deterioration in the following ar- eas: seals (of wheel and swing- arm bearings, fork and brakes), electric components (couplers, connectors, switches hoses and vents. For motorcycles equipped with a windshield: Do not use strong cleaners they scratching. Some cleaning com- pounds scratches
+  |    |  
+MOTORCYCLE CARE AND STORAGE
+8
+8
+a
+EAU41513  |  ECA10810 in  |  avoid
+ammonia)
+of
+motorcycle corrosion,
+the
+presence
+prevent
+the
+Storing poorly ventilated room or cover- ing it with a tarp, while it is still wet, will allow water and humid- ity to seep in and cause rust. To damp cellars, stables (because of and areas where strong chemi- cals are stored. “Care” section of this chapter. fuel cock that has an “OFF” posi- tion: Turn the fuel cock lever to “OFF”.
+  |    |  1. Follow all the instructions in the 2. For motorcycles equipped with a
+Storage Short-term Always store your motorcycle in a cool, dry place and, if necessary, protect it against dust with a porous cover. NOTICE  |  Long-term Before storing your motorcycle for sev- eral months:
+8-3
+MOTORCYCLE CARE AND STORAGE
+TIP Consult a Yamaha dealer for advice on what products to use.
+but
+EWA11131  |  brake  |  ECA10800
+higher
+the  |  at  |  parts,
+motorcycle’s
+clean  |  riding the
+plastic
+test
+and
+Before
+necessary,
+WARNING Make sure that there is no oil or wax on the brakes or tires. If discs and brake linings with a regular brake disc cleaner or ac- etone, and wash the tires with warm water and a mild deter- gent. speeds, braking performance and cor- nering behavior. Apply spray oil and wax spar- ingly and make sure to wipe off any excess. Never apply oil or wax to any rubber treat them with a suitable care product. Avoid using abrasive polishing compounds as they will wear away the paint.
+  |    |    |    |  
+Contaminants on the brakes or tires can cause loss of control.  |  NOTICE
+a
+with  |  before
+moisture
+outlet
+repairs
+prevent
+[EWA10951]  |  8-4
+to
+muffler
+the bag  |  necessary
+ground the spark plug elec- trodes while turning the en- gine over.  |  any
+pivoting points of all levers and brake pedal. the tire air pressure, and then lift the motorcycle so that both of its wheels are off the ground. Alterna- tively, turn the wheels a little every month in order to prevent the tires from becoming degraded in one spot. plastic from entering it.
+5. Lubricate all control cables and the 6. Check and, if necessary, correct 7. Cover
+TIP Make storing the motorcycle.
+cap  |  cap
+injury
+plug  |  plug
+or
+WARNING! To
+spark  |  spark
+the  |  the  |  damage
+and spark plug. into the spark plug bore. the spark plug, and then place the spark plug on the cylinder head so that the electrodes are grounded. (This will limit spark- ing during the next step.) times with the starter. (This will coat the cylinder wall with oil.) from the spark plug, and then install the spark plug and the spark plug cap. prevent from sparking, make sure to
+and the carburetor float chamber by loosening the drain bolt; this will prevent fuel deposits from building up. tect the cylinder, piston rings, etc. from corrosion. a. Remove b. Pour a teaspoonful of engine oil c. Install the spark plug cap onto d. Turn the engine over several e. Remove
+3. Drain the fuel tank and fuel lines, 4. Perform the following steps to pro-
+MOTORCYCLE CARE AND STORAGE
+8
+9
+SPECIFICATIONS  |  quantity:
+×
+0.54 L (0.57 US qt, 0.48 Imp.qt) Wet element Premium unleaded gasoline only 5.0 L (1.32 US gal, 1.10 Imp.gal) PWK28 x 1 NGK/BR10EG 0.5–0.6 mm (0.020–0.024 in) Wet, multiple-disc Spur gear 65/18 (3.611) Chain drive
+Radiator capacity (including all routes): Air filter element: Recommended fuel: Fuel tank capacity: Type  |  Manufacturer/model: Spark plug gap: Clutch type: Primary reduction system: Primary reduction ratio: Secondary reduction system:
+Cooling system: Air filter: Fuel:  |  Carburetor: Spark plug (s): Clutch: Transmission:
+1.88 in)
+×
+9-1
+47.8 mm (1.87
+stroke: ×
+×
+YZ85 351 mm (13.82 in) YZ85LW 393 mm (15.47 in) YZ85LWZ 393 mm (15.47 in) YZ85Z 351 mm (13.82 in) YZ85 71.0 kg (157 lb) YZ85LW 73.9 kg (163 lb) YZ85LWZ 73.9 kg (163 lb) YZ85Z 71.0 kg (157 lb) Liquid cooled 2-stroke Forward-inclined single cylinder 84 cm³ 47.5 8.20 :1 Kickstarter Premix YAMALUBE 2-R YAMALUBE 4 (10W-40) or SAE 10W-40 0.50 L (0.53 US qt, 0.44 Imp.qt)
+Ground clearance: With oil and fuel: Engine type: Cylinder arrangement: Displacement: Bore Compression ratio: Starting system: Lubrication system: Type: Type: Oil change quantity:
+Weight:  |  Engine:  |  Engine oil: Transmission oil:
+YZ85 1818 mm (71.6 in) (AUT)(BEL)(CHE)(DEU)(DNK)(ESP)(FIN) (FRA)(GBR)(GRC)(IRL)(ITA)(NLD)(NOR) (POL)(PRT)(SVN)(SWE) YZ85 1821 mm (71.7 in) (ZAF) YZ85LW 1903 mm (74.9 in) YZ85LWZ 1903 mm (74.9 in) YZ85Z 1818 mm (71.6 in) 758 mm (29.8 in) YZ85 1161 mm (45.7 in) YZ85LW 1205 mm (47.4 in) YZ85LWZ 1205 mm (47.4 in) YZ85Z 1161 mm (45.7 in) YZ85 864 mm (34.0 in) YZ85LW 904 mm (35.6 in) YZ85LWZ 904 mm (35.6 in) YZ85Z 864 mm (34.0 in) YZ85 1255 mm (49.4 in) (AUT)(BEL)(CHE)(DEU)(DNK)(ESP)(FIN) (FRA)(GBR)(GRC)(IRL)(ITA)(NLD)(NOR) (POL)(PRT)(SVN)(SWE) YZ85 1258 mm (49.5 in) (ZAF) YZ85LW 1286 mm (50.6 in) YZ85LWZ 1286 mm (50.6 in) YZ85Z 1255 mm (49.4 in)
+Overall length:  |  Overall width: Overall height: Seat height: Wheelbase:
+Dimensions:
+100 kPa (1.00 kgf/cm², 15 psi) 100 kPa (1.00 kgf/cm², 15 psi)
+DUNLOP/D756 Front: Rear:  |  Spoke wheel YZ85 17x1.40 YZ85LW 19x1.40 YZ85LWZ 19x1.40 YZ85Z 17x1.40 Spoke wheel YZ85 14x1.60 YZ85LW 16x1.85 YZ85LWZ 16x1.85 YZ85Z 14x1.60 Single disc brake Right hand operation DOT 4 Single disc brake
+Manufacturer/model:  |  Wheel type: Rim size:  |  Wheel type: Rim size:  |  Type: Operation: Recommended fluid: Type:
+Tire air pressure (measured on cold tires):  |  Front wheel:  |  Rear wheel:  |  Front brake:  |  Rear brake:
+9-2
+YZ85 88.0 mm (3.46 in) YZ85LW 106.0 mm (4.17 in) YZ85LWZ 106.0 mm (4.17 in) YZ85Z 88.0 mm (3.46 in) With tube YZ85 70/100-17 40M YZ85LW 70/100-19 42M YZ85LWZ 70/100-19 42M YZ85Z 70/100-17 40M YZ85 DUNLOP/D739FA (ZAF) YZ85 DUNLOP/D756F (AUT)(BEL)(CHE)(DEU)(DNK)(ESP)(FIN) (FRA)(GBR)(GRC)(IRL)(ITA)(NLD)(NOR) (POL)(PRT)(SVN)(SWE) YZ85LW DUNLOP/D739FA (ZAF) YZ85LW DUNLOP/D756F (AUT)(BEL)(CHE)(DEU)(DNK)(ESP)(FIN) (FRA)(GBR)(GRC)(IRL)(ITA)(NLD)(NOR) (POL)(PRT)(SVN)(SWE) YZ85LWZ DUNLOP/D756F YZ85Z DUNLOP/D756F With tube YZ85 90/100-14 49M YZ85LW 90/100-16 52M YZ85LWZ 90/100-16 52M YZ85Z 90/100-14 49M
+Trail:  |  Type: Size:  |  Manufacturer/model:  |  Type: Size:
+Front tire:  |  Rear tire:
+27/11 (2.454) 32/17 (1.882) 26/17 (1.529) 22/17 (1.294) 26/23 (1.130) 25/25 (1.000)
+YZ85 47/14 (3.357) (ZAF) YZ85 48/14 (3.428) (AUT)(BEL)(CHE)(DEU)(DNK)(ESP)(FIN) (FRA)(GBR)(GRC)(IRL)(ITA)(NLD)(NOR) (POL)(PRT)(SVN)(SWE) YZ85LW 52/14 (3.714) YZ85LWZ 52/14 (3.714) YZ85Z 48/14 (3.428) Constant mesh 6-speed Left foot operation 1st: 2nd: 3rd: 4th: 5th: 6th:  |  Semi double cradle YZ85 26.30 ° YZ85LW 27.00 ° YZ85LWZ 27.00 ° YZ85Z 26.30 °
+Secondary reduction ratio: Transmission type: Operation: Gear ratio:  |  Frame type: Caster angle:
+SPECIFICATIONS  |  Chassis:
+9
+9
+SPECIFICATIONS
+9-3
+Right foot operation DOT 4 Telescopic fork Coil spring/oil damper 275.0 mm (10.83 in) Swingarm (link suspension) Coil spring/gas-oil damper YZ85 282.0 mm (11.10 in) YZ85LW 287.0 mm (11.30 in) YZ85LWZ 287.0 mm (11.30 in) YZ85Z 282.0 mm (11.10 in) CDI
+Operation: Recommended fluid: Type: Spring/shock absorber type: Wheel travel: Type: Spring/shock absorber type: Wheel travel:  |  Ignition system:
+Front suspension: Rear suspension:  |  Electrical system:
+EAU26460
+Model label  |  1. Model label The model label is affixed to the loca- tion shown. Record the information on this label in the space provided. This in- formation will be needed when ordering spare parts from a Yamaha dealer.
+is  |  is
+EAU26400
+number  |  number
+10-1
+identification  |  identification
+vehicle  |  vehicle
+Vehicle identification number 1. Vehicle identification number The stamped into the steering head pipe. Record this number in the space pro- vided. TIP The used to identify your motorcycle and may be used to register your motorcy- cle with the licensing authority in your area.
+a
+EAU40791
+from
+parts
+spare
+ordering
+CONSUMER INFORMATION Identification numbers Record the vehicle identification num- ber and model label information in the spaces provided below for assistance when Yamaha dealer or for reference in case the vehicle is stolen. VEHICLE IDENTIFICATION NUMBER:  |  MODEL LABEL INFORMATION:
+10
+INDEX
+lubricating ........................................... 7-23
+Supporting the motorcycle .................... 7-26 Swingarm pivots, lubricating ................. 7-24 Throttle cable free play, adjusting......... 7-14 Throttle grip and cable, checking and Tires...................................................... 7-15 Transmission oil...................................... 7-9 Troubleshooting .................................... 7-29 Troubleshooting charts ......................... 7-31 Vehicle identification number................ 10-1 Wheel bearings, checking..................... 7-26 Wheel (front) ......................................... 7-27 Wheel (rear).......................................... 7-28 Wheels.................................................. 7-17
+T  |  V  |  W
+chart ......................................................7-2
+Fuel tank breather hose ..........................4-5 Fuel tank cap...........................................4-3 Handlebar switch.....................................4-1 Identification numbers ...........................10-1 Kickstarter ...............................................4-6 Labels, location .......................................1-1 Matte color, caution.................................8-1 Model label............................................10-1 Parking ....................................................6-4 Part locations ..........................................3-1 Periodic maintenance and lubrication Rear suspension, lubricating.................7-25 Safety information ...................................2-1 Seat.........................................................4-7 Shifting ....................................................6-2 Shift pedal ...............................................4-1 Shift pedal, checking .............................7-19 Shock absorber assembly, adjusting ......4-9 Sidestand ..............................................4-12 Spark plug, checking...............................7-8 Specifications ..........................................9-1 Starter (choke) knob................................4-6 Starting and warming up a cold engine...6-1 Steering, checking.................................7-26 Storage....................................................8-3
+H  |  I  |  K  |  L  |  M  |  P  |  R  |  S
+lubricating ........................................... 7-23 lubricating ........................................... 7-24
+Air filter element, cleaning .................... 7-12 Brake and clutch levers, checking and Brake fluid, changing ............................ 7-21 Brake fluid level, checking .................... 7-20 Brake lever ............................................. 4-2 Brake pedal ............................................ 4-2 Brake pedal, checking and Cables, checking and lubricating.......... 7-23 Carburetor, adjusting ............................ 7-14 Care........................................................ 8-1 Clutch lever............................................. 4-1 Clutch lever free play, adjusting ........... 7-17 Coolant ................................................. 7-10 Drive chain, cleaning and lubricating.... 7-22 Drive chain slack .................................. 7-21 Engine break-in ...................................... 6-3 Engine idling speed .............................. 7-14 Engine, starting a warm.......................... 6-1 Engine stop button.................................. 4-1 Front and rear brake pads, checking.... 7-19 Front brake lever free play, checking ... 7-18 Front fork, adjusting................................ 4-7 Front fork, bleeding................................. 4-9 Front fork, checking .............................. 7-25 Fuel......................................................... 4-3 Fuel cock ................................................ 4-5
+A  |  B  |  C  |  D  |  E  |  F
+(E)
+1 CR
+×
+2009.06-0.3
+PRINTED IN JAPAN
+YAMAHA MOTOR CO., LTD.
+PRINTED ON RECYCLED PAPER

@@ -747,9 +747,9 @@ const brandsData = {
     bg: '#E2231A', text: '#FFFFFF', dot: '#E2231A', sub: 'The Power of Dreams',
     logo: '<text x="40" y="15" text-anchor="middle" dominant-baseline="central" font-family="Arial Black,sans-serif" font-weight="900" font-size="10" fill="white">HONDA</text>',
     categories: {
-      Motocross: { '4T': ['CRF 125R','CRF 150R','CRF 250R','CRF 450R'] },
+      Motocross: { '4T': ['CRF 150R','CRF 250R','CRF 450R'] },
       Enduro: { '4T': ['CRF 250RX','CRF 450RX'] },
-      Trial: { '2T': ['Montesa Cota 315R'], '4T': ['Montesa Cota 260','Montesa Cota 300','Montesa Cota 301RR'] }
+      Trial: { '4T': ['Montesa Cota 260','Montesa Cota 301'] }
     }
   },
   Yamaha: {
@@ -977,11 +977,22 @@ function rangoAniosModelo(brand, category, engine, m) {
     if (category === 'Enduro') fromYear = 2026;
     else fromYear = 2025;
   } else if (brand === 'Honda') {
-    if (m === 'Montesa Cota 315R') { fromYear = 1999; toYear = 2004; }
-    else if (m === 'Montesa Cota 260') fromYear = 2005;
-    // Descontinuada al llegar la 301RR — último manual oficial es de 2018.
-    else if (m === 'Montesa Cota 300') { fromYear = 2005; toYear = 2018; }
-    else if (m === 'Montesa Cota 301RR') fromYear = 2019;
+    if (m === 'CRF 150R') fromYear = 2012;
+    else if (m === 'CRF 250R') fromYear = 2006;
+    else if (m === 'CRF 450R') fromYear = 2009;
+    else if (m === 'CRF 250RX') fromYear = 2019;
+    else if (m === 'CRF 450RX') fromYear = 2017;
+    else if (m === 'Montesa Cota 260') fromYear = 2017;
+    else if (m === 'Montesa Cota 301') fromYear = 2017;
+  } else if (brand === 'Yamaha') {
+    // toYear a 2027: el año-modelo siguiente ya está publicado (manual oficial
+    // confirmado), habitual en motos de competición que se adelantan al año natural.
+    if (m === 'YZ 65') { fromYear = 2018; toYear = 2027; }
+    else if (m === 'YZ 85') { fromYear = 2002; toYear = 2027; }
+    else if (m === 'YZ 125') { fromYear = 2001; toYear = 2027; }
+    else if (m === 'YZ 250') { fromYear = 2001; toYear = 2027; }
+    else if (m === 'YZ 250F') { fromYear = 2001; toYear = 2027; }
+    else if (m === 'YZ 450F') { fromYear = 2003; toYear = 2027; }
   } else if (brand === 'Suzuki') {
     if (m === 'RM 85') fromYear = 2002;
     else if (m === 'RM 125') { fromYear = 2001; toYear = 2012; }

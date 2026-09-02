@@ -10,6 +10,13 @@ const OVERLAP_WORDS = 75;
 const EMBED_BATCH = 20;
 const EMBED_DELAY_MS = 500; // pausa mínima entre peticiones (cuenta de pago)
 
+// Umbral en caracteres: ningún token real (palabra, URL, número de pieza) es
+// tan largo. Cuando pdf.js extrae "texto" de un logo o una imagen decorativa,
+// a veces produce una tirada larguísima sin espacios (ej. cientos de "@"
+// seguidos) — sin filtrarla, un solo "token" así puede superar el límite de
+// metadata de Pinecone (40 KB por vector) y tumbar la subida entera.
+const TOKEN_MAX_CHARS = 300;
+
 function limpiarTexto(text) {
   return text
     .replace(/\r\n/g, '\n')
@@ -19,7 +26,7 @@ function limpiarTexto(text) {
 }
 
 function trocear(text) {
-  const words = text.split(/\s+/).filter(Boolean);
+  const words = text.split(/\s+/).filter(w => w && w.length <= TOKEN_MAX_CHARS);
   const chunks = [];
   let i = 0;
   while (i < words.length) {

@@ -158,15 +158,17 @@ function normalizarModelo(brand, model) {
   }
 
   if (brand.toLowerCase() === 'honda') {
-    // El manual oficial europeo cubre R y RX en un mismo documento para cada
-    // cilindrada, así que comparten token de archivo.
     if (m === 'CRF 150R') return { model: 'crf150r' };
-    if (m === 'CRF 250R' || m === 'CRF 250RX') return { model: 'crf250r-250rx' };
-    if (m === 'CRF 450R' || m === 'CRF 450RX') return { model: 'crf450r-450rx' };
+    // CRF250R de antes de 2019 (cuando no existía la RX) usa el token
+    // 'crf250r' en solitario; desde 2019 el manual europeo cubre R+RX en
+    // 'crf250r-250rx'. Igual con CRF450R/'crf450r' desde 2009 hasta 2016.
+    if (m === 'CRF 250R') return { model: { $in: ['crf250r-250rx', 'crf250r'] } };
+    if (m === 'CRF 250RX') return { model: 'crf250r-250rx' };
+    if (m === 'CRF 450R') return { model: { $in: ['crf450r-450rx', 'crf450r'] } };
+    if (m === 'CRF 450RX') return { model: 'crf450r-450rx' };
     // Montesa Cota (trial) — fuente: montesa.com (sitio oficial de Montesa).
     if (m === 'MONTESA COTA 260') return { model: 'cota260' };
-    if (m === 'MONTESA COTA 300') return { model: 'cota300' };
-    if (m === 'MONTESA COTA 301RR') return { model: 'cota301rr' };
+    if (m === 'MONTESA COTA 301') return { model: 'cota301' };
     // Montesa Cota 315R (2T, 1999-2004): sin manual público conocido.
   }
 

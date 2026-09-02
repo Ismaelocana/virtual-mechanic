@@ -1,0 +1,1648 @@
+CRF450R/RX/RWE
+MANUAL DEL PROPIETARIO
+Este manual ha de considerarse como parte permanente del
+vehículo y deberá permanecer con él si el usuario lo vende.
+Esta publicación incluye la información más reciente del producto
+disponible antes de la impresión. Honda Motor Co., Ltd. se reserva
+el derecho a realizar cambios en cualquier momento sin previo aviso
+y sin incurrir en ningún tipo de obligación.
+Ninguna parte de la presente publicación puede reproducirse sin el
+permiso previo por escrito.
+Puede que las ilustraciones del vehículo incluidas en este manual del
+propietario no coincidan con su propio vehículo.
+© 2023 Honda Motor Co., Ltd.
+AVISO IMPORTANTE
+ESTE VEHÍCULO ESTÁ DISEÑADO Y FABRICADO ÚNICAMENTE
+PARA SU USO EN COMPETICIONES Y SE VENDE "TAL CUAL", SIN
+NINGUNA GARANTÍA. NO CUMPLE LAS NORMAS FEDERALES DE
+SEGURIDAD SOBRE VEHÍCULOS A MOTOR Y SU UTILIZACIÓN POR
+CALLES, CARRETERAS O AUTOPISTAS PÚBLICAS ES ILEGAL.
+LAS LEYES ESTATALES PROHÍBEN EL USO DE ESTE VEHÍCULO,
+EXCEPTO EN CARRERAS O COMPETICIONES ORGANIZADAS EN
+UN CIRCUITO CERRADO Y BAJO LOS AUSPICIOS DE UN
+ORGANISMO RECONOCIDO O CON EL PERMISO OTORGADO POR
+LA AUTORIDAD GUBERNAMENTAL COMPETENTE.
+EN PRIMER LUGAR, DETERMINE SI LA COMPETICIÓN ES LEGAL.
+SOLO EL CONDUCTOR, SIN PASAJEROS.
+Este vehículo se ha diseñado y construido para ser utilizado
+solamente por el conductor.
+El límite de carga y la configuración del asiento del vehículo no
+permiten transportar a un pasajero de forma segura.
+LEA ATENTAMENTE ESTE MANUAL.
+Bienvenido
+¡Felicidades por la compra de su nuevo  |  Tenga en cuenta que la competición
+vehículo Honda! Su elección de una Honda  |  off-road/motocross es un deporte
+le hace formar parte de la familia mundial de  |  físicamente exigente que requiere algo más
+clientes satisfechos que aprecian la  |  que un buen vehículo. Para tener éxito, debe
+reputación de Honda por aportar calidad en  |  mantenerse en excelentes condiciones físicas
+cada uno de sus productos.  |  y ser un piloto experto. Para obtener los
+Este vehículo es una moto de competición de alto  |  mejores resultados, prepárese bien
+rendimiento dotada de la última tecnología en  |  físicamente y practique con frecuencia.
+competición off-road/motocross y concebida para
+competir en circuitos cerrados y autorizados
+exclusivamente para conductores experimentados.
+Para garantizar su seguridad y disfrute en  |  ● Los siguientes códigos del manual indican
+marcha:  |  cada uno de los destinos.
+● Lea atentamente este manual del  |  ● Las ilustraciones incluidas en esta
+propietario y la guía de competición.  |  publicación corresponden al modelo
+● Siga todas las recomendaciones y  |  CRF450RX ED.
+procedimientos incluidos en este manual
+del propietario y en la guía de  |  Códigos de destino
+competición.  |  Código Destino
+● Preste especial atención a los mensajes  |  CRF450RX
+de seguridad incluidos en este manual del  |  ED  |  Ventas directas a Europa, Reino
+propietario, en la guía de competición y  |  Unido, Serbia, Israel, Sudáfrica,
+en el vehículo.  |  Madagascar, Mozambique, Tanzania,
+Zimbabue, Mauricio, Tenerife, Gran
+Canaria, Uganda, República
+Democrática del Congo, Zambia,
+Malaui, Angola, República de
+Seychelles
+LA  |  Latinoamérica, Guatemala, Bolivia,
+Ecuador, Paraguay, Uruguay, Guyana,
+Costa Rica, Honduras, Brasil
+CO  |  Colombia
+U  |  Australia, Nueva Zelanda
+Código Destino  |  Código Destino
+CRF450R  |  CRF450RWE
+ED  |  Ventas directas a Europa, Reino  |  U  |  Australia
+Unido, Serbia, Israel, Filipinas,
+*Las especificaciones pueden cambiar en
+Sudáfrica, Madagascar, Mozambique,
+cada lugar.
+Tanzania, Zimbabue, Mauricio,
+Tenerife, Gran Canaria, Uganda,
+República Democrática del Congo,
+Zambia, Malaui, Angola, República de
+Seychelles
+GS  |  Países del CCG, Emiratos Árabes
+Unidos, Arabia Saudí, Catar, Omán,
+Kuwait, Baréin, Líbano, Jordania
+LA  |  Latinoamérica, Chile, Perú, Guatemala,
+Bolivia, Ecuador, Paraguay, Uruguay,
+Guyana, El Salvador, Costa Rica,
+Honduras, Panamá, Brasil, Argentina
+CO  |  Colombia
+U  |  Australia, Nueva Zelanda
+Breve información sobre seguridad
+Su seguridad y la de otras personas es muy
+3 PELIGRO
+importante. Es una responsabilidad importante
+manejar este vehículo con seguridad.  |  Si no sigue las instrucciones, PERDERÁ LA
+Para ayudarle a tomar decisiones fundadas  |  VIDA o RESULTARÁ GRAVEMENTE HERIDO.
+en relación con la seguridad, hemos incluido
+procedimientos de funcionamiento y otra  |  3 ADVERTENCIA
+información sobre las etiquetas de seguridad
+en este manual del propietario y en la guía  |  Si no sigue las instrucciones, PODRÍA
+de competición. Esta información le advierte  |  PERDER LA VIDA o RESULTAR
+sobre posibles peligros que podrían causarle  |  GRAVEMENTE HERIDO.
+daños a usted o a otras personas.
+Como es natural, no es práctico ni posible  |  3 PRECAUCIÓN
+advertirle acerca de todos los peligros asociados
+con la conducción y el mantenimiento de un  |  Si no sigue las instrucciones, PODRÍA
+vehículo. Debe usar el sentido común.  |  RESULTAR HERIDO.
+Encontrará información de seguridad
+importante expresada de estas formas:  |  Se incluye también otra información
+● Etiquetas de seguridad del vehículo.  |  importante con los siguientes títulos:
+● Mensajes de seguridad precedidos por un  |  AVISO Información cuyo objetivo es
+símbolo de alerta  |  y una de estas tres  |  ayudarle a evitar que se
+palabras de seguridad:  |  produzcan daños en el vehículo,
+PELIGRO, ADVERTENCIA o PRECAUCIÓN.  |  otras propiedades o el
+Estas palabras de aviso significan:  |  medioambiente.
+
+Índice
+Seguridad del vehículo  |  P. 2
+Guía de funcionamiento  |  P. 16
+Mantenimiento  |  P. 35
+Solución de problemas  |  P. 54
+Información  |  P. 60
+Especificaciones  |  P. 71
+Seguridad del vehículo
+Esta sección incluye información importante para una conducción segura de su vehículo.
+Lea detenidamente esta sección.
+Directrices de seguridad ......................................... P. 3
+Etiquetas de seguridad............................................ P. 6
+Pictogramas................................................................ P. 7
+Precauciones de seguridad .................................. P. 10
+Precauciones de conducción ............................... P. 11
+Accesorios y modificaciones................................ P. 14
+Directrices de seguridad
+Directrices de seguridad  |  Antes de circular
+Seguridad del vehículo
+Asegúrese de que se encuentra física y
+Siga estas directrices para garantizar su seguridad:  |  mentalmente capacitado, sin haber consumido
+● Lleve a cabo todas las inspecciones habituales  |  alcohol ni drogas. Asegúrese de utilizar un casco y
+y periódicas especificadas en este manual del  |  elementos de protección homologados.
+propietario y en la guía de competición.
+● Antes de repostar, detenga el motor y  |  Tómese el tiempo necesario para
+mantenga el vehículo alejado de las chispas y  |  familiarizarse con el vehículo
+las llamas.  |  Dado que cada vehículo es único, tómese el
+● No arranque el motor en un recinto cerrado o  |  tiempo necesario para familiarizarse a fondo con
+parcialmente cerrado. El monóxido de carbono  |  su funcionamiento y la forma en que responde a
+de los gases de escape es tóxico y podría  |  sus órdenes antes de participar con él en una
+resultar mortal.  |  competición.
+Conduzca siempre con el casco puesto  |  Circule sin sobrepasar sus límites
+Se trata de un hecho probado: los cascos y  |  Nunca conduzca más allá de su habilidad personal
+elementos de protección reducen de manera  |  ni más rápido de lo permitido por las
+importante el número y la gravedad de las lesiones  |  circunstancias. El cansancio y la falta de atención
+en la cabeza y otras zonas del cuerpo. Por ello, utilice  |  pueden disminuir su capacidad para actuar con
+siempre casco y el equipo de protección  |  buen criterio y conducir de forma segura.
+homologados. 2 P. 10
+No lleve pasajeros nunca
+No se incluyen asideros, asiento ni reposapiés para
+un pasajero.
+Continuación 3
+Directrices de seguridad
+No conduzca bajo los efectos del  |  Batería de ion litio
+Seguridad del vehículo
+alcohol ni las drogas  |  Si de la batería de ion de litio sale un olor extraño,
+El alcohol o las drogas y la conducción no son  |  estacione el vehículo en un lugar seguro al aire
+compatibles. Una sola copa puede reducir su  |  libre y lejos de objetos inflamables. A continuación,
+capacidad de respuesta ante los continuos cambios  |  pare el motor. Lleve el vehículo a su concesionario
+de condiciones y el tiempo de reacción empeora con  |  para que lo inspeccionen inmediatamente.
+cada copa adicional. Lo mismo sucede al consumir
+drogas. No conduzca bajo los efectos del alcohol ni
+las drogas, y tampoco permita que sus amigos lo
+hagan.
+Mantenga su Honda en condiciones
+seguras
+El mantenimiento correcto del vehículo es
+fundamental para su seguridad. Por ejemplo, un
+tornillo flojo puede ocasionar una avería que
+podría provocarle lesiones graves.
+4
+Directrices de seguridad
+Peligro por monóxido de carbono  |  3 ADVERTENCIA
+Seguridad del vehículo
+Los gases de escape contienen monóxido de
+Arrancar el motor de su vehículo en una
+carbono, un gas incoloro e inodoro que resulta
+zona cerrada o parcialmente cerrada
+venenoso. Respirar monóxido de carbono puede
+puede provocar una rápida acumulación
+provocar la pérdida de consciencia e incluso
+resultar mortal.  |  de monóxido de carbono tóxico.
+Si pone en marcha el motor en un recinto cerrado  |  Respirar este gas incoloro e inodoro
+o parcialmente cerrado, el aire que respira podría  |  puede dejarle inconsciente
+contener una cantidad peligrosa de monóxido de  |  rápidamente o provocarle la muerte.
+carbono.
+Nunca ponga en marcha el vehículo en un garaje  |  Arranque el motor del vehículo
+u otro recinto cerrado.
+únicamente en zonas bien ventiladas y
+al aire libre.
+5
+Etiquetas de seguridad
+Etiquetas de seguridad  |  que pueden ocasionar lesiones graves. Lea
+Seguridad del vehículo  |  atentamente estas etiquetas y no las retire.
+Modelo U  |  Si una etiqueta se despega o se vuelve ilegible,
+Las etiquetas de seguridad e información del  |  póngase en contacto con su distribuidor para
+vehículo le ofrecen información de seguridad  |  obtener una de repuesto.
+importante y le avisan sobre peligros potenciales
+6
+Pictogramas
+Pictogramas
+Seguridad del vehículo
+Modelos ED, GS, LA, CO  |  Lea atentamente las instrucciones del manual
+En las siguientes páginas se describen los  |  del propietario y la guía de competición.
+significados de las etiquetas. Algunas etiquetas
+le avisan sobre peligros potenciales que
+pueden ocasionar lesiones graves. Otras  |  Lea atentamente las instrucciones de la guía
+ofrecen información importante sobre  |  de competición y el manual de taller. Por su
+seguridad. Lea esta información con atención y  |  seguridad, lleve el vehículo solo a su
+no retire las etiquetas.  |  concesionario para que realice las revisiones y
+el mantenimiento.
+Si una etiqueta se despega o se vuelve ilegible,
+PELIGRO (con fondo ROJO)
+póngase en contacto con su concesionario
+Si no sigue las instrucciones, PERDERÁ LA
+para obtener una de repuesto.
+VIDA o RESULTARÁ GRAVEMENTE HERIDO.
+ADVERTENCIA (con fondo NARANJA)
+En cada etiqueta hay un símbolo específico.
+Si no sigue las instrucciones, PODRÍA PERDER
+A continuación, se explica el significado de
+LA VIDA o RESULTAR GRAVEMENTE HERIDO.
+cada símbolo.
+PRECAUCIÓN (con fondo AMARILLO)
+Si no sigue las instrucciones, PODRÍA
+RESULTAR HERIDO.
+Continuación 7
+Pictogramas
+Seguridad del vehículo  |  ETIQUETA DEL TAPÓN DEL RADIADOR
+PELIGRO
+NO ABRIR CUANDO ESTÉ CALIENTE.
+El refrigerante caliente provoca quemaduras.
+La válvula de presión de descarga comienza a abrirse a 1,1 kgf/cm 2 .
+ETIQUETA DEL AMORTIGUADOR TRASERO
+LLENO DE GAS
+No abrir. No calentar.
+ETIQUETA DEL COMBUSTIBLE
+Solo el modelo ED
+Solo gasolina sin plomo
+ETANOL hasta el 10 % por volumen
+8
+Pictogramas
+ETIQUETA DE PRECAUCIÓN CON INFORMACIÓN IMPORTANTE
+Seguridad del vehículo
+• Conductor solamente. Sin pasajeros.
+• Este vehículo se vende tal cual, sin garantía, y el comprador es responsable
+de todos los riesgos en cuanto a calidad y rendimiento. LEA EL MANUAL
+DEL PROPIETARIO.
+• Este vehículo está diseñado y fabricado solo para su utilización en
+competiciones.
+• No cumple las normas federales de seguridad sobre vehículos a motor y su
+utilización por calles, carreteras o autopistas públicas es ilegal.
+• Las leyes estatales prohíben el uso de este vehículo, excepto en carreras o
+eventos de competición organizados en un circuito cerrado y bajo los
+auspicios de un organismo reconocido o con el permiso otorgado por la
+autoridad gubernamental competente.
+• En primer lugar, determine si la competición es legal.
+9
+Precauciones de seguridad
+Precauciones de  |  3 ADVERTENCIA
+Seguridad del vehículo
+seguridad  |  No utilizar casco aumenta la posibilidad
+de sufrir lesiones graves o incluso de
+Equipo de protección  |  perder la vida en caso de colisión.
+Asegúrese de utilizar un casco y protección ocular
+homologados, así como los accesorios de  |  Asegúrese de utilizar siempre un casco
+conducción adecuados.  |  y protección ocular homologados, así
+como elementos de protección.
+# Casco
+Homologado, de alta visibilidad y del tamaño  |  # Accesorios de protección
+adecuado para su cabeza.  |  Tanto si realiza prácticas para mejorar sus
+● Debe adaptarse con comodidad pero con  |  habilidades como si participa en una competición,
+seguridad, abrochado con la cinta de mentón.  |  utilice siempre un casco homologado, protección
+● Protección ocular homologada.  |  para los ojos y prendas de seguridad adecuadas.
+10
+Precauciones de conducción
+Precauciones de  |  Estacionamiento
+Seguridad del vehículo
+conducción  |  CRF450RX
+● Estacione en una superficie firme y nivelada.
+Rodaje  |  ● Si debe estacionar en una superficie ligeramente
+inclinada o poco firme, hágalo de forma que el
+Durante el primer día de funcionamiento o los  |  vehículo no pueda moverse ni volcar.
+primeros 25 km, siga estas directrices para  |  ● Asegúrese de que las piezas que alcanzan
+garantizar la fiabilidad y las prestaciones futuras  |  temperaturas elevadas no puedan entrar en
+del vehículo.  |  contacto con materiales inflamables.
+● Evite arrancar con el acelerador a fondo y  |  ● No toque el motor, el silenciador, los frenos ni
+también las aceleraciones bruscas.  |  ninguna otra pieza que alcance temperaturas
+● Evite las frenadas bruscas y las reducciones de  |  elevadas hasta que se hayan enfriado.
+marcha rápidas.
+● Conduzca con prudencia.
+# Estacionamiento con el caballete lateral
+Este mismo procedimiento se debe seguir cada  |  1. Pare el motor.
+vez que:  |  2. Baje el caballete lateral.
+● Se sustituya el pistón  |  3. Incline lentamente el vehículo hacia la izquierda hasta
+que el peso descanse sobre el caballete lateral.
+● Se sustituyan los segmentos
+4. Gire el manillar completamente hacia la
+● Se sustituya el cilindro
+izquierda.
+● Se sustituya el cigüeñal o los cojinetes del
+u Si gira el manillar a la derecha, se reduce la
+cigüeñal
+estabilidad y puede hacer que el vehículo
+vuelque.
+Continuación 11
+Precauciones de conducción
+Directrices sobre el repostaje y el
+Seguridad del vehículo
+combustible
+Siga estas directrices para proteger el motor y el
+sistema de combustible:
+● Utilice únicamente gasolina sin plomo.
+● Esta debe ser del octanaje recomendado. Si
+utiliza una gasolina con un octanaje menor, el
+rendimiento del motor disminuirá.
+● No utilice combustibles que contengan una
+elevada concentración de alcohol. 2 P. 70
+● No utilice gasolina pasada o sucia, ni mezclas
+de aceite/gasolina.
+● Evite la entrada de suciedad o agua en el
+depósito de combustible.
+12
+Precauciones de conducción
+Control de par seleccionable Honda  |  y el estado de la pista, así como sus habilidades y
+su propio estado.  |  Seguridad del vehículo
+Si el control de par seleccionable Honda (control
+de par) detecta que la rueda trasera gira durante la
+Para garantizar un correcto funcionamiento del
+aceleración, el sistema limitará la cantidad de par
+control de par, utilice siempre los neumáticos y
+aplicada a la rueda trasera en función del nivel de
+piñones recomendados.
+control de par seleccionado.
+El control de par permite que la rueda gire durante
+la aceleración a niveles bajos de control de par.
+Seleccione el nivel apropiado para su destreza y
+las condiciones de conducción.
+El control de par no funciona durante la
+desaceleración y no evitará que la rueda trasera
+derrape por un frenado del motor. No desacelere
+de forma repentina, particularmente si conduce
+por superficies resbaladizas.
+Es posible que el control del par no compense el
+mal estado de la pista ni un accionamiento brusco
+del acelerador. Al accionar el acelerador, tenga
+siempre en cuenta las condiciones meteorológicas
+13
+Accesorios y modificaciones
+Accesorios y  |  No enganche un remolque ni acople un sidecar al
+Seguridad del vehículo  |  vehículo. Su vehículo no se diseñó para estos
+modificaciones  |  accesorios y su utilización puede afectar
+gravemente a la maniobrabilidad del vehículo.
+Recomendamos encarecidamente que no añada
+ningún accesorio que Honda no haya diseñado
+No intente modificar el vehículo para llevar a un
+específicamente para su vehículo y que no realice
+pasajero. El subchasis no está diseñado para
+modificaciones que afecten a su diseño original.
+transportar el peso adicional de un pasajero.
+Hacerlo podría afectar a la seguridad de la
+motocicleta.
+3 ADVERTENCIA
+Los accesorios o las modificaciones
+inadecuados podrían provocar un
+accidente en el que podría sufrir
+lesiones graves o incluso perder la vida.
+Siga todas las instrucciones de este
+manual del propietario relacionadas
+con los accesorios y las modificaciones.
+14
+Seguridad del vehículo
+15
+Ubicación de los componentes
+Puño del acelerador
+Guía de funcionamiento
+Maneta de freno delantero
+Mirilla de comprobación del nivel de
+aceite del motor
+Pedal de freno trasero
+16
+Maneta de embrague
+Guía de funcionamiento
+Tapón de llenado de
+combustible ( P.33 )
+Mando de ralentí rápido
+(régimen del motor a ralentí)
+( P.28 )
+Fusible principal ( P.58 )
+Batería ( P.52 )
+Palanca de cambios ( P.32 )
+Caballete lateral de la CRF450RX
+17
+Indicadores
+Testigo de avería (MIL) de la PGM-FI (ámbar)
+Guía de funcionamiento  |  Se enciende brevemente cuando se arranca el motor.
+Si se enciende mientras el motor está en marcha: ( P.56 )
+Indicador de modo del motor (azul)
+Indica el modo seleccionado cuando se arranca el motor con
+una secuencia de uno, dos o tres parpadeos, según el número
+de modo. Indica el modo seleccionado. ( P.20 )
+Indicador del sistema de control de lanzamiento (morado)
+Indica el estado del sistema de control de lanzamiento HRC.
+( P.25 )
+Indicador del control del par (verde)
+Indica el modo seleccionado cuando se arranca el motor con
+tres secuencias de uno, dos o tres parpadeos, según el
+número de modo. El indicador del control del par verde se
+enciende mientras el sistema está en funcionamiento.
+18
+Interruptores
+Botón de selección del modo del motor ( P.20 )  |  Botón de arranque ( P.28 )
+Guía de funcionamiento
+Botón del control del par ( P.23 )  |  Botón de parada del motor ( P.31 )
+Continuación 19
+Interruptores (Continuación)
+Guía de funcionamiento # Modo del motor  |  Indicador de modo del motor (azul)
+La potencia del motor se puede cambiar en
+función de las condiciones del circuito con el
+botón de selección del modo del motor.
+● Modo 1 de PGM-FI: ajuste estándar
+● Modo 2 de PGM-FI: ajuste suave (menor
+respuesta del acelerador respecto del
+ajuste estándar)
+● Modo 3 de PGM-FI: ajuste agresivo
+(mayor respuesta del acelerador respecto
+del ajuste estándar)  |  Botón de selección del modo
+del motor
+20
+# Modo actual
+Arranque el motor y pulse el botón de  |  El indicador de modo del motor señala el modo  |  Guía de funcionamiento
+selección del modo del motor con el vehículo  |  seleccionado cuando se arranca el motor con
+parado. El indicador de modo del motor,  |  una secuencia de uno, dos o tres parpadeos,
+situado sobre el botón de selección del modo  |  según el número de modo.
+del motor, indica el modo seleccionado con  |  Modo 1 de PGM-FI:
+tres secuencias de uno, dos o tres parpadeos  |  el indicador azul parpadea
+en azul, según el número de modo.  |  una vez y lo repite 3 veces.
+Indicador de modo del motor (azul)
+Modo 2 de PGM-FI:
+el indicador azul parpadea
+2 veces y lo repite 3 veces.
+Modo 3 de PGM-FI:
+el indicador azul parpadea
+3 veces y lo repite 3 veces.
+Si el indicador de modo del motor permanece
+encendido o no se enciende cuando debiera,
+Botón de selección del modo  |  acuda a su concesionario para realizar una
+del motor  |  comprobación del problema.
+Continuación 21
+Interruptores (Continuación)
+Selección de modo
+Guía de funcionamiento  |  Modo 1 de la PGM-FI
+a Arranque el motor.
+b Con el vehículo parado y el acelerador
+cerrado, mantenga pulsado el botón de
+selección del modo del motor durante al
+Modo 2 de la PGM-FI
+menos 1 segundo.
+Asegúrese de que el mando de ralentí rápido
+está presionado. ( P.28 )
+Si el mando de ralentí rápido no está
+presionado, el modo del motor no cambiará.  |  Modo 3 de la PGM-FI
+c Suelte el botón de selección del modo del
+motor. El indicador de modo del motor
+indicará el modo seleccionado mediante el
+número de veces que parpadea en azul.
+d Repita los pasos 2 – 3 hasta que se indique el
+modo deseado.
+22
+Control de par seleccionable Honda
+Puede seleccionar, activar o desactivar el nivel  |  # Modo actual
+de control de par según sus habilidades y las  |  Arranque el motor. El indicador del control del
+condiciones de la pista mediante el botón del  |  par señala el modo seleccionado haciendo  |  Guía de funcionamiento
+control de par.  |  parpadear el número de modo 3 veces.
+Modo del control del par  |  Derrape de la rueda trasera
+El indicador del control del par verde se  |  1  |  Alto
+enciende mientras el sistema está en  |  2  |  Medio
+funcionamiento.  |  3  |  Bajo
+OFF  |  No funciona
+Indicador del control del par (verde)
+Modo 1 del control del par:
+El indicador parpadea
+brevemente una vez y lo
+repite 3 veces.
+Modo 2 del control del par:
+El indicador parpadea
+brevemente 2 veces y lo
+repite 3 veces.
+Modo 3 del control del par:
+Botón del control del par  |  El indicador parpadea
+brevemente 3 veces y lo
+repite 3 veces.
+Desactivación del control del par:
+El indicador no se enciende.
+Continuación 23
+Control de par seleccionable Honda (Continuación)
+# Selección de modo
+1. Arranque el motor.  |  Modo 1 del control del par
+Guía de funcionamiento 2. Pulse el botón del control del par para
+seleccionar un nivel de modo. El modo
+Modo 2 del control del par  |  Desactivación del control del par
+cambia cada vez que se pulsa el botón.
+u El indicador del control del par (verde)
+señala el modo seleccionado mediante el  |  Modo 3 del control del par
+número de veces que parpadea.
+u El último modo seleccionado se guarda.  |  : pulsar el botón del control del par
+u El ajuste de fábrica es el modo 2.  |  : mantener pulsado el botón del control del par
+u El control del par se activa y desactiva
+manteniendo presionado el botón del
+control del par.
+24
+Sistema de control de lanzamiento HRC
+El sistema de control de lanzamiento HRC  |  u El sistema se puede desactivar si abre y
+reduce el deslizamiento y ayuda a lograr un  |  cierra el acelerador bruscamente.
+arranque eficaz al reducir temporalmente el  |  u Si el ralentí es bajo, el sistema podría no
+Guía de funcionamiento
+límite de rpm durante el arranque.  |  entrar en modo de espera. Establezca el
+ralentí a las rpm estándar.
+Puede seleccionar el nivel de límite de rpm mientras el  |  u Para desactivar el sistema, pulse rápidamente el
+sistema está en funcionamiento en función de sus  |  botón de arranque. El indicador del sistema de
+habilidades y de las condiciones de la pista.  |  control de lanzamiento deja de parpadear.
+Botón de arranque
+# Para cambiar el nivel
+a Arranque el motor y espere más de 2 segundos.
+b Cierre completamente el acelerador y
+mantenga pulsado el botón de arranque
+mientras presiona la maneta de embrague
+hasta que parpadee el indicador del sistema de
+control de lanzamiento (morado).
+u Este sistema entra en modo de espera y el
+indicador del sistema de control de
+lanzamiento indicará el nivel seleccionado
+mediante un parpadeo (morado).
+Indicador del sistema de control de
+u Desde el modo de espera, se inicia el
+lanzamiento (morado)
+control para reducir el límite de rpm.
+Continuación 25
+Sistema de control de lanzamiento HRC (Continuación)
+c Mantenga pulsado el botón de arranque. El
+Nivel 1
+nivel cambia cada vez que mantiene el botón
+Guía de funcionamiento pulsado.
+u El último nivel seleccionado se guarda.
+Nivel 2
+u El ajuste de fábrica es el nivel 2.
+d Para seguir usando el sistema, consulte el
+paso 2 del apartado "Para utilizar el sistema"
+Nivel 3
+(siguiente página). Para desactivar el sistema,
+pulse rápidamente el botón de arranque. El
+indicador del sistema de control de  |  Mantener pulsado el botón de arranque
+lanzamiento deja de parpadear y el sistema se  |  mientras el sistema de control de lanzamiento
+desactiva.  |  está en espera
+Límite de rpm durante el  |  Parpadeos del indicador
+Nivel
+control de lanzamiento  |  del sistema de control de lanzamiento
+1  |  Alto  |  1
+2  |  Medio  |  2
+3  |  Bajo  |  3
+26
+# Para utilizar el sistema  |  u Cuando el sistema de control de
+lanzamiento está funcionando, las
+a Realice los pasos 1 y 2 del apartado "Para
+siguientes condiciones lo desactivarán:
+cambiar el nivel".  |  Guía de funcionamiento
+● Vehículo en tercera marcha.
+b Cambie a primera o segunda marcha.
+● El acelerador está completamente
+c Al realizar el lanzamiento, abra el acelerador
+cerrado
+hasta la mitad o más. El sistema se pone en
+d Asegúrese de que el indicador del sistema de
+funcionamiento.
+u Se controla el límite de rpm reducido, que  |  control de lanzamiento está apagado. Si no lo
+volverá gradualmente a la normalidad en  |  está, el sistema no se desactivará. Pulse
+unos segundos. Cuando el límite de rpm  |  rápidamente el botón de arranque para
+vuelva a la normalidad, el sistema se  |  desactivar el sistema.
+desactiva.
+u El indicador del sistema de control de
+lanzamiento se enciende (morado)
+mientras el sistema está en funcionamiento.
+u Si abre el acelerador hasta la mitad o más
+antes de arrancar, el sistema de control se
+detendrá antes de arrancar y no surtirá
+ningún efecto.
+u Si cierra el acelerador inmediatamente, el
+sistema podría no funcionar.
+27
+Arranque del motor
+Arranque el motor con el siguiente procedimiento.  |  Para volver a arrancar el motor cuando está
+caliente, siga el procedimiento indicado en
+Guía de funcionamiento  |  "Arranque con el motor caliente".
+AVISO
+• Si el motor no arranca a los 5 segundos, espere
+10 segundos antes de volver a intentarlo para
+que se recupere la tensión de la batería.
+• Un periodo prolongado en ralentí rápido y una
+subida repentina de revoluciones pueden dañar el
+motor y el sistema de escape.
+• Accionar bruscamente el acelerador o
+mantener el ralentí rápido durante más de
+5 minutos puede causar decoloraciones en el
+tubo de escape.
+28
+Este vehículo no tiene inhibidor de arranque.  |  Arranque con el motor frío
+Presione completamente la maneta de  |  a Ponga la caja de cambios en punto muerto.
+embrague cuando pulse el botón de arranque.  |  b Si la temperatura es de 10 °C o inferior, tire del  |  Guía de funcionamiento
+u El vehículo se puede mover al pulsar el botón  |  mando de ralentí rápido completamente hacia
+de arranque con una marcha engranada  |  fuera.
+aunque la maneta de embrague no esté  |  c Con el acelerador cerrado por completo,
+presionada.  |  presione completamente la maneta de
+embrague y pulse el botón de arranque.
+3 ADVERTENCIA
+d Aproximadamente un minuto después de
+Al pulsar el botón de arranque con una  |  arrancar el motor, tire del mando de ralentí
+marcha engranada, aunque la maneta de  |  rápido completamente hasta la posición de
+embrague no esté presionada, el vehículo se  |  apagado.
+puede mover repentinamente, lo que puede
+provocar lesiones graves o la muerte.  |  Arranque con el motor caliente
+a Ponga la caja de cambios en punto muerto.
+Presione siempre la maneta de  |  b Con el acelerador cerrado por completo,
+embrague cuando pulse el botón de  |  presione completamente la maneta de
+arranque.  |  embrague y pulse el botón de arranque.
+Continuación 29
+Arranque del motor (Continuación)
+Arranque del motor cuando está  |  Al arrancar el motor, el testigo de avería (MIL)
+demasiado cargado de combustible  |  de la PGM-FI (ámbar) permanecerá encendido
+Guía de funcionamiento debido al accionamiento repetido del  |  durante 2 segundos y luego se apagará. A
+acelerador u otras razones  |  continuación, el indicador de modo del motor
+a Ponga la caja de cambios en punto muerto.  |  (azul) indicará el modo actual del motor
+b Con el acelerador completamente abierto,  |  durante 0,8 segundos. Luego, se apagará. Si el
+presione la maneta de embrague y pulse el  |  testigo de avería (MIL) de la PGM-FI o el testigo
+botón de arranque durante 5 segundos para  |  de modo del motor no se encienden cuando
+descargar el exceso de combustible del motor.  |  deben, solicite a su concesionario que
+c Con el acelerador cerrado por completo,  |  compruebe la causa del problema.
+presione completamente la maneta de
+embrague y pulse el botón de arranque.
+# Si el motor no arranca ( P.55 )
+Testigo de avería (MIL) de la PGM-FI (ámbar)/
+indicador de modo del motor (azul)
+30
+Al detener el motor  |  # Parada del motor de emergencia
+# Parada del motor normal  |  Para detener el motor en caso de emergencia,
+pulse y mantenga pulsado el botón de parada  |  Guía de funcionamiento
+a Ponga la caja de cambios en punto muerto.
+b Mantenga pulsado el botón de parada del  |  del motor.
+motor hasta que se detenga completamente.
+Botón de parada del motor
+31
+Cambio de marchas
+La caja de cambios de su vehículo dispone de
+5 marchas de avance en un patrón de cambio
+Guía de funcionamiento de una abajo, cuatro arriba.
+5
+4 
+3 
+2
+N
+1
+32
+Repostaje
+Respiradero  |  Tipo de combustible: Solo gasolina sin
+Tuerca del vástago  |  plomo.
+de dirección  |  Índice de octanaje: Su vehículo se ha  |  Guía de funcionamiento
+diseñado para usar combustible con un índice
+de octanaje (RON) de 95 o superior.
+CRF450RX
+Capacidad del depósito: 8,0 L.
+CRF450R/RWE
+Capacidad del depósito: 6,3 L
+Borde inferior
+del cuello de
+llenado  |  # Repostaje y sugerencias sobre el
+combustible ( P.12 )
+Tapón de llenado de combustible
+Apertura del tapón de llenado de
+Asegúrese de no dañar la bomba de
+combustible
+combustible mientras se llena el depósito de
+a Extraiga el respiradero de la tuerca del vástago
+combustible.
+de dirección.
+No llene excesivamente el depósito. No deberá
+b Gire el tapón de llenado del combustible hacia
+haber combustible en el cuello de llenado.
+la izquierda y retírelo.
+Continuación 33
+Repostaje (Continuación)
+Cierre del tapón de llenado de
+combustible
+Guía de funcionamiento a Después de repostar, cierre firmemente el
+tapón de llenado de combustible.
+b En seguida, inserte el tubo de respiración en la
+tuerca del vástago de dirección.
+3 ADVERTENCIA
+La gasolina es muy inflamable y
+explosiva. Al manipular combustible,
+puede sufrir quemaduras o lesiones
+graves.
+• Pare el motor y procure alejarse del calor,
+las chispas y el fuego.
+• Manipule el combustible solo en
+exteriores.
+• Limpie inmediatamente el líquido
+derramado.
+34
+Mantenimiento
+Lea cuidadosamente las secciones "Importancia del mantenimiento", "Fundamentos del
+mantenimiento" y la guía de competición antes de intentar llevar a cabo alguna de las
+tareas de mantenimiento. Consulte la guía de competición para conocer los datos sobre
+mantenimiento.
+Importancia del mantenimiento ......................... P. 36
+Programa de mantenimiento .............................. P. 38
+Fundamentos del mantenimiento ...................... P. 42
+Desmontaje e instalación de los componentes del
+carenado ................................................................. P. 52
+Batería.......................................................................... P. 52
+Importancia del mantenimiento
+Importancia del mantenimiento  |  Seguridad del mantenimiento
+Llevar un buen mantenimiento del vehículo es  |  Lea siempre las instrucciones de mantenimiento
+absolutamente esencial para su seguridad y para  |  antes de iniciar cada tarea y asegúrese de que
+proteger su inversión, obtener las máximas prestaciones,  |  dispone de las herramientas y piezas adecuadas, y
+Mantenimiento evitar averías y reducir la contaminación. El
+de que tiene los conocimientos técnicos necesarios.
+mantenimiento es responsabilidad del propietario.
+Nos resulta imposible alertarle de todos los riesgos
+Asegúrese de inspeccionar el vehículo antes de cada
+concebibles que puedan surgir al realizar el
+conducción y realice las comprobaciones periódicas
+especificadas en el programa de mantenimiento. 2 P. 38  |  mantenimiento. Usted es la única persona que puede
+decidir si debe realizar una tarea determinada.
+3 ADVERTENCIA
+Si no dispensa un mantenimiento apropiado  |  Siga estas indicaciones al realizar el mantenimiento.
+● Pare el motor.
+al vehículo o si no corrige un problema
+● CRF450RX
+antes de conducir, puede tener un accidente
+Coloque el vehículo sobre una superficie firme
+en el que puede sufrir lesiones graves o  |  y nivelada con el caballete lateral, un soporte
+incluso perder la vida.  |  de trabajo opcional o un caballete de
+mantenimiento que le permita apoyarlo.
+Siga siempre las recomendaciones de  |  CRF450R/RWE
+inspección y mantenimiento, así como  |  Coloque el vehículo sobre una superficie firme
+los programas de este manual del  |  y nivelada con un soporte de trabajo opcional
+propietario y de la guía de competición.  |  o un caballete de mantenimiento que le
+permita apoyarlo.
+36
+Importancia del mantenimiento
+● Deje que se enfríe el motor, el silenciador, los
+frenos y otros elementos que estén calientes
+antes de realizar la revisión. De lo contrario,
+podría sufrir quemaduras.
+● Ponga en marcha el motor solo cuando se le
+Mantenimiento
+indique y hágalo en una zona bien ventilada.
+37
+Programa de mantenimiento
+Para mantener la seguridad y la fiabilidad del  |  CRF450RX
+vehículo, es necesario llevar a cabo inspecciones y  |  Los intervalos de mantenimiento del programa se
+trabajos de mantenimiento periódicos, como se  |  expresan en términos de horas de conducción y
+muestra en el programa de mantenimiento que  |  carreras. Para evitar pasar por alto el
+aparece a continuación.  |  mantenimiento requerido, le aconsejamos que
+Mantenimiento
+mantenga un registro del número de carreras o de
+Los puntos de las listas del programa de  |  horas de conducción.
+mantenimiento pueden realizarse con  |  CRF450R/RWE
+conocimientos básicos de mecánica y herramientas  |  Los intervalos de mantenimiento del programa se
+manuales. Los procedimientos para estos  |  expresan en series y horas de conducción. Para
+elementos se explican en la guía de competición.  |  evitar pasar por alto el mantenimiento requerido,
+El programa de mantenimiento incluye también  |  le aconsejamos que mantenga un registro del
+puntos que implican procedimientos más  |  número de series o de horas de conducción.
+complicados y que pueden requerir herramientas y
+equipos especiales. Por tanto, recomendamos  |  Si no se siente capaz de llevar a cabo una tarea
+solicitar a su concesionario que realice estos  |  determinada o si necesita ayuda, recuerde que el
+trabajos a menos que disponga de conocimientos  |  concesionario Honda es el lugar donde mejor
+avanzados de mecánica y de las herramientas  |  conocen su vehículo y está completamente
+necesarias. Los procedimientos para los elementos  |  equipado para su mantenimiento y reparación. Si
+de este programa se incluyen en un manual de  |  decide realizar el mantenimiento usted mismo,
+taller oficial de Honda que está a la venta en su  |  emplee solo piezas originales de Honda o sus
+concesionario.  |  equivalentes para las reparaciones o sustituciones,
+a fin de garantizar la mayor calidad y fiabilidad.
+38
+Programa de mantenimiento
+Efectúe la inspección previa a la conducción ( 2 P. 42) en cada periodo indicado en el programa de mantenimiento.
+Cada carrera o  |  Cada 3 carreras o Cada 6 carreras o Cada 9 carreras o Cada 12 carreras o
+CRF450R/
+aproximadamente aproximadamente aproximadamente aproximadamente aproximadamente
+RWE
+FRECUENCIA  |  2,5 horas  |  7,5 horas  |  15,0 horas  |  22,5 horas  |  30,0 horas
+NOTA
+ELEMENTOS  |  Cada carrera o  |  Cada 2 carreras o Cada 4 carreras o Cada 6 carreras o Cada 8 carreras o
+CRF450RX aproximadamente aproximadamente aproximadamente aproximadamente aproximadamente
+3,5 horas  |  7,5 horas  |  15,0 horas  |  22,5 horas  |  30,0 horas  |  Mantenimiento
+Línea de combustible  |  NOTA 6
+Filtro de la bomba de combustible  |  NOTA 6
+Funcionamiento del acelerador
+Filtro de aire  |  NOTA 1
+Respiradero del cárter
+Bujía
+Holgura de válvulas/sistema de descompresión NOTA 4
+Aceite del motor  |  NOTAS 3 Y 5
+Filtro de aceite de motor  |  NOTA 3
+Régimen de ralentí del motor
+RECOMENDAMOS REALIZAR EL MANTENIMIENTO DE ESTOS ELEMENTOS CONSULTANDO EL MANUAL
+DE TALLER OFICIAL DE HONDA.
+Este programa de mantenimiento se basa en condiciones de conducción normales. Las motocicletas
+sometidas a un uso intensivo requieren un mantenimiento más frecuente.
+Leyenda de mantenimiento
+: Inspeccionar (limpiar, ajustar, lubricar o reemplazar si fuera necesario)
+: Lubricar
+: Reemplazar
+: Limpiar
+Continuación 39
+Programa de mantenimiento
+Cada carrera o  |  Cada 3 carreras o Cada 6 carreras o Cada 9 carreras o Cada 12 carreras o
+CRF450R/RWE aproximadamente aproximadamente aproximadamente aproximadamente aproximadamente
+FRECUENCIA  |  2,5 horas  |  7,5 horas  |  15,0 horas  |  22,5 horas  |  30,0 horas
+NOTA
+ELEMENTOS  |  Cada carrera o  |  Cada 2 carreras o Cada 4 carreras o Cada 6 carreras o Cada 8 carreras o
+CRF450RX aproximadamente aproximadamente aproximadamente aproximadamente aproximadamente
+3,5 horas  |  7,5 horas  |  15,0 horas  |  22,5 horas  |  30,0 horas
+Mantenimiento Pistón y segmentos
+Bulón del pistón
+Refrigerante del radiador  |  NOTA 2
+Sistema de refrigeración
+Cadena de transmisión
+Deslizadera de la cadena de
+transmisión
+Rodillo de la cadena de
+transmisión
+Piñón
+Piñón conducido
+Líquido de frenos  |  NOTA 2
+Desgaste de las pastillas de freno
+Sistema de frenos
+40
+Programa de mantenimiento
+Cada carrera o  |  Cada 3 carreras o Cada 6 carreras o Cada 9 carreras o Cada 12 carreras o
+CRF450R/RWE aproximadamente aproximadamente aproximadamente aproximadamente aproximadamente
+FRECUENCIA  |  2,5 horas  |  7,5 horas  |  15,0 horas  |  22,5 horas  |  30,0 horas
+NOTA
+ELEMENTOS  |  Cada carrera o  |  Cada 2 carreras o Cada 4 carreras o Cada 6 carreras o Cada 8 carreras o
+CRF450RX aproximadamente aproximadamente aproximadamente aproximadamente aproximadamente
+3,5 horas  |  7,5 horas  |  15,0 horas  |  22,5 horas  |  30,0 horas
+Líquido del embrague  |  NOTA 2  |  Mantenimiento
+Sistema de embrague  |  NOTA 5
+Cables de control
+Tubo de escape/silenciador
+Suspensión
+Basculante/bieletas del
+amortiguador
+Aceite de la horquilla  |  NOTA 3
+Tuercas, tornillos, fijadores
+Llantas/Neumáticos
+Rodamientos de la pipa de
+dirección
+Caballete lateral  |  NOTA 7
+Notas: 1 : Limpie después de cada serie en entornos de  |  4 : Inspeccione después de la primera conducción de
+conducción polvorientos.  |  rodaje.
+2 : Realice una sustitución cada 2 años. El trabajo de  |  5 : Cambie el aceite del motor, si se cambian los discos
+sustitución exige conocimientos de mecánica.  |  y las placas del embrague.
+3 : Realice una sustitución después de la primera conducción de rodaje. 6 : Sustituya cada año.
+7 : Solo tipo RX.
+41
+Fundamentos del mantenimiento
+Inspección previa a la circulación  |  ● Intervalo de calor de la bujía, posibles
+acumulaciones de carbonilla y apriete del
+Para garantizar la seguridad, es responsabilidad del  |  terminal del cable de la bujía
+usuario realizar una inspección previa a la  |  ● Estado y limpieza del filtro de aire
+conducción y asegurarse de que se resuelva  |  ● Holgura de la maneta de embrague
+Mantenimiento cualquier problema que pudiera encontrarse. La  |  ● Limpieza del drenaje del respiradero
+inspección previa a la conducción es imprescindible,  |  ● Estado del rodamiento de la pipa de dirección y
+no solo por razones de seguridad, sino porque  |  otras piezas relacionadas
+● Funcionamiento del acelerador
+cualquier avería, aunque solo sea un neumático
+● Estado y presión de inflado de los neumáticos
+pinchado, puede ocasionar serios problemas.
+● Apriete de los radios
+● Apriete de los bloqueos de las llantas
+Consulte la guía de competición para conocer los
+● Funcionamiento de las suspensiones delantera y trasera
+procedimientos.
+● Funcionamiento de los frenos delantero y trasero
+● Holgura y lubricación de la cadena de transmisión
+La conducción de un vehículo en competiciones
+● Estado de las deslizaderas y los rodillos de la
+puede ser muy dura, por lo que es importante que lo  |  cadena de transmisión
+inspeccione adecuadamente y solucione cualquier
+● Apriete del tubo de escape/silenciador
+problema que encuentre antes de competir.  |  Apriete de todas las piezas posibles (por ejemplo,
+●
+tornillos de la culata, tornillos/tuercas de montaje
+Compruebe los siguientes aspectos antes de conducir:  |  del motor, tuercas del eje, tornillos del soporte
+● Nivel de aceite del motor  |  del manillar, tornillos de bloqueo del puente de la
+● Estado de la línea de combustible  |  horquilla, tensor de la cadena, contratuercas,
+● Nivel del refrigerante  |  tuerca/tornillo del rodillo de la cadena de
+● Estado del sistema de refrigeración y los manguitos  |  transmisión y conectores del mazo de cables)
+● Funcionamiento del testigo de avería (MIL) de la PGM-FI
+42
+Fundamentos del mantenimiento
+Mantenimiento entre carreras/series y
+entrenamientos
+CRF450RX
+Después del entrenamiento o entre carreras tiene
+la oportunidad de realizar revisiones y ajustes  |  Mantenimiento
+adicionales.
+CRF450R/RWE
+Después del entrenamiento o entre series tiene la
+oportunidad de realizar revisiones y ajustes
+adicionales.
+• Limpie la suciedad acumulada debajo de los  |  • Asegúrese de que los tornillos y las tuercas de
+guardabarros y las ruedas, los componentes de  |  los piñones están seguros.
+la suspensión, los puños, los controles y las
+• Limpie los laterales de la cadena de
+estriberas. Puede utilizar un cepillo rígido de
+transmisión con un cepillo rígido de limpieza
+limpieza de piezas de nailon.
+de piezas de nailon. Lubrique y ajuste la
+• Compruebe la presión de los neumáticos.  |  cadena según sea necesario.
+• Revise la tensión de los radios y asegúrese de
+que los bloqueos de la llanta están fijados.  |  No realice el mantenimiento mientras el motor
+esté en funcionamiento. Podrían ocasionarse
+lesiones en los dedos o las manos.
+Continuación 43
+Fundamentos del mantenimiento
+• Después del ajuste, compruebe que las marcas  |  • Levante del suelo la rueda delantera y emplee
+de referencia del tensor de la cadena están en  |  los tornillos de liberación de presión para
+la misma posición en cada lado. Esto asegurará  |  liberar la presión acumulada en las horquillas.
+que la rueda trasera esté bien alineada y  |  Esta presión es causada por la acción normal
+permitirá el máximo rendimiento del freno de  |  de la horquilla durante la conducción.
+Mantenimiento
+disco trasero.
+Tornillo de liberación de presión
+El mantenimiento de una correcta alineación de las
+ruedas también extenderá la vida útil de las
+pastillas de freno.
+Marcas de referencia del tensor de la cadena
+Apriete los tornillos de liberación de presión al par
+especificado:
+Par: 1,3 N·m (0,1 kgf·m)
+44
+Fundamentos del mantenimiento
+Mantenimiento después de la  |  Asegúrese de que los dedos no queden atrapados
+competición  |  entre la cadena y los piñones.
+Para el rendimiento a largo plazo de su vehículo,  |  Retire la cadena de transmisión para limpiarla y lubricarla.
+es importante seguir un programa de  |  Asegúrese de limpiar la cadena y de que esté seca
+mantenimiento constante. Le recomendamos que  |  Mantenimiento
+antes de lubricarla.
+comience el siguiente ciclo de mantenimiento
+inmediatamente después de cada competición.
+# Lubricación después de la carrera
+Aplique una capa ligera de aceite inhibidor de
+óxido al piñón y cualquier parte del chasis o motor
+donde se haya caído la pintura.
+Esto evitará que se oxide el metal expuesto.
+Aplique más cantidad de aceite inhibidor de óxido
+si en la competición ha habido mucha humedad o
+barro. Asegúrese de evitar salpicar aceite cerca de
+las pastillas de freno o los discos del freno.
+# Limpieza habitual
+Si su vehículo solo está ligeramente sucio, es mejor
+limpiarlo a mano con ayuda de un cepillo de
+nailon de cerda dura y paños limpios.
+Continuación 45
+Fundamentos del mantenimiento
+Asegúrese de que los dedos no queden atrapados  |  Sustitución de piezas
+entre la cadena y los piñones.
+Utilice siempre piezas originales de Honda o sus
+equivalentes para garantizar la fiabilidad y
+Existe una amplia variedad de cepillos de limpieza
+seguridad del vehículo.
+a precio razonable disponibles en diversos
+Mantenimiento
+comercios y ferreterías. Algunos de estos cepillos
+son muy útiles para eliminar la suciedad de los  |  3 ADVERTENCIA
+numerosos recovecos de las piezas metálicas del
+vehículo.  |  La instalación de piezas ajenas a Honda
+Evite usar cepillos rígidos abrasivos sobre las  |  puede hacer que su vehículo resulte
+piezas de plástico o goma.  |  inseguro y provocar un accidente en el
+que puede sufrir lesiones graves o
+Si su vehículo ha estado expuesto al aire del mar o  |  incluso perder la vida.
+al agua salada, enjuáguelo lo antes posible,
+séquelo y aplique lubricante en aerosol a todas las  |  Utilice siempre piezas originales Honda
+piezas metálicas.
+o equivalentes que se hayan diseñado y
+homologado para su vehículo.
+Si decide lavar su vehículo o usar limpiadores,
+consulte "Cuidado de su vehículo". 2 P. 61.
+46
+Fundamentos del mantenimiento
+Batería de ion litio  |  ● Salpicadura de electrolito en la boca:
+u Enjuáguese bien la boca con agua, pero no
+Su vehículo tiene una batería de ion de litio (li-ion). Limpie los  |  se la trague.
+terminales de la batería si tienen suciedad o corrosión.
+Este símbolo que hay en la batería  |  3 ADVERTENCIA
+significa que el producto no debe tratarse  |  Mantenimiento
+La batería contiene un disolvente
+como un residuo doméstico.
+orgánico inflamable como electrolito.
+AVISO
+La eliminación inadecuada de la batería puede ser  |  Si la batería se manipula de forma
+perjudicial para el medio ambiente y la salud  |  incorrecta, puede sufrir quemaduras o
+pública.
+lesiones graves.
+Para obtener instrucciones adecuadas sobre su
+eliminación, consulte siempre la normativa local.
+● Mantenga la batería alejada del
+# Qué hacer en caso de emergencia  |  calor, las chispas y las llamas.
+Si se presenta alguna de las siguientes situaciones,  |  ● Mantenga la batería fuera del
+acuda al médico inmediatamente.
+alcance de los niños.
+● Salpicadura de electrolito en los ojos:
+● No desmonte ni modifique la batería
+u Lávese los ojos repetidamente con agua
+fría durante al menos 15 minutos. El uso de  |  ni los terminales.
+agua a presión podría dañarle los ojos.  |  ● No cortocircuite la batería con
+● Salpicadura de electrolito en la piel:  |  herramientas de metal ni otros
+u Quítese la ropa salpicada y lave bien la piel  |  objetos de metal.
+con agua.
+● No someta la batería a impactos.
+Continuación 47
+Fundamentos del mantenimiento
+# Limpieza de los terminales de la batería  |  AVISO
+1. Quite la batería. 2 P. 52  |  La instalación de accesorios eléctricos que no sean
+2. Si los terminales comienzan a oxidarse y están  |  de marca Honda puede sobrecargar el sistema
+recubiertos de una sustancia blanca, lávelos  |  eléctrico, descargar la batería y posiblemente dañar
+con agua caliente y límpielos.  |  el sistema.
+Mantenimiento
+3. Si los terminales están muy oxidados, límpielos
+y frótelos con un cepillo de alambre o papel de  |  Fusibles
+lija. Utilice gafas de seguridad.
+Los fusibles protegen los circuitos eléctricos de su
+vehículo. Si algún elemento eléctrico de su
+vehículo deja de funcionar, compruebe y sustituya
+cualquier fusible que esté fundido. 2 P. 58
+# Inspección y sustitución de fusibles
+Apague el motor para retirar e inspeccionar los
+fusibles. Si un fusible está fundido, sustitúyalo por
+uno del mismo amperaje. Para conocer el
+4. Tras la limpieza, vuelva a instalar la batería.  |  amperaje de los fusibles, consulte
+La batería dispone de una vida útil limitada.  |  "Especificaciones". 2 P. 73
+Consulte con su concesionario el momento de
+sustituir la batería. Sustitúyala siempre por otra
+batería de ion litio del mismo tipo.
+48
+Fundamentos del mantenimiento
+Fusible fundido
+Mantenimiento
+AVISO
+Si sustituye un fusible por otro de mayor amperaje,
+aumentarán las posibilidades de ocasionar daños en
+el sistema eléctrico.
+Si un fusible falla repetidas veces, es posible que
+exista un problema eléctrico. Lleve el vehículo a su
+concesionario para que lo inspeccionen.
+49
+Fundamentos del mantenimiento
+Neumáticos (inspección/sustitución)  |  # Inspección de llantas y vástagos de válvulas
+Compruebe si las llantas presentan daños o radios
+# Comprobación de la presión de los
+flojos. Compruebe también la posición de los
+neumáticos
+vástagos de las válvulas. Un vástago de válvula
+Inspeccione visualmente los neumáticos y utilice un
+Mantenimiento  |  inclinado indica que el tubo se está deslizando
+manómetro para medir la presión antes de conducir.
+dentro del neumático o que el neumático se
+Compruebe siempre la presión de aire de los
+desliza en la llanta. Acuda a su concesionario.
+neumáticos cuando estén fríos.
+Si decide ajustar la presión de los neumáticos para  |  3 ADVERTENCIA
+una determinada situación de conducción, efectúe
+los cambios poco a poco.  |  Conducir con neumáticos excesivamente
+gastados o incorrectamente inflados
+# Inspección de daños  |  puede ocasionar un accidente en el que
+Inspeccione los neumáticos en busca de cortes,  |  podría sufrir lesiones graves o incluso
+rajas o grietas que dejen a la vista la tela o los  |  perder la vida.
+cordajes, o clavos u otros objetos extraños en el
+lateral del neumático o en su banda de rodadura.  |  Siga todas las instrucciones de este
+Inspeccione también los neumáticos en busca de
+manual del propietario relacionadas
+posibles bultos o protuberancias anormales en las
+con el inflado y el mantenimiento de
+paredes laterales.
+los neumáticos.
+# Inspección de desgaste anormal
+Inspeccione los neumáticos en busca de signos de
+desgaste anormal en la superficie de contacto.
+50
+Fundamentos del mantenimiento
+Haga que sustituyan los neumáticos en su
+3 ADVERTENCIA
+concesionario.
+Para conocer los neumáticos recomendados y la  |  La instalación de neumáticos
+presión de los mismos, consulte "Especificaciones".  |  inadecuados en su vehículo puede
+2 P. 71  |  afectar a la conducción y a la
+Mantenimiento
+Siga estas directrices siempre que cambie los  |  estabilidad, lo que podría dar lugar a un
+neumáticos:  |  accidente en el que podría sufrir
+● Utilice los neumáticos recomendados o unos
+lesiones graves o incluso perder la vida.
+equivalentes del mismo tamaño, construcción,
+índice de velocidad y capacidad de carga.
+Emplee siempre neumáticos del tamaño
+● Recuerde sustituir la cámara siempre que
+sustituya el neumático. La cámara vieja  |  y tipo recomendados en este manual
+probablemente se haya estirado y podría fallar  |  del propietario.
+si la instala en un neumático nuevo.
+● Si se pincha o daña una cámara, deberá
+sustituirla lo antes posible. Una cámara
+reparada podría no ofrecer la misma fiabilidad
+que una nueva, y podría fallarle cuando esté
+conduciendo.
+Use una cámara de repuesto equivalente a la
+original.
+51
+Desmontaje e instalación de los componentes del carenado
+Batería  |  Pila
+Marca -
+Terminal negativo  |  Tapa de la batería  |  Terminal
+negativo
+Batería  |  Marca +
+Mantenimiento
+Terminal
+positivo  |  Taco de goma de la batería
+# Extracción
+1. Extraiga los tornillos de la tapa de la
+batería para retirarla.
+2. Desconecte el terminal negativo - de la
+batería.
+3. Desconecte el terminal positivo + de la
+batería.
+Banda de la  |  Tornillos  |  4. Retire la banda de la batería.
+batería
+Terminal positivo  |  5. Desmonte el conjunto de la batería
+asegurándose de que no se caigan las
+tuercas de los terminales.
+6. Separe la batería y el taco de goma.
+52
+Desmontaje e instalación de los componentes del carenado u Batería
+# Instalación  |  6. Instale la tapa de la batería y apriete los
+tornillos al par especificado:
+1. Una la batería y el taco de goma.
+u Asegúrese de que las marcas + y -  |  Par: 5,2 N·m (0,5 kgf·m)
+de la parte inferior del taco de goma
+Mantenimiento
+coinciden con los terminales
+Para saber cómo manipular adecuadamente
+positivo + y negativo - de la batería.
+la batería, consulte "Fundamentos del
+2. Instale el conjunto de la batería.
+mantenimiento". 2 P. 47
+3. Instale y apriete los tornillos de los
+"La batería se agota". 2 P. 57
+terminales de la batería. Conecte siempre
+el terminal positivo + en primer lugar.
+Asegúrese de que los tornillos y las
+tuercas estén apretados.
+4. Apriete el tornillo del terminal positivo +
+y el tornillo del terminal negativo - al par
+especificado:
+Par: 2 N·m (0,2 kgf·m)
+5. Instale la banda de la batería.
+53
+Solución de problemas
+El motor no arranca ............................................... P. 55
+Indicadores de advertencia encendidos o
+intermitentes ......................................................... P. 56
+Testigo de avería (MIL) de la PGM-FI (inyección
+programada de combustible).............................. P. 56
+Problema eléctrico ................................................. P. 57
+La batería se agota ................................................... P. 57
+Fusible fundido .......................................................... P. 58
+El motor no arranca
+El motor de arranque funciona  |  El motor de arranque no
+pero el motor no arranca  |  funciona
+Compruebe los siguientes puntos:  |  Compruebe los siguientes puntos:
+● Compruebe la secuencia de arranque  |  ● Compruebe la secuencia de arranque
+correcta del motor. 2 P. 28  |  correcta del motor. 2 P. 28  |  Solución de problemas
+● Compruebe que tiene gasolina en el  |  ● Compruebe si hay un fusible fundido.
+depósito de combustible.  |  2 P. 58
+● Compruebe si el testigo de averías (MIL)  |  ● Compruebe si está suelta la conexión de
+de la PGM-FI está encendido.  |  la batería ( 2 P. 52) o hay corrosión en los
+terminales de la batería ( 2 P. 48).
+● Compruebe el estado de la batería.
+2 P. 57
+Si el problema continúa, lleve el vehículo al
+concesionario lo antes posible para que lo
+inspeccionen. También puede adquirir el
+manual de taller oficial de Honda en su
+concesionario y consultarlo.
+55
+Indicadores de advertencia encendidos o intermitentes
+Testigo de avería (MIL) de la
+PGM-FI (inyección programada
+de combustible)
+Si se enciende el testigo mientras conduce,
+Solución de problemas es posible que exista un problema grave en
+el sistema de PGM-FI.
+Reduzca la velocidad y lleve el vehículo al
+concesionario lo antes posible para que lo
+inspeccionen. También puede adquirir el
+manual de taller oficial de Honda en su
+concesionario y consultarlo.
+56
+Problema eléctrico
+La batería se agota  |  Si la batería no se recupera tras la recarga,
+consulte a su concesionario.
+Es necesario cargar la batería.  |  AVISO
+Para cargar la batería, se necesita un  |  No realice un arranque con puente, ya que podría
+cargador recomendado por el fabricante de  |  dañar el sistema eléctrico y la batería del vehículo.
+la batería de ion litio.
+Solución de problemas
+Póngase en contacto con su concesionario
+antes de cargar la batería.
+Retire la batería del vehículo antes de
+cargarla.
+AVISO
+Utilice solo un cargador recomendado por el
+fabricante de la batería de ion litio. Usar un cargador
+de batería no recomendado podría causar daños
+permanentes en la batería.
+57
+Problema eléctrico u Fusible fundido
+Fusible fundido  |  Tornillo de sujeción del interruptor
+magnético del motor de arranque
+Interruptor magnético del motor
+Antes de manipular los fusibles, consulte  |  de arranque
+Conector
+“Inspección y sustitución de fusibles”. 2 P. 48
+1. Desconecte el terminal negativo - .
+2 P. 52
+Solución de problemas
+2. Retire la tapa del acoplador.
+3. Desconecte el conector del interruptor
+magnético del motor de arranque.
+4. Extraiga el tornillo de sujeción del
+Tapa del
+interruptor magnético del motor de  |  acoplador
+arranque.
+Tapa del interruptor
+5. Extraiga la tapa del interruptor magnético
+magnético del motor
+del motor de arranque.  |  de arranque
+6. Extraiga el fusible principal y compruebe
+si está fundido. Sustituya siempre un  |  Fusible
+fusible fundido por uno de repuesto de  |  principal
+de repuesto
+las mismas características.
+Fusible principal
+58
+Problema eléctrico u Fusible fundido
+7. Instale la tapa del interruptor magnético
+del motor de arranque.
+8. Instale y apriete el tornillo de sujeción del
+interruptor magnético del motor de
+arranque.
+9. Instale el conector y la tapa del
+acoplador.  |  Solución de problemas
+10. Conecte el terminal negativo - .
+AVISO
+Si un fusible falla repetidas veces, es posible que
+exista un problema eléctrico. Lleve el vehículo a su
+concesionario para que lo inspeccionen.
+59
+Información
+Cuidado de su vehículo......................................... P. 61
+Almacenaje del vehículo ....................................... P. 65
+Transporte del vehículo ........................................ P. 66
+Usted y el medioambiente ................................... P. 68
+Números de serie.................................................... P. 69
+Combustibles que contienen alcohol ................ P. 70
+Cuidado de su vehículo
+Cuidado de su vehículo  |  3. Enjuague el vehículo con abundante agua y
+séquelo con un paño limpio y suave.
+Una limpieza y un pulido frecuentes resultan  |  4. Una vez que el vehículo se seque, lubrique las
+importantes para garantizar la vida útil de su  |  piezas móviles.
+Honda. Un vehículo limpio hace más fácil detectar  |  u Asegúrese de que no se derrame lubricante
+posibles problemas.  |  sobre los frenos ni los neumáticos. Si los discos,
+Durante la limpieza, asegúrese de comprobar si  |  las pastillas, el tambor o las zapatas de freno se
+hay daños, desgaste o fugas de aceite o gasolina.  |  contaminan con aceite, sufren una enorme
+reducción de su capacidad de frenado y pueden  |  Información
+Lavado
+provocar un accidente.
+Espere a que se enfríen el motor, el silenciador, los  |  5. Lubrique la cadena de transmisión inmediatamente
+frenos y las otras partes calientes antes del lavado.  |  después de lavar y secar el vehículo.
+1. Enjuague bien el vehículo con una manguera de jardín  |  6. Aplique una capa de cera para evitar la
+de baja presión para eliminar la suciedad suelta.  |  corrosión.
+2. Si fuera necesario, utilice una esponja o paño suave con  |  u Evite los productos que contengan
+limpiador para eliminar la suciedad de la carretera.
+detergentes agresivos o disolventes
+u Limpie los componentes de plástico con
+químicos. Estos productos pueden dañar
+especial cuidado para evitar que se rayen.
+Evite aplicar agua directamente en el filtro de  |  las piezas metálicas, así como la pintura y
+aire, el silenciador y los componentes eléctricos.  |  los plásticos de su vehículo.
+u No utilice lana de acero para limpiar el chasis,  |  Evite que la cera entre en contacto con los
+ya que podría dañar o decolorar la superficie.  |  neumáticos y los frenos.
+La almohadilla Scotch Brite Hand Pad 7447  |  u Si el vehículo tiene piezas con pintura mate,
+(granate) sirve para eliminar las manchas  |  no aplique cera a estas superficies.
+solamente del chasis de aluminio sin revestir.
+Continuación 61
+Cuidado de su vehículo
+# Precauciones durante el lavado  |  Rodamientos de la pipa de dirección
+Siga estas indicaciones durante el lavado:
+● No utilice máquinas de lavado a alta presión:
+u Los limpiadores de agua a alta presión
+pueden dañar las piezas móviles y las
+eléctricas, haciéndolas inservibles.
+u Si hay agua en la admisión de aire, podría
+introducirse en el cuerpo del acelerador o
+Información entrar en el filtro de aire.
+u Si utiliza agua a alta presión para lavar,
+evite rociar las siguientes áreas:  |  Puntos de pivote de la suspensión
+cilindros maestros del freno
+bomba de embrague  |  ● No dirija el chorro de agua directamente al
+silenciador:
+cadena de transmisión
+u La presencia de agua en el silenciador
+circuito eléctrico
+puede impedir el arranque y provocar la
+botón de parada del motor  |  oxidación del propio silenciador.
+salida del silenciador  |  ● Seque los frenos:
+rodamientos de la pipa de dirección  |  u El agua afecta negativamente a la
+puntos de pivote de la suspensión  |  efectividad de frenado. Tras el lavado,
+cuerpo del acelerador  |  accione los frenos intermitentemente a baja
+área debajo del depósito de  |  velocidad para ayudar a secarlos.
+combustible  |  ● No dirija el chorro de agua hacia el filtro de aire:
+área debajo del asiento  |  u La presencia de agua en el filtro de aire
+puede impedir que arranque el motor.
+62
+Cuidado de su vehículo
+● No utilice ceras ni compuestos para abrillantar  |  AVISO
+en las superficies pintadas en acabado mate:  |  No utilice lana de acero para limpiar el chasis, ya
+u Utilice un paño suave o una esponja,  |  que podría dañar o decolorar la superficie.
+abundante agua y un detergente suave  |  La almohadilla Scotch Brite Hand Pad 7447 (granate)
+para limpiar las superficies pintadas de  |  sirve para eliminar las manchas solamente del chasis
+acabado mate. Séquelas con un paño  |  de aluminio sin revestir.
+suave y limpio.
+Mantenimiento del depósito de
+Mantenimiento del chasis de aluminio  |  combustible de titanio
+Información
+El aluminio se corroe cuando entra en contacto
+CRF450R/RWE
+con el polvo, el lodo y la sal de la carretera.  |  El depósito de combustible está fabricado de
+titanio.
+Para eliminar las manchas, utilice una almohadilla  |  Para eliminar el barro o el polvo, utilice una
+Scotch Brite Hand Pad 7447 (granate) o  |  esponja o un paño suave y un detergente para
+equivalente. Humedezca la almohadilla y pásela  |  acero inoxidable; a continuación, enjuague bien
+por la superficie con movimientos en paralelo a la  |  con agua limpia.
+longitud del chasis.  |  Después del lavado, enjuague con abundante
+Limpie el chasis con una esponja húmeda y  |  agua y seque con un paño limpio.
+detergente suave; a continuación, enjuague bien
+con agua limpia. Seque el chasis con un paño
+limpio suave con movimientos en paralelo a la
+longitud del chasis.
+Continuación 63
+Cuidado de su vehículo
+Tubo de escape y silenciador  |  CRF450RWE
+El tubo de escape y el silenciador son de titanio y
+CRF450R/RX
+acero inoxidable, pero pueden mancharse de
+El tubo de escape y el silenciador son de acero
+barro o polvo.
+inoxidable, pero pueden mancharse de barro o
+polvo.
+Para quitar el barro o el polvo, utilice una esponja
+humedecida y luego enjuague bien con agua
+Para quitar el barro o el polvo, utilice una esponja
+limpia. Seque con gamuzas o un paño suave.
+humedecida y luego enjuague bien con agua
+Información
+limpia. Seque con gamuzas o un paño suave.
+En caso necesario, quite las manchas ocasionadas
+por el calor empleando un pulimento fino de venta
+En caso necesario, quite las manchas ocasionadas
+en los establecimientos del sector. A continuación,
+por el calor empleando un pulimento fino de venta
+enjuague del mismo modo que para quitar el
+en los establecimientos del sector. A continuación,
+barro o el polvo.
+enjuague del mismo modo que para quitar el
+barro o el polvo.  |  AVISO
+Aunque el escape está fabricado con titanio y acero
+AVISO
+inoxidable, puede oxidarse. Elimine todas las marcas
+Aunque el escape está fabricado con acero
+y manchas tan pronto como se detecten.
+inoxidable, puede oxidarse. Elimine todas las marcas
+y manchas tan pronto como se detecten.
+64
+Almacenaje del vehículo
+Almacenaje del vehículo  |  ● Almacene el vehículo en una zona sin
+calefacción, sin humedad, alejada de la luz del
+Si no va a conducir la motocicleta durante un  |  sol y con poca variación de temperatura.
+periodo prolongado de tiempo, siga estas  |  ● Cubra el vehículo con un material poroso. No
+indicaciones:  |  emplee plásticos ni materiales revestidos no
+● Lave el vehículo.  |  transpirables similares que restringen el flujo
+● Vacíe el refrigerante.  |  del aire y hacen que se acumule el calor y la
+● Lubrique la cadena de transmisión.  |  humedad.
+● Coloque el vehículo sobre un soporte de  |  Información
+trabajo opcional o un soporte similar para
+levantar los dos neumáticos del suelo.
+● Libere la presión del combustible y vacíe el
+combustible del depósito en un recipiente
+homologado para la gasolina.
+● Extraiga la batería ( 2 P. 52) para evitar que se
+descargue. Cargue totalmente la batería y, a
+continuación, colóquela en una zona a la
+sombra y bien ventilada.
+u Si deja la batería en la motocicleta,
+desconecte el terminal negativo - para
+evitar que se descargue.
+● Tapone la salida del silenciador con un trapo. A
+continuación, ate una bolsa de plástico al
+extremo del silenciador para evitar que entre la
+humedad.
+Continuación 65
+Transporte del vehículo
+Para volver a utilizar el vehículo tras su almacenaje, Transporte del vehículo
+siga estas directrices:
+● Destape y limpie el vehículo.  |  Si necesita transportar el vehículo, deberá hacerlo
+● Cambie el aceite del motor si han transcurrido  |  en un remolque para motocicletas o en un camión
+más de 4 meses desde que guardó la  |  o remolque de plataforma que disponga de rampa
+motocicleta.  |  de carga o plataforma de elevación, además de
+● Destape el extremo del silenciador y retire el  |  cintas de sujeción adecuadas. Jamás intente
+trapo de la salida del silenciador.  |  remolcar el vehículo con una o ambas ruedas en el
+Información ● Rellene el depósito de combustible con el  |  suelo.
+combustible recomendado. 2 P. 33
+AVISO
+● Cargue la batería según sea necesario. 2 P. 47
+Si remolca el vehículo con una o ambas ruedas en el
+Instale la batería.
+suelo, podría provocar daños graves a la caja de
+● Vierta lentamente una mezcla recomendada
+cambios.
+de refrigerante limpio por el orificio de llenado
+del radiador hasta el cuello de llenado.
+● Aumente la presión del combustible.
+● Efectúe todas las comprobaciones de
+mantenimiento. 2 P. 42.
+66
+Transporte del vehículo
+Si emplea un camión o un remolque para motos  |  Para fijar el vehículo, ate la rueda delantera a la
+para transportar el vehículo, le recomendamos que  |  parte frontal de la plataforma de carga del camión
+siga estas directrices:  |  o del riel del remolque. Enganche los extremos
+inferiores de dos cintas a los ganchos de retención
+● Emplee una rampa de carga.
+de la plataforma de carga del camión o del riel del
+● Libere la presión del combustible y vacíe el
+remolque. Enganche los extremos superiores de
+combustible del depósito en un recipiente  |  las cintas al manillar (uno en el lado derecho y el
+homologado para la gasolina.  |  otro en el izquierdo), cerca de la horquilla.
+● Fije el vehículo en posición vertical con cintas de
+sujeción adecuadas para el transporte de motos. No  |  Compruebe que las cintas no estén en contacto  |  Información
+utilice cuerdas normales, ya que pueden aflojarse y  |  con cables de control ni cables eléctricos.
+provocar la caída del vehículo.
+Apriete ambas cintas hasta que la suspensión
+delantera quede comprimida a la mitad de
+recorrido aproximadamente. No es necesario
+aplicar una presión excesiva porque podría dañar
+las juntas de la horquilla.
+Emplee otra cinta de sujeción para evitar que se
+mueva la parte trasera del vehículo.
+Le recomendamos que no transporte el vehículo
+apoyado sobre un lateral. Podría dañar el vehículo
+y existe el peligro de que se produzcan fugas de
+gasolina.
+67
+Usted y el medioambiente
+Usted y el medioambiente  |  Recicle los residuos
+Ponga el aceite y el resto de residuos tóxicos en
+Ser el propietario y conducir un vehículo puede ser
+recipientes homologados y llévelos a un centro de
+una experiencia espléndida, pero debe contribuir a
+reciclaje. Llame a su ayuntamiento o al servicio de
+proteger la naturaleza.
+medioambiente para que le digan dónde está el
+Elija limpiadores adecuados  |  centro de reciclaje de su localidad y para saber
+cómo desechar los residuos que no pueden
+Emplee detergentes biodegradables cuando lave el
+reciclarse. No deseche el aceite del motor usado
+Información vehículo. Evite los limpiadores de aerosol que
+como basura doméstica ni lo vierta por las cañerías
+contengan clorofluorocarbonos (CFC), ya que causan
+ni en la tierra. El aceite, la gasolina, el refrigerante y
+daños en la capa de ozono protectora de la
+los disolventes de limpieza usados contienen
+atmósfera.
+sustancias venenosas que pueden causar daños a
+los trabajadores del servicio de recogida de
+residuos urbanos, y contaminar el agua que
+bebemos, los lagos, los ríos y el mar.
+68
+Números de serie
+Números de serie
+Los números de serie del bastidor y del motor
+identifican de forma exclusiva su vehículo y son
+necesarios para registrarlo. También puede
+necesitarlos para realizar pedidos de piezas de
+recambio.
+Debería anotar estos números y conservarlos en
+un lugar seguro.  |  Información
+Número del bastidor
+Número del motor
+69
+Combustibles que contienen alcohol
+Combustibles que  |  El uso de gasolina con un contenido superior al
+10 % de etanol puede:
+contienen alcohol  |  ● Dañar la pintura del depósito de combustible.
+● Dañar los tubos de goma de la línea de
+Excepto Brasil
+combustible.
+En algunos países hay disponibles ciertos
+● Provocar corrosión en el depósito de
+combustibles convencionales mezclados con
+combustible.
+alcohol que ayudan a reducir las emisiones y
+● Causar una marcha deficiente.
+cumplir con las normativas medioambientales. Si
+Información
+tiene pensado utilizar combustible mezclado,  |  AVISO
+compruebe que no contenga plomo y que cumple  |  El uso de combustibles mezclados que contienen
+los requisitos de octanaje mínimos.  |  porcentajes superiores a los homologados puede
+dañar los elementos metálicos, de goma y de
+plástico del sistema de combustible.
+Las siguientes mezclas de combustible pueden
+usarse en este vehículo:  |  Si advierte algún síntoma de funcionamiento no
+● Etanol (alcohol etílico) hasta el 10 % por  |  deseado o problemas de rendimiento, pruebe a
+volumen.  |  usar una marca diferente de combustible.
+u La gasolina que contiene etanol puede
+comercializarse bajo el nombre de gasohol.
+70
+Especificaciones
+■ Dimensiones  |  ■ Chasis
+CRF450RX  |  2174 mm  |  CRF450RX  |  90/90-21 54M
+Longitud total  |  Delantero
+CRF450R/RWE  |  2182 mm  |  Tamaño de los  |  CRF450R/RWE 80/100-21 51M
+CRF450RX  |  839 mm  |  neumáticos  |  CRF450RX  |  120/90-18 65M
+Anchura total  |  Trasero
+CRF450R/RWE  |  827 mm  |  CRF450R/RWE 120/80-19 63M
+CRF450RX  |  1280 mm  |  Tipo de
+Altura total  |  Capas sesgadas, con cámara
+CRF450R/RWE  |  1267 mm  |  neumático
+Distancia entre  |  CRF450RX  |  1477 mm  |  CRF450RX  |  DUNLOP AT81F
+Delantero
+ejes  |  CRF450R/RWE  |  1481 mm  |  Neumáticos  |  CRF450R/RWE DUNLOP MX33F
+CRF450RX  |  961 mm  |  recomendados  |  CRF450RX  |  DUNLOP AT81
+Altura del asiento  |  Trasero
+CRF450R/RWE  |  965 mm  |  CRF450R/RWE DUNLOP MX33
+Especificaciones
+CRF450RX  |  427 mm  |  Presión de los Delantero 100 kPa (1,0 kgf/cm 2 )
+Altura de las
+estriberas  |  CRF450R/RWE  |  430 mm  |  neumáticos
+Trasero  |  100 kPa (1,0 kgf/cm 2 )
+(en frío)
+Distancia mínima CRF450RX  |  334 mm
+libre hasta el  |  Gasolina sin plomo
+CRF450R/RWE  |  336 mm  |  Combustible
+suelo  |  RON 95 o superior
+Ángulo de  |  CRF450RX  |  27° 18'  |  Combustible
+Excepto Brasil
+dirección  |  que contiene
+CRF450R/RWE  |  27° 7'  |  ETANOL hasta el 10 % por volumen
+alcohol
+Longitud de  |  CRF450RX  |  115 mm
+Capacidad del depósito  |  CRF450RX  |  8,0 L
+avance  |  CRF450R/RWE  |  114 mm
+de combustible  |  CRF450R/RWE 6,3 L
+71
+Especificaciones
+■ Motor  |  ■ Sistema de refrigeración
+Diámetro x  |  Refrigerante Pro Honda HP
+96,000 x 62,138 mm  |  Refrigerante
+carrera  |  Filipinas
+recomendado
+Cilindrada  |  449,77 cm 3  |  HONDA PRE-MIX COOLANT
+Relación de  |  Después
+13,5 : 1  |  1,08 L
+compresión  |  del drenaje
+Capacidad de
+Holgura de las  |  Admisión  |  0,13 ± 0,03 mm  |  Después
+refrigeración
+válvulas (en frío) Escape  |  0,28 ± 0,03 mm  |  del  |  1,14 L
+Aceite para motocicletas Honda de 4 tiempos,  |  desmontaje
+clasificación de servicio API SJ o superior,
+Aceite del motor  |  ■ Tren de transmisión
+excepto los aceites marcados con "Energy
+recomendado
+Especificaciones  |  Conserving" o "Resource Conserving" SAE  |  Reducción
+2.357
+10W-30, norma JASO T 903 MA  |  primaria
+Después del  |  1.ª  |  2.133
+1,00 L
+drenaje  |  2.ª  |  1.706
+Relación de
+Después del  |  3.ª  |  1.421
+marchas
+Capacidad de  |  drenaje y  |  4.ª  |  1.211
+1,04 L
+aceite del motor cambio del  |  5.ª  |  1.043
+filtro de aceite
+CRF450RX  |  3.846
+Después del  |  Reducción final
+1,35 L  |  CRF450R/RWE 3.769
+desmontaje
+Sistema de retorno accionado con el pie
+Régimen de  |  Patrón de cambio
+2000 ± 100 rpm  |  izquierdo
+ralentí  |  de marchas
+1-N-2-3-4-5
+72
+Especificaciones
+■ Sistema eléctrico  |  ■ Especificaciones de par
+HJ12L lithium-ion (li-ion)  |  Tornillo de liberación de
+Batería  |  1,3 N·m (0,1 kgf·m)
+12 V-2,3 Ah (20 HR)  |  presión de aire de la horquilla
+Bujía  |  NGK  |  SILMAR9A-9S  |  Tornillo de la batería  |  2 N·m (0,2 kgf·m)
+Separación de electrodos  |  Tornillo de la tapa de la batería 5,2 N·m (0,5 kgf·m)
+0,80 - 0,90 mm
+de la bujía
+■ Fusibles
+Fusible principal 10 A
+Especificaciones
+73
+Especificaciones
+Fabricante, representante autorizado e importador
+Honda Motor Co., Ltd.
+Fabricante  |  2-1-1, Minami-Aoyama, Minato-ku,
+Tokio, 107-8556, Japón
+Honda Motor Europe Ltd - Aalst Office
+Representante autorizado e
+Wijngaardveld 1 (Noord V)
+importador para el mercado de la UE
+9300 Aalst (Bélgica)
+Honda Motor Europe Ltd
+Representante autorizado e importador
+Especificaciones  |  Cain Road, Bracknell, Berkshire,
+para el mercado del Reino Unido
+RG12 1HL (Reino Unido)
+74
+Manual en línea del propietario
+https://www.hondamotopub.com/
+45MKE620  |  XXX.XXXX.XX.N
+00X45-MKE-6200  |  IMPRESO EN XXXXX

@@ -318,6 +318,20 @@ const MANUALES = [
   { marca: 'fantic', modelo: 'xef250-xef450-xxf250-xxf450', año: 2023, url: 'https://korlas.com.tr/wp-content/uploads/2024/05/XEF-250-XEF-450-4T-2023-ENG.pdf' },
   { marca: 'fantic', modelo: 'xef250-xef450-xxf250-xxf450', año: 2024, url: 'https://korlas.com.tr/wp-content/uploads/2024/05/XEF-250-XEF-450-4T-2024-ENG.pdf' },
 
+  // ── SUZUKI ────────────────────────────────────────────────────────────────
+  // Fuente: suzukimotorcycles.com.au — Suzuki Motorcycles Australia,
+  // filial/distribuidor oficial. Portal de manuales en
+  // suzukimotorcycles.com.au/owners/manuals/ (solo lista el modelo vigente,
+  // etiquetado "2026" en el propio portal). El RM85 no aparece ya en el
+  // portal (posiblemente descatalogado) pero su PDF sigue alojado en el
+  // dominio oficial; su metadata interna indica creación en 2020-02-19.
+  // Sin manual oficial conocido para RM 125, RM 250 y RMX 450Z
+  // (descatalogados hace años; solo agregadores de terceros como
+  // ManualsLib/Scribd/Haynes, descartados).
+  { marca: 'suzuki', modelo: 'rm85',   año: 2020, url: 'https://www.suzukimotorcycles.com.au/wp-content/uploads/2021/11/99011-02B95-01A_RM85_85L_M2-min.pdf' },
+  { marca: 'suzuki', modelo: 'rmz250', año: 2026, url: 'https://suzukimotorcycles.com.au/wp-content/uploads/2024/07/RM-Z250-Owners-Manual-99011-46K55-01A.pdf' },
+  { marca: 'suzuki', modelo: 'rmz450', año: 2026, url: 'https://suzukimotorcycles.com.au/wp-content/uploads/2024/07/RM-Z450-Owners-Manual-99011-37K56-01A.pdf' },
+
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────

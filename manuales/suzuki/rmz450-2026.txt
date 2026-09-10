@@ -1,0 +1,2788 @@
+This manual should be considered a permanent part of the
+motorcycle and should remain with the motorcycle when resold
+or otherwise transferred to a new owner or operator. The
+manual contains important safety information and instructions
+which should be read carefully before operating the motorcycle.
+IMPORTANT  |  All information, illustrations, photo-
+graphs and specifications contained
+in the manual are based on the latest
+ WARNING/  CAUTION/  |  product information available at the
+NOTICE /NOTE  |  time of publication. Due to improve-
+ments or other changes, there may be
+Please read this manual and follow its
+some discrepancies in this manual.
+instructions carefully. To emphasize
+special information, the symbol 
+and the words WARNING , CAUTION ,
+NOTICE and NOTE have special
+meanings. Pay particular attention to
+messages highlighted by these sig-
+nal words:
+ WARNING
+Indicates a potential hazard that
+could result in death or serious
+injury.
+ CAUTION
+Indicates a potential hazard that
+could result in minor or moderate
+injury.
+NOTICE
+Indicates a potential hazard that
+could result in vehicle or equip-
+ment damage.
+NOTE: Indicates special information
+to make maintenance easier or
+instructions clearer.
+
+TABLE OF CONTENTS
+CONSUMER INFORMATION  |  1
+CONTROLS  |  2
+FUEL, ENGINE OIL AND COOLANT RECOMMENDATIONS  |  3
+BREAK-IN (RUNNING-IN) AND INSPECTION BEFORE RIDING  |  4
+RIDING TIPS  |  5
+INSPECTION AND MAINTENANCE  |  6
+MOTORCYCLE CLEANING AND STORAGE PROCEDURE  |  7
+SPECIFICATIONS
+INDEX
+
+1
+CONSUMER INFORMATION
+GENERAL CONSIDERATIONS .......................................................................... 1-2
+SYMBOL MARKS AND DEFINITION .................................................................. 1-4
+LABELS ............................................................................................................... 1-4
+SERIAL NUMBER LOCATION ............................................................................ 1-4
+1-1
+CONSUMER  |  Wear protective gear
+Wear proper clothing when you ride.
+INFORMATION
+Abrasion injuries can be minimized by
+wearing protective clothing including
+gloves, strong boots that fit over the
+GENERAL CONSIDERATIONS
+ankle, long pants, and a long sleeve
+shirt or jackets. In addition, wearing a
+Wear a helmet and goggles
+kidney belt and chest or back protec-
+A helmet is the most important piece
+tor is recommended.
+of gear to wear. Helmets do not
+reduce essential vision or hearing.
+Generally, helmets do not cause or  |  Helmet
+intensify injury if you crash. Helmets
+simply help your skull protect your  |  Mouth guard  |  Goggle
+intelligence, your memory, your per-
+sonality, and your life.  |  Protector
+Motocross
+Your eyesight is equally valuable.
+jersey
+Wearing suitable eye protection can  |  Glove
+help keep your vision unblurred by the  |  Motocross
+wind and help shield your eyes from  |  pants
+branches and airborne matter like
+Motocross
+bugs, dirt, or pebbles kicked up by
+boots
+tires. Wear a helmet and eye protec-
+tion every time you ride.
+1-2
+Inspect your machine before riding  |  Know your limits
+Before each use, perform an inspec-  |  Always ride within the boundaries of
+tion per “INSPECTION BEFORE RID-  |  your own skills. Knowing these limits
+ING” section starting on page 4-3.  |  and staying within them will help you
+avoid accidents. Ride only in events
+No Passengers  |  appropriate for your experience.
+Suzuki RM-Zs are designed for the
+rider only.  |  Safely competing on a motorcycle
+requires that your mental and physical
+Practice before competing  |  skills are fully part of the experience.
+Before you begin competing, you  |  You should not attempt to operate a
+should practice the skills you need to  |  motorcycle, especially one with two
+ride safely.  |  wheels, if you are tired or under the
+influence of alcohol or other drugs.
+Review the controls on your motorcy-  |  Alcohol, illegal drugs, and even some
+cle before riding.  |  prescription  |  and  |  over-the-counter
+drugs and cause drowsiness, loss of
+Learn and understand about  |  coordination, loss of balance, and
+“Motocross”  |  loss of good judgement. If you are
+When a child, or person who do not  |  tired or under the influence of alcohol
+have knowledge on or experience of  |  or other drugs, PLEASE DO NOT
+motocross, rides this motorcycle,  |  RIDE your motorcycle.
+make sure that a person with a good
+deal of knowledge about motocross  |  Conclusion
+accompanies with such child or per-  |  The actions of other riders are unpre-
+son to instruct the correct operation  |  dictable. Your motorcycle’s condition
+procedure in an safe place. Suzuki  |  can change. These factors can best
+recommends you to join the team with  |  be dealt with by giving every ride your
+abundant experience of motocross  |  full attention.
+and receive advise from experienced
+riders.  |  May all of your rides on your new
+Suzuki be winning rides!
+1-3
+SYMBOL MARKS AND DEFINITION  |  SERIAL NUMBER LOCATION
+Listed in the table below are the sym-
+bols indicating instructions and other
+information. The meaning of each
+symbol is also included in the table.
+SYMBOL  |  DEFINITION
+Torque control required.
+  |  Data beside it indicates specified
+torque.
+Apply oil. Use engine oil or
+ transmission oil unless otherwise
+specified.
+  |  Apply or use brake fluid. (DOT 4)
+ Apply fork oil.
+ Use special tool.
+ Indication of service data.
+The frame and/or engine serial num-
+bers are used to register the motorcy-
+cle. They are also used to assist your
+LABELS  |  dealer when ordering parts or refer-
+Read and follow all the labels on the  |  ring to special service information.
+motorcycle. Make sure you under-  |  The frame number 1 is stamped on
+stand all of the labels. Do not remove  |  the steering head tube. The engine
+any labels from the motorcycle.  |  serial number 2 is stamped on the
+crankcase assembly.
+Please write down the numbers in the
+boxes provided below for your future
+reference.
+Frame number:
+Engine number:
+1-4
+CONTROLS
+2
+LOCATION OF PARTS ....................................................................................... 2-2
+LEFT HANDLEBAR ............................................................................................. 2-5
+RIGHT HANDLEBAR .......................................................................................... 2-6
+FUEL TANK CAP ................................................................................................ 2-7
+STARTER KNOB ................................................................................................. 2-8
+KICK STARTER LEVER ...................................................................................... 2-8
+GEARSHIFT LEVER ............................................................................................ 2-9
+REAR BRAKE PEDAL ........................................................................................ 2-9
+ACCESSORY SIDE STAND .............................................................................. 2-10
+SUSPENSION ADJUSTMENT .......................................................................... 2-10
+FRONT AND REAR BALANCES OF THE SUSPENSIONS ............................. 2-22
+2-1
+CONTROLS
+LOCATION OF PARTS
+RM-Z450
+1 Clutch lever
+2 S-HAC switch
+3 Front brake fluid reservoir
+4 Front brake lever
+5 Engine stop switch
+6 Fuel tank cap
+7 Throttle grip
+2-2
+RM-Z450
+8 Front fork compression damping force adjuster
+9 Battery coupler
+0 Spark plug
+A Starter knob
+B Idle screw
+C Air cleaner
+D Front fork rebound damping force adjuster
+E Oil strainer (No.2)
+F Generator cover bolt
+G Gearshift lever
+H Oil strainer (No.1)
+I Footrests
+2-3
+RM-Z450
+J Rear suspension rebound damping force adjuster
+K Rear suspension compression damping adjuster
+L Kick starter lever
+M ECM tuning map coupler
+N Radiator cap
+O Rear brake fluid reservoir
+P Rear brake pedal
+Q Engine oil drain plug
+R Engine oil check bolt
+S Engine oil filler cap
+T Engine oil filter
+2-4
+LEFT HANDLEBAR  |  S-HAC (SUZUKI HOLESHOT
+ASSIST CONTROL) SWITCH 3
+This is a system that assists opera-
+tion during the start of races that use
+a starting gate.
+Refer to SELECTION OF S-HAC
+(SUZUKI HOLESHOT ASSIST CON-
+TROL) MODE for details. (  5-6)
+CLUTCH LEVER 1
+The clutch lever is used for disengag-
+ing the drive to the rear wheel when
+starting the engine or shifting trans-
+mission gears. Squeezing the lever
+disengages the clutch.
+ENGINE STOP SWITCH 2
+To stop the engine, push the engine
+stop switch with the transmission in
+neutral.
+2-5
+RIGHT HANDLEBAR  |  FRONT BRAKE LEVER 2
+Apply the front brake by squeezing
+the front brake lever towards the grip.
+Front Brake Lever Adjustment
+Adjust the front brake lever position as
+follows:
+THROTTLE GRIP 1
+Engine speed is controlled by the
+position of the throttle grip. Turn it
+toward you to increase engine speed.
+Turn it away from you to decrease
+engine speed.  |  1. Loosen the lock nut 1 .
+2. Turn the adjuster 2 in or out to
+obtain the proper brake lever posi-
+tion.
+3. The standard adjuster length A is
+from 11 – 15 mm (0.44 – 0.59 in).
+4. Tighten the lock nut 1 to the
+specified torque.
+ Front brake lever adjuster
+lock nut:
+5.0 N·m (0.51 kgf-m, 3.70 lbf-ft)
+2-6
+FUEL TANK CAP
+ WARNING
+If you overfill the fuel tank, fuel
+may overflow when it expands due
+to engine heat or heating by the
+sun. Fuel that overflows can catch
+fire.
+Stop adding fuel when the fuel
+level reaches the bottom of the
+filler neck.
+To open the fuel tank cap, remove the
+end of vent tube from the steering  |   WARNING
+stem head nut and turn the cap coun-
+terclockwise. To close the cap, turn it  |  Failure to follow safety precau-
+clockwise and tighten it securely. Be  |  tions when refueling could result
+sure that the vent tube is connected  |  in a fire or cause you to breathe
+securely and routed properly.  |  toxic fumes.
+Use fresh gasoline when filling up the  |  Refuel in a well ventilated area.
+fuel tank. Do not use bad gasoline  |  Make sure the engine is off and
+which is contaminated with dirt, dust,  |  avoid spilling fuel on a hot engine.
+water or other liquid. Be careful that  |  Do not smoke, and make sure
+dirt, dust or water do not enter the fuel  |  there are no open flames or
+tank when refueling.  |  sparks in the area. Avoid breath-
+ing gasoline vapors. Keep chil-
+dren and pets away when you
+refuel the motorcycle.
+NOTICE
+Filling the fuel tank with more than
+the specified amount of fuel may
+cause engine failure or make it dif-
+ficult to start.
+1 Bottom of the filler neck
+2 Fuel  |  Do not refuel above the bottom of
+the filler neck.
+Fuel tank capacity:
+6.3 L (1.66/1.39 US/Imp. gal)
+2-7
+STARTER KNOB  |  KICK STARTER LEVER
+This motorcycle has the starter knob  |  Depressing the kick starter lever with
+to provide easy starting when the  |  the transmission in neutral will start
+engine is cold. When starting the cold  |  the engine. If the clutch lever is
+engine, pull the starter knob all the  |  squeezed, you can also start the
+way toward you. The starter works  |  engine with the transmission in any
+best when the throttle is in the closed  |  gear other than neutral.
+position. When the engine is warm,
+you do not need to use the starter  |  Kick down the kick starter lever slowly
+knob for starting.  |  from the top position until engine
+compression  |  resistance  |  is  |  felt,
+NOTE: Refer to the STARTING THE  |  release the kick starter lever from this
+ENGINE section of this manual for the  |  position and allow it to return to the
+engine starting procedure.  |  top. While keeping the throttle closed,
+depress the kick starter lever strongly
+through the full stroke.
+ WARNING
+An improperly retracted kick
+starter lever can interfere with
+rider control.
+Be sure the kick starter lever is
+returned to its home position after
+starting the engine.
+2-8
+GEARSHIFT LEVER  |  REAR BRAKE PEDAL
+5 5
+4 4
+3 3
+2 2
+N N
+1 1
+This motorcycle has a 5-speed trans-  |  Pressing the rear brake pedal will
+mission which operates as shown. To  |  apply the rear brake.
+shift properly, squeeze the clutch
+lever and close the throttle at the
+same time you operate the gearshift
+lever. Lift the gearshift lever to upshift
+and depress the lever to downshift.
+Neutral is located between 1st and
+2nd gear. When neutral is desired,
+depress or lift the lever halfway
+between 1st and 2nd gear.
+2-9
+ACCESSORY SIDE STAND  |  SUSPENSION ADJUSTMENT
+NOTICE
+Turning adjusters by force can
+damage the suspensions.
+Do not turn adjusters beyond their
+natural limits.
+FRONT FORK SETTING
+The front fork compression and
+This motorcycle is not equipped with  |  rebound damping force, and oil
+a side stand. To support the motorcy-  |  capacity are adjustable for rider’s
+cle for a short period of time, use the  |  preference, rider’s weight and course
+accessory side stand that comes sup-  |  condition.
+plied with the motorcycle. When ser-
+vicing the motorcycle, use a service  |  NOTE:
+stand and support the underneath of  |  •  |  Be sure to adjust both right and
+the engine securely. When operating  |  left front forks equally.
+the motorcycle, make sure to remove  |  •  |  Inspect the following items before
+the accessory side stand.  |  attempting adjustment.
+•  |  Internal pressure release from
+the front fork (matching to the
+level same as atmospheric
+pressure) (  2-11)
+•  |  Front fork damage and oil
+leakage (  6-42)
+•  |  Tire pressure (  6-40)
+•  |  Tire and wheel damage
+(  6-39)
+•  |  Spoke nipple tension and
+bead stopper nut tightness
+(  6-41)
+•  |  Steering movement
+(  6-43)
+2-10
+Internal Pressure Release from the  |  Compression Damping Force
+Front Fork (matching to the level  |  Adjustment
+same as atmospheric pressure)
+Soft  |  Hard
+H  |  S
+To set the adjuster, you must gently
+turn the adjust screw 1 clockwise
+until it stops, then back it out the rec-
+ommended number of clicks. Do not
+force the adjust screw 1 past the
+1. Support the motorcycle using the  |  stopped position, or you may damage
+commercially available support  |  the adjuster.
+stand, etc., and lift the front wheel
+ Standard setting:
+off the ground.
+counterclockwise 9 clicks
+2. Remove the left and right air
+bleeder valves 1 and equalize the
+Rebound Damping Force
+internal pressure in the front forks
+Adjustment
+to atmospheric pressure.
+3. Apply grease to the new O-ring 2
+Soft  |  Hard
+and tighten the air bleeder valve
+1 to the specified torque.
+ Grease 99000-25100
+(SUZUKI SILICONE GREASE or
+equivalent grease)
+ Front fork air bleeder valve:
+1.3 N·m (0.13 kgf-m, 0.95 lbf-ft)
+To set the adjuster, you must gently
+turn the adjust screw 2 clockwise
+NOTE:
+•  |  To prevent foreign materials from  |  until it stops, then back it out the rec-
+ommended number of clicks. Do not
+entering the front fork, or biting
+force the adjust screw 2 past the
+into the air bleeder valve, clean
+the motorcycle before adjustment.  |  stopped position, or you may damage
+the adjuster.
+•  |  When installing the air bleeder
+valve, be careful not to pinch for-
+ Standard setting:
+eign materials.
+counterclockwise 11 clicks
+2-11
+OIL QUANTITY MINOR  |  NOTE:
+ADJUSTMENT  |  •  |  To prevent foreign materials from
+entering the front fork, or biting
+Adding the fork oil  |  into the air bleeder valve, clean
+the motorcycle before adjustment.
+•  |  When installing the air bleeder
+valve, be careful not to pinch for-
+eign materials.
+Reducing the fork oil
+1. Remove the air bleeder valve 1 .
+2. Add the fork oil with an injector
+from the air bleed hole.
+ Fork oil
+(SHOWA SUSPENSION
+FLUID SS-19)
+1. Remove the front forks.
+(Refer to Service Manual)
+2. Remove the air bleeder valve.
+3. Leaning the front fork, reduce the
+fork oil from the air bleed hole.
+Front fork setting procedure
+(  2-13)
+ CAUTION
+3. Apply grease to the new O-ring 2  |  Operating the motorcycle with the
+and tighten the air bleeder valve  |  fork oil quantity unevenly adjusted
+1 to the specified torque.  |  can cause handling instability.
+ Grease 99000-25100
+The fork oil quantity must be
+(SUZUKI SILICONE GREASE or
+adjusted equally on both fork legs
+equivalent grease)
+to provide equal performance.
+ Front fork air bleeder valve:
+1.3 N·m (0.13 kgf-m, 0.95 lbf-ft)
+2-12
+FRONT FORK SETTING PROCEDURE
+Test ride the motorcycle and find out how the front suspension reacts on vari-
+ous types of surface. According to the symptom noticed, adjust the front fork to
+the best setting for rider and race track conditions. To adjust, attempt changing
+fork oil capacity and compression and rebound damping force following the
+instructions below.
+NOTE:
+•  |  When adjusting the front fork oil capacity, make sure that the oil capacity is
+within the specified range. Also, the capacity should be increased or
+decreased by 1 ml (0.034/0.035 US/Imp. oz).
+•  |  When adjusting the damping force, attempt turning the adjuster 1 to 2 click
+stops at a time for each adjustment.
+Symptom  |  Section  |  Adjustment Procedure
+Feels too hard overall • Jump  |  1. Adjust both compression and rebound damping
+• Large bumps  |  force to a softer setting.
+• Series of medium  |  2. Decrease fork oil capacity.
+bumps  |  3. Change the spring with an optional softer one.
+Feels too soft overall • Jump  |  1. Adjust the compression damping force to a stiffer
+and bottoms  |  • Large bump  |  setting.
+• When braking  |  2. Increase fork oil capacity.
+3. Change the spring with an optional stiffer one.
+Feels too hard near  |  • Jump  |  Decrease fork oil capacity.
+end of travel
+Feels too soft near  |  • Jump  |  1. Adjust the compression damping force to a stiffer
+end of travel and  |  • Large bump  |  setting.
+bottoms harshly  |  2. Increase fork oil capacity.
+Feels too hard in the • Jump  |  Adjust the compression damping force to a softer
+beginning of stroke  |  • Large bump  |  setting.
+• Series of medium
+bumps
+• Series of small
+bumps
+Feels too soft and  |  • Series of medium  |  Adjust the rebound damping force to a stiffer setting.
+unstable  |  bumps
+• Series of small
+bumps
+Bounces  |  • Jump  |  Adjust the rebound damping force to a stiffer setting.
+• Large bump
+Bounces  |  • Series of small  |  Adjust the rebound damping force to a softer setting.
+bumps
+2-13
+1. Remove the front fork. (Refer to Service Manual)
+2. Remove the front fork spring. (Refer to Service Manual)
+3. Adjust the front suspension according to the rider’s weight and preference
+by referring to the table below.
+Identifica-
+tion
+Standard  |  Oil quantity adjustable
+Spring  |  Part No.  |  Spring rate  |  (Slit mark
+Oil quantity  |  range
+on the
+spring end)
+371 ml
+303 – 403 ml
+Soft  |  4.8 N/mm  |  (12.54/
+51171-37K10  |  No slit  |  (10.24/10.67 – 13.62/14.19
+(Option)  |  (0.49 kgf/mm)  |  13.06 US/
+US/Imp. oz)
+Imp. oz)
+365 ml
+90°: II  |  297 – 398 ml
+Stan-  |  5.0 N/mm  |  (12.34/
+51171-37K00  |  (See Fig.1  |  (10.04/10.46 – 13.45/14.01
+dard  |  (0.51 kgf/mm)  |  12.85 US/
+below)  |  US/Imp. oz)
+Imp. oz)
+45°: I
+368 ml
+90°: I  |  300 – 400 ml
+Hard  |  5.2 N/mm  |  (12.44/
+51171-37K20  |  135°: I  |  (10.14/10.56 – 13.52/14.08
+(Option)  |  (0.53 kgf/mm)  |  12.96 US/
+(See Fig.2  |  US/Imp. oz)
+Imp. oz)
+below)
+NOTE: Be sure to adjust the fork oil quantity within the above-mentioned range.
+NOTE: Identification slit mark on the spring end is for spare parts only. The
+spring assembled at the factory does not have identification slit mark.
+2-14
+Fig.1  |  Fig.2
+Grinding end  |  Slit  |  Grinding end
+45°
+Slit
+Slit
+45°
+Slit
+End of roll  |  End of roll
+90°
+45°
+Standard (Part No.51171-37K00)  |  Hard (Part No.51171-37K20)
+2-15
+REAR SHOCK ABSORBER  |  With the rear shock absorber of the
+SETTING  |  RM-Z450, compression and rebound
+damping force can be adjusted in
+accordance with course conditions
+ WARNING  |  and rider preferences. In order to
+ensure efficient setting work, first
+check the items below to determine
+whether there are any suspension
+abnormalities.
+This unit contains high-pressure  |  •  |  Rear shock absorber damage and
+nitrogen gas.  |  oil leakage (  6-42)
+Mishandling can cause explosion.  |  •  |  Swingarm and links tightness
+(  6-42)
+• Keep away from fire and heat.  |  •  |  Tire pressure (  6-40)
+• Read owner’s manual for more  |  •  |  Tire and wheel damages
+information.  |  (  6-39)
+•  |  Spoke nipple tension and bead
+NOTE: Ask your Suzuki dealer to dis-  |  stopper nut tightness (  6-41)
+pose of the rear shock absorber unit.
+NOTE:
+•  |  Perform settings based on the
+feeling of running under standard
+setting.
+•  |  If you lose a sense of the setting
+orientation for some reason,
+return to standard setting and re-
+start adjustment.
+2-16
+Spring Pre-load Adjustment  |   Spring set length adjustable
+1. Support the motorcycle using the  |  range:
+commercially available support  |  227 – 239 mm (8.94 – 9.41 in)
+stand, etc., and lift the rear wheel  |  [at spring free length 240 mm
+off the ground.  |  (9.45 in)]
+2. Remove the muffler and seat rail
+assembly.
+(Refer to Service Manual)
+Forward
+54 – 60°
+5. After adjusting the spring pre-
+load, position the spring adjuster
+lock 3 as shown in the figure and
+3. Loosen the lock bolt 1 with the  |  tighten the spring adjuster lock
+special tool.  |  bolt 1 to the specified torque.
+ Spring adjuster lock bolt:
+5.0 N·m (0.51 kgf-m, 3.70 lbf-ft)
+NOTICE
+Turning the adjuster 2 without
+loosening the lock bolt 1 can
+damage the rear cushion unit.
+Turn the adjuster after loosening
+4. Turn the adjuster 2 clockwise or  |  the lock bolt.
+counterclockwise to change the
+spring initial load.
+ 09910-60611:
+Adjustable hook wrench
+ Standard spring set length:
+When compressed to 1.0 mm
+(0.04 in) from spring free
+length
+[Standard]:
+239 mm (9.409 in)
+2-17
+Compression Damping Force  |  Rebound Damping Force
+Adjustment  |  Adjustment
+TEN  |  COM  |  TEN  |  COM
+H  |  S  |  H  |  S
+To set the adjuster, you must gently  |  To set the adjuster, you must gently
+turn the adjust screw 1 clockwise  |  turn the adjust screw 2 clockwise
+until it stops, then back it out the rec-  |  until it stops, then back it out the rec-
+ommended number of turns. Do not  |  ommended number of turns. Do not
+force the adjust screw 1 past the  |  force the adjust screw 2 past the
+stopped position, or you may damage  |  stopped position, or you may damage
+the adjuster.  |  the adjuster.
+ Standard setting:  |   Standard setting:
+counterclockwise 2 turns  |  counterclockwise 1 turn
+2-18
+REAR SHOCK ABSORBER SPRING REPLACEMENT PROCEDURE
+1. Remove the rear shock absorber. (Refer to Service Manual)
+2. Remove the rear shock absorber spring. (Refer to Service Manual)
+3. Select the rear shock absorber spring according to the rider’s weight and
+preference by referring to the table below.
+Part No.  |  Spring rate  |  Marking paint  |  Set-length adjustable range
+62211-37K20  |  52 N/mm
+Blue
+(Option)  |  (5.3 kgf/mm)  |  226 – 239 mm (8.90 – 9.41 in)
+62211-37K00  |  54 N/mm  |  [at spring free length 240 mm (9.45 in)]
+White
+(Option)  |  (5.5 kgf/mm)
+(Standard)  |  56 N/mm  |  227 – 239 mm (8.90 – 9.41 in)
+Red
+62211-37K10  |  (5.7 kgf/mm)  |  [at spring free length 240 mm (9.45 in)]
+SPRING PRE-SET LENGTH ADJUSTMENT
+1. Support the motorcycle using the commercially available support stand,
+etc., and lift the rear wheel off the ground.
+2. Measure the distance L1 from the seat bolt to the chain adjuster lock-nut.
+2-19
+3. Remove the support stand, etc., and ride onto the stopped motorcycle.
+Then, move the front and rear suspensions up and down several times.
+4. Measure the distance L2 from the seat bolt to the chain adjuster lock-nut
+with riding the motorcycle normally in full riding gear.
+5. Find the sag by subtracting L2 from L1.
+NOTE:
+•  |  The tank should be filled up with fuel and the rider should wear the racing
+outfit to match the weight at the competing time.
+•  |  Support the motorcycle vertically as much as possible when the measure-
+ment is performed.
+•  |  Two or more persons are required for the measurement.
+ Standard sag: 110 mm (4.33 in)
+When the sag measured is:  |  Adjustment procedure
+Less than 110 mm (4.33 in)  |  Reduce spring pre-set length by turning the spring adjuster nut.
+More than 110 mm (4.33 in)  |  Increase spring pre-set length by turning the spring adjuster nut.
+2-20
+After the sag measurement has been set 110 mm (4.33 in), test ride the motor-
+cycle and adjust the suspension for the rider and track conditions referring to
+the guide below.
+NOTE: When adjusting the damping force setting, attempt turning the adjuster
+1/4 to 1/2 turn stops at a time for each adjustment.
+Symptom  |  Section  |  Adjustment Procedure
+Feels too hard overall • Jump  |  1. Adjust the compression damping force to a softer
+• Series of bumps  |  setting.
+2. Adjust the rebound damping force to a softer
+setting.
+3. Change the spring with an optional softer one.
+(  2-19)
+Kicks up  |  • Medium to large  |  1. Adjust the rebound damping force to harder
+bumps  |  settings.
+2. Adjust the compression damping force to a harder
+setting.
+Bottom feeling or  |  • Jump  |  1. Adjust the compression damping force to harder
+feels too soft and  |  • Large bump  |  settings.
+unstable  |  • Series of bumps  |  2. Adjust the rebound damping force to a harder
+setting.
+3. When the spring has been changed with an
+optional softer one than the standard, change it
+with a stiffer one. (  2-19)
+Feels harsh and hits • Jump  |  1. Adjust the compression damping force to a softer
+bumps too harshly  |  • Large bump  |  setting.
+• Series of bumps  |  2. Adjust the rebound damping force to a softer
+setting.
+3. When the spring has been changed with an
+optional softer one than the standard, the
+suspension might be felt bottom even with the
+above adjustment. In such cases, change the
+spring with an optional stiffer one. (  2-19)
+Provides poor  |  • Accelerating  |  1. Adjust the compression damping force to a softer
+traction  |  • Series of small  |  setting.
+bumps  |  2. If traction feeling does not improve after adjusting
+above mention, adjust the rebound damping force
+to a softer setting.
+3. When the spring has been changed with an
+optional softer one than the standard, the
+suspension might be felt bottom even with the
+above adjustment. In such cases, change the
+spring with an optional stiffer one. (  2-19)
+Tends to sink front  |  • Decelerating or  |  1. Adjust the compression damping force to a softer
+than rear  |  braking  |  setting.
+2. Adjust the rebound damping force to a harder
+setting.
+2-21
+FRONT AND REAR BALANCES OF  |  BALANCING TIPS
+THE SUSPENSIONS  |  •  |  Check the internal pressure in the
+front forks. Because the internal
+Balancing the front to rear suspension
+pressure varies depending on the
+properly is the most critical adjust-
+outside air temperature or altitude,
+ment for suspension performance. If
+adjust it so that the air pressure
+the front forks are adjusted harder
+reaches the same level as the
+than the rear suspension, such as
+atmospheric pressure using the
+changing to heavier front fork oil,
+air bleeder valve.
+stiffer compression and rebound set-
+•  |  When the rear shock absorber
+ting and so on, the front forks will col-
+spring set length is adjusted using
+lapse less on bumps. This transfers
+the spring adjuster nut, adjust it so
+more of the motorcycle and rider
+that the sag amount reaches 110
+weight rearward, possibly causing the
+mm (4.33 in). If it cannot reach
+rear suspension to bottom, where as
+110 mm (4.33 in), the spring
+it felt fine before the front fork adjust-
+should be replaced to one with
+ment was made.
+much higher or lower spring stiff-
+BALANCE TEST  |  ness.
+Stand next to the motorcycle on level  |  •  |  The rear shock compression
+ground. Place one foot on the foot  |  damping can be used to fine tune
+rest closest to you. Sharply push  |  suspension balance and is easy
+down. The front and rear suspensions  |  to access.
+should both collapse equally.
+2-22
+FUEL, ENGINE OIL AND COOLANT
+RECOMMENDATIONS
+FUEL OCTANE RATING ..................................................................................... 3-2
+3
+OXYGENATED FUEL RECOMMENDATION ...................................................... 3-2
+ENGINE OIL ......................................................................................................... 3-3
+ENGINE COOLANT SOLUTION ......................................................................... 3-5
+3-1
+FUEL, ENGINE OIL AND  |  OXYGENATED FUEL
+COOLANT  |  RECOMMENDATION
+RECOMMENDATIONS  |  Oxygenated fuels which meet the
+minimum octane requirement and the
+requirements described below may
+FUEL OCTANE RATING  |  be used in your motorcycle without
+jeopardizing the New Vehicle Limited
+Use premium unleaded gasoline with
+Warranty.
+an octane rating of 95 or higher
+(Research method).
+NOTE: Oxygenated fuels are fuels
+which contain oxygencarrying addi-
+(Canada)
+tives such as alcohol.
+Your motorcycle requires premium
+unleaded gasoline whenever possi-
+Gasoline/Ethanol Blends
+ble, with a minimum pump octane rat-
+Blends of unleaded gasoline and eth-
+ing of 90 ((R+M)/2 method). In some
+anol (grain alcohol), also known as
+areas, the only fuels that are available
+“GASOHOL”, are commercially avail-
+are oxygenated fuels.
+able in some areas. Blends of this
+type may be used in your motorcycle
+NOTE: The RM-Z450 engine is
+if they are no more than 10% ethanol.
+designed to use premium unleaded
+Make sure this gasoline-ethanol blend
+gasoline only. Use premium unleaded
+has octane ratings no lower than
+gasoline under all riding conditions.
+those recommended for gasoline.
+Use the recommended gasoline
+which conforms to the following
+labels. (EU)
+or
+3-2
+NOTE:  |  ENGINE OIL
+•  |  To help minimize air pollution,
+Suzuki recommends that you use  |  DESCRIPTION
+oxygenated fuels.  |  Engine life depends on oil amount
+•  |  Be sure that any oxygenated fuel  |  and quality. Daily oil level checks and
+you  |  use  |  has  |  recommended  |  periodic changes are two of the most
+octane ratings.  |  important maintenance items to be
+•  |  If you are not satisfied with the  |  performed.
+drivability of fuel economy of your
+motorcycle when you are using an  |  NOTE: Before adding, draining, or
+oxygenated fuel, or if engine ping-  |  replacing engine oil, read cautions on
+ing is experienced, substitute  |  the engine oil container and instruc-
+another brand as there are differ-  |  tions in this section.
+ences between brands.
+SELECTING THE ENGINE OIL
+Suzuki recommends the use of
+NOTICE  |  SUZUKI Recommend Oil or Equiva-
+Spilled gasoline containing alco-  |  lent Engine Oil.
+hol can damage the painted sur-
+< SUZUKI Recommend Oil >
+faces of your motorcycle.
+Standard
+Be careful not to spill any fuel  |  SAE  |  JASO
+Oil
+when filling the fuel tank. Wipe
+spilled gasoline up immediately.  |  MOTUL
+10W-40  |  MA
+300V
+ECSTAR
+10W-40  |  MA
+R9000
+ECSTAR
+10W-40  |  MA
+R7000
+ECSTAR
+10W-40  |  MA
+R5000
+< Equivalent Engine Oil >
+Equivalent Engine Oil means engine
+oil that meets the following standards.
+SAE  |  API  |  JASO
+SJ, SL, SM or  |  MA
+10W-40
+SN  |  (MA1, MA2)
+API: American Petroleum Institute
+JASO: Japanese Automobile Stan-
+dards Organization
+3-3
+SAE Engine Oil Viscosity  |  Energy Conserving
+If SAE 10W-40 engine oil is not avail-  |  Suzuki does not recommend the use
+able, select an alternative according  |  of “ENERGY CONSERVING” or
+to the following chart.  |  “RESOURCE CONSERVING” oils.
+Some engine oils which have an API
+classification of SJ, SL, SM or SN
+have an “ENERGY CONSERVING” or
+“RESOURCE CONSERVING” indica-
+ENGINE OIL  |  tion in the API classification donut
+mark. These oils can affect engine life
+and clutch performance.
+API SJ, SL, SM or SN
+TEMP.
+E R V I C
+I S  |  E
+* USE ONLY SJ or SL.  |  P  |  S
+A  |  J
+SAE
+10W-40
+JASO T903
+The JASO T903 standard is an index
+to select engine oils for 4-stroke
+motorcycle and ATV engines. Motor-  |  Recommended
+cycle and ATV engines lubricate
+clutch and transmission gears with
+engine oil. JASO T903 specifies per-  |  API SJ, SL or SM  |  API SN
+formance requirements for motorcy-
+cle  |  and  |  ATV  |  clutches  |  and  |  E R V I C  |  E R V I C
+I S  |  E  |  S  |  E
+S  |  I  |  S
+P  |  J  |  P  |  N
+transmissions.  |  A  |  A
+SAE  |  SAE
+E  |  R
+N 10W-40  |  G  |  E 10W-40  |  G
+There are two classes, MA (MA1,  |  E  |  N  |  S  |  I N
+R  |  I  |  O  |  V
+G  |  V  |  U  |  R
+Y  |  R  |  R  |  E
+MA2) and MB. For example, the oil  |  C  |  S E  |  C E  |  N S
+O N  |  C O
+container shows the classification as
+follows.  |  Not recommended
+1 Code number of oil sales company
+2 Oil classification
+3-4
+ENGINE COOLANT SOLUTION  |  ENGINE COOLANT
+Use “SUZUKI SUPER LONG LIFE  |  Engine coolant performs as a rust
+COOLANT” or “SUZUKI LONG LIFE  |  inhibitor and water pump lubricant as
+COOLANT”. If “SUZUKI SUPER  |  well as an anti-freeze solution. There-
+LONG  |  LIFE  |  COOLANT”  |  and  |  fore engine coolant should be used at
+“SUZUKI LONG LIFE COOLANT” are  |  all times even though the atmospheric
+not available, use a glycol-based anti-  |  temperature in your area does not go
+freeze compatible with an aluminum  |  down to the freezing point.
+radiator mixed with distilled water only
+at the ratio of 50:50.  |  SUZUKI SUPER LONG LIFE
+COOLANT (Blue)
+“SUZUKI SUPER LONG LIFE COOL-
+ WARNING  |  ANT” is pre-mixed to the proper ratio.
+Add only “SUZUKI SUPER LONG
+Engine coolant is harmful or fatal
+LIFE COOLANT” if coolant level
+if swallowed or inhaled. Solution
+drops. It is not necessary to dilute
+can be poisonous to animals.
+“SUZUKI SUPER LONG LIFE COOL-
+ANT” when replacing coolant.
+Do not drink antifreeze or coolant
+solution. If swallowed, do not
+induce vomiting. Immediately con-
+tact a poison control center or a
+physician. Avoid inhaling mist or
+hot vapors; if inhaled, remove to
+fresh air. If coolant gets in eyes,
+flush eyes with water and seek
+medical attention. Wash thor-
+oughly after handling. Keep out of
+the reach of children and animals.
+NOTICE
+Spilled engine coolant can dam-
+age the painted surfaces of your
+motorcycle.
+Be careful not to spill any fluid
+when filling the radiator. Wipe
+spilled engine coolant up immedi-
+ately.
+3-5
+SUZUKI LONG LIFE COOLANT
+(Green)
+Water for mixing
+Use distilled water only. Water other
+than distilled water can corrode and
+clog the aluminium radiator.
+Required amount of water/coolant
+Solution capacity (total):
+1100 ml (1.16/0.97 US/Imp. qt)
+550 ml
+Water
+(0.58/0.49 US/Imp. qt)
+50%
+550 ml
+Coolant
+(0.58/0.49 US/Imp. qt)
+NOTE: This 50% mixture will protect
+the cooling system from freezing at
+temperatures above –31°C (–24°F). If
+the motorcycle is to be exposed to tem-
+perature below –31°C (–24°F), this mix-
+ing ratio should be increased up to 55%
+(–40°C/–40°F) or 60% (–55°C/–67°F)
+coolant. The mixing ratio should not
+exceed 60% coolant.
+3-6
+BREAK-IN (RUNNING-IN) AND
+INSPECTION BEFORE RIDING
+BREAK-IN (RUNNING-IN) ................................................................................... 4-2
+INSPECTION BEFORE RIDING .......................................................................... 4-3
+4
+4-1
+BREAK-IN (RUNNING-IN)  |  When the following parts are
+replaced
+AND INSPECTION BEFORE
+Follow the same procedure when any
+RIDING  |  of the following parts are replaced:
+•  |  Piston
+•  |  Piston ring
+BREAK-IN (RUNNING-IN)  |  •  |  Cylinder
+•  |  Crankshaft
+When the motorcycle is new  |  •  |  Crankshaft bearing
+A .....Closed
+B .....1/2
+C .....Full open
+1. Warm up the engine before start-
+ing off.
+2. Ride for 60 minutes using less
+than 1/2 throttle opening.
+3. Ride for 60 minutes using less
+than 3/4 throttle opening.
+NOTE: When the motorcycle is new,
+the bolts and nuts can loosen quickly.
+Be sure to retighten the bolts and nuts
+including engine mounting nut after
+riding.
+4-2
+INSPECTION BEFORE RIDING
+ WARNING
+ WARNING  |  Checking  |  maintenance  |  items
+when the engine is running can be
+Failure to inspect your motorcy-
+hazardous. You could be severely
+cle before riding and to properly  |  injured if your hands or clothing
+maintain  |  your  |  motorcycle
+get caught in moving engine
+increases the chances of an acci-
+parts.
+dent or equipment damage.
+Shut the engine off when perform-
+Always inspect your motorcycle
+ing maintenance checks, except
+each time you use it to make sure
+when checking the engine stop
+it is in safe operating condition.  |  switch, and throttle.
+Refer to the INSPECTION AND
+MAINTENANCE section in this
+owner’s manual.
+Before riding the motorcycle, you
+need to check the following items to
+make sure that your motorcycle is in
+good condition for the personal safety
+of the rider and protection of the
+motorcycle.
+4-3
+BEFORE RACE
+OR
+WHAT TO CHECK  |  REMARKS
+EACH TIME AFTER
+2 HOURS RIDING
+• Heat range, fouled electrode,
+Spark plug  |    |  tightness
+• Loose spark plug cap
+Air cleaner element  |    |  • Dust
+• Damage
+Air cleaner  |  
+• Loose outlet tube
+Engine oil  |    |  Oil level
+Coolant  |    |  Coolant level
+• Radiator hose damage
+Cooling-system  |  
+• Engine coolant leak
+• Play
+
+Clutch  |  • Smooth operation
+  |  Clutch plates wear and distortion
+• Play
+Throttle  |  
+• Smooth operation
+Crankcase breather hose  |    |  Breather hose clogging and bend
+Engine idle speed  |    |  Revolution speed
+Brake fluid  |    |  Fluid level
+• Brake lever position
+  |  • Brake pedal height
+Brakes  |  • Operation
+  |  Wear (pads)
+Drive chain and engine  |  • Lubrication
+
+sprocket  |  • Wear
+Drive chain guide, buffer and  |  • Wear
+
+rollers  |  • Damage
+• Wear
+Sprockets  |  
+• Crack
+• Smooth operation
+Suspension  |  
+• Front fork air pressure
+• Spoke tension
+Wheels  |  
+• Rim lock tightness or damage
+Tires  |    |  Tire pressure
+Steering  |    |  Smoothness, play
+Cylinder head  |    |  Combustion chamber carbon deposit
+• Piston head carbon deposit
+Piston and Cylinder  |  
+• Piston and cylinder wear
+4-4
+BEFORE RACE
+OR
+WHAT TO CHECK  |  REMARKS
+EACH TIME AFTER
+2 HOURS RIDING
+• Damage
+Fuel hose  |  
+• Hose connection
+Fuel tank  |    |  Leakage
+• Exhaust gas leakage
+
+Exhaust pipe and muffler  |  • Tightening torque
+  |  Damage
+Bolts and nuts including
+  |  Tightening torque
+engine mounting nut
+4-5
+
+RIDING TIPS
+INSTRUCTIONS .................................................................................................. 5-2
+INSPECTION BEFORE ENGINE OIL LEVEL CHECK ....................................... 5-2
+STARTING THE ENGINE .................................................................................... 5-3
+SELECTION OF S-HAC (SUZUKI HOLESHOT ASSIST CONTROL) MODE .... 5-6
+SELECTING A S-HAC MODE ............................................................................. 5-8
+SELECTION OF ECM TUNING MAP ................................................................ 5-12
+5
+5-1
+RIDING TIPS  |  INSPECTION BEFORE ENGINE OIL
+LEVEL CHECK
+INSTRUCTIONS
+NOTICE
+Leaving the engine at idling speed
+after riding will cause engine over-
+heat as this competition motorcy-
+cle does not have the radiator
+cooling fan and coolant reservoir.
+Riding the motorcycle under
+severe conditions such as muddy
+“INSPECTION BEFORE ENGINE
+or sandy terrain with high ambient
+OIL LEVEL CHECK” is a simple
+temperature can be overheated.
+inspection to make sure that the
+engine is filled with oil.
+Do not leave the engine at idling
+after  |  riding  |  the  |  motorcycle.  |  •  |  Before starting the engine, check
+Inspect the radiator for proper  |  that there is sufficient oil for oper-
+coolant level before riding for  |  ating the engine.
+practice and race.  |  •  |  During inspection, hold the motor-
+cycle in an upright position on a
+level surface.
+•  |  Remove the oil check bolt 1 and
+check that engine oil comes out
+from oil check bolt hole.
+Before riding, it is required to confirm
+the specified engine oil level. For this
+inspection  |  procedure,  |  refer  |  to
+“ENGINE OIL LEVEL CHECK” in
+page 6-19.
+5-2
+STARTING THE ENGINE
+NOTICE  |  •  |  Inspect the engine oil level, cool-
+ant level and air cleaner condition
+If the engine is started with insuffi-  |  before starting the engine.
+cient or no oil, the engine compo-  |  (  6-19, 6-33, 6-14)
+nents will possibly be damaged.  |  •  |  Check that the fuel tank has
+enough fuel for practice or race
+Always keep the engine oil at the  |  before starting the engine.
+specified level.  |  •  |  Shift the transmission into neutral.
+NOTE: The oil level measurement  |  NOTE: When the clutch lever is
+may become inaccurate unless the  |  squeezed, the motorcycle can be
+motorcycle is held upright as the  |  started with the transmission in any
+motorcycle inclination affects the oil  |  gear.
+level.
+NOTICE
+When the engine is racing with the
+gear put into the neutral, the life of
+the engine components might be
+shortened.
+Avoid racing the engine at high
+speed to prevent shortening the
+life of engine components.
+5-3
+When the Engine is Cold:  |  NOTE: When kick-starting the engine,
+make sure to remove the accessory
+side stand.
+3. Return the starter knob 1 when
+the engine revs at steady speed.
+1. Pull out the starter knob 1 .
+2. Kick down the kick starter lever
+slowly from the top position until
+engine compression resistance is
+felt, release the kick starter lever
+from this position and allow it to
+return to the top. While keeping
+the throttle closed, depress the
+kick starter lever strongly through
+the full stroke. Never open the
+throttle during the kick start opera-
+tion.
+5-4
+When the Engine is already Warm
+Conditions when the starter knob is used
+or Restarts:
+Kick down the kick starter lever slowly  |  Engine condition  |  Starter knob
+from the top position until engine  |  Warm engine  |  Push back (OFF)*
+compression  |  resistance  |  is  |  felt,
+Cold engine  |  Pull out (ON)
+release the kick starter lever from this
+position and allow it to return to the
+* If the engine is not started even
+top. While keeping the throttle closed,
+after taking the above procedure,
+depress the kick starter lever strongly
+pull out the starter knob for starting
+through the full stroke. Never open
+the engine. When the engine is
+the throttle during the kick start opera-
+started, push back immediately the
+tion.
+starter knob.
+NOTE: If the engine fails starting,
+open the throttle fully and depress the
+kick starter lever slowly about 4 – 5
+times to clear too rich fuel mixtures in
+the engine. Close the throttle com-
+pletely, and then start the engine.
+5-5
+SELECTION OF S-HAC (SUZUKI HOLESHOT ASSIST CONTROL) MODE
+S-HAC is a function that controls engine characteristics when starting a race
+using a starting gate 1 . One of three different modes can be selected for
+engine control.
+NOTE:
+•  |  S-HAC performs control intended specifically for starts that use a starting
+gate. Do not use S-HAC for a start that does not use a starting gate.
+•  |  The “start off” state of the motorcycle is defined as being from the point that
+the clutch is engaged.
+•  |  Starting off without opening the throttle (throttle opening of 1/8 or less) or
+after lowering the engine speed by frequent half-clutching may make deter-
+mination of start off impossible. Do not use S-HAC when running under
+such conditions.
+5-6
+S-HAC MODE
+Mode (Indicator light)  |  Use for
+Normal mode (Unlit)  |  –
+Mode-A (slow flashing)  |  Hard & dry dirt, or concrete base
+Mode-B (fast flashing)  |  Normal dirt
+ENGINE CONTROL RELEASE CONDITIONS
+Selected
+Engine control release conditions
+mode
+Control released 6 seconds after starting begins.
+Control released when throttle is closed after starting begins.
+Mode-A  |  Control released upon shift to 5th gear.
+or
+Control released if starting off is not performed within 180 seconds after
+Mode-B
+mode-A or mode-B is selected.
+Released when the S-HAC switch is pressed again and held down until
+indicator light turn off.
+When any of the above conditions are met, the active mode is released and the
+normal mode is selected.
+5-7
+SELECTING A S-HAC MODE
+Start the engine and shift the gear to neutral, 1st, or 2nd. Next, adjust the
+engine speed so it is no greater than 3500 rpm.
+NOTE: The S-HAC mode setting cannot be change (to mode-A or mode-B)
+while a DTC (Diagnostic Trouble Code) is displayed.
+Mode-A
+•  |  The indicator light 1 will light for a lamp check (2 seconds) and then
+become an engine run time indicator light. Note, however, that even while
+the indicator light is lit to indicate the engine run time, holding down the S-
+HAC switch 2 for more than 0.7 seconds will cause the indicator light 1 to
+switch to slow flashing (mode-A).
+•  |  To select mode-A, release the S-HAC switch 2 while the indicator light 1
+is flashing slowly (for about 1.8 seconds).
+•  |  Selecting mode-A will cause the slow flash pattern to continue.
+NOTE:
+•  |  To switch to the normal mode from mode-A, hold down the S-HAC switch
+until the indicator light 1 goes out.
+•  |  To switch from mode-A to mode-B, first switch to the normal mode and then
+switch to mode-B.
+5-8
+Mode-A
+*1 Indicator light will be lit for 0.2 sec. per 1 hour of engine run time.
+Indicator light
+Lamp check  |  Engine run time  |  Mode-A  |  Normal mode
+ON
+OFF
+1.0  |  2.0  |  1.0  |  *1
+S-HAC switch
+ON
+OFF
+0.7  |  1.8
+Time (sec)
+Releasing the S-HAC switch during this interval will cause mode-A to be selected.
+5-9
+Mode-B
+•  |  The indicator light 1 will light for a lamp check (2 seconds) and then
+become an engine run time indicator light. Note, however, that even while
+the indicator light is lit to indicate the engine run time, holding down the S-
+HAC switch 2 for more than 0.7 seconds will cause the indicator light 1 to
+switch to slow flashing (mode-A). Holding down the S-HAC switch 2 for
+more than 1.8 seconds will cause the indicator light 1 to switch to fast
+flashing (mode-B).
+•  |  Releasing the S-HAC switch 2 to select mode-B will cause the fast flash
+pattern to continue.
+NOTE:
+•  |  After holding down the S-HAC switch to switch from mode-A (slow flashing)
+to mode-B (fast flashing), holding down the S-HAC switch again will only
+select normal mode.
+•  |  To switch from mode-B to mode-A, first switch to the normal mode and then
+switch to mode-A.
+•  |  To switch to the normal mode from mode-B, hold down the S-HAC switch
+until the indicator light 1 goes out.
+5-10
+Mode-B
+*1 Indicator light will be lit for 0.2 sec. per 1 hour of engine run time.
+Indicator light
+Lamp check  |  Engine run time  |  Mode-A  |  Mode-B  |  Normal mode
+ON
+OFF
+1.0  |  2.0  |  1.0  |  *1
+S-HAC switch
+ON
+OFF
+0.7  |  1.8
+Time (sec)
+After the indicator light starts fast flashing, releasing the S-HAC switch will select mode-B.
+5-11
+SELECTION OF ECM TUNING MAP  |  NOTE: The changeover is executed
+immediately after the engine has
+been started.
+•  |  Select White short wire (Lean mix-
+ture injection map) when:
+1. Raining
+2. In highly humidity
+•  |  Select Gray short wire (Rich mix-
+ture injection map) when:
+1. In low humidity
+2. At continuous high speed
+In the ECM of this model, there are  |  NOTE: The above information is pro-
+three different maps provided, a stan-  |  vided only as a guide. To determine
+dard map and two modified maps  |  the setting, make sure to check also
+(Lean mixture injection map and Rich  |  for drivability and spark plug firing end
+mixture injection map).  |  condition.
+Select the appropriate short wire cou-
+pler among those that come supplied
+in the motorcycle shipping crate and
+connect it to the mode select coupler.
+This can change the ECM setting to
+the modified map (Lean mixture injec-
+tion map or Rich mixture injection
+map).
+Short wire coupler
+Injection map
+color
+1  |  White  |  Lean
+2  |  Gray  |  Rich
+Standard
+5-12
+SHORT WIRE COUPLER
+CONNECTING PROCEDURE
+NOTICE
+Improper mode select coupler can
+damage system.
+Keep dry when connecting the
+short wire coupler.
+3. Connect the short wire coupler 2
+to the mode select coupler.
+4. Install the mode select coupler to
+the bracket.
+5. Start the engine.
+1. Remove the mode select coupler
+from the bracket.
+2. Disconnect the standard short
+wire coupler 1 .
+5-13
+
+INSPECTION AND MAINTENANCE
+REPLACEMENT PARTS ..................................................................................... 6-2
+MAINTENANCE SCHEDULE .............................................................................. 6-2
+ENGINE RUN TIME INDICATION PROCEDURE ............................................... 6-6
+ENGINE RUN TIME RESET PROCEDURE ........................................................ 6-8
+GENERAL LUBRICATION ................................................................................ 6-10
+FUEL TANK ....................................................................................................... 6-12
+AIR CLEANER ................................................................................................... 6-14
+SPARK PLUG .................................................................................................... 6-17
+ENGINE OIL ....................................................................................................... 6-19
+IDLE SPEED ADJUSTMENT ............................................................................ 6-27  |  6
+THROTTLE CABLE ADJUSTMENT ................................................................. 6-28
+FUEL HOSE ....................................................................................................... 6-29
+CLUTCH ADJUSTMENT ................................................................................... 6-30
+DRIVE CHAIN .................................................................................................... 6-31
+ENGINE COOLANT ........................................................................................... 6-33
+BRAKES ............................................................................................................ 6-35
+TIRES ................................................................................................................. 6-39
+SPOKE NIPPLE AND BEAD STOPPER NUT .................................................. 6-41
+FRONT FORK .................................................................................................... 6-42
+REAR SUSPENSION ......................................................................................... 6-42
+STEERING ......................................................................................................... 6-43
+6-1
+INSPECTION AND  |  MAINTENANCE SCHEDULE
+MAINTENANCE  |  It is very important to inspect and
+maintain your motorcycle regularly.
+Follow the guidelines in the chart. The
+REPLACEMENT PARTS  |  intervals between periodic services in
+hours are shown. At the end of each
+interval, be sure to perform the main-
+NOTICE  |  tenance listed.
+Use of replacement parts which
+are not equivalent in quality to  |   WARNING
+genuine SUZUKI parts can lead to
+Exhaust gas contains carbon
+performance problems and dam-
+age.  |  monoxide, a dangerous gas that is
+difficult to detect because it is col-
+orless and odorless. Breathing
+Use only genuine SUZUKI replace-
+ment parts or their equivalent.  |  carbon monoxide can cause death
+or severe injury.
+Genuine SUZUKI parts are high qual-  |  Never start the engine or let it run
+ity parts which are designed and built  |  indoors or where there is little or
+specially for SUZUKI motorcycle.  |  no ventilation.
+6-2
+NOTICE
+Using poorly-made parts can
+cause negative impact on the
+motorcycle performance or dam-
+age to the motorcycle.
+When replacing parts on your
+vehicle, use only genuine Suzuki
+replacement parts or their equiva-
+lent.
+6-3
+MAINTENANCE CHART
+It is very important to inspect and maintain the machine regularly. Follow the
+guideline in the chart. The life of parts varies depending on the riding condi-
+tions. Perform more often than shown in the chart if you use the motorcycle
+under severe conditions.
+Every  |  Every  |  Every
+Interval races
+race  |  3 races  |  6 races
+Remarks
+Every  |  Every  |  Every
+hours
+Service Item  |  2 hours  |  6 hours  |  12 hours
+Spark plug (  6-17)  |  I  |  –  |  –
+Replace air cleaner element
+Air cleaner (  6-14)  |  C  |  –  |  –
+as necessary.
+Change after 1st initial
+Engine oil (  6-19)  |  –  |  R  |  –
+break-in.
+Engine oil filter (  6-20)  |  –  |  –  |  R
+Inspect and clean after 1st
+Oil strainers (  6-23)  |  –  |  I & C  |  –
+initial break-in.
+• Replace radiator hose and
+engine coolant every year.
+Cooling-system  |  I  |  –  |  –
+• Flushing for overhaul or
+storage.
+Replace clutch plates as
+Clutch  |  I  |  –  |  –
+necessary.
+Throttle cable and clutch cable
+I & L  |  –  |  –
+(  6-28, 6-30)
+Throttle body  |  I  |  –  |  –
+Throttle position sensor  |  I  |  –  |  –
+Crankcase breather hose  |  I  |  –  |  –
+Replace every 4 years.
+(Except for Canada)
+Fuel hose (  6-29)  |  I  |  –  |  –
+Replace every 5 years.
+(Canada)
+Valve clearance  |  –  |  –  |  I
+Piston  |  –  |  –  |  R
+Piston ring  |  –  |  –  |  R
+Cylinder head, cylinder  |  –  |  –  |  I
+Muffler  |  I  |  –  |  –
+Silencer  |  I  |  –  |  R  |  Replace after race in sand.
+Kick starter lever  |  I & L  |  –  |  –
+Drive chain (  6-31)  |  I & L  |  R  |  –  |  Adjust slack every 30 minutes.
+• Inspect the oil seal
+frequently for abnormality
+(dust, stone or foreign
+Crankcase driveshaft oil seal  |  I  |  –  |  –
+materials).
+• If necessary, replace it with
+a new one.
+6-4
+Every  |  Every  |  Every
+Interval races
+race  |  3 races  |  6 races
+Remarks
+Every  |  Every  |  Every
+hours
+Service Item  |  2 hours  |  6 hours  |  12 hours
+Check sprocket bolt for
+Engine sprocket  |  I  |  –  |  –  |  looseness at each race
+thereafter.
+Check and retighten
+sprocket bolts at initial and
+Rear sprocket  |  I  |  –  |  –  |  subsequent 10 minutes of
+riding and each race
+thereafter.
+Drive chain buffer and guide  |  –  |  R  |  –
+Replace brake hose and fluid
+Brakes (  6-35)  |  I  |  –  |  –
+every year.
+Front brake caliper axle bolt  |  –  |  T  |  –
+Change after 1st initial
+Front fork oil  |  –  |  R  |  –
+break-in.
+• Check front fork inner tube
+frequently for abnormality.
+Front fork  |  I  |  –  |  –
+• Internal pressure release
+from the front fork
+Check rear suspension
+system frequently and apply
+Rear suspension  |  I  |  –  |  –
+the grease to the pivoting
+portion as necessary.
+Tire (  6-39)  |  I  |  –  |  –
+Inspect every 20 min. up to
+Spoke nipple (  6-41)  |  I  |  –  |  –  |  initial 2 hours then check
+before each ride.
+Steering  |  I  |  –  |  –
+Frame  |  I  |  –  |  –
+Swingarm  |  I  |  –  |  –
+Fuel tank  |  I  |  –  |  –
+Bolts and nuts  |  T  |  –  |  –  |  Retighten every 1 hour.
+According to the schedule of
+Lubrication (  6-10)  |  I  |  I  |  I
+“Lubrication Points”.
+NOTE: R = Replace, C = Clean, T = Tighten, I = Inspect and clean, adjust lubri-
+cate or replace if necessary, L = Lubricate
+* For each inspection or maintenance work, refer to the service manual on the
+attached DVD. For each work procedure, refer to the corresponding page in
+the list in the Chapter “0B” in the service manual.
+6-5
+ENGINE RUN TIME INDICATION
+PROCEDURE
+3. After indicator light will be lit for 2
+seconds (lamp check), engine run
+time will be displayed by indicator
+light lighting time.
+NOTE:
+•  |  Lighting of lamp check and engine
+run time is made only at the first
+time, and when there is DTC avail-
+able, this DTC will be displayed
+repeatedly.
+•  |  Indicator light will be lit for 0.2 sec.
+1. Disconnect the battery coupler 1  |  per 1 hour of engine run time.
+from the cap.  |  •  |  However, the display of engine run
+2. Connect a 12 volt battery to the  |  time is limited to 100 hours (lit for
+battery coupler using the battery  |  20 sec.).
+wire.  |  •  |  Perform the same operation when
+starting the engine.
+ 36890-28H00:
+Battery wire (option)
+6-6
+EXAMPLE: In the case that the engine run time is 12 hours.
+Repeat
+Indicator light
+ON  |  Lamp check  |  Engine run time
+DTC will be displayed
+OFF
+Time (sec.)
+1.0  |  2.0  |  1.0  |  2.4  |  3 .0
+6-7
+ENGINE RUN TIME RESET  |   36890-28H00:
+PROCEDURE  |  Battery wire (option)
+NOTE: In case of TP sensor failure,
+no engine run time reset operation is
+possible.
+1. Disconnect the battery coupler 1
+from the cap.
+2. Connect a 12 volt battery to the
+battery coupler using the battery
+wire.
+3. After connecting the battery wire,
+turn the throttle grip to full open
+within 2 seconds, then maintain
+this state for 5 to 10 seconds.
+4. Fully close the throttle grip for
+more than 5 seconds.
+5. Disconnect the battery wire.
+6-8
+Throttle grip  |  Disconnect the battery wire.
+Full open
+Full close
+2.0  |  5.0 – 10.0  |  5.0
+Time (sec.)
+6-9
+GENERAL LUBRICATION
+Apply grease or oil to the moving parts to increase durability and prevent wear.
+NOTICE
+Lubricating electrical switches can damage the switches.
+Do not apply grease or oil to electrical switches.
+Follow the maintenance schedule closely. The disassembly necessary to lubri-
+cate many components is in itself valuable preventative maintenance. It allows
+you to inspect for wear, fatigue and adjustment and it allows you to clean out
+the grit which otherwise cannot be gotten out.
+6-10
+LUBRI-
+No.  |  ITEM  |  FREQUENCY  |  COMMENTS
+CANT
+1 Clutch cable
+Run oil through cables until it exits the
+Pre-race and
+lower end. Lube the cable ends where
+between every race
+they pivot.
+2 Clutch lever pivot
+Throttle grip and
+3
+throttle case
+Lightly grease the inside of throttle
+Pre-race
+cable spool. Keep free from dirt.
+4 Throttle cables
+Every 1 race/
+5 Brake pedal pivot  |  More often accord-  |  Grease the brake pedal pivot.
+ing to conditions
+Every 3 races/  |  Clean and pack the bearings.
+6 Swingarm pivot  |  More often accord-  |  Keep seals fresh.
+ing to conditions  |  Grease the seals.
+Every 1 race/  |  Clean and pack the bearings.
+Rear suspension
+7  |  More often accord-  |  Keep seals fresh.
+pivots
+ing to conditions  |  Grease the seals.
+Every 5 races/
+Steering stem  |  Clean and pack the bearings.
+8  |  More often accord-
+bearings  |  Keep seals fresh.
+ing to conditions
+Kick starter lever
+9  |  Pre-race  |  Grease the kick starter lever pivot.
+pivot
+0 Choke shaft  |  Pre-race  |  Lightly oil the choke shaft.
+Keep chain thoroughly lobed at all
+Pre-race and
+A Drive chain  |  times. Always check wear and
+between every race
+alignment.
+Every 1 race/
+Cushion lever dust
+B  |  More often accord-  |  Grease the seals.
+seals
+ing to conditions
+Every 1 race/
+Front and rear
+C  |  More often accord-  |  Grease the bearing and seals.
+wheels
+ing to conditions
+.... Apply oil.
+.... Apply grease.
+.... Apply water resistant grease EP2 or equivalent grease.
+6-11
+FUEL TANK
+FUEL TANK REMOVAL
+3. Disconnect the fuel pump coupler
+5 .
+1. Remove the bolts 1 and the seat
+2 .
+4. Remove the fuel tank bolt 6 and
+rubber band 7 .
+2. Remove the bolts 3 and the right
+and left radiator covers 4 .
+5. Lift and hold the fuel tank. Clean
+the retainer A and fuel hose con-
+nector B .
+6-12
+6. Place a rag under the fuel hose 8  |  8. Put the cleaned plug and cap to
+and unlock the fuel hose connec-  |  the fuel hose and fuel pump.
+tor B by pulling the retainer A .
+7. Remove the fuel hose connector
+B from fuel pipe.  |  NOTICE
+Dirt and dust in the fuel supply
+ WARNING  |  line can damage the motorcycle.
+Fuel spilled from the fuel hose can  |  • Put the plug and cap to the fuel
+catch on fire.  |  hose and fuel pump when the
+fuel hose connector is discon-
+Stop the engine before discon-  |  nected.
+necting the fuel hose, and keep  |  • Be sure to keep the parts clean
+flames, sparks and heat sources  |  when disconnecting and con-
+away from the motorcycle. Do not  |  necting the connector.
+smoke. Catch fuel in a container
+and dispose of drained fuel prop-  |  9. Remove the fuel tank assembly.
+erly.
+NOTE: When removing the fuel tank,
+do not leave the fuel hose 8 on the
+fuel tank side.
+6-13
+AIR CLEANER  |  REMOVING THE ELEMENT
+The air cleaner element must be kept  |  1. Remove the bolts and seat.
+clean to provide good engine perfor-
+mance Use the following procedure to
+remove the element and inspect it.
+ WARNING
+Starting the engine with the air
+cleaner element removed, can be
+hazardous, because the combus-
+tion gas could spit back from the
+engine to the air intake box. In
+addition, without the air cleaner  |  2. Remove the wing bolt 1 and
+element, dirt could enter the  |  washer 2 .
+engine, which might cause severe
+engine damage.
+Never run the engine without the
+air cleaner element in place.
+3. Remove the element 3 .
+NOTICE
+Inappropriate air cleaner element
+handling may cause a tear of the
+element.
+When the element is to be
+removed from or attached to the
+motorcycle, do it according to the
+arrow mark direction instruction in
+the above illustration.
+6-14
+WASHING THE ELEMENT
+NOTICE
+A torn air cleaner element will
+allow dirt to enter the engine and
+can damage the engine.
+Replace the air cleaner element
+with a new one if it is torn. Care-
+fully examine the air cleaner ele-
+ment for tears during cleaning.
+6. Clean any dirt or debris from
+Wash the element as follows:
+inside the air cleaner case.
+1. Fill a wash pan larger than the ele-
+ment with a non-flammable clean-
+ing solvent A . Dip the element in  |   WARNING
+the solvent and wash it.
+New and used oil and solvent can
+A : MOTUL AIR FILTER CLEAN or  |  be hazardous. Children and pets
+equivalent cleaning solvent  |  may be harmed by swallowing
+new or used oil or solvent.
+2. Squeeze the element by pressing  |  Repeated, prolonged contact with
+it between the palms of both  |  used engine oil may cause skin
+hands to remove the excess sol-  |  cancer. Brief contact with used oil
+vent. Do not twist or wring the ele-  |  or solvent may irritate skin.
+ment, or it will develop cracks.
+3. Dry the element.  |  • Keep new and used oil and sol-
+4. Put the element in a plastic bag.  |  vent away from children and
+Pour in some air filter oil B and  |  pets.
+work the oil into the element.  |  • Wear a long-sleeve shirt and
+waterproof gloves.
+B : MOTUL AIR FILTER OIL or equiv-  |  • Wash with soap if oil or solvent
+alent filter oil  |  contacts your skin.
+5. Squeeze the element to remove  |  NOTE: Recycle or properly dispose of
+excess oil.  |  used oil and solvent.
+6-15
+INSTALLING THE ELEMENT
+2. Install them in the air cleaner box
+by engaging the projection A of
+1. Fit the element 1 onto the ele-
+the element holder with the hole
+ment holder 2 .
+B of the air cleaner box.
+NOTE: Fit the projection A of the ele-
+ment holder to the hole of the element  |  NOTICE
+1 .
+Failure to position the air cleaner
+element properly can allow dirt to
+bypass the air cleaner element.
+This will cause engine damage.
+Be sure to properly install the air
+cleaner element.
+6-16
+SPARK PLUG
+To remove the spark plug, follow the  |  NOTICE
+procedure below.
+Dirt can damage the moving
+1. Remove the seat.  |  engine parts of your motorcycle if
+2. Remove the radiator covers and  |  it enters an open spark plug hole.
+fuel tank.
+Cover the spark plug hole while
+the spark plug is out of the hole.
+3. Disconnect the spark plug cap.
+4. Clean the spark plug cap and
+spark plug hole.
+5. Remove the spark plug with the
+special tool.
+ 09930-10121:
+Spark plug socket set
+NOTE: Remove the dirt around the
+spark plug before removing the spark
+plug to prevent dirt from entering the
+combustion chamber.
+6-17
+SPARK PLUG INSPECTION  |  INSTALLATION
+Tighten the spark plug with specified
+tightening torque after tightening the
+spark plug temporarily with fingers.
+ 09930-10121:
+Spark plug socket set
+ Spark plug:
+11 N·m (1.1 kgf-m, 8.5 lbf-ft)
+Measure the spark plug gap A with a
+wire type feeler gauge. The standard
+spark plug gap is 0.9 – 1.0 mm (0.036
+15°
+– 0.039 in). If the measured spark
+plug gap is out of standard range,  |  45 ± 15°
+replace the spark plug with a new
+one.
+Whenever  |  removing  |  the  |  carbon
+Connect the spark plug cap securely
+deposits, be sure to observe the oper-
+as shown.
+ational color of each spark plug’s por-
+celain tip. This color tells you whether
+or not the standard spark plug is suit-
+able for your type of usage. A nor-
+mally-operating spark plug should be
+very light brown in color. If the spark
+plug is very white or glazed appear-
+ing, it has been operating much too
+hot. Replace the spark plug with one
+with higher heat value (cold type).
+On the other hand, when the spark
+plug color turns to black, it means that
+the motorcycle is running at the lower
+temperature condition. In such cases,
+it is required to replace the spark plug
+to one with lower heat value (hot
+type).
+Standard Plug
+NGK  |  DIMR8C10
+6-18
+ENGINE OIL
+ENGINE OIL LEVEL CHECK
+Check the engine oil level according
+to the following procedure, after the
+“INSPECTION BEFORE ENGINE
+OIL LEVER CHECK” is performed.
+1. Place the motorcycle on level
+ground on the accessory side
+stand.
+2. Start the engine and run it for a
+few minutes.  |  5. Thereafter if oil flows out when the
+3. Stop the engine and wait three  |  oil check bolt 1 is removed, the
+minutes.  |  oil level is appropriate.
+4. Hold the motorcycle vertically.  |  6. If oil is excessive, let oil flows out
+of the oil level hole.
+NOTE: The oil level measurement  |  7. If oil still does not come out,
+may become inaccurate unless the  |  tighten the oil check bolt 1 ,
+motorcycle is held upright as the  |  remove the filler cap 2 and pour
+motorcycle inclination affects the oil  |  an adequate amount of recom-
+level.  |  mended oil.
+NOTE: Do not run the engine at a
+speed higher than idling, otherwise  |   CAUTION
+the oil level to be inspected may be
+Hot engine oil and exhaust pipes
+affected.
+can burn you.
+Wait until the oil drain plug and
+exhaust pipes are cool enough to
+touch with bare hands before
+draining oil.
+8. Repeat the above-mentioned pro-
+cedure.
+9. Tighten the oil check bolt 1 .
+ Oil check bolt:
+5.5 N·m (0.56 kgf-m, 4.05 lbf-ft)
+6-19
+ENGINE OIL AND FILTER CHANGE
+Change the engine oil and oil filter at
+the scheduled times. The oil should
+be changed when the engine is warm
+so that the oil will drain thoroughly
+from the engine. The procedure is as
+follows:
+1. Place the motorcycle on the
+accessory side stand.
+2. Start the engine at idle speed for a
+few minutes and then stop the
+engine.
+6. Remove the drain plug 3 , gener-
+ator cover bolt 4 and gaskets 5 .
+Drain out the engine oil while
+3. Remove the oil filler cap 1 .  |  holding the motorcycle in a verti-
+cal position .
+ CAUTION
+Hot engine oil and exhaust pipes
+can burn you.
+Wait until the oil drain plug and
+exhaust pipes are cool enough to
+touch with bare hands before
+draining oil.
+4. Remove the left front protector 2 .
+5. Place a drain pan under the
+engine.
+6-20
+7. Replace the gasket 5 with a new
+ WARNING  |  one and tighten each bolt to the
+specified torque.
+Children and pets may be harmed
+by swallowing new or used oil.  |   Oil drain plug:
+Repeated, prolonged contact with  |  12 N·m (1.2 kgf-m, 9.0 lbf-ft)
+used engine oil may cause skin
+cancer. Brief contact with oil may  |   Generator cover bolt:
+irritate skin.  |  11 N·m (1.1 kgf-m, 8.5 lbf-ft)
+Keep new and used oil and used
+oil filters away from children and
+pets. To minimize your exposure
+to used oil, wear a long-sleeve
+shirt and moisture-proof gloves
+(such as dishwashing gloves)
+when changing oil. If oil contacts
+your skin, wash thoroughly with
+soap and water. Wash any clothes
+or rags if wet with oil. Recycle or
+properly dispose of used oil and
+8. Remove the bolts and holding the
+filters.
+oil filter cap 6 in place.
+NOTE:
+•  |  Recycle or properly dispose of
+used oil.
+•  |  Before starting the work, check
+that there is not any dust, mud, or
+foreign object inside the oil jug or
+on the oil filter mounting surface.
+9. Remove the spring 7 and oil filter
+8 .
+6-21
+INSTALLATION
+NOTICE
+Failure to use an oil filter with the
+correct design can damage your
+motorcycle’s engine.
+Be sure to use a genuine Suzuki
+oil filter or an equivalent.
+ Oil filter cap bolt:
+11 N·m (1.1 kgf-m, 8.5 lbf-ft)
+10. Apply engine oil lightly to the gas-
+ket 9 of new oil filter before instal-
+lation.
+11. Install the new oil filter.
+12. Fix the spring 7 to the oil filter
+cap.
+13. Replace the O-ring 0 with a new
+one and apply engine oil to it.
+14. Install the oil filter cap 6 and
+tighten the engine oil filter cap
+bolts to the specified torque.
+6-22
+Oil Strainer (No.1) Cleaning
+16. Check the oil strainer for any dam-
+age or clogging. If the oil strainer
+is damaged, replace the oil
+strainer. If the oil strainer is clog-
+ging, clean the oil strainer in the
+following procedures.
+NOTE: Clean the oil strainer thor-
+oughly up to first 2 to 3 times because
+steel particles will be caught when the
+engine is new.
+15. Remove the oil strainer cap A .
+Pull out the oil strainer No.1 B .
+NOTE: Inspect the oil strainer (No.1)
+when the engine oil is replaced.
+17. Remove the clip C .
+ CAUTION
+Sharp edge steel particles around
+the oil strainer magnet can harm
+your fingers.
+C .....Clip
+Wear protective gloves when
+D .....Magnet
+removing steel particles from the
+oil strainer.
+6-23
+18. Remove the magnet D using the  |  20. Insert the magnet and clip into the
+suitable steel rod.  |  oil strainer. Hook the clip C to the
+groove E .
+ WARNING
+The strainer has a strong magnet.
+Magnetic force may affect pace-
+maker operation.
+Do not perform the maintenance if
+you wear a pacemaker.
+ WARNING
+Magnet is harmful if swallowed.
+If removed magnet is swallowed,
+immediately contact a physician.
+NOTE: Do not bring the magnet close
+to a magnetic card, a cellular phone,
+a watch and so on because this mag-
+net has strong magnetic force.
+19. Clean the magnet and oil strainer.
+6-24
+Oil Strainer (No.2) Cleaning
+21. Remove the bolt and remove the
+gearshift lever F .
+23. Remove the bolts and remove the
+oil pump No.2 cover H . Remove
+the snap ring I and oil strainer
+No.2 J from the oil pump No.2
+22. Remove the bolts and remove the  |  cover H .
+generator cover G .
+ 09900-06108:
+Snap ring pliers (Close type)
+24. Check the oil strainers for any
+damage or clogging. If the oil
+strainer is damaged, replace the
+oil strainer. If the oil strainer is
+clogging, clean the oil strainer with
+a compressed air.
+6-25
+INSTALLATION
+25. Install the oil strainer No.1 B and  |  NOTICE
+tighten the oil strainer cap A to
+the specified torque.  |  Engine damage may occur if you
+use oil that does not meet
+NOTE: Replace the gasket with a new  |  Suzuki’s specifications.
+one.
+Be sure to use the oil specified in
+ Engine oil strainer cap:  |  the FUEL, OIL AND ENGINE
+21 N·m (2.1 kgf-m, 15.5 lbf-ft)  |  COOLANT RECOMMENDATIONS
+section.
+26. Install the snap ring I and oil
+strainer No.2 J .  |  31. Tighten the oil filler cap.
+32. Start the engine and allow it to idle
+NOTE: Replace the snap ring with a  |  for three minutes. Check to see
+new one.  |  that no oil is leaking from the oil fil-
+ter cap.
+27. Install the oil pump No.2 cover H  |  33. Check the oil level according to
+and tighten the oil pump No.2  |  ENGINE OIL LEVEL CHECK pro-
+bolts to the specified torque.  |  cedure.
+ Oil pump No.2 bolt:
+11 N·m (1.1 kgf-m, 8.5 lbf-ft)
+28. Install the generator cover G and
+tighten the generator cover bolts
+to the specified torque.
+ Generator cover bolt:
+11 N·m (1.1 kgf-m, 8.5 lbf-ft)
+29. Install the gear shift lever and pro-
+tector.
+30. Pour fresh oil through the filler
+hole. Approximately 1100 ml (1.2/
+1.0 US/Imp. qt) will be required.
+NOTE: About 1050 ml (1.1/0.9 US/
+Imp. qt) of oil will be required when
+changing oil only.
+6-26
+IDLE SPEED ADJUSTMENT
+1. Adjust the throttle cable play.
+(  6-28)
+2. Start the engine and warm it up.
+NOTE: Make this adjustment when
+the engine is hot.
+4. Turn the idling adjust screw 1 and
+set the engine idle speed as fol-
+lows.
+ Engine idle speed:
+2100 ± 50 r/min
+Turn  |  Engine idle speed
+Clockwise  |  Increase
+Counterclockwise  |  Decrease
+3. Connect the special tool to the
+high-tension cord.
+ 09900-26010:
+Digital tachometer
+6-27
+THROTTLE CABLE ADJUSTMENT
+ WARNING
+Inadequate throttle cable play can
+cause engine speed to rise sud-
+denly when you turn the handle-
+2.0 – 4.0 mm
+bars. This can lead to loss of
+(0.079 – 0.16 in)
+control and an accident.
+Measure the throttle cable play by
+Adjust the throttle cable play so
+turning the throttle grip. The throttle
+that engine speed does not rise
+grip should have 2.0 – 4.0 mm (0.079
+due to handlebars movement.
+– 0.16 in) play.
+1. Remove the boot 1 .
+2. Loosen the lock nut 2 .
+3. Turn the adjuster 3 in or out to
+obtain the correct play.
+4. Tighten the lock nut 2 .
+5. Recheck the throttle cable play.
+Readjust it if it is not within the
+correct limits.
+6. Replace the boot 1 .
+ Throttle cable play:
+2.0 – 4.0 mm (0.079 – 0.16 in)
+6-28
+THROTTLE CABLE BOOTS  |  FUEL HOSE
+Lift the fuel tank by referring to the
+FUEL TANK section.
+The throttle cable has boots. Check
+that the boots are fit securely. Do not
+apply water directly to the boots when
+washing. Wipe off dirt from the boots
+with a wet cloth when the boots are
+dirty.
+Inspect the fuel hose for damage and
+fuel leakage. If any defects are found,
+the fuel hose must be replaced.
+Replace the fuel hose every four
+years.
+6-29
+CLUTCH ADJUSTMENT  |  MAJOR ADJUSTMENT
+Adjust the clutch cable play as fol-  |  1. Loosen the lock nut 2 . Turn
+lows:  |  adjuster bolt 3 so the clutch lever
+clearance A measured at the
+MINOR ADJUSTMENT  |  lever holder obtains 2 – 3 mm
+(QUICK ADJUSTER)  |  (0.08 – 0.11 in) when squeezing
+the lever until pressure is felt.
+2. Tighten the lock nut 2 to the
+specified torque.
+ Clutch cable adjuster lock nut:
+2.1 N·m (0.21 kgf-m, 1.55 lbf-ft)
+Turn adjuster 1 so the clutch lever
+clearance A measured at the lever
+holder obtains 2 – 3 mm (0.08 – 0.11
+in) when squeezing the lever until
+pressure is felt.
+6-30
+DRIVE CHAIN  |  Inspecting the Drive Chain
+When the drive chain needs to be  |  When inspecting the chain, look for
+replaced, and when you cannot do it  |  the following:
+yourself, consult with your Suzuki  |  •  |  Loose pins
+dealer. The condition and adjustment  |  •  |  Damaged rollers
+of the drive chain should be checked  |  •  |  Dry or rusted links
+before each use of the motorcycle.  |  •  |  Kinked or binding links
+Always follow the guidelines below for  |  •  |  Excessive wear
+inspecting and servicing the chain.  |  •  |  Improper chain adjustment
+If you find anything wrong with the
+ WARNING  |  drive chain condition or adjustment,
+consult your authorized Suzuki dealer
+Riding with the chain in poor con-
+or a qualified mechanic.
+dition or improperly adjusted can
+lead to an accident.  |  Good  |  Worn
+Inspect, adjust, and maintain the
+chain properly before each ride,
+according to the instructions in
+this section.
+ WARNING
+ Turning direction
+Servicing the machine with engine
+running can be hazardous. You
+can be caught in the moving parts
+such as the drive chain, sprockets
+etc.
+Chain joint clip
+Be sure to stop the engine when
+servicing the machine.
+Damage to the drive chain means
+that the sprockets may also be dam-
+aged. Inspect the sprockets for the
+following:
+•  |  Excessively worn teeth
+•  |  Broken or damaged teeth
+•  |  Loose sprocket mounting nuts
+NOTE: The two sprockets should be
+inspected for wear when a new chain
+is installed and replaced if necessary.
+6-31
+DRIVE CHAIN CLEANING AND  |  DRIVE CHAIN ADJUSTMENT
+OILING
+Clean and oil the chain as follows:
+1. Remove dirt and dust from the
+drive chain.
+2. Clean the drive chain with a drive
+chain cleaner, or water and neu-
+tral detergent.
+NOTICE  |  Measure the drive chain slack at the
+center between the chain buffer and
+Cleaning the drive chain improp-  |  the rear sprocket with the body sup-
+erly can damage ruin the drive  |  ported with the support stand from
+chain.  |  underneath, and the rear wheel lifted
+off the ground. In the case that the
+• Do not use a volatile solvent  |  measured value is not within the fol-
+such as paint thinner, kerosene  |  lowing value range, adjust it.
+and gasoline.
+• Do not use a high pressure  |   Drive chain slack A :
+cleaner to clean the drive chain.  |  35 – 45 mm (1.4 – 1.7 in)
+• Do not use a wire brush to clean
+the drive chain.
+ WARNING
+3. Use a soft brush to clean the drive  |  Too much chain slack can cause
+chain.  |  the chain to come off the sprock-
+4. Wipe off water and neutral deter-  |  ets, resulting in an accident or
+gent.  |  serious damage to the motorcycle.
+5. Lubricate with a motorcycle drive
+chain lubricant or high viscosity oil  |  Inspect and adjust the drive chain
+(#80 – 90).  |  slack before each use.
+6. Lubricate both front and back
+plates of the drive chain.
+7. Wipe off excess lubricant after
+lubricating all around the drive
+chain.
+6-32
+ENGINE COOLANT
+COOLANT LEVEL
+ WARNING
+Engine coolant is harmful or fatal
+if swallowed or inhaled. Solution
+can be poisonous to animals.
+Store the coolant in the place
+1. Loosen the axle nut 1 .  |  always kept away from the reach
+2. Loosen the lock-nuts 2 and  |  of children or pets. If swallowed,
+adjust the drive chain slack to the  |  do not force to vomit it, but get
+specification by turning the adjust-  |  medical attention. When the cool-
+ers 3 . Make sure that the right  |  ant attaches onto your skin or
+and left adjuster washers 4 are at  |  enters you eye, wash it thoroughly
+the same position on scales 5 .  |  away with water and receive medi-
+3. With the adjusters 3 held in posi-  |  cal treatment.
+tion, tighten the lock-nuts 2 .
+4. Push the adjuster washers 4 to
+the adjusters 3 and tighten the  |   WARNING
+axle nut 1 .
+5. Recheck the chain slack after  |  You can be injured by scalding
+tightening and readjust if neces-  |  fluid or steam if you open the radi-
+sary.  |  ator cap when the engine is hot.
+ Rear axle nut:  |  Do not open the radiator cap when
+100 N·m (10.2 kgf-m, 74.0 lbf-ft)  |  the engine is hot. Wait until engine
+cools.
+6-33
+1. Check that the engine coolant  |  NOTE:
+level is at the bottom of the inlet  |  •  |  Adding only water will dilute the
+hole. If not, replenish the radiator  |  engine coolant and reduce its
+with specified engine coolant.  |  effectiveness.  |  Add  |  specified
+engine coolant.
+•  |  This motorcycle does not have an
+overflow tank at the end of
+breather hose. Therefore, engine
+coolant level may decrease while
+riding. Check the engine coolant
+level every time before riding.
+RADIATOR HOSE INSPECTION
+Inspect the radiator hose to make
+sure that there is no crack, damage or
+leakage of coolant. If any defect is
+2. Tighten the radiator cap 1
+found, replace the radiator hose with
+securely.
+a new one. If you cannot replace it
+yourself, ask your Suzuki dealer to
+ CAUTION  |  replace the radiator hose with a new
+one.
+Improperly tightening the radiator
+cap will prevent the cooling sys-
+tem from reaching the specified
+operating pressure and will cause
+overheat.
+Tighten the radiator cap until it
+locks firmly.
+6-34
+BRAKES  |  BRAKE FLUID
+This motorcycle has front and rear
+disc brakes.
+ WARNING
+Failure to properly inspect and
+maintain your motorcycle’s brake
+systems can increase your chance
+of having an accident.
+Be sure to inspect the brakes
+FRONT
+before each use according to the
+INSPECTION BEFORE RIDING
+section. Always maintain your
+brakes according to the MAINTE-
+NANCE SCHEDULE.
+NOTE: Operating in mud, water, sand
+or other extreme conditions can
+cause accelerated brake wear. If you
+operate your motorcycle under these
+conditions, the brakes must be
+inspected more often than recom-
+REAR
+mended  |  in  |  the  |  MAINTENANCE
+SCHEDULE.
+Check the brake fluid level in both the
+front and rear brake fluid reservoirs. If
+BRAKE HOSE INSPECTION
+the level in either reservoir is below
+Inspect the brake hose and hose joint
+the lower mark, inspect for brake pad
+to make sure that there is no crack,
+wear and leaks.
+damage or leakage of brake fluid. If
+any defect is found, replace the brake
+hose with a new one. If you cannot
+replace it yourself, ask your Suzuki
+dealer to replace the brake hose with
+a new one.
+6-35
+ WARNING  |   WARNING
+Brake fluid will gradually absorb  |  Brake fluid is harmful or fatal if
+moisture through the brake hoses.  |  swallowed, and harmful if it comes
+Brake fluid with high water con-  |  in contact with skin or eyes. Solu-
+tent lowers the boiling point and  |  tion can be poisonous to animals.
+can cause brake system malfunc-
+tion due to corrosion of brake  |  If brake fluid is swallowed, do not
+components. Boiling brake fluid  |  induce vomiting. Immediately con-
+or brake system malfunction  |  tact a poison control center or a
+could result in an accident.  |  physician. If brake fluid gets in
+eyes, flush eyes with water and
+Replace the brake fluid every two  |  seek medical attention. Wash thor-
+years to maintain braking perfor-  |  oughly after handling. Keep out of
+mance.  |  the reach of children and animals.
+ WARNING  |  NOTICE
+The use of any fluid except DOT4  |  Spilled brake fluid can damage
+brake fluid from a sealed con-  |  painted surfaces and plastic parts.
+tainer can damage the brake sys-
+tem and lead to an accident.  |  Be careful not to spill any fluid
+when filling the brake fluid reser-
+Clean filler cap before removing.  |  voir. Wipe spilled fluid up immedi-
+Use only DOT4 brake fluid from a  |  ately.
+sealed container. Never use or mix
+with different types of brake fluid.
+6-36
+BRAKE PADS  |  Inspect the front and rear brake pads
+to see if they are worn down to the
+grooved wear limit line 1 . If a front or
+rear pad is worn to the grooved limit
+line, both front or both rear pads must
+be replaced with new ones. After
+replacing either the front or rear brake
+pads, the brake lever or pedal must
+be pumped several times. This will
+extend the pads to their proper posi-
+tion.
+ WARNING
+Failure to inspect and maintain the
+brake pads and replace them
+when recommended can increase
+your chance of having an acci-
+dent.
+When the brake pad needs to be
+replaced, and when you cannot
+replace it yourself, ask your
+FRONT
+Suzuki dealer to replace it with a
+new one. Inspect and maintain the
+brake pad as recommended.
+REAR
+6-37
+REAR BRAKE PEDAL
+ WARNING  |  ADJUSTMENT
+If you ride this motorcycle after  |  NOTICE
+brake system repair or brake pad
+replacement without pumping the  |  An incorrectly adjusted brake
+brake lever/pedal, you may get  |  pedal may force brake pads to
+poor braking performance which  |  continuously rub against the disc,
+could result in an accident.  |  causing damage to the pads and
+disc.
+After brake system repair or brake
+pad replacement, pump the brake  |  Follow the steps in this section to
+lever/pedal several times until  |  adjust the brake pedal properly.
+brake pads are pressed against
+the brake discs and proper lever/
+pedal stroke and firm feel are
+restored.
+ WARNING
+Replacing only one of the two
+brake pads can result in uneven
+braking action and can increase
+your chance of having an acci-
+dent.
+Always  |  replace  |  both  |  pads
+together.
+NOTE: Do not squeeze/depress the
+brake lever/pedal when the pads are
+not in their positions. It is difficult to
+push the pistons back and brake fluid
+leakage may result.
+6-38
+The rear brake pedal must be TIRES
+adjusted to set the clearance between
+the pedal and the footrest. Adjust the  |   WARNING
+brake pedal as follows:
+The tires on your motorcycle form
+the crucial link between your
+motorcycle and the road. Failure
+to take the precautions below may
+result in an accident due to tire
+failure.
+• Check tire condition and pres-
+sure before each ride, and
+adjust pressure if necessary.
+• Replace a tire when worn sig-
+nificantly, or if you find damage
+such as cuts or cracks.
+• Read this section of the owner’s
+manual carefully.
+1. Loosen the lock nut 1 .
+2. Adjust the brake pedal height by
+turning adjuster 2 to locate the
+pedal 0 – 10 mm (0 – 0.39 in)
+below the top face of the footrest.
+3. While holding the yoke 3 , tighten
+the lock nut to the specified
+torque.
+ Rear brake master cylinder rod
+lock nut:
+6.0 N·m (0.61 kgf-m, 4.45 lbf-ft)
+6-39
+TIRE PRESSURE AND LOADING  |  TIRE CONDITION AND TYPE
+Check tire pressure each time before  |  Tire condition and tire type affect
+you ride, and adjust tire pressure  |  motorcycle performance. Cuts, cracks
+according to the table below. Tire  |  in the tires or tire wear negatively
+pressure should only be checked and  |  affect the motorcycle handling which
+adjusted before riding since riding will  |  might lead the loss of motorcycle con-
+heat up the tires and lead to higher  |  trol.
+inflation pressure readings.
+Check the condition of your tires each
+Cold tire inflation pressure  |  time before you ride. Replace tires if
+tires show visual evidence of damage
+70 – 110 kPa  |  such as cracks or cuts.
+FRONT  |  0.7 – 1.1 kgf/cm 2
+10 – 16 psi  |  When you replace a tire, be sure to
+70 – 110 kPa  |  replace it with a tire of the size and
+REAR  |  0.7 – 1.1 kgf/cm 2
+type listed below. If you use a different
+10 – 16 psi
+size or type of tire, motorcycle han-
+dling may be adversely affected, pos-
+sibly resulting in loss of motorcycle
+control.
+FRONT  |  REAR
+SIZE  |  80/100-21 51M  |  110/90-19 62M
+BRIDGESTONE  |  BRIDGESTONE
+TYPE  |  BATTLECROSS  |  BATTLECROSS
+X30F  |  X30R
+ WARNING
+An  |  improperly  |  repaired  |  or
+installed tire can cause loss of
+control and an accident.
+When the tire needs to be repaired
+or replaced, and when you cannot
+do it yourself, ask your Suzuki
+dealer or a qualified mechanic to
+perform tire repair or replacement
+because they have proper tools
+and experience.
+6-40
+SPOKE NIPPLE AND
+BEAD STOPPER NUT  |  NOTICE
+Improperly tightening the spoke
+nipples can damage the wheel.
+Tighten the spoke nipples less
+than 1/2 turn at a time. Inspect the
+spoke tension and then retighten
+the spoke nipple.
+Check the tension to verify the tight-
+ness of the spoke nipples. The ten-
+sion of the spokes can be checked by
+squeezing the spokes with your fin-
+gers. If a spoke nipple is loose, the
+spoke will bend more than the others.
+Inspect the bead stopper nut 1 for
+tightness.
+ Bead stopper nut
+(front and rear wheel):
+14 N·m (1.4 kgf-m, 10.5 lbf-ft)
+Retighten the spoke nipples with a
+spoke nipple wrench so as all spokes
+have same tension.
+ Spoke nipple (front wheel):
+5.5 N·m (0.56 kgf-m, 4.05 lbf-ft)
+ Spoke nipple (rear wheel):
+6.0 N·m (0.61 kgf-m, 4.45 lbf-ft)
+6-41
+FRONT FORK  |  REAR SUSPENSION
+•  |  Move the front fork up and down  |  •  |  Move the rear suspension up and
+several times and inspect for  |  down several times and inspect
+smooth movement.  |  for smooth movement.
+•  |  Inspect for damage and oil leaks.  |  •  |  Inspect for damage and oil leaks.
+•  |  Inspect the bolts and nuts for tight-  |  •  |  Inspect the bolts and nuts for tight-
+ness.  |  ness.
+•  |  If any defects are found, replace  |  •  |  Inspect that the rear suspension
+the front fork with a new one.  |  has play or binds by moving the
+swingarm up and down, and right
+and left.
+•  |  If necessary, replace the defective
+parts with a new one.
+6-42
+STEERING
+Inspect the steering by moving the
+front forks up and down, and back
+and forward. If the steering has play
+or binds, inspect steering stem head
+nut tightness and steering bearings.
+6-43
+
+MOTORCYCLE CLEANING AND
+STORAGE PROCEDURE
+MOTORCYCLE CLEANING ................................................................................ 7-2
+INSPECTION AFTER CLEANING ....................................................................... 7-4
+STORAGE PROCEDURE .................................................................................... 7-4
+PROCEDURE FOR RETURNING TO SERVICE ................................................. 7-5
+CORROSION PREVENTION ............................................................................... 7-6
+7
+7-1
+MOTORCYCLE CLEANING  |  WASHING THE MOTORCYCLE
+When washing the motorcycle, follow
+AND STORAGE
+the instruction below:
+PROCEDURE  |  1. Remove dirt and mud from the
+motorcycle with cool running
+water. You may use a soft sponge
+MOTORCYCLE CLEANING  |  or brush. Do not use hard materi-
+als which can scratch the paint.
+2. Wash the entire motorcycle with a
+neutral detergent using a sponge
+or soft cloth. The sponge or cloth
+should be frequently soaked in the
+soap solution.
+NOTE: Avoid spraying or allowing
+water to flow over the following
+places:
+•  |  Spark plug
+•  |  Fuel tank cap
+•  |  Fuel injection system
+•  |  Brake master cylinders
+•  |  Throttle cable boots
+•  |  Front fork dust seal
+NOTICE
+High pressure washers such as
+those found at coin-operated car
+washes have enough pressure to
+Follow the instructions below to pre-  |  damage the parts of your motorcy-
+vent water from entering the engine  |  cle. It may cause rust, corrosion
+through the air cleaner element when  |  and increase wear. Parts cleaner
+cleaning the motorcycle.  |  can also damage motorcycle
+parts.
+•  |  Cover the element with a plastic
+bag.  |  Do not use high pressure washers
+•  |  Install the seat.  |  to clean your motorcycle. Do not
+•  |  Cover the inlet holes on the frame  |  use parts cleaner on throttle body
+covers in order to prevent water  |  and fuel injection sensors.
+from entering the air cleaner box.
+Do not spray high pressure water to
+the air cleaner box.
+7-2
+3. Once the dirt has been completely
+removed, rinse off the detergent  |  NOTICE
+with plenty of water.
+Cleaning your motorcycle with any
+NOTE: The detergent used to wash  |  alkaline or strong acid cleaner,
+the motorcycle can negatively affect  |  gasoline, brake fluid, or any other
+plastic parts if the detergent is not  |  solvent will damage the motorcy-
+fully rinsed off. Make sure to fully  |  cle parts.
+rinse off all detergent with plenty of
+water after washing the motorcycle.  |  Make sure to fully rinse off all
+detergent with plenty of water
+4. After rinsing, wipe off the motorcy-  |  after washing the motorcycle.
+cle with a wet chamois or cloth
+and allow it to dry in the shade.  |  WAXING THE MOTORCYCLE
+5. Check carefully for damage to  |  After washing the motorcycle, waxing
+painted surfaces. If there is any  |  and polishing are recommended to
+damage, obtain “touch-up” paint  |  further protect and beautify the paint.
+and “touch-up” the damage follow-  |  •  |  Only use waxes and polishes of
+ing the procedure below:  |  good quality.
+a. Clean all damaged spots and  |  •  |  When using waxes and polishes,
+allow them to dry.  |  observe the precautions specified
+b. Stir the paint and “touch-up” the  |  by the manufacturers.
+damaged spots lightly with a
+small brush.
+c. Allow the paint to dry com-
+pletely.
+NOTE: Be sure to dry the motorcycle
+after washing the motorcycle. Blow off
+water from parts by applying air blow
+if it is necessary to remove parts just
+after washing the motorcycle.
+7-3
+INSPECTION AFTER CLEANING  |  STORAGE PROCEDURE
+For extended life of your motorcycle,  |  Because this motorcycle is a competi-
+lubricate it according to the “LUBRI-  |  tion motorcycle, it is not equipped with
+CATION POINTS” section.  |  the ignition switch and handle-locking
+mechanism as in a general commer-
+cial motorcycle. In order to prevent
+ WARNING  |  theft or riding by a child without per-
+Operating the motorcycle with wet  |  mission, take the greatest care to
+brakes can be hazardous. Wet  |  store the motorcycle in an appropriate
+brakes may not provide as much  |  place. Storing the motorcycle indoors
+stopping power as dry brakes.  |  is recommended to prevent rust for-
+This could lead to an accident.  |  mation, etc.
+Test your brakes after washing the  |  If the motorcycle is to be left unused
+motorcycle, while riding at slow  |  for a long time, the machine needs
+speed. If necessary, apply the  |  special servicing requiring appropri-
+brakes several times to let friction  |  ate materials, equipment and skills. If
+dry out the linings.  |  you cannot do it yourself, Suzuki rec-
+ommends you to ask your Suzuki
+dealer. If you do it yourself, follow the
+Follow  |  the  |  procedures  |  in  |  the
+general guidelines below.
+“INSPECTION BEFORE RIDING”
+section to check your motorcycle for  |  MOTORCYCLE
+any problems that may have arisen  |  Clean the entire motorcycle. Place
+during your last ride.  |  the motorcycle on the accessory side
+stand on a firm, flat surface where it
+will not fall over.
+FUEL
+Drain the fuel from the fuel tank to
+make it empty.
+7-4
+ENGINE  |  PROCEDURE FOR
+1. Pour about 5 ml (0.17/0.18 US/ RETURNING TO SERVICE
+Imp. oz) of engine oil into the
+1. Clean the entire motorcycle.
+spark plug hole. Reinstall the
+2. Remove the oily rags from the air
+spark plug and crank the engine a
+cleaner intake and muffler outlet.
+few times.
+3. Drain all the engine oil. Install a
+2. Drain the engine oil thoroughly
+new oil filter and fill the engine
+and refill the crankcase with fresh
+with fresh oil as outlined in this
+engine oil to the specified level.
+manual.
+3. Cover the air cleaner intake and
+4. Remove the spark plug. Turn the
+the muffler outlet with oily rags to
+engine a few times. Reinstall the
+prevent humidity from entering.
+spark plug.
+5. Make sure that the motorcycle is
+TIRES
+properly lubricated.
+Inflate the tires to the normal specifi-
+6. Perform  |  the  |  INSPECTION
+cations.
+BEFORE RIDING as listed in this
+manual.
+EXTERNAL
+7. Start the motorcycle as outlined in
+•  |  Spray all vinyl and rubber parts
+this manual.
+with rubber preservative.
+•  |  Spray the unpainted surfaces with
+rust preventative.
+•  |  Coat the painted surfaces with car
+wax.
+7-5
+If the engine is hard to start, follow the CORROSION PREVENTION
+procedure below:  |  It is important to take good care of
+your motorcycle to protect it from cor-
+Due to deterioration of fuel remaining  |  rosion and keep it looking new for
+in the fuel line for long period, engine  |  years to come.
+will be difficult to start until the deteri-
+orated (stale) fuel is discharged from  |  Important Information About
+the fuel line. Repeated kick operation  |  Corrosion
+is required for flushing the fuel line  |  Common causes of corrosion
+with fresh fuel.  |  •  |  Accumulation of road salt, dirt,
+moisture, or chemicals in hard-to-
+1. Fill the fuel tank more than half  |  reach areas.
+full.  |  •  |  Chipping, scratches, and any
+2. Shift the transmission into neutral.  |  damage to treated or painted
+3. While keeping the throttle approxi-  |  metal surfaces resulting from
+mately 1/4 open, repeat kick start  |  minor accidents or impacts from
+operation 30 to 40 times.  |  stones and gravel.
+NOTE: Fuel injection volume is con-  |  Road salt, sea air, industrial pollution,
+trolled to increase in throttle open  |  and high humidity will all contribute to
+condition. However, do not open throt-  |  corrosion.
+tle more than 1/2 as fuel injection is
+shut off in wide open throttle in engine  |  How to Help Prevent Corrosion
+start mode.  |  •  |  Wash your motorcycle frequently,
+at least once a month. Keep your
+4. Start the engine by following cold  |  motorcycle as clean and dry as
+engine start procedure.  |  possible.
+•  |  Remove foreign material deposits.
+NOTE: If the engine fails to start after  |  Foreign material such as road
+several attempts, spark plug will be  |  salt, chemicals, road oil or tar, tree
+get wet. In this case, repeat kick start  |  sap, bird droppings and industrial
+operation 4 to 5 times with throttle  |  fall-out may damage your motor-
+fully opened to dry the spark plug. No  |  cycle’s finish. Remove these types
+fuel is injected with full throttle open-  |  of deposits as quickly as possible.
+ing in engine start mode.  |  If these deposits are difficult to
+wash off, an additional cleaner
+may be required. Follow the man-
+ufacturer’s directions when using
+these special cleaners.
+7-6
+•  |  Repair finish damage as soon as
+possible. Carefully examine your
+motorcycle for damage to the
+painted surfaces. Should you find
+any chips or scratches in the
+paint, touch them up immediately
+to prevent corrosion from starting.
+If the chips or scratches have
+gone through to the bare metal,
+have a Suzuki dealer make the
+repair.
+•  |  Store your motorcycle in a dry,
+well-ventilated area. If you often
+wash your motorcycle in the
+garage or if you frequently park it
+inside when wet, your garage may
+be damp. The high humidity may
+cause or accelerate corrosion. A
+wet motorcycle may corrode even
+in a heated garage if the ventila-
+tion is poor.
+•  |  Cover your motorcycle. Exposure
+to mid-day sun can cause the col-
+ors in paint and plastic parts to
+fade.
+7-7
+SPECIFICATIONS
+DIMENSIONS AND CURB MASS
+Overall length .................................................. 2175 mm (85.6 in)
+Overall width.................................................... 835 mm (32.9 in)
+Overall height .................................................. 1260 mm (49.6 in)
+Wheelbase ...................................................... 1480 mm (58.3 in)
+Ground clearance............................................ 330 mm (13.0 in)
+Seat height ...................................................... 960 mm (37.8 in)
+Curb mass (weight) ......................................... 112 kg (247 lbs)
+ENGINE
+Type.................................................................Four-stroke, liquid-cooled, DOHC
+Number of cylinders ........................................1
+Bore.................................................................96.0 mm (3.780 in)
+Stroke ..............................................................62.1 mm (2.445 in)
+Displacement...................................................449 cm 3 (27.4 cu. in)
+Compression ratio ...........................................12.5 : 1
+Fuel system .....................................................Fuel injection
+Air cleaner .......................................................Polyurethane foam element
+Starter system .................................................Primary kick
+Lubrication system ..........................................Semi-Dry sump
+DRIVE TRAIN
+Clutch ..............................................................Wet multi-plate type
+Transmission ...................................................5-speed constant mesh
+Gearshift pattern .............................................1-down, 4-up
+Primary reduction ratio ....................................2.625 (63/24)
+Gear ratios, Low .............................................1.800 (27/15)
+2nd ..............................................1.470 (25/17)
+3rd...............................................1.235 (21/17)
+4th ...............................................1.050 (21/20)
+Top ..............................................0.909 (20/22)
+Final reduction ratio.........................................3.846 (50/13)
+Drive chain ......................................................DID 520DMA2K, 114 links
+CHASSIS
+Front suspension .............................................Inverted telescopic, coil spring, oil damped
+Rear suspension .............................................Link type, coil spring, oil damped
+Front suspension stroke ..................................305 mm (12.0 in)
+Rear wheel travel.............................................315 mm (12.4 in)
+Caster..............................................................27° 50’
+Trail..................................................................120 mm (4.72 in)
+Front brake ......................................................Disc
+Rear brake.......................................................Disc
+Front tire size...................................................80/100-21 51M, tube type
+Rear tire size ...................................................110/90-19 62M, tube type
+ELECTRICAL
+Ignition type .....................................................Electronic ignition (CDI)
+Spark plug .......................................................NGK DIMR8C10
+Generator ........................................................Single-phase A.C. generator
+CAPACITIES
+Fuel tank.......................................................... 6.3 L (1.7/1.4 US/Imp. gal)
+Engine oil, oil change .....................................1050 ml (1.1/0.9 US/Imp. qt)
+With filter change..........................1100 ml (1.2/1.0 US/Imp. qt)
+Coolant ............................................................1100 ml (1.2/1.0 US/Imp. qt)
+INDEX
+A  |  G
+ACCESSORY SIDE STAND.......... 2-10  |  GEARSHIFT LEVER ....................... 2-9
+AIR CLEANER............................... 6-14  |  GENERAL CONSIDERATIONS ...... 1-2
+GENERAL LUBRICATION ............ 6-10
+B
+BRAKES ........................................ 6-35  |  I
+BREAK-IN (RUNNING-IN)............... 4-2  |  IDLE SPEED ADJUSTMENT ........ 6-27
+INSPECTION AFTER
+C  |  CLEANING ...................................... 7-4
+CLUTCH ADJUSTMENT ............... 6-30  |  INSPECTION BEFORE ENGINE OIL
+CORROSION PREVENTION .......... 7-6  |  LEVEL CHECK ................................ 5-2
+INSPECTION BEFORE RIDING ..... 4-3
+D  |  INSTRUCTIONS.............................. 5-2
+DRIVE CHAIN................................ 6-31
+K
+E  |  KICK STARTER LEVER.................. 2-8
+ENGINE COOLANT....................... 6-33
+ENGINE COOLANT SOLUTION ..... 3-5  |  L
+ENGINE OIL ........................... 3-3,6-19  |  LABELS ........................................... 1-4
+ENGINE RUN TIME INDICATION  |  LEFT HANDLEBAR ......................... 2-5
+PROCEDURE.................................. 6-6  |  LOCATION OF PARTS ................... 2-2
+ENGINE RUN TIME RESET
+PROCEDURE.................................. 6-8  |  M
+MAINTENANCE SCHEDULE .......... 6-2
+F  |  MOTORCYCLE CLEANING ............ 7-2
+FRONT AND REAR BALANCES OF
+THE SUSPENSIONS..................... 2-22  |  O
+FRONT FORK ............................... 6-42  |  OXYGENATED FUEL
+FUEL HOSE .................................. 6-29  |  RECOMMENDATION...................... 3-2
+FUEL OCTANE RATING ................. 3-2
+FUEL TANK ................................... 6-12
+FUEL TANK CAP............................. 2-7
+P  |  T
+PROCEDURE FOR RETURNING TO  |  THROTTLE CABLE
+SERVICE ......................................... 7-5  |  ADJUSTMENT............................... 6-28
+TIRES ............................................ 6-39
+R
+REAR BRAKE PEDAL..................... 2-9
+REAR SUSPENSION .................... 6-42
+REPLACEMENT PARTS................. 6-2
+RIGHT HANDLEBAR....................... 2-6
+S
+SELECTING A S-HAC MODE ......... 5-8
+SELECTION OF ECM
+TUNING MAP ................................ 5-12
+SELECTION OF S-HAC
+(SUZUKI HOLESHOT ASSIST
+CONTROL) MODE .......................... 5-6
+SERIAL NUMBER LOCATION ........ 1-4
+SPARK PLUG................................ 6-17
+SPOKE NIPPLE AND BEAD
+STOPPER NUT ............................. 6-41
+STARTER KNOB............................. 2-8
+STARTING THE ENGINE................ 5-3
+STEERING .................................... 6-43
+STORAGE PROCEDURE ............... 7-4
+SUSPENSION ADJUSTMENT ...... 2-10
+SYMBOL MARKS AND
+DEFINITION .................................... 1-4
+Total page: 112
+

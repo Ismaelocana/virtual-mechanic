@@ -183,6 +183,16 @@ function normalizarModelo(brand, model) {
     // XE 250, XE 300, XEF 125 y XEF 310: sin manual oficial público conocido.
   }
 
+  if (brand.toLowerCase() === 'suzuki') {
+    // Fuente: suzukimotorcycles.com.au (Suzuki Motorcycles Australia,
+    // distribuidor/filial oficial). RM 125, RM 250 y RMX 450Z están
+    // descatalogados y sin manual oficial público conocido (solo agregadores
+    // de terceros como ManualsLib/Scribd, descartados).
+    if (m === 'RM 85') return { model: 'rm85' };
+    if (m === 'RM-Z 250') return { model: 'rmz250' };
+    if (m === 'RM-Z 450') return { model: 'rmz450' };
+  }
+
   if (brand.toLowerCase() === 'sherco') {
     if (m === 'SE 250' || m === 'SE 300')   return { model: 'se250-300' };
     if (m === 'SEF 250' || m === 'SEF 300') return { model: 'sef250-300' };

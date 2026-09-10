@@ -332,6 +332,24 @@ const MANUALES = [
   { marca: 'suzuki', modelo: 'rmz250', año: 2026, url: 'https://suzukimotorcycles.com.au/wp-content/uploads/2024/07/RM-Z250-Owners-Manual-99011-46K55-01A.pdf' },
   { marca: 'suzuki', modelo: 'rmz450', año: 2026, url: 'https://suzukimotorcycles.com.au/wp-content/uploads/2024/07/RM-Z450-Owners-Manual-99011-37K56-01A.pdf' },
 
+  // ── TRS ───────────────────────────────────────────────────────────────────
+  // Fuente: trsmotorcycles.com — fabricante oficial (TRS Motorcycles, S.L.,
+  // Santpedor, Barcelona). Hub de descargas en trsmotorcycles.com/Descargas,
+  // sección "MANUAL USUARIO" (la sección "MANUAL DESPIECE" son catálogos de
+  // piezas despiezadas, no manuales de uso — se descartan). El servidor
+  // bloquea peticiones sin cabeceras de navegador real (Referer + Sec-Fetch-*)
+  // devolviendo 403; con esas cabeceras responde 200 normalmente.
+  // TRS/TRRS es una marca 100% 2T — no fabrica trial de 4 tiempos.
+  // La gama "ONE" (base) y "ONE RR" (gama superior, lanzada en 2017) son
+  // líneas independientes, cada una disponible en 125/250/280/300cc — no
+  // "One 300 RR" como variante única (nombre incorrecto que tenía el
+  // catálogo). El manual de 2016 no cubre 125cc (se añadió en 2019).
+  { marca: 'trs', modelo: 'one250-280-300',     año: 2016, url: 'https://trsmotorcycles.com/archivos/adjuntos/38fedb_User%20Manual%20-%20TRS%20One%20-%202016%20v.1.1.pdf' },
+  { marca: 'trs', modelo: 'one125-250-280-300', año: 2019, url: 'https://trsmotorcycles.com/archivos/adjuntos/07fc37_userManual2019.pdf' },
+  { marca: 'trs', modelo: 'one125-250-280-300', año: 2021, url: 'https://trsmotorcycles.com/archivos/adjuntos/470f61_UserManual%202021.pdf' },
+  { marca: 'trs', modelo: 'one125-250-280-300', año: 2026, url: 'https://trsmotorcycles.com/archivos/adjuntos/91a4aa_manual2026.pdf' },
+  { marca: 'trs', modelo: 'onerr125-250-280-300', año: 2021, url: 'https://trsmotorcycles.com/archivos/adjuntos/be9f1d_rr2021eng.pdf' },
+
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────

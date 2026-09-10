@@ -206,6 +206,23 @@ function normalizarModelo(brand, model) {
     }
   }
 
+  if (brand.toLowerCase() === 'vertigo') {
+    // Fuente: vertigomotors.com (fabricante oficial) y vertigomotorsusa.com
+    // (distribuidor oficial en EEUU). La gama base (bajo distintos nombres
+    // según el año: "Vertical Works" en 2020/21, "Nitro Works" desde 2022)
+    // solo ofrecía 125/250/300cc hasta 2021; las cilindradas 225 y 280cc se
+    // añadieron en 2022. No hay manual oficial distinto para la gama
+    // superior (RS/RS2/RSR, Titanium, ediciones firmadas Lampkin/Busto) —
+    // el catálogo original tenía "Carbon 250/300", nombre inexistente en
+    // ningún material oficial de Vertigo, descartado.
+    if (m === 'NITRO WORKS 125' || m === 'NITRO WORKS 250' || m === 'NITRO WORKS 300') {
+      return { model: { $in: ['works125-250-300', 'nitroworks125-225-250-280-300'] } };
+    }
+    if (m === 'NITRO WORKS 225' || m === 'NITRO WORKS 280') {
+      return { model: 'nitroworks125-225-250-280-300' };
+    }
+  }
+
   if (brand.toLowerCase() === 'sherco') {
     if (m === 'SE 250' || m === 'SE 300')   return { model: 'se250-300' };
     if (m === 'SEF 250' || m === 'SEF 300') return { model: 'sef250-300' };

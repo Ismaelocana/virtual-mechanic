@@ -350,6 +350,23 @@ const MANUALES = [
   { marca: 'trs', modelo: 'one125-250-280-300', año: 2026, url: 'https://trsmotorcycles.com/archivos/adjuntos/91a4aa_manual2026.pdf' },
   { marca: 'trs', modelo: 'onerr125-250-280-300', año: 2021, url: 'https://trsmotorcycles.com/archivos/adjuntos/be9f1d_rr2021eng.pdf' },
 
+  // ── VERTIGO ───────────────────────────────────────────────────────────────
+  // Fuente: vertigomotors.com (fabricante oficial) y vertigomotorsusa.com
+  // (distribuidor oficial en EEUU, página owners-manuals/). Ambos sitios
+  // coinciden en no tener ningún "Manual de Propietario" general más
+  // reciente que 2022, pese a que el modelo actual (Nitro Works) se sigue
+  // actualizando cada año — igual que TRS, no republican el manual
+  // completo anualmente. La gama base se llamó "Vertical Works" en
+  // 2020/2021 y pasó a "Nitro Works" desde 2022; solo desde 2022 se vende
+  // también en 225cc y 280cc (antes solo 125/250/300cc).
+  // Catálogo corregido: "Carbon 250/300" no es un modelo real de Vertigo
+  // (no aparece en ningún material oficial) — sustituido por "Nitro Works"
+  // en sus 5 cilindradas reales. Sin manual oficial distinto para la gama
+  // superior (RS/RS2/RSR, Titanium, ediciones Lampkin/Busto Replica).
+  { marca: 'vertigo', modelo: 'works125-250-300',                año: 2020, url: 'http://vertigomotors.com/wp-content/uploads/2019/12/MY2020-VERTICAL-WORKS-OWNERS-MANUAL_compressed-2.pdf' },
+  { marca: 'vertigo', modelo: 'works125-250-300',                año: 2021, url: 'http://vertigomotors.com/wp-content/uploads/2020/11/MY2021-VERTICAL-WORKS-OWNERS-MANUAL.pdf' },
+  { marca: 'vertigo', modelo: 'nitroworks125-225-250-280-300',   año: 2022, url: 'https://www.vertigomotors.com/wp-content/uploads/2022/06/MANUAL-PROPIETARIO-2022.pdf' },
+
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────

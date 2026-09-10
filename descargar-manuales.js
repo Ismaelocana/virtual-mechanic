@@ -301,6 +301,22 @@ const MANUALES = [
   { marca: 'yamaha', modelo: 'yz450f', año: 2026, url: 'https://library.ymcapps.net/library/om/contents/pdf/10/D03-2819U-50_02.pdf' },
   { marca: 'yamaha', modelo: 'yz450f', año: 2027, url: 'https://library.ymcapps.net/library/om/contents/pdf/10/D03-2819U-51_02.pdf' },
 
+  // ── FANTIC ────────────────────────────────────────────────────────────────
+  // Fuente: korlas.com.tr — distribuidor oficial de Fantic en Turquía
+  // ("Fantic Türkiye Resmi Distribütörü"), hub de manuales en
+  // korlas.com.tr/kullanici-kilavuzlari/. shop.fantic.com (sitio oficial)
+  // solo publica manuales de sus E-Scooters, no de la gama off-road.
+  // Cada PDF cubre varios modelos: el 2T cubre XE 125 (enduro) + XX 125 y
+  // XX 250 (motocross) en un mismo manual; el 4T cubre XEF 250, XEF 450
+  // (enduro) + XXF 250, XXF 450 (motocross) en un mismo manual por año.
+  // Nota: el catálogo de la app llamaba a estos modelos "MX 125"/"MXF
+  // 250"/"MXF 450" y "XEF 300" — nombres incorrectos, corregidos a los
+  // reales de Fantic (XX/XXF y XEF 310) tras confirmarlo en fantic.com y
+  // en coberturas de prensa especializada (enduro21.com, cyclenews.com).
+  // Sin manual oficial conocido para XE 250, XE 300, XEF 125 y XEF 310.
+  { marca: 'fantic', modelo: 'xe125-xx125-xx250', año: 2022, url: 'https://korlas.com.tr/wp-content/uploads/2024/05/125XE-250XE-2T-ENG-2022.pdf' },
+  { marca: 'fantic', modelo: 'xef250-xef450-xxf250-xxf450', año: 2023, url: 'https://korlas.com.tr/wp-content/uploads/2024/05/XEF-250-XEF-450-4T-2023-ENG.pdf' },
+  { marca: 'fantic', modelo: 'xef250-xef450-xxf250-xxf450', año: 2024, url: 'https://korlas.com.tr/wp-content/uploads/2024/05/XEF-250-XEF-450-4T-2024-ENG.pdf' },
 
 ];
 

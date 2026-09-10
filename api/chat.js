@@ -172,6 +172,17 @@ function normalizarModelo(brand, model) {
     // Montesa Cota 315R (2T, 1999-2004): sin manual público conocido.
   }
 
+  if (brand.toLowerCase() === 'fantic') {
+    // Fuente: korlas.com.tr (distribuidor oficial de Fantic en Turquía).
+    // El manual 2T (edición 01/2022) cubre XE 125 (enduro), XX 125 y XX 250
+    // (motocross) en un único documento. El manual 4T (ediciones 2023/2024)
+    // cubre XEF 250, XEF 450, XXF 250 y XXF 450 (enduro + motocross) también
+    // en un único documento por año.
+    if (m === 'XE 125' || m === 'XX 125' || m === 'XX 250') return { model: 'xe125-xx125-xx250' };
+    if (m === 'XEF 250' || m === 'XEF 450' || m === 'XXF 250' || m === 'XXF 450') return { model: 'xef250-xef450-xxf250-xxf450' };
+    // XE 250, XE 300, XEF 125 y XEF 310: sin manual oficial público conocido.
+  }
+
   if (brand.toLowerCase() === 'sherco') {
     if (m === 'SE 250' || m === 'SE 300')   return { model: 'se250-300' };
     if (m === 'SEF 250' || m === 'SEF 300') return { model: 'sef250-300' };

@@ -418,8 +418,32 @@ const MANUALES = [
   // marketing. TY 125 (gama de ocio/iniciación, 4T) se quitó del
   // catálogo a petición del usuario; su manual sigue descargado e
   // indexado en Pinecone por si se retoma más adelante.
+  //
+  // Histórico ampliado por el usuario hasta 2011 (descargado y convertido
+  // directamente por él, así que no todas las URLs de origen están
+  // confirmadas por este script — se documentan las que sí). Hasta 2016
+  // la gama solo existía en 125cc y 280cc ("SR" 2011-2014, "Twuenty"
+  // 2015-2016 — mismo contenido, solo cambia el nombre y el sistema de
+  // frenos); desde 2017 pasó a 125/250/300cc, confirmado con datos
+  // técnicos reales (diámetro x carrera) en el manual de 2017, que se
+  // mantiene igual hasta el "SC-R Racing" actual. 2024 y 2026 son copias
+  // del manual del año anterior (2023 y 2025 respectivamente) — sin
+  // cambios documentados entre esos años, mismo criterio que en el resto
+  // del catálogo cuando una edición cubre varios años-modelo.
+  { marca: 'scorpa', modelo: 'scr125-280',     año: 2011, url: 'https://www.scorpa-motorcycles.com/wp-content/uploads/sites/2/2011-manual_scorpa_SR125R-SR280R.pdf' },
+  { marca: 'scorpa', modelo: 'scr125-280',     año: 2012, url: 'https://www.scorpa-motorcycles.com/wp-content/uploads/sites/2/2012-manual_scorpa_SR-125-SR-280.pdf' },
+  { marca: 'scorpa', modelo: 'scr125-280',     año: 2013, url: 'https://www.scorpa-motorcycles.com/wp-content/uploads/sites/2/2013-manual_scorpa_SR-125-SR-280.pdf' },
+  { marca: 'scorpa', modelo: 'scr125-280',     año: 2014, url: 'https://www.scorpa-motorcycles.com/wp-content/uploads/sites/2/2014-manual_scorpa_SR-125-SR-280.pdf' },
+  { marca: 'scorpa', modelo: 'scr125-280',     año: 2015, url: 'https://www.scorpa-motorcycles.com/wp-content/uploads/sites/2/2015-manual_scorpa_SC-125-250-300.pdf' },
+  // 2016 (mismo contenido que 2015): descargado por el usuario, URL de origen sin confirmar por este script.
+  { marca: 'scorpa', modelo: 'scr125-250-300', año: 2017, url: 'https://www.scorpa-motorcycles.com/wp-content/uploads/sites/2/2017-MANUEL-DU-PROPRIÉTAIRE_TWENTY_TRIAL.pdf' },
+  { marca: 'scorpa', modelo: 'scr125-250-300', año: 2018, url: 'https://www.scorpa-motorcycles.com/wp-content/uploads/sites/2/2018-MANUEL-DU-PROPRIÉTAIRE_TWENTY_TRIAL.pdf' },
+  { marca: 'scorpa', modelo: 'scr125-250-300', año: 2019, url: 'https://www.scorpa-motorcycles.com/wp-content/uploads/sites/2/2019-MANUEL-DU-PROPRIÉTAIRE_TWENTY_TRIAL.pdf' },
+  // 2020-2022 (mismo contenido que 2017-2019): descargados por el usuario, URLs de origen sin confirmar por este script.
   { marca: 'scorpa', modelo: 'scr125-250-300', año: 2023, url: 'https://www.scorpa-motorcycles.com/wp-content/uploads/sites/2/SCORPA-OWNERS-MANUAL-TRIAL-125-250-300-SC-R-RACING-2023-1.pdf' },
+  // 2024 (mismo contenido que 2023): copiado por el usuario, sin URL de origen propia.
   { marca: 'scorpa', modelo: 'scr125-250-300', año: 2025, url: 'https://www.scorpa-motorcycles.com/wp-content/uploads/sites/2/SCORPA-_OWNER_MANUAL_TRIAL_125-250-300-SC-R_RACING-2025.pdf' },
+  // 2026 (mismo contenido que 2025): copiado por el usuario, sin URL de origen propia.
   { marca: 'scorpa', modelo: 'ty125',          año: 2020, url: 'https://www.scorpa-motorcycles.com/wp-content/uploads/sites/2/OWNERS-Manual-TY125_4T-SCORPA-1.pdf' },
 
 ];

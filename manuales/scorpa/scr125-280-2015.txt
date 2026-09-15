@@ -1,0 +1,223 @@
+Scorpa Twuenty
+Manual de mantenimiento - Manuel d’entretien - Maintenance manuel 1
+Introducción - Introduction - Introduction
+E Scorpa agradece la confianza que nos ha dado y le felicita por la elección de su nueva Scorpa para la práctica del trial. Con este manual pretendemos darle una informa-
+ción básica para el mantenimiento correcto de su moto con el fin de que pueda disfrutar de todas las cualidades y posibilidades que le permitirá su nueva Scorpa.
+Todas las operaciones que se detallan en este manual pueden realizarse fácilmente por el usuario, la mayoría de ellas con el kit de herramientas básico que se entrega con
+la moto. En procesos más elaborados como reparaciones o reglajes internos de motor lo más recomendable es acudir a un centro Scorpa.
+Sea cuidadoso con su moto y con el entorno. La Scorpa de trial es una moto pensada para disfrutar del equilibrio, destreza en la conducción y disfrute del medio en el que
+se desenvuelve. Sea cuidadoso con el medio ambiente y sea respetuoso con los demás.
+Toda la información que contiene este manual responde a las preguntas más frecuentes de los usuarios de Scorpa que a lo largo de los años han depositado su confianza
+en los productos de la marca. Scorpa Motorcycles se reserva el derecho de efectuar cambios sin previo aviso, dado el carácter informativo de este manual.
+F Scorpa vous remercie pour la confiance que vous lui accordez et vous félicite d’avoir choisi la nouvelle Scorpa de trial. Avec ce manuel nous prétendons vous donner
+une information basique pour l’entretien correct de votre moto afin que vous puissiez profiter de toutes les qualités et possibilités offertes par la nouvelle Scorpa. Toutes
+les opérations décrites dans ce manuel peuvent être effectuées facilement par l’utilisateur. La majorité d’entre-elles peuvent être effectuées grâce au kit d’outillage fourni
+avec la moto. Il est préférable de se rendre dans un centre Scorpa pour les opérations plus compliquées comme les réparations et les réglages internes du moteur. Soyez
+soigneux avec votre moto et respectueux avec l’environnement. La Scorpa de trial est une moto conçue pour mettre en évidence votre équilibre, votre habileté et profiter
+de l’environnement dans lequel elle évolue. Respectez la nature et les personnes qui vous entourent. Toute l’information contenue dans ce manuel répond aux questions
+les plus fréquentes des utilisateurs de Scorpa, qui au fil des années, ont fait confiance aux produits de la marque. Scorpa Motorcycles se réserve le droit d’effectuer des
+modifications sans avertissement préalable. Ce manuel ayant seulement un but informatif.
+GB Scorpa is thankful for the confidence that you have given to us and we want to congratulate you on the purchase of a new Scorpa for the practice of trials. This manual
+is intended to provide you with the basic information needed to perform the proper maintenance on your new bike, so that you can fully enjoy all its many features and
+qualities.All of the operations detailed in this manual can be performed by the user, most of them with the basic tool kit that comes with the bike. In the case of the more
+complex processes, such as repairs to the engine, it is recommended that you take it to your local Scorpa dealer.Please be careful with your bike and the environment.
+The Scorpa Trial is a motorcycle that is designed to be enjoyed in the environment in which it operates. Please be careful with the environment and be respectful of others.
+All of the information in this manual provides answers to frequently asked questions from current Scorpa owners who have over the years placed their trust in the product
+brand. Scorpa Motorcycles reserves the right to make changes to the information in this manual without providing any advanced notice.
+2
+E Es recomendable revisar periódicamente la tensión de la cadena. Con la moto en reposo, el oscilamiento de  |  E En caso del desmontaje de la rueda trasera o
+la misma en la zona donde actúa el patín del tensor debe ser de entre 3 y 4 cms. La cadena debe ser objeto de  |  para tensar la cadena si es necesario, la posición del
+una atención especial ya que de su buen mantenimiento depende la vida útil del conjunto piñon, corona y de la  |  eje se regula mendiante excéntricas con numeros de
+propia cadena. Es recomendable su limpieza y engrase con frecuencia.  |  referencia para mayor precisión.
+F Il est recommandé de vérifier régulièrement la tension de la chaîne. Avec la moto au repos, l’oscillation de  |  F En cas de démontage de la roue arrière ou en
+celle-ci doit être comprise entre 3 et 4 centimètres dans la zone où se trouve le patin de tension. La chaîne doit  |  cas de réglage de tension de la chaîne, la meilleure
+toujours faire l’objet d’une attention particulière puisque de son bon entretien, dépendent aussi la longévité du  |  précision du positionnement de l’axe s’obtient grâce
+pignon, de la couronne et de chaîne elle-même. Il est recommandé de nettoyer et graisser la chaîne fréquem-  |  aux excentriques numérotés.
+ment.
+GB It is recommended that you periodically check the chain tension. With the motorcycle at rest, and supported  |  GB If it becomes necessary to remove the rear wheel
+with a suitable stand, rotate the wheel to observe the chain tension. The amount of slack, measured at the chain  |  or adjust the chain, use the reference numbers on
+tensioner should be between 3 and 4 cms. The chain must be the object of special attention since the life of  |  the eccentric adjusters to accurately align the rear
+the sprockets and the chain are dependent on good maintenance. It is recommended that it be cleaned and  |  wheel.
+lubricated frequently.
+3
+E El tensor de la cadena es uno de los elementos  |  E Para uso standard la presión hinchado del neumático delantero debe ser de 0,4 bar. Para su uso más espe-
+más castigados, sobretodo el muelle que es el en-  |  cífico en competición puede graduarse a 0,38 bar. Para el neumático trasero -tubelees- la presión de hinchado
+cargado de mantener la presión sobre la cadena. Es  |  debe ser de 0,30 bar. Para su uso en competición la presión puede reducirse hasta 0,27 bar.
+importante mantenerlo limpio y bien engrasado.
+F Le tendeur de chaîne est un des éléments les plus  |  F Pour une utilisation normale la pression de gonflage du pneu avant doit être de 0,4 bar. Pour une utilisation
+importants et surtout le ressort chargé de maintenir  |  plus typée compétition, on peut la baisser à 0,38 bar. La pression de gonflage du pneu arrière tubeless doit être
+la pression sur la chaîne. Il est important de le main-  |  de 0,3 bar. Pour une utilisation en compétition, cette pression peut être réduite à 0,27 bar.
+tenir propre et bien lubrifié.
+GB The chain tensioner can be subject to damage,  |  GB The front tire should be inflated to 0.4 bar (6 psi). For competition it can be reduced to 0.38 bar (5.5 psi).
+especially the spring that provides tension for main-  |  The rear (tubeless) tire should be inflated to 0.3 bar (4.5 psi). For competition use it can be reduced to 0.27
+taining pressure on the chain. It is important to keep  |  bar (4 psi).
+it clean and well oiled.
+4
+B
+A
+E Para mantener el funcionamiento del gas de for-  |  E El cable del gas nunca debe estar en tensión. La  |  E La posición de la maneta del freno delantero pue-
+ma eficiente es necesario mantener el puño del gas  |  tolerancia del cable del gas viene regulada de fábri-  |  de ajustarse a la distancia adecuada mediante el tor-
+limpio y engrasado, así como el punto donde va an-  |  ca, pero el usuario también puede graduarlo con el  |  nillo roscado A . También desde la parte delantera
+clado. Es importante verificar que el cable del gas no  |  tensor a rosca que une la funda del cable con el car-  |  se puede controlar el nivel B del líquido Minerva de
+está forzado en ningún punto desde el manillar hasta  |  burador.  |  freno delantero.
+el carburador.
+F Pour conserver le fonctionnement efficace de la  |  F Le câble du gaz ne doit jamais être en tension. La  |  F La position du levier de frein avant peut être ajus-
+commande de gaz, il est nécessaire de maintenir la  |  tolérance du câble du gaz est réglée d’usine, mais  |  tée à la distance A adéquate grâce à la vis moletée.
+poignée d’accélération propre et graissée, ainsi que  |  l’utilisateur peut aussi le graduer avec ce qui est de  |  On peut aussi vérifier le niveau B du liquide de frein
+l’endroit où elle est fixée. Il est important de vérifier  |  tension à spirale qui unit la couverture du câble avec  |  avant Minerva sous la partie avant.
+que le câble de gaz ne force à aucun endroit depuis le  |  le carburateur.
+guidon jusqu’au carburateur.
+GB In order to maintain the proper and efficient  |  GB The throttle cable must never be in tension. The  |  GB The position of the front brake lever can be adjus-
+operation of the throttle it is necessary to keep the  |  cable tolerance is properly adjusted at the factory. If  |  ted A by using the threaded screw. The brake fluid
+throttle assembly clean and well lubricated. It is also  |  it requires adjustment, the user can adjust the slack  |  level can also be checked B from the front brake
+important to verify that the throttle cable is not pin-  |  by using the adjuster that connects the cable to the  |  control.
+ched or kinked at any point from the handlebar to the  |  top of the carburetor.
+carburetor.
+5
+A
+B
+E El margen de tolerancia para el accionamiento del  |  E La posición de la maneta del embrague puede  |  E El margen de tolerancia para el accionamiento
+bombín del freno delantero puede ser regulado a la  |  ajustarse a la distancia adecuada mediante el torni-  |  del bombín del embrague puede ser regulado según
+medida y según el usuario.  |  llo roscado A . También desde la parte delantera se  |  el usuario. Es recomendable mantener un margen
+puede controlar el nivel del líquido Minerva del depó-  |  de tolerancia para evitar cualquier presión sobre el
+sito B del embrague hidráulico.  |  bombín.
+F La garde pour la commande du maître-cylindre de  |  F La position du levier d’embrayage peut être ajus-  |  F La garde de la commande du maître-cylindre
+frein avant peut se régler à la convenance de chacun  |  tée à la distance adéquate grâce à la vis moletée  |  d’embrayage peut se régler à la convenance de cha-
+des utilisateurs.  |  A . On peut aussi vérifier le niveau du liquide B  |  cun des utilisateurs. Il est recommandé de conserver
+d’embrayage Minerva sous la partie avant.  |  du jeu de fonctionnement pour se préserver d’une
+quelconque pression sur le maître-cylindre.
+GB The front brake lever travel can be custom tailo-  |  GB The position of the clutch lever can be adjusted  |  GB The clutch lever travel can be custom tailored to
+red to the requirements of the user.  |  by using the threaded screw A . The clutch fluid level  |  the requirements of the user. It is recommended
+can also be checked B from the clutch control.  |  that it be adjusted so that the clutch does not drag.
+6
+E El anclaje de los estribos debe estar limpio y en-  |  E Tanto la palanca del cambio de marchas, como la del freno trasero incluyen la parte final retráctil con el fin de
+grasado para permitir que el estribo se pliegue en  |  evitar su rotura en caso de golpeo con obstáculos. En el caso del cambio su accionamiento es más esporádico,
+caso necesario y vuelva a su posición con la acción  |  pero en el caso del freno su utilización es mucho más continuada. Esta disponte de la parte superior dentada
+del muelle.  |  para mayor agarre, y en ambos casos su funcionalidad retráctil está basada en un anclaje con un muelle que
+permite 90 grados de movimiento y con ello la recuperación de su posición original instantanea.
+F Les fixations des étriers doivent être propres et lu-  |  F La pédale de changement de vitesse comme celle d frein comporte une extrémité rétractable afin d’éviter leur
+brifiées afin de permettre que l’étrier fléchisse en cas  |  rupture en cas de choc sur des obstacles. L’utilisation du changement de vitesse est moins fréquente que celle
+de nécessité et revienne à sa position initiale grâce à  |  du frein dont l’utilisation est plus continue. Ce dernier dispose d’une partie supérieure crantée pour une meilleure
+l’action du ressort.  |  adhérence. Dans les deux cas leur possibilité d’escamotage est basée sur une fixation munie d’un ressort qui
+permet 90° de liberté et un retour à la position initiale instantané.
+GB The foot peg mounting brackets should be kept  |  GB Both the gearshift lever and the rear brake lever are equipped with folding tips in order to prevent damage
+cleaned and lubricated so that the foot pegs can ope-  |  when hit by obstacles. Gear changing is more sporadic while the operation of the brake is more continuous, it is
+rate freely and the spring returns them to the home  |  very important to keep the tips and the associated springs and pivot points clean and well lubricated so that the
+position.  |  tips maintain a full 90 degree operating range.
+7
+E En caso de la substitución del latiguillo de freno, ya sea el trasero o el delantero y una vez se ha ha vuelto a llenar el circuito con líquido de freno Minerva, debe realizarse
+la purga del mismo. Para ello se debe ejercer presión sobre la maneta, en caso del freno delantero y palanca en caso del trasero, y aflojar ligeramente el dispositivo -prote-
+gido con un tapón negro- de purga situado al lado del anclaje del latiguillo. Repetir esta acción cuantas veces sea necesario hasta que se haya eliminado completamente el
+aire del circuito y añadir líquido de freno Mineerva si es necesario. El depósito de líquido del freno trasero se encuentra anclado en la parte posterior del chasis y es visible
+desde el lador del carburador. Para su acceso y manipulación es necesario quitar el depósito de combustible o el tubo de escape.
+F Lors du remplacement de la canalisation de frein, aussi bien à l’avant qu’à l’arrière et une fois que le circuit de frein a été rempli avec du liquide de frein Minerva, il est
+impératif de réaliser une purge du circuit. Pour cela, on exerce une pression sur le levier du frein avant ou sur la pédale de frein arrière en ouvrant légèrement le dispositif
+(protégé par un bouchon noir) de purge situé à côté de la fixation de la durite. Répéter cette action autant de fois que c’est nécessaire jusqu’à ce que tout l’air soit extrait du
+circuit. Ajouter du liquide de frein Minerva si besoin. Le réservoir de liquide de frein arrière se trouve dans la partie arrière du châssis et est visible du côté du carburateur.
+Pour y accéder et le démonter, démonter préalablement le réservoir de carburant ou l’échappement.
+GB If either front or rear brake hose has to be replaced the brake reservoirs must be filled with brake fluid and then the air must be purged from the system. Pressure must
+be exerted on the appropriate brake lever and at the same time the purge valve must be opened and then closed repeatedly until all of the air is purged from the system.
+The purge valve has a black protective cover and is located next to the hose attachment point.
+The rear brake reservoir is located on the rear of the chassis and is visible behind the carburetor. Either the fuel tank or the muffler has to be removed in order to access
+the rear brake reservoir.
+8
+E La altura de la posición del pedal del freno trasero  |  E Para vaciar el aceite de la suspensión delantera  |  E La regulación de la precarga de muelle se reali-
+es fija, pero se puede graduar la tolerancia graduan-  |  debe aflojarse completamente el tornillo de la parte  |  za solo en la barra izquierda. Con esta regulación se
+do la longitud del pistón de presión en el bombín.  |  inferior de la botella. Debe tenerse en cuenta que el  |  establece la dureza con la que queremos trabaje la
+mismo tornillo sujeta el anclaje de la barra. El llenado  |  suspensión.
+se realiza quitando el tapón superior de cada barra.
+F La hauteur de la pédale de frein arrière est fixe  |  F Pour vider l’huile de la suspension avant, desse-  |  F Le réglage de la pré charge du ressort s’effectue
+mais le jeu de fonctionnement peut être réglé en fai-  |  rrer complètement la vis de la partie inférieure du  |  seulement sur le bras de fourche gauche. Avec ce
+sant varier la longueur du piston du maître-cylindre.  |  fourreau. Tenir compte que cette même vis fait par-  |  réglage, on règle la dureté d’amortissement de la
+tie de la fixation de la tige. Le remplissage de la four-  |  suspension
+che est effectué en retirant le bouchon supérieur de
+chaque tige.
+GB The height of the position of the rear brake pedal  |  GB To drain the oil from the front suspension, remove  |  GB The spring preload is performed only on the left
+is fixed, but the rod connecting it to the master cylin-  |  the screw on the bottom of the cylinder. Note that  |  fork leg. This adjustment establishes the stiffness of
+der is adjustable for free play.  |  this bolt also anchors the fork internal components.  |  the suspension.
+Filling is accomplished by removing the top cap.
+9
+E En la barra derecha se regula el hidráulico. Con  |  E El amortiguador trasero puede ser regulado tanto en precarga -muelle- como en hidráulico. Para regular el
+esta regulación se ajusta directamente la rapidez de  |  muelle se debe ajustar la longitud del muelle gracias al doble conjunto de anillo dentado roscado que sirve para
+funcionamiento sobretodo en capacidad de absor-  |  graduar y fijar su posición. Para graduar el hidráulico se puede realizar con un destornillador. Cualquier opera-
+ción y retorno.  |  ción que se realice mantiene invariable el recorrido del amortiguador.
+F Dans la barre droite on règle ce qui est hydrau-  |  F L’amortisseur arrière peut être réglé tant en pré charge de ressort qu’en hydraulique. Pour régler le ressort
+lique. Avec ce règlement on adapte directement la  |  on ajuste sa longueur grâce au double écrou crénelé. L’un sert à régler la position et l’autre de contre écrou. On
+rapidité de fonctionnement pardessus en capacité  |  règle l’hydraulique grâce à un tournevis. Aucune de ces opérations ne modifie le débattement de l’amortisseur.
+absorption et retour.
+GB The suspension dampening adjustment is located  |  GB The rear shock can also be adjusted for spring tension and for hydraulic dampening. The spring can be
+on the right fork leg. This adjustment determines how  |  adjusted using the two serrated threaded rings, move them up or down the shock as required. The dampening
+fast the suspension will compress and then rebound.  |  adjustment can be performed using a screwdriver. Both of these operations can be performed without removing
+the rear shock.
+10
+B
+A
+E Para vaciar el aceite del cárter del motor debe aflojarse el tornillo en la parte izquierda del carter, justo en  |  E El circuito de refrigeración se puede llenar por el
+la parte más baja del carter. Para facilitar que se vacíe completamente es necesario inclinar la moto. Una vez  |  propio radiador, provisto de una boca A de entrada
+completada la operación y con el tornillo ajustado puede realizarse la operación de llenado de aceite. Para ello  |  en su lado izquierdo. La operación debe realizarse
+el carter dispone de una boca de entrada en el lado derecho, justo detrás de la bomba de agua, por el cual se  |  siempre con el motor en frío. Justo al lado del tapón
+debe introducir el aceite nuevo. El aceite debe ser 450 c.c. de especificaciones power 10W50. Para facilitar la  |  del radiador se encuentra la válvula B de seguridad
+operación se puede inclinar ligeramente la moto.  |  la cual no debe manipularse ya que viene regulada por
+el fabricante.
+F Pour vidanger l’huile du carter moteur, desserrer la vis sur le côté gauche du carter, juste en dessous de celui-  |  F Le circuit de refroidissement peut être rempli par
+ci. Incliner la moto pour faciliter le vidage complet. Quand cette opération est terminée et la vis remise en place,  |  son radiateur, pourvu d’un orifice A de remplissage
+commencer l’opération de remplissage d’huile. Pour cela, le carter dispose d’un orifice de remplissage sur le  |  sur le côté gauche. L’opération doit toujours être réa-
+côté droit, juste derrière la pompe à eau, dans lequel il faut introduire l’huile neuve. Le volume d’huile de viscosité  |  lisée moteur froid. Juste à côté du bouchon du radia-
+10W50 est de 450cc. Il est possible d’incliner légèrement la moto pour faciliter cette opération.  |  teur, se trouve le clapet de sécurité B , lequel ne doit
+pas être modifié puisqu’il est réglé par le fabricant.
+GB To drain the crankcase oil, loosen and remove the screw on the left side of the crankcase, it is located right  |  GB The cooling system can be filled at the radiator
+at the bottom of the crankcase. To make it easier to completely empty the oil, tilt the bike. Once the oil has been  |  itself, there is an inlet located A on its left side.
+removed and the screw replaced, the crankcase can be refilled. Remove the filling plug which is located just  |  Always check and fill the radiator when the engine is
+behind the water pump. Fill the crankcase with 450 cc of 10W50 motor oil. To facilitate this operation slightly  |  cold. Right next to the radiator cap is the B safety
+tilt the bike.  |  valve which should not be manipulated as it is preset
+by the manufacturer.
+11
+0,8mm
+B  |  A
+E El mantenimiento del filtro de aire es ahora mucho  |  E En el carburador Dell’Orto se puede regular el  |  E La bujía nos permitirá saber si el motor realiza
+más fácil en la nueva Scorpa. Este va instalado justo  |  ralentí A y la riqueza de la mezcla B aire-gasolina.  |  la combustión correctamente. Además de estar en
+donde antes estaba el depósito de combustible. Para  |  Aunque la puesta a punto viene regulada de fábrica,  |  perfecto estado, las medidas del electrodo y el arco
+acceder al conjunto filtrante se puede realizar sin la  |  dependiendo de la altura y condiciones climáticas  |  deben mantenerse las estipuladas por el fabricante.
+ayuda de ninguna herramienta. Una vez limpio el filtro  |  puede requerir pequeños ajustes.
+es recomendable aplicar aceite especial para filtros
+F L’entretien du filtre à air est dorénavant plus facile  |  F Le carburateur Dell’Orto on peut régler le ralenti  |  F La bougie nous permet de savoir si la combustion
+sur la nouvelle Scorpa. Il est monté là où était le ré-  |  A ainsi que la richesse du mélange B air - essen-  |  est effectuée correctement. En plus d’être en par-
+servoir de carburant auparavant. On peut accéder à  |  ce. Bien que la mise au point et les réglages soient  |  fait état, l’espacement entre les électrodes doit être
+l’ensemble filtrant sans l’aide d’aucun outil. Une fois  |  effectués en fabrication. En fonction de l’altitude et  |  identiques à celui spécifié par le fabricant.
+nettoyé, il est recommandé d’appliquer sur le filtre,  |  des conditions atmosphériques, il est possible que de
+l’huile spéciale pour les filtres à air.  |  petits ajustements soient nécessaires.
+GB Air filter maintenance is now much easier on the  |  GB The Dell’Orto carburetor, you can adjust the idle  |  GB The condition of the spark plug will tell if the en-
+new Scorpa. It is now located where the fuel tank was  |  A and the air-fuel B mixture screw. The jetting has  |  gine combustion is performing properly. The spark
+previously. The air filter can be removed and installed  |  been set at the factory; however minor adjustments  |  plug should be kept in perfect condition and the gap
+without the use of tools. Once the filter is cleaned it  |  may be required depending on the altitude and clima-  |  should be set per the manufacturers specifications.
+should receive an application of special air filter oil.  |  tic conditions.
+12
+Motor  |  Engine  |  Moteur  |  125cc  |  280cc
+Cilindrada  |  Displacement  |  Cylindrée  |  124,7  |  272
+Diámetro x carrera  |  Bore x Stroke  |  Alésage X course  |  56x50,7  |  76x60
+Tolerancia pistón-cilindro  |  Piston-cylinder tolerance  |  Jeu piston cylindre  |  0,0200mm-0,0300mm  |  0,0270mm-0,0325mm
+Apriete culata  |  Cylinder head  |  Serrage culasse  |  1,1 mk/g  |  1,1 mk/g
+Combustible  |  Fuel  |  Carburant  |  98 oct  |  98 oct
+Bujía  |  Spark Plug  |  Bougie  |  BP5ES  |  BP5ES
+Carburador  |  Carburetor  |  Carburateur  |  Dell’Orto PHBL26BS  |  Dell’Orto PHBL26BS
+Slide  |  Slide  |  Boisseau  |  60  |  60
+Surtidor principal  |  Main jet  |  Gicleur principal  |  117  |  128
+Surtidor piloto  |  Pilot jet  |  Gicleur de ralenti  |  40  |  33
+Aguja  |  Needle  |  Aiguille  |  D36  |  D36
+Altura clip  |  Needle retaining clip  |  Hauteur de clip  |  3rd + 1 clip 0,5  |  2ond + 1 clip 0,5
+Regulador gasolina  |  Gasoline regulator  |  Régulateur de carburant  |  3,5  |  3,5
+Altura boya  |  Float height  |  Hauteur de flotteur  |  20mm  |  20mm
+Avance encendido  |  Ignition advance  |  Avance à l’allumage  |  3,3  |  3,3
+Capacidad refrigeración  |  Cooling capacity  |  Cap. liquide refroidissement  |  420cc  |  430cc
+Capacidad cambio  |  Gearbox capacity  |  Capacité boîte de vitesses  |  450cc  |  450cc
+Tipo aceite  |  Oil type  |  Type d’huile  |  SAE 10w40  |  SAE 10w40
+Embrague  |  Clutch  |  Embrayage  |  Multidisco  |  Multidisco
+Encendido  |  Ignition  |  Allumage  |  Digital  |  Digital
+Depósito combustible  |  Fuel tank  |  Réservoir de carburant  |  2,6 l.  |  2,6 l.
+Frenos  |  Brakes  |  Freins  |  Braktec  |  Braktec
+Suspensión delantera  |  Front suspension  |  Suspension avant  |  Tech  |  Tech
+Capacidad botella  |  Cylinder capacity  |  Capacité du fourreau  |  115 left / 55 right  |  115 left / 55 right
+Tipo aceite  |  Oil type  |  Type d’huile  |  Sae 5  |  Sae 5
+Pre carga del muelle  |  Shock preload  |  Pré charge du ressort  |  145mm  |  145mm
+13
+14

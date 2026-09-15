@@ -268,7 +268,14 @@ function normalizarModelo(brand, model) {
     // TY 125 (gama 4T de ocio) se quitó del catálogo a petición del
     // usuario; su manual sigue indexado en Pinecone (token 'ty125') por
     // si se retoma más adelante.
-    if (m === 'SC-R 125' || m === 'SC-R 250' || m === 'SC-R 300') return { model: 'scr125-250-300' };
+    // Histórico ampliado por el usuario hasta 2011: hasta 2016 la gama
+    // solo tenía 125 y 280cc ("SR"/"Twuenty", token 'scr125-280'); desde
+    // 2017 pasó a 125/250/300cc ("Twuenty"/"SC-R", token
+    // 'scr125-250-300') — confirmado con datos técnicos reales (diámetro
+    // x carrera) en ambos grupos de manuales, no solo por el nombre.
+    if (m === 'SC-R 125') return { model: { $in: ['scr125-280', 'scr125-250-300'] } };
+    if (m === 'SC-R 280') return { model: 'scr125-280' };
+    if (m === 'SC-R 250' || m === 'SC-R 300') return { model: 'scr125-250-300' };
   }
 
   if (brand.toLowerCase() === 'sherco') {

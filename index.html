@@ -794,7 +794,7 @@ const brandsData = {
     bg: '#E87722', text: '#FFFFFF', dot: '#E87722', sub: 'Trial',
     logo: '<text x="40" y="15" text-anchor="middle" dominant-baseline="central" font-family="Arial Black,sans-serif" font-weight="900" font-size="10" fill="white">SCORPA</text>',
     categories: {
-      Trial: { '2T': ['SC-R 125','SC-R 250','SC-R 300'] }
+      Trial: { '2T': ['SC-R 125','SC-R 280','SC-R 250','SC-R 300'] }
     }
   },
   TRS: {
@@ -1024,7 +1024,9 @@ function rangoAniosModelo(brand, category, engine, m) {
     fromYear = 2000;
     if (m === 'EN 144' || m === 'MX 144' || m === 'EN 530F' || m === 'MX 530F') toYear = 2024;
   } else if (brand === 'Scorpa') {
-    fromYear = 2011;
+    if (m === 'SC-R 280') { fromYear = 2011; toYear = 2016; }
+    else if (m === 'SC-R 250' || m === 'SC-R 300') fromYear = 2017;
+    else fromYear = 2011;
   } else if (brand === 'TRS') {
     if (m === 'One 125') fromYear = 2019;
     else if (m.endsWith('RR')) fromYear = 2017;

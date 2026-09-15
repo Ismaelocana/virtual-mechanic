@@ -250,9 +250,9 @@ function normalizarModelo(brand, model) {
     // ducati.com/ww/en/service-maintenance/manuals-genuine-parts-and-
     // maintenance-schedules (selector Family=Off-Road / Model / Year).
     // Marca recién estrenada en off-road (Desmo450 MX lanzado en 2025);
-    // un único manual por modelo, sin histórico de años.
+    // un único manual por modelo, sin histórico de años. Desmo250 MX no
+    // tiene manual oficial publicado todavía (usa el fallback genérico).
     if (m === 'DESMO450 MX') return { model: 'desmo450mx' };
-    if (m === 'DESMO450 EDX') return { model: 'desmo450edx' };
     if (m === 'DESMO450 EDS') return { model: 'desmo450eds' };
   }
 

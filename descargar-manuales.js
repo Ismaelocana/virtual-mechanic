@@ -393,13 +393,16 @@ const MANUALES = [
   // Fuente: ducati.com — fabricante oficial. Buscador de manuales en
   // ducati.com/ww/en/service-maintenance/manuals-genuine-parts-and-
   // maintenance-schedules (Family=Off-Road, selecciona Model y Year).
-  // Marca recién estrenada en off-road: Desmo450 MX (motocross, 2025),
-  // Desmo450 EDX ("enduro-cross", anunciado oct. 2025) y Desmo450 EDS
-  // (enduro homologado para calle, MY2027) — un único manual por modelo,
-  // sin histórico de años. Se excluyen del catálogo "Desmo250 MX" (sin
-  // manual publicado aún, lanzamiento demasiado reciente), "Desmo450 MX
-  // Factory" (variante de competición, no un modelo aparte) y "Desmo450
-  // SM" (supermoto, fuera del alcance de esta app).
+  // Marca recién estrenada en off-road: Desmo450 MX (motocross, 2025) y
+  // Desmo450 EDS (enduro homologado para calle, MY2027) — un único manual
+  // por modelo, sin histórico de años. Desmo250 MX (motocross) está en el
+  // catálogo pero sin manual oficial publicado aún (lanzamiento demasiado
+  // reciente). Se excluyen del catálogo "Desmo450 MX Factory" (variante
+  // de competición, no un modelo aparte) y "Desmo450 SM" (supermoto,
+  // fuera del alcance de esta app). Desmo450 EDX ("enduro-cross") se
+  // descargó y se indexó pero ya no está en el catálogo — el usuario
+  // pidió dejar solo la EDS en Enduro; el manual queda huérfano en
+  // Pinecone por si se retoma más adelante.
   { marca: 'ducati', modelo: 'desmo450mx',  año: 2026, url: 'https://downloads.ctfassets.net/oifkva25gsx4/3H5CScbBIgT8ozGz164diF/d65752ebfa649161a665fd6d1e0b8e17/OM_-_Desmo450_MX_-_EN_-_26_-_ED02.pdf' },
   { marca: 'ducati', modelo: 'desmo450edx', año: 2026, url: 'https://downloads.ctfassets.net/oifkva25gsx4/6KhXMRSlX79ZuYOzxO6rxR/64853005d396e08acf36abbde709e02e/OM_-_Desmo450_EDX_-_EN_-_26_-_ED02.pdf' },
   { marca: 'ducati', modelo: 'desmo450eds', año: 2027, url: 'https://downloads.ctfassets.net/oifkva25gsx4/4DKP0WBHZxK4ucdu4U8MZX/5f93b6788a093fca90e87b741bf59e07/OM_-_Desmo450_EDS_-_EN_-_27_-_ED01.pdf' },

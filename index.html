@@ -778,8 +778,8 @@ const brandsData = {
     bg: '#CC0000', text: '#FFFFFF', dot: '#CC0000', sub: 'Racing DNA',
     logo: '<text x="40" y="15" text-anchor="middle" dominant-baseline="central" font-family="Arial Black,sans-serif" font-weight="900" font-size="10" fill="white">DUCATI</text>',
     categories: {
-      Enduro: { '4T': ['Desmo450 EDX','Desmo450 EDS'] },
-      Motocross: { '4T': ['Desmo450 MX'] }
+      Enduro: { '4T': ['Desmo450 EDS'] },
+      Motocross: { '4T': ['Desmo450 MX','Desmo250 MX'] }
     }
   },
   TM: {
@@ -1018,7 +1018,8 @@ function rangoAniosModelo(brand, category, engine, m) {
   } else if (brand === 'Fantic') {
     fromYear = 2020;
   } else if (brand === 'Ducati') {
-    fromYear = (m === 'Desmo450 EDS') ? 2027 : 2026;
+    fromYear = (m === 'Desmo250 MX') ? 2027 : 2026;
+    toYear = 2027;
   } else if (brand === 'TM') {
     fromYear = 2000;
     if (m === 'EN 144' || m === 'MX 144' || m === 'EN 530F' || m === 'MX 530F') toYear = 2024;

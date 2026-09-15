@@ -223,6 +223,30 @@ function normalizarModelo(brand, model) {
     }
   }
 
+  if (brand.toLowerCase() === 'tm') {
+    // Fuente: tm-moto.it (fabricante oficial, TM Moto Srl, Pesaro, Italia).
+    // Portal de descargas con filtro por año (2010-2026), aunque solo hay
+    // documentos reales desde ~2020. El catálogo original usaba "ENF"/"MXF"
+    // como prefijo — TM no usa ese prefijo en ningún manual; el sufijo "F"
+    // en los nombres de esta app es solo para distinguir en la UI el motor
+    // 4T del 2T cuando comparten cilindrada (p. ej. "EN 250" 2T vs "EN 250F"
+    // 4T), ya que normalizarModelo() no recibe el tipo de motor. También
+    // faltaban "EN 300F" y "MX 300F", reales y confirmados en los manuales.
+    // EN 144 / MX 144 (cilindrada pequeña, 2T) y EN 530F / MX 530F (4T)
+    // aparecen en el manual MY22 con datos técnicos reales, pero ya no en
+    // el MY25 — descatalogados entre medias (ver rangoAniosModelo).
+    // Sin manual oficial encontrado para MX 85 (Junior).
+    if (m === 'EN 125' || m === 'MX 125') return { model: { $in: ['en125-mx125-2025', 'en125-en144-mx125-mx144-2022'] } };
+    if (m === 'EN 144' || m === 'MX 144') return { model: 'en125-en144-mx125-mx144-2022' };
+    if (m === 'EN 250' || m === 'EN 300' || m === 'MX 250' || m === 'MX 300') {
+      return { model: { $in: ['en250-300-mx250-300-2025', 'en250-300-mx250-300-2022'] } };
+    }
+    if (m === 'EN 250F' || m === 'EN 300F' || m === 'EN 450F' || m === 'MX 250F' || m === 'MX 300F' || m === 'MX 450F') {
+      return { model: { $in: ['en250f-300f-450f-mx250f-300f-450f-2025', 'en250f-300f-450f-530f-mx250f-300f-450f-530f-2022'] } };
+    }
+    if (m === 'EN 530F' || m === 'MX 530F') return { model: 'en250f-300f-450f-530f-mx250f-300f-450f-530f-2022' };
+  }
+
   if (brand.toLowerCase() === 'sherco') {
     if (m === 'SE 250' || m === 'SE 300')   return { model: 'se250-300' };
     if (m === 'SEF 250' || m === 'SEF 300') return { model: 'sef250-300' };

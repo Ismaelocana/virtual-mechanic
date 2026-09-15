@@ -1,0 +1,3694 @@
+2-STROKE USE AND
+MAINTENANCE
+MANUAL
+(MY 25 - MY 26)
+2T 125 ES Fi EN
+2T 125 ES Fi SMR
+2T 125 Fi MX
+2T 125 MX
+www.tmracing.it www.tm-moto.it
+2-STROKE - EN  |  2
+RECOGNIZING MODELS
+RECOGNIZING TM MOTO MOTORCYCLE MODELS
+EXAMPLE OF MOTORCYCLE MODEL
+1 125 xxx xx
+2  |  3
+DISPLACEMENT  |  TYPE OF POWER SOURCE  |  TYPE OF USE
+125  |  CARBURETTOR  |  EN = ENDURO
+INJECTION  |  MX = MOTOCROSS
+SMR = ROAD SUPERMOTO
+The displacement, type of power source and type of use define the model of motorcycle and engine of each TM MOTO bike.
+The combination of codes 1 and 3 identifies the standard engine type. The combination of the three codes fully identifies the motorcycle model.
+In this Manual, all 3 codes are usually used to specify the motorcycle model to which certain information refers.
+If only codes 1 and 3 are indicated, followed by the word “ALL”, it means that the information relates to all motorcycles with the standard
+engine, regardless of the type of use.
+Code 2 (Type of Use) used on its own means that the information refers to all motorcycles with that type of use, regardless of displacement
+and power source.
+All models are equipped as standard with electric start.
+Make a note of your motorcycle’s serial numbers in the boxes below.
+If you contact TM for spare parts, updates or to report any issues, always quote the model, displacement, year of manufacture and, above all,
+the frame serial number and engine serial number.
+FRAME SERIAL NUMBER
+DEALER STAMP
+ENGINE SERIAL NUMBER
+KEY SERIAL NUMBER
+TM reserves the right to make changes without prior notice. Specifications may vary from country to country.
+All indications are valid, subject to typos and printing errors.
+3  |  EN - 2-STROKE
+GENERAL SAFETY REGULATIONS
+GENERAL SAFETY REGULATIONS
+Read this manual carefully before using your TM motorcycle.
+Your safety and that of others depends not just on your riding abilities, but also on your knowledge of the vehicle and how to ride it safely.
+Do not use the vehicle on public roads or off-road without suitable preparation and apparel.
+NOTE:  |  The “Use and maintenance manual” is an integral part of the motorcycle and as such must remain with the vehicle even if it is
+sold on.
+TM reserves the right to make any changes due to further development of its motorcycles. Illustrations are approximate and, in some cases,
+may not precisely match the part referred to. Reproduction of this publication, even partial, without written authorization is prohibited.
+STRUCTURE OF THE MANUAL
+The manual is divided into sections and sub-sections.
+The following symbols may appear in the text:
+DANGER
+FAILURE TO COMPLY WITH THIS WARNING MAY LEAD TO SERIOUS INJURY OR DEATH.
+DANGER
+ALL MAINTENANCE WORK OR ADJUSTMENTS MARKED WITH THE ABOVE SYMBOL REQUIRE TECHNICAL KNOWLEDGE. THEREFORE,
+FOR YOUR SAFETY, HAVE SUCH OPERATIONS CARRIED OUT ONLY AT A SPECIALIZED TM WORKSHOP, SO THAT YOUR MOTORCYCLE
+IS SERVICED OPTIMALLY BY SPECIFICALLY TRAINED PERSONNEL.
+WARNING
+Failure to comply with that warning could result in damage to parts of the motorcycle or make it unsafe to use.
+NOTE:  |  Indicates operations or specific advice about the operation described.
+INDICATES THAT THE OPERATION DESCRIBED MUST BE PERFORMED BY A SPECIALIZED TECHNICIAN OR BY A SPECIALIZED
+TM WORKSHOP.
+CARBON MONOXIDE
+If maintenance has to be carried out with the engine running, make sure that the work area is well ventilated. Never leave the engine running
+in enclosed spaces unless they have an extractor system for exhaust fumes.
+DANGER
+EXHAUST FUMES CONTAIN CARBON MONOXIDE, A POISONOUS GAS THAT CAN CAUSE LOSS OF CONSCIOUSNESS AND DEATH.
+CARBON MONOXIDE IS ODORLESS AND COLORLESS, MEANING THAT IT CANNOT BE DETECTED BY YOUR SENSE OF SMELL, VISION
+OR OTHER SENSES. DO NOT UNDER ANY CIRCUMSTANCES INHALE EXHAUST FUMES.
+2-STROKE - EN  |  4
+GENERAL SAFETY REGULATIONS
+FUEL
+Petrol is toxic. Keep petrol out of the reach of children. Do not use your mouth to siphon petrol. Avoid getting petrol on your skin. If you
+accidentally get petrol on you, change clothes immediately and use suitable detergents to thoroughly wash the area on which petrol was poured.
+If you accidentally swallow petrol, do not induce vomiting. Drink plenty of clean water or milk and seek medical advice immediately.
+If you accidentally get petrol in your eyes, rinse them with plenty of clean cool water and seek medical advice immediately.
+Petrol containing alcohol
+In case you decide to use petrol containing alcohol (petrol-alcohol mix), check that the number of octane is at least equal to the recommended
+value.
+Two types of petrol-alcohol mix exist: one contains ethanol while the other methanol. Do not use petrol-alcohol mix containing more than
+10% of ethanol. Do not use petrol-alcohol mix containing methanol (methyl alcohol or wood alcohol) unless they also contain co-solvents and
+corrosion inhibitors specific for methanol.
+Never use petrol containing more than 5% of methanol, even if it contains co-solvents and corrosion inhibitors.
+Possible problems to the engine performances caused by the use of fuels containing alcohol are not covered by warranty.
+TM Moto cannot endorse the use of fuels containing methanol since the proofs of its adequacy are still insufficient.
+Before purchasing petrol from a distributor you don’t know, try to discover if its petrol contains alcohol.
+If it does, determine the type and percentage of alcohol used. If, during operation, no negative effects are detected while using petrol containing
+alcohol or which you think may contain it, replace it with another you’re certain it not contains alcohol.
+DANGER
+THE FUEL USED IN AN INTERNAL COMBUSTION ENGINE IS HIGHLY FLAMMABLE AND MAY CAUSE EXPLOSIONS.
+FILL UP WITH FUEL IN A WELL VENTILATED AREA, WITH THE ENGINE OFF.
+SMOKING IS FORBIDDEN DURING REFUELING AND IN THE PRESENCE OF FUEL VAPORS.
+AVOID CONTACT WITH NAKED FLAMES, SPARKS OR OTHER IGNITION SOURCES THAT COULD MAKE THE FUEL VAPORS CATCH FIRE
+OR EXPLODE.
+PETROL IS A DANGEROUS SUBSTANCE AND MUST NOT BE DISPOSED OF IN THE ENVIRONMENT. ALWAYS USE APPROPRIATE DISPOSAL
+METHODS, DICTATED BY THE REGULATIONS IN FORCE IN THE COUNTRY WHERE THE PETROL IS USED.
+DANGER OF BURNS
+WARNING
+During use of the motorcycle, the engine, exhaust system components, cooling system components and braking system components get very
+hot and remain hot even after the engine has been turned off.
+After riding the motorcycle, before touching any part of it, make sure that it has cooled enough to be handled.
+COOLANT
+DANGER
+FIRE RISK: IN SOME CONDITIONS, THE COOLANT IS FLAMMABLE. ITS FLAMES ARE INVISIBLE, BUT CAN CAUSE BURNS.
+DO NOT POUR COOLANT ON EXHAUST SYSTEM COMPONENTS OR ON ENGINE COMPONENTS, AS THEY COULD BE HOT AND IGNITE
+THE COOLANT, WITH THE RISK OF BURNS. REMEMBER THAT THE FLAMES ARE INVISIBLE.
+COOLANT MAY CAUSE SKIN IRRITATION AND IS TOXIC IF SWALLOWED.
+KEEP COOLANT OUT OF THE REACH OF CHILDREN
+COOLANT IS HIGHLY POLLUTING. THEREFORE, AFTER USE, IT MUST BE DISPOSED OF AT SPECIAL COLLECTION CENTERS IN COMPLIANCE
+WITH REGULATIONS IN FORCE IN THE COUNTRY IN WHICH THE MOTORCYCLE IS USED.
+5  |  EN - 2-STROKE
+GENERAL SAFETY REGULATIONS
+2-STROKE OIL AND GEARBOX OIL
+DANGER
+KEEP OUT OF THE REACH OF CHILDREN.
+2-STROKE OIL AND GEARBOX OIL MAY SERIOUSLY DAMAGE SKIN IF REGULARLY HANDLED FOR LONG PERIODS AND REGULARLY.
+THOROUGHLY WASH YOUR HANDS AFTER HANDLING THE OIL.
+WEAR LATEX OR EQUIVALENT GLOVES DURING MAINTENANCE WORK ON THE MOTORCYCLE.
+GEARBOX OIL IS HIGHLY POLLUTING. THEREFORE, AFTER USE, IT MUST BE DISPOSED OF AT SPECIAL COLLECTION CENTERS IN
+COMPLIANCE WITH REGULATIONS IN FORCE IN THE COUNTRY IN WHICH THE MOTORCYCLE IS USED.
+DO NOT POUR USED OIL INTO DRAINS OR RIVERS. DISPOSE OF FILTERS AT SPECIAL COLLECTION CENTERS IN COMPLIANCE WITH
+REGULATIONS IN FORCE IN THE COUNTRY IN WHICH THE MOTORCYCLE IS USED.
+BRAKE AND CLUTCH FLUID
+WARNING
+Brake and clutch fluids are corrosive and can damage painted, plastic or rubber surfaces.
+Protect components using a clean cloth when carrying out maintenance on the braking system and the clutch hydraulic system.
+Use suitable personal protective equipment, such as gloves and goggles, for maintenance.
+If you accidentally get the fluid in your eyes, immediately rinse them with plenty of fresh, clean water and seek medical advice immediately.
+Keep out of the reach of children.
+Brake and clutch fluids are highly polluting. Therefore, after use, they must be taken to special collection centers in compliance with regulations
+in force in the country in which the motorcycle is used.
+LITHIUM IRON PHOSPHATE BATTERY (SMR-EN-MX)
+The motorcycles only possess an electric starter and are equipped with a Lithium Iron Phosphate Battery (LIFEPO)
+Lithium batteries are extremely high performance. Lithium iron phosphate cell technology is safe, but that does not prevent improper use
+of the battery, a short circuit between the poles, overheating, proximity to naked flames or sparks, charging with chargers other than the
+dedicated ones, from causing serious danger.
+DANGER
+- DO NOT EXPOSE THE BATTERY TO HEAT OR FIRE OR MICROWAVES; EXPLOSION HAZARD.
+- DO NOT EXPOSE THE BATTERY TO TEMPERATURES HIGHER THAN 50°C; EXPLOSION HAZARD.
+- DO NOT INSERT METAL OBJECTS IN THE BATTERY HOLDER COMPARTMENT.
+- DO NOT PLACE OR CHARGE THE BATTERY AMONGST OTHER METAL OBJECTS (SUCH AS A TOOL BOX) OR WITH OTHER BATTERIES;
+DANGER OF GENERATING SHORT CIRCUITS.
+- DO NOT IMMERSE THE BATTERY IN WATER OR OTHER LIQUIDS, DANGER OF SHORT CIRCUIT.
+- AFTER REMOVING THE BATTERY FROM THE MOTORCYCLE, PLACE IT OUT OF THE REACH OF CHILDREN.
+PROHIBITED OPERATIONS
+- NEVER DISCHARGE THE BATTERY TO BELOW 8 V
+- DO NOT USE INCOMPATIBLE CHARGERS TO CHARGE THE BATTERY.
+- DO NOT USE EXTERNAL JUMPER LEADS - NEVER CHARGE A BATTERY THAT IS COMPLETELY DISCHARGED
+- DO NOT PUSH START THE MOTORCYCLE IF THE BATTERY IS COMPLETELY DISCHARGED AND THE INSTRUMENT PANEL DOES NOT
+COME ON.
+- DO NOT PIERCE THE BATTERY OR DAMAGE THE CASING.
+- DO NOT CONNECT MORE THAN ONE BATTERY TO THE MOTORCYCLE ELECTRICAL SYSTEM.
+- DO NOT CONNECT THE BATTERY WITH INVERTED POLES.
+2-STROKE - EN  |  6
+GENERAL SAFETY R E G U L A TIONS
+RECOMMENDED OPERATIONS
+- USE A COMPATIBLE BATTERY CHARGER OR A MAINTAINER.
+- CONNECT THE MOTORCYCLE TO THE MAINTAINER IF YOU WILL NOT BE RIDING IT FOR LONGER THAN 7 DAYS. ALTERNATIVELY,
+DISCONNECT THE MOTORCYCLE BATTERY.
+- CHECK THAT THE CHARGING SYSTEM ON THE MOTORCYCLE IS ALWAYS OPERATIONAL.
+- CHECK THAT THE VOLTAGE SUPPLIED BY THE CHARGE CONTROLLER IS BETWEEN 13.8 V AND A MAXIMUM OF 14.6 V.
+DISPOSAL
+Used batteries must be taken to a collection center specializing in separate disposal, in compliance with regulations in force in the country in
+which the motorcycle is used.
+Batteries must not be mixed with domestic or industrial waste.
+TRANSPORTING THE MOTORCYCLE
+WARNING
+- When transporting your TM motorcycle, make sure that it is secured in an upright position using straps or other mechanical fixing devices,
+to be fixed on sturdy parts of the motorcycle such as the handlebar, forks, large swing arm, etc.
+- Do not secure the motorcycle by attaching straps or the like to the plastic panels.
+- If the motorcycle falls, petrol could leak out, posing serious risks.
+MIX
+The motorcycle works by means of a mix of unleaded petrol (E5 - E10) and oil at 3%.
+- If the automatic mixer is present, it is necessary to insert unleaded petrol (E5 - E10) in the fuel tank and to pour specific oil for mixers in
+the oil tank as described in the paragraph“Technical Data”.
+- If the mixer is not present, it is necessary to pour a previously created mix composed of unleaded petrol (E5 - E10) and 2-stroke oil at 3%
+in the fuel tank.
+TYPE APPROVAL
+The 125 versions are approved to be used by the rider only; transporting a passenger is forbidden.
+7  |  EN - 2-STROKE
+2-STROKE - EN  |  8
+WARNINGS ABOUT W A R R A N TY
+IMPORTANT WARNINGS
+TM sport motorcycles are designed and built to withstand stresses causes by normal road and competition use.
+Competition motorcycles comply with the rules of the respective categories currently in force at the leading
+international motorcycle associations.
+Strict compliance with the checking, maintenance and calibration instructions for the engine and chassis
+indicated in this manual is essential for good operation and to prevent premature wear of motorcycle parts.
+Incorrect engine or chassis calibration may also compromise your safety and the safety of others.
+Maintenance operations described in the “Maintenance schedule” must be carried out by a TM specialized
+workshop at the scheduled intervals, otherwise the warranty will be null and void.
+If you contact TM for spare parts, updates or to report any issues, always quote the model, displacement,
+year of manufacture and, above all, the frame serial number and engine serial number.
+Use the fuels and lubricants indicated in the use and maintenance manual as described in the maintenance
+schedule. Products of different brands may be used provided that they have equivalent specifications.
+In the event of direct and consequential damage caused by tampering with or modification of the motorcy-
+cle, the warranty is null and void.
+Using the motorcycle under extreme conditions, e.g.: on very muddy and wet terrain, may cause excessive
+wear on components such as transmission parts or brakes. Therefore, maintenance or replacement of some
+parts may be necessary sooner than the normal interval indicated in the maintenance schedule.
+USE OF ALL MX MODELS IS NOT ALLOWED ON PUBLIC ROADS
+If approved models are modified or tampered with in a way that changes their basic characteristics, their
+approval will no longer be valid.
+All EN models are designed for use off-road (Enduro) and are not suitable for Motocross.
+9  |  EN - 2-STROKE
+2-STROKE - EN  |  10
+CONTENTS
+Page  |  Bleeding the telescopic fork ...........................................................71
+Cleaning telescopic fork dust seal ..................................................71
+1. VEHICLE IDENTIFICATION ................................. 1•15  |  Shock absorber compression adjustment ...................................... 72
+Frame serial number ......................................................................17  |  Shock absorber rebound adjustment ............................................. 72
+Engine serial number......................................................................17  |  Varying pre-load and replacing shock absorber spring .................. 73
+Weight of the rider ......................................................................... 73
+Adapting fork basic calibration ...................................................... 73
+2. CONTROL COMPONENTS ................................. 2•19  |  Adapting shock absorber basic calibration ..................................... 73
+Right-hand side main components topography .............................20  |  Checking shock absorber static sag ................................................ 74
+Left-hand side main components topography ................................21  |  Checking shock absorber rider sag ................................................. 74
+Underseat components topography............................................... 22  |  Checking steering bearings and play adjustment ..........................75
+Hydraulic clutch lever ..................................................................... 23  |  Rear suspension linkage ................................................................. 76
+Brembo pump front brake lever ..................................................... 23  |  Checking chain tension ................................................................... 76
+Brembo radial pump front brake lever (SMR) ................................ 23  |  Tensioning the chain ....................................................................... 77
+Throttle  |  .................................................................................... 24  |  Chain maintenance .........................................................................78
+Light switch (EN) ............................................................................25  |  Chain wear .................................................................................... 78
+Dimmer switch (SMR) .....................................................................25  |  Hydraulic clutch pump .................................................................... 79
+Engine stop button (MX) ................................................................ 26  |  Checking and topping up the hydraulic fluid level.......................... 79
+Funzioni blocchetto chiave SMR ..................................................... 26  |  Bleeding the hydraulic clutch .........................................................80
+Pulsante avviamento ..................................................................... 26  |  Basic indications for tm disc brakes ................................................80
+Cold start device (Fi) ....................................................................... 27  |  Brembo front brake pump .............................................................82
+Cold start device (Carburettor) ....................................................... 27  |  Topping up brake fluid ....................................................................83
+Digital electronic speedometer and indicators (EN) ......................28  |  Brembo radial front brake pump (SMR) ........................................84
+Display  |  .................................................................................... 29  |  Changing basic position of rear brake pedal ..................................85
+Functions .................................................................................... 30  |  Checking Rear brake fluid level ......................................................86
+Digital electronic speedometer and indicators (SMR) ................... 37  |  Checking front brake pads ..............................................................87
+Display  |  .................................................................................... 38  |  Checking rear brake pads ...............................................................88
+Functions .................................................................................... 39  |  Replacing front brake pads ............................................................89
+Gear shifting pedal ......................................................................... 44  |  Replacing rear brake pads .............................................................90
+Combined braking pedal ................................................................ 44  |  Disassembling and assembling front wheel ...................................91
+Steering lock (EN/SMR) .................................................................. 44  |  Disassembling and assembling rear wheel ..................................... 92
+Fuel tank (EN - SMR - Fi) .................................................................45  |  Checking spoke tension .................................................................. 93
+Stroke oil tank (EN-SMR) ................................................................45  |  Tire pressure ................................................................................... 93
+Fuel tank (MX - Carburettor) .......................................................... 46  |  Checking speedometer magnetic sensor distance (EN/SMR) ........ 94
+Side stand .................................................................................... 46  |  Removing the seat .......................................................................... 94
+Engine idle speed adjustment ........................................................ 47  |  Removing the tank .........................................................................95
+Fuel tap (MX) .................................................................................. 47  |  Removing the tank of models (Fi)...................................................95
+Removing the tank of models (Carburettor) .................................. 96
+Battery  |  .................................................................................... 97
+3. INSTRUCTIONS FOR USE .................................. 3•49  |  Charging the battery .......................................................................98
+Indications for first use ...................................................................51  |  Battery maintenance ......................................................................98
+Safety regulations ...........................................................................51  |  Electrical system components positioning (MX)............................. 99
+Running-in instructions ..................................................................52  |  Electrical system components positioning (EN - SMR) .................100
+Preliminary checks..........................................................................52  |  Centralina SRU (EN - SMR)............................................................101
+Mounting/dismounting of rider and passenger .............................53  |  Centralina PDU (SMR)...................................................................101
+Adjusting the rear-view mirrors ......................................................54  |  Adjusting the height of the front headlamp .................................102
+Start of the motorcycle ...................................................................54  |  Led headlight for models (EN - SMR) ...........................................102
+Cold start of the motorcycle ...........................................................55  |  Replacing led front headlight .......................................................102
+Start with flooded engine ...............................................................56  |  LED taillight (EN - SMR) ................................................................103
+For motorcycle with throttle body (Fi) ...........................................56  |  T urn signal (EN - SMR) ..................................................................103
+For motorcycle with carburettor ....................................................56  |  Cooling  |  ..................................................................................104
+Setting off .................................................................................... 57  |  Replacing exhaust silencer packing material ...............................106
+Accelerating, shifting gears, slowing down ....................................57  |  Cleaning air filter ..........................................................................107
+Braking  |  .................................................................................... 57  |  Adjusting throttle control cables ..................................................108
+Stopping and parking .....................................................................58  |  Adjustment on models (Fi) ...........................................................108
+Washing  |  .................................................................................... 59  |  Adjustment on models (MX) ........................................................108
+Precautions for winter use .............................................................59  |  Adjusting idle speed .....................................................................109
+Storage  |  .................................................................................... 60  |  Gearbox oil change ......................................................................110
+Start-up after winter .......................................................................60  |  Carburettor ..................................................................................111
+Exhaust valve ................................................................................113
+EN - MX exhaust valve calibration ................................................115
+4. MAINTENANCE ................................................ 4•61  |  SMR exhaust valve calibration ......................................................116
+125 (EN) Maintenance table ........................................................... 62  |  Stroke oil circuit purging EN (Fi) ..................................................117
+125 (SMR) Maintenance table ........................................................ 64  |  Stroke oil circuit purging SMR ......................................................118
+125 (MX) Maintenance table .......................................................... 66
+Fork compression adjustment ........................................................ 69
+Fork rebound adjustment ...............................................................70
+Varying pre-load and replacing fork springs ..................................70
+11  |  EN - 2-STROKE
+CONTENTS
+5. DIAGNOSIS .................................................... 5•119
+Problem,cause,solution ................................................................121
+Diagnosis socket connection (EN Fi - MX Fi - MX Carb.) ...............124
+Diagnosis socket connection SMR ................................................125
+Caltool manual .............................................................................126
+Software user guide......................................................................130
+6. TECHNICAL DATA ........................................... 6•137
+Engine technical data 125 MX ......................................................139
+Engine technical data 125 EN - SMR .............................................140
+Engine tightening torques ............................................................141
+Lubrication ..................................................................................141
+Carburettors setting MX ...............................................................141
+Chassis technical data ...................................................................142
+Tightening torques .......................................................................142
+7. WIRING DIAGRAMS ....................................... 7•143
+Carburettor wiring diagram 125 MX .............................................144
+Engine wiring diagram (125 EN) ...................................................14 6
+Engine wiring diagram (125 SMR) ................................................14 7
+8. ALPHABETICAL INDEX ................................... 8•151
+2-STROKE - EN  |  12
+CONTENTS
+1. VEHICLE IDENTIFICATION
+2. CONTROL COMPONENTS
+3. INSTRUCTIONS FOR USE
+4. MAINTENANCE
+5. DIAGNOSIS
+6. TECHNICAL DATA
+7. WIRING DIAGRAMS
+13  |  EN - 2-STROKE
+2-STROKE - EN  |  14
+1. VEHICLE
+IDENTIFICATION
+1 • V EHI C LE I D ENTIF I C ATIO N
+2-STROKE - EN  |  1•16
+1 • VEHICLE IDENTIFICATION
+FRAME SERIAL NUMBER
+The frame serial number (1) is stamped on the right-hand side of the
+steering head.
+1
+Write this number in the space provided.
+The serial number is also shown on a data plate (2) located on the left-hand  |  2
+side for EN / SMR models.
+VERSION  |  SERIAL NUMBER
+2T - 125 EN  |  TM MOTO S.R.L.
+L3e-A1E
+e24*168/2013*00121
+ZEXA 12TENTP2T0000
+81 dB (A) - 3250 min -1
+6,7 kW max 250 kg
+2T - 125 SM  |  TM MOTO S.R.L.
+L3e-A1E
+e24*168/2013*00121
+ZEXA 12TSMTP2T0000
+81 dB (A) - 3250 min -1
+6,7 kW max 250 kg
+ENGINE SERIAL NUMBER
+1
+The engine serial number (1) is engraved on the back of the engine, near
+the shock absorber.
+Write this number in the space provided at the start of the manual.
+1•17  |  EN - 2-STROKE
+1 • V EHI C LE I D ENTIF I C ATIO N
+2-STROKE - EN  |  1•18
+2. CONTROL
+COMPONENTS
+2 • CONTROL COMPONENTS
+RIGHT-HAND SIDE MAIN COMPONENTS TOPOGRAPHY  |  MX CARBURETTOR
+1  |  Throttle
+2  |  Front light (EN - SMR)
+3  |  Front indicator lights (EN - SMR)  |  22
+4  |  Front wheel
+5  |  Front suspensions
+6  |  Exhaust manifold
+7  |  Rear brake lever
+8  |  Engine
+9  |  Pump with front brake oil tank
+10 Pump with rear brake oil tank  |  EN - SMR
+11 Rear damper
+12 Exhaust silencer
+13 Rear wheel
+14 Rear brake disc
+15 Rear brake caliper
+16 Right radiator  |  22
+17 Radiator cap
+18 Front brake lever
+19 Tank cap
+20 Mix oil tank (EN - SMR)
+21 Oxygen sensor connection
+22 Engine ignition button
+21  |  11  |  10  |  3  |  17
+9
+1
+16
+2
+18
+19
+20
+4 5
+12
+4 4
+15
+8  |  6
+10  |  7
+13
+14
+2-STROKE - EN  |  2•20
+2 • CONTROL COMPONENTS
+LEFT-HAND SIDE MAIN COMPONENTS TOPOGRAPHY  |  MX CARBURETTOR
+1  |  Front brake disc  |  21
+2  |  Front brake caliper
+3  |  Left radiator
+4  |  Fuel tank
+5  |  Left switch (EN - SMR)
+6  |  Clutch lever with oil tank
+7  |  Fuel tap (MX Carburettor)
+8  |  Carburettor (MX)
+Throttle body (Fi)
+9  |  Gearbox system lever
+10 Kickstand (EN-SMR)
+11 Secondary transmission chain
+12 Crown  |  19
+13 Rear indicator lights (EN - SMR)
+14 Rear light/licence plate light (EN - SMR)
+15 Seat
+16 Dashboard (EN-SMR)
+17 Key switch (SMR)
+18 Valve motor
+19 Diagnostics socket (dealer’s ODB)
+20 Dashboard fuse (SMR)
+21 Voltage regulator (MX Carburettor)
+SMR  |  MX CARBURETTOR
+16  |  17
+20  |  7  |  8
+13
+6
+5
+4
+15  |  14  |  13
+3
+11
+18  |  12
+1  |  8
+9
+2  |  10
+2•21  |  EN - 2-STROKE
+2 • CONTROL COMPONENTS
+UNDERSEAT COMPONENTS TOPOGRAPHY  |  MX CARBURETTOR
+1  |  Air filter
+2  |  Stroke oil tank (EN - SMR)
+3  |  Stroke oil tank cap (EN - SMR)  |  9
+4  |  Battery
+5  |  Engine ECU
+6  |  Condenser (MX)
+7  |  Ignition contactor (MX)
+8  |  30A fuses (MX)
+9  |  Relay ....... (MX)
+10 Electronic fuses relay - PDU (SMR)
+11 Ignition fuse, ignition relay,
+voltage regulator - SRU (EN - SMR - MX Fi)
+12 OBD socket (EN - SMR)
+8  |  7
+1
+MX CARBURETTOR
+5  |  4  |  6
+1  |  11  |  10  |  4
+SMR - EN
+3
+2  |  5  |  12
+2-STROKE - EN  |  2•22
+2 • CONTROL COMPONENTS
+HYDRAULIC CLUTCH LEVER
+2 2  |  1 1
+The Brembo clutch pump (1) is located on the left-hand side of the handlebar.
+The clutch lever (2) detaches the transmission from the engine.
+To operate the clutch, pull the lever towards the grip as far as it will go.
+The position of the lever relative to the grip can be altered to suit the rider.
+See the “Maintenance” section.
+BREMBO PUMP FRONT BRAKE LEVER
+2 2
+The Brembo front brake pump (1) is located on the right-hand side of the
+handlebar.
+1 1
+The front brake lever (2) applies the front wheel brake.
+The position of the front brake lever relative to the grip can be altered to
+suit the rider.
+See the “Maintenance” section.
+BREMBO RADIAL PUMP FRONT BRAKE LEVER (SMR)
+The Brembo radial front brake pump (1) is located on the right-hand side
+of the handlebar.  |  2 2
+The front brake lever (2) applies the front wheel brake.
+The position of the front brake lever relative to the grip can be altered to
+suit the rider.
+See the “Maintenance” section.  |  1 1
+2•23  |  EN - 2-STROKE
+2 • CONTROL COMPONENTS
+THROTTLE  |  1 1  |  CARBURETTOR
+The throttle control (1) is located on the right-hand side of the handlebar.
+To increase the power supplied by the engine (accelerate), turn the grip (2)
+towards you. To reduce power, turn the grip away from you.
+Make sure that the grip always has 1-2 mm of play.
+See the “Maintenance” section.
+2 2
+Fi
+1 1
+2 2
+2-STROKE - EN  |  2•24
+2 • CONTROL COMPONENTS
+LIGHT SWITCH (EN)
+2 2  |  3 3
+The light switch (1) is located near the left handle of the handlebar.
+Its operation is very intuitive.
+The low-beam lights light up upon ignition of the motorcycle, move the
+switch (2) in correspondence of the symbol “  |  ” to switch on the high-  |  1 1
+beam headlight.
+Press the key (3) to activate the horn.  |  4 4
+Move the lever (4) to the left to activate the left direction indicator, or to
+the right to activate the right direction indicator. The lever (4) returns to
+central position.
+Press the lever (4) to deactivate the direction indicator.
+Press the button (5) to switch off the engine.
+5 5
+DIMMER SWITCH (SMR)  |  1 1
+The dimmer switch (1) is located on the handlebar near the left-hand grip.
+Its is traditional and simple to use.
+Button (2) sounds the horn, whilst pressing button (3) to the left activates
+the LH turn signal, and to the right activates the RH turn signal.
+Press the button to the center to switch off the turn signals.
+4 4
+The red button (4) selects low or high beam:  |  2 2
+• pushed in: high beam;  |  3 3
+• out: low beam.
+Button (5) is for flashing the high beam.
+5 5
+2•25  |  EN - 2-STROKE
+2 • CONTROL COMPONENTS
+ENGINE STOP BUTTON (MX)
+The engine stop button (1) is located near the left-hand grip on the
+handlebar.
+-  |  Press this button to switch off the engine and release it as soon as the
+engine is off.
+1 1
+SMR KEY BLOCK FUNCTIONS
+2 2
+The key block has three positions with the following functions:
+-  |  Position (1) “  |  .”
+Turn the key to this position to turn off the engine and to remove power  |  3 3
+from the circuits, the key can be extracted.
+-  |  Position (2) “  |  ”
+Turn the key from position (1) to position (2) to power the circuits
+and to be able to start the engine. The key cannot be extracted in this  |  1 1
+position.
+-  |  Position (3) “  |  .”.
+Turn the key from position (2) to position (3) with engine turned ON or
+OFF and the four turn indicators will flash simultaneously.
+The key cannot be extracted in this position.
+NOTE:  |  If the engine is turned OFF and the key is in this position, the
+engine cannot be started.
+NOTE:  |  To activate “Diagnosis” mode and to be able to connect with
+the PC, turn the key to position (3) “  |  ” and simultaneously
+press the buttons (A) of the display.
+A A  |  A A
+IGNITION BUTTON
+The engine ignition button is located to the right of the handlebars, next
+to the throttle.
+EN - MX
+-  |  Press the button (1) to start the engine and release it as soon as the
+engine starts.
+SMR
+-  |  Turn the key to position “  |  ”, then press the button (1) to start the
+engine and release it as soon as the engine starts.
+1 1
+2-STROKE - EN  |  2•26
+2 • CONTROL COMPONENTS
+COLD START DEVICE (FI)
+This vehicle provides for a cold start device positioned on the throttle body.
+-  |  To activate the cold start device, pull the knob (1) externally, the knob
+remains in extracted position.
+-  |  After the vehicle start, wait a few seconds until the engine speed stabi-
+lizes (depending on ambient temperature), then disable the cold start  |  1 1
+device by moving the knob (1) to its initial position.
+WARNING
+ONLY activate the cold start device when the engine is switched off and
+cold. NEVER activate it during motion.
+Use the cold start device only if necessary.
+COLD START DEVICE (CARBURETTOR)
+This vehicle provides for a cold start device positioned on the on the car-  |  1 1
+burettor.
+- To activate the cold start device, raise the knob (1), the knob remains in
+raised position.
+- After the vehicle start, wait a few seconds until the engine speed stabilizes
+(depending on ambient temperature), then disable the cold start device
+by moving the knob (1) to its initial position.
+WARNING
+ONLY activate the cold start device when the engine is switched off and
+cold. NEVER activate it during motion.
+Use the cold start device only if necessary.
+2•27  |  EN - 2-STROKE
+2 • CONTROL COMPONENTS
+DIGITAL ELECTRONIC SPEEDOMETER AND INDICATORS
+(EN)
+The digital speedometer consists of a large backlit display and a set of
+indicators.
+1 1
+3 3  |  5 5
+2a 2a  |  2b 2b
+4 4
+6 6
+7 7  |  8 8
+Legend of indicators and buttons:
+1) Backlit display.  |  6) ORANGE engine fault indicator.
+If the indicator remains lit while using the motorcycle, contact a
+2a) GREEN left turn signal indicator.  |  TM dealer as soon as possible.
+2b) GREEN right turn signal indicator.  |  7) “Select” button.
+Press the button to select the following functions:
+3) BLUE high beam ON indicator.  |  • Time.
+• Stopwatch.
+4) RED fuel reserve indicator.  |  • Maximum speed record.
+5) AMBER fuel reserve indicator.  |  8) “Adjust” button
+Press the button to view:
+• Odometer;
+• Trip “A” partial km/miles;
+• Trip “B” partial km/miles;
+• Total hours counter;
+• Partial hours counter “A”;
+• Partial hours counter “B”.
+2-STROKE - EN  |  2•28
+2 • CONTROL COMPONENTS
+DISPLAY
+1 1  |  3 3
+4 4
+2 2
+Display legend:  |  3) Clock / Stopwatch / Maximum speed
+This area of the display can show the time, the stopwatch and the
+1) Speed indicator  |  maximum speed reached. Use the “ Select ” button to access the
+Shows the vehicle speed. The top speed is 360 km/h - 225 mph.  |  various functions.
+Use the “Adjust” button to switch between speed in km/h or mph.  |  • Time
+The time can be displayed in 12 or 24 hour format.
+• Stopwatch
+2) Odometer / “Trip” partial counters  |  The stopwatch can be displayed, set to automatically start
+This part of the display can be used to see the total km/miles  |  when the wheel begins turning and to stop when the wheel
+travelled or partial km/miles travelled on the “ Trip A ” or “ Trip B ”  |  stops turning.
+counter. To show the various functions, use the “ Adjust ” button.
+• Average speed / maximum speed
+• Odometer  |  - The average speed can be displayed.
+- Indicates total km/miles travelled.  |  - The maximum speed reached can be displayed.
+- Maximum value is 99999 km/miles. When that maximum  |  - The top speed is 360 km/h - 225 mph.
+has been reached, the counter is reset and starts again
+from “0”.
+- Minimum record is 1 km/mile.
+4)  |  Battery status
+• “Trip” partial km/miles counters  |  The battery status is displayed;
+Two partial counters, “Trip A” and “Trip B” can be set.
+Indicates the partial km/miles travelled. Maximum value is  |  = fully charged
+9999.9 km/miles. When that maximum has been reached, the
+counter is reset and starts again from “0”.  |  = discharged, needs replacing.
+Minimum record is 0.1 km/mile.
+2•29  |  EN - 2-STROKE
+2 • CON T R O L COM P O N E N T S
+FUNCTIONS
+Partial km / miles selection
+Starting on the home screen page, press the “ Adjust ” button once to switch from the odometer function (total km / miles travelled) to the
+“ Trip A ” partial km / miles travelled function.
+A A
+From “ Trip A ” press the “ Adjust ” button to go to the “ Trip B ” partial km/miles travelled function.
+A A  |  B B
+To reset the km/miles travelled both in “ Trip A ” and in “ Trip B ” with the function active press the “ Adjust ” button for three seconds
+A A  |  A A
+B B  |  B B
+Km / Miles unit of measurement setting
+Starting on the home screen page, with the ODO function set, press the “ Adjust ” button for three seconds to change the unit of measurement
+from km to miles, from km/h to mph and vice versa.
+2-STROKE - EN  |  2•30
+2 • CON T R O L COM P O N E N T S
+Hours counter selection
+The instrument can count total hours of engine operation and partial hours of operation “ A ” and “ B ”.
+-  |  Display the “ Trip B ” section, then press the “ Adjust ” button once to display the total hours of engine operation (value cannot be reset).
+B B
+Press the “ Adjust ” button to switch from the total hours of engine operation to the partial hours of operation “ A ”.
+A A
+From “ A ” press the “ Adjust ” button to switch to the display of partial hours “ B ”.
+A A  |  B B
+To reset the partial hours of operation both in “ A ” and in “ B ” with the function active press the “ Adjust ” button for three seconds.
+A A  |  A A
+B B  |  B B
+To return to the home screen page press the “ Adjust ” button.
+3 3
+2•31  |  EN - 2-STROKE
+2 • CON T R O L COM P O N E N T S
+Setting the clock to 12 or 24 hour format
+From the time home screen page, press the “Select” button from 3 seconds to change the clock display from 12 to 24 hour format or vice versa.
+NOTE:  |  When the clock is set to the 12 hour format, AM (morning) or PM (afternoon) will appear at the top.
+Stopwatch
+From the home screen page press the “ Select ” button to switch from the clock to the stopwatch.
+NOTE:  |  The stopwatch starts when the wheel begins turning and stops when the motorcycle comes to a stop; or you can press the “Select”
+button to start it.
+To stop the stopwatch, press the “Select” button again.
+To reset the stopwatch, press the “Select” button for 3 seconds.
+Display average speed / maximum speed
+Set the stopwatch function, then press the “ Select ” button to display the maximum speed and the average speed.
+The display shows “ AVG ” and the top speed and average speed alternate onscreen every three seconds.
+To reset the maximum speed and average speed, press the “ Select ” button for three seconds.
+To return to the home screen page, press the “ Select ” button.
+2-STROKE - EN  |  2•32
+2 • CON T R O L COM P O N E N T S
+Setup
+To open the “ Setup ” menu, simultaneously press the “ Select ” and “ Adjust ” buttons for several seconds.
+You can use this menu to set the following functions:
+• Wheel circumference and sensor setup
+• Time
+• Stopwatch start
+• Odo
+NOTE:  |  To move from one setting to another, press the “Select” button.
+• Setting the wheel circumference and sensor setup
+Depending on the models, the following values must be set:
+MODEL  |  CIRCUMFERENCE  |  SENSOR SETUP
+EN  |  2205  |  04
+Set the wheel circumference and the sensor setup as follows:
+From the home screen page simultaneously press the “ Adjust ” and “ Select ” buttons for three seconds to enter setup mode. The following
+screen page appears on the display:
+2•33  |  EN - 2-STROKE
+2 • CON T R O L COM P O N E N T S
+Press the “ Adjust ” button and the following screen page appears on the display:
+The editable value flashes;
+for example, to set the circumference value “ 2205 ” and the sensor setup “ 04 ”, proceed as follows:
+-  |  press the “ Setup ” button twice to set the first number to “ 2 ”;
+-  |  press the “ Adjust ” button to move to the second editable number and press the “ Setup ” button once to set the number to “ 1 ”;
+-  |  press the “ Adjust ” button to move to the third editable number and press the “ Setup ” button three times to set the number to “ 3 ”;
+-  |  press the “ Adjust ” button to move to the fourth editable number. In this case, do not press the “ Setup ” button, as the number to be set
+is “ 0 ”;
+-  |  press the “ Adjust ” button to set the sensor setup and the following screen page appears:
+-  |  in this case do not press the “ Setup ” button, as the number to be set is “ 0 ”;
+-  |  press the “ Adjust ” button to move to the second editable number and press the “ Setup ” button four times to set the number to “ 4 ”;
+After several seconds of inactivity, the program automatically exits the setup mode and returns to the home screen page.
+• Time setting
+To set the time, proceed as follows:
+Press the “ Adjust ” and “ Select ” buttons simultaneously for three seconds to enter setup mode. The following screen page appears on the display:
+2-STROKE - EN  |  2•34
+2 • CON T R O L COM P O N E N T S
+Press the “ Select ” button and the following screen page appears on the display:
+Press the “ Adjust ” button and the following screen page appears on the display:
+The hours value flashes. To set the hours, for example 14, press the “ Setup ” button as many times as needed to reach the desired hours number.
+NOTE:  |  Set the time according to the 12 or 24 hour format selected.
+Press the “ Adjust ” button to move to the minutes setting. The following screen page is displayed:
+The minutes value flashes. To set the minutes, for example 5, press the “ Setup ” button as many times as needed to reach the desired number
+of minutes.
+NOTE:  |  The minutes can be set from 0 to 59.
+2•35  |  EN - 2-STROKE
+2 • CON T R O L COM P O N E N T S
+Press the “ Adjust ” button to return to the clock setting screen page:
+Press the “ Adjust ” and “ Select ” buttons simultaneously for three seconds to exit the setup mode and return to the home screen page.
+• Stopwatch
+The stopwatch has been set to work automatically. It starts when the motorcycle begins moving and stops when the motorcycle comes to a stop.
+NOTE:  |  The default setting must not be changed. If necessary, go to the setup mode and check that its operation is set to “AUTO”.
+• Odo
+This function is not active.
+NOTE:  |  The default setting must not be changed. If necessary, go to the setup mode and check that operation is set to “ OFF ”.
+2-STROKE - EN  |  2•36
+2 • CONTROL COMPONENTS
+DIGITAL ELECTRONIC SPEEDOMETER AND INDICATORS
+(SMR)
+The digital speedometer consists of a large backlit display and a set of
+indicators.
+3 3  |  1 1  |  7 7
+5 5  |  8 8
+2a 2a  |  2b 2b
+6 6  |  4 4
+9 9  |  10 10
+Legend of indicators and buttons:  |  9) “Select” button.
+Press the button to select the following functions:
+1) Backlit display.  |  • Clock.
+• Battery voltage (voltmeter).
+2a) GREEN left turn signal indicator.  |  • Gear engaged and cooling liquid temperature.
+2b) GREEN right turn signal indicator.  |  10) “Adjust” button
+Press the button to display / set to zero / set:
+3) BLUE high beam ON indicator.  |  • Km / Total miles;
+• Trip “A”;
+4) RED fuel reserve indicator.  |  • Trip “B”;
+• Total hours of engine operation counter;
+5) AMBER fuel reserve indicator.  |  • Partial hours of engine operation in trip “A”;
+• Partial hours of engine operation in trip “B”;
+6) ORANGE engine fault indicator.  |  • Max speed and max number of revolutions reached;
+If the indicator remains lit while using the motorcycle, contact a TM  |  • Average speed.
+dealer as soon as possible.
+7) GREEN INDICATOR neutral gear engaged.
+8) RED INDICATOR excessive temperature of the cooling liquid.
+If the indicator lights up during use, promptly stop and switch off the
+engine. Wait for the engine and for the cooling liquid to cool down and
+check its level (see respective paragraph) and, in any case, refer to a
+TM’s dealer as soon as possible.
+2•37  |  EN - 2-STROKE
+2 • CONTROL COMPONENTS
+DISPLAY
+3 3
+1 1  |  2 2
+Display legend:  |  • Gear engaged and cooling liquid temperature
+1) Speed indicator  |  • Total hours of engine operation counter
+Shows the vehicle speed. The top speed is 360 km/h - 225 mph.  |  The total of the hours of operation of the engine is
+displayed.
+Use the “Adjust” button to switch between speed in km/h or mph.
+• Partial hours of engine operation in trip A
+2) Multivisualization space  |  The hours of operation of the engine in trip A after the
+The following information can be displayed in this part of the display by  |  last reset are displayed.
+working on the buttons “ Adjust ” and “ Select ”.
+• Partial hours of engine operation in trip B
+• Odometer  |  The hours of operation of the engine in trip B after the
+- Indicates total km/miles travelled.  |  last reset are displayed.
+- Maximum value is 99999 km/miles. When that maximum has
+been reached, the counter is reset and starts again from “0”.  |  3) Engine number of revolutions
+- Minimum record is 1 km/mile.  |  Indicates the number of revolutions of the engine during
+use, the values 3-6-9-12-15 indicate the rev/minute x
+• “Trip” partial km/miles counters  |  1000.
+Two partial counters, “Trip A” and “Trip B” can be set.
+Indicates the partial km/miles travelled. Maximum value is 9999.9
+km/miles. When that maximum has been reached, the counter is
+reset and starts again from “0”.
+Minimum record is 0.1 km/mile.
+• Voltmeter
+Indicates the charge status of the battery.
+• Clock
+The time can be displayed in 12 or 24 hour format.
+• Average speed / maximum speed
+- The average speed can be displayed.
+- It is possible to display the maximum speed and the maximum
+number of revolutions reached.
+- The top speed is 360 km/h - 225 mph.
+2-STROKE - EN  |  2•38
+2 • CONTROL COMPONENTS
+FUNCTIONS
+3 3
+1 1  |  2 2
+By working on the keys (1) “ Select ” or (2) “ Adjust ” on the display (3), the following functions are displayed.
+The resettable functions are the following:
+• TRIP A and TRIP B;
+• Partial hours of operation of the engine in TRIP A and TRIP B;
+• Maximum speed reached and maximum number of revolutions reached;
+• Average speed.
+To reset the value, select the desired function on the display among the resettable ones and press the key (2) “ Adjust ” for three seconds
+to reset the value.
+SETTINGS
+3 3
+2 2
+2 2
+4 4  |  5 5
+The settable functions are the following:
+• Time
+• 12 hours or 24 hours time format visualization
+• Backlighting
+• Unit of measurement: C° or F°, km or Milles
+To change the values, with motorcycle off, it is necessary to start the dashboard by working as follows :
+• Turn the key block (1) to position Three “  |  ”, the turn indicators and the LEDs (2) light up
+flashing.  |  1 1
+• Check that the main page “ ODO ” (3) is shown on the display.
+• Press and keep pressed the buttons (4) “ Select ” and (5) “ Adjust ” for approximately 3 seconds
+to power the dashboard and to access the editable settings.
+2•39  |  EN - 2-STROKE
+2 • CONTROL COMPONENTS
+Clock setting
+Enter the “ Clock ” page and press the button (1) to set the 12 hours or 24 hours visualization.
+1 1
+Press the button (2) to switch from 12 to 24 hours or vice versa and confirm your choice by pressing the button (1) and switch to the hours setting.
+2 2  |  1 1
+Press the button (2) to set the hours and confirm the setting by pressing the button (1) and switch to the minutes setting.
+2 2  |  1 1
+Press the button (2) to set the minutes and confirm the setting by pressing the button (1).
+2 2  |  1 1
+Press the button (2) to switch to the next page.
+2 2
+2-STROKE - EN  |  2•40
+2 • CONTROL COMPONENTS
+Backlighting brightness setting
+Enter the page “ ILL ”, press the button (1) to access the brightness change feature.
+1 1
+Press the button (2) to set the brightness from a minimum value of 1 to a maximum value of 5.
+2 2
+Press the button (1) to confirm the setting.
+1 1
+Press the button (2) to proceed to the next page.
+2 2
+2•41  |  EN - 2-STROKE
+2 • CONTROL COMPONENTS
+C° or F° degrees and km - miles setting
+Once you entered the “UN IT” page, press the button (1) to access the unit of measurement change.
+1 1
+Press the button (2) to switch from km - km/h to mile - MPH.
+2 2
+Press the button (1) to confirm the setting and switch to the setting of the unit of measurement of the degrees.
+1 1
+Press the button (2) to switch from C° - F°.
+2 2
+2-STROKE - EN  |  2•42
+2 • CONTROL COMPONENTS
+Press the button (1) to confirm the setting
+1 1
+Press the button (2) to proceed to the next page.
+2 2
+2•43  |  EN - 2-STROKE
+2 • CONTROL COMPONENTS
+GEAR SHIFTING PEDAL
+The gear shifting pedal (1) is fitted on the left side of the engine.  |  6
+5
+4
+The position of the gears is shown in the illustration.
+3
+Neutral is between first gear and second gear.
+2
+-  |  To engage first gear, pull the clutch lever and press the gear shifting
+pedal downwards.  |  N
+1 1
+-  |  To engage the other gears, pull the clutch lever and push the gear shifting
+pedal upwards.
+1
+REAR BRAKE PEDAL
+The brake pedal (1) is located in front of the right-hand footrest.
+The basic position can be adjusted to suit the rider.
+See the “Maintenance” section.
+If you press the pedal (1), a braking of the rear wheel will occur.
+1 1
+STEERING LOCK (EN/SMR)
+The steering lock (1) is on the left-hand side of the steering head.
+This device allows you to prevent rotation of the handlebar, so that the
+motorcycle cannot be ridden.
+-  |  To lock the steering, turn the handlebar all the way to the right, move
+the protective tab (2), insert the key, turn it to the left and press it all the
+way down. Keeping it pressed down, turn it to the right and remove it.  |  1 1
+WARNING
+When you have unlocked the steering, do not leave the key in the lock. If
+you steer left, the key could bend or break.
+2-STROKE - EN  |  2•44
+2 • CONTROL COMPONENTS
+FUEL TANK (EN - SMR - FI)
+The fuel cap (1) is at the top of the fuel tank, in the front area of the
+motorcycle.  |  1 1
+-  |  To open it: unscrew the tank cap by turning it anti-clockwise.
+-  |  To close it: place the tank cap in the filler neck and turn it clockwise.
+TM engines use super unleaded fuel (E5) - (E10).
+E5 = Petrol containing up to 5% of ethanol in proportion to its volume.
+E10 = Petrol containing up to 10% of ethanol in proportion to its volume.
+Tank capacity:
+8,8 total, of which 1 is reserve
+WARNING
+Fill the tank with unleaded petrol with a minimum octane number of 95.
+Never use petrol with octane lower than 95, as it could damage the engine.
+Fuel expands when heated. Therefore, in high temperatures, do not fill
+the tank to the top.
+DO NOT pour petrol mixed with oil inside the tank as the motorcycle is
+equipped with an automatic mixer.
+DANGER
+PETROL IS HIGHLY FLAMMABLE AND TOXIC. HANDLE PETROL WITH
+EXTREME CARE. DO NOT FILL-UP WITH PETROL NEAR NAKED FLAME
+OR LIT CIGARETTES. ALWAYS TURN OFF THE ENGINE BEFORE FILLING UP
+WITH PETROL. TAKE CARE NOT TO GET PETROL ON THE ENGINE OR ON
+THE EXHAUST PIPE. IMMEDIATELY REMOVE ANY SPILT PETROL WITH A
+CLOTH. IF PETROL IS SWALLOWED OR GETS IN YOUR EYES, SEEK MEDICAL
+ADVICE IMMEDIATELY.
+STROKE OIL TANK (EN-SMR)  |  3 3
+The stroke oil tank (2) is located underneath the saddle, the refuelling cap
+(3) is in the upper part.
+- Unscrew the cap (3) anticlockwise and pour a 2 stroke oil suitable for 2
+stroke engines and for the automatic mixer inside the tank. (see para-
+graph “Technical Data”).  |  2 2
+- Screw the filler cap (3).
+WARNING
+The tank is equipped with a level indicator (4), when the level of oil reaches
+the last notch (5) of the indicator, it is necessary to restore the level.
+Tank capacity: 600 ml (250 ml reserve).
+DANGER
+KEEP 2 STROKE OIL AWAY FROM THE REACH OF CHILDREN.
+2 STROKE OIL MAY CAUSE SERIOUS DAMAGES TO THE SKIN IF HANDLED  |  4 4
+FOR PROLONGED PERIODS OF TIME AND REGULARLY.
+WASH YOUR HANDS WITH EXTREME CARE AFTER HAVING HANDLED OIL.
+PAY ATTENTION NOT TO SPILL OIL ON THE EXTERNAL PARTS OF THE MO -
+TORCYCLE, FRAME, ENGINE, RADIATOR.
+IF THAT HAPPENS, CLEAN USING WATER AND A CLOTH.
+DO NOT POUR OIL IN SEWERAGE OR IN RIVERS.
+5 5
+2•45  |  EN - 2-STROKE
+2 • CONTROL COMPONENTS
+FUEL TANK (MX F i - CARBURETTOR)
+The fuel cap (1) is at the top of the fuel tank, in the front area of the mo-
+torcycle.
+1 1
+-  |  To open it: unscrew the tank cap by turning it anti-clockwise.
+-  |  To close it: place the tank cap in the filler neck and turn it clockwise.
+TM engines use a mix of super unleaded fuel (E5) - (E10) and 2 stroke oil
+at 3%.
+E5 = Petrol containing up to 5% of ethanol in proportion to its volume.
+E10 = Petrol containing up to 10% of ethanol in proportion to its volume.
+Tank capacity:
+Total of lt. 8,8, 1 of which is additional
+WARNING
+Fill the tank with a mix of unleaded petrol with a minimum octane number
+of 95 and oil at 3%.
+Never use petrol with octane lower than 95, as it could damage the engine.
+Only use 2 stroke oil suitable for 2 stroke engines, do not use engine oil.
+(see paragraph “Technical Data).
+Fuel expands when heated. Therefore, in high temperatures, do not fill the
+tank to the top.
+DANGER
+PETROL IS HIGHLY FLAMMABLE AND TOXIC. HANDLE PETROL WITH
+EXTREME CARE. DO NOT FILL-UP WITH PETROL NEAR NAKED FLAME
+OR LIT CIGARETTES. ALWAYS TURN OFF THE ENGINE BEFORE FILLING UP
+WITH PETROL. TAKE CARE NOT TO GET PETROL ON THE ENGINE OR ON
+THE EXHAUST PIPE. IMMEDIATELY REMOVE ANY SPILT PETROL WITH A
+CLOTH. IF PETROL IS SWALLOWED OR GETS IN YOUR EYES, SEEK MEDICAL
+ADVICE IMMEDIATELY.
+DANGER
+KEEP 2 STROKE OIL AWAY FROM THE REACH OF CHILDREN.
+2 STROKE OIL MAY CAUSE SERIOUS DAMAGES TO THE SKIN IF HANDLED
+FOR PROLONGED PERIODS OF TIME AND REGULARLY.
+WASH YOUR HANDS WITH EXTREME CARE AFTER HAVING HANDLED OIL.
+PAY ATTENTION NOT TO SPILL OIL ON THE EXTERNAL PARTS OF THE MO -
+TORCYCLE, FRAME, ENGINE, RADIATOR.
+IF THAT HAPPENS, CLEAN USING WATER AND A CLOTH.
+DO NOT POUR OIL IN SEWERAGE OR IN RIVERS.
+1 1
+SIDE STAND
+Use your foot to move the side stand (1) forward until it stops, then lean
+the motorcycle onto it.
+Make sure that the ground is solid and the parking position is stable. For
+greater safety, engage 1st gear with the engine off.  |  2 2
+When you lift the motorcycle, the side stand automatically lifts up.
+WARNING
+The side stand is only designed to support the weight of the motorcycle.
+Never sit on the motorcycle while it is resting on the side stand, as the side
+stand may be damaged and the motorcycle may fall over.
+Before using the vehicle, raise the kickstand (1) and lock it in position through  |  1 1
+the elastic stop (2).
+2-STROKE - EN  |  2•46
+2 • CONTROL COMPONENTS
+ENGINE IDLE SPEED ADJUSTMENT
+The engine idle speed adjustment knob or the screw (1) is positioned on
+the left hand side of the motorcycle.
+The engine speed is increased or decreased to the minimum by rotating  |  - -  |  + +
+the knob or the screw.
+1 1
++ +  |  - -
+1 1
+FUEL TAP (MX)  |  ON  |  OFF
+The fuel tap (1) is positioned under the tank on the left hand side of the  |  ON  |  +  |  ON  |  +
+motorcycle.
+O  |  R  |  O
+The tap has three positions:  |  F  |  E  |  F
+F  |  S  |  F
+- OFF = tap closed: there’s no insertion of mix in the carburettor.
+It’s a normal position when the motorcycle is stationary and switched off.  |  +  |  +
+- ON = tap open: there’s insertion of mix in the carburettor.
+It’s a normal position while using the motorcycle.
+- RES = reserve, indicates that the minimum level of mix inside the tank has
+been reached and that it is necessary to restore its level.
+- Rotate the tap from “OFF” to “ON” in order to start the motorcycle.
+- When, during the motorcycle use, the engine starts to switch off or works
+at intervals, rotate the tap (1) from position “ON” to “RES” (reserve) and
+restore the mix level inside the tank as soon as possible.
+2•47  |  EN - 2-STROKE
+2 • CON T R O L COM P O N E N T S
+2-STROKE - EN  |  2•48
+3. INSTRUCTIONS FOR
+USE
+3 • INSTRUCTIONS FOR U SE
+2-STROKE - EN  |  3•50
+3 • INSTRUCTIONS FOR U SE
+INDICATIONS FOR FIRST USE
+-  |  Make sure that the motorcycle’s “PRE-DELIVERY OPERATIONS” have been completed by your TM dealer.
+-  |  Carefully read all of the instructions before using the motorcycle for the first time.
+-  |  Familiarize yourself with all of the controls.
+-  |  Adjust the clutch lever, the front brake lever and the brake pedal to the most comfortable position.
+-  |  Practice riding the motorcycle in an empty car park or on easy terrain before going for a long drive. Also try standing up while riding slowly,
+to get a feel for how the motorcycle handles.
+-  |  Do not choose routes that are too difficult for your skill level and experience.
+-  |  Hold the handlebar with both hands and keep your feet on the footrests.
+-  |  Make sure you do not press the brake pedal with your foot if you do not want to stop. If the brake pedal is not released, the brake pads
+rub continuously causing the brake to overheat.
+-  |  Do not make changes to the motorcycle and always use TM ORIGINAL SPARE PARTS. Spare parts from other manufacturers may affect the
+safety of the motorcycle.
+-  |  Motorcycles are sensitive to shifts in weight distribution. Luggage must be fastened near the center of the motorcycle and its weight must
+be evenly distributed between the front and rear wheels.
+-  |  Follow the running-in instructions.
+WARNING
+Although EN-SMR models have approval, they must be driven with care on roads. Above all, avoid long stretches with wide open throttle.
+SAFETY REGULATIONS
+DANGER
+-  |  ALWAYS WEAR SUITABLE CLOTHES WHEN USING THE MOTORCYCLE. WISE BIKERS WHO RIDE A TM ALWAYS WEAR APPROVED HELMET,
+BOOTS, GLOVES AND JACKET, BOTH FOR LONG JOURNEYS AND SHORT DISTANCES. PROTECTIVE GEAR SHOULD BE HIGHLY VISIBLE TO
+ALLOW OTHER DRIVERS ON THE ROAD TO SEE THE BIKER IMMEDIATELY.
+-  |  DO NOT DRIVE AFTER CONSUMING ALCOHOL.
+-  |  ALWAYS USE TM ORIGINAL ACCESSORIES. FOR EXAMPLE, FRONT COVERINGS MAY AFFECT MOTORCYCLE PERFORMANCE AT HIGH SPEED.
+EVEN LUGGAGE, ADDITIONAL TANKS, ETC. MAY AFFECT MOTORCYCLE PERFORMANCE DUE TO THE DIFFERENT WEIGHT DISTRIBUTION.
+-  |  BOTH THE FRONT AND THE REAR WHEELS MUST BE FITTED WITH TIRES WITH THE SAME TYPE OF PROFILE.
+-  |  AFTER THE FIRST 30 MINUTES OF RIDING, YOU MUST CHECK THE TENSION OF THE SPOKES. SPOKE TENSION DECREASES RAPIDLY ON
+NEW WHEELS. IF YOU KEEP RIDING WITH LOOSE SPOKES, THEY MAY BREAK, CAUSING INSTABILITY (SEE CHECKING SPOKE TENSION).
+-  |  ALL EURO 4 MODELS ARE DESIGNED AND SET UP FOR ONLY 1 RIDER. CARRYING A PASSENGER IS PROHIBITED.
+-  |  COMPLY WITH TRAFFIC REGULATIONS AND DRIVE WITH CAUTION SO AS TO RECOGNIZE DANGER AS SOON AS POSSIBLE.
+-  |  ADJUST THE SPEED OF THE VEHICLE ACCORDING TO THE CONDITIONS OF THE ROAD AND YOUR DRIVING SKILLS.
+-  |  DRIVE WITH CAUTION ON UNKNOWN ROADS OR TERRAINS.
+-  |  WHEN GOING OFF ROAD, ALWAYS GO WITH A FRIEND WITH A SECOND MOTORCYCLE, SO YOU CAN HELP EACH OTHER IF NECESSARY.
+-  |  PROMPTLY REPLACE THE VISOR OR LENSES OF YOUR GLASSES. SCRATCHED VISORS OR GLASSES MAKE IT NEARLY IMPOSSIBLE TO SEE
+IN POOR LIGHT CONDITIONS.
+-  |  NEVER LEAVE THE MOTORCYCLE UNATTENDED WITH THE ENGINE RUNNING.
+DANGER
+-  |  ONLY EN AND SMR MODELS HAVE APPROVAL FOR USE ON PUBLIC ROADS OR MOTORWAYS.
+-  |  WHEN RIDING YOUR MOTORCYCLE, ALWAYS BEAR IN MIND THAT LOUD NOISE MAY DISTURB OTHER PEOPLE.
+3•51  |  EN - 2-STROKE
+3 • INSTRUCTIONS FOR U SE
+RUNNING-IN INSTRUCTIONS
+The component surfaces of a new motorcycle, despite precision machining, are not as smooth as the components of motorcycles that have
+been running for a long time. This is why running-in a new motorcycle is so important.
+For optimal settling of moving parts, a new motorcycle must be brought to its maximum performance gradually.
+The main rules to follow are:
+1. After cold start, warm up the engine for about 3 minutes before starting to use the motorcycle.
+2. During the first 3 hours of use (1 hour for competitive use) the engine must be used only up to a maximum of 50% of its power. Plus, the
+number of revs must not exceed 6500 rpm.
+3. During the subsequent 5 hours of use (1 hour for competitive use) the engine can be used up to a maximum of 75% of its power. Ride
+the motorcycle under a variety of conditions (road, easy off-road stretches). Do not go on long journeys without ever closing the throttle.
+Gradually increase and reduce throttle opening, alternating acceleration and deceleration with short periods at constant speed.
+Make sure that the coolant does not reach temperatures that are too high (indicated by fluid leaking from the bleeder hose).
+By following these rules, you will obtain maximum performance and longer engine life.
+It is essential that you carry out the operations described in the “Maintenance Schedule” during the running-in period.
+Be particularly careful when replacing oil as metal particles that can detach from the surfaces of engine parts in contact during running-in
+circulate in the oil and are deposited in the cap with magnet. Therefore, replacing oil and cleaning the cap with magnet allows these particles
+to be definitively removed from the engine.
+PRELIMINARY CHECKS
+In order to drive safely, the motorcycle must be in good condition and well maintained. It is good practice to perform a general check on the
+motorcycle before every use.
+It must include the following checks:
+-  |  2 stroke oil and fuel level check (EN - SMR)
+-  |  brake fluid level check;
+-  |  coolant level check;
+-  |  brakes correct operation check;
+-  |  brakes pipes and pads condition check;
+-  |  steering check, turning handlebar all the way in both directions;
+-  |  tires pressure and condition check;
+-  |  chain tension check;
+-  |  flexible cable controls check and adjustment if necessary;
+-  |  if carrying luggage, check that it is secured.
+-  |  Start the engine: check that the instrument display lights up and;
+-  |  turn on the high beam and check that the relative indicator comes on;
+-  |  activate the turn signals and check that the relative indicators come on;
+-  |  check that the rear brake light comes on;
+-  |  check that the horn works;
+-  |  check that after starting the “  |  ” “Engine fault” indicator does not come on.
+N.B.:  |  For checks and any adjustments necessary, see the Maintenance section.
+2-STROKE - EN  |  3•52
+3 • INSTRUCTIONS FOR U SE
+MOUNTING/DISMOUNTING OF RIDER AND PASSENGER
+Carefully read the instructions below as they provide important information
+for rider and passenger safety and to prevent harm to persons or damage
+to the motorcycle.
+The motorcycle must always be mounted or dismounted from the left-hand
+side with your hands free, no obstacles in the way and with the stand down.
+The rider must be the first to get on and the last to get off the motorcycle
+and must control the stability of the motorcycle while the passengers
+mounts and dismounts.
+Do not get off the vehicle by jumping or extending your legs and always
+dismount by following the instructions given in the relevant section.
+MOUNTING OF RIDER
+With the motorcycle on the side stand, do the following:
+-  |  From the left side, hold the handlebar correctly with both hands and
+extend your right leg over the saddle.
+-  |  Sit on the motorcycle and place both feet on the ground. Balance the
+vehicle without putting all your weight on the side stand.
+WARNING
+If you are unable to place both feet on the ground, put your right leg down
+with your left leg poised.
+-  |  Start the motorcycle as described in the relevant section.
+-  |  Use your left foot to check that the stand has completely retracted.
+3•53  |  EN - 2-STROKE
+3 • INSTRUCTIONS FOR USE
+DISMOUNTING THE MOTORCYCLE
+-  |  Stop the vehicle and switch off the engine.
+WARNING
+Make sure that the area where you want to park the vehicle is stable and
+level.
+-  |  Place both feet on the ground.
+-  |  Switch off the motorcycle as described in the relevant section.
+-  |  Tilt the motorcycle to the left until it rests on the stand.
+-  |  Firmly grasp the handlebar and dismount on the left-hand side by lifting
+your right leg.
+ADJUSTING THE REAR-VIEW MIRRORS
+Sit on the motorcycle as described in the relative paragraph.
+Adjust both mirrors (1) so that you can clearly see the road behind you
+when seated.
+1 1
+START OF THE MOTORCYCLE
+1.  |  Get on the motorcycle from the left hand side.
+2.  |  Raise the motorcycle, the kickstand (1) will raise automatically.
+3.  |  Position the gearbox lever (2) in neutral.
+4.  |  For SMR models, rotate the key (3) of the start switch to “ ” ON.
+1 1
+(second position).  |  2 2
+5.  |  For carburettor models, turn the fuel tap (4) to “ON”.
+6.  |  Depending on the models, raise the knob (5) or pull the knob (6) and
+leave it in position.
+7.  |  Pull the clutch lever (7).
+8.  |  Press the button (8) to start the engine.
+Release the button as soon as the engine starts.  |  4 4
+3 3
+ON ON
+7 7  |  8 8
+2-STROKE - EN  |  3•54
+3 • INSTRUCTIONS FOR USE
+WARNING  |  5 5
+After a few seconds from the engine start, move the knob (5) or (6) back
+to the initial position. If the engine has a low and irregular idle speed (9),
+adjust idle speed as described in the relative paragraph “Engine speed idle
+speed adjustment”.  |  6-9 6-9
+The engine idle speed will always have to be kept between 1200-1500 rpm.  |  9 9
+This value also eases the next starts.
+DANGER
+-  |  DO NOT START THE ENGINE IN A CLOSED ROOM AND NEVER LEAVE
+IT ON IN SUCH ROOMS. EXHAUST GASSES ARE POISONOUS AND THE
+MAY CAUSE UNCONSCIOUSNESS AND DEATH.
+IN CASE OF ENGINE OPERATION, ALWAYS MAKE SURE SUFFICIENT
+VENTILATION IS PRESENT.
+-  |  ALWAYS CHECK THAT GEARBOX IS IN NEUTRAL BEFORE STARTING THE
+MOTORCYCLE. IF A GEAR IS ENGAGED WHEN STARTING THE MOTOR-
+CYCLE, THE LATTER WILL JUMP FORWARD AND MAY CAUSE DAMAGES
+TO YOURSELF AND TO THE MOTORCYCLE ITSELF.
+COLD START OF THE MOTORCYCLE
+Cold start is intended when the coolant temperature is below 35°C.  |  1 1
+- After having made the preparations for start-up as described in the
+“Starting the motorcycle” section, operate as follows before starting
+the motorcycle:
+- Depending on the models, raise the knob (1) or pull the knob (2) and
+leave it in position.
+-  |  Start the motorcycle as described in the relative paragraphs .  |  3 3
+- Run the engine accelerating softly, after approx. 1 minute after the engine
+started, move the knob (1) or (2) back to initial position. If the engine
+has a low and irregular idle speed (3), , adjust idle speed as described
+in the relative paragraph “Engine idle speed adjustment ”.
+The engine idle speed will always have to be kept between 1200-1500 rpm.
+This value also eases the next starts.
+WARNING
+Do not make the engine rpm increase too much while it’s still cold. This
+may cause damages to the engine. Always let the engine warm up while
+stationary or while running at low rpm.
+2 2
+3•55  |  EN - 2-STROKE
+3•INSTRUC T I ONS FOR U SE
+START WITH FLOODED ENGINE
+In case of fall while using the motorcycle for sport or competitive reasons,
+an accidental shutting off of the engine occurs. In case you find difficulties
+restarting the motorcycle and you smell petrol, that indicates the engine  |  OFF OFF
+has flooded.  |  1 1  |  2 2
+To start the motorcycle, work as follows:
+EN
+For motorcycle with throttle body (Fi)
+1. Position the gearbox lever (1) in neutral.
+2. For SMR models, check that the key (2) of the start switch is set to
+“OFF”.
+3. When the throttle (3) is completely open:
+EN - MX  |  3 3  |  4 4
+Press and keep pressed the switch off button (4).
+4. Press the ignition button, letting some cycles run.  |  MX
+5. Start the motorcycle as described in paragraph “Start of the motorcycle”.
+4 4
+For motorcycle with carburettor
+1. Position the gearbox lever (1) in neutral.  |  ON ON
+2. Close the fuel tap (2) in “OFF” position.
+3. With the throttle (3) entirely closed, press the ignition button (4) letting
+some cycles run.  |  OFF OFF
+4. Open the fuel tap (2) in “ON” position.
+5. When the throttle (3) is completely closed, start the motorcycle as  |  2 2  |  1 1
+described in paragraph “Start of the motorcycle”.
+3 3
+4 4
+3 3
+4 4
+2-STROKE - EN  |  3•56
+3 • INSTRUCTIONS FOR USE
+SETTING OFF
+Put on a protective helmet and start the engine, then pull the clutch lever, engage 1st gear and slowly release the clutch lever while accelerating.
+DANGER
+NEVER RIDE THE MOTORCYCLE WITHOUT WEARING AN APPROVED PROTECTIVE HELMET AND/OR IF YOU ARE NOT IN GOOD PSYCHOLOGICAL
+AND PHYSICAL HEALTH.
+BEFORE SETTING OFF, ALWAYS MAKE SURE THAT THE SIDE STAND IS FULLY RETRACTED. YOU CAN LOSE CONTROL OF THE MOTORCYCLE IF
+THE STAND DRAGS ON THE GROUND.
+ACCELERATING, SHIFTING GEARS, SLOWING DOWN
+1 st gear, which you are using, is the gear used to set off and to go uphill. When circumstances permit (speed limit, traffic, incline), you can
+engage higher gears to increase speed. To do so, release the throttle while pulling the clutch lever, engage the next gear, release the clutch
+and accelerate up to a 1/2 turn of the throttle grip. Then engage the next gear and repeat until you reach the desired speed, always remaining
+within the limits in force.
+Gradually opening the throttle promotes careful driving and limits consumption. Learn how far you need to turn the throttle grip based on
+the speed at which you want the motorcycle to move.
+Release the throttle grip to reduce speed. If necessary, also brake and down shift, pulling the clutch lever and engaging a lower gear. Release
+the clutch slowly and accelerate or shift gears again. Always move up or down through the gears one at a time!
+BRAKING
+Release the throttle and, at the same time, gradually brake with the front and rear brakes.
+Engage a lower gear if necessary. On dusty, wet or slippery surfaces, use the brakes and down shift as gently as possible without locking the
+wheels. Locking of the wheels leads to swerving and/or falling.
+On long downhill roads, make use of engine braking.
+To do so, engage 1st or 2nd gear without excessively increasing the revs. This way, you can brake much less and the brakes will not overheat.
+DANGER
+-  |  IN RAIN, AFTER WASHING THE MOTORCYCLE, AFTER IMMERSION IN WATER, OR TRAVELLING OVER WET GROUND, BRAKING COULD
+BE DELAYED BECAUSE OF WET OR DIRTY BRAKE DISCS. THEREFORE, USE THE BRAKES REPEATEDLY AND CAUTIOUSLY, BEING SURE NOT
+TO OBSTRUCT TRAFFIC, UNTIL THE DISCS ARE DRY AND CLEAN.
+-  |  BRAKING CAN BE DELAYED EVEN WHEN TRAVELLING ON DIRTY ROADS OR ROADS COVERED WITH SALT. AGAIN, USE THE BRAKES
+REPEATEDLY AND CAUTIOUSLY, BEING SURE NOT TO OBSTRUCT TRAFFIC, UNTIL THE DISCS ARE CLEAN.
+-  |  DIRTY BRAKE DISCS CAUSE GREATER WEAR OF THE PADS AND DISCS.
+-  |  THE DISC, PADS, CALIPERS, AND BRAKE FLUID HEAT UP AFTER USING THE BRAKES. THE HOTTER THESE PARTS, THE LESS THE BRAKING
+EFFECT IS. IF OVERHEATING OCCURS, THE WHOLE BRAKING SYSTEM MAY FAIL.
+-  |  IF, WHILE BRAKING, THE FRONT BRAKE LEVER OR THE REAR BRAKE PEDAL STROKES ARE LONGER THAN USUAL, THERE IS A FAULT IN
+THE BRAKING SYSTEM. IN THIS CASE, HAVE AN AUTHORIZED TM WORKSHOP CHECK THE MOTORCYCLE.
+-  |  TM MODELS CAN BE RESTARTED ANY TIME WITH THE KICK STARTER OR ELECTRIC START. THEREFORE, TURN OFF THE ENGINE WHEN
+YOU INTEND TO KEEP THE MOTORCYCLE AT A STANDSTILL FOR MORE THAN 2 MINUTES.
+-  |  CHECK THE MOTORCYCLE AFTER EVERY FALL AS YOU DO BEFORE EVERY START-UP.
+-  |  A TWISTED HANDLEBAR MUST ALWAYS BE REPLACED. NEVER STRAIGHTEN THE HANDLEBAR, AS IT MAY LOSE ITS STRENGTH.
+3•57  |  EN - 2-STROKE
+3 • INSTRUCTIONS FOR USE
+INFORMATION:
+Standard TM motorcycles are not equipped with radiator cooling fans and the radiator dimensions are designed for optimum compactness
+and weight. The cooling system is sufficient for tourist or sport use.
+WARNING
+-  |  Using the engine at high revs when it is still cold affects the length of engine life. Therefore, before running the engine at full speed, warm
+it up by driving a few kilometers at medium speed. The engine has reached its operating temperature as soon as the radiators become
+hot.
+-  |  Never down shift without having first slowed down. The engine revs would go too high and some of its components could be damaged.
+Also, the rear wheel could lock, causing you to lose control of the vehicle.
+-  |  If you feel abnormal vibrations while driving, make sure that the fixing screws on the motorcycle are fully tightened.
+-  |  If you hear strange noises while riding your motorcycle, stop immediately, turn off the engine and contact a TM dealer.
+STOPPING AND PARKING  |  EN
+With the throttle fully released, brake the motorcycle until it stops while
+pulling the clutch lever. Shift into neutral and release the clutch. Keeping
+the engine at idle speed, press button (1) (EN), button (2) (MX) or turn the
+key (3) (SMR) to the “  |  ” position to stop the engine.
+1 1
+Park the motorcycle on solid ground and engage the steering lock, if present.
+DANGER
+DURING OPERATION, MOTORCYCLES PRODUCE A LOT OF HEAT. THE
+ENGINE, RADIATORS, EXHAUST SYSTEM, BRAKE DISCS, AS WELL AS
+SHOCK ABSORBERS, CAN ALL BECOME VERY HOT. NEVER TOUCH THESE
+PARTS WHEN DRIVING AND AFTER SWITCHING OFF THE ENGINE. PARK
+THE MOTORCYCLE IN SUCH A WAY AS TO PREVENT PEDESTRIANS FROM
+MX
+TOUCHING IT AND BURNING THEMSELVES.
+WARNING
+-  |  Never park with the engine running or park where there is a risk of fire
+due to dry grass or other easily flammable material.
+2 2
+SMR
+3 3
+2-STROKE - EN  |  3•58
+3 • INSTRUCTIONS FOR USE
+WASHING
+-  |  Regularly clean the motorcycle to keep the surface of plastic parts in good condition.
+-  |  Use hot water, a cleaning product available on the market and a sponge. Heavy dirt can be removed with a gentle jet of water.
+-  |  Plug the exhaust pipe before cleaning to prevent water from going in.
+-  |  Remove the air filter as described in the “Maintenance” section.
+WARNING
+Do not aim water jets directly at the filter case (1), or water may enter the engine zone.
+-  |  Use cleaning products available on the market to wash the engine. Use a suitable brush to clean particularly dirty parts.
+-  |  Once you have thoroughly rinsed the motorcycle with a gentle jet of water, dry with compressed air and a cloth.
+Immediately go for a short ride until the engine reaches the operating temperature and, at this point, also use the brakes. The water left
+in the areas that cannot be reached and on the brakes will evaporate thanks to the heat.
+-  |  Once the motorcycle has cooled down, oil or grease all sliding parts and bearings. Apply a specific spray to the chain.
+-  |  Apply a specific spray for contacts to all the electrical controls on the handlebar and electrical system connectors to prevent faults in the
+electrical system.
+WARNING
+Never clean the motorcycle with a high pressure cleaner or with a strong water jet! Otherwise, due to the high pressure, water could reach
+the electrical parts, connectors, flexible cable controls, bearings, etc. and cause faults or lead to early breakage of these parts.
+PRECAUTIONS FOR WINTER USE
+If the motorcycle is used in winter, you must consider the salt on the roads and take appropriate measures against the corrosive salt.
+-  |  Thoroughly wash the motorcycle after every use and let it dry.
+-  |  Apply an anti-corrosion product to the engine, exhaust system, frame, swing arm and all other shiny, galvanized or satin finished metal
+components (except brake discs).
+DANGER
+DO NOT ALLOW THE ANTI-CORROSION PRODUCT TO COME INTO CONTACT WITH THE BRAKE DISCS. THIS WOULD REDUCE THE BRAKING
+EFFECT CONSIDERABLY.
+WARNING
+After traveling on roads where salt has been spread, thoroughly wash the motorcycle with cold water and let it dry completely.
+3•59  |  EN - 2-STROKE
+3 • INSTRUCTIONS FOR USE
+STORAGE
+Take the following measures if the motorcycle is to be left unused for a long period:
+-  |  Thoroughly clean the motorcycle (see “WASHING”).
+-  |  Change the gearbox oil. Old oil contains harmful impurities (see the “MAINTENANCE” section).
+-  |  Check the coolant level.
+-  |  Remove the spark plug and pour approx. 5 cc of engine oil into the cylinder through the spark plug hole. Activate the kick starter 10 times
+to allow the engine oil to be distributed on the cylinder wall. Then fit the spark plug again.
+-  |  Compress the piston to make the exhaust ports close.
+-  |  Empty the fuel tank and collect the fuel in a suitable container.
+-  |  Remove the battery after disconnecting the cables or, if necessary, use a battery maintainer compatible with the battery type (SMR)
+-  |  Adjust the tire pressure.
+-  |  Grease the bearings, control lever and footrest supports and the chain.
+-  |  The storage area should be dry and not subject to drastic temperature changes.
+-  |  Cover the motorcycle, preferably with a breathable sheet or cover. Do not use airtight materials, as moisture would be trapped and could
+cause corrosion.
+-  |  Place the motorcycle on a stand, so that its wheels are raised off the ground.
+WARNING
+Before storing the motorcycle for the winter, check the operation and wear of all components. If maintenance operations, repairs or modifications
+are required, it is a good idea to have them carried out during the winter (workshops are less busy). This means that you avoid long waits in
+the workshop at the start of the spring season.
+WARNING
+It is highly inadvisable to start the engine for brief periods of time when the motorcycle has been put into storage. The engine would not heat
+up sufficiently, and so the steam created during combustion would condense, oxidizing the valves and the exhaust system.
+START-UP AFTER WINTER
+-  |  Fit the charged battery. (EN - SMR)
+-  |  Fill the tank with new fuel.
+-  |  Check the motorcycle as you do before any start-up. Go for a short test ride.
+2-STROKE - EN  |  3•60
+4. MAINTENANCE
+4 • MAI N TEN A N CE
+125 (EN) MAINTENANCE TABLE
+A CLEAN MOTORCYCLE CAN BE INSPECTED FASTER AND AT A LOWER COST
+ride)
+After 1 hour  |  (after every  |  (75 hours of sports use) Every year
+Every 15 hours Every 30 hours Every 45 hours Every 80 hours Every 135 hours
+Check steering bearings and play adjustment  |  •  |  •  |  •
+Clean and grease steering bearings and relative sealing elements  |  •
+Bleed telescopic fork  |  •  |  •
+Clean dust seal  |  •
+Check seal and operation of fork and shock absorber  |  •
+Full fork maintenance  |  •  |  •  |  •
+Full shock absorber maintenance  |  •  |  •  |  •
+Check tightness of screws and linkage smooth running for rear suspension  |  •  |  •
+Check frame and swing arm  |  •  |  •
+Check swing arm bearings  |  •
+Lubricate movable parts (side stand, levers, etc.) and check their
+•  |  •
+movement
+Check tightness of chassis screws (fork plates, fork feet, wheel pin nuts
+•  |  •  |  •
+and screws, swing arm pin, shock absorber)
+Check wear on chain, junction mesh, pinion, sprocket and guides, chain
+•  |  •
+tension
+Lubricate chain  |  •  |  •
+Check fluid level in hydraulic clutch control tank  |  •  |  •
+Change hydraulic clutch fluid  |  •
+Check brake fluid level, pad thickness, front and rear brake discs  |  •  |  •
+Change front and rear brake fluid  |  •
+Check condition and seal of brake pipes  |  •  |  •
+Check operation, adjustment, smoothness and play of front brake lever
+•  |  •
+and rear brake pedal
+Check tightness of braking system screws  |  •  |  •
+Check wheel hubs, spoke tension and rim centering  |  •  |  •  |  •
+Check wheel bearing play  |  •  |  •
+Check tire condition and pressure  |  •  |  •  |  •
+Check battery and charge it if necessary  |  •  |  •
+Treat battery connections with grease for contacts  |  •  |  •
+Treat electrical contacts and switches with spray for contacts  |  •  |  •
+Check headlight orientation  |  •  |  •  |  •
+Check electrical system operation (low beam, high beam, stop light, turn
+•  |  •
+signals, control indicators, horn, safety button/switch)
+Check cooling system seal and coolant level  |  •  |  •  |  •
+Check condition and arrangement of rubber pipes without bends  |  •  |  •  |  •
+Check condition and arrangement of bleeder hoses without bends  |  •  |  •  |  •
+Replace silencer soundproofing material  |  •
+Check exhaust system seal and fastening  |  •  |  •  |  •
+Clean air filter and filter housing  |  •  |  •
+Check condition and seal of coupler and filter housing  |  •  |  •
+Check throttle cable play and idle speed adjustment  |  •  |  •  |  •
+Check condition, smoothness and arrangement without bends,
+•  |  •
+adjustment and lubrication of control cables
+Gearbox oil replacement  |  •  |  •  |  •
+2-STROKE - EN  |  4•62
+4 • MAI N TEN A N CE
+125 (EN) MAINTENANCE TABLE
+A CLEAN MOTORCYCLE CAN BE INSPECTED FASTER AND AT A LOWER COST
+ride)
+After 1 hour  |  (after every  |  (75 hours of sports use) Every year
+Every 15 hours Every 30 hours Every 45 hours Every 80 hours Every 135 hours
+Clean exhaust screw magnet  |  •  |  •
+Check tightness of engine fixing screws  |  •  |  •
+Replace spark plug and check cap  |  •
+Valve motor and valves clearance check  |  •  |  •
+Check cylinder and piston wear  |  •
+Fully change piston  |  •  |  •
+Fully change conrod  |  •
+Check clutch discs  |  •
+Check transmission and gearbox  |  •
+Mixer oil pump replacement  |  •
+Fully change engine bearings  |  •
+Fully change engine oil seal  |  •
+Exhaust valve electric motor replacement  |  •
+Valve motor silent block check  |  •  |  •
+WARNING
+Change affected components if a defect is found or wear limits exceeded.
+The above operations must be performed by an authorized TM workshop or by specialized personnel.
+The hour meter is built into the dash.
+4•63  |  EN - 2-STROKE
+4 • MAI N TEN A N CE
+125 (SMR) MAINTENANCE TABLE
+A CLEAN MOTORCYCLE CAN BE INSPECTED FASTER AND AT A LOWER COST
+ride)
+After 1 hour  |  (after every  |  Every year
+Every 15 hours Every 30 hours Every 40 hours Every 80 hours Every 160 hours
+Check steering bearings and play adjustment  |  •  |  •  |  •
+Clean and grease steering bearings and relative sealing elements  |  •
+Bleed telescopic fork  |  •  |  •
+Clean dust seal  |  •
+Check seal and operation of fork and shock absorber  |  •
+Full fork maintenance  |  •  |  •  |  •
+Full shock absorber maintenance  |  •  |  •  |  •
+Check tightness of screws and linkage smooth running for rear suspension  |  •  |  •
+Check frame and swing arm  |  •  |  •
+Check swing arm bearings  |  •
+Lubricate movable parts (side stand, levers, etc.) and check their
+•  |  •
+movement
+Check tightness of chassis screws (fork plates, fork feet, wheel pin nuts
+•  |  •  |  •
+and screws, swing arm pin, shock absorber)
+Check wear on chain, junction mesh, pinion, sprocket and guides, chain
+•  |  •
+tension
+Lubricate chain  |  •  |  •
+Check fluid level in hydraulic clutch control tank  |  •  |  •
+Change hydraulic clutch fluid  |  •
+Check brake fluid level, pad thickness, front and rear brake discs  |  •  |  •
+Change front and rear brake fluid  |  •
+Check condition and seal of brake pipes  |  •  |  •
+Check operation, adjustment, smoothness and play of front brake lever
+•  |  •
+and rear brake pedal
+Check tightness of braking system screws  |  •  |  •
+Check wheel hubs, spoke tension and rim centering  |  •  |  •  |  •
+Check wheel bearing play  |  •  |  •
+Check tire condition and pressure  |  •  |  •  |  •
+Check battery and charge it if necessary  |  •  |  •
+Treat battery connections with grease for contacts  |  •  |  •
+Treat electrical contacts and switches with spray for contacts  |  •  |  •
+Check headlight orientation  |  •  |  •  |  •
+Check electrical system operation (low beam, high beam, stop light, turn
+•  |  •
+signals, control indicators, horn, safety button/switch)
+Check cooling system seal and coolant level  |  •  |  •  |  •
+Check condition and arrangement of rubber pipes without bends  |  •  |  •  |  •
+Check condition and arrangement of bleeder hoses without bends  |  •  |  •  |  •
+Replace silencer soundproofing material  |  •
+Check exhaust system seal and fastening  |  •  |  •  |  •
+Clean air filter and filter housing  |  •  |  •
+Check condition and seal of coupler and filter housing  |  •  |  •
+Check throttle cable play and idle speed adjustment  |  •  |  •  |  •
+Check condition, smoothness and arrangement without bends,
+•  |  •
+adjustment and lubrication of control cables
+Gearbox oil replacement  |  •  |  •
+2-STROKE - EN  |  4•64
+4 • MAI N TEN A N CE
+125 (SMR) MAINTENANCE TABLE
+A CLEAN MOTORCYCLE CAN BE INSPECTED FASTER AND AT A LOWER COST
+ride)
+After 1 hour  |  (after every  |  Every year
+Every 15 hours Every 30 hours Every 40 hours Every 80 hours Every 160 hours
+Clean exhaust screw magnet  |  •  |  •
+Check tightness of engine fixing screws  |  •  |  •
+Replace spark plug and check cap
+Valve motor and valves clearance check  |  •  |  •
+Check cylinder and piston wear  |  •
+Fully change piston  |  •  |  •
+Fully change conrod  |  •
+Check clutch discs  |  •
+Check transmission and gearbox  |  •
+Mixer oil pump replacement  |  •
+Fully change engine bearings  |  •
+Fully change engine oil seal  |  •
+Exhaust valve electric motor replacement  |  •
+Valve motor silent block check  |  •
+WARNING
+Change affected components if a defect is found or wear limits exceeded.
+The above operations must be performed by an authorized TM workshop or by specialized personnel.
+The hour meter is built into the dash.
+4•65  |  EN - 2-STROKE
+4 • MAI N TEN A N CE
+125 (MX) MAINTENANCE TABLE
+A CLEAN MOTORCYCLE CAN BE INSPECTED FASTER AND AT A LOWER COST
+hours  |  hours  |  hours  |  hours  |  hours
+Every 10 every ride) Every 20  |  Every 30  |  Every 40  |  Every 50  |  Every 75  |  Every year
+After 1 hour hours (after
+Check steering bearings and play adjustment  |  •  |  •  |  •  |  •  |  •
+Clean and grease steering bearings and relative sealing
+•
+elements
+Bleed telescopic fork  |  •  |  •  |  •  |  •
+Clean dust seal  |  •  |  •  |  •  |  •
+Check seal and operation of fork and shock absorber  |  •  |  •  |  •  |  •
+Full fork maintenance  |  •
+Full shock absorber maintenance  |  •
+Check tightness of screws and linkage smooth running
+•  |  •
+for rear suspension
+Check frame and swing arm  |  •  |  •  |  •  |  •
+Check swing arm bearings  |  •  |  •
+Lubricate movable parts (side stand, levers, etc.) and
+•  |  •  |  •  |  •
+check their movement
+Check tightness of chassis screws (fork plates, fork
+feet, wheel pin nuts and screws, swing arm pin, shock  |  •  |  •  |  •  |  •  |  •
+absorber)
+Check wear on chain, junction mesh, pinion, sprocket
+•  |  •  |  •  |  •
+and guides, chain tension
+Lubricate chain  |  •  |  •
+Check fluid level in hydraulic clutch control tank  |  •  |  •  |  •  |  •
+Change hydraulic clutch fluid  |  •
+Check brake fluid level, pad thickness, front and rear
+•  |  •  |  •  |  •
+brake discs
+Change front and rear brake fluid  |  •
+Check condition and seal of brake pipes  |  •  |  •  |  •  |  •
+Check operation, adjustment, smoothness and play of
+•  |  •  |  •  |  •
+front brake lever and rear brake pedal
+Check tightness of braking system screws  |  •  |  •
+Check wheel hubs, spoke tension and rim centering  |  •  |  •  |  •  |  •  |  •
+Check wheel bearing play  |  •  |  •  |  •  |  •
+Check tire condition and pressure  |  •  |  •  |  •  |  •  |  •
+Check battery and charge it if necessary  |  •  |  •  |  •  |  •
+Treat battery connections with grease for contacts  |  •  |  •  |  •  |  •
+Treat electrical contacts and switches with spray for
+•  |  •  |  •  |  •
+contacts
+Check cooling system seal and coolant
+•  |  •  |  •  |  •  |  •
+level
+Check condition and arrangement of rubber pipes
+•  |  •  |  •  |  •  |  •
+without bends
+Check condition and arrangement of bleeder hoses
+•  |  •  |  •
+without bends
+Replace silencer soundproofing material  |  •  |  •  |  •  |  •
+Check exhaust system seal and fastening  |  •  |  •  |  •  |  •  |  •
+Clean air filter and filter housing  |  •  |  •  |  •  |  •
+2-STROKE - EN  |  4•66
+4 • MAI N TEN A N CE
+125 (MX) MAINTENANCE TABLE
+A CLEAN MOTORCYCLE CAN BE INSPECTED FASTER AND AT A LOWER COST
+hours  |  hours  |  hours  |  hours  |  hours
+Every 10 every ride) Every 20  |  Every 30  |  Every 40  |  Every 50  |  Every 75  |  Every year
+After 1 hour hours (after
+Check condition and seal of throttle body coupler and
+•  |  •  |  •  |  •  |  •
+filter housing
+Check throttle cable play and idle speed adjustment  |  •  |  •  |  •  |  •  |  •
+Check condition, smoothness and arrangement without
+•  |  •  |  •  |  •
+bends, adjustment and lubrication of control cables
+Gearbox oil replacement  |  •  |  •  |  •  |  •  |  •
+Clean exhaust screw magnet  |  •  |  •  |  •  |  •  |  •
+Check tightness of engine fixing screws  |  •  |  •  |  •  |  •  |  •
+Replace spark plug and check cap  |  •
+Valve motor and valves clearance check  |  •
+Check cylinder and piston wear  |  •
+Fully change piston  |  •
+Fully change conrod  |  •
+Check clutch discs  |  •  |  •
+Check transmission and gearbox  |  •
+Fully change engine bearings  |  •
+Fully change engine oil seal  |  •
+Exhaust valve electric motor replacement  |  •
+Valve motor silent block check  |  •
+WARNING
+Change affected components if a defect is found or wear limits exceeded.
+We recommend that you fit an hour meter.
+The above operations must be performed by an authorized TM workshop or by specialized personnel.
+4•67  |  EN - 2-STROKE
+4 • MAI N TEN A N CE
+2-STROKE - EN  |  4•68
+4 • MAINTENANCE
+THIS SYMBOL ALONGSIDE THE TITLE MEANS THAT THE
+OPERATION MUST BE PERFORMED AT AN AUTHORIZED TM
+WORKSHOP.
+FORK COMPRESSION ADJUSTMENT
+The compression hydraulic braking system determines the fork compression  |  2 2
+stroke. The degree of compression hydraulic braking can be adjusted to suit
+the rider and/or the installed spring rate.
+KAYABA USD FORK  |  1 1
+The adjusting screw (1) is in the upper part of the fork cap. Use a screwdriver.
+Turn it clockwise to increase braking, or anti-clockwise to reduce it. There
+are a total of 19 clicks available.
+WARNING
+Do not touch the bleeder screw (2).
+WARNING
+Before starting, tighten the adjuster from the standard position to “fully
+closed” while counting the clicks. Write down the number of clicks counted
+so that you can restore the standard adjustment if necessary. The clicks are
+normally indicated from the “fully closed” position.
+Both tubes must be adjusted in the same way.
+STANDARD ADJUSTMENT
+MX  |  13 clicks from fully closed
+EN  |  13 clicks from fully closed
+SMR  |  10 clicks from fully closed
+4•69  |  EN - 2-STROKE
+4 • MAINTENANCE
+FORK REBOUND ADJUSTMENT
+The rebound hydraulic braking system determines the fork rebound stroke.
+The degree of rebound hydraulic braking can be adjusted to suit the rider
+and/or the installed spring rate.  |  1 1
+KAYABA USD FORK
+The adjusting screw (1) is in the lower part of the fork foot. Use a screwdriver.
+Turn it clockwise to increase braking, or anti-clockwise to reduce it. There  |  2 2
+are a total of 21 clicks available.
+WARNING
+Do not touch the hexagon nut (2) as it is not needed to alter rebound braking.
+WARNING
+Before starting, tighten the adjuster from the standard position to “fully
+closed” while counting the clicks. Write down the number of clicks counted
+so that you can restore the standard adjustment if necessary.
+The clicks are normally indicated from the “fully closed” position.
+Both tubes must be adjusted in the same way.
+STANDARD ADJUSTMENT
+MX  |  13 clicks from fully closed
+EN  |  13 clicks from fully closed
+SMR  |  10 clicks from fully closed
+VARYING PRE-LOAD AND REPLACING FORK SPRINGS
+To vary the spring pre-load on these forks, you must partly disassemble them
+(see the specific manual of the fork fitted on the motorcycle).
+You should absolutely not vary the spring pre-load on forks fitted by TM
+MOTO.
+If necessary, replace the springs with others that have a different rate.
+WARNING
+For further, more detailed information about the forks, see the instructions
+supplied by the fork manufacturer.
+2-STROKE - EN  |  4•70
+4 • MAINTENANCE
+BLEEDING THE TELESCOPIC FORK
+After every 5 hours of competition use, use the bleeder screws or valves to  |  1 1
+release any overpressure from inside the fork.
+KAYABA USD FORK
+The Kayaba fork has a screw (1).
+-  |  Before using the screw, lift the motorcycle onto a central stand so that
+the front wheel is not touching the ground.
+-  |  Unscrew the screw (1) completely without removing it and bleed the
+air.
+-  |  Tighten the screw (1) again.
+-  |  If the motorcycle is mainly used on the road, this operation only needs
+to be performed during regular maintenance.
+WARNING
+Excessive pressure inside the fork may cause oil to leak from the fork. If your
+fork leaks oil, try bleeding the air before replacing the sealing elements.
+CLEANING TELESCOPIC FORK DUST SEAL
+NOTE:  |  You must contact a TM dealer to carry out this operation.
+The dust seal (1) must prevent dust and dirt from entering the fork oil seal.
+However, dirt may get behind the dust seal over time. If the dirt is not
+removed, the oil seal ring, located behind it, may lose its seal.
+Use a screwdriver to very carefully separate the dust seal (1) and the
+scrapper (2) from the outer tube (3) and push it down.
+1 1
+-  |  Carefully clean the dust seal (1), the scrapper (2), the outer tube (3) and
+the inner tube (4) and liberally oil with silicone spray or with engine oil.
+-  |  Then re-fit the dust seal and the scrapper by manually pushing it into
+the seat in the outer tube.
+WARNING  |  4 4  |  1 1  |  2 2  |  3 3
+Perform this operation on both of the fork dust seals.
+4•71  |  EN - 2-STROKE
+4 • MAINTENANCE
+SHOCK ABSORBER COMPRESSION ADJUSTMENT
+You can access the adjusting screw on the right-hand side of the motorcycle.  |  1 1
+• Low speeds  |  The adjusting screw (1) is on top of the shock
+absorber gas tank. Use a 5 mm Allen key. Turn it
+clockwise to increase braking, or anti-clockwise to
+reduce it. There are a total of 24 clicks available.
+STANDARD ADJUSTMENT
+MX  |  14 clicks from fully closed  |  2 2
+EN  |  16 clicks from fully closed
+SMR  |  16 clicks from fully closed
+• High speeds  |  The hexagon ring adjuster (2) is concentric to
+the low speed adjusting screw. Use a 14 mm hex
+wrench. Turn it clockwise to increase braking, or
+anti-clockwise to reduce it. There are a total of 20
+clicks available.
+STANDARD ADJUSTMENT
+MX  |  12 clicks from fully closed
+EN  |  14 clicks from fully closed
+SMR  |  12 clicks from fully closed
+WARNING
+Before starting, tighten the adjuster from the standard position to “fully
+closed” while counting the clicks. Write down the number of clicks counted
+so that you can restore the standard adjustment if necessary.
+The clicks are normally indicated from the “fully closed” position.
+SHOCK ABSORBER REBOUND ADJUSTMENT
+TM SHOCK ABSORBER
+You can access the adjusting screw on the left-hand side of the motorcycle.
+The adjusting screw (1) is on the fork coupling connecting the shock absorber  |  1 1
+to the linkage. Use a screwdriver. Turn it clockwise to increase braking, or
+anti-clockwise to reduce it. There are a total of 34 clicks available.
+WARNING
+Before starting, tighten the adjuster from the standard position to “fully
+closed” while counting the clicks. Write down the number of clicks counted
+so that you can restore the standard adjustment if necessary.
+The clicks are normally indicated from the “fully closed” position.
+STANDARD ADJUSTMENT
+MX  |  24 clicks from fully closed
+EN  |  26 clicks from fully closed
+SMR  |  17 clicks from fully closed
+2-STROKE - EN  |  4•72
+4 • MAINTENANCE
+VARYING PRE-LOAD AND REPLACING SHOCK ABSORBER  |  1 1
+SPRING
+The spring pre-load can be varied by turning the adjusting ring. Each 1 turn
+of the adjusting ring varies the pre-load by 1.5 mm.
+To make this operation easy, disassemble and carefully clean the shock
+absorber.
+If pre-load variation is insufficient, you must replace the spring with one  |  2 2 2 2
+that has a different spring rate.
+WARNING
+Before starting, write down the basic adjustment. For example, how many
+turns of thread are visible above the adjusting ring.
+-  |  Loosen the locknut (1) and rotate the la nut (2).
+-  |  Rotate it anticlockwise (from above) to decrease pre-load, rotate it
+clockwise (from above) to increase pre-load.
+-  |  Tighten the locknut (1) after adjustment.
+BASIC SUSPENSION CALIBRATION DEPENDING ON THE WEIGHT OF THE RIDER
+For optimum motorcycle driving and to prevent the fork, shock absorber, swing arm and frame from being damaged, the basic calibration of
+the suspensions must be adjusted according to your weight.
+-  |  The basic calibration of the suspensions (both the fork and shock absorber) involves mounting a certain type of spring and a set of adjust-
+ments of the compression and rebound braking.
+-  |  TM motorcycles come calibrated for a rider weight (with full protective gear) of 70 - 80 kg.
+Adjust the calibration of the suspensions if your weight does not fall within this range.
+-  |  The main element to check is the spring, both of the fork and the shock absorber.
+To check for correct spring rate, first measure the motorcycle rider sag.
+-  |  Then adjust the compression and rebound braking.
+-  |  For technical clarification regarding operation and calibration of TM motorcycle suspensions, contact your local TM dealer.
+ADAPTING FORK BASIC CALIBRATION
+-  |  Precise fork rider sag cannot be established for several reasons.
+-  |  Minor variations in your body weight can be compensated for by adjusting the compression braking.
+-  |  But if your fork is often bottoming or topping out, you must fit stiffer springs to avoid damaging the fork and frame.
+-  |  Then re-adjust the compression and rebound braking.
+ADAPTING SHOCK ABSORBER BASIC CALIBRATION
+-  |  To establish whether or not the shock absorber spring is suitable for your weight, check rider sag.
+-  |  But first the shock absorber static sag must be adjusted.
+-  |  Both static sag and rider sag can be checked by taking a simple set of measurements on the motorcycle.
+4•73  |  EN - 2-STROKE
+4 • MAINTENANCE
+CHECKING SHOCK ABSORBER STATIC SAG
+Correct shock absorber static sag corresponds to a static lowering of the
+motorcycle by 36 mm.
+Variations exceeding 2 mm may affect motorcycle handling.
+A A
+Procedure:
+-  |  Place the motorcycle on a stand, so that the rear wheel is not touching
+the ground.
+-  |  Measure the distance between the rear wheel pin and a fixed point
+(e.g.: a reference on a side) making sure that the straight line connecting
+the wheel pin to the fixed point is as perpendicular to the ground as
+possible and write down the value as measurement A.
+-  |  Place the motorcycle on the ground again.
+-  |  Ask someone to keep the motorcycle in an upright position.
+-  |  Measure the distance between the rear wheel pin and the fixed point
+again and write the value down as measurement B.
+-  |  The static sag is the difference between measurements A and B.
+Example:
+-  |  Motorcycle on stand (measurement A): ...................... 600 mm
+-  |  Motorcycle on the ground with no load (measurement B): .......... 565 mm
+-  |  Static sag: ...................................................................... 36 mm
+If the static sag is less than that, reduce the shock absorber spring pre-load.
+If the static sag is greater than that, increase the spring pre-load.
+See the “Varying pre-load and replacing shock absorber spring” section.
+CHECKING SHOCK ABSORBER RIDER SAG
+B B
+Correct shock absorber rider sag should correspond to a lowering of the
+motorcycle of 95÷100 mm.
+Procedure:
+-  |  Ask someone to hold the motorcycle. Sit on the seat wearing full
+protective gear in the normal position (feet on the footrests) and bounce
+up and down a few times to allow the rear suspension set-up to settle.
+-  |  With the motorcycle loaded in this way, measure the distance between
+the same measuring points and write the value down as measurement
+C.
+-  |  The rider sag is the difference between measurements A and C.
+Example:
+-  |  Motorcycle on stand (measurement A) ....................... 600 mm
+-  |  Motorcycle on the ground with rider on it (measurement C) 510 mm
+-  |  Rider sag ........................................................................ 95 mm
+If rider sag is less than 90 mm, the spring is too “hard” (spring rate too high).
+If the rider sag is greater than 105 mm, the spring is too “soft” (spring rate
+too low).
+The spring rate is indicated on the spring wire. After fitting a different spring,
+set the static sag to 35 mm (± 2 mm) again.
+In our experience, after replacing the spring with one that has a different
+spring rate, the degree of compression damping may remain unchanged.  |  C C
+With a “softer” spring the degree of rebound damping can be reduced by
+several clicks, and with a “harder” spring it can be increased by several clicks.
+2-STROKE - EN  |  4•74
+4 • MAINTENANCE
+CHECKING STEERING BEARINGS AND PLAY ADJUSTMENT
+1 1
+-  |  Regularly check steering bearing play.  |  2 2
+-  |  Position the motorcycle so that the front wheel is raised, turn the
+handlebar in both directions and move the fork back and forth.
+If the steering is hard to turn, the bearings are too tight and you need
+to loosen the ring nut (3). If the steering shakes, the bearings have play
+and ring-nut (3) must be tightened.
+-  |  To adjust, loosen the four M8 screws (1) and nut (2) of the fork head
+and tighten or loosen ring-nut (3) as necessary.  |  1 1
+Do not tighten ring nut (3) beyond the play elimination point to avoid  |  3 3
+damaging the bearings. Tighten the fork head nut and then the four
+M8 screws to 17 Nm.
+-  |  Make sure steering is smooth, without sticking or play.
+DANGER
+IF THE STEERING BEARINGS ARE TOO TIGHT OR HAVE PLAY,
+MOTORCYCLE HANDLING ON THE ROAD WILL BE IRREGULAR AND
+YOU COULD LOSE CONTROL OF THE MOTORCYCLE.
+WARNING  |  1 1
+Long journeys without the correct steering bearing adjustment could ruin  |  2 2
+the bearings and their seats in the frame.  |  1 1
+The steering bearings must be re-greased at least once a year.
+3 3
+4•75  |  EN - 2-STROKE
+4 • MAINTENANCE
+REAR SUSPENSION LINKAGE
+The rear suspension of all TM motorcycles is equipped with a conrod and
+rocker mechanism that gradually modifies the leverage ratio between the
+wheel and shock absorber.
+This mechanism works on the bearings, which must be cleaned and greased
+at the scheduled intervals to keep suspension operation efficient.
+When washing the motorcycle with high pressure cleaners do not direct the
+jet at the suspension linkage.
+CHECKING CHAIN TENSION
+-  |  To check chain tension, put the motorcycle up on the center stand.  |  10 - 15 10 - 15
+mm mm
+-  |  Push the chain upwards at the end of the chain guide.
+The upper branch of the chain must be taut.
+The distance between the swing arm and the lower branch of the chain (A)
+must be approx. 10 - 15 mm. Adjust the tension if necessary.
+DANGER
+- I F T H E C H A I N I S TO O T I G H T, T H E F I N A L T R A N S M I S S I O N
+COMPONENTS (CHAIN, PINION AND SPROCKET, GEARBOX AND
+REAR WHEEL BEARINGS) ARE SUBJECT TO MORE STRESS. IN
+ADDITION TO PREMATURE WEAR, IN EXTREME CASES, THE CHAIN
+OR THE GEARBOX SECONDARY SHAFT MAY BREAK.
+- INSTEAD, IF THE CHAIN TENSION IS INSUFFICIENT IT CAN JUMP
+OFF THE PINION AND LOCK THE REAR WHEEL OR DAMAGE THE
+ENGINE.
+- I N B OT H C A S ES YO U C A N EA S I LY LO S E CO N T RO L O F T H E
+MOTORCYCLE.
+2-STROKE - EN  |  4•76
+4 • MAINTENANCE
+TENSIONING THE CHAIN  |  5 5
+-  |  Loosen the wheel pin nut (1), loosen the lock nuts (2) on both sides and  |  4 4
+turn the adjusting screws (3) on both sides, by the same extent.
+-  |  To increase chain tension, unscrew the adjusting screws.
+-  |  To reduce chain tension, tighten the adjusting screws.
+Do this until you achieve the correct chain tension.
+-  |  To align the rear wheel correctly, the marks (4) on the right and left chain  |  3 3
+tensioner must be in the same position relative to the reference marks  |  5 5
+(5).
+-  |  Tighten the lock nuts (2) of the adjusting screws (3).
+-  |  Before locking the wheel pin nut, ensure that the chain tensioners (6)  |  2 2
+are resting on the heads of the adjusting screws and that the rear wheel
+is aligned with the front wheel.
+-  |  Tighten the wheel pin nut (1) to 80 Nm.  |  1 1
+6 6
+WARNING
+If for assembly operations you do not have a torque wrench, get the tightening
+torque corrected as soon as possible at a specialized TM workshop.
+An incorrectly tightened wheel pin may make the motorcycle unstable.
+4•77  |  EN - 2-STROKE
+4 • MAINTENANCE
+CHAIN MAINTENANCE
+The life span of the chain depends above all on maintenance.
+Chains without an O-ring must be regularly cleaned in oil and then immersed
+in hot oil or treated with chain spray.
+Maintenance of chains with O-ring is minimal.  |  1 1
+The best way to clean it is with plenty of water.
+Never use brushes or solvents to clean the chain.
+When the chain is dry, use a specific spray for chains with O-rings.
+DANGER
+IT IS ESSENTIAL TO PREVENT THE LUBRICANT FROM REACHING THE
+REAR TIRE AND THE BRAKE DISC. OTHERWISE THE REAR WHEEL’S
+GRIP ON THE GROUND AND THE REAR BRAKE ACTION COULD BE
+SIGNIFICANTLY REDUCED AND YOU COULD EASILY LOSE CONTROL
+OF THE MOTORCYCLE.
+WARNING
+When assembling the chain joint (1), the closed part must always be in the
+direction of travel.
+Always check for wear on the pinions, sprocket and guides. Replace these
+parts if necessary.
+10 - 15 kg
+CHAIN WEAR
+To check the level of wear on the chain, carefully follow these instructions:
+-  |  Shift into neutral, pull the upper branch of the chain upwards with a
+force of 10 - 15 kg.
+-  |  Now measure the distance of 18 links on the lower branch of the chain.
+If the distance is more than 272 mm, replace the chain.
+Chains do not always wear evenly, therefore, you must repeat the
+measurement at various points of the chain.
+When a new chain is fitted, also replace the pinion and
+sprocket. A new chain wears faster on old and worn pinions
+and sprocket.
+WARNING
+When replacing the chain, pinion and sprocket, we  |  max 272 mm
+recommend fitting new self-locking nuts for the sprocket
+and using criss-cross tightening.  |  1 2 3  |  4  |  16 17 18
+The nut tightening torque is 35 Nm.
+2-STROKE - EN  |  4•78
+4 • MAINTENANCE
+HYDRAULIC CLUTCH PUMP  |  1 1
+ADJUSTING THE LEVER POSITION
+The position of the clutch lever (1) relative to the grip can be altered using
+the adjusting knob (2).
+-  |  Turn the knob (2) by clicks, clockwise to move the lever away or anti-
+clockwise to move the lever closer.
+2 2
+WARNING
+When the operation is complete, check that there is some play in the clutch
+lever before the clutch is engaged.
+The play must be around 3 mm.
+3 3
+CHECKING AND TOPPING UP THE HYDRAULIC FLUID LEVEL
+5 5
+The fluid reservoir is part of the clutch pump located on the handlebar.
+-  |  Remove the screws (3), cover (4), and membrane (5).
+-  |  With the reservoir in a horizontal position the fluid level must be 5 mm  |  4 4
+below the edge.
+-  |  Top up if necessary. Use DOT4 brake hydraulic fluid.
+-  |  Re-fit the membrane, cover and screws and tighten them. Use water
+to wash away any hydraulic fluid that overflowed or was spilled.
+DANGER
+-  |  IF THE LEVEL OF THE HYDRAULIC FLUID DROPS BELOW THE PRESET
+LEVEL, THERE COULD BE LEAKS IN THE SYSTEM OR EARLY SIGNS OF A
+MECHANICAL PROBLEM.
+-  |  STORE HYDRAULIC FLUID OUT OF THE REACH OF CHILDREN.
+-  |  HYDRAULIC FLUID MAY IRRITATE SKIN. AVOID CONTACT WITH SKIN
+AND EYES. IF HYDRAULIC FLUID SPLASHES IN YOUR EYES, RINSE
+THOROUGHLY WITH WATER AND SEEK MEDICAL ADVICE.
+WARNING
+-  |  Only use DOT4 brake hydraulic fluid for the clutch hydraulic control.
+Never use DOT5 or other fluids.
+-  |  Prevent contact between brake hydraulic fluid and painted parts. Brake
+fluid corrodes paint.
+-  |  Only use clean brake fluid from a hermetically sealed container.
+4•79  |  EN - 2-STROKE
+4 • MAINTENANCE
+BLEEDING THE HYDRAULIC CLUTCH
+-  |  Remove the cover of the clutch pump on the handlebar to bleed the
+air.
+1 1
+-  |  Connect the suction device to the bleeder screw (1) of the clutch cylinder
+on the engine and activate it while loosening bleeder screw (1).
+Continue until only fluid comes out of the bleeder screw (1).
+-  |  Tighten the bleeder screw (1).
+-  |  Disconnect the suction device.
+During this operation make sure that the clutch pump reservoir level
+is always sufficient to prevent the pump from drawing air. Top up with
+DOT4 brake hydraulic fluid as required.
+WARNING
+-  |  Use DOT4 brake hydraulic fluid for the clutch hydraulic control. Never
+use DOT5 or other fluids.
+-  |  Prevent contact between brake fluid and painted parts. Brake fluid
+corrodes paint.
+-  |  Only use clean brake fluid from a hermetically sealed container.
+BASIC INDICATIONS FOR TM DISC BRAKES
+CALIPERS
+EN and MX models have floating front and rear calipers, i.e.: they are not
+joined to their support. Side compensation always allows the pads to rest
+on the discs in the optimum way.
+In contrast, SMR models front calipers are fixed.
+The brake caliper supporting screws must be secured with Loctite 243 and
+tightened to 25 Nm.
+PADS
+The minimum thickness of the friction material must never drop below 1 mm.
+In the event of replacement, we recommend that you always use the specific
+TM original spare part for your motorcycle.
+2-STROKE - EN  |  4•80
+4 • MAINTENANCE
+BRAKE DISCS
+-  |  Wear reduces the thickness of the brake disc in the pad contact surface
+A A
+(1) zone.
+-  |  At their thinnest point (A), brake discs must have a thickness greater  |  B B
+than the minimum thickness measurement “A” stamped on the disc.
+DANGER
+-  |  BRAKE DISCS WHOSE THICKNESS IS LESS THAN THAT STAMPED ON
+THE DISC ARE A SAFETY RISK. WHEN THE WEAR LIMIT IS REACHED,  |  1 1
+REPLACE THE BRAKE DISCS IMMEDIATELY.
+-  |  HAVING THE BRAKING SYSTEM REPAIRED BY AN AUTHORIZED TM
+WORKSHOP IS MANDATORY.
+BRAKE FLUID RESERVOIRS
+The brake fluid reservoirs for the front and rear brake are sized so that
+topping up is not necessary even if the brake pads are worn. In fact, as the  |  A A
+pads wear, the fluid in the pipes takes up the space left by the pistons which
+have shifted to allow the pad to always rest on the disc. If the brake fluid
+level drops below the minimum value, this means that there is a leak in the
+braking system or that the brake pads are worn beyond the limits allowed.
+BRAKE FLUID
+TM fills the braking systems with top quality DOT 4 brake fluid. We
+recommend topping up and full changes with the same type of fluid (DOT 4).
+DANGER
+CHANGE THE BRAKE FLUID AT LEAST ONCE A YEAR. CHANGE IT MORE
+OFTEN IF YOU FREQUENTLY WASH YOUR MOTORCYCLE. BRAKE FLUID
+ABSORBS MOISTURE. THEREFORE, STEAM BUBBLES CAN FORM
+IN “OLD” FLUID EVEN AT LOW TEMPERATURES AND THE BRAKING
+SYSTEM NO LONGER WORKS CORRECTLY.
+4•81  |  EN - 2-STROKE
+4 • MAINTENANCE
+BREMBO FRONT BRAKE PUMP
+ADJUSTING THE LEVER POSITION
+The position of the front brake lever relative to the grip can be altered using
+the adjusting screw (1).
+-  |  Turn the knob (1) clockwise to move the lever away or anti-clockwise
+to move the lever closer.
+WARNING
+When the operation is complete, check that there is 3 mm of play in the
+front brake lever before the brake is engaged and that the front wheel can  |  1 1
+turn freely with the lever at rest. If this play is missing, pressure builds in
+the braking system and the front wheel brake may fail due to overheating
+or the wheel locking.
+CHECKING BRAKE FLUID LEVEL
+The fluid reservoir is part of the front brake pump located on the handlebar
+and is equipped with an inspection indicator (2). With the reservoir in the  |  2 2
+horizontal position, the fluid level must never drop below the indicator
+center line.
+MIN MIN
+DANGER
+IF THE BRAKE FLUID LEVEL DROPS BELOW THE MINIMUM VALUE, THIS
+MEANS THERE IS A LEAK IN THE BRAKING SYSTEM OR THAT THE BRAKE
+PADS ARE WORN BEYOND THE LIMITS ALLOWED.
+2-STROKE - EN  |  4•82
+4 • MAINTENANCE
+TOPPING UP BRAKE FLUID  |  3 3
+-  |  Remove the screws (3), cover (4), and membrane (5).  |  3 3
+-  |  Place the reservoir in a horizontal position and top up with DOT4 brake
+fluid, up to the top limit of the inspection indicator (2).  |  4 4
+-  |  Re-fit the membrane, cover and screws and tighten them.
+-  |  Use water to wash away any brake fluid that overflowed or was spilled.
+DANGER
+-  |  STORE BRAKE FLUID OUT OF THE REACH OF CHILDREN.
+-  |  BRAKE FLUID MAY IRRITATE SKIN. AVOID CONTACT WITH SKIN AND
+EYES. IF BRAKE FLUID SPLASHES IN YOUR EYES, RINSE THOROUGHLY
+WITH WATER AND SEEK MEDICAL ADVICE.
+4 4
+WARNING
+-  |  Prevent contact between brake fluid and painted parts. Brake fluid
+corrodes paint.
+-  |  Only use clean brake fluid from a hermetically sealed container.
+5 5
+4•83  |  EN - 2-STROKE
+4 • MAINTENANCE
+BREMBO RADIAL FRONT BRAKE PUMP  |  1 1
+(SMR)
+ADJUSTING THE LEVER POSITION
+The position of the front brake lever relative to the grip can be altered
+using the adjusting ring (1). Turn it clockwise to move the lever away, or
+anti-clockwise to move the lever closer.
+WARNING
+-  |  When the operation is complete, check that there is at least 3 mm of
+play in the front brake lever before the brake is engaged and that the
+front wheel can turn freely with the lever at rest. If this play is missing,
+pressure builds in the braking system and the front wheel brake may
+fail due to overheating or the wheel locking.
+CHECKING BRAKE FLUID LEVEL
+The fluid reservoir (2) is transparent and allows fluid level inspection. With
+the reservoir in an upright position, the fluid level must always be between
+the MAX and MIN indications.  |  3 3
+DANGER
+-  |  IF THE BRAKE FLUID LEVEL DROPS BELOW THE MINIMUM VALUE,
+THIS MEANS THERE IS A LEAK IN THE BRAKING SYSTEM OR THAT THE
+BRAKE PADS ARE WORN BEYOND THE LIMITS ALLOWED.
+2 2
+TOPPING UP BRAKE FLUID  |  4 4
+Unscrew and remove the cover (3) and the membrane (4). Place the
+reservoir in a vertical position and top up with DOT4 brake fluid, up to the
+MAX limit on the reservoir. Refit the membrane and cover, then tighten
+them.
+Use water to wash away any brake fluid that overflowed or was spilled.
+DANGER
+-  |  STORE BRAKE FLUID OUT OF THE REACH OF CHILDREN.
+-  |  BRAKE FLUID MAY IRRITATE SKIN. AVOID CONTACT WITH SKIN AND
+EYES. IF BRAKE FLUID SPLASHES IN YOUR EYES, RINSE THOROUGHLY
+WITH WATER AND SEEK MEDICAL ADVICE.
+WARNING
+-  |  Prevent contact between brake fluid and painted parts. Brake fluid
+corrodes paint.
+-  |  Only use clean brake fluid from a hermetically sealed container.
+2-STROKE - EN  |  4•84
+4 • MAINTENANCE
+CHANGING BASIC POSITION OF REAR BRAKE PEDAL
+Loosen the lower lock nut M6 (1), turn the adjusting screw using the
+hexagonal head (2). Once you have found the ideal position, tighten the
+lock nut.
+The pedal play is given by the pump piston stroke. Check that the pedal has  |  1 1
+approximately 1.5 cm of play before braking starts.
+2 2
+WARNING
+-  |  If this play is missing, pressure builds in the braking system and braking
+is applied on the rear wheel. The braking system overheats and, in
+extreme cases, it can fail completely.
+4•85  |  EN - 2-STROKE
+4 • MAINTENANCE
+CHECKING REAR BRAKE FLUID LEVEL
+The rear disc brake fluid reservoir is built into the rear brake pump. With
+the motorcycle upright, the level must always be over the center line of the
+indicator (1) on the pump body.
+DANGER
+-  |  IF THE BRAKE FLUID LEVEL DROPS BELOW THE MINIMUM VALUE,
+THIS MEANS THERE IS A LEAK IN THE BRAKING SYSTEM OR THAT THE  |  1 1
+BRAKE PADS ARE COMPLETELY WORN AWAY.
+TOPPING UP REAR BRAKE FLUID
+Top-up as soon as the rear brake fluid level reaches the center line of the  |  1 1  |  1 1
+indicator on the pump body. To do so, unscrew the two screws (1) and
+remove the cover (2). Top up with DOT4 brake fluid, to the end of the
+indicator. Re-fit the cover and tighten the screws.
+Use water to wash away any brake fluid that overflowed or was spilled.
+DANGER
+-  |  STORE BRAKE FLUID OUT OF THE REACH OF CHILDREN.
+-  |  BRAKE FLUID MAY IRRITATE SKIN. AVOID CONTACT WITH SKIN AND  |  2 2
+EYES. IF BRAKE FLUID SPRAYS IN YOUR EYES, RINSE THOROUGHLY
+WITH WATER AND SEEK MEDICAL ADVICE.
+WARNING
+-  |  Prevent contact between brake fluid and painted parts. Brake fluid
+corrodes paint !
+-  |  Only use clean brake fluid from a hermetically sealed container.
+2-STROKE - EN  |  4•86
+4 • MAINTENANCE
+CHECKING FRONT BRAKE PADS
+min 1 mm
+Check the brake pads from below. The thickness of the brake pad friction
+material must not be less than 1 mm.
+Replace the pads as soon as they reach this limit.
+DANGER
+-  |  THE THICKNESS OF THE BRAKE PAD FRICTION MATERIAL MUST NOT
+BE LESS THAN 1 MM, OTHERWISE THE BRAKES MAY FAIL. REPLACE
+BRAKE PADS PROMPTLY TO ENSURE YOUR SAFETY.
+WARNING
+-  |  If the brake pads are not replaced in time, they will be completely worn
+away and the steel parts of the pads will rub against the brake disc. This
+will significantly reduce the braking effect and deteriorate the disc.
+EN / MX FRONT
+Min
+1 mm
+SMR FRONT
+Min
+1 mm
+4•87  |  EN - 2-STROKE
+4 • MAINTENANCE
+CHECKING REAR BRAKE PADS
+Check the brake pads from the rear. The thickness of the brake pad friction
+material must not be less than 1 mm.
+Replace the pads as soon as they reach this limit.
+DANGER
+-  |  AT THE THINNEST POINT THE THICKNESS OF THE BRAKE PAD FRICTION
+MATERIAL MUST NOT BE LESS THAN 1 MM, OTHERWISE THE BRAKES
+MAY FAIL. REPLACE BRAKE PADS PROMPTLY TO ENSURE YOUR SAFETY.
+WARNING
+-  |  If the brake pads are not replaced in time, they will be completely worn
+away and the steel parts of the pads will rub against the brake disc. This
+will significantly reduce the braking effect and deteriorate the disc.
+REAR
+Min
+1 mm
+2-STROKE - EN  |  4•88
+4 • MAINTENANCE
+WARNING
+-  |  For all models: when the pistons are returned to their standard position
+to make way for the new pads, make sure that the fluid in the reservoir
+has room to expand. Do not carry out work without the cap fitted,
+otherwise as it expands the fluid could overflow, damaging parts of the
+motorcycle.
+REPLACING FRONT BRAKE PADS  |  1 1
+FOR MODELS WITH FLOATING CALIPER (EN/MX)
+Take off the two clips (1), pull out pin (2) and remove the pads (3) from the
+caliper. Clean the brake caliper and the caliper support with compressed
+air. Also check that the linings of the guide pins are intact and run smoothly.
+Grease them if necessary.
+Clean the pistons, open the pump reservoir, then push them towards the
+outside of the caliper to make room for the new pads.
+Fit the right-hand brake pad and secure it with the pin. Fit the left-hand
+brake pad and insert the pin as far as the stop. Fit the clips. Make sure that
+while fitting the pads the sliding plate in the caliper support and the leaf
+spring are positioned correctly.
+WARNING
+-  |  Do not operate the brake lever while removing the pads.  |  2 2
+-  |  Check that the pump reservoir oil level is correct. If necessary, top up  |  3 3
+as indicated in the relevant paragraph.
+FOR MODELS WITH RADIAL CALIPER (SMR)
+Radial connection  |  2 2  |  1 1
+-  |  Unscrew the two M10 screws (1) and remove the caliper (2) from the  |  3 3
+foot. Take out the pads (3).
+-  |  Clean the pistons, then push them towards the outside of the caliper
+to make room for the new pads.
+WARNING  |  1 1
+-  |  Do not operate the brake lever while removing the pads.
+-  |  Check that the pump reservoir oil level is correct. If necessary, top up
+as indicated in the relevant paragraph.
+3 3
+-  |  Fit the pads correctly.
+-  |  Fit the caliper and tighten the M10 screws to 40Nm.
+4•89  |  EN - 2-STROKE
+4 • MAINTENANCE
+REPLACING REAR BRAKE PADS
+1 1  |  1 1
+-  |  Open the brake pump reservoir by unscrewing the screws (1).
+-  |  Push the brake caliper (2) towards the disc, so that the piston returns
+to its standard position. Remove the cap (3) with a screwdriver and
+unscrew the pin (4) then remove the brake pads.
+-  |  Clean the pistons, then push them towards the outside of the caliper
+to make room for the new pads.
+-  |  Be careful of the fins (5) between the pads: they must be re-fitted with
+the greatest of care. Thoroughly clean the brake caliper with compressed
+air and check that the surface of the guide pins is intact.
+-  |  Fit the new pads, paying attention to the position of the fins. Insert the
+pin and tighten it. Re-fit the cap using a screwdriver. Tighten it securely.
+WARNING
+-  |  Do not operate the brake pedal while removing the pads.
+-  |  Check that the pump reservoir oil level is correct. If necessary, top up
+as indicated in the relevant paragraph.  |  2 2
+DANGER
+-  |  AFTER ASSEMBLY, CHECK THAT THE SAFETY DEVICES ARE
+CORRECTLY POSITIONED.
+-  |  AFTER ANY WORK ON THE BRAKING SYSTEM, OPERATE THE REAR
+BRAKE PEDAL TO MAKE THE PADS ADHERE TO THE DISC AND
+CHECK THE BRAKE FLUID LEVEL AND THE PLAY.
+-  |  ALWAYS KEEP THE BRAKE DISC COMPLETELY FREE OF OIL
+AND GREASE, OTHERWISE THE BRAKING EFFECT WOULD BE  |  5 5
+SIGNIFICANTLY REDUCED.
+3 3
+4 4
+2-STROKE - EN  |  4•90
+4 • MAINTENANCE
+DISASSEMBLING AND ASSEMBLING FRONT WHEEL  |  3 3
+-  |  Position the motorcycle with the frame cradle on a stand to keep the
+front wheel off the ground.  |  3 3
+-  |  Loosen the aluminum flanged screw (1), loosen fixing screws (2) and (3)
+on the left and right fork feet and finish unscrewing the flanged screw
+(1).
+-  |  Hold the front wheel still and slide out the wheel pin (4).
+If necessary, help the pin out by tapping the threaded end of the pin
+with a mallet (hammer with plastic head).
+Alternatively, use a normal hammer, placing a pin punch in between.
+WARNING  |  1 1
+Never use the hammer directly on the pin. It could cause irreversible
+damage.
+-  |  Carefully remove the front wheel from the fork.
+WARNING  |  2 2
+-  |  Never operate the brake lever when the front wheel has been removed.  |  2 2
+-  |  Always lay the wheel flat with the brake disc upwards to avoid damaging
+it.
+-  |  To re-fit the front wheel, carefully insert it in the fork, ensuring that
+you correctly insert the disc between the brake pads without damaging
+them. With the wheel correctly positioned, insert the wheel pin (4),
+positioning the spacer (5) on the left-hand part of the wheel.
+-  |  Screw in and temporarily tighten the flanged screw (1) until the wheel  |  4 4
+shim is locked. Tighten the locking screws (2) on the right-hand fork foot
+to prevent the wheel pin from turning and tighten the flanged screw
+to 40 Nm.
+-  |  Tighten the locking screws (3) on the left-hand fork foot to 12 Nm.
+-  |  Loosen the locking screws (2) on the right-hand foot again and remove
+the motorcycle from the stand. Operate the front brake and force the
+fork down several times to align its tubes.
+-  |  Definitively tighten the locking screws (2) on the right-hand fork foot  |  5 5
+to 12 Nm.
+DANGER
+-  |  IF FOR ASSEMBLY OPERATIONS YOU DO NOT HAVE A TORQUE
+WRENCH, GET THE TIGHTENING TORQUE CHECKED AS SOON AS
+POSSIBLE AT A SPECIALIZED TM WORKSHOP. AN INCORRECTLY
+TIGHTENED WHEEL PIN MAY MAKE THE MOTORCYCLE UNSTABLE.
+-  |  AFTER FITTING THE FRONT WHEEL, REPEATEDLY OPERATE THE BRAKE
+LEVER TO MAKE THE PADS ADHERE TO THE DISC AGAIN AND CHECK
+THE BRAKE FLUID LEVEL.
+-  |  ALWAYS KEEP THE BRAKE DISC FREE OF OIL AND GREASE. OTHERWISE
+THE BRAKING EFFECT WOULD BE SIGNIFICANTLY REDUCED.
+4•91  |  EN - 2-STROKE
+4 • MAINTENANCE
+DISASSEMBLING AND ASSEMBLING REAR WHEEL
+-  |  Position the motorcycle with the frame cradle on a stand to keep the
+rear wheel off the ground. Unscrew the flanged nut (1) and, holding up  |  4 4
+the wheel, slide out the wheel pin (2), remove the chain tensioner slide
+(3) and the caliper (4) with its support, take the chain off the sprocket,
+and carefully remove the rear wheel from the swing arm. Pay attention
+to the wheel shims (5) on the sprocket side and the brake side.
+WARNING  |  3 3
+-  |  Never operate the brake pedal when the rear wheel has been removed.
+-  |  Always lay the wheel flat with the brake disc upwards to avoid damaging
+it.  |  1 1
+-  |  When the wheel pin is removed, thoroughly clean the thread of both
+the wheel pin and the flanged nut, and re-grease them to prevent the
+thread from seizing.
+WARNING
+-  |  Re-fit the spacers (5) as indicated in table .
+Table - A
+A  |  B
+13.7 mm  |  13.7 mm
+2 2
+-  |  To re-fit the rear wheel, insert the shim (sprocket side) in the hub, insert
+the wheel in the swing arm and, supporting the wheel, fit the chain on
+the sprocket and position the caliper (4) with its support. Insert the
+wheel pin (2) from the sprocket side halfway into the wheel to allow
+positioning of the shim (brake side).
+-  |  Push the pin in completely, insert the chain tensioner slide (3), screw
+on the nut (1) and tighten to 80 Nm.
+-  |  Before tightening the flanged nut, push the rear wheel forward to allow
+the chain tensioners to make contact with the heads of the adjusting
+screws.
+DANGER  |  5 5
+-  |  IF FOR ASSEMBLY OPERATIONS YOU DO NOT HAVE A TORQUE WRENCH,
+GET THE TIGHTENING TORQUE CORRECTED AS SOON AS POSSIBLE AT
+A SPECIALIZED TM WORKSHOP. AN INCORRECTLY TIGHTENED WHEEL
+PIN MAY MAKE THE MOTORCYCLE UNSTABLE.
+-  |  AFTER FITTING THE REAR WHEEL, REPEATEDLY OPERATE THE BRAKE  |  A  |  B
+PEDAL TO MAKE THE PADS ADHERE TO THE DISC AGAIN AND CHECK
+THE BRAKE FLUID LEVEL AND THE PLAY.
+-  |  ALWAYS KEEP THE BRAKE DISC FREE OF OIL AND GREASE, OTHERWISE
+THE BRAKING EFFECT WOULD BE SIGNIFICANTLY REDUCED.
+A A  |  B
+2-STROKE - EN  |  4•92
+4 • MAI N TEN A N CE
+CHECKING SPOKE TENSION
+Correct spoke tension is very important for the wheel stability and for safety
+on the road. An insufficiently taut spoke makes the wheel unstable and will
+quickly loosen other spokes. Check spoke tension regularly, especially on
+new motorcycles. To do this, strike each spoke with the end of a screwdriver
+(see photo): the spoke should produce a clear sound. Hollow sounds mean
+that the spokes are loose. In such a case, have the spokes adjusted and the
+wheel centered by a specialized workshop.
+DANGER
+-  |  IF YOU CONTINUE TRAVELLING WITH INSUFFICIENTLY TAUT SPOKES
+THEY MAY BREAK, CAUSING INSTABILITY PROBLEMS.
+-  |  EXCESSIVELY TIGHT SPOKES MAY BREAK DUE TO LOCAL OVERLOADING.
+TIRE PRESSURE
+Tire type, condition and pressure affect motorcycle performance on the
+road and must therefore be checked before every ride.  |  TIRE PRESSURE
+-  |  The size of the tires is indicated in the technical data and in the
+FRONT  |  REAR
+registration document.
+-  |  Check the condition of the tires before every ride.  |  MX/EN
+1,0 bar  |  1,0 bar
+Ensure that the tires have no cuts, nails, or other sharp objects pushed  |  off road
+into them.  |  EN on road  |  1,5 bar  |  1,5 bar
+In terms of the minimum tread for road tires, comply with the
+SMR  |  1,8 bar  |  1,8 bar
+regulations in force in your country. We recommend changing the tires
+not later than when the tread has reached a depth of 2 mm.
+-  |  Regularly check the pressure of “cold” tires. Correct pressure
+adjustment guarantees optimum comfort and maximum tire life.
+DANGER
+-  |  ONLY USE TIRES OF THE TYPE AND DIMENSIONS APPROVED FOR
+YOUR VEHICLE AND REQUIRED BY TM. DIFFERENT TIRES MAY
+NEGATIVELY AFFECT MOTORCYCLE PERFORMANCE ON THE ROAD
+AND BE THE CAUSE OF SANCTIONS UNDER THE REGULATIONS IN
+FORCE IN YOUR COUNTRY.
+-  |  TO GUARANTEE YOUR SAFETY AND THE SAFETY OF OTHERS,
+DAMAGED TIRES MUST BE REPLACED IMMEDIATELY.
+-  |  EXCESSIVELY WORN TIRES NEGATIVELY AFFECT MOTORCYCLE
+PERFORMANCE ON THE ROAD, ESPECIALLY ON WET SURFACES.
+-  |  INCORRECT PRESSURE LEADS TO ABNORMAL WEAR AND TIRE
+OVERHEATING.
+4•93  |  EN - 2-STROKE
+4 • MAINTENANCE
+3 3
+CHECKING SPEEDOMETER MAGNETIC SENSOR
+DISTANCE (EN/SMR)
+The magnetic sensor is located on the rear wheel in all versions.
+EN/SMR
+The distance between the screw heads (2) and the sensor (1) must be 2 - 4
+mm. Otherwise speedometer operation may be irregular. The bushing (3)
+adjusts the sensor distance. Do not remove it, otherwise the sensor (1)
+would touch the screws (2) and be damaged.  |  2 2
+1 1
+EN/SMR
+REMOVING THE SEAT
+-  |  Unscrew the screws (1) from both sides.
+1 1
+-  |  Lift the rear part ”A” of the seat (2).
+-  |  Pull off the seat (2) towards the back of the motorcycle (B).  |  2 2
+B B  |  A A
+2-STROKE - EN  |  4•94
+4 • MAINTENANCE
+REMOVING THE TANK
+Removing the tank of models (FI)
+1 1
+-  |  Remove the seat as described in the relative paragraph.
+-  |  Place a cloth under the quick coupling (1) to absorb possibly leaking
+petrol.
+-  |  Disconnect the quick coupling (1) of the hose (2) which connects the
+tank to the injectors by working on the tabs.
+2 2
+-  |  Disconnect the electrical connections (3) of the petrol pump, level
+sensor, etc..  |  3 3
+-  |  Unscrew the conveyor (5) screws (4) on both sides.
+5 5
+-  |  Unscrew the top screw (6).
+-  |  Remove the tank (7) from the frame by raising it complete of the con-
+veyors (5).
+4 4
+7 7
+5 5
+6 6
+4•95  |  EN - 2-STROKE
+4 • MAINTENANCE
+Removing the tank of models (CARBURETTOR)
+-  |  Remove the seat as described in the relative paragraph.  |  1 1
+-  |  Place a container to collect petrol possibly leaking from the hose.
+-  |  Close the fuel tap (1) “OFF”
+OFF OFF
+-  |  Open the clamp (2) and disconnect the hose (3) from the carburettor.
+3 3
+2 2
+-  |  Unscrew the conveyor (5) screws (4) on both sides.
+-  |  Unscrew the top screw (6).  |  5 5
+-  |  Remove the tank (7) from the frame by raising it complete of the
+conveyors (5).
+4 4
+7 7
+6 6
+5 5
+2-STROKE - EN  |  4•96
+4 • MAINTENANCE
+BATTERY
+4 4
+Remove the seat to access the battery.
+The battery does not require maintenance.
+It is not necessary to check the electrolyte level or top up with water.
+Simply keep the battery poles clean and, if necessary, lightly grease them  |  1- 1-
+with acid-free grease.
+To remove the battery, first disconnect the cable from the negative pole (-)
+(1) then the cable from the positive pole (+) (2).
+Disconnect the locking elastic band (3) and remove the battery.  |  2+ 2+
+To re-fit the battery, insert it with the terminals upwards and towards the
+rear of the motorcycle (see figure).
+Connect first the cable for the positive pole (+) (2) and then the cable for  |  3 3
+the negative pole (-) (1).
+DANGER
+-  |  KEEP FAULTY BATTERIES OUT OF THE REACH OF CHILDREN AND
+DISPOSE OF THEM IN COMPLIANCE WITH THE REGULATIONS IN
+FORCE.
+-  |  AVOID ANY CONTACT BETWEEN THE POLES.
+NOTE:
+For more information about the battery, see the introductory part of
+this manual.
+STORAGE
+Do not store the battery in a room where temperature is higher than 50° or
+lower than -10°. If you intend not to use the motorcycle for a period longer
+than 15 days, it is advised to connect the battery to a charger or, alterna-
+tively, remember to recharge it every 15 days to protect it from possible
+damages. Always recharge the battery before it discharges completely in
+order to prolong its service life. Damage caused by a prolonged lack of
+recharge is irreversible and not covered by warranty.
+Charge the battery ever three or four months.
+In the event of prolonged storage (eight to ten months), charge to 100%,
+then test the battery with a Voltmeter. For longer battery life, regular battery
+maintenance must be carried out.
+Make sure that batteries are kept out of the reach of children.
+WARNING
+-  |  Do not use charge maintainers, battery tenders, fast chargers or other
+similar devices.
+-  |  Use of these devices may damage the battery, cause dangerous
+overheating, fires and explosions if they are not compatible.
+-  |  You must ALWAYS be present during battery charging.
+-  |  Do not charge the battery beyond the maximum voltage value indicated.
+Check the external condition of the terminals and the plastic casing. Any
+signs of damage or unusual wear can be checked during the service. If you
+have any doubts about the condition of the battery, we recommend that
+you seek the opinion of a professional fitter.
+DANGER
+-  |  DO NOT REMOVE THE BATTERY COVER, AND DO NOT PIERCE OR CUT
+THE OUTER PLASTIC CONTAINER: RISK OF SHORT CIRCUIT.
+4•97  |  EN - 2-STROKE
+4 • MAI N TEN A N CE
+CHARGING THE BATTERY
+DANGER
+-  |  WHEN CHARGING LIFEP04 BATTERIES, ONLY USE LIFEP04 BATTERY CHARGERS, SPECIFICALLY DESIGNED FOR LITHIUM ION BATTERIES.
+-  |  THE USE OF OTHER BATTERY CHARGERS COULD CAUSE DANGEROUS OVERHEATING AND EVEN BATTERY FIRES AND EXPLOSIONS.
+If the battery noticeably heats up during charging, stop the charging. Allow the battery to cool before charging it. Do not under any circumstances
+short circuit the battery poles to check charging progress: the battery may explode.
+Do not charge LIFEP04 batteries using currents higher than those indicated and recommended: it could cause dangerous overheating. To avoid
+creating sparks, switch off the battery charger before disconnecting its terminals from the battery.
+DANGER
+-  |  DO NOT CHARGE THE BATTERY BEYOND THE MAXIMUM VOLTAGE VALUE INDICATED.
+NOTE:  |  We recommend the following models for battery charging:
+BRAND  |  MODEL  |  VOLTAGE  |  CURRENT
+ALIANT  |  YLP09X  |  12 V  |  8 A
+The use of other battery chargers may damage the battery.
+Battery maintenance
+-  |  Do not store the battery in a room where temperature is higher than 50° or lower than -10°. If you intend not to use the motorcycle for
+a period longer than 15 days, it is advised to connect the battery to a charger or, alternatively, remember to recharge it every 15 days to
+protect it from possible damages.
+-  |  Always recharge the battery before it discharges completely in order to prolong its service life.
+Damage caused by a prolonged lack of recharge is irreversible and not covered by warranty.
+2-STROKE - EN  |  4•98
+4 • MAINTENANCE
+ELECTRICAL SYSTEM COMPONENTS POSITIONING (MX)
+-  |  Remove the right and left panels in order to access the electrical system  |  1 1
+components.
+-  |  Remove the seat and the tank as described in the relative section.
+-  |  Remove the side panels unscrewing the screws (1).
+Underneath the saddle are located the following components:
+-  |  Condenser (2)
+-  |  ECU control unit (3)
+-  |  Ignition relay (4)
+-  |  Underneath the left conveyor is located the diagnosis socket connector
+(5).
+-  |  The voltage regulator (6) is located underneath the left conveyor.
+-  |  Battery (7)
+-  |  Relay (8)
+-  |  Oxygen sensor socket connector (9) (Fi)
+8 8
+4 4  |  9 9
+7 7
+2 2
+3 3
+6 6
+5 5
+4•99  |  EN - 2-STROKE
+4 • MAINTENANCE
+ELECTRICAL SYSTEM COMPONENTS POSITIONING (EN -
+SMR)
+1 1
+-  |  To access the components of the electrical system it is necessary to
+remove the right and left side panels and the headlight holder.
+-  |  Remove the saddle and the tank as described in the respective para-
+graph.
+-  |  Remove the side panels by unscrewing the screws (1).
+The following components are located underneath the saddle:
+-  |  ECU control unit (2)
+-  |  ODB socket (3)
+-  |  Battery (4)  |  SMR
+-  |  Ignition fuse, ignition relay, voltage regulator (SRU) (5)  |  4 4
+-  |  Relays, electronic fuses (6) (PDU) (SMR)  |  5 5  |  6 6
+-  |  Dashboard fuse (7) (EN)
+-  |  Oxygen sensor connector (8) (Fi)
+-  |  Diagnosis socket connector (9)
+3 3
+2 2
+EN
+5 5
+4 4
+9 9
+3 3
+2 2
+EN
+7 7
+8 8
+2-STROKE - EN  |  4•100
+4 • MAINTENANCE
+SRU CONTROL UNIT (EN - SMR)  |  3 3
+Is a new programmable voltage regulator which contains fuses and elec-  |  2 2
+tronic ignition relays.
+There are two types of control units:  |  1 1
+HW 5.0 maximum charge voltage 13.6 V
+HW 5.10 maximum charge voltage 14.5 V
+The control unit is equipped with three LEDs which can be in Green (correct
+operation) or or in Red (Malfunction).
+The function of the led is the following:
+Led 1 = Cooling fan fuse status.
+Led 2 = Battery charge status.
+Led 3 = Ignition motor fuse status.
+NOTE:  |  this control unit can only be programmed by TM MOTO.
+PDU CONTROL UNIT (SMR)
+Control unit which replaces the fuses, the relays and the flickering of the
+turn indicators. The control unit is equipped with six double channels for
+management of the various loads of the vehicle.
+Each channel is equipped with a led (led from 1 to 6) and the led possesses
+different colours:
+- Verde = Channel active
+- Orange flashing = Channel short circuited.
+- Off = Channel not active.
+7 7
+6 6
+Led 7 = When it lights up in Blue, the control unit is powered.  |  5 5
+4 4 
+3 3
+NOTE:  |  this control unit can only be programmed by TM MOTO.  |  2 2
+1 1
+4•101  |  EN - 2-STROKE
+4 • MAINTENANCE
+ADJUSTING THE HEIGHT OF THE FRONT HEADLAMP
+To check if the headlamp angle is correct, with the tires inflated to the
+correct pressure and someone sitting on the seat, position the motorcycle
+perfectly perpendicular to its longitudinal axis.
+Place the bike facing a wall or screen, 10 m away from it. On the wall/screen
+9   |  X
+mark a horizontal line corresponding to the height of the center of the lamp  |  X
+and a vertical line aligned with the longitudinal axis of the vehicle.  |  10
+Carry out the check in twilight if possible.  |  10m
+When you switch on the high beam the upper cutoff point between the
+dark zone and the lit zone must be at a height not greater than 9/10ths of
+the height of the center of the bulb from the ground.
+LED HEADLIGHT FOR MODELS (EN - SMR)
+ADJUSTING THE HEADLIGHT HEIGHT
+The height of the front headlight is adjustable. Adjust the elastic straps fixing
+it to the forks so that the headlight is levelled frontally, then use the front
+screw (1) to adjust the height of the headlight. Turn clockwise to lift it, or
+anticlockwise to lower it.
+1 1
+REPLACING LED FRONT HEADLIGHT
+2 2  |  2 2
+-  |  Release both elastic straps, lift and move forward the headlight holder
+mask.
+-  |  Completely unscrew the headlight adjusting screw (1).
+-  |  Unscrew the screws (2) and disconnect the terminals from the bike
+lighting system. Then remove the front headlight (3). Since this is all
+one unit, the whole thing must be replaced. Ask a TM dealer for the
+original spare part.
+2 2  |  2 2
+3 3
+1 1
+2-STROKE - EN  |  4•102
+4 • MAINTENANCE
+LED TAILLIGHT (EN - SMR)
+2 2
+Unscrew the screws (1) and disconnect the terminals from the bike lighting
+system. Then remove the taillight unit. Since this is all one unit, the whole
+thing must be replaced. Ask a TM dealer for the original spare part.
+1 1
+1 1
+TURN SIGNAL (EN - SMR)
+1 1
+Led turn signals
+The led turn signals (1) must be replaced after disconnecting the motorcycle
+light system terminals in case of malfunction.
+4•103  |  EN - 2-STROKE
+4 • MAINTENANCE
+COOLING
+The water pump (1), housed in the engine forces coolant circulation.
+Both for motorcycles not equipped with thermostat and for those which
+are equipped with thermostat it is important, when the engine is cold, to
+moderate the engine rpm and speed. Proceed for at least 5 minutes at
+half throttle and at low speed to allow the engine to reach an adequate
+operating temperature.
+Cooling takes place thanks to the passage of air through the radiator fins.
+The lower the speed, the less the cooling effect. Dirty radiator fins also  |  1 1
+reduce the cooling effect.
+A valve on the radiator cap (2) adjusts the pressure produced by high fluid
+temperature. Temperatures close to 120°C can be reached without problems.
+The coolant is a mixture of 40% antifreeze and 60% water. However, the
+antifreeze protection limit must be at least -25°C. This mixture protects
+against freezing and is good for preventing corrosion.
+Therefore, it must never be replaced by pure water.
+WARNING
+-  |  Always use high quality products to prevent corrosion or the formation
+of foam.
+-  |  Overheating may occur in extreme weather or in stop-and-go traffic. To
+solve this problem, an electric fan kit is available as an optional accessory
+for models with electric start (ask your TM dealer for details).  |  2 2
+CHECKING COOLANT LEVEL
+With the engine cold, open the radiator filler cap. The fluid must cover the
+channels by approximately 10 mm. The radiator channels. If the level is too
+low, top up immediately with more fluid mix and bleed the air.
+Use water only if strictly necessary and in small amounts, to avoid reducing
+the effective properties of the fluid.
+DANGER
+-  |  IF POSSIBLE, CHECK THE COOLANT LEVEL WHILE THE ENGINE IS
+COLD. IF YOU NEED TO OPEN THE RADIATOR FILLER CAP WHILE IT
+IS HOT, FIRST COVER IT WITH A CLOTH AND THEN SLOWLY OPEN
+IT TO DISCHARGE THE OVERPRESSURE.
+CAUTION: DANGER OF BURNS!
+-  |  DO NOT DISCONNECT THE RADIATOR HOSES WHEN THE ENGINE IS
+HOT. LEAKING COOLANT AND HOT VAPORS CAN CAUSE SERIOUS
+BURNS.
+-  |  IN CASE OF BURNS, IMMEDIATELY PLACE BURNT AREAS UNDER
+COLD RUNNING WATER AND SEEK MEDICAL ADVICE.
+-  |  COOLANT IS TOXIC! KEEP IT OUT OF THE REACH OF CHILDREN.
+-  |  IF YOU SWALLOW COOLANT, SEEK MEDICAL ADVICE IMMEDIATELY.
+-  |  IF COOLANT GETS IN YOUR EYES, RINSE THEM IMMEDIATELY WITH
+COLD WATER AND SEEK MEDICAL ADVICE.
+WARNING
+-  |  Always use high quality products to prevent corrosion or the formation
+of foam.
+10 mm
+2-STROKE - EN  |  4•104
+4 • MAINTENANCE
+DRAINING, FILLING AND BLEEDING THE COOLING SYSTEM
+Coolant can be drained by removing the screw (1) from the water pump
+cover on the right-hand side of the engine. Have a suitable basin ready to
+catch the draining fluid. The radiator cap must be open in order to drain
+the fluid. Once finished, screw in the drain screw and tighten to 12 Nm.
+To fill the cooling system, pour the amount of coolant indicated in “Engine
+Technical Data” table in through the filler neck (2). Close the radiator cap
+and start the engine for a few seconds. Switch off the engine, open the cap
+again and check the level. Add more fluid if necessary.
+Go for a short ride then check the coolant level again.
+DANGER
+-  |  DRAIN THE COOLANT, IF POSSIBLE WITH THE ENGINE COLD. IF
+YOU NEED TO DRAIN THE COOLANT WHILE THE ENGINE IS HOT,
+FIRST COVER THE RADIATOR FILLER CAP WITH A CLOTH, THEN
+SLOWLY OPEN IT TO DISCHARGE THE OVERPRESSURE.
+CAUTION: DANGER OF BURNS!
+-  |  IN CASE OF BURNS, IMMEDIATELY PLACE BURNT AREAS UNDER
+COLD RUNNING WATER AND SEEK MEDICAL ADVICE.
+-  |  COOLANT IS TOXIC! KEEP IT OUT OF THE REACH OF CHILDREN.
+-  |  IF YOU SWALLOW COOLANT, SEEK MEDICAL ADVICE IMMEDIATELY.  |  1 1
+-  |  IF COOLANT GETS IN YOUR EYES, RINSE THEM IMMEDIATELY WITH
+COLD WATER AND SEEK MEDICAL ADVICE.
+WARNING
+-  |  After draining the coolant, when you fill up with coolant again you must
+bleed the cooling system.
+-  |  Always use high quality products to prevent corrosion or the formation
+of foam.
+2 2
+4•105  |  EN - 2-STROKE
+4 • MAINTENANCE
+REPLACING EXHAUST SILENCER PACKING MATERIAL  |  1 1
+The competition silencer is completely filled with sound absorbing material
+(fiberglass) to limit the motorcycle exhaust noise to within competition  |  2 2
+limits. Fiberglass tends to burn due to the high temperature reached by the
+exhaust fumes. This reduces both the noise absorption effect and the power.
+To replace the fiberglass, take the silencer off the motorcycle, removing the
+rivets (1) that secure the front cap (2) to the external pipe (3), remove the
+cap. Remove the sound absorbing material to be replaced.  |  1 1
+3 3
+Insert TM’s fiberglass cartridge (4) in the external hose.
+Re-fit the front cap (2) and secure it with the new rivets.
+Mount the silencer on the bike again.
+Grease the ends of the pipes to make fitting the silencer easier.
+DANGER  |  2 2
+-  |  CAUTION: DANGER OF BURNS!
+-  |  THE EXHAUST SYSTEM GETS VERY HOT WITH THE MOTORCYCLE
+RUNNING. TO AVOID BURNS, ALLOW THE SYSTEM TO COOL
+BEFORE STARTING WORK ON IT.  |  3 3
+-  |  IN CASE OF BURNS, IMMEDIATELY PLACE BURNT AREAS UNDER
+COLD RUNNING WATER AND SEEK MEDICAL ADVICE.
+WARNING  |  4 4
+-  |  Replace the fiberglass with new product purchased from TM dealers
+or, if that is not possible, with an equivalent product.
+-  |  Never use flammable material to pack the silencer.
+2-STROKE - EN  |  4•106
+4 • MAINTENANCE
+CLEANING AIR FILTER
+Regularly clean and maintain the air filter.  |  1 1
+A dirty air filter compromises air flow, reduces motorcycle power and
+increases fuel consumption. In some cases, dust may enter the engine and
+cause serious damage. Therefore, regular air filter maintenance is necessary.
+-  |  Remove the seat as described in the relevant paragraph.
+-  |  Release the clip (1).
+-  |  Carefully take the filter (2) out of the seat.
+2 2
+2 2
+-  |  Separate the sponge element (3) from the plastic cage (4).
+Carefully wash the sponge element with the special detergent and
+allow it to air dry completely. If necessary, gently squeeze the sponge
+but never wring it. Clean the plastic cage and the filter case and check
+that the sleeve connecting the carburettor/throttle body to the filter  |  3 3
+case is intact and positioned correctly.
+-  |  Oil the cage with filter oil, then put the sponge and cage back together.
+Re-fit the air filter, positioning it correctly on the supporting surface.  |  4 4
+Ensure that the edges of the sponge are not lifted or non-adhering to
+the supporting surface.
+-  |  Reinsert the filter (2) in its seat paying attention to the rod (5) slots
+itself in the lower seat of the filter box (6).  |  5 5
+-  |  Reposition the clip (1) by blocking the filter in the top part.
+-  |  Re-fit the spider.
+WARNING
+-  |  Do not clean the sponge element with petrol or oil, since they may
+corrode it. For correct maintenance, use the specific products available
+on the market for cleaning and lubrication.
+-  |  Never start the motorcycle without the air filter in place. Dust and dirt
+infiltration may cause damage and high levels of wear.
+-  |  Make sure that there is a perfect seal between the sleeve and the filter
+case. Also ensure that the sponge element is correctly fitted on the
+plastic cage. Any leaks may allow sand or dirt into the engine.
+6 6
+4•107  |  EN - 2-STROKE
+4 • MAINTENANCE
+ADJUSTING THROTTLE CONTROL CABLES
+1 1
+Adjustment on models (FI)
+Adjustment on these models must be performed on the throttle body.  |  3 3
+The throttle grip must be adjusted to suit the rider, but must always have
+at least 1 - 2 mm of play.
+-  |  To adjust the play, move the protective cap (1).
+-  |  First adjust the (upper) opening cable, then the (lower) closing cable.
+Consult the information on the sheaths.  |  5 5
+2 2
+4 4
+Opening cable
+-  |  Loosen the lock nut (2) and tighten or loosen the adjusting screw (3) to
+obtain the required play.
+-  |  Tightening the adjusting screw increases play.
+-  |  Loosening the adjusting screw reduces play.
+-  |  Tighten the lock nut and check that the grip rotates smoothly.
+Closing cable
+-  |  Loosen the lock nut (4) and tighten or loosen the adjusting screw (5) to
+obtain the required play.
+-  |  Tightening the adjusting screw increases play.
+-  |  Loosening the adjusting screw reduces play.
+-  |  Tighten the lock nut and check that the grip rotates smoothly.
+-  |  Put the protective cap back in place at the end of adjustment.
+WARNING
+-  |  With the engine running, ensure that the idle speed is correct and does
+not increase when you steer all the way right or left.
+Adjustment on models (MX CARBURETTOR)
+Adjustment on these models must be performed on the throttle.
+The throttle grip must be adjusted to suit the rider, but must always have
+at least 1 - 2 mm of play.  |  3 3  |  2 2
+1 1
+-  |  To adjust the play, move the protective cap (1).
+-  |  Loosen the nut (2) and work on the registry (3).
+-  |  Tightening the registry increases play.
+-  |  Loosening the registry reduces play.
+-  |  Tighten the nut (2) and check that the grip rotates smoothly.
+-  |  Put the protective cap (1) back in place at the end of adjustment.
+WARNING
+With the engine running, ensure that the idle speed is correct and does not
+increase when you steer all the way right or left.
+2-STROKE - EN  |  4•108
+4 • MAINTENANCE
+Fi
+ADJUSTING IDLE SPEED
+Adjusting idle speed has a big impact on engine starting. That is to say, an
+engine with correct idle speed adjustment will be easier to start than an
+engine with incorrect idle speed.
+Every TM Moto bike is delivered with an idle speed adjustment suitable  |  1 1
+for the type of motorcycle. This adjustment can be changed if necessary.
+With the engine running, warm enough and without touching the throttle
+grip, turn the knob (1) or the screw (2) located on the left-hand side of
+the bike.
++ +  |  - -
+Models (FI)
+Rotating the knob (1) clockwise decreases rpm while rotating it anticlock-
+wise increases them.
+Models (CARBURETTOR)
+Rotating the screw (2) clockwise increases rpm while rotating it anticlock-
+wise decreases them.  |  CARBURETTOR
+Do not set a too low idle speed.  |  2 2
+If you have a rev counter available, never drop below 1200 ÷ 1500 rpm.
+Instead of a rev counter, you can use the TM MOTO diagnosis and
+programming “PDA”.
+WARNING  |  - -  |  + +
+-  |  Never adjust the idle speed with the engine off. You risk not being able
+to start the engine again.
+4•109  |  EN - 2-STROKE
+4 • MAINTENANCE
+GEARBOX OIL CHANGE
+Only use high quality oil of the type indicated in the chapter “Technical data”.
+The oil must be changed with the engine off, but still warm enough to allow
+the used oil to drain more easily.  |  1 1
+-  |  Position the motorcycle on a flat surface and place a suitable basin
+under the engine. Unscrew the oil filler cap (1) on the right-hand side
+of the engine (clutch cover) and the drain cap (2) on the lower side of
+the engine, allowing the oil to drain into the basin.
+-  |  Wait until all of the oil has drained from the drainage holes. Then clean
+the seal surfaces, check the gaskets, clean any debris from the drainage
+cap magnets (3) and screw on the cap again, tightening them to 20 Nm.
+-  |  Prepare a measuring cup with the necessary amount of gearbox oil of
+the required type (see table) and pour approximately 600gr into the
+filler hole.
+-  |  Screw and tighten the cap to 20 Nm.
+-  |  Check the seal of the filler and drainage caps.
+DANGER
+-  |  BEWARE OF HOT OIL AND ENGINE PARTS. RISK OF BURNS.
+WARNING  |  2 2
+-  |  A level that is too low, poor quality oil or longer maintenance intervals
+than scheduled cause serious gearbox damage. Never pour too much
+oil into the gearbox.
+If this happens, drain it.
+ENGINE OIL QUANTITY TABLE
+Oil change ...................................................................................... 700 ml.
+NOTE:
+For the type of oil to be used, see the “Technical data” section.
+3 3
+2-STROKE - EN  |  4•110
+4 • MAINTENANCE
+CARBURETTOR
+NEEDLE ADJUSTMENT
+The position of the needle must be adjusted according to the season of
+use and therefore the external temperature. Operate as follows to make
+the adjustment:
+-  |  Close the fuel cock.
+1 1
+NOTE:  |  The operation can be performed with the carburettor mounted.
+-  |  Loosen and remove the external cover (1).
+-  |  Extract the spring (2) and the valve (3).
+3 3
+2 2
+-  |  Unscrew the needle screw (4).
+4 4
+-  |  Extract the needle (5).
+-  |  Move the Seeger (6) following the indications below:
+“S”
+Standard factory adjustment is on the third notch “F” from above. Adjust-
+“F”
+ment must be performed by moving the Seeger (6) one notch at a time. If
+the external temperature is high, move the Seeger (6) by one notch towards  |  “I”
+the upper part “S” of the needle (5); vice versa move the Seeger (6) by one
+notch towards the lower part “I” of the needle.  |  6 6  |  5 5
+Re-mount everything, proceeding in reverse order and check correct oper-
+ation of the motorcycle.
+5 5  |  4 4
+3 3
+4•111  |  EN - 2-STROKE
+4 • MAINTENANCE
+CHECKING AND CLEANING THE JETS
+Operate as follows to clean the pilot jet and the main jet:  |  2 2
+-  |  Close the fuel cock.  |  1 1
+-  |  Position a recipient under the carburettor to collect the petrol present
+in the tray.
+1 1  |  1 1
+-  |  Unscrew the tray (2) fastening screws (1).
+1 1
+-  |  Unscrew the main jet (3) and clean it using compressed air; if clogged,
+clean the hole using the relevant tips without deforming the shape of  |  4 4
+the jet.
+3 3
+-  |  Unscrew the pilot jet (4) and clean it using compressed air; if clogged,
+clean the hole using the relevant tips without deforming the shape of
+the jet.
+Re-mount everything in reverse order, paying attention to re-position the
+tray gasket correctly.
+2-STROKE - EN  |  4•112
+4 • MAINTENANCE
+EXHAUST VALVE
+Removing the exhaust valve motor.  |  2 2
+-  |  Disconnect the battery.
+1 1
+- Undo the screws (1).
+-  |  Remove the connector cover (2).  |  3 3
+-  |  Move the safety lock (3) of the connector.  |  2 2
+-  |  Disconnect the connector (4).
+4 4
+Remove the valve motor (5).
+NOTE:  |  Do not turn the pin (6) of the valve actuator manually.
+6 6  |  5 5
+Exhaust valve motor reassembly.
+Check the condition of the OR seal (7) and replace it if damaged.  |  8 8
+Check that the valve (8) position is vertical and rotate it manually using
+pincers if needed.
+7 7  |  8 8
+4•113  |  EN - 2-STROKE
+4 • MAINTENANCE
+Spread a thin layer of grease on the OR seal (7) and reassemble the motor
+(5) fitting the ground part of the pin (6) into the valve (8).
+NOTE:  |  Do not turn the pin (6) manually as the motor may be broken.  |  8 8
+5 5
+7 7  |  6 6
+-  |  Connect the connector (4).
+4 4
+-  |  Mount the connector lid (2) and tighten the screws (1).
+1 1
+-  |  Reconnect the battery and perform the valve motor calibration.
+1 1
+2 2
+2-STROKE - EN  |  4•114
+4 • MAINTENANCE
+EN - MX EXHAUST VALVE CALIBRATION
+- With motorcycle off, engage the 3° gear by means of the lever (1).
+1 1
+- Extract the diagnosis socket (2) located at the left of the motorcycle and
+remove the cap.
+- Equip yourself with a 12 V battery.
+2 2
+- Connect the wiring (3) code 68198 to the battery.
+3 3
+- Turn the throttle (4) entirely, maximum opening, and keep it in this
+position until the end of the procedure.
+- Feed the electrical system by connecting the wiring (3) to the diagnosis
+socket (2) and wait at least 6 seconds.
+- The valve calibration procedure will begin (the procedure lasts a few
+instants).
+- At the end of the procedure, restore the original conditions of the
+vehicle.
+4 4
+4•115  |  EN - 2-STROKE
+4 • MAINTENANCE
+SMR EXHAUST VALVE CALIBRATION
+- Turn the ignition block (1) to the third position “  |  ”, the turn indicators
+and the indicators (2) flash.
+- Power the circuits by pressing and keeping pressed the key (3) and by
+pressing the key (4) quickly twice, the display (5) lights up and the setting
+menu is entered.
+- Press the key (3) and scroll the menu until “ VALVE ” is displayed on the
+display (3) .
+- Press the key (4) to enter calibration phase, on the display appears the
+“ PRESS ” message.
+- Press the key (4) and keep it pressed until the end of the procedure  |  1 1
+which requires a few seconds (you can hear the valve positioning).
+- After a few seconds of inactivity, calibration phase is automatically left
+and you are automatically sent back to the main screen of the display.
+5 5
+5 5
+2 2  |  2 2
+3 3  |  4 4
+2-STROKE - EN  |  4•116
+4 • MAINTENANCE
+STROKE OIL CIRCUIT PURGING EN (Fi)
+- With motorcycle off, engage the 2° gear by means of the lever (1).
+1 1
+- Extract the diagnosis socket (2) located to the left side of the motorcycle
+and remove the cap.
+- Equip yourself with a 12 V battery.
+2 2
+- Connect the wiring (3) code 68198 to the battery.
+3 3
+- Turn the throttle (4) entirely, maximum opening, and keep it in this
+position until the end of the procedure.
+- Feed the electrical system by connecting the wiring (3) to the diagnosis
+socket (2), the oil pump will start to pump for approximately 15 sec-
+onds, check that there are no air bubbles inside the circuit, repeat the
+procedure otherwise.
+Disconnect the wiring (3) from the connector (2).
+- At the end of the procedure, restore the original conditions of the
+vehicle.
+4 4
+4•117  |  EN - 2-STROKE
+4 • MAINTENANCE
+STROKE OIL CIRCUIT PURGING SMR
+- Turn the ignition block (1) to the third position “  |  ”, the turn indicators
+and the indicators (2) flash.
+- Power the circuits by pressing and keeping pressed the key (3) and by
+pressing the key (4) quickly twice, the display (5) lights up and the setting
+menu is entered.
+- Press the key (3) and scroll the menu until “ OIL ” is displayed on the
+display (3).
+- Press the key (4) to enter calibration phase, on the display appears the
+“ PRESS ” message.
+- Press the key (4), the stroke oil pump starts and works for 30 seconds  |  1 1
+filling the circuit. Once the procedure is complete ,you are automatically
+sent back to the main screen of the display.
+NOTE:  |  If it is noticed that air bubbles are still present inside the circuit,
+repeat the procedure.
+5 5
+5 5
+2 2  |  2 2
+3 3  |  4 4
+2-STROKE - EN  |  4•118
+5. DIAGNOSIS
+5 • D I A G N O SIS
+2-STROKE - EN  |  5•120
+5 • D I A G N O SIS
+Performing the scheduled maintenance on your motorcycle will make encountering problems unlikely. However, should a problem occur, check
+the troubleshooting table and follow the instructions provided to solve the problem.
+The table includes two columns indicating who should perform the work:
+• the symbol  |  means that the work must be done by the user;
+• the symbol  |  means that the work must be done by a technician or at an authorized TM workshop.
+Therefore, for your safety, have such work done only at a specialized TM workshop, so that your motorcycle is serviced optimally by specifically
+trained personnel. Contact a TM dealer if you have any questions. For anything not covered here, consult the “PDA” section.
+PROBLEM  |  CAUSE  |  SOLUTION
+Ignition key not inserted
+Insert the ignition key and turn it clockwise.  |  •
+or not turned (SMR).
+Petrol cock closed (MX). Open the petrol cock
+Refuel.  |  •
+No fuel supply to the
+engine.
+Check tank-carburettor connections.
+•
+Incorrect idle speed
+Correctly adjust the idle speed.  |  •
+adjustment.
+Engine flooded/spark Perform start procedure with flooded engine /
+•
+plug wet.  |  petrol closed.
+Clean and dry the spark plug or replace it if
+Spark plug ruined.  |  •
+THE ENGINE DOES  |  required.
+NOT START  |  Incorrect distance  |  Adjust the distance between electrodes to 0.8
+•
+between electrodes.  |  mm.
+Faulty injection system
+Check the injection system (Diagnostic Tool).  |  •
+(EN-SMR).
+Insufficient petrol circuit
+Replace the pump  |  •
+pressure
+Check the wiring, earth connections,
+Damaged wiring.  |  •
+connector integrity, cables and sheaths
+Damaged spark plug  |  Check the spark plug cap and replace it if
+•
+cap.  |  required.
+Faulty stop switch  |  Check the stop switch.  |  •
+Clogged air filter  |  Clean  |  •
+Incorrect idle speed
+Correctly adjust the idle speed.  |  •
+ENGINE DOES NOT  |  adjustment.
+KEEP RUNNING AT
+Damaged spark plug.  |  Replace the spark plug.  |  •
+IDLE
+Faulty ignition system.  |  Check the ignition system (Diagnostic Tool).  |  •
+> > >
+5•121  |  EN - 2-STROKE
+5 • D I A G N O SIS
+PROBLEM  |  CAUSE  |  SOLUTION
+Faulty ignition system.  |  Check the ignition system (PDA).  |  •
+Faulty injection system
+Check the injection system (PDA).  |  •
+EN-SMR.
+Faulty ECU (engine
+ENGINE DOES NOT  |  Replace the ECU.  |  •
+control unit).
+REACH FULL SPEED
+Exhaust valve actuator
+Adjust the exhaust valve position  |  •
+faulty or to be adjusted
+Faulty valve control unit  |  Reset or replace the control unit  |  •
+Faulty spark plug  |  Replace the spark plug  |  •
+Clogged air filter.  |  Clean or replace the air filter.  |  •
+Faulty injection system
+Check the injection system (Diagnostic Tool).  |  •
+EN-SMR.
+E x h a u s t s y s t e m n o t
+sealed, deformed or Check the faulty parts on the exhaust system,
+•
+silencer fiberglass needs replace the fiberglass in the exhaust silencer.
+INSUFFICIENT ENGINE replacing.
+POWER
+E x h a u s t v a l v e n o t Check the valves wires
+•
+adjusted correctly  |  Replace the control unit
+Faulty ignition system.  |  Check the ignition system (Diagnostic Tool).  |  •
+F a u l t y E C U ( e n g i n e
+Replace the ECU.  |  •
+control unit).
+Clogged fuel filter.  |  Replace the fuel filter.  |  •
+Refuel.  |  •
+Check the petrol pump or carburettor
+No fuel supply to the
+connections and fuel pipe.
+engine.
+Check fuel pressure (TSI)  |  •
+Damaged spark plug.  |  Replace the spark plug.  |  •
+ENGINE MISFIRES OR
+Faulty ignition system.  |  Check the ignition system (Diagnostic Tool).  |  •
+SWITCHES OFF WHILE
+RUNNING  |  Check the injection system (Diagnostic tool)
+Faulty injection system.  |  •
+(TSI).
+Exhaust valve not adjust-
+Check for the correct valve adjustment  |  •
+ed correctly
+F a u l t y E C U ( e n g i n e
+Replace the ECU.  |  •
+control unit).
+Faulty battery  |  Replace  |  •
+2-STROKE - EN  |  5•122
+5 • D I A G N O SIS
+PROBLEM  |  CAUSE  |  SOLUTION
+Check and top-up the coolant level.  |  •
+Insufficient fluid in the
+Check the seal of the cooling system.
+cooling system.
+•
+Ride for a while on a flat road at moderate
+Insufficient ventilation.  |  speed without stressing the engine (you can fit  |  •
+ENGINE OVERHEATS  |  an optional electric fan).
+EXCESSIVELY
+Air in cooling circuit.  |  Bleed the cooling system.  |  •
+The radiator fins are very Clean the radiator fins with water (not under
+•
+dirty.  |  pressure).
+Formation of foam in the Replace the coolant using a good brand of
+•
+cooling system.  |  anti-freeze.
+Burnt out fuse.  |  Check the fuse and replace it.  |  •
+LIGHTS,
+SPEEDOMETER,  |  Connections  |  Check wiring  |  •
+HORN AND TURN
+SIGNALS DO NOT
+WORK  |  Faulty battery  |  Replace  |  •
+(SMR-EN)
+The battery is not charged
+BATTERY IS  |  Check the generator and voltage regulator.  |  •
+by the generator.
+DISCHARGED EVEN
+IF THE MOTORCYCLE The battery is damaged. Replace the battery.  |  •
+HAS BEEN USED
+RECENTLY  |  External temperature too
+Check the battery  |  •
+(EN-SMR)  |  low
+5•123  |  EN - 2-STROKE
+5 • DIAGNOSIS
+DIAGNOSIS SOCKET CONNECTION (EN F i - MX Fi - MX Carb.)
+- The socket for connecting this tool is on the left side of the motorcycle,  |  1 1
+under the tank.
+- Take out the socket (1), remove the protective cap (2) and connect the
+tool.
+WARNING
+After making the required adjustments, put the protective cap (2) back on
+the socket (1).  |  2 2
+2-STROKE - EN  |  5•124
+5 • CALTOOL DIAGNOSIS
+DIAGNOSIS SOCKET CONNECTION SMR
+- The socket for connection of the dashboard is located on the left  |  1 1
+side of the motorcycle, underneath the tank.
+- Extract the socket (1) and remove the safety cap (2) and connect
+to the dashboard.
+- Turn the ignition block (3) to the third position “  |  ”, the turn
+indicators and the indicators (4) flash.
+- Power the circuit by simultaneously pressing the keys 5 and 6, the
+display (7) lights up indicating that the circuits are powered.
+2 2
+WARNING
+After performing the desired adjustments, reassemble the safety cap
+(2) into the socket (1).
+ATTENTION: Do not connect the two poles of the interface cable to
+the battery.
+3 3
+7 7
+5 5
+4 4  |  4 4
+5 5  |  6 6
+5•125  |  EN - 2-STROKE
+5 • CALTOOL DIAGNOSIS
+CALTOOL MANUAL
+Installing and running for the first time
+To use the diagnostic software, the following is required:
+-  |  1 Computer with 64-bit Windows 10 operating system or higher
+-  |  1 USB port
+The program is compatible with all vehicles equipped with the “eMoticom” engine control unit
+NOTE: All vehicles equipped with other control units are incompatible.
+Once installed, the program also works offline.
+Download the software:
+-  |  The dedicated link is required to download the program
+-  |  Open the link in a web browser:
+-  |  Click on the “Download” key, then “Download all in ZIP file”, the download of the whole folder in .Zip format will start automatically.
+-  |  When it has finished downloading, unzip the newly downloaded folder and copy it to your “Documents” folder
+2-STROKE - EN  |  5•126
+5 • CALTOOL DIAGNOSIS
+Installing the program
+-  |  Open the Documents/Emoticom/Software folder, and use the right mouse button to select:
+“Run as administration” on the eMoticom_CalTool executable file
+WARNING
+If you do not install the program in this way, it is unlikely to work
+-  |  Press “Next” until the program installation has finished.
+After installation, you will find the program icon on your Desktop.
+5•127  |  EN - 2-STROKE
+5 • CALTOOL DIAGNOSIS
+Installing the driver
+-  |  Open the Documents/Emoticom/Software/Driver USB folder, and use the right mouse button to select:
+“Run as administration” on the CDM21228_Setup.exe executable file
+Proceed until installation is complete, after which you will be able to connect the diagnostic key to the computer.
+Running the program for the first time
+When running Caltool for the first time, the following screen will appear:
+If the files have been copied successfully, the available templates will be displayed.
+2-STROKE - EN  |  5•128
+5 • CALTOOL DIAGNOSIS
+-  |  Select the specific file for your vehicle.
+-  |  To change the selected Template, press “Interface” in the top menu and select “Load new ECU Template”
+The same page as opened initially will be displayed, after which repeat the Template loading steps explained above.
+Loading a Workspace
+-  |  To select a Workspace (the workspace file includes all the widgets useful for diagnosing motorcycles), press “Interface” in the top menu,
+and select “Load Layout” followed by “Workspace”
+5•129  |  EN - 2-STROKE
+5 • CALTOOL DIAGNOSIS
+SOFTWARE USER GUIDE
+Tab and Layout management guide
+The controls at the top of the toolbar are divided by category:
+• File: to load and save mapping files;
+• Communication: to manage communication with the control unit;
+• Interforce: for checks with the interface;
+• Tools: containing the ‘codeLoad’ tool to update the control unit firmware.
+• Interface: To select the Templates.
+The status bar at the bottom contains (left to right):
+• ECU Disconnected/Connected: Connection status between the software and control unit (red - not connected, green - connected). If
+the connection is working correctly, the control unit firmware version will appear on the screen;
+• The name of the Configuration file currently loaded in the ECU;
+• The name of the Map file currently loaded in the ECU;
+• A series of warnings indicating the control unit status;
+È anche possibile separarli in più TAB. Ci sono due modi per aggiungere TAB: È anche possibile separarli in più TAB. Ci sono due modi per aggiungere TAB: È anche possibile separarli in più TAB. Ci sono due modi per aggiungere TAB:
+• Premere Ctrl + t
+• Premere il pulsante ‘ add ta add ta ’ sulla barra dei controlli, raggiungibile anche dal menù ’ sulla barra dei controlli, raggiungibile anche dal menù
+The names of the configuration and map files currently opened by the software are displayed on the title bar. premendo: ‘ workspace ’ workspace ’ -> ‘TABs’ -> ‘add TAB’
+In questo modo i layout del workspace verranno salvati automaticamente tra le sessioni. In questo modo i layout del workspace verranno salvati automaticamente tra le sessioni. In questo modo i layout del workspace verranno salvati automaticamente tra le sessioni.
+È inoltre possibile salvarli in un file esterno, sia per il wor È inoltre possibile salvarli in un file esterno, sia per il workspace completo che per la sola kspace completo che per la sola
+TAB corrente:
+• Selezionare ‘workspace Selezionare ‘workspace ’ + ‘save as layout’
+• Per ricaricare i layout ‘workspace Per ricaricare i layout ‘workspace ’ + ‘load layout’
+Communication with the control unit
+Comunicazione centralina
+To communicate with the ECU, the EM008 CAN-USB adapter must be connected to the PC and the corresponding diagnostic connector on the Per comunicare con la ECU è necessario l’adattatore CAN Per comunicare con la ECU è necessario l’adattatore CAN-USB EM008 da collegare al PC e USB EM008 da collegare al PC e
+motorcycle (after the installation of the drivers).
+al connettore corrispondente sulla moto. al connettore corrispondente sulla moto.
+Press the “Connect ECU” button  |  (at the top left) to connect to the control unit; the word “Connected” at the bottom left turns green
+when the control unit is connected correctly.
+You can now access the receive and transmit menu  |  on the function control bar.
+2-STROKE - EN  |  5•130
+Premendo il tasto ‘ connect ECU’ connect ECU’  |  (in alto a sx) è possibile collegarsi alla centralina; (in alto a sx) è possibile collegarsi alla centralina;
+la scritta in basso a sx diventa verde quando la centralina è correttamente connessa. la scritta in basso a sx diventa verde quando la centralina è correttamente connessa. la scritta in basso a sx diventa verde quando la centralina è correttamente connessa.
+5 • CALTOOL DIAGNOSIS
+Correcting a Map
+You can make changes to the selected map file using the following functions:
+Gear parameters: to update quickshifter thresholds;
+Injection auxiliary correction: to make corrections within the ranges pre-set in the program:
+-  |  A value of 1000 indicates the default amount of petrol.
+-  |  It can be made up to 30% richer (1300) and up to 5% leaner (0.950); the engine rpm threshold and % throttle opening can also be varied
+by changing the value in the main column.
+-  |  Changed values remain highlighted with a different colour.
+At the end of the changes, remember to send the modified file to the control unit.
+Engine parameter check
+The display contains the ‘general monitor’ and ‘analog inputs’ sections, where you can access the controls to check the motorcycle parameters.
+5•131  |  EN - 2-STROKE
+5 • CALTOOL DIAGNOSIS
+Vehicle maintenance
+In the “tab” of your vehicle, there are some widgets to assist you during maintenance of the motorcycle:
+• Maintenance: checks to calibrate the exhaust valve and purge the oil pump;
+• Output test: checks to test the various motorcycle actuators (injectors, spark plugs, oil and petrol pumps, cooling fan).
+Note:  |  After the valve calibration or oil pump purging, the control unit enters “maintenance” mode, impeding engine ignition. To restore
+the original conditions, remove the diagnosis connector from the motorcycle and connect it again to see if all the errors have been reset.
+Diagnostics and OBD
+There are three ways to perform vehicle diagnostics from the OBD Warning Tab:
+• From the ‘Engine diagnostics’ function, you can see the control unit operating hours count and reset the partial counts;
+• From the ‘Actuators faults’ function, you can see the error status of the motorcycle actuators to reset them;
+2-STROKE - EN  |  5•132
+5 • CALTOOL DIAGNOSIS
+• From the ‘OBD names’ function, you can see the name transmitted by the control unit on the OBD BUS (you have to press the update
+button).
+5•133  |  EN - 2-STROKE
+5 • CALTOOL DIAGNOSIS
+Updating the Firmware
+-  |  To update the firmware (if necessary), press “Tools”, “Code Load”.
+A window will open:
+-  |  Check that the words “ECU Connected” appear in orange to confirm that the ECU is connected.
+CORRECT  |  ERROR
+2-STROKE - EN  |  5•134
+5 • CALTOOL DIAGNOSIS
+-  |  Press “ReBoot to Code Load” to reboot the control unit, after which you can press the “Send” button and select the next firmware.
+-  |  Select the appropriate firmware from the window that opens.
+5•135  |  EN - 2-STROKE
+5 • CALTOOL DIAGNOSIS
+The procedure will take a few minutes; press OK once loading has finished.
+-  |  To return to normal mode, press the ‘reboot to app’ button and close the window.
+“In some cases, you have to re-select the correct Template after changing the firmware.”
+WARNING
+Check that the battery is charged properly, and do not disconnect the control unit for any reason while the firmware is being rewritten as doing
+so could cause the control unit to crash.
+2-STROKE - EN  |  5•136
+6. TECHNICAL DATA
+
+6•TEC H N I C A L D A T A
+ENGINE TECHNICAL DATA 125 MX
+ENGINE  |  125
+Tipo  |  Single cylinder 2-stroke, liquid-cooled
+Displacement  |  124,6 cm 3
+Bore/stroke  |  54x54,4
+Fuel  |  (E5) / (E10) super unleaded fuel mixed with oil at 3%
+Squish height  |  1.0/1.1 mm
+Piston height from the cylinder surface to the PMS  |  - 1.6 mm
+PIston cylinder tolerance  |  0,05 / 0,06
+Engine shaft supports  |  1 roller (LH) + 1 ball (RH)
+Small-end bearing  |  Silver-coated shims roller bearings cage
+Big-end bearing  |  needle roller cage
+Piston  |  cast in light alloy
+Segments  |  2 segments (GAP 0.40 / 0.45)
+Gearbox oil quantity  |  800 cc
+Primary transmission  |  straight-tooth gears 18/63
+Clutch  |  multiple disc oil bath
+Gearbox (with front couplings)  |  6 gears
+Gear ratios  |  1 a  |  15-31
+2 a  |  16-29
+3 a  |  18-27
+4 a  |  18-23
+5 a  |  21-23
+6 a  |  22-22
+Generator  |  KOKUSAN
+Spark plug  |  BR9ECMIX
+Electrodes distance  |  0,7-0,8 mm
+Cooling  |  fluid, 40% antifreeze, 60% water (up to -25°C),
+circulation forced with pump
+Fluid amount  |  1 liter (see page 4-92)
+Engine control unit  |  eMoticom - em103
+Exhaust valve actuator  |  SBS
+6•139  |  EN - 2-STROKE
+6•TEC H N I C A L D A T A
+ENGINE TECHNICAL DATA 125 EN - SMR
+ENGINE  |  125 EN  |  125 SMR
+Tipo  |  Single cylinder 2-stroke, liquid-cooled
+Displacement  |  124,6 cm 3
+Bore/stroke  |  54x54,4
+Fuel  |  (E5) / (E10) super unleaded fuel
+Engine lubrication  |  separated with Mikuni pump driven by engine ECU
+Squish height  |  1.0/1.1 mm
+Piston height from the cylinder surface to the PMS  |  - 1.6 mm
+PIston cylinder tolerance  |  0,05 / 0,06
+Engine shaft supports  |  1 roller (LH) + 1 ball (RH)
+Small-end bearing  |  Silver-coated shims roller bearings cage
+Big-end bearing  |  needle roller cage
+Piston  |  cast light alloy
+Segments  |  2 segments (GAP 0.40 / 0.45)
+Gearbox oil quantity  |  800 cc
+Primary transmission  |  straight-tooth gears 18/63
+Clutch  |  multiple disc oil bath
+Gearbox (with front couplings)  |  6 gears
+1 a  |  13-32
+2 a  |  16-29
+3 a  |  18-27
+Gear ratios
+4 a  |  18-23
+5 a  |  21-23
+6 a  |  22-20
+Generator  |  KOKUSAN
+Regulator  |  SRU - eMoticom
+Spark plug  |  CR9EIX
+Electrodes distance  |  0.8-1 mm
+Cooling  |  fluid, 40% antifreeze, 60% water (up to -25°C),
+circulation forced with pump
+Fluid amount  |  1 liter (see page 4-92)
+Engine control unit  |  CDI eMoticom - em103
+Exhaust valve actuator  |  SBS
+2-STROKE - EN  |  6•140
+6•TEC H N I C A L D A T A
+CARBURETTORS SETTING MX
+KEIHIN  |  125 MX
+Needle  |  N1EH
+Needle position  |  3 a mark
+Guillotine  |  6,5
+Maximum jet  |  188
+Idle jet  |  50
+Air screw turns  |  1
+Float  |  16 mm
+position  |  standard
+ENGINE TIGHTENING TORQUES
+Carter Allen screw, transmission torque, clutch torque, ignition torque  |  M 6  |  12 Nm
+Oil drain screw cap  |  M14x1.5  |  20 Nm
+Oil load screw cap  |  M14x1.5  |  20 Nm
+Laminated body Allen screw  |  M6  |  12 Nm
+Cylinder-head tightening flange screw  |  M 7  |  16 Nm
+Base-cylinder tightening flange nuts  |  M 8  |  28 Nm
+Water pump cover Allen screw  |  M 6  |  12 Nm
+Water pump rotor  |  M 6  |  Loctite 243 + 15 Nm
+Clutch hub nut  |  M14x1.5  |  Loctite 243 + 70 Nm
+Clutch springs Allen screw  |  M 5  |  8 Nm
+Ignition stator Allen screw  |  M 6  |  Loctite 243 + 10 Nm
+Allen screw for gear blocker  |  M 6  |  Loctite 243 + 10 Nm
+Gearbox lever Allen screw  |  M 6  |  Loctite 243 + 10 Nm
+Generic screws/nuts  |  M 5  |  8 Nm
+Generic screws/nuts  |  M 6  |  10 Nm
+Generic screws/nuts  |  M 8  |  25 Nm
+Primary shaft gear nut  |  M18  |  70 Nm
+LUBRICATION
+Gearbox Oil  |  Motorex Cross Power 4T – 10W-50
+Automatic Mixer Oil  |  Motorex Cross Power 2T Fully Synthetic
+Oil for mix  |  Motorex Cross Power 2T Fully Synthetic
+Clutch Oil  |  DOT 4
+Brakes Oil  |  DOT 4
+Radiator liquid  |  Motorex Coolant M5.0 ready to use
+6•141  |  EN - 2-STROKE
+6•TEC H N I C A L D A T A
+CHASSIS TECHNICAL DATA
+125  |  125  |  125
+MX  |  EN  |  SMR
+Frame  |  High resistance aluminum alloy perimeter
+Front suspension  |  KAYABA USD fork
+Front/rear suspension stroke  |  300/315 mm
+Rear suspension  |  Progressive linkage, TM Shock absorber
+Front disc brake  |  Ø 270 mm floating caliper  |  Ø 320 mm 4-piston caliper
+Rear disc brake  |  Ø 240 mm floating caliper
+Front/rear brake disc wear limit  |  mm. 0,4 below original thickness
+Front tire  |  80/100-21”  |  90/90-21”  |  120/70-17” opp. 110/70-17”
+Air pressure “solo”
+1,1 bar
+Rear tire  |  110/90-19”  |  140/80-18”  |  150/60-17”
+Air pressure “solo”
+1,1 bar
+Tank capacity  |  10 liters (1 of which is reserve)
+Final drive  |  12/50  |  13/40
+Chain  |  114 maglie  |  106 maglie
+Optional sprockets  |  48,49,50,51,52  |  38,39,40,41,42,43,44,45,46
+Bulbs (EN/SMR only)  |  Headlight bulb (EN/SMR)  |  HS1 12V 35/35W
+Front position light bulb (EN/SMR)  |  12V 5W W5W
+Rear/stop/licence plate position light (EN)  |  Led 12V 0.9W / 0.006W (SMR) P21/5W 12V 21/5W BAY15d
+Indicator bulb  |  R10W 12V 10W BA15S
+125  |  125
+TIGHTENING TORQUES
+MX/EN  |  SMR
+Front wheel pin flange nut  |  M20x1,5  |  M20x1,5  |  40 Nm
+Front brake caliper fixing screw  |  M8  |  M10  |  30 Nm/40 Nm
+Front brake disc fixing screw  |  M6 cl. 10,9  |  M6 cl. 10,9  |  15 Nm
+Rear brake disc fixing screw  |  M6 cl. 10,9  |  M6 cl. 10,9  |  15 Nm
+Top fork head tightening screw  |  M8  |  M8  |  20 Nm
+Bottom fork head tightening screw  |  M8  |  M8  |  20 Nm
+Marzocchi fork shoe tightening screw  |  M6  |  M6  |  12 Nm
+Rear wheel pin flange nut  |  M22x1,5  |  M22x1,5  |  80 Nm
+Swingarm pin flange nut  |  M16x1,5  |  M16x1,5  |  80 Nm
+Handlebar tightening covers screws  |  M8  |  M8  |  20 Nm
+Nut for elastic support to the handlebar  |  M10  |  M10  |  35 Nm
+Top shock absorber nut  |  M10x1,25  |  M10x1,25  |  40 Nm
+Bottom shock absorber screw  |  M10x1,25  |  M10x1,25  |  35 Nm
+Crown gear nuts  |  M8  |  M8  |  35 Nm
+Rear brake pedal registry nut  |  M6  |  M6  |  15 Nm
+Engine fixing screw  |  M10  |  M10  |  45 Nm
+Generic chassis screws  |  M6  |  M6  |  10 Nm
+M8  |  M8  |  25 Nm
+M10  |  M10  |  45 Nm
+Generic chassis nuts  |  M6  |  M6  |  15 Nm
+M8  |  M8  |  30 Nm
+M10  |  M10  |  50 Nm
+2-STROKE - EN  |  6•142
+7. WIRING DIAGRAMS
+7•WIR I N G D I A G R A M S
+CARBURETTOR ENGINE WIRING DIAGRAM (125 MX)
+2-STROKE - EN  |  7•144
+7•WIR I N G D I A G R A M S
+INJECTION ENGINE WIRING DIAGRAM (125 MX)
+7•145  |  EN - 2-STROKE
+7•WIR I N G D I A G R A M S
+ENGINE WIRING DIAGRAM SMR (125 EN)
+2-STROKE - EN  |  7•146
+7•WIR I N G D I A G R A M S
+ENGINE WIRING DIAGRAM EN (125 SMR)
+7•147  |  EN - 2-STROKE
+7•WIR I N G D I A G R A M S
+2-STROKE - EN  |  7•148
+7•WIR I N G D I A G R A M S
+7•149  |  EN - 2-STROKE
+7•WIR I N G D I A G R A M S
+2-STROKE - EN  |  7•150
+8 • ALPHABETICAL INDEX
+ALPHABETICAL INDEX
+Page  |  E
+Ele ctrical system components positionin g (EN - SMR) .................100
+A  |  Electrical system components posi ti oning (MX) .............................99
+Accelerating, shifting gears, slowing down ....................................57  |  EN - MX exhaust valve calibration ................................................115
+Adapting fork basic calibra ti on ......................................................73  |  E ngine idle speed adjustment ........................................................47
+Adapting shock absorber basic calibration .....................................73  |  Engine serial number ......................................................................17
+Adjus ti ng idle speed .....................................................................109  |  Engine stop button (MX) ................................................................26
+Adjusting the height of the front headlamp .................................102  |  En g ine technical data 125 EN - SMR .............................................140
+Adjusting the rea r -view mirrors ......................................................54  |  Engine technical data 125 MX ......................................................139
+Adjus ti ng throttle control cables ..................................................108  |  Engine tightenin g torques ............................................................141
+Adjustment on models (Fi) ...........................................................108  |  Engine wiring diagram (125 EN) ...................................................146
+Adjustment on models ( M X) ........................................................108  |  Engine wiring diagr a m (125 SMR) ................................................147
+Exhaust v alve ................................................................................113
+B
+Basic indications for tm disc brakes ................................................80  |  F
+Battery  |  .................................................................................... 97  |  Fork compression adjustment ........................................................69
+Battery maintenance ......................................................................98  |  Fork rebound adjustment ...............................................................70
+Bleeding the hydraulic clutch .........................................................80  |  For motorcycle with carburettor ....................................................56
+Bleeding the telescopic fork ...........................................................71  |  For motorcycle with throttle body (Fi) ...........................................56
+Braking  |  .................................................................................... 57  |  Frame s e rial number ......................................................................17
+Brembo front brake pump .............................................................82  |  Fuel tank (E N - SMR - Fi) .................................................................45
+Brembo pump front brake lever .....................................................23  |  Fuel tank (MX - Carburettor) ..........................................................46
+Br embo radial front brak e pump (SMR) ........................................84  |  Fuel tap (MX) .................................................................................. 47
+Brembo radial pump front brake leve r (SMR) ................................23  |  Functions .................................................................................... 30
+Functions .................................................................................... 39
+C  |  Funzioni blocchetto chiave SMR .....................................................26
+Caltool manual .............................................................................126
+Carburettor ..................................................................................111  |  G
+Carbure tt ors setting MX ...............................................................141  |  Gearbox oil change ......................................................................110
+Carburettor wiring diagram 125 MX .............................................144  |  Gear shifting pedal .........................................................................44
+Centralina PDU (SMR) ...................................................................101
+Centralina SRU ( EN - SMR) ...........................................................101  |  H
+Chain maintenanc e .........................................................................78  |  Hydraulic clut c h lever .....................................................................23
+Chain wear .................................................................................... 78  |  Hydraulic clutch pump ....................................................................79
+Ch a nging basic position of re a r brake pedal ..................................85
+Char g ing the battery .......................................................................98  |  I
+Chassis technical data ...................................................................142  |  Indications for first use ...................................................................51
+C hecking and topping up the hydraulic fluid level ..........................79
+Checking c hain tension ...................................................................76  |  L
+Checking front brake pads ..............................................................87  |  Led headlight for models (EN - SMR) ...........................................102
+Checking Rear b r ake fluid level ......................................................86  |  LED taillight (EN - SMR) ................................................................103
+Checking rear brake p a ds ...............................................................88  |  Le ft-hand side main components topography ................................21
+Checking shock absorber ride r sag .................................................74  |  L ight switch ( E N) ............................................................................25
+Checkin g shock absorber static sag ................................................74  |  Lubrication ..................................................................................141
+Checking speedometer magnetic sensor distance (EN/SMR) ........94
+Checkin g spoke tension ..................................................................93
+M
+Checking st e ering bearings and play adjustment ..........................75
+M ounting/dismounting of rider and passenger .............................53
+Clea ning air filter .........................................................................107
+125 (EN) Maintenance table ...........................................................62
+Cleaning telescopic fork dust seal ..................................................71
+125 (MX) Maintenance table .........................................................66
+Co l d start device (Carburettor) .......................................................27
+125 (SMR) Maintenance table ........................................................64
+Cold start device (Fi) .......................................................................27
+Co l d start of the motorcycle ...........................................................55
+P
+Combined braking pedal ................................................................44
+Precautions for winter us e .............................................................59
+Cooling  |  ..................................................................................104
+Preliminary checks ..........................................................................52
+Problem,cause,solution ................................................................121
+D
+Pu l sante avviamento .....................................................................26
+Di a gnosis socket connection (EN Fi - MX Fi - MX Carb.) ...............124
+Diagnosis socket connection SMR ................................................125
+R
+Digital electronic speedometer and indicators (EN) ......................28
+Rear suspension linkage .................................................................76
+Digital electronic speedometer and indicators (SMR) ...................37
+Removing the seat ..........................................................................94
+Dimmer switch (SMR) .....................................................................25
+Removing the tank .........................................................................95
+Disassembling and assembling front wh eel ...................................91
+Removing th e tank of models (Carburettor) ..................................96
+Disassembling and assembling rear whe el .....................................92
+Removin g the tank of models (Fi) ...................................................95
+Display  |  .................................................................................... 29
+Display  |  .................................................................................... 38
+8•151  |  IT - 2 TEMPI
+8 • ALPHABETICAL INDEX
+Repla c ing exhaust silencer packing material ...............................106
+Replacing front brake pads ............................................................89
+Replacing led front headlight .......................................................102
+Replacing r e ar brake pads .............................................................90
+Right - hand side main components topography .............................20
+Running-in instructions ..................................................................52
+S
+Safety regulations ...........................................................................51
+Setting off .................................................................................... 57
+Shock absorber compression adjustment ......................................72
+Shock absorber rebound adjustment .............................................72
+Side stand .................................................................................... 46
+SMR exhaust valve cal ibration ......................................................116
+Software user guide ......................................................................130
+Start-up after winter .......................................................................60
+Start of the motorcycle ...................................................................54
+Start with flooded engin e ..............................................................56
+Steering lock (EN/SMR) ..................................................................44
+Stopping and parking .....................................................................58
+Storage  |  .................................................................................... 60
+Stroke oil circuit purging EN (Fi) ..................................................117
+Stroke oil circuit purging SMR ......................................................118
+Stroke oil tank (EN-SMR) .................................................. 45
+T
+Tensioning the chain .......................................................................77
+Thro tt le  |  .................................................................................... 24
+Tightening torques .......................................................................142
+Tire p r essure ................................................................................... 93
+Topping up brake fluid ....................................................................83
+Turn signa l (EN - SMR) ..................................................................103
+U
+Underseat components topography ...............................................22
+V
+Var ying pre-load and replacing fork springs .................................70
+Varying pre-load and replacing shock absorber spring ..................73
+W
+Washing  |  .................................................................................... 59
+Weight of the rider .........................................................................73
+2 TEMPI - IT  |  8•152
+
+TM MOTO S.R.L.
+Via Fano, 6 - 61122 Pesaro - Italy
+Tel. +39 0721 25113 - Fax +39 0721 401808
+ENGLISH  |  Ed.01 - 09/2025
+www.tmracing.it www.tm-moto.it

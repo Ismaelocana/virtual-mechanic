@@ -367,6 +367,28 @@ const MANUALES = [
   { marca: 'vertigo', modelo: 'works125-250-300',                año: 2021, url: 'http://vertigomotors.com/wp-content/uploads/2020/11/MY2021-VERTICAL-WORKS-OWNERS-MANUAL.pdf' },
   { marca: 'vertigo', modelo: 'nitroworks125-225-250-280-300',   año: 2022, url: 'https://www.vertigomotors.com/wp-content/uploads/2022/06/MANUAL-PROPIETARIO-2022.pdf' },
 
+  // ── TM ────────────────────────────────────────────────────────────────────
+  // Fuente: tm-moto.it — fabricante oficial (TM Moto Srl, Pesaro, Italia).
+  // Portal con filtro por año en tm-moto.it/en/download-area/ (2010-2026 en
+  // el selector, pero solo hay documentos reales desde ~2020; la sección
+  // "MANUALE OFFICINA"/"WORKSHOP MANUAL" son manuales de taller del motor,
+  // no de uso — se descartan igual que "MANUAL DESPIECE" en TRS).
+  // Catálogo corregido: "ENF"/"MXF" no es un prefijo real de TM — se usa
+  // solo el sufijo "F" en los nombres de esta app para distinguir en la UI
+  // el motor 4T del 2T cuando comparten cilindrada (TM sí fabrica "EN 250"
+  // tanto en 2T como en 4T). Faltaban "EN 300F" y "MX 300F", reales y
+  // confirmados con datos técnicos en los manuales.
+  // EN 144 / MX 144 (2T) y EN 530F / MX 530F (4T) tenían manual con datos
+  // técnicos reales en MY22 pero ya no aparecen en MY25 — descatalogados
+  // entre medias (ver toYear=2024 en rangoAniosModelo). Sin manual oficial
+  // encontrado para MX 85 (Junior).
+  { marca: 'tm', modelo: 'en125-en144-mx125-mx144',                          año: 2022, url: 'https://www.tm-moto.it/en/download/new-manuale-uso-e-manutenzione-125-144-2-tempi-ed-02_11-2022-ita/?wpdmdl=29729' },
+  { marca: 'tm', modelo: 'en250-300-mx250-300',                              año: 2022, url: 'https://www.tm-moto.it/en/download/new-2-stroke-use-and-maintenance-manual-250-300-ed-01_05-2022-eng/?wpdmdl=26590' },
+  { marca: 'tm', modelo: 'en250f-300f-450f-530f-mx250f-300f-450f-530f',      año: 2022, url: 'https://www.tm-moto.it/en/download/manuale-uso-e-manutenzione-4-tempi-my22-ed-01_02-2022-ita/?wpdmdl=24527' },
+  { marca: 'tm', modelo: 'en125-mx125',                                      año: 2025, url: 'https://www.tm-moto.it/en/download/use-and-maintenance-2t-125-mx-en-smr-my25_my26/?wpdmdl=43450' },
+  { marca: 'tm', modelo: 'en250-300-mx250-300',                              año: 2025, url: 'https://www.tm-moto.it/en/download/2-stroke-use-and-maintenance-manual-my25-2ed/?wpdmdl=40228' },
+  { marca: 'tm', modelo: 'en250f-300f-450f-mx250f-300f-450f',                año: 2025, url: 'https://www.tm-moto.it/en/download/4-stroke-use-and-maintenance-manual-my25-2ed/?wpdmdl=40230' },
+
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────

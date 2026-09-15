@@ -252,6 +252,12 @@ function normalizarModelo(brand, model) {
     // Marca recién estrenada en off-road (Desmo450 MX lanzado en 2025);
     // un único manual por modelo, sin histórico de años. Desmo250 MX no
     // tiene manual oficial publicado todavía (usa el fallback genérico).
+    // Nota EDS 2026: Ducati no ha publicado manual de EDS para ese año
+    // (solo existe el de MY27). A petición del usuario, el año 2026 de
+    // "desmo450eds" usa en su lugar el contenido del manual de Desmo450
+    // EDX (modelo hermano, misma base que la EDS) como aproximación —
+    // el propio texto del documento sigue mencionando "EDX", es una
+    // decisión consciente, no un error de contenido sin detectar.
     if (m === 'DESMO450 MX') return { model: 'desmo450mx' };
     if (m === 'DESMO450 EDS') return { model: 'desmo450eds' };
   }

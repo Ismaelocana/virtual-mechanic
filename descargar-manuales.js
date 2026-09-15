@@ -415,7 +415,9 @@ const MANUALES = [
   // (125/250/300 combinados en un documento), aunque la web de venta
   // actual la presenta como "SC-F"/"SC-E" (kick/electric start) — se usa
   // el nombre confirmado dentro del manual descargable, no el de
-  // marketing. TY 125 es la gama de ocio/iniciación, 4T, manual aparte.
+  // marketing. TY 125 (gama de ocio/iniciación, 4T) se quitó del
+  // catálogo a petición del usuario; su manual sigue descargado e
+  // indexado en Pinecone por si se retoma más adelante.
   { marca: 'scorpa', modelo: 'scr125-250-300', año: 2023, url: 'https://www.scorpa-motorcycles.com/wp-content/uploads/sites/2/SCORPA-OWNERS-MANUAL-TRIAL-125-250-300-SC-R-RACING-2023-1.pdf' },
   { marca: 'scorpa', modelo: 'scr125-250-300', año: 2025, url: 'https://www.scorpa-motorcycles.com/wp-content/uploads/sites/2/SCORPA-_OWNER_MANUAL_TRIAL_125-250-300-SC-R_RACING-2025.pdf' },
   { marca: 'scorpa', modelo: 'ty125',          año: 2020, url: 'https://www.scorpa-motorcycles.com/wp-content/uploads/sites/2/OWNERS-Manual-TY125_4T-SCORPA-1.pdf' },

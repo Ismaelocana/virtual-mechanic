@@ -265,8 +265,10 @@ function normalizarModelo(brand, model) {
     // (125/250/300 combinados en un documento), aunque la web actual
     // vende los mismos modelos como "SC-F"/"SC-E" (kick/electric start) —
     // se usa el nombre confirmado dentro del manual, no el de marketing.
+    // TY 125 (gama 4T de ocio) se quitó del catálogo a petición del
+    // usuario; su manual sigue indexado en Pinecone (token 'ty125') por
+    // si se retoma más adelante.
     if (m === 'SC-R 125' || m === 'SC-R 250' || m === 'SC-R 300') return { model: 'scr125-250-300' };
-    if (m === 'TY 125') return { model: 'ty125' };
   }
 
   if (brand.toLowerCase() === 'sherco') {

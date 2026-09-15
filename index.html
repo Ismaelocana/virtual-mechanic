@@ -774,12 +774,27 @@ const brandsData = {
       Motocross: { '2T': ['RM 85','RM 125','RM 250'], '4T': ['RM-Z 250','RM-Z 450','RMX 450Z'] }
     }
   },
+  Ducati: {
+    bg: '#CC0000', text: '#FFFFFF', dot: '#CC0000', sub: 'Racing DNA',
+    logo: '<text x="40" y="15" text-anchor="middle" dominant-baseline="central" font-family="Arial Black,sans-serif" font-weight="900" font-size="10" fill="white">DUCATI</text>',
+    categories: {
+      Enduro: { '4T': ['Desmo450 EDX','Desmo450 EDS'] },
+      Motocross: { '4T': ['Desmo450 MX'] }
+    }
+  },
   TM: {
     bg: '#555555', text: '#12B6EF', dot: '#12B6EF', sub: 'Racing',
     logo: '<text x="40" y="15" text-anchor="middle" dominant-baseline="central" font-family="Arial Black,sans-serif" font-weight="900" font-size="10" fill="#12B6EF">TM</text>',
     categories: {
       Enduro: { '2T': ['EN 125','EN 144','EN 250','EN 300'], '4T': ['EN 250F','EN 300F','EN 450F','EN 530F'] },
       Motocross: { '2T': ['MX 85','MX 125','MX 144','MX 250','MX 300'], '4T': ['MX 250F','MX 300F','MX 450F','MX 530F'] }
+    }
+  },
+  Scorpa: {
+    bg: '#E87722', text: '#FFFFFF', dot: '#E87722', sub: 'Trial',
+    logo: '<text x="40" y="15" text-anchor="middle" dominant-baseline="central" font-family="Arial Black,sans-serif" font-weight="900" font-size="10" fill="white">SCORPA</text>',
+    categories: {
+      Trial: { '2T': ['SC-R 125','SC-R 250','SC-R 300'], '4T': ['TY 125'] }
     }
   },
   TRS: {
@@ -1002,9 +1017,13 @@ function rangoAniosModelo(brand, category, engine, m) {
     else if (m === 'RMX 450Z') { fromYear = 2010; toYear = 2019; }
   } else if (brand === 'Fantic') {
     fromYear = 2020;
+  } else if (brand === 'Ducati') {
+    fromYear = (m === 'Desmo450 EDS') ? 2027 : 2026;
   } else if (brand === 'TM') {
     fromYear = 2000;
     if (m === 'EN 144' || m === 'MX 144' || m === 'EN 530F' || m === 'MX 530F') toYear = 2024;
+  } else if (brand === 'Scorpa') {
+    fromYear = 2011;
   } else if (brand === 'TRS') {
     if (m === 'One 125') fromYear = 2019;
     else if (m.endsWith('RR')) fromYear = 2017;

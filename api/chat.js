@@ -236,15 +236,37 @@ function normalizarModelo(brand, model) {
     // aparecen en el manual MY22 con datos técnicos reales, pero ya no en
     // el MY25 — descatalogados entre medias (ver rangoAniosModelo).
     // Sin manual oficial encontrado para MX 85 (Junior).
-    if (m === 'EN 125' || m === 'MX 125') return { model: { $in: ['en125-mx125-2025', 'en125-en144-mx125-mx144-2022'] } };
-    if (m === 'EN 144' || m === 'MX 144') return { model: 'en125-en144-mx125-mx144-2022' };
-    if (m === 'EN 250' || m === 'EN 300' || m === 'MX 250' || m === 'MX 300') {
-      return { model: { $in: ['en250-300-mx250-300-2025', 'en250-300-mx250-300-2022'] } };
-    }
+    if (m === 'EN 125' || m === 'MX 125') return { model: { $in: ['en125-mx125', 'en125-en144-mx125-mx144'] } };
+    if (m === 'EN 144' || m === 'MX 144') return { model: 'en125-en144-mx125-mx144' };
+    if (m === 'EN 250' || m === 'EN 300' || m === 'MX 250' || m === 'MX 300') return { model: 'en250-300-mx250-300' };
     if (m === 'EN 250F' || m === 'EN 300F' || m === 'EN 450F' || m === 'MX 250F' || m === 'MX 300F' || m === 'MX 450F') {
-      return { model: { $in: ['en250f-300f-450f-mx250f-300f-450f-2025', 'en250f-300f-450f-530f-mx250f-300f-450f-530f-2022'] } };
+      return { model: { $in: ['en250f-300f-450f-mx250f-300f-450f', 'en250f-300f-450f-530f-mx250f-300f-450f-530f'] } };
     }
-    if (m === 'EN 530F' || m === 'MX 530F') return { model: 'en250f-300f-450f-530f-mx250f-300f-450f-530f-2022' };
+    if (m === 'EN 530F' || m === 'MX 530F') return { model: 'en250f-300f-450f-530f-mx250f-300f-450f-530f' };
+  }
+
+  if (brand.toLowerCase() === 'ducati') {
+    // Fuente: ducati.com — fabricante oficial, buscador de manuales en
+    // ducati.com/ww/en/service-maintenance/manuals-genuine-parts-and-
+    // maintenance-schedules (selector Family=Off-Road / Model / Year).
+    // Marca recién estrenada en off-road (Desmo450 MX lanzado en 2025);
+    // un único manual por modelo, sin histórico de años.
+    if (m === 'DESMO450 MX') return { model: 'desmo450mx' };
+    if (m === 'DESMO450 EDX') return { model: 'desmo450edx' };
+    if (m === 'DESMO450 EDS') return { model: 'desmo450eds' };
+  }
+
+  if (brand.toLowerCase() === 'scorpa') {
+    // Fuente: scorpa-motorcycles.com (fabricante oficial; Scorpa pertenece
+    // al grupo Sherco desde 2018 — el propio manual TY 125 menciona
+    // "SHERCO Dealer"). Hub de manuales en scorpa-motorcycles.com/en/
+    // download/manuals, con archivo histórico real desde 2011.
+    // La gama competición se llama "SC-R Racing" en el propio manual
+    // (125/250/300 combinados en un documento), aunque la web actual
+    // vende los mismos modelos como "SC-F"/"SC-E" (kick/electric start) —
+    // se usa el nombre confirmado dentro del manual, no el de marketing.
+    if (m === 'SC-R 125' || m === 'SC-R 250' || m === 'SC-R 300') return { model: 'scr125-250-300' };
+    if (m === 'TY 125') return { model: 'ty125' };
   }
 
   if (brand.toLowerCase() === 'sherco') {

@@ -8,7 +8,7 @@ Asistente mecánico con IA especializado en motos de enduro, motocross y trial. 
 - **Backend producción**: Vercel Serverless (`api/`)
 - **Backend local**: Express en `server.js` (puerto 3000)
 - **IA**: Anthropic Claude (`claude-sonnet-4-6`), vía `@anthropic-ai/sdk`. Soporta visión (análisis de fotos).
-- **Auth**: Clerk (magic link passwordless). Dominio: `clerk.virtualmechanic.es`. Publishable key hardcodeada en `index.html`.
+- **Auth**: Clerk (código de 6 dígitos por email, passwordless). Dominio: `clerk.virtualmechanic.es`. Publishable key hardcodeada en `index.html`.
 - **RAG**: Voyage AI (embeddings `voyage-3`) + Pinecone (índice `virtual-mechanic`). Filtra por `brand`, `model`, `year`.
 - **Almacenamiento**: Upstash Redis (historial de chats, garaje, analytics).
 - **Manuales**: Archivos `.txt` locales en `manuales/`, indexados en Pinecone por chunks. 614 archivos de 7 marcas.
@@ -54,8 +54,9 @@ index.html → Clerk verifica sesión → home
 
 ## Auth (Clerk)
 
-- Magic link (passwordless). El usuario introduce su email y recibe un enlace.
-- Flujo: sign-in si el usuario existe, sign-up automático si es nuevo.
+- Código de 6 dígitos por email (passwordless, estrategia `email_code`). El usuario introduce su email, recibe un código y lo escribe en la app.
+- Flujo: sign-in si el usuario existe, sign-up automático si es nuevo (requiere "Email verification code" activado para registro en el dashboard de Clerk).
+- `LOGIN_OTP = true` en `index.html`. Si se pone a `false`, se vuelve a enviar enlace mágico. Los enlaces mágicos ya enviados se aceptan siempre (bloque `isMagicLink`).
 - `CLERK_ENABLED = true` en `index.html`. Si se pone a `false`, la app salta directamente al home sin auth.
 - Al hacer login se guarda `window.currentUserId` = Clerk user ID, usado para historial y garaje.
 - `signOut()` limpia la sesión y vuelve a la pantalla de login.

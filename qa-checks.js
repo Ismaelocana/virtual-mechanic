@@ -8,8 +8,8 @@
 //      código esperado (401 los que exigen JWT de Clerk, 400 los que solo
 //      exigen un userId) — confirma que la función no está rota, sin gastar
 //      una sola llamada a Claude/Pinecone/Voyage.
-//   4. El flujo de "enviar enlace mágico" de Clerk acepta la petición y
-//      muestra "Revisa tu correo" — sin completar un login real.
+//   4. El flujo de "enviar código de acceso" de Clerk acepta la petición y
+//      muestra "Introduce el código" — sin completar un login real.
 //
 // Uso: node qa-checks.js
 // Variables de entorno: ADMIN_PASSWORD (opcional; si falta, ese check falla
@@ -137,7 +137,7 @@ async function comprobarAuth() {
   }
 }
 
-// ── 4. Flujo de enlace mágico de Clerk (sin completar login real) ────────────
+// ── 4. Flujo de código de acceso de Clerk (sin completar login real) ─────────
 // NOTA: Clerk protege este formulario con Cloudflare Turnstile (#clerk-captcha),
 // un sistema anti-bot que puede detectar y bloquear precisamente un navegador
 // headless como este. Por eso este check es INFORMATIVO: si falla, se anota
@@ -145,11 +145,11 @@ async function comprobarAuth() {
 // contrario tendríamos falsos positivos semanales por el propio anti-bot,
 // no por un fallo real de la app.
 async function comprobarLoginClerk() {
-  console.log('\n── Login (enlace mágico de Clerk) — informativo ──');
+  console.log('\n── Login (código de acceso de Clerk) — informativo ──');
   const { chromium } = require('playwright');
   // Email dedicado a este chequeo: nunca se lee la bandeja ni se completa el
-  // login. Solo importa que Clerk acepte la petición y muestre "Revisa tu
-  // correo" — así no generamos un enlace mágico semanal a un buzón real.
+  // login. Solo importa que Clerk acepte la petición y muestre "Introduce el
+  // código" — así no generamos un acceso semanal a un buzón real.
   const EMAIL = 'qa-weekly-check@virtualmechanic.es';
 
   const browser = await chromium.launch({ headless: true });
@@ -162,17 +162,17 @@ async function comprobarLoginClerk() {
     await page.click('#btn-login');
 
     const resultado = await page.waitForFunction(() => {
-      const sent = document.getElementById('login-sent');
+      const sent = document.getElementById('login-code');
       const err = document.getElementById('login-err');
       if (sent && sent.style.display === 'flex') return { ok: true };
       if (err && err.textContent.trim() !== '') return { ok: false, error: err.textContent.trim() };
       return false;
     }, undefined, { timeout: 25000 }).then(h => h.jsonValue());
 
-    registrar('Clerk acepta la petición de enlace mágico', resultado.ok,
-      resultado.ok ? 'Apareció "Revisa tu correo"' : `Error en la UI: "${resultado.error}"`, true);
+    registrar('Clerk acepta la petición de código de acceso', resultado.ok,
+      resultado.ok ? 'Apareció "Introduce el código"' : `Error en la UI: "${resultado.error}"`, true);
   } catch (e) {
-    registrar('Clerk acepta la petición de enlace mágico', false,
+    registrar('Clerk acepta la petición de código de acceso', false,
       `${e.message} (puede deberse al anti-bot de Cloudflare Turnstile, no necesariamente a un fallo real)`, true);
   } finally {
     await browser.close();

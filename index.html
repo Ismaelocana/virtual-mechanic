@@ -347,7 +347,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <img src="/icons/icon.png" style="width:64px;height:64px;border-radius:18px;object-fit:cover">
     <div class="login-head">
       <h1>Virtual Mechanic</h1>
-      <p id="login-subtitle">Introduce tu correo para recibir<br>un enlace de acceso</p>
+      <p id="login-subtitle">Introduce tu correo para recibir<br>un código de acceso</p>
     </div>
     <div id="login-fields" class="login-fields">
       <input type="email" id="login-email" class="login-input" placeholder="tu@correo.com" autocomplete="email" />
@@ -1763,16 +1763,11 @@ function mostrarOnboardingSiNecesario() {
 // ── Clerk auth ────────────────────────────────────────────────────────────────
 const CLERK_ENABLED = true;
 
-// Login por código de 6 dígitos (en vez de enlace mágico). En pruebas: solo
-// se activa entrando con /app?otp=1 — sessionStorage lo conserva aunque Clerk
-// haga su redirect interno durante load() y quite los parámetros de la URL.
-const LOGIN_OTP = (() => {
-  try {
-    if (new URLSearchParams(window.location.search).has('otp')) sessionStorage.setItem('vm_login_otp', '1');
-    return sessionStorage.getItem('vm_login_otp') === '1';
-  } catch { return false; }
-})();
-if (LOGIN_OTP) document.getElementById('login-subtitle').innerHTML = 'Introduce tu correo para recibir<br>un código de acceso';
+// Login por código de 6 dígitos. Poner a false para volver a enviar enlace
+// mágico. Los enlaces ya enviados se siguen aceptando en ambos casos (ver el
+// bloque isMagicLink más abajo).
+const LOGIN_OTP = true;
+if (!LOGIN_OTP) document.getElementById('login-subtitle').innerHTML = 'Introduce tu correo para recibir<br>un enlace de acceso';
 
 (async () => {
   if (!CLERK_ENABLED) { window.currentUserId = null; showScreen('home'); return; }

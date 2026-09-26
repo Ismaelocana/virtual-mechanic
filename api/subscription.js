@@ -14,6 +14,7 @@ module.exports = async (req, res) => {
   const sub = await getSubscription(userId);
   return res.status(200).json({
     premium: sub.premium,
+    source: sub.source,   // 'stripe' | 'google' | 'apple' | null
     plan: sub.plan,
     premiumUntil: sub.premiumUntil || null,
     status: sub.status,

@@ -116,12 +116,131 @@ function _flatToObj(arr) {
   return o;
 }
 
-// Lee el estado de suscripción de un usuario. Siempre devuelve un objeto normalizado
-// (por defecto, usuario gratuito). El acceso premium se decide por `premiumUntil`.
+// ── Suscripciones multifuente ────────────────────────────────────────────────
+// Cada fuente de pago tiene su propio registro y solo escribe en él:
+//   vm:sub:{userId}:stripe | :google | :apple
+//     source, status, plan, premiumUntil, externalId, autoRenew, updatedAt
+//     (+ customerId en Stripe)
+// y un resumen que se recalcula tras cada escritura:
+//   vm:sub:{userId}
+//     schema=2, premium, premiumUntil, source, status, plan, updatedAt
+// esPremium() y getSubscription() solo leen el resumen, así que funcionan
+// igual pague el usuario donde pague. Toda escritura pasa por
+// guardarSuscripcionFuente().
+const FUENTES_PAGO = ['stripe', 'google', 'apple'];
+const SCHEMA_SUSCRIPCION = '2';
+const CAMPOS_ANTIGUOS = ['subscriptionId', 'customerId'];
+
+const claveResumen = userId => `vm:sub:${userId}`;
+const claveFuente = (userId, fuente) => `vm:sub:${userId}:${fuente}`;
+
+function _normalizarFuente(fuente, raw) {
+  const premiumUntil = raw.premiumUntil ? Number(raw.premiumUntil) : 0;
+  return {
+    source: fuente,
+    premium: premiumUntil > Date.now(),
+    premiumUntil,
+    status: raw.status || 'none',
+    plan: raw.plan || null,
+    externalId: raw.externalId || null,
+    autoRenew: raw.autoRenew === '1',
+    updatedAt: raw.updatedAt ? Number(raw.updatedAt) : 0,
+    customerId: raw.customerId || null,
+  };
+}
+
+// Registro antiguo (antes de multifuente): un único hash vm:sub:{userId} sin
+// `schema`, siempre de Stripe. Devuelve los campos que tendría en su registro
+// de fuente, o null si no hay nada que migrar.
+function _registroAntiguoAStripe(resumenRaw) {
+  if (!resumenRaw || resumenRaw.schema === SCHEMA_SUSCRIPCION) return null;
+  if (!Object.keys(resumenRaw).length) return null;
+  return {
+    source: 'stripe',
+    status: resumenRaw.status || 'none',
+    plan: resumenRaw.plan || '',
+    premiumUntil: resumenRaw.premiumUntil || 0,
+    externalId: resumenRaw.subscriptionId || '',
+    autoRenew: '',   // desconocido: lo rellenará el próximo evento de Stripe
+    updatedAt: resumenRaw.updatedAt || Date.now(),
+    customerId: resumenRaw.customerId || '',
+  };
+}
+
+async function _hset(clave, campos) {
+  const args = ['HSET', clave];
+  for (const [k, v] of Object.entries(campos)) args.push(k, v === null || v === undefined ? '' : String(v));
+  return redisCommand(args);
+}
+
+// Elige el resumen a partir de los registros de fuente: manda la fuente con el
+// premiumUntil más lejano; si ninguna está activa, la actualizada más reciente.
+function _calcularResumen(fuentes) {
+  const lista = Object.values(fuentes);
+  const ahora = Date.now();
+  const activas = lista.filter(f => f.premiumUntil > ahora).sort((a, b) => b.premiumUntil - a.premiumUntil);
+  const principal = activas[0] || lista.sort((a, b) => b.updatedAt - a.updatedAt)[0] || null;
+  return {
+    schema: SCHEMA_SUSCRIPCION,
+    premium: activas.length ? '1' : '0',
+    premiumUntil: activas.length ? activas[0].premiumUntil : 0,
+    source: principal ? principal.source : '',
+    status: principal ? principal.status : 'none',
+    plan: principal && principal.plan ? principal.plan : '',
+    updatedAt: ahora,
+  };
+}
+
+// Lee los registros de todas las fuentes existentes del usuario.
+async function getFuentesSuscripcion(userId) {
+  const fuentes = {};
+  for (const fuente of FUENTES_PAGO) {
+    const raw = _flatToObj(await redisCommand(['HGETALL', claveFuente(userId, fuente)]));
+    if (Object.keys(raw).length) fuentes[fuente] = _normalizarFuente(fuente, raw);
+  }
+  return fuentes;
+}
+
+// Pasa un registro antiguo al formato multifuente (idempotente). Guarda antes
+// una copia del hash original en vm:subbak:{userId} durante 90 días.
+// Con { simular: true } no escribe nada y devuelve lo que haría.
+async function migrarSuscripcionAntigua(userId, { simular = false } = {}) {
+  const resumenRaw = _flatToObj(await redisCommand(['HGETALL', claveResumen(userId)]));
+  const stripe = _registroAntiguoAStripe(resumenRaw);
+  if (!stripe) return { migrado: false, antes: resumenRaw };
+
+  const fuentes = await getFuentesSuscripcion(userId);
+  if (!fuentes.stripe) fuentes.stripe = _normalizarFuente('stripe', stripe);
+  const resumen = _calcularResumen(fuentes);
+  const resultado = { migrado: true, antes: resumenRaw, stripe, resumen };
+  if (simular) return resultado;
+
+  await redisCommand(['SET', `vm:subbak:${userId}`, JSON.stringify(resumenRaw), 'EX', String(90 * 86400)]);
+  const existe = await redisCommand(['EXISTS', claveFuente(userId, 'stripe')]);
+  if (!existe) await _hset(claveFuente(userId, 'stripe'), stripe);
+  await _hset(claveResumen(userId), resumen);
+  await redisCommand(['HDEL', claveResumen(userId), ...CAMPOS_ANTIGUOS]);
+  return resultado;
+}
+
+// Única vía de escritura del estado de pago: actualiza (fusiona) el registro de
+// UNA fuente y recalcula el resumen. `campos` usa los nombres del registro de
+// fuente (status, plan, premiumUntil, externalId, autoRenew, customerId).
+async function guardarSuscripcionFuente(userId, fuente, campos) {
+  if (!FUENTES_PAGO.includes(fuente)) throw new Error(`Fuente de pago desconocida: ${fuente}`);
+  await migrarSuscripcionAntigua(userId);
+  await _hset(claveFuente(userId, fuente), { ...campos, source: fuente, updatedAt: Date.now() });
+  const resumen = _calcularResumen(await getFuentesSuscripcion(userId));
+  await _hset(claveResumen(userId), resumen);
+  return resumen;
+}
+
+// Estado de suscripción del usuario (resumen). Siempre devuelve un objeto
+// normalizado (por defecto, usuario gratuito). Premium se decide por `premiumUntil`.
 async function getSubscription(userId) {
   let raw = {};
   try {
-    raw = _flatToObj(await redisCommand(['HGETALL', `vm:sub:${userId}`]));
+    raw = _flatToObj(await redisCommand(['HGETALL', claveResumen(userId)]));
   } catch (e) {
     console.error('getSubscription error:', e.message);
   }
@@ -129,30 +248,39 @@ async function getSubscription(userId) {
   return {
     premium: premiumUntil > Date.now(),
     premiumUntil,
+    // Registro antiguo sin `source`: solo podía venir de Stripe
+    source: raw.source || (raw.schema !== SCHEMA_SUSCRIPCION && raw.subscriptionId ? 'stripe' : null),
     status: raw.status || 'none',
     plan: raw.plan || null,
-    customerId: raw.customerId || null,
-    subscriptionId: raw.subscriptionId || null,
   };
 }
 
-// Comprobación ligera de premium (usada por chat.js más adelante).
+// Registro de una fuente concreta (p. ej. el customerId de Stripe para el
+// checkout y el portal). Si el usuario aún tiene el registro antiguo, se lee de ahí.
+async function getSuscripcionFuente(userId, fuente) {
+  try {
+    const raw = _flatToObj(await redisCommand(['HGETALL', claveFuente(userId, fuente)]));
+    if (Object.keys(raw).length) return _normalizarFuente(fuente, raw);
+    if (fuente === 'stripe') {
+      const antiguo = _registroAntiguoAStripe(_flatToObj(await redisCommand(['HGETALL', claveResumen(userId)])));
+      if (antiguo) return _normalizarFuente('stripe', antiguo);
+    }
+  } catch (e) {
+    console.error('getSuscripcionFuente error:', e.message);
+  }
+  return _normalizarFuente(fuente, {});
+}
+
+// Comprobación ligera de premium (usada por chat.js). Lee solo el resumen.
 // Fail-safe: ante cualquier fallo, devuelve false (trata al usuario como gratuito).
 async function esPremium(userId) {
   try {
-    const v = await redisCommand(['HGET', `vm:sub:${userId}`, 'premiumUntil']);
+    const v = await redisCommand(['HGET', claveResumen(userId), 'premiumUntil']);
     return v ? Number(v) > Date.now() : false;
   } catch (e) {
     console.error('esPremium error:', e.message);
     return false;
   }
-}
-
-// Escribe campos en el hash de suscripción del usuario (vm:sub:{userId}).
-async function hsetSubscription(userId, fields) {
-  const args = ['HSET', `vm:sub:${userId}`];
-  for (const [k, v] of Object.entries(fields)) args.push(k, String(v));
-  return redisCommand(args);
 }
 
 // Mapa inverso Stripe customer -> userId, para resolver el usuario en el webhook.
@@ -173,9 +301,13 @@ module.exports = {
   fetchWithTimeout,
   verificarSesion,
   redisCommand,
+  FUENTES_PAGO,
   getSubscription,
+  getSuscripcionFuente,
+  getFuentesSuscripcion,
+  guardarSuscripcionFuente,
+  migrarSuscripcionAntigua,
   esPremium,
-  hsetSubscription,
   mapCustomerToUser,
   getUserByCustomer,
   mondayOf,

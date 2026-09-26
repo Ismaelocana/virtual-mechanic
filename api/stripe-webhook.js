@@ -9,7 +9,7 @@
 // La firma se verifica a mano con crypto (HMAC-SHA256), sin el SDK de Stripe:
 // el tracer de @vercel/node no empaqueta ese paquete (ver api/_stripe.js).
 const crypto = require('crypto');
-const { hsetSubscription, mapCustomerToUser, getUserByCustomer } = require('./_common');
+const { guardarSuscripcionFuente, mapCustomerToUser, getUserByCustomer } = require('./_common');
 const { stripeRequest } = require('./_stripe');
 
 // ── Raw body ────────────────────────────────────────────────────────────────
@@ -89,14 +89,13 @@ function planDesdePrecio(sub) {
 async function guardarSuscripcion(userId, sub) {
   const activa = ['active', 'trialing'].includes(sub.status);
   const premiumUntil = activa ? finDePeriodoMs(sub) : 0;
-  await hsetSubscription(userId, {
-    premium: premiumUntil > Date.now() ? '1' : '0',
+  await guardarSuscripcionFuente(userId, 'stripe', {
     premiumUntil,
     status: sub.status || 'unknown',
     plan: planDesdePrecio(sub),
-    subscriptionId: sub.id || '',
+    externalId: sub.id || '',
+    autoRenew: activa && !sub.cancel_at_period_end ? '1' : '0',
     customerId: sub.customer || '',
-    updatedAt: Date.now(),
   });
   if (sub.customer) await mapCustomerToUser(sub.customer, userId);
   console.log(`[webhook] ${userId} -> premium=${premiumUntil > Date.now()} status=${sub.status} hasta=${new Date(premiumUntil).toISOString()}`);
@@ -134,12 +133,11 @@ async function manejarEvento(event) {
     case 'customer.subscription.deleted': {
       const userId = await resolverUserId(obj);
       if (!userId) { console.error('[webhook] sin userId en subscription.deleted', obj.id); return; }
-      await hsetSubscription(userId, {
-        premium: '0',
+      await guardarSuscripcionFuente(userId, 'stripe', {
         premiumUntil: 0,
         status: 'canceled',
-        subscriptionId: obj.id || '',
-        updatedAt: Date.now(),
+        externalId: obj.id || '',
+        autoRenew: '0',
       });
       console.log(`[webhook] ${userId} -> premium=false (cancelada)`);
       break;
@@ -161,7 +159,7 @@ async function manejarEvento(event) {
     case 'invoice.payment_failed': {
       const userId = await resolverUserId(obj);
       if (!userId) return;
-      await hsetSubscription(userId, { status: 'past_due', updatedAt: Date.now() });
+      await guardarSuscripcionFuente(userId, 'stripe', { status: 'past_due' });
       console.log(`[webhook] ${userId} -> pago fallido (past_due)`);
       break;
     }

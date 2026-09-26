@@ -1,6 +1,6 @@
 // POST /api/stripe-portal — crea una sesión del Customer Portal de Stripe para
 // que el usuario autenticado gestione o cancele su suscripción. Devuelve { url }.
-const { verificarSesion, getSubscription } = require('./_common');
+const { verificarSesion, getSuscripcionFuente } = require('./_common');
 const { stripeRequest } = require('./_stripe');
 
 module.exports = async (req, res) => {
@@ -18,7 +18,7 @@ module.exports = async (req, res) => {
   }
 
   try {
-    const sub = await getSubscription(userId);
+    const sub = await getSuscripcionFuente(userId, 'stripe');
     if (!sub.customerId) {
       return res.status(404).json({ error: 'No tienes ninguna suscripción todavía' });
     }

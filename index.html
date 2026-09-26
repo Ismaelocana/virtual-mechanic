@@ -274,6 +274,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .sub-status { min-height: 20px; display: flex; flex-direction: column; align-items: center; gap: 4px; }
 .premium-badge { display: inline-flex; align-items: center; gap: 5px; padding: 4px 12px; background: var(--brand-soft-bg); border: 1px solid var(--brand-soft-border); border-radius: 20px; font-size: 12px; font-weight: 600; color: var(--brand-soft-text); }
 .sub-status .btn-text { font-size: 12px; }
+.sub-status .sub-gestion { font-size: 12px; color: var(--text-tertiary); }
 .modal-overlay { position: absolute; inset: 0; background: rgba(20,15,5,.5); display: none; align-items: center; justify-content: center; padding: 1.5rem; z-index: 100; }
 .modal-overlay.show { display: flex; }
 .modal-box { background: var(--surface); border-radius: 20px; padding: 1.75rem 1.5rem; width: 100%; max-width: 320px; text-align: center; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,.25); }
@@ -2117,13 +2118,21 @@ function leerCacheSuscripcion(userId) {
   } catch (e) { return null; }
 }
 
-function guardarCacheSuscripcion(userId, premium) {
-  try { localStorage.setItem(SUB_CACHE_PREFIX + userId, JSON.stringify({ premium })); } catch (e) {}
+function guardarCacheSuscripcion(userId, premium, source) {
+  try { localStorage.setItem(SUB_CACHE_PREFIX + userId, JSON.stringify({ premium, source: source || null })); } catch (e) {}
 }
 
-function renderSubStatus(el, premium) {
+// Cada suscripción se gestiona donde se pagó: Stripe (web) con el portal;
+// Google Play y App Store, desde la propia tienda.
+const TIENDA_SUSCRIPCION = { google: 'Google Play', apple: 'la App Store' };
+
+function renderSubStatus(el, premium, source) {
+  const tienda = TIENDA_SUSCRIPCION[source];
+  const gestion = tienda
+    ? `<small class="sub-gestion">Gestiona tu suscripción desde ${tienda}</small>`
+    : `<button class="btn-text" onclick="abrirPortal()">Gestionar suscripción</button>`;
   el.innerHTML = premium
-    ? `<div class="premium-badge">⭐ Premium</div><div><button class="btn-text" onclick="abrirPortal()">Gestionar suscripción</button></div>`
+    ? `<div class="premium-badge">⭐ Premium</div><div>${gestion}</div>`
     : `<button class="btn-text" onclick="mostrarModalPremium()">Hazte Premium</button>`;
 }
 
@@ -2137,14 +2146,14 @@ async function cargarEstadoSuscripcion() {
   if (!el || !window.currentUserId) { if (el) el.innerHTML = ''; return; }
 
   const cache = leerCacheSuscripcion(window.currentUserId);
-  if (cache) renderSubStatus(el, cache.premium);
+  if (cache) renderSubStatus(el, cache.premium, cache.source);
 
   try {
     const r = await fetch('/api/subscription', { headers: await chatHeaders() });
     if (!r.ok) { if (!cache) el.innerHTML = ''; return; }
     const data = await r.json();
-    renderSubStatus(el, data.premium);
-    guardarCacheSuscripcion(window.currentUserId, data.premium);
+    renderSubStatus(el, data.premium, data.source);
+    guardarCacheSuscripcion(window.currentUserId, data.premium, data.source);
   } catch (e) {
     console.warn('[subscription] error:', e.message);
     if (!cache) el.innerHTML = '';
@@ -2197,8 +2206,8 @@ async function manejarRetornoCheckout() {
         const data = await r.json();
         if (data.premium) {
           const el = document.getElementById('sub-status');
-          if (el) renderSubStatus(el, true);
-          guardarCacheSuscripcion(window.currentUserId, true);
+          if (el) renderSubStatus(el, true, 'stripe');
+          guardarCacheSuscripcion(window.currentUserId, true, 'stripe');
           mostrarModalCheckout({
             icono: '🎉',
             titulo: '¡Pago completado!',

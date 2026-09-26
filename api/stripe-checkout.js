@@ -1,7 +1,7 @@
 // POST /api/stripe-checkout — crea una sesión de Stripe Checkout (suscripción)
 // asociada al userId de Clerk autenticado. Devuelve { url } para redirigir.
 // El estado premium NO se marca aquí: solo lo hará el webhook al confirmarse el pago.
-const { verificarSesion, getSubscription, hsetSubscription, mapCustomerToUser } = require('./_common');
+const { verificarSesion, getSubscription, getSuscripcionFuente, guardarSuscripcionFuente, mapCustomerToUser } = require('./_common');
 const { stripeRequest } = require('./_stripe');
 
 const PRICES = {
@@ -31,20 +31,30 @@ module.exports = async (req, res) => {
   }
 
   try {
-    // 3) Reutiliza el Customer del usuario si ya existe; si no, lo crea y lo guarda
-    const sub = await getSubscription(userId);
-    let customerId = sub.customerId;
+    // 3) Evita pagar dos veces: si ya es premium (por la web o por una tienda
+    //    de apps), no se abre otro checkout
+    const resumen = await getSubscription(userId);
+    if (resumen.premium) {
+      const donde = { google: 'Google Play', apple: 'la App Store' }[resumen.source];
+      return res.status(409).json({
+        error: donde ? `Ya eres Premium con una suscripción de ${donde}.` : 'Ya tienes una suscripción Premium activa.',
+      });
+    }
+
+    // 4) Reutiliza el Customer del usuario si ya existe; si no, lo crea y lo guarda
+    const stripeSub = await getSuscripcionFuente(userId, 'stripe');
+    let customerId = stripeSub.customerId;
     if (!customerId) {
       const customer = await stripeRequest('customers', { metadata: { clerkUserId: userId } });
       customerId = customer.id;
-      await hsetSubscription(userId, { customerId });
+      await guardarSuscripcionFuente(userId, 'stripe', { customerId });
       await mapCustomerToUser(customerId, userId);
     }
 
-    // 4) URLs de retorno (a partir del origen de la petición)
+    // 5) URLs de retorno (a partir del origen de la petición)
     const origin = req.headers.origin || (req.headers.host ? `https://${req.headers.host}` : 'https://virtual-mechanic.vercel.app');
 
-    // 5) Sesión de Checkout. client_reference_id y metadata llevan el userId de Clerk
+    // 6) Sesión de Checkout. client_reference_id y metadata llevan el userId de Clerk
     //    para que el webhook sepa a quién marcar como premium.
     const session = await stripeRequest('checkout/sessions', {
       mode: 'subscription',

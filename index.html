@@ -214,6 +214,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .login-sent h2 { font-size: 18px; font-weight: 600; color: var(--text-primary); }
 .login-sent p { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
 .login-sent small { font-size: 11px; color: var(--text-tertiary); }
+.login-code-input { text-align: center; font-size: 24px; font-weight: 600; letter-spacing: 8px; padding-left: 22px; }
 .btn-text { background: none; border: none; font-size: 13px; color: var(--brand); cursor: pointer; padding: 4px 0; font-family: inherit; }
 .foot { display: flex; flex-direction: column; align-items: center; gap: 6px; }
 .foot-row { display: flex; align-items: center; justify-content: center; gap: 7px; flex-wrap: wrap; }
@@ -346,7 +347,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <img src="/icons/icon.png" style="width:64px;height:64px;border-radius:18px;object-fit:cover">
     <div class="login-head">
       <h1>Virtual Mechanic</h1>
-      <p>Introduce tu correo para recibir<br>un enlace de acceso</p>
+      <p id="login-subtitle">Introduce tu correo para recibir<br>un enlace de acceso</p>
     </div>
     <div id="login-fields" class="login-fields">
       <input type="email" id="login-email" class="login-input" placeholder="tu@correo.com" autocomplete="email" />
@@ -361,6 +362,19 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <h2>Revisa tu correo</h2>
       <p>Hemos enviado un enlace a<br><strong id="login-email-sent" style="color:var(--text-primary)"></strong></p>
       <small>El enlace caduca en 10 minutos</small>
+      <button class="btn-text" onclick="volverAlLogin()">← Usar otro correo</button>
+    </div>
+    <div id="login-code" class="login-sent">
+      <div class="login-sent-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#EF9F27" stroke-width="1.5" stroke-linejoin="round"/><path d="M22 6L12 13 2 6" stroke="#EF9F27" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h2>Introduce el código</h2>
+      <p>Hemos enviado un código de 6 dígitos a<br><strong id="login-code-email" style="color:var(--text-primary)"></strong></p>
+      <input type="text" id="login-code-input" class="login-input login-code-input" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="······" />
+      <button class="btn-main" id="btn-verificar-codigo" onclick="verificarCodigo()">Entrar</button>
+      <div id="login-code-err" class="login-err"></div>
+      <small>¿No te llega? Revisa la carpeta de spam.</small>
+      <button class="btn-text" id="btn-reenviar-codigo" onclick="reenviarCodigo()">Reenviar código</button>
       <button class="btn-text" onclick="volverAlLogin()">← Usar otro correo</button>
     </div>
     <div class="foot" style="margin-top:auto;padding-top:20px">
@@ -1749,6 +1763,17 @@ function mostrarOnboardingSiNecesario() {
 // ── Clerk auth ────────────────────────────────────────────────────────────────
 const CLERK_ENABLED = true;
 
+// Login por código de 6 dígitos (en vez de enlace mágico). En pruebas: solo
+// se activa entrando con /app?otp=1 — sessionStorage lo conserva aunque Clerk
+// haga su redirect interno durante load() y quite los parámetros de la URL.
+const LOGIN_OTP = (() => {
+  try {
+    if (new URLSearchParams(window.location.search).has('otp')) sessionStorage.setItem('vm_login_otp', '1');
+    return sessionStorage.getItem('vm_login_otp') === '1';
+  } catch { return false; }
+})();
+if (LOGIN_OTP) document.getElementById('login-subtitle').innerHTML = 'Introduce tu correo para recibir<br>un código de acceso';
+
 (async () => {
   if (!CLERK_ENABLED) { window.currentUserId = null; showScreen('home'); return; }
 
@@ -1845,8 +1870,16 @@ async function loginConEmail() {
 
   const redirectUrl = window.location.origin + '/app';
 
-  let unsubListener = null;
   try {
+    if (LOGIN_OTP) {
+      const r = await iniciarLoginCodigo(email);
+      if (!r?.fallbackSignUp) return;
+      // Registro nuevo sin código habilitado en Clerk: se completa por enlace
+      const { startMagicLinkFlow } = r.fallbackSignUp.createMagicLinkFlow();
+      await esperarEnlaceMagico(startMagicLinkFlow, { redirectUrl }, email);
+      return;
+    }
+
     let flowFn, flowArgs;
 
     // Intentar sign-in (usuario existente)
@@ -1866,58 +1899,184 @@ async function loginConEmail() {
       flowArgs = { redirectUrl };
     }
 
-    // Mostrar "revisa tu correo"
-    document.getElementById('login-email-sent').textContent = email;
-    document.getElementById('login-fields').style.display = 'none';
-    document.getElementById('login-sent').style.display   = 'flex';
-
-    let sessionDone = false;
-    const handleSessionReady = async (sessionId) => {
-      if (sessionDone) return;
-      sessionDone = true;
-      if (unsubListener) { unsubListener(); unsubListener = null; }
-      if (sessionId) await window.Clerk.setSession(sessionId).catch(() => {});
-      irAlHome();
-    };
-
-    // Listener cross-tab: detecta la sesión aunque el enlace se abra en otra pestaña
-    unsubListener = window.Clerk.addListener(({ user }) => {
-      if (user) handleSessionReady(null);
-    });
-
-    const result = await flowFn(flowArgs);
-    if (result?.status === 'complete' && result?.createdSessionId) {
-      await handleSessionReady(result.createdSessionId);
-    } else if (result?.status === 'missing_requirements') {
-      const completed = await window.Clerk.client.signUp.update({}).catch(() => null);
-      if (completed?.status === 'complete' && completed?.createdSessionId) {
-        await handleSessionReady(completed.createdSessionId);
-      }
-    } else if (window.Clerk.session || window.Clerk.user) {
-      await handleSessionReady(null);
-    }
+    await esperarEnlaceMagico(flowFn, flowArgs, email);
   } catch (e) {
-    if (unsubListener) { unsubListener(); unsubListener = null; }
+    if (magicUnsub) { magicUnsub(); magicUnsub = null; }
     document.getElementById('login-fields').style.display = 'flex';
     document.getElementById('login-sent').style.display   = 'none';
+    document.getElementById('login-code').style.display   = 'none';
     btn.disabled = false;
     btn.textContent = 'Enviar';
-    document.getElementById('login-err').textContent = e.errors?.[0]?.longMessage || e.message || 'Error al enviar el enlace';
+    document.getElementById('login-err').textContent = e.errors?.[0]?.longMessage || e.message || 'Error al enviar el correo';
+  }
+}
+
+let magicUnsub = null;
+
+async function esperarEnlaceMagico(flowFn, flowArgs, email) {
+  // Mostrar "revisa tu correo"
+  document.getElementById('login-email-sent').textContent = email;
+  document.getElementById('login-fields').style.display = 'none';
+  document.getElementById('login-sent').style.display   = 'flex';
+
+  let sessionDone = false;
+  const handleSessionReady = async (sessionId) => {
+    if (sessionDone) return;
+    sessionDone = true;
+    if (magicUnsub) { magicUnsub(); magicUnsub = null; }
+    if (sessionId) await window.Clerk.setSession(sessionId).catch(() => {});
+    irAlHome();
+  };
+
+  // Listener cross-tab: detecta la sesión aunque el enlace se abra en otra pestaña
+  magicUnsub = window.Clerk.addListener(({ user }) => {
+    if (user) handleSessionReady(null);
+  });
+
+  const result = await flowFn(flowArgs);
+  if (result?.status === 'complete' && result?.createdSessionId) {
+    await handleSessionReady(result.createdSessionId);
+  } else if (result?.status === 'missing_requirements') {
+    const completed = await window.Clerk.client.signUp.update({}).catch(() => null);
+    if (completed?.status === 'complete' && completed?.createdSessionId) {
+      await handleSessionReady(completed.createdSessionId);
+    }
+  } else if (window.Clerk.session || window.Clerk.user) {
+    await handleSessionReady(null);
+  }
+}
+
+// ── Login por código de 6 dígitos ────────────────────────────────────────────
+let loginCodigo = null;       // { modo: 'signin' | 'signup', recurso, email, emailAddressId }
+let verificandoCodigo = false;
+let reenvioBloqueadoHasta = 0;
+
+// Devuelve { fallbackSignUp } si es un registro nuevo y la instancia de Clerk
+// aún no tiene habilitado el código como verificación de alta (solo enlace).
+async function iniciarLoginCodigo(email) {
+  try {
+    const si = await window.Clerk.client.signIn.create({ identifier: email });
+    const factor = si.supportedFirstFactors?.find(f => f.strategy === 'email_code');
+    if (!factor) throw new Error('El acceso por código no está disponible');
+    await si.prepareFirstFactor({ strategy: 'email_code', emailAddressId: factor.emailAddressId });
+    loginCodigo = { modo: 'signin', recurso: si, email, emailAddressId: factor.emailAddressId };
+  } catch (siErr) {
+    const code = siErr.errors?.[0]?.code;
+    if (code !== 'form_identifier_not_found' && code !== 'identifier_not_found') throw siErr;
+    const su = await window.Clerk.client.signUp.create({ emailAddress: email });
+    try {
+      await su.prepareEmailAddressVerification({ strategy: 'email_code' });
+    } catch (e) {
+      console.warn('[Clerk] código no habilitado para registro, se usa enlace:', e.errors?.[0]?.code || e.message);
+      return { fallbackSignUp: su };
+    }
+    loginCodigo = { modo: 'signup', recurso: su, email };
+  }
+  mostrarPasoCodigo(email);
+}
+
+function mostrarPasoCodigo(email) {
+  document.getElementById('login-code-email').textContent = email;
+  document.getElementById('login-fields').style.display = 'none';
+  document.getElementById('login-code').style.display   = 'flex';
+  document.getElementById('login-code-err').textContent = '';
+  const input = document.getElementById('login-code-input');
+  input.value = '';
+  reenvioBloqueadoHasta = Date.now() + 30000;
+  setTimeout(() => input.focus(), 50);
+}
+
+async function verificarCodigo() {
+  const errEl = document.getElementById('login-code-err');
+  const code = document.getElementById('login-code-input').value.replace(/\D/g, '');
+  if (code.length !== 6) { errEl.textContent = 'El código tiene 6 dígitos'; return; }
+  if (!loginCodigo || verificandoCodigo) return;
+
+  verificandoCodigo = true;
+  const btn = document.getElementById('btn-verificar-codigo');
+  btn.disabled = true;
+  btn.textContent = 'Verificando...';
+  errEl.textContent = '';
+
+  try {
+    let res;
+    if (loginCodigo.modo === 'signin') {
+      res = await loginCodigo.recurso.attemptFirstFactor({ strategy: 'email_code', code });
+    } else {
+      res = await loginCodigo.recurso.attemptEmailAddressVerification({ code });
+      if (res.status === 'missing_requirements') res = await window.Clerk.client.signUp.update({});
+    }
+    if (res.status === 'complete' && res.createdSessionId) {
+      await window.Clerk.setActive({ session: res.createdSessionId });
+      loginCodigo = null;
+      irAlHome();
+      return;
+    }
+    throw new Error('No se pudo completar el acceso. Inténtalo de nuevo.');
+  } catch (e) {
+    const c = e.errors?.[0]?.code;
+    errEl.textContent =
+      c === 'form_code_incorrect'   ? 'Código incorrecto' :
+      c === 'verification_expired'  ? 'El código ha caducado. Pide uno nuevo.' :
+      c === 'verification_failed'   ? 'Demasiados intentos. Pide un código nuevo.' :
+      (e.errors?.[0]?.longMessage || e.message || 'Error al verificar el código');
+  } finally {
+    verificandoCodigo = false;
+    btn.disabled = false;
+    btn.textContent = 'Entrar';
+  }
+}
+
+async function reenviarCodigo() {
+  if (!loginCodigo) return;
+  const errEl = document.getElementById('login-code-err');
+  const espera = Math.ceil((reenvioBloqueadoHasta - Date.now()) / 1000);
+  if (espera > 0) { errEl.textContent = `Espera ${espera} s antes de pedir otro código`; return; }
+  const btn = document.getElementById('btn-reenviar-codigo');
+  btn.disabled = true;
+  try {
+    if (loginCodigo.modo === 'signin') {
+      await loginCodigo.recurso.prepareFirstFactor({ strategy: 'email_code', emailAddressId: loginCodigo.emailAddressId });
+    } else {
+      await loginCodigo.recurso.prepareEmailAddressVerification({ strategy: 'email_code' });
+    }
+    reenvioBloqueadoHasta = Date.now() + 30000;
+    document.getElementById('login-code-input').value = '';
+    errEl.textContent = 'Te hemos enviado un código nuevo';
+  } catch (e) {
+    errEl.textContent = e.errors?.[0]?.longMessage || e.message || 'No se pudo reenviar el código';
+  } finally {
+    btn.disabled = false;
   }
 }
 
 function volverAlLogin() {
+  if (magicUnsub) { magicUnsub(); magicUnsub = null; }
+  loginCodigo = null;
   document.getElementById('login-fields').style.display = 'flex';
   document.getElementById('login-sent').style.display   = 'none';
+  document.getElementById('login-code').style.display   = 'none';
   const btn = document.getElementById('btn-login');
   btn.disabled = false;
   btn.textContent = 'Enviar';
   document.getElementById('login-email').value = '';
   document.getElementById('login-err').textContent = '';
+  document.getElementById('login-code-input').value = '';
+  document.getElementById('login-code-err').textContent = '';
 }
 
 document.getElementById('login-email')?.addEventListener('keydown', e => {
   if (e.key === 'Enter') loginConEmail();
+});
+
+document.getElementById('login-code-input')?.addEventListener('input', e => {
+  const limpio = e.target.value.replace(/\D/g, '').slice(0, 6);
+  if (limpio !== e.target.value) e.target.value = limpio;
+  if (limpio.length === 6) verificarCodigo();
+});
+
+document.getElementById('login-code-input')?.addEventListener('keydown', e => {
+  if (e.key === 'Enter') verificarCodigo();
 });
 
 async function signOut() {

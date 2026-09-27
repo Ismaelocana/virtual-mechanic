@@ -21,6 +21,7 @@ api/chat.js         → POST /api/chat — RAG + Claude (producción en Vercel)
 api/history.js      → GET/POST/DELETE /api/history — historial de chats por usuario (Redis)
 api/garage.js       → GET/POST/DELETE /api/garage — garaje de motos por usuario (Redis)
 api/admin.js        → Endpoint de administración
+api/account.js      → DELETE /api/account — elimina la cuenta (Stripe + Redis + Clerk). Página pública: /eliminar-cuenta
 server.js           → Servidor Express local equivalente
 pdf-a-texto.js      → Utilidad: convierte PDF a .txt (uso: node pdf-a-texto.js <in.pdf> <out.txt>)
 vercel.json         → Config de despliegue (static + serverless)
@@ -84,6 +85,7 @@ index.html → Clerk verifica sesión → home
 - **Historial**: `vm:history:{userId}` (lista de chatIds) + `vm:chat:{userId}:{chatId}` (JSON del chat)
 - **Garaje**: `vm:garage:{userId}` (lista JSON de motos)
 - **Analytics** (en `logConsulta`): `vm:total`, `vm:day:{fecha}`, `vm:brands`, `vm:manual` / `vm:general`, `vm:recent`
+- **Suscripciones (multifuente)**: `vm:sub:{userId}:{stripe|google|apple}` (registro de cada fuente de pago) + `vm:sub:{userId}` (resumen que lee `esPremium()`). Toda escritura pasa por `guardarSuscripcionFuente()` en `api/_common.js`. `vm:deleted:{userId}` (30 días) bloquea escrituras tras eliminar la cuenta.
 
 ## Variables de entorno
 
@@ -117,6 +119,11 @@ En Vercel las variables se configuran en el dashboard del proyecto.
 - **Mi garaje**: el usuario guarda motos para acceder directamente al chat sin pasar por la selección.
 - **Historial**: lista de chats anteriores por usuario, cargables y eliminables.
 - **PWA**: `manifest.json` + `sw.js` + botón "Instalar app" (aparece solo si el navegador soporta `beforeinstallprompt`).
+
+## App nativa Android (Capacitor)
+
+- La app carga `virtualmechanic.es/app` y añade `VirtualMechanicApp/Android` al User-Agent. `APP_NATIVA` en `index.html` lo detecta; `/app?app=android` lo simula en un navegador (`?app=web` lo quita).
+- Mientras no haya Google Play Billing: dentro de la app no hay botones de compra ni enlaces a Stripe (solo texto informativo), y `api/stripe-checkout.js` / `api/stripe-portal.js` rechazan peticiones de la app (`esAppNativa()`). `landing.html` y `precios.html` redirigen a `/app`.
 
 ## Despliegue
 

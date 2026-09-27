@@ -283,6 +283,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .modal-icon { font-size: 30px; margin-bottom: 4px; }
 .modal-box h2 { font-size: 18px; font-weight: 700; color: var(--text-primary); margin-bottom: 8px; }
 .modal-msg { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 18px; }
+.eliminar-aviso { background: var(--danger-soft-bg); color: var(--danger); border-radius: 10px; padding: 10px 12px; margin-bottom: 14px; }
+#modal-eliminar-cuenta .login-input { margin-bottom: 12px; text-align: center; }
+.btn-peligro { background: var(--danger); color: #fff; margin-top: 0; }
+.btn-peligro:hover { background: var(--danger); filter: brightness(.95); }
+.btn-peligro:disabled { opacity: .45; cursor: not-allowed; filter: none; }
 .premium-plans { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
 .premium-plans[hidden] { display: none; }
 .plan-btn { position: relative; width: 100%; padding: 14px 16px; border: 1.5px solid var(--border); border-radius: 14px; background: var(--surface-soft); cursor: pointer; font-family: inherit; display: flex; align-items: center; justify-content: space-between; text-align: left; }
@@ -450,6 +455,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <div class="account-section" style="display:flex;flex-direction:column;gap:2px">
       <button class="btn-theme-toggle account-action" onclick="toggleTema()">🌙 Modo oscuro</button>
       <button id="btn-signout" class="account-action danger" onclick="signOut()">Cerrar sesión</button>
+      <button id="btn-eliminar-cuenta-abrir" class="account-action danger" onclick="mostrarModalEliminarCuenta()">Eliminar cuenta</button>
     </div>
   </div>
 
@@ -573,6 +579,21 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
         </button>
       </div>
       <button class="btn-text" id="modal-premium-cerrar" onclick="cerrarModalPremium()">Seguir con el plan gratuito</button>
+    </div>
+  </div>
+
+  <!-- MODAL ELIMINAR CUENTA -->
+  <div id="modal-eliminar-cuenta" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close" onclick="cerrarModalEliminarCuenta()">✕</button>
+      <div class="modal-icon">⚠️</div>
+      <h2>Eliminar cuenta</h2>
+      <p class="modal-msg">Se borrarán tu cuenta, tu historial de consultas y las motos de tu garaje. <strong>No se puede deshacer.</strong></p>
+      <p id="eliminar-aviso-sub" class="modal-msg eliminar-aviso" hidden></p>
+      <input type="text" id="eliminar-confirmacion" class="login-input" placeholder="Escribe ELIMINAR" autocomplete="off" autocapitalize="characters" spellcheck="false" />
+      <button class="btn-main btn-peligro" id="btn-eliminar-cuenta" disabled onclick="eliminarCuenta()">Eliminar mi cuenta</button>
+      <div id="eliminar-err" class="login-err"></div>
+      <button class="btn-text" onclick="cerrarModalEliminarCuenta()">Cancelar</button>
     </div>
   </div>
 
@@ -2101,6 +2122,81 @@ async function signOut() {
   showScreen('login');
   volverAlLogin();
 }
+
+// ── Eliminar cuenta ───────────────────────────────────────────────────────────
+// Requisito de Google Play. El servidor (api/account.js) cancela Stripe y borra
+// Redis y el usuario de Clerk. Las suscripciones de tienda (Google Play / App
+// Store) no se pueden cancelar desde aquí: se avisa para que lo haga el usuario.
+let eliminandoCuenta = false;
+
+async function mostrarModalEliminarCuenta() {
+  const aviso = document.getElementById('eliminar-aviso-sub');
+  aviso.hidden = true;
+  document.getElementById('eliminar-confirmacion').value = '';
+  document.getElementById('btn-eliminar-cuenta').disabled = true;
+  document.getElementById('eliminar-err').textContent = '';
+  document.getElementById('modal-eliminar-cuenta').classList.add('show');
+
+  try {
+    const r = await fetch('/api/subscription', { headers: await chatHeaders() });
+    if (!r.ok) return;
+    const sub = await r.json();
+    if (!sub.premium) return;
+    const tienda = TIENDA_SUSCRIPCION[sub.source];
+    aviso.textContent = tienda
+      ? `Tienes Premium a través de ${tienda}. Cancélalo antes desde la tienda: nosotros no podemos cancelarlo y te seguiría cobrando.`
+      : 'Tu suscripción Premium se cancelará ahora y no se reembolsa el periodo que queda.';
+    aviso.hidden = false;
+  } catch (e) {
+    console.warn('[eliminar cuenta] estado de suscripción:', e.message);
+  }
+}
+
+function cerrarModalEliminarCuenta() {
+  if (eliminandoCuenta) return;
+  document.getElementById('modal-eliminar-cuenta').classList.remove('show');
+}
+
+async function eliminarCuenta() {
+  if (eliminandoCuenta) return;
+  if (document.getElementById('eliminar-confirmacion').value.trim().toUpperCase() !== 'ELIMINAR') return;
+  const btn = document.getElementById('btn-eliminar-cuenta');
+  const errEl = document.getElementById('eliminar-err');
+  eliminandoCuenta = true;
+  btn.disabled = true;
+  btn.textContent = 'Eliminando...';
+  errEl.textContent = '';
+
+  try {
+    const r = await fetch('/api/account', { method: 'DELETE', headers: await chatHeaders() });
+    const data = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(data.error || 'No se pudo eliminar la cuenta. Inténtalo de nuevo.');
+
+    const uid = window.currentUserId;
+    try { if (uid) localStorage.removeItem(SUB_CACHE_PREFIX + uid); } catch (e) {}
+    try { await window.Clerk.signOut(); } catch (e) {}   // el usuario ya no existe en Clerk
+    window.currentUserId = null;
+    document.getElementById('btn-historial').style.display = 'none';
+    eliminandoCuenta = false;
+    document.getElementById('modal-eliminar-cuenta').classList.remove('show');
+    showScreen('login');
+    volverAlLogin();
+    mostrarModalCheckout({
+      icono: '👋',
+      titulo: 'Cuenta eliminada',
+      mensaje: 'Hemos borrado tu cuenta y tus datos. Gracias por usar Virtual Mechanic.',
+    });
+  } catch (e) {
+    errEl.textContent = e.message;
+    btn.textContent = 'Eliminar mi cuenta';
+    btn.disabled = false;
+    eliminandoCuenta = false;
+  }
+}
+
+document.getElementById('eliminar-confirmacion')?.addEventListener('input', e => {
+  document.getElementById('btn-eliminar-cuenta').disabled = e.target.value.trim().toUpperCase() !== 'ELIMINAR';
+});
 
 // ── Historial ─────────────────────────────────────────────────────────────────
 function irAlHome() {

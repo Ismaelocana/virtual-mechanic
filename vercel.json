@@ -9,6 +9,7 @@
     { "src": "aviso-legal.html", "use": "@vercel/static" },
     { "src": "privacidad.html", "use": "@vercel/static" },
     { "src": "terminos.html", "use": "@vercel/static" },
+    { "src": "eliminar-cuenta.html", "use": "@vercel/static" },
     { "src": "manifest.json", "use": "@vercel/static" },
     { "src": "sw.js", "use": "@vercel/static" },
     { "src": "robots.txt", "use": "@vercel/static" },
@@ -25,7 +26,8 @@
     { "src": "api/stripe-portal.js", "use": "@vercel/node" },
     { "src": "api/subscription.js", "use": "@vercel/node" },
     { "src": "api/feedback.js", "use": "@vercel/node" },
-    { "src": "api/precios.js", "use": "@vercel/node" }
+    { "src": "api/precios.js", "use": "@vercel/node" },
+    { "src": "api/account.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/api/chat", "dest": "/api/chat.js" },
@@ -38,11 +40,13 @@
     { "src": "/api/subscription", "dest": "/api/subscription.js" },
     { "src": "/api/feedback", "dest": "/api/feedback.js" },
     { "src": "/api/precios", "dest": "/api/precios.js" },
+    { "src": "/api/account", "dest": "/api/account.js" },
     { "src": "/admin", "dest": "/admin.html" },
     { "src": "/precios", "dest": "/precios.html" },
     { "src": "/aviso-legal", "dest": "/aviso-legal.html" },
     { "src": "/privacidad", "dest": "/privacidad.html" },
     { "src": "/terminos", "dest": "/terminos.html" },
+    { "src": "/eliminar-cuenta", "dest": "/eliminar-cuenta.html" },
     { "src": "/manifest.json", "dest": "/manifest.json" },
     { "src": "/sw.js", "dest": "/sw.js" },
     { "src": "/icons/(.*)", "dest": "/icons/$1" },

@@ -89,7 +89,7 @@ function planDesdePrecio(sub) {
 async function guardarSuscripcion(userId, sub) {
   const activa = ['active', 'trialing'].includes(sub.status);
   const premiumUntil = activa ? finDePeriodoMs(sub) : 0;
-  await guardarSuscripcionFuente(userId, 'stripe', {
+  const resumen = await guardarSuscripcionFuente(userId, 'stripe', {
     premiumUntil,
     status: sub.status || 'unknown',
     plan: planDesdePrecio(sub),
@@ -97,6 +97,7 @@ async function guardarSuscripcion(userId, sub) {
     autoRenew: activa && !sub.cancel_at_period_end ? '1' : '0',
     customerId: sub.customer || '',
   });
+  if (!resumen) return;   // cuenta eliminada
   if (sub.customer) await mapCustomerToUser(sub.customer, userId);
   console.log(`[webhook] ${userId} -> premium=${premiumUntil > Date.now()} status=${sub.status} hasta=${new Date(premiumUntil).toISOString()}`);
 }

@@ -234,8 +234,24 @@ async function migrarSuscripcionAntigua(userId, { simular = false } = {}) {
 // Única vía de escritura del estado de pago: actualiza (fusiona) el registro de
 // UNA fuente y recalcula el resumen. `campos` usa los nombres del registro de
 // fuente (status, plan, premiumUntil, externalId, autoRenew, customerId).
+// Marca temporal de cuenta eliminada (api/account.js): los eventos de pago que
+// lleguen después (p. ej. la baja que Stripe notifica al borrar el cliente) no
+// deben volver a crear datos de un usuario que ya no existe.
+const claveCuentaEliminada = userId => `vm:deleted:${userId}`;
+async function marcarCuentaEliminada(userId) {
+  return redisCommand(['SET', claveCuentaEliminada(userId), '1', 'EX', String(30 * 86400)]);
+}
+async function desmarcarCuentaEliminada(userId) {
+  return redisCommand(['DEL', claveCuentaEliminada(userId)]);
+}
+
+// Devuelve null (sin escribir nada) si la cuenta se ha eliminado.
 async function guardarSuscripcionFuente(userId, fuente, campos) {
   if (!FUENTES_PAGO.includes(fuente)) throw new Error(`Fuente de pago desconocida: ${fuente}`);
+  if (await redisCommand(['EXISTS', claveCuentaEliminada(userId)])) {
+    console.log(`[suscripcion] ${userId} eliminado: se ignora la actualización de ${fuente}`);
+    return null;
+  }
   await migrarSuscripcionAntigua(userId);
   await _hset(claveFuente(userId, fuente), { ...campos, source: fuente, updatedAt: Date.now() });
   const resumen = _calcularResumen(await getFuentesSuscripcion(userId));
@@ -320,4 +336,6 @@ module.exports = {
   getUserByCustomer,
   mondayOf,
   esAppNativa,
+  marcarCuentaEliminada,
+  desmarcarCuentaEliminada,
 };

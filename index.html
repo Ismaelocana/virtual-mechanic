@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
 <title>Virtual Mechanic</title>
 <meta name="robots" content="noindex,follow">
 <link rel="manifest" href="/manifest.json">
@@ -105,6 +105,14 @@
 
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); display: flex; justify-content: center; align-items: center; min-height: 100vh; }
 #app { width: 375px; height: 680px; background: var(--surface); border-radius: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.15); overflow: hidden; display: flex; flex-direction: column; position: relative; }
+/* En el móvil la app ocupa toda la pantalla visible (dvh descuenta las barras
+   del navegador y, con interactive-widget=resizes-content, el teclado): la caja
+   de texto y el botón de enviar quedan siempre abajo y a la vista. La caja de
+   375x680 queda solo para verla en el ordenador. */
+@media (max-width: 500px) {
+  body { align-items: stretch; }
+  #app { width: 100%; height: 100vh; height: 100dvh; border-radius: 0; box-shadow: none; }
+}
 .screen { display: none; flex-direction: column; flex: 1; overflow: hidden; }
 .screen.active { display: flex; }
 #s-home { align-items: center; padding: 1.6rem 1.5rem 1.1rem; gap: .7rem; overflow-y: auto; scrollbar-width: none; -ms-overflow-style: none; }
@@ -193,7 +201,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .btn-photo { width: 36px; height: 36px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-soft); color: var(--text-secondary); cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .btn-mic { width: 36px; height: 36px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-soft); color: var(--text-secondary); cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .btn-mic.listening { background: var(--danger-soft-bg); border-color: var(--danger); color: var(--danger); animation: pulse 1.2s ease-in-out infinite; }
-#msg-input { flex: 1; border: 1px solid var(--border); border-radius: 12px; padding: 9px 12px; font-size: 13px; font-family: inherit; resize: none; min-height: 36px; max-height: 80px; line-height: 1.4; color: var(--text-primary); background: var(--surface); outline: none; }
+#msg-input { flex: 1; min-width: 0; border: 1px solid var(--border); border-radius: 12px; padding: 9px 12px; font-size: 13px; font-family: inherit; resize: none; min-height: 36px; max-height: 80px; line-height: 1.4; color: var(--text-primary); background: var(--surface); outline: none; }
 #msg-input:focus { border-color: var(--brand); }
 .btn-send { width: 36px; height: 36px; border: none; background: var(--brand); border-radius: 10px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .btn-send:hover { background: var(--brand-hover); }
@@ -554,7 +562,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <button class="btn-mic" id="btn-mic" style="display:none" onclick="toggleDictado()" title="Dictar por voz">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="6" y="1.5" width="4" height="8" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M4 8v.5a4 4 0 0 0 8 0V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M8 12.5V14.5M5.5 14.5H10.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
       </button>
-      <button class="btn-send" onclick="send()">
+      <button type="button" class="btn-send" onclick="send()" aria-label="Enviar" title="Enviar">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="#412402" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
     </div>
@@ -1579,7 +1587,21 @@ async function send() {
   }
 }
 
-function handleKey(e) { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); } }
+// Intro envía y Mayús+Intro hace salto de línea. En teclados de Android con
+// autocorrector el Intro no siempre llega como keydown 'Enter' (llega como
+// tecla 229 "Unidentified" y el navegador inserta un salto de línea): por eso
+// también se captura en beforeinput, que sí indica que es un salto de línea.
+let shiftEnIntro = false;
+function handleKey(e) {
+  shiftEnIntro = e.shiftKey;
+  if (e.key === 'Enter' && !e.shiftKey && !e.isComposing) { e.preventDefault(); send(); }
+}
+document.getElementById('msg-input')?.addEventListener('beforeinput', e => {
+  if ((e.inputType === 'insertLineBreak' || e.inputType === 'insertParagraph') && !shiftEnIntro) {
+    e.preventDefault();
+    setTimeout(send, 0);   // deja que el teclado confirme la última palabra antes de enviar
+  }
+});
 function resize(el) { el.style.height = 'auto'; el.style.height = Math.min(el.scrollHeight, 80) + 'px'; }
 function handlePhoto(e) {
   const f = e.target.files[0]; if (!f) return;

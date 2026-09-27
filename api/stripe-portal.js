@@ -1,6 +1,6 @@
 // POST /api/stripe-portal — crea una sesión del Customer Portal de Stripe para
 // que el usuario autenticado gestione o cancele su suscripción. Devuelve { url }.
-const { verificarSesion, getSuscripcionFuente } = require('./_common');
+const { verificarSesion, esAppNativa, getSuscripcionFuente } = require('./_common');
 const { stripeRequest } = require('./_stripe');
 
 module.exports = async (req, res) => {
@@ -12,6 +12,10 @@ module.exports = async (req, res) => {
 
   const userId = await verificarSesion(req);
   if (!userId) return res.status(401).json({ error: 'No autenticado' });
+
+  if (esAppNativa(req)) {
+    return res.status(403).json({ error: 'Gestiona tu suscripción desde virtualmechanic.es' });
+  }
 
   if (!process.env.STRIPE_SECRET_KEY) {
     return res.status(500).json({ error: 'Pagos no configurados (falta STRIPE_SECRET_KEY)' });

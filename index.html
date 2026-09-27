@@ -284,6 +284,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .modal-box h2 { font-size: 18px; font-weight: 700; color: var(--text-primary); margin-bottom: 8px; }
 .modal-msg { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 18px; }
 .premium-plans { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+.premium-plans[hidden] { display: none; }
 .plan-btn { position: relative; width: 100%; padding: 14px 16px; border: 1.5px solid var(--border); border-radius: 14px; background: var(--surface-soft); cursor: pointer; font-family: inherit; display: flex; align-items: center; justify-content: space-between; text-align: left; }
 .plan-btn:hover { border-color: var(--brand); background: var(--brand-soft-bg); }
 .plan-btn-highlight { border-color: var(--brand); background: var(--brand-soft-bg); }
@@ -558,9 +559,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <div class="modal-box">
       <button class="modal-close" onclick="cerrarModalPremium()">✕</button>
       <div class="modal-icon">⭐</div>
-      <h2>Hazte Premium</h2>
+      <h2 id="modal-premium-title">Hazte Premium</h2>
       <p id="modal-premium-msg" class="modal-msg">Disfruta de consultas ilimitadas con tu mecánico de IA.</p>
-      <div class="premium-plans">
+      <div class="premium-plans" id="modal-premium-plans">
         <button class="plan-btn" onclick="iniciarCheckout('monthly')">
           <span class="plan-name">Mensual</span>
           <span class="plan-price" id="modal-precio-mensual">…</span>
@@ -571,7 +572,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <span class="plan-price" id="modal-precio-anual">…</span>
         </button>
       </div>
-      <button class="btn-text" onclick="cerrarModalPremium()">Seguir con el plan gratuito</button>
+      <button class="btn-text" id="modal-premium-cerrar" onclick="cerrarModalPremium()">Seguir con el plan gratuito</button>
     </div>
   </div>
 
@@ -1768,6 +1769,24 @@ const CLERK_ENABLED = true;
 // mágico. Los enlaces ya enviados se siguen aceptando en ambos casos (ver el
 // bloque isMagicLink más abajo).
 const LOGIN_OTP = true;
+
+// ── App nativa (Capacitor) ────────────────────────────────────────────────────
+// La app Android carga esta misma web y añade "VirtualMechanicApp/Android" al
+// User-Agent (appendUserAgent en capacitor.config). Mientras la app no tenga
+// Google Play Billing, dentro de ella no se puede comprar ni enlazar al pago
+// (política de Google Play para apps de solo acceso). Para probarlo en un
+// navegador normal: /app?app=android (dura lo que la pestaña; ?app=web lo quita).
+const APP_NATIVA = (() => {
+  try {
+    const p = new URLSearchParams(window.location.search).get('app');
+    if (p === 'android') sessionStorage.setItem('vm_app', 'android');
+    if (p === 'web') sessionStorage.removeItem('vm_app');
+    if (navigator.userAgent.includes('VirtualMechanicApp/Android')) return 'android';
+    if (window.Capacitor?.getPlatform?.() === 'android') return 'android';
+    return sessionStorage.getItem('vm_app');
+  } catch { return null; }
+})();
+const TEXTO_PREMIUM_WEB = 'Puedes hacerte Premium desde nuestra web, virtualmechanic.es';
 if (!LOGIN_OTP) document.getElementById('login-subtitle').innerHTML = 'Introduce tu correo para recibir<br>un enlace de acceso';
 
 (async () => {
@@ -2128,12 +2147,18 @@ const TIENDA_SUSCRIPCION = { google: 'Google Play', apple: 'la App Store' };
 
 function renderSubStatus(el, premium, source) {
   const tienda = TIENDA_SUSCRIPCION[source];
+  // En la app nativa no se enlaza a Stripe (ni al checkout ni al portal)
   const gestion = tienda
     ? `<small class="sub-gestion">Gestiona tu suscripción desde ${tienda}</small>`
-    : `<button class="btn-text" onclick="abrirPortal()">Gestionar suscripción</button>`;
+    : APP_NATIVA
+      ? `<small class="sub-gestion">Gestiona tu suscripción desde la web</small>`
+      : `<button class="btn-text" onclick="abrirPortal()">Gestionar suscripción</button>`;
+  const gratuito = APP_NATIVA
+    ? `<small class="sub-gestion">Premium disponible en virtualmechanic.es</small>`
+    : `<button class="btn-text" onclick="mostrarModalPremium()">Hazte Premium</button>`;
   el.innerHTML = premium
     ? `<div class="premium-badge">⭐ Premium</div><div>${gestion}</div>`
-    : `<button class="btn-text" onclick="mostrarModalPremium()">Hazte Premium</button>`;
+    : gratuito;
 }
 
 // Muestra al instante el último estado de suscripción conocido (localStorage,
@@ -2279,15 +2304,24 @@ function pintarPreciosModal(data) {
 
 function mostrarModalPremium(resetAt, limitType) {
   const msgEl = document.getElementById('modal-premium-msg');
+  // En la app nativa, el modal solo informa: sin planes, precios ni botones de pago
+  const cierre = APP_NATIVA ? TEXTO_PREMIUM_WEB + '.' : 'Hazte Premium para consultas ilimitadas.';
   if (!resetAt) {
-    msgEl.textContent = 'Disfruta de consultas ilimitadas con tu mecánico de IA.';
+    msgEl.textContent = APP_NATIVA
+      ? `Premium te da consultas ilimitadas con tu mecánico de IA. ${TEXTO_PREMIUM_WEB}.`
+      : 'Disfruta de consultas ilimitadas con tu mecánico de IA.';
   } else if (limitType === 'week') {
-    msgEl.textContent = `Has alcanzado el límite semanal de 20 consultas gratuitas. Vuelven a estar disponibles el ${formatoFecha(resetAt)}. Hazte Premium para consultas ilimitadas.`;
+    msgEl.textContent = `Has alcanzado el límite semanal de 20 consultas gratuitas. Vuelven a estar disponibles el ${formatoFecha(resetAt)}. ${cierre}`;
   } else {
-    msgEl.textContent = `Has agotado tus 5 consultas gratuitas de hoy. Vuelven a estar disponibles el ${formatoFecha(resetAt)}. Hazte Premium para consultas ilimitadas.`;
+    msgEl.textContent = `Has agotado tus 5 consultas gratuitas de hoy. Vuelven a estar disponibles el ${formatoFecha(resetAt)}. ${cierre}`;
   }
+  document.getElementById('modal-premium-title').textContent =
+    APP_NATIVA ? (resetAt ? 'Consultas agotadas' : 'Premium') : 'Hazte Premium';
+  document.getElementById('modal-premium-plans').hidden = !!APP_NATIVA;
+  document.getElementById('modal-premium-cerrar').textContent =
+    APP_NATIVA ? 'Entendido' : 'Seguir con el plan gratuito';
   document.getElementById('modal-premium').classList.add('show');
-  cargarPreciosModal();
+  if (!APP_NATIVA) cargarPreciosModal();
 }
 
 function cerrarModalPremium() {
@@ -2295,6 +2329,7 @@ function cerrarModalPremium() {
 }
 
 async function iniciarCheckout(plan) {
+  if (APP_NATIVA) return;   // sin compras dentro de la app nativa
   try {
     const r = await fetch('/api/stripe-checkout', {
       method: 'POST',
@@ -2310,6 +2345,7 @@ async function iniciarCheckout(plan) {
 }
 
 async function abrirPortal() {
+  if (APP_NATIVA) return;
   try {
     const r = await fetch('/api/stripe-portal', { method: 'POST', headers: await chatHeaders() });
     const data = await r.json();

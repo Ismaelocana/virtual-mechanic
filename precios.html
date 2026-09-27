@@ -2,6 +2,11 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<script>
+// Dentro de la app nativa (o su simulación ?app=android) no se muestran páginas
+// con precios ni botones de compra: se vuelve a la app.
+try { if (navigator.userAgent.includes('VirtualMechanicApp/') || sessionStorage.getItem('vm_app') === 'android') location.replace('/app'); } catch (e) {}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Precios — Virtual Mechanic</title>
 <meta name="description" content="Precios del plan Premium de Virtual Mechanic: consultas ilimitadas a tu mecánico de enduro con IA. Plan gratuito con 5 consultas al día, sin tarjeta.">

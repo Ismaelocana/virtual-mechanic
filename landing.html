@@ -2,6 +2,11 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<script>
+// Dentro de la app nativa (o su simulación ?app=android) no se muestran páginas
+// con precios ni botones de compra: se vuelve a la app.
+try { if (navigator.userAgent.includes('VirtualMechanicApp/') || sessionStorage.getItem('vm_app') === 'android') location.replace('/app'); } catch (e) {}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Virtual Mechanic — Mecánico de enduro con IA basado en manuales oficiales</title>
 <meta name="description" content="Diagnostica averías de tu moto de enduro, motocross o trial con un mecánico de IA que consulta los manuales oficiales de KTM, Husqvarna, Sherco, GasGas, Beta, Rieju y Triumph. Pregunta, envía una foto, recibe una respuesta al momento.">

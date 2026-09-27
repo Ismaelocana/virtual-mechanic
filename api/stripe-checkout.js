@@ -1,7 +1,7 @@
 // POST /api/stripe-checkout — crea una sesión de Stripe Checkout (suscripción)
 // asociada al userId de Clerk autenticado. Devuelve { url } para redirigir.
 // El estado premium NO se marca aquí: solo lo hará el webhook al confirmarse el pago.
-const { verificarSesion, getSubscription, getSuscripcionFuente, guardarSuscripcionFuente, mapCustomerToUser } = require('./_common');
+const { verificarSesion, esAppNativa, getSubscription, getSuscripcionFuente, guardarSuscripcionFuente, mapCustomerToUser } = require('./_common');
 const { stripeRequest } = require('./_stripe');
 
 const PRICES = {
@@ -19,6 +19,10 @@ module.exports = async (req, res) => {
   // 1) Autenticación (mismo mecanismo que /api/chat)
   const userId = await verificarSesion(req);
   if (!userId) return res.status(401).json({ error: 'No autenticado' });
+
+  if (esAppNativa(req)) {
+    return res.status(403).json({ error: 'Las compras no están disponibles en la app. Puedes hacerte Premium desde virtualmechanic.es' });
+  }
 
   // 2) Configuración necesaria
   if (!process.env.STRIPE_SECRET_KEY) {

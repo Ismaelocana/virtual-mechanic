@@ -116,6 +116,14 @@ function _flatToObj(arr) {
   return o;
 }
 
+// ── App nativa ───────────────────────────────────────────────────────────────
+// La app Android (Capacitor) añade "VirtualMechanicApp/Android" al User-Agent.
+// Mientras no use Google Play Billing, las peticiones desde ella no pueden
+// abrir pagos de Stripe (política de Google Play para apps de solo acceso).
+function esAppNativa(req) {
+  return (req.headers['user-agent'] || '').includes('VirtualMechanicApp/');
+}
+
 // ── Suscripciones multifuente ────────────────────────────────────────────────
 // Cada fuente de pago tiene su propio registro y solo escribe en él:
 //   vm:sub:{userId}:stripe | :google | :apple
@@ -311,4 +319,5 @@ module.exports = {
   mapCustomerToUser,
   getUserByCustomer,
   mondayOf,
+  esAppNativa,
 };

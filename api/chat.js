@@ -435,6 +435,18 @@ INSTRUCCIÓN IMPORTANTE: Si, comparando las horas actuales y el historial contra
   }
 }
 
+// El frontend guarda en cada respuesta datos propios (usedManual, id, feedback)
+// para el badge de fuente y las valoraciones, y envía el historial tal cual.
+// La API de Claude solo acepta role y content y rechaza cualquier otro campo
+// ("Extra inputs are not permitted"), así que se limpia aquí: vale también para
+// chats guardados en Redis y para versiones del frontend ya abiertas.
+function limpiarMensajes(messages) {
+  if (!Array.isArray(messages)) return [];
+  return messages
+    .filter(m => m && (m.role === 'user' || m.role === 'assistant') && m.content)
+    .map(m => ({ role: m.role, content: m.content }));
+}
+
 async function logConsulta(brand, model, year, usedManual, userId) {
   const url = process.env.UPSTASH_REDIS_REST_URL;
   const token = process.env.UPSTASH_REDIS_REST_TOKEN;
@@ -639,7 +651,8 @@ module.exports = async (req, res) => {
     }
   }
 
-  const { messages, brand, model, year, imageBase64, imageMediaType, bikeId, checkMaintenance, compareYear } = req.body;
+  const { messages: mensajesRecibidos, brand, model, year, imageBase64, imageMediaType, bikeId, checkMaintenance, compareYear } = req.body;
+  const messages = limpiarMensajes(mensajesRecibidos);
   console.log(`[mantenimiento] checkMaintenance=${!!checkMaintenance} bikeId=${bikeId ? 'presente' : 'ausente'}`);
 
   // Comparador de años: flujo totalmente aparte del chat normal (sin RAG, sin
@@ -751,3 +764,6 @@ Responde siempre en español. Sé directo y práctico, como lo sería un buen me
     }
   }
 };
+
+// Exportado para pruebas locales
+module.exports.limpiarMensajes = limpiarMensajes;

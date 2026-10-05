@@ -201,13 +201,13 @@ function normalizarModelo(brand, model) {
     //   one-250-280-300                         2016-2018  ONE 250/280/300
     //   one-oner-onerr-125-250-280-300          2019-2020  ONE, ONE R, ONE RR 125-300
     //   one-oner-onerr-onegold-125-250-280-300  2021-2026  + GOLD (250/280/300)
-    //   one-onerr-80                            2024-2026  ONE RR 80cc
+    //   one-onerr-80                            2024-2026  ONE y ONE RR 80cc
     // El de 2026 dice "250 - 300" en portada, pero la web oficial confirma
     // ONE R 125/250/280/300 y GOLD 250/280/300 para 2026.
     // En la app van agrupadas por cilindrada ("One/R/RR/Gold 250"); se
     // mantienen los nombres anteriores (ONE 250 RR, GOLD 250...) por si hay
     // motos guardadas en garajes con ellos.
-    if (m === 'ONE RR 80' || m === 'ONE 80 RR') return { model: 'one-onerr-80' };
+    if (m === 'ONE/RR 80' || m === 'ONE RR 80' || m === 'ONE 80 RR') return { model: 'one-onerr-80' };
     if (m === 'GOLD 250' || m === 'GOLD 280' || m === 'GOLD 300') {
       return { model: 'one-oner-onerr-onegold-125-250-280-300' };
     }

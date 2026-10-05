@@ -848,7 +848,7 @@ const brandsData = {
     bg: '#FFD600', text: '#CC0000', dot: '#CC0000', sub: 'Trial',
     logo: '<text x="40" y="15" text-anchor="middle" dominant-baseline="central" font-family="Arial Black,sans-serif" font-weight="900" font-size="10" fill="#CC0000">TRS</text>',
     categories: {
-      Trial: { '2T': ['One RR 80','One/R/RR/Gold 125','One/R/RR/Gold 250','One/R/RR/Gold 280','One/R/RR/Gold 300'] }
+      Trial: { '2T': ['One/RR 80','One/R/RR/Gold 125','One/R/RR/Gold 250','One/R/RR/Gold 280','One/R/RR/Gold 300'] }
     }
   },
   Vertigo: {
@@ -1077,7 +1077,7 @@ function rangoAniosModelo(brand, category, engine, m) {
   } else if (brand === 'TRS') {
     // One, R, RR y Gold comparten manual, así que van juntas por cilindrada
     // (ver normalizarModelo en api/chat.js). La 125 llega en 2019.
-    if (m === 'One RR 80') fromYear = 2024;
+    if (m === 'One/RR 80') fromYear = 2024;
     else if (m.endsWith(' 125')) fromYear = 2019;
     else fromYear = 2016;
   } else if (brand === 'Vertigo') {

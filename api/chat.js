@@ -196,13 +196,20 @@ function normalizarModelo(brand, model) {
   if (brand.toLowerCase() === 'trs') {
     // Fuente: trsmotorcycles.com (fabricante oficial). Todos los TRS/TRRS
     // son 2T — no existe línea de 4T ("One 300 RR" estaba mal catalogada
-    // como 4T). La RR es una gama de trim independiente de la ONE base,
-    // no una variante de cilindrada: ambas existen en 125/250/280/300cc.
-    if (m === 'ONE 125' || m === 'ONE 250' || m === 'ONE 280' || m === 'ONE 300') {
-      return { model: { $in: ['one125-250-280-300', 'one250-280-300'] } };
+    // como 4T). R, RR y Gold son acabados de la misma ONE, no cilindradas.
+    // Manuales (uno por año; el filtro de año elige el correcto):
+    //   one-250-280-300                         2016-2018  ONE 250/280/300
+    //   one-oner-onerr-125-250-280-300          2019-2020  ONE, ONE R, ONE RR 125-300
+    //   one-oner-onerr-onegold-125-250-280-300  2021-2026  + GOLD (250/280/300)
+    //   one-onerr-80                            2024-2026  ONE RR 80cc
+    // El de 2026 dice "250 - 300" en portada, pero la web oficial confirma
+    // ONE R 125/250/280/300 y GOLD 250/280/300 para 2026.
+    if (m === 'ONE 80 RR') return { model: 'one-onerr-80' };
+    if (m === 'GOLD 250' || m === 'GOLD 280' || m === 'GOLD 300') {
+      return { model: 'one-oner-onerr-onegold-125-250-280-300' };
     }
-    if (m === 'ONE 125 RR' || m === 'ONE 250 RR' || m === 'ONE 280 RR' || m === 'ONE 300 RR') {
-      return { model: 'onerr125-250-280-300' };
+    if (/^ONE (125|250|280|300)( R| RR)?$/.test(m)) {
+      return { model: { $in: ['one-250-280-300', 'one-oner-onerr-125-250-280-300', 'one-oner-onerr-onegold-125-250-280-300'] } };
     }
   }
 

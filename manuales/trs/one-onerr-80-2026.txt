@@ -1,0 +1,816 @@
+Manual Usuario
+80cc
+Modelos a partir de 2024
+Manual Usuario - 80 cc - (Abr. 2024)
+2
+Bienvenidos a TRS
+Estimado cliente:
+Le agradecemos la confianza que nos ha otorgado
+y le felicitamos por su nueva TRS One RR 80cc.
+Gracias a nuestra experiencia, profesionalidad y
+pasión por el Trial le ofrecemos un producto inno -
+vador, fiable y actual con prestaciones técnicas
+más que contrastadas, tanto por nuestros técnicos
+como por nuestros pilotos de alto nivel Mundial.
+Las soluciones adoptadas nos otorgan un incon -
+fundible carácter, marcado por la simplicidad, fia -
+bilidad y diseño, cuidando hasta el más mínimo
+detalle para que su moto sea única.
+Así mismo, este manual le proporciona toda la in -
+formación necesaria para un uso correcto y seguro
+de la moto. Le recomendamos leer atentamente el
+manual antes de utilizar la moto.
+Además, encontrará consejos e información de
+gran utilidad para el mantenimiento y conserva -
+ción de su nueva TRS One RR 80cc.
+Atentamente,
+3
+TRS le advierte:
+Antes de poner en marcha su motocicleta, lea íntegramente este manual de
+usuario donde se detallan todas las instrucciones que contribuyen al correcto
+manejo de la misma y a su propia seguridad, permitiendo a su vez un manteni -
+miento y conservación óptimos desde el primer día.
+Preste atención especial a las notas marcadas específicamente con estos símbolos:
+¡ATENCIÓN! Este símbolo hace referencia a aspectos que,
+de ser ignorados, pueden conllevar algún tipo de daño a su
+motocicleta. Si estas advertencias no son tenidas en cuenta
+pueden provocar la anulación de la garantía del vehículo.
+¡PRECAUCIÓN! Este símbolo hace referencia a aspectos que,
+de ser ignorados, pueden conllevar algún tipo de peligro físico
+para el usuario.
+Además de las notas de advertencias específicas, quedan detallados a
+su vez en este manual otro tipo de consejos para una mejor utilización de
+su motocicleta, así como un mejor ajuste y control de las características
+importantes del vehículo.
+TRS se reserva el derecho a la realización de modificaciones en el presente manual.
+TRS Motorcycles no se hace responsable de ninguna traducción de este documento a otros idiomas hechos por alguien externo a la empresa
+TRS Motorcycles solo se hace responsable de los documentos directamente descargados de la web oficial www.trsmotorcycles.com
+4
+TRS le recomienda
+Ante cualquier duda en cuanto a posibles ajustes de  |  • Es ta motocicleta está diseñada para una sola persona, no está permitido el transporte de pa -
+su motocicleta, seguir las indicaciones del manual  |  sajeros.
+y/o acudir a un concesionario autorizado de TRS.
+• Pa ra una larga vida de servicio, procure mantener la motocicleta en el estado de mantenimiento
+Le a atentamente la información del manual de  |  recomendado en este manual.
+usuario para familiarizarse con las características
+de su vehículo antes de proceder a una conduc -  |  • Est e vehículo está diseñado para una conducción segura, siempre y cuando el piloto vaya equipa -
+ción en condiciones de máxima potencia.  |  do con las correspondientes medidas de seguridad (casco, protecciones, etc.). Tenga precaución
+y pilote de manera sensata.
+• Se aconseja un período de rodaje de al menos
+8-10 horas para una óptima puesta a punto del mo -
+tor, sin conducir a altas velocidades y sin llegar a
+acelerar al máximo. Dentro de este período de ro -
+daje, la primera hora de marcha conviene hacerla
+moderadamente.
+• El co mbustible es un líquido fácilmente inflama -
+ble. Tenga precaución al repostar y apague siem -
+pre el motor previamente.
+• Ant es de exigir condiciones extremas al motor es
+importante dejarlo llegar a una temperatura óptima
+de servicio, así como al arrancar o en condiciones
+ambientales de bajas temperaturas.
+• E sta motocicleta utiliza aceite sintético de dos
+tiempos mezclado al 1% con combustible de 98
+octanos, no use otro tipo de lubricación sin consul -
+tar previamente a un mecánico autorizado de TRS.
+5
+Índice
+26 - Suspensión Delantera ...................................................................... 24
+1 - Descripción de elementos ........................................................................... 7
+27 - Suspensión Trasera ........................................................................... ...24
+2 - Ficha Técnica TRS RR 80cc - Motor .................................................... .8
+28- Amortiguador Ollé 1 vía ..........................................................................25
+3 - Ficha Técnica TRS RR 80cc - Chasis ........................................................ .9
+29 - Cadena de Transmisión ................................................................... 26
+4 - Placa del Fabricante .......................... .........................................................1 0
+30 - Caja de Láminas ................................................................................. 27
+5 - Arranque y Parada del Motor ........................................................... .........11
+31 - Basculante ............................................................................................ 27
+6 - Estárter  |  ...................................................................................................1 1
+32 - Pedal de Freno Trasero ..................................................................... 27
+7- Cambio de Marchas ................................................................................ .12
+33 - Estribos .................................................................................................. 28
+8 - Grifo de Gasolina .......................................................................................... 12
+34 - Silencioso ............................................................................................. ..28
+9 - Depósito de Combustible ...................................................................... 13
+35 - Depósito de la Bomba de Embrague .......................................... ......28
+10 - Neumáticos ....................................................................................... ..........14
+36 - Conservación de la Motocicleta ................................................ .29
+11 - Sistema de Frenado .......................................................................... .15
+37 - Pares de Apriete .............................................................................. ..29
+12 - Caballete ............................................................................................. ....16
+38 - Almacenaje ................................................................................................30
+13 - Manillar ................................................................................................ ...17
+39 - Operaciones de Mantenimiento............................................................31
+14 - Regulación de las Manetas y el Manillar ...................................... ........18
+40 - Posibles Sintomas de Averías y Preguntas Frecuentes ..................33
+15 - Cambio de Aceite .................................................................................. ....18
+41 - Productos Recomendados ....................................................................37
+16 - Bujía ...................................................................................................... ........19
+17 - Filtro de Aire ................................................................................................ 19
+18 - Sistema de Refrigeración .......................................................................2 0
+19 - Vaciado de Líquido de Refrigeración ....................................................2 0
+20 - Termocontacto ................................................................................. .......20
+21 - Llenado del Líquido de Refrigeración .......................................... ......21
+22 - Purgado del Líquido de Refrigeración ...................................... ........21
+23 - Carburador ......................................................................................... .......22
+24 - Carburación de la mezcla ......................................................... ............22
+25 - Ajuste carburador DELLORTO y KEIHIN........................................ .........23
+6
+1 - Descripción de elementos
+MOTOR RACING SIN ARRANQUE ELÉCTRICO
+03
+02
+01
+13  |  10
+05  |  12
+11
+04
+07
+06
+09  |  08
+15
+16  |  14
+1- Maneta del embrague  |  5-Tapón del depósito de gasolina  |  9- Pedal freno trasero  |  13- Silencioso escape
+2- Maneta del freno  |  6- Pedal de arranque  |  10- Desvaporizador deposito gasolina  |  14- Curva escape
+3- Acelerador  |  7- Radiador  |  11- Cadena de transmisión  |  15- Basculante
+4- Tapón del radiador  |  8- Tornillo drenaje radiador  |  12-Horquilla delantera  |  16- Bomba agua
+7
+2 - Ficha Técnica TRS RR 80cc - Motor
+Ficha Técnica TRS RR 80cc - Motor
+MOTOR:  |  2T Monocilíndrico.
+Cilindrada:  |  80cc
+Refrigeración:  |  Líquida.
+Diámetro y carrera:  |  46x48 mm
+Encendido:  |  CDI HIDRIA (doble chispa).
+Embrague:  |  Sistema TRS hidráulico de diafragma 3 discos.
+Caja de cambios:  |  6 velocidades.
+Capacidad aceite motor:  |  570 mL (Nils clutch trial)
+Trasmisión:  |  Por cadena.
+Combustible:  |  2,5L Gasolina 98 con aceite 2T 1.0%.
+Carburador:  |  Keihin PWK 28 admisión por láminas
+Arranque:  |  Por pedal a la transmisión primaria
+Filtro aire:  |  Espuma.
+Tipo bujía:  |  NGK BR7ES
+8
+3 - Ficha Técnica TRS RR 80cc - Chasis
+Ficha Técnica TRS RR 80cc - Chasis
+CHASIS:  |  Doble cuna de aluminio forjado.
+Basculante:  |  Aluminio.
+Suspensión delantera:  |  Tech de aluminio, diámetro:39mm, 175mm recorrido.
+Regulación:  |  Extensión y precarga del muelle regulables.
+Suspensión trasera:  |  Ollé R16v
+Regulación:  |  Precarga muelle y extensión
+Recorrido:  |  Recorrido rueda trasera 168mm.
+Tipo de llanta:  |  Llanta de aluminio Morad radiada.
+Llanta-neumático delantero:  |  1.6x21 Dunlop Trial 2.75x21.
+Llanta-neumático trasero:  |  2.15x18 Dunlop Trial 4.00x18 TL.
+Freno delantero:  |  Disco 185mm pinza 4 pistones BRAKTEC.
+Freno trasero:  |  Disco150mm pinza 2 pistones BRAKTEC.
+Peso en seco:  |  62 Kg
+Dimensiones:  |  Longitud x anchura x altura: 1925 x 825 x 1.145mm.
+Altura asiento:  |  640mm
+Protector motor:  |  7075 Aluminio estriado
+Estribos:  |  S3 grip regulables (+/-) 2,5 mm
+TRS Motorcycles recomienda lubricante NILS
+9
+4 - Placa del Fabricante (Bajo el Depósito)
+Todas las motocicletas que fabricamos en TRS salen con un número de  |  a) Posición del número de
+identificación gravado en el bastidor y que figura en la ficha técnica de la  |  identificación, situado en tubo
+documentación que entregamos al usuario. Este número no se puede  |  lateral derecho del chasis
+remplazar ni modificar bajo ningún concepto, este se encuentra gravado
+en el tubo lateral derecho del chasis y puede ser requerido en cualquier
+inspección técnica.  |  a
+a
+b) El Número de identificación
+del motor, está situado en la
+parte posterior
+Es recomendable conservar anotado el número
+de serie y la información de identificación de su
+motocicleta para agilizar trámites en caso de robo
+o suministro de recambios.
+b
+10
+5 - Arranque y Parada del Motor Estándar  |  / 6 - Estárter
+ARRANQUE Y PARADA DEL MOTOR ESTÁNDAR
+ESTÁRTER
+PALANCA ARRANQUE:
+Utilice el estárter cuando el motor esté frío para fa -
+vorecer el arranque sin maltratar el motor. Este dis -
+positivo, usado convenientemente, prevendrá del
+desgaste y los daños mecánicos por arranques a
+temperaturas adversas. Para accionarlo debe usar
+b  |  una palanca negra situada en el carburador.
+a
+b) Desconectador o Hombre al agua, situado a la izquierda del
+manillar
+Es un elemento de seguridad, con lo que, en
+c
+a) Palanca Arranque, en el lado derecho de la TRS RR 80cc  |  caso de caída del piloto, la moto se desconecta.
+Asegurarse que el piloto se coloca la cinta elástica
+en la muñeca izquierda y queda firmemente sujeta,
+antes de encender el motor
+c) Estárter, en el carburador Keihin
+11
+7 - Cambio de Marchas  |  8 - Grifo de Gasolina
+GRIFO DE GASOLINA
+CAMBIO DE MARCHAS
+En el lateral izquierdo del chasis se encuentra el grifo de gasolina. Situado
+por encima del carburador. La palanca de accionamiento dispone de tres
+El cambio de marchas se controla mediante una palanca a modo de pedal  |  posiciones:
+en el lado izquierdo del vehículo, con la secuencia marcada en el diagrama.
+Debe accionar simultáneamente el embrague con la maneta izquierda para  |  - A la derecha: Cerrado (APAGADO)
+cambiar de marcha. Posición de las marchas como indica el gráfico. La  |  - En el centro: Abierto (ON)
+posición neutral es localizada entre el 1r y 2n engranaje.  |  - A la izquierda: Reserva (RES)
+La 1a marcha se encuentra presionando la palanca hacia abajo. El resto, pre -  |  Aconsejamos cerrar el grifo de gasolina cuando transportamos la moto en
+sionando la palanca hacia arriba, aumentando una marcha cada vez que se  |  un vehículo así como cuando dejamos la moto parada por un largo periodo
+acciona.  |  de tiempo.
+6
+5
+4
+3
+2  |  b
+N
+1
+a
+a) Palanca de cambio de marchas  |  b) Grifo de gasolina
+12
+9 - Depósito de Combustible
+DEPÓSITO DE COMBUSTIBLE
+La capacidad es de 2.5 litros y debe llenarse con una mezcla de gasolina sin
+plomo y aceite. El tapón del depósito se sitúa en la parte superior del depósito.
+Octanaje mínimo de la gasolina: 98 octanos / PON 93.
+Porcentaje máximo etanol: E10 (10% etanol).
+Importante. No mezcle aceite vegetal y mineral. Siga los niveles
+y proporciones marcados para una correcta combustión en el
+interior de su motor. Para conseguir una buena mezcla, vierta
+primero en un recipiente el aceite y parte de la gasolina, agite y
+después añada el resto de la gasolina, evitando hacerlo a bajas
+temperaturas pues se dificulta la operación.
+13
+10 - Neumáticos
+NEUMÁTICOS
+En terrenos con poca adherencia puede reducir la
+NEUMÁTICOS  |  presión ligeramente del neumático para aumentar
+el agarre y viceversa.
+Rueda delantera:
+2,75x21” TRIAL
+Rueda trasera:
+4,00x18” TRIAL
+PRESIONES RECOMENDADAS
+Rueda delantera:  |  Un correcto estado de los neumáticos contribuye
+0,45bar ( 0,42bar en competición)  |  en gran medida a su seguridad y garantiza una
+mejor conducción. Manténgalos con la presión
+Rueda trasera:  |  adecuada en cada momento y controle su
+0,35bar (0,3bar en competición)  |  desgaste. La presión debe comprobarse con el
+neumático en frío.
+Imagen de la rueda trasera de la TRS.
+14
+11 - Sistema de Frenado
+PASTILLAS DE FRENO  |  NIVEL DE ACEITE DEL FRENO TRASERO  |  NIVEL DE ACEITE DEL FRENO DELANTERO
+Para garantizar una frenada óptima es necesario  |  En la parte trasera de la bomba de freno delantero podemos
+verificar el estado de las pastillas de freno: inicial -  |  verificar el nivel de aceite, llenándolo hasta el nivel correcto
+mente suelen tener unos 3mm de ferodo. Si des -  |  con líquido de frenos DOT-4 NILS.
+pués de su funcionamiento observamos que esta
+distancia se ha reducido por debajo de los 1mm,
+será necesario sustituirlas por unas nuevas.
+P ara sustituirlas es necesario desmontar la pinza
+de freno de la botella de la suspensión , quitando
+b
+el tornillo de sujeción y el alambre clip que se des -
+montan por la parte inferior. Para su posterior mon -
+taje es necesario abrir los pistones con un destor -
+nillador haciendo palanca entre ellas para separar
+los pistones. A su vez, hay asegurar el apriete de los  |  c
+tornillos y pasador alambre clip.
+Distancia pastilla
+b) Bomba freno trasero  |  c) Nivel de aceite en la Bomba de Freno delantera.
+Para revisar el nivel de aceite del freno trasero lo
+a  |  podemos visualizar desde la parte trasera de la moto.
+Debemos mantener el nivel por encima de la raya indi -
+cadora.
+Se puede acceder al depósito de aceite quitando el
+escape y aflojando el propio tapón del
+a) Pastillas de frenado  |  depósito, procurando no verter líquido de frenos
+fuera de este, ya que es muy corrosivo.
+15
+12 - Caballete
+CABALLETE
+b
+a
+a) Caballete situado en el lado derecho de la TRS One  |  b) Agujeros de regulacion del caballete
+En el lado derecho del vehículo podrá encontrar el  |  En la base del caballete hay dos orificios para poder
+caballete, anclado al chasis mediante un muelle.  |  regular la forma de plegado de éste.
+Despliegue la pata hasta su máxima extensión para  |  Si montamos el muelle en la parte delantera en sentido
+apoyar la moto en el suelo cuando estaciones.  |  de marcha el caballete quedara siempre abierto hasta
+que no lo accionemos.
+En esta posición es importante recordar accionarlo
+manualmente antes de circular.
+Si lo montamos en la parte trasera el caballete siempre
+tendrá tendencia a retroceder y quedar en posición para
+circular.
+16
+13 - Manillar
+MANILLAR
+a
+c
+b
+d
+Parte izquierda del manillar.  |  Parte central del manillar.  |  Parte derecha del manillar.
+En el lado izquierdo del manillar se encuentran:  |  En el lado derecho del manillar puede encontrar:
+a) - Maneta de embrague.  |  c - Maneta de freno.
+b) - Botón de paro motor.  |  d - Mando del acelerador.
+Comprobación estado cable gas:
+1 - Arrancar la moto y dejarla en punto muerto.
+2 - Con la moto en ralentí girar el manillar y compro -
+bar que esta no se acelera.
+3- Si esta se acelera revisar ajuste mando acelera -
+dor (2-3mm de juego) y paso cable.
+El cable puede estirar por uso frequente.
+17
+14 - Regulación de las Manetas y el Manillar  |  /  |  15 - Cambio de Aceite
+REGULACIÓN DE LAS MANETAS  |  CAMBIO DE ACEITE ESTÁNDAR
+a
+b
+Fig(b):Tapón vaciado aceite, en la parte inferior del cárter
+Esto calentará el aceite a la temperatura adecuada
+para el cambio. Coloque la motocicleta en el caba -
+llete lateral desplegado. Coloque un recipiente de -
+Juego libre inicial máximo en ambas manetas del manillar.  |  a)Tapón llenado aceite, en la parte superior del cárter.  |  bajo del tapón de vaciado derecho y retírelo. Deje
+que todo el aceite se vacíe y luego limpie el tapón,
+Tanto la maneta de embrague, como la maneta de  |  El motor tiene una capacidad de 570mL de aceite  |  quitando las virutas de metal fijadas en el imán.
+freno, deben mantener un juego libre inicial en su  |  de transmisión cuando la moto es estándar.  |  Una vez que esté limpio, revise la arandela de co -
+recorrido de 3mm como máximo . Es importante  |  bre y reemplácela si es necesario. Apriete el tapón
+que ese juego exista, no inutilizarlo. Para regularlo,  |  No mezcle distintos tipos de aceites, llenar usan -  |  de vaciado.
+use las tuercas de ajuste en las manetas.  |  do aceite del mismo tipo cada vez. Se recomien -
+da usar aceites del tipo NILS CLUTCH TRIAL.  |  Para llenar el motor con aceite, colocar la moto li -
+Para adaptar el manillar a cada tipo de conducción  |  geramente inclinada hacia la izquierda (unos 5 º ).
+distinto, puede inclinarlo más o menos aflojando  |  Se recomienda cambiar el aceite motor, al me -  |  Abrir el tapón que se encuentra en la tapa embra -
+las bridas que lo sujetan a la horquilla. Una vez re -  |  nos una vez al año.  |  gue y añadir 570mL de aceite para embrague tipo
+gulado a su gusto, apriete los tornillos de nuevo,  |  NILS clutch Trial. Cerrar el tapón y revisar que el
+empezando por los más cercanos al asiento y si -  |  Existe un tapón en la parte inferior del cárter para  |  aceite sale por el agujero del tornillo que se indica
+guiendo por los más cercanos al velocímetro.  |  el vaciado del aceite Fig(b) y otro en la parte supe -  |  en la imagen.
+rior para el llenado Fig(a). Para cambiar el aceite,
+si el motor está frío, recomendamos encender la
+motocicleta y dejarla funcionar a ralentí durante 5  |  recomienda lubricante
+minutos.
+18
+16 - Bujía  |  /  |  17- Filtro de Aire
+FILTRO DE AIRE  |  b
+BUJÍA
+a
+c
+b) Quitando la tapa se accede al deflector caja filtro;
+c) Deflector caja filtro
+b
+a) La bujía que viene instalada  |  b) Vista superior de la tapa de la caja de filtro.
+de fábrica es la definida en la
+1mm  |  hoja de características.  |  Es muy importante verificar el filtro de aire después
+Debe apretarse a 11Nm.  |  de
+cada salida. Un correcto mantenimiento
+Es importante mantener la distancia estipulada  |  le permitirá conseguir un perfecto funcionamiento y
+por TRS de 1mm entre el electrodo y el arco para  |  el mejor rendimiento del motor, así como alargar la
+asegurar un óptimo rendimiento del motor.  |  vida de su motocicleta.
+d
+El color de esta nos permite valorar si estamos utili -
+zando una carburación adecuada:  |  Para acceder al filtro de aire, se debe quitar la tapa  |  Revise si es necesario limpiar o reemplazarlo si se
+Color muy blanco: mezcla muy pobre.  |  situada en la parte superior de la caja de filtro. Reti -  |  encuentran grietas o la espuma dañada.
+Color muy negro: mezcla demasiado grasa.  |  re el tornillo avellanado que se encuentra en la parte  |  Antes de montar, se recomienda engrasar el filtro
+frontal.(Fig. b)  |  con Air filter extra protection de Nils. Esto ayudará a
+Encontrará el deflector caja filtro. Este es el encarga -  |  atrapar las partículas de polvo más pequeñas.
+do de canalizar el flujo de aire así como de reducir  |  Para introducir el filtro, deslizar por el centro del
+la suciedad caída en el filtro de aire. Retire el tornillo  |  muelle hasta fijarlo en el punto medio. El filtro debe
+allen para acceder al filtro aire. (Fig. c)  |  quedar en el centro de la tobera de admisión.
+Para sacar el filtro de aire (fig. d) desplazar el muelle  |  Montar deflector y tapa filtro, en este orden.
+hacia atrás y extraer el filtro hacia arriba.
+19
+18 - Sistema de Refrigeración  |  /  |  19 - Vaciado de Líquido de Refrigeración  |  /  |  20 - Termocontacto
+SISTEMA DE REFRIGERACIÓN  |  VACIADO DE LÍQUIDO DE REFRIGERACIÓN  |  TERMOCONTACTO
+a
+c
+b
+b) Tornillo para el vaciado del agua de refrigeración situado en  |  c) Termocontacto, atornillado al
+a) Radiador de la TRS RR 80cc  |  la tapa de la bomba de agua.  |  ventilador
+Antes de manipular el sistema de refrigeración no olvide que el sistema  |  Aflojando el tornillo indicado en la parte inferior de  |  El termocontacto es el en -
+puede estar a altas temperaturas y a presión.  |  la  |  cargado de dar senyal al CDI
+Tenga precaución y espere a que se enfríe una vez parado el motor.  |  bomba de agua podremos vaciar el circuito de lí -  |  cuando se llega a una tempe -
+Es conveniente comprobar periódicamente que los tubos de entrada  |  quido  |  ratura determinada.
+y salida al radiador no tengan golpes, grietas o fugas que dificulten el  |  refrigerante del motor. Antes, sacar el tapón del ra -
+funcionamiento del sistema de refrigeración. Para un correcto manteni -  |  diador.  |  Siguiendo los parámetros
+miento del motor, debe asegurarse de que el nivel del líquido refrigeran -  |  preestablecidos, el ventilador
+te es el adecuado. Para ello, desatornillar el tapón del radiador situado  |  Es importante esperar que la temperatura del mo -  |  se enciende y se apaga para
+en la parte superior. Utilice siempre fluido refrigerante (-30°C) apto para  |  tor este a temperatura ambiente para poder hacer  |  mantener una temperatura
+motores de aleación ligera.  |  el vaciado, de no ser así la temperatura elevada del  |  idónea en el motor.
+refrigerante nos puede causar quemaduras.
+20
+21 - Llenado del Líquido de Refrigeración  |  /  |  22 - Purgado del Líquido de Refrigeración
+LLENADO DEL LÍQUIDO DE REFRIGERACIÓN  |  PURGADO DEL LÍQUIDO DE REFRIGERACIÓN
+Quitando el tapón de llenado en la parte superior  |  Para poder purgar se debe llenar el radiador hasta
+del radiador podemos hacer el llenado de este,  |  su nivel máximo. Una vez llenado se arranca la mo -
+vertiendo líquido refrigerante hasta llenarlo, asegu -  |  tocicleta y se acelera suavemente.
+rándose de sacar el aire desde el tornillo purgador
+de la culata. Es aconsejable no llenar el radiador  |  Una vez realizado este procedimiento se vuelve a
+en su totalidad para asegurar un funcionamiento  |  llenar el líquido faltante en el radiador hasta su ni -
+óptimo.Aconsejamos usar un recipiente de llenado  |  Detalle sección radiador, cubrir aletas con 8mm. de agua.  |  vel máximo de llenado.
+adecuado para mejor control del llenado.  |  Debe quedar cámara de aire en la parte superior.
+Advertencia!: No abrir nunca el tapón del radiador,
+El líquido refrigerante que viene de fábrica es  |  cuando el sistema está caliente. Le podría causar
+a
+una mezcla de tipo permanente de etileno gli -  |  quemaduras.
+col, diluida en agua destilada al 50% y con aditi -
+vos anticorrosivos.
+Una vez al año es recomendable sustituir el líquido
+por uno nuevo y purgar el sistema. Preste atención a
+posibles tonalidades distintas de la habitual del refri -
+gerante: manchas blancas (piezas de aluminio corroí -
+das), manchas marrones (piezas de acero corroídas),
+color blanco (fuga de aceite).
+Sea respetuoso con el medio ambiente, no vierta este
+tipo de sustancias en lugares no preparados para tal
+fin.
+a) Tapón de llenado situado en la parte superior del radiador.
+21
+23 - Carburador  |  /  |  24 - Carburación de la mezcla  |  /
+CARBURADOR  |  CARBURACIÓN DE LA MEZCLA
+Periódicamente es conveniente una revisión del carburador. Limpiar externa - Una mezcla óptima de gasolina y aire le permitirá sacar el máximo rendimiento
+mente y los pasos internos con aire a presión y desengrasante para mejorar su a su motor. Para ello, debe afinar las cantidades de gasolina y aire que entran
+rendimiento y fiabilidad.  |  por el carburador.
+Observe la altura del flotador que marca el nivel de la gasolina en la cubeta.
+Regule el carburador para que permanezca a 17mm dentro de los márgenes
+indicados. (En carburador KEIHIN)
+Una buena manera de averiguar la calidad de la mezcla que está entrando a
+a
+su motor es inspeccionar la bujía. Si la bu jía presenta un color marrón claro,
+la mezcla es buena; si por el contrario presenta un color negro (exceso de
+gasolina), o blanco (exceso de aire), la mezcla que llega a su motor no es la
+correcta.
+Para controlar la cantidad de gasolina que llega al motor puede modificar la
+mezcla con el tornillo del aire, vea en las siguientes indicaciones según el tipo:
+de carburador.
+a) Carburador. Al manipular el carburador y piezas adyacentes pueden quedar res -
+tos de combustible que previamente deben ser drenados. Dicho combustible es
+fácilmente inflamable y tóxico, tenga precaución.
+22
+25 - Ajuste Carburador KEIHIN
+AJUSTES CARBURADOR KEIHIN  |  Para el ajuste, seguir estos pasos:
+Encender el motor de la motocicleta y calentarla. Con
+El tornillo de ajuste de la riqueza c) se usa para ajustar la proporción de combustible / aire en la admisión.  |  el motor en marcha, gire el tornillo ligeramente cada
+El ajuste podría ser necesario cuando la elevación (metros del nivel del mar) o la temperatura del clima  |  vez en la dirección requerida (no más de 5 minutos
+cambian lo suficiente como para sentir variaciones en el rendimiento del motor. Si necesita ajustarlo, pri -  |  de vuelta) Tener en cuenta que poca rotación en el
+mero de todo, cuente el número de vueltas del tornillo y anótelo en un papel. Esto le ayudará si durante  |  tornillo de ajuste hace una gran diferencia.
+el ajuste es necesario volver a la posición inicial. Para evitar dañar el tornillo cónico, no apriete en exceso
+en la posición cerrada.  |  • Tornillo de ajuste de la riqueza. (Fig. c)
+El ajuste estándar de fábrica es 1 1/2 en sentido antihorario desde la posición cerrada.
+Dirección:
+- En sentido horario:
+Menos aire en el circuito piloto = Enriquece mezcla.
+- En sentido antihorario:
+Más aire en el circuito piloto= Empobrece mezcla.
+b
+Dejar el motor funcionando, entre 15-20 segundos
+después de cada ajuste para que el motor “alcance”
+cada nuevo ajuste de combustible/aire.
+c
+• Tornillo de ajuste del ralentí (Fig. b)
+Cuando el ajuste de la riqueza está en el punto co -
+rrecto, entonces es hora de ajustar el ralentí.
+- En sentido horario: Aumenta las rpm del motor.
+- En sentido antihorario: Disminuye las rpm del mo tor.
+23
+26 - Suspensión Delantera  |  /  |  27 - Suspensión Trasera
+Los clics se cuentan des de la posición cerrada. SUSPENSIÓN TRASERA
+SUSPENSIÓN DELANTERA  |  Abrir en sentido antihorario.
+a) Precarga del muelle: lado izquierdo (llave Allen  |  El mantenimiento periódico del sis -
+de 6 mm): 10.5 vueltas.  |  tema trapecio-bieleta es imprescin -
+b) Extensión: lado derecho (destornillador plano): dible para garantizar un correcto
+30 clics.  |  deslizamiento y evitar desgastes
+a  |  b  |  prematuros que podrían provocar
+Tornillos en la parte inferior:  |  juegos excesivos. El mantenimien -
+• Compreión: lado izquierdo y derecho (llave Allen to básico consiste en desmontar
+de  |  tornillos bieleta-trapecio y casqui -  |  c
+6 mm) Ambos lados: 1 vuelta.  |  llos. Verificar estado retenes, cas -
+quillos y rotula. Sustituir en caso
+Capacidad de aceite:  |  necesario si se detec ta perdida de
+a) Precarga del muelle; b) Extensión ajustable  |  a) Barra con muelle (lado izquierdo): desde el  |  estanqueidad o juego excesivo. También es necesario revi -
+lado superior del tubo, distancia del nivel de aceite sar estado trapecio, bieleta y tornillos, sustituir si se detectan
+110 mm sin muelle.  |  desgastes excesivos o grietas. Antes de montar, es muy im -
+b) Barra de compresión (lado derecho): desde  |  portante engrasar los cojinetes y casquillos. TRRS recomien -
+el lado superior del tubo, la distancia del nivel de  |  da usar grasa Performance grease blue de NILS.
+aceite es de 55 mm comprimido.
+Durante el montaje tener especial atención en la posición
+Tipo de aceite: SAE 5 (suspensión).  |  del trapecio. Para ello, ayudarse de las imágenes que se en -
+cuentran en este documento y prestar atención en la flecha
+de montaje marcada en el trapecio, este debe apuntar hacia
+arriba fig c).
+Antes de finalizar, ase -
+gurar el par de apriete
+a) En el lado derecho de la  |  b) En el lado izquierdo de la  |  de los tornillos. Encon -
+suspensión podemos ajustar  |  suspensión podemos regular  |  trará una tabla al final
+la extensión  |  precarga del muelle.  |  de este documento.
+La regulación de la horquilla delantera viene pre -
+determinada de fábrica, los tornillos se encuentran
+en la parte superior.
+24
+28- Amortiguador Ollé 1 vía
+AMORTIGUADOR OLLÉ 1 VÍA
+• Extensión: ubicada en la parte
+superior del amortiguador,10 clics.
+• El muelle debe estar precomprimido midiendo una longi -
+tud una vez compromido de 130 mm.
+25
+29 - Cadena de Transmisión
+CADENA DE TRANSMISIÓN  |  Es importante prestar mucha atención al montar el  |  El tensado de la cadena debe permitir un juego de
+enganche de la cadena, la parte cerrada siempre  |  aproximadamente 10-15mm en la zona expuesta
+debe que estar dirigida hacia el sentido del giro de  |  entre el basculante y el tensor. (d)
+la rueda para asegurar que no se puede despren -
+der al rozar con alguna piedra.  |  Para proceder al tensado, primero afloje el eje rue -
+d  |  Así mismo, mantener la cadena limpia y engrasada  |  da trasera (e) y a continuación regule la tensión de
+10-15mm
+con NILS OFF-ROAD CHAIN LUBRICANT, nos alar -  |  la cadena con los tornillos de ajuste del tensor (f),
+garà la vida del piñón de salida y la corona.  |  que se alojan en el basculante.
+Una vez que hayamos tensado la cadena numero -
+sas veces será necesario remplazarla.  |  Preste atención a la alineación de la rueda trasera,
+y ajuste los tornillos simétricamente.
+a
+Una vez ajustado, apriete de nuevo el eje rueda
+trasera y la contra tuerca (g).
+a) Cadena de transmisión ; d) Distancia cadena al basculante
+Tenga cuidado con este tipo de ajuste. Un eje de
+El tensor de la cadena está situado en los laterales de  |  rueda trasera mal alineado o con la tuerca poco
+basculante.  |  apretada puede provocar un accidente.
+Así mismo, es importante el engrase del eje y de
+la tuerca.
+b  |  e
+g
+c
+f
+b) Es primordial una vez encontrado el punto correcto del ten -  |  c) Enganche de la cadena.
+sor de la cadena apretar el eje con fuerza.
+26
+30 - Caja de Láminas  |  /  |  31 - Basculante  |  /  |  32 - Pedal de Freno Trasero
+CAJA DE LÁMINAS  |  BASCULANTE  |  PEDAL DE FRENO TRASERO
+La admisión se realiza a través de una caja de lámi -  |  Una buena conservación del sistema de suspen -  |  En la parte delantera de la palanca está ubicado
+nas, cuyo estado de conservación influye en gran  |  sión trasero y del basculante exige su desmontaje  |  el tornillo que permite regular la altura de ésta res -
+medida sobre el rendimiento de su motor. Cada  |  periódicamente para realizar la limpieza, revisión y  |  pecto el estribo.
+vez que desmonte el carburador para su limpieza  |  engrase de sus cojinetes y rodamientos internos,  |  En la parte trasera está la varilla y contratuerca que
+asegúrese de que las láminas no presentan des -  |  así como el ajuste y engrase de la cadena de  |  permite tensar el freno trasero.
+gaste o estén rotas, y si fuera así, cambie la caja por  |  transmisión. Asegúrese de que todas las piezas  |  Es muy importante que una vez tensado quede un
+una nueva.  |  están en perfecto estado y cambie las piezas  |  espacio muerto de 2mm en la parte delantera para
+desgastadas por unas nuevas si es necesario.  |  asegurar un buen funcionamiento.
+c
+d
+a  |  b
+b) ¡Importante! Es importante realizar el matenimiento periódi -
+a) Caja de láminas, situada entre el carburador y el motor.  |  co del basculante y de la suspensión trasera.
+c) Varilla tensor pedal freno trasero; d)Tornillo para ajuste de
+la altura del pedal de freno. Hay que dejar un poco de juego
+muerto para un buen funcionamiento.
+27
+33 - Estribos  |  /  |  34 - Silencioso  |  /  |  35 - Depósito de la Bomba de Embrague
+ESTRIBOS  |  SILENCIOSO  |  DEPÓSITO DE LA BOMBA DE EMBRAGUE
+La parte final del silencioso es desmontable y per -
+Los estribos reposapiés son regulables, de for -  |  mite sustituir las fibras fácilmente para mejorar las  |  Es necesario revisar periódicamente el nivel de
+ma que intercambiando las arandelas se puede  |  prestaciones de la moto.  |  aceite del depósito de la bomba de embrague. Tal
+conseguir avanzarlos o atrasarlos desde 2,5mm a  |  como está indicado en la tapa, solo se puede utili -
+5.00mm  |  zar aceite mineral para no dañar las tóricas. Acon -
+Esto permite personalizar la moto para conseguir  |  sejamos aceite mineral NILS.
+más eficacia y comodidad, dependiendo de tu es -  |  Si hubiese que purgar el circuito es necesario ac -
+tatura o estilo de conducción.  |  cionar la palanca repetidas veces hasta que no -
+temos un tacto correcto, añadiendo aceite hasta
+2mm del vértice.
+b
+a
+c
+a) Los estribos son regulables, de forma que los podemos ade -
+lantar o atrasar, intercambiando la posición de las arandelas, de  |  c) Depósito de la bomba de embrague. Solo se puede utilizar
+2,5mm a 5.00mm.  |  aceite mineral con el fin de no dañar las juntas tóricas.
+b) ¡Importante! Recuerde que cuando la moto está encendida,
+el escape coge temperaturas elevadas.
+NOTA: Solo en escapes destinados al uso en com -
+petición.
+28
+36 - Conservación de la Motocicleta  |  /  |  37 - Pares de Apriete
+CONSERVACIÓN DE LA MOTOCICLETA  |  PARES DE APRIETE
+Cuanto mayor sea el cuidado que reciba su vehí -  |  UNIÓN  |  Nm  |  UNIÓN  |  Nm
+culo, mayor será su vida útil y mejor su funciona -  |  Basculante-Chasis  |  40-50  |  Fijación del encendido  |  7-8
+miento. Preste atención a los elementos que se  |  Base cilindro  |  25  |  Fijación del embrague  |  20-25
+destacan a continuación en cuanto a mantenerlos  |  Fijación superior amortiguador  |  40-50  |  Fijación de espárragos del cilindro  |  25
+limpios y correctamente engrasados, para una óp -  |  Fijación inferior amortiguador  |  40-50  |  Fijación de las láminas  |  7-8
+tima conservación de su motocicleta:  |  Eje rueda delantera  |  40-50  |  Fijación muelle embrague  |  3-4
+Bieletas  |  40-50  |  Fijación cárteres  |  7-8
+Manillar  |  25-30  |  Fijación tapa bomba de agua  |  7-8
+· ARTICULACIONES DE MANETAS  |  Puente aleta delantera  |  7-10  |  Fijación tapa del embrague  |  7-8
+Silencioso  |  10-15  |  Fijación del volante  |  40
+· PEDAL DEL FRENO TRASERO  |  Eje rueda trasera  |  40-50  |  Tapa de encendido  |  7-8
+Fijación pinza del freno delantero  |  25-30  |  Tapón vaciado cárter  |  12
+· PALANCA DE CAMBIO  |  Fijación curva del escape  |  10-15  |  Tornillo del pedal de arranque  |  12-13
+Fijación del motor  |  30-35  |  Tornillo del pedal de cambio  |  7-8
+· ESTRIBERAS Y PATA DE CABRA  |  Fijación bomba freno trasero  |  7-10  |  Tornillos de culata  |  12-13
+Bujía  |  11  |  Tornillo piñón primario  |  80
+· PALANCA DE ARRANQUE  |  Tornillo estriberas  |  25-30  |  Disco freno rueda delantera  |  15
+Disco freno rueda trasera  |  15
+· MANDO DEL GAS
+· COLUMNA DE LA DIRECCIÓN
+· CADENA DE TRANSMISIÓN Y ARTICULACIONES
+DEL BASCULANTE
+· TENSOR DE CADENA
+29
+38 - Almacenaje
+ALMACENAJE
+En determinadas ocasiones le puede resultar necesario mantener la moto parada durante largos perío -
+dos de tiempo, si es así es conveniente que realice las siguientes operaciones antes de su almacenaje:
+• Limpieza integral del vehículo.
+• Engrasar y/o lubricar debidamente los componentes que así lo requieran.
+• Vaciar el depósito de gasolina. (Tenga precaución con el combustible, es fácilmente inflamable y tóxico)
+• Vaciar el cárter retirando el aceite de transmisión usado y rellenarlo con aceite nuevo (si partía de motor
+parado, se recomienda arrancar la moto previamente y dejar funcionar el motor unos minutos para calen -
+tar el aceite y favorecer su drenaje).
+• Cubrir el escape con una bolsa de plástico, protegiéndolo de la intemperie.
+• Si hay partes metálicas no pintadas susceptibles de sufrir oxidación, cubrirlas con una capa de aceite.
+• Evitar que las ruedas toquen el suelo, separándolas de él con algún elemento como cartón o similares.
+• Proteger la motocicleta en la medida de lo posible del polvo y la suciedad mediante su cubrimiento con
+plásticos o lona.
+En el momento de volver a ponerla en marcha, previamente deberá:
+• Retirar los plásticos protectores colocados.
+• Comprobar el estado de lubricación y engrase de los componentes que lo requieran.
+• Revisar el estado de la bujía.
+• Ajustar la presión de los neumáticos a la recomendada.
+• Llenar el depósito de gasolina.
+30
+39 - Operaciones de Mantenimiento
+OPERACIONES DE MANTENIMIENTO
+(NOTA: Tenga en cuenta que una motocicleta limpia facilita la inspección de fallos y defectos de desgaste en cada revisión)
+COMPONENTE  |  VERIFICAR  |  AJUSTAR  |  SUSTITUIR  |  LIMPIAR  |  ENGRASAR
+Amortiguador trasero  |  Anualmente  |  Cada 2 años
+Aceite de suspensión horquilla delantera  |  60 horas
+Aceite de transmisión  |  2 horas  |  10 horas
+Reglaje de frenos  |  En cada uso  |  Cuando sea necesario
+Bujía  |  10 horas  |  30 horas  |  60 horas  |  15 horas
+Basculante y bieletas  |  En cada uso  |  Si estuvieran dañados  |  En cada uso  |  Tras cada lavado
+Cadena de transmisión  |  En cada uso  |  Cuando sea necesario  |  Si estuvieran dañados  |  En cada uso  |  Tras cada lavado
+Cable y puño del acelerador  |  En cada uso  |  Cuando sea necesario  |  Si estuvieran dañados  |  Cuando sea necesario  |  Tras cada lavado
+Caja de láminas  |  30 horas  |  Si estuvieran dañados  |  En cada uso
+Carburador  |  Cuando sea necesario  |  Si estuvieran dañados  |  En cada uso
+Chasis  |  Si estuvieran dañados  |  En cada uso
+Chiclé del carburador  |  Cuando sea necesario  |  Si estuviera dañado  |  10 horas
+Cojinete de dirección  |  Si estuviera dañado
+Cojinete de pistón  |  Si estuviera dañado
+Cojinete de rueda  |  Si estuviera dañado
+Cojinetes del motor  |  Si estuviera dañado
+Corona trasera  |  30 horas  |  Primeras 5 horas  |  Si estuviera dañada  |  Tras cada lavado
+Culata y cilindro  |  60 horas  |  Anualmente
+Frenos  |  En cada uso  |  Cuando sea necesario  |  Si estuvieran dañados
+Discos de freno  |  En cada uso  |  Primeras 5 horas  |  < 2,7 mm de grosor o si es - Cada dos usos
+tuvieran dañados
+Discos de embrague  |  Si estuvieran dañados
+Embrague  |  Si estuvieran dañados
+Paso de rueda-silenciador  |  En cada uso  |  Si hay alguna caída
+Escape  |  500 horas
+Fibra del silenciador  |  100 horas
+31
+COMPONENTE  |  VERIFICAR  |  AJUSTAR  |  SUSTITUIR  |  LIMPIAR  |  ENGRASAR
+Filtro de aire  |  En cada uso  |  Si estuviera dañado  |  En cada uso  |  Tras cada lavado
+Juego dirección  |  En cada uso  |  Cuando sea necesario
+Latiguillo freno  |  Cuando sea necesario  |  Cada 2 años  |  Tras cada lavado
+Líquido refrigerante  |  Cuando sea necesario  |  Anualmente
+Lubricación general  |  En cada uso  |  En cada uso  |  Tras cada lavado
+Llanta delantera y trasera  |  Si estuvieran dañadas  |  En cada uso
+Neumáticos  |  En cada uso  |  Si estuvieran dañados  |  En cada uso
+Nivel líquido de freno  |  Cuando sea necesario
+Patín guía cadena  |  Si estuviera dañado
+Pedal arranque y pedal cambio  |  Si estuvieran dañados  |  Tras cada lavado
+Pistón bomba freno y guardapolvo  |  Si estuvieran dañados
+Pistón freno y guardapolvo  |  Si hay alguna caída
+Pistón y aro pistón  |  60 horas  |  Anualmente
+Radios delanteros y traseros  |  20 horas  |  Si estuvieran dañados  |  En cada uso
+Sistema gasolina  |  En cada uso  |  Si estuviera dañado
+Suspensión delantera  |  Cuando sea necesario  |  Si estuviera dañada
+Tórica escape  |  Si estuviera dañada
+Tornillos, tuercas y sujeciones  |  Cuando sea necesario  |  Si estuvieran dañados
+Tubo gasolina  |  En cada uso  |  Cuando sea necesario  |  Si estuviera dañado
+Tubo radiador y conexiones  |  En cada uso  |  Cuando sea necesario  |  Si estuvieran dañados
+Adhesivos protector chasis  |  Si estuvieran dañados
+Protector cárter  |  Si estuviera dañado
+32
+40 - Posibles Síntomas de Averías y Preguntas Frecuentes
+POSIBLES SÍNTOMAS DE AVERÍAS Y PREGUNTAS FRECUENTES
+(NOTA IMPORTANTE: Se recomienda acudir a un taller autorizado para realizar todo tipo de ajustes internos de motor o de piezas que no sean las habituales
+de desgaste. Tenga en cuenta que la manipulación indebida de la moto puede ser peligroso para usted y/o conllevar posibles cancelaciones de la garantía.)
+Acuda a un taller especializado para la revisión del sensor de temperatura, ventilador, regulador de corriente o instalación averiadas.
+AVERÍA  |  POSIBLES CAUSAS  |  MEDIDAS A TOMAR
+• Limpiar y secar la bujía o cambiarla. Comprobar el electrodo pun -
+to 18
+• Bujía sucia.  |  • Abra el mando del gas al máximo y accione el pedal de arranque
+• Motor ahogado.  |  5 a 10 veces. Arrancar luego el motor.
+El motor no funciona  |  • Combustible mal mezclado.  |  • Comprobar obstrucciones en conductos del depósito de gaso -
+• Batería sin carga  |  lina y del filtro del aire.
+• Arranca la moto con la palanca de arranque y da una vuelta
+durante 10 minutos. Intentar de arrancar de nuevo con arranque
+eléctrico.
+• Revisar conectores y asegurar que estén bien conectados.
+La moto arranca bien y luego se para  |  • Alimentación de aire incorrecta, motor ahogado.  |  • Cerrar el estárter, verificar conductos de alimentación.
+• No hay suficiente gasolina  |  • Llenar el depósito.
+• Nivel bajo del líquido refrigerante.  |  • Añadir líquido refrigerante, comprobar posibles fugas.
+Calentamiento excesivo del motor  |  • Radiador sucio u obstruido.  |  • Limpiar las láminas del radiador
+• Ventilador ha dejado de funcionar  |  • Acuda a un taller especializado para la revisión del termocontac -
+to, ventilador averiados o regulador de corriente averiados.
+• Problemas en la bujía y/o capuchón antiparasitario de la misma.  |  • Comprobar estado de ambos.
+Funcionamiento inestable del motor  |  • Rótor del encendido averiado.  |  • Cambiar el rotor.
+• Agua en el combustible.  |  • Vaciar el depósito y llenar con combustible nuevo
+33
+AVERÍA  |  POSIBLES CAUSAS  |  MEDIDAS A TOMAR
+• Problemas en el encendido.  |  • Acudir a un taller especializado.
+Ruidos raros en el motor  |  • Motor sobrecalentado.  |  • Parar el motor y comprobar el estado del sistema de refrigeración
+y escape.
+• Problemas en admisión.  |  • Limpiar el sistema de admisión de carburante y filtro de aire.
+• Problemas en sistema de escape.  |  • Comprobar fugas en el sistema y limpiar o sustituir la fibra del si -
+Falta de respuesta en el motor  |  • Surtidores del carburador sucios.  |  lencioso.
+• Rodamientos de cigüeñal dañados.  |  • Desmontar el carburador y limpiarlos.
+• Falta de contacto en el embrague.  |  • Cambiar los rodamientos.
+• Verificar el ajuste del mismo. Acudir a un taller especializado.
+• Cambiar la junta tórica de la culata.
+Humo blanco en la salida del escape  |  • Entra agua en el cilindro.  |  • Verificar ajuste del acelerador.
+• Cable del acelerador mal ajustado.  |  • Revisar y/o cambiar las juntas del cigüeñal.
+• Entra poco aire en la mezcla.
+Humo marrón en la salida del escape  |  • Surtidores principal demasiado alto  |  • Limpiar o cambiar el filtro de aire.
+• Sellado débil.  |  • Verificar Surtidor principal.
+• Presencia de carbonilla en la cámara de combustión.  |  • Limpiar la cámara de combustión.
+• Combustible inapropiado.  |  • Vaciar el depósito y llenarlo con combustible correcto.
+Explosiones en el escape  |  • Bujía en malas condiciones o errónea.  |  • Cambiar la bujía por una adecuada.
+• Juntas del sistema de escape deteriorado.  |  • Verificar el estado de las juntas.
+• No hay juego en la maneta de embrague.
+Mal contacto en el embrague  |  • Embrague desgastado.  |  • Acudir a un taller especializado.
+• Muelles del embrague rotos o débiles.
+34
+AVERÍA  |  POSIBLES CAUSAS  |  MEDIDAS A TOMAR
+Mal engrane de las marchas  |  • Problemas en horquillas, ruedas o sistemas adicionales del cambio. • Acudir a un taller especializado.
+• El embrague no funciona correctamente.
+• Cadena desgastada o mal ajustada
+• Dientes corona trasera desgastados.  |  • Ajustar la cadena o cambiarla.
+• Falta de lubricación en la cadena.  |  • Cambiar la corona trasera.
+• Rueda trasera mal alineada.  |  • Aplicar lubricante apropiado para cadenas.
+• Falta de aceite en la horquilla delantera.  |  • Acudir a un taller especializado.
+• Problemas en el muelle de la horquilla delantera.  |  • Añadir aceite específico para horquillas hasta nivel adecua -
+• Disco freno gastado.  |  do.
+• Pastillas de freno cristalizadas o descolocadas.  |  • Sustituir el muelle de la horquilla delantera.
+Ruidos extraños en la moto  |  • Sistema escape.  |  • Sustituir disco freno.
+• Desgaste o daño de los rodamientos trapecio o bieleta del amor - • Recolocar las pastillas o cambiarlas.
+tiguador.  |  • Verifica y reemplaza si es necesario las juntas del escape
+• Revisa y reemplaza si es necesario la fibra de vidrio que
+envuelve el escape
+• Remplaza las juntas y/o rodamientos del trapecio y/o bieleta
+y lubrícalas.
+• Tuerca del eje de dirección muy apretada.  |  • Aflojar un poco la tuerca del eje de dirección.
+Inestabilidad en la conducción  |  • Rodamientos del eje de dirección dañados o desgastados.  |  • Sustituir los rodamientos.
+• Eje de la dirección doblado.  |  • Acudir a un taller especializado.
+• Horquilla con exceso de aceite.  |  • Purgar el aceite sobrante hasta el nivel adecuado.
+• Horquilla con aceite demasiado viscoso.  |  • Sustituir el aceite por uno nuevo con la viscosidad deseada.
+Suspensión demasiado dura  |  • Horquilla torcida o doblada  |  • Acudir a un taller especializado
+• Demasiada presión de neumáticos.  |  • Ajustar la presión de los neumáticos.
+• Amortiguador trasero mal ajustado.  |  • Ajustar el amortiguador trasero.
+35
+AVERÍA  |  POSIBLES CAUSAS  |  MEDIDAS A TOMAR
+• Nivel de aceite bajo en la horquilla.  |  • Añadir aceite específico hasta nivel adecuado.
+Suspensión demasiado blanda  |  • Horquilla con aceite poco viscoso.  |  • Sustituirlo por un aceite de viscosidad adecuada.
+• Amortiguador trasero mal ajustado.  |  • Ajustar el amortiguador trasero.
+• Reemplaza el muelle por uno más blando.
+• Neumático desgastado, basculante o sus rodamientos desgas -
+tados.  |  • Acudir a un taller especializado.
+Vibración en el manillar  |  • Llanta descentrada.  |  • Acudir a un taller especializado.
+• Rueda mal alineada.  |  • Acudir a un taller especializado.
+• Ejes de dirección, soportes de manillar o tuercas de fijación con • Apretar tuercas y fijaciones siguiendo los pares indicados.
+holguras.
+• Cambiar pastillas
+• Pastillas desgastadas  |  • Cambiar discos.
+• Discos desgastados.  |  • Verificar circuitos. Sustituir piezas con fugas y reponer líquido
+Mal funcionamiento de los frenos  |  • Pérdidas de fluido de frenos.  |  hasta el nivel adecuado.
+• Líquido de frenos en mal estado.  |  • Purgar el circuito de fluido de frenos y reponer con uno nuevo
+• Pistón de la bomba deteriorado.  |  adecuado.
+• Sistema mal ajustado.  |  • Sustituir el pistón de la bomba.
+• Ajustar frenos.
+• Comprobar las conexiones de todas las bombillas y verificar
+Se funden las bombillas  |  • Problemas con el regulador de tensión.  |  el regulador de tensión.
+36
+41 - Productos Recomendados
+PRODUCTOS RECOMENDADOS
+TRS Motorcycles recomienda el uso de lubricantes y produc -
+tos de mantenimiento NILS.
+37
+Símbolos de advertencia
+SEGURIDAD/ATENCIÓN
+El incumplimiento de las notas marcadas con este símbolo puede comportar peligros para las personas.
+INTEGRIDAD DEL VEHÍCULO
+El incumplimiento de las notas marcadas con este símbolo puede estropear gravemente el vehículo e implicar la anulación de la garantía.
+PELIGRO DEBIDO A LA PRESENCIA DE LÍQUIDO INFLAMABLE
+Leer atentamente el manual de uso y mantenimiento.
+OBLIGACIÓN DE UTILIZAR ROPA Y ACCESORIOS DE PROTECCIÓN
+El uso del vehículo está subordinado al empleo de ropa y accesorios de protección (calzado de seguridad).
+OBLIGACIÓN DE USAR GUANTES DE PROTECCIÓN
+Para realizar las operaciones descritas, es obligatorio el uso de guantes de protección.
+ESTÁ PROHIBIDO EL USO DE LLAMAS ABIERTAS O DE FUENTES DE IGNICIÓN INCONTROLADA
+ESTÁ PROHIBIDO FUMAR
+ESTÁ PROHIBIDO EL USO DEL TELÉFONO MÓVIL
+PELIGRO DEBIDO A LA PRESENCIA DE SUSTANCIAS CORROSIVAS
+Los líquidos marcados con este símbolo son muy corrosivos: manipúlelos con sumo cuidado.
+PELIGRO DE ENVENENAMIENTO
+38

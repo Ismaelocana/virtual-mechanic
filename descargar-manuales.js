@@ -340,15 +340,20 @@ const MANUALES = [
   // bloquea peticiones sin cabeceras de navegador real (Referer + Sec-Fetch-*)
   // devolviendo 403; con esas cabeceras responde 200 normalmente.
   // TRS/TRRS es una marca 100% 2T — no fabrica trial de 4 tiempos.
-  // La gama "ONE" (base) y "ONE RR" (gama superior, lanzada en 2017) son
-  // líneas independientes, cada una disponible en 125/250/280/300cc — no
-  // "One 300 RR" como variante única (nombre incorrecto que tenía el
-  // catálogo). El manual de 2016 no cubre 125cc (se añadió en 2019).
-  { marca: 'trs', modelo: 'one250-280-300',     año: 2016, url: 'https://trsmotorcycles.com/archivos/adjuntos/38fedb_User%20Manual%20-%20TRS%20One%20-%202016%20v.1.1.pdf' },
-  { marca: 'trs', modelo: 'one125-250-280-300', año: 2019, url: 'https://trsmotorcycles.com/archivos/adjuntos/07fc37_userManual2019.pdf' },
-  { marca: 'trs', modelo: 'one125-250-280-300', año: 2021, url: 'https://trsmotorcycles.com/archivos/adjuntos/470f61_UserManual%202021.pdf' },
-  { marca: 'trs', modelo: 'one125-250-280-300', año: 2026, url: 'https://trsmotorcycles.com/archivos/adjuntos/91a4aa_manual2026.pdf' },
-  { marca: 'trs', modelo: 'onerr125-250-280-300', año: 2021, url: 'https://trsmotorcycles.com/archivos/adjuntos/be9f1d_rr2021eng.pdf' },
+  // ONE, ONE R, ONE RR y GOLD son acabados de la misma moto (no cilindradas).
+  // Colección completada a mano por el usuario (octubre 2026): TRS no
+  // republica el manual cada año, así que cada edición se repite como copia
+  // idéntica en los años que cubre (2016-18, 2019-20, 2021-25). El manual de
+  // 2026 dice "250 - 300" en portada, pero la web oficial confirma ONE R
+  // 125/250/280/300 y GOLD 250/280/300 en 2026. El de la ONE RR 80cc
+  // ("modelos a partir de 2024", en español) lo aportó el usuario; ficha
+  // oficial del modelo en trsmotorcycles.com/motocicleta71_trrs-one-rr-80cc-2024.
+  // (El antiguo "rr2021eng" contenía en realidad el manual de la ONE base.)
+  { marca: 'trs', modelo: 'one-250-280-300',                        año: 2016, url: 'https://trsmotorcycles.com/archivos/adjuntos/38fedb_User%20Manual%20-%20TRS%20One%20-%202016%20v.1.1.pdf' },  // + copias 2017, 2018
+  { marca: 'trs', modelo: 'one-oner-onerr-125-250-280-300',         año: 2019, url: 'https://trsmotorcycles.com/archivos/adjuntos/07fc37_userManual2019.pdf' },                                 // + copia 2020
+  { marca: 'trs', modelo: 'one-oner-onerr-onegold-125-250-280-300', año: 2021, url: 'https://trsmotorcycles.com/archivos/adjuntos/470f61_UserManual%202021.pdf' },                             // + copias 2022-2025
+  { marca: 'trs', modelo: 'one-oner-onerr-onegold-125-250-280-300', año: 2026, url: 'https://trsmotorcycles.com/archivos/adjuntos/91a4aa_manual2026.pdf' },
+  // one-onerr-80 2024/2025/2026: aportado por el usuario (PDF convertido), sin URL registrada.
 
   // ── VERTIGO ───────────────────────────────────────────────────────────────
   // Fuente: vertigomotors.com (fabricante oficial) y vertigomotorsusa.com

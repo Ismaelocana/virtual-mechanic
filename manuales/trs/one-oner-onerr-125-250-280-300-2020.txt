@@ -1,0 +1,743 @@
+User Manual
+125 - 250 - 280 - 300
+2
+Welcome to TRS
+Dear customer,
+Thank you for your confidence in us, and congratu -
+lations on the purchase of your new TRS One.
+Because of our experience, professionalism and
+passion for trial bikes we are able to offer you an
+innovative¬, reliable and up-to-date motorcycle. It
+has a comprehensively checked technical perfor -
+mance that has been tried and tested both by our
+technicians and our high-level drivers worldwide.
+The solutions we have used give the motorcycle an
+unmistakable character, combining simplicity, re -
+liability and design. We pay attention to every last
+detail to give you a unique bike.
+At the same time, this manual gives you all the in -
+formation you need to use the motorcycle appro -
+priately and safely. We recommend that you read it
+carefully before you use the motorcycle.
+In addition, you will find tips and useful information
+for the maintenance and upkeep your new TRS
+One.
+Yours faithfully,
+Jordi Tarrés
+3
+Picture shows homologated version with regard to regulation (EU) Nº168/2013  |  Picture shows competition version only and is not manufactured for, nor should it be used on
+public streets, roads or highways. The use of this kit should be limited to participation in sanc -
+tionet competition events upon a closed course.
+4
+TRS advises you:
+Please read this user manual thoroughly before using your motorcycle. It details all
+the instructions for the correct handling of the motorcycle and for your safety, as
+well as helping towards the best possible maintenance ¬and upkeep from day one.
+Please pay special attention to the notes flagged up with the following symbols:
+ATTENTION! This symbol refers to points which, if
+ignored, could lead to some kind of damage to your
+motorcycle.  |  Non-observance  |  of  |  these  |  warnings
+could render your motorcycle warranty void.
+CAUTION! This symbol refers to points which, if
+ignored, could lead to physical danger for the user.
+In addition to these specific warnings, the manual gives advice on the best use of
+your motorcycle, as well as better adjustment and control of its important features.
+TRS reserves the right to make changes to this manual.
+5
+TRS recommends:
+If you have any doubts about adjustments to your  |  • For a long life of service, keep the motorcycle
+motorcycle, refer to the manual and/or contact an  |  maintained as recommended¬ in this manual.
+authorised TRS dealer.
+• This bike is designed to be safe when driving, pro -
+Please carefully read through the information in the  |  vided that the driver is equipped with the appro -
+user manual to familiarise yourself with the features  |  priate safety equipment (helmet, protective clo -
+of your motorcycle before driving it using the maxi -  |  thing, etc.). Be careful and drive sensibly.
+mum power settings.
+• A running-in period of at least 8-10 hours without
+driving at high speeds or full throttle is advised, in
+order to allow the engine to bed in. In these first
+hours, drive at a moderate speed only.
+• Fuel is a highly inflammable liquid. Use caution
+when refuelling and always¬ turn off the engine
+first.
+• Before running the engine at high speed, it is im -
+portant to let it reach an optimum operating tempe -
+rature, especially when starting up the motorcycle
+or in low temperature conditions.
+• This motorcycle uses two-stroke synthetic oil
+mixed with 1% 98 octane fuel. Do not use any other
+kind of lubrication without previously checking
+with an authorised TRS mechanic.
+• This motorcycle is designed to carry just one per -
+son, and it is not permitted to carry a passenger.
+6
+Index
+Index  |  7  |  22 - Temperature switch  |  22
+1 - Description of parts  |  8  |  23 - Filling with coolant  |  23
+2 - Technical specifications TRS One - Engine  |  10  |  24 - Bleeding air in the cooling system  |  23
+3 - Technical specifications TRS One - Frame  |  11  |  25 - Carburettor  |  24
+4 - Manufacturer’s plate (under the fuel tank)  |  12  |  26 - Carburetion of the mixture  |  24
+5 - Starting and stopping the engine  |  13  |  27 - Ajuste del Ralentí  |  24
+6 - Choke  |  13  |  28 - Front suspension  |  25
+7 - Gearshift  |  14  |  29 - Rear suspension  |  25
+8 - Fuel tap  |  14  |  30 - Drive chain  |  26
+9 - Fuel tank  |  15  |  31 - Reed valve  |  27
+10 - Tyres  |  16  |  32 - Swing arm  |  27
+11 - Braking system  |  17  |  33 - Rear brake pedal  |  27
+12 - Steering lock  |  18  |  34 - Footrest  |  28
+13 - Side stand  |  18  |  35 - Exhaust muffler  |  28
+14 - Handlebar and Instrument panel  |  19  |  36 - Tank clutch pump  |  28
+15 - Adjustment of the levers and the handlebar  |  20  |  37 - Motorcycle maintenance  |  29
+16 - Checking the oil level  |  20  |  38 - Pares de Apriete  |  29
+17 - Changing the transmission oil  |  20  |  39 - Storage  |  30
+18 - Spark plug  |  21  |  40 - Maintenance operations  |  31
+19 - Air Filter  |  21  |  41 - Approval  |  33
+20 - Cooling system  |  22  |  42 - Xtrack Kit  |  34
+21 - Draining of coolant  |  22  |  43 - Troubleshooting and Frequently Asked Questions  |  35
+44 - Recommended products  |  39
+7
+1 - Description of parts
+04
+02  |  03
+12
+01
+19  |  18  |  09
+08  |  07
+10
+05  |  27  |  17
+24  |  15
+20
+14  |  13
+25  |  16  |  28  |  11  |  21
+22
+20
+1- Clutch lever  |  7- Starter knob  |  12- Engine breather
+2- Indicator, horn and stop buttons  |  8- Fuel tank  |  13- Fuel tap
+3- Brake lever  |  9- Radiator  |  14- Reed valve
+4- Accelerator  |  10- Radiator bleed screw  |  15- Drive chain
+5- Radiator cap  |  11- Rear brake pedal  |  16- Gear change pedal
+6 - Fuel tank cap
+8
+30  |  31
+06
+23
+29
+26
+30
+17- Front fork  |  22 - Water pump  |  27- Carburettor
+18- Spark plug  |  23- Front mudguard  |  28 - Sprocket
+19 - Exhaust muffler  |  24 - Front brake calliper  |  29 - Front suspension adjustment
+20- Swing arm  |  25- Ignition cover  |  30- Footrests
+21- Exhaust pipe  |  26 - Air filter cover  |  31- Rear mudguard
+9
+2 - Technical specifications TRS One - Engine
+Technical Specifications TRS One - Engine
+ENGINE:  |  Single cylinder 2 stroke.
+Displacement:  |  294,1cc - 272,2 cc - 247,7 cc
+Cooling system:  |  Liquid cooled.
+Bore x stroke:  |  79x60 mm (300 cc) - 76x60 mm (280 cc) - 72,5x60 mm (250 cc).
+Ignition:  |  New HIDRIA CDI (double spark).
+Clutch:  |  3 disks diaphragm TRS hydraulic system.
+Gearbox:  |  5 speeds.
+Engine oil capacity:  |  NILS TX FOR CLUTCH 350cc.
+Transmission:  |  Chain.
+Fuel:  |  Petrol 2.3L 98 2T oil 1.0%.
+Carburettor:  |  Dellorto PHBL26 reed valve admission.
+Starting:  |  Kick to primary transmission (kick-start).
+Air filter:  |  Foam.
+Spark:  |  NGK-R BPMR6A.
+10
+3 - Technical specifications TRS One - Frame
+Technical specifications TRS One - Frame
+CHASSIS:  |  Twin spar forged aluminium frame.
+Swing arm:  |  Aluminium.
+Front suspension:  |  Aluminium Tech, 39mm diameter, 175mm str.
+Setting:  |  Adjustable spring extension and preload.
+Rear suspension:  |  Progressive R16V hydraulic system
+Front:  |  Spring preload and extension.
+Stroke-travel:  |  Rear wheel stroke 168mm.
+Wheel:  |  Morad aluminium radiated wheel.
+Front-wheel tyre:  |  Chain 1.6x21 Michelin X11 Trial 2.75x21.
+Rear-wheel tyre:  |  2.15x18 Michelin X11 Trial 4.00x18 TL.
+Front brake:  |  Disc 185mm clamp 4 pistons BRAKTEC.
+Rear brake:  |  Disk 150mm clamp 2 pistons BRAKTEC.
+Net weight:  |  65Kg.
+Dimensions:  |  Length x width x height: 2,015 x 830 x 1,125mm.
+Seat height:  |  640mm
+Engine Protector:  |  Aluminium 7075.
+Foot rest:  |  Adjustable.
+TRS Motorcycles recommend NILS lubricant.
+11
+4 - Manufacturer’s plate (under the fuel tank)
+All motorcycles manufactured by TRS have an identification number stamped  |  a) The position of the identifi -
+on the frame which also appears in the technical sheet of the documentation  |  cation number, located on the
+that will be supplied to the user. This number cannot be replaced or changed.  |  tube on the right hand side of the
+It is stamped on the tube on the right hand side of the frame and may be  |  frame.
+required in any technical inspection.
+a
+SERIAL NUMBER AND KEY CODE
+These numbers are the ones that identify your motorcycle and the  |  b)) The engine identification num -
+steering lock. Keep a note of them in your manual (e.g. to obtain a copy  |  ber, located under the reed valve
+of the keys if they are lost).  |  of the carburettor.
+We recommend that you keep a note of the serial
+number and the identification details for your
+b
+motorcycle to use in the event of theft or to order
+spare parts.
+12
+5 - Starting and stopping the engine  |  / 6 - Choke
+STARTING AND STOPPING THE ENGINE  |  CHOKE
+Use the choke when the engine is cold to help star -
+b  |  ting without damaging the engine. This device,
+used correctly, will prevent wear and mechanical
+damage by starting the motorcycle in adverse tem -
+peratures. It is operated by a black lever located in
+the carburettor.
+b) Stop button, to the left of the handlebar
+The Stop button is positioned on the left-hand side
+a  |  of the handlebar, close to your thumb for easy use.
+d
+a) Start lever, on the right side of the TRS One
+d
+c
+c) Racing light button, behind the headlight
+d) Choke, in the carburettor
+13
+7 - Gearshift  |  /  |  8 - Fuel tap
+GEARSHIFT  |  FUEL TAP
+The gearshift is controlled by a pedal on the left-  |  On the left side of the frame, you can see the diagram
+hand side of the vehicle. The sequence of gears is  |  for using of the fuel tap.
+as shown in the diagram. You must hold down the  |  The small operating lever is located above the
+clutch lever on the left while changing gear. The  |  carburettor.
+position of the gears is illustrated in the diagram.  |  We advise turning off the fuel tap when transporting
+the motorcycle in a vehicle as well as when it is not in
+use for a long period.
+You can find the first gear by
+pushing the lever downwards.  |  Positions Res, On and Off in the fuel
+For the other gears, push the  |  tap. There is a sticker on the frame
+5  |  lever upwards, moving up a gear  |  showing the position.
+4  |  each time you push it.
+3
+2  |  a
+N
+1  |  b
+b) Fuel tap
+a) Gear shift lever
+b
+b) Fuel tap
+14
+9 - Fuel tank
+FUEL TANK
+The tank has a capacity of 2.5 litres and should be filled with a mixture of unleaded
+petrol and oil. The tank cap is positioned at the top of the tank. Minimum octane
+rating of fuel: 98 octanes.
+Important. Do not mix vegetable and mineral oil. Keep to the
+specified levels and proportions for correct combustion in the
+engine. To produce a uniform mixture, first pour the oil and part
+of the petrol into a container, shake and then add the rest of
+the petrol. It is more difficult to produce a good mixture at low
+temperatures and this should be avoided.
+15
+10 - Tyres
+TYRES
+On low-grip terrain you can reduce the tyre pressu -
+TYRES  |  re slightly to increase the grip and vice versa.
+Front wheel:
+2,75x21” TRIAL
+Rear wheel:
+4,00x18” TRIAL
+RECOMMENDED TYRE PRESSURE:
+Front wheel:
+0,45bar ( 0,42bar for competition)  |  The condition of the tyres is a key factor in safety
+and guarantees better driving. Make sure your
+Rear wheel:  |  tyre pressure is always correct and check for
+0,35bar (0,3bar for competition)  |  wear. The pressure must be checked when the
+tyre is cold.
+Image of the rear wheel of the TRS
+16
+11 - Braking system
+BRAKE PADS  |  LEVEL OF REAR BRAKE FLUID  |  LEVEL OF FRONT BRAKE FLUID
+To ensure optimal braking you need to check the  |  At the rear of the front brake pump you can check
+condition of the brake pads. Initially the pad indi -  |  the fluid level, and replenish it to the correct level
+cator groove is normally around 3mm. If after use  |  with brake fluid NILS DOT-4.
+you find this has been reduced to below 2mm, they
+need to be replaced.
+To replace them you need to remove the brake ca -  |  Max
+lliper from the fork tube, taking out the bolts and  |  Min
+the wire clip that you can remove from underneath.
+For reassembly you will need to lever the pistons  |  b
+back with a screwdriver. Then make sure the bolts
+and the wire pin clip are tight.
+c
+b) Rear brake reservoir
+c) Level of fluid in the front brake pump.
+To check the rear brake fluid level, you can view
+it through the triangle of the frame on the left side
+a  |  of the motorcycle. The level needs to be kept be -
+tween the minimum and the maximum.
+You can access the oil reservoir by removing the pe -
+trol tank and loosening the cap on the tank. Brake
+fluid is highly corrosive so avoid spillage.
+a) Brake pads
+17
+12 - Steering lock  |  /  |  13 - Side stand
+STEERING LOCK SYSTEM  |  SIDE STAND
+c
+b
+a
+b) Side stand located on the right of the motorcycle  |  c) Adjustment holes in the side stand
+a) The steering lock system is located under the headlight  |  The side stand is located on the right side of the vehicle,  |  At the base of the side stand there are two holes that you
+secured to the frame by a spring. Move the side stand  |  may use to change the way it folds up.
+The anti-theft system located at the front of the  |  out as far as it will go to rest the motorcycle on it when  |  If you put the spring in the forward setting in the direction
+motorcycle allows you to immobilise the steering.  |  stationary.  |  of travel, the side stand will always stay open until you
+Turn the handlebars as far as they will go to the ri -  |  raise it.
+ght and press the anti-theft system, turning the key  |  If you use this position, it is important to remember to
+until you feel it lock.  |  manually lift it before starting off.
+Whereas if you put the spring into the rear setting, the
+stand will automatically fold up into position in order for
+you to drive.
+18
+14 - Handlebar and Instrument panel
+HANDLEBAR AND INSTRUMENT PANEL
+a  |  e
+g
+c
+b
+d
+h
+Left-hand side of the handlebar.  |  Central part of the handlebar.  |  Right-hand side of the handlebar.
+On the left side of the handlebar are:  |  The instrument panel is in the centre of the hand -  |  On the right-hand side of the handlebar you
+lebar (e). (More information and instructions for use  |  can find:
+a) - Clutch lever.  |  are given in later sections of this manual).
+b) - Horn.  |  f - Brake lever.
+c) - Engine stop button.  |  g - Throttle.
+d) - Main/dip beam switch, and indicator switch -  |  f ) At the back of the headlight
+(Motorcycle approval)  |  is the CDI map switch. Here,
+you can choose between the
+positions:
+f  |  I: Wet or 0: Dry.
+19
+15 - Adjustment of the levers and the handlebar / 16 - Checking the oil level / 17 - Changing the transmission oil
+ADJUSTMENT OF THE LEVERS  |  CHANGING THE TRANSMISSION OIL
+a  |  b
+Maximum initial free play of both levers of the handlebar.  |  a) Oil filler cap, in the upper part of the sump.  |  Fig (b):Oil drain plug at the bottom of the sump
+Both the clutch lever and the brake lever must have  |  The engine has a capacity of 350 cc of transmis -  |  There is a plug on the bottom of the sump for drai -
+a maximum initial free play of 3mm. It is important  |  sion oil.  |  ning the oil Fig(b) and another in the upper part for
+that this free play exists and you should not disable  |  filling Fig(a). To change the oil, start the motorcycle
+it. To adjust, use the adjustment nuts on the levers.  |  Do not mix different types of oil. Always top up  |  with a cold engine and let it run at idle speed for 5
+using the same type. We recommend using oil  |  minutes. This will warm up the oil to the right tem -
+To adapt the handlebar to different types of driving,  |  such as NILS CLUTCH TRIAL.  |  perature for changing.
+you can change the angle by loosening the clamps
+that secure it to the fork. Once you have adjusted  |  TRS Motorcycles recomends NILS CLUTCH TRIAL.  |  Then place the motorcycle in driving position with
+it as desired, tighten the bolts again, starting with  |  a container below and remove the drain plug. Let
+those closest to the seat and moving on to those  |  all of the oil drain out, and then clean the plug, re -
+closest to the speedometer.  |  moving any metal shavings. Once it is clean, repla -
+ce it and refill the engine through the opening on
+the top, until reaching the desired level in the sight
+level glass.
+20
+18 - Spark plug / 19 - Air Filter
+SPARK PLUG  |  AIR FILTER
+a  |  c
+d
+a) The plug that is factory-ins -
+talled is defined in the techni -  |  b
+1mm  |  cal specifications. Tighten to
+11Nm.  |  b) Top view of the cover of air filter case.  |  c) By removing the hatch you can easily reach the air filter to clean
+or replace it; d) Foam air filter.
+It is important to maintain the gap stipulated by  |  The air filter is easily reached removing the top
+TRS of 1mm between the electrode and the arc to  |  hatch of the air filter case.  |  It is very important to clean it after each time you
+ensure optimum engine performance.  |  Move the spring back in order to remove the filter  |  remove it to ensure it functions correctly and to ob -
+Its colour tells you whether you are using¬ the ri -  |  for cleaning or replacement.  |  tain the best performance from the engine without
+ght fuel:  |  reducing its reliability.
+Very white colour: very poor mixture.  |  To insert it, slide through the centre of the spring to
+Very black colour: too greasy a mixture.  |  make sure it is placed correctly.
+21
+20 - Cooling system /  |  21 - Draining of coolant /  |  22 - Temperature switch
+COOLING SYSTEM  |  DRAINING OF COOLANT  |  TEMPERATURE SWITCH
+a
+c
+b) Temperature switch located
+at the bottom of the radiator.
+b
+The temperature switch
+a) Radiator  |  b) Coolant drain bolt located on the lid of the water pump.  |  controls the start and
+stop of the fan to ensure
+Do not forget that the radiator can get very hot. When handling, be cautious and  |  By loosening the coolant drain bolt at the bottom  |  the engine has the co -
+wait for it to cool down after stopping the engine. Always use coolant (-30°C) for  |  of the water pump you can drain the coolant circuit  |  rrect operating temp¬e -
+light alloy engines for topping up the radiator.  |  of the engine.  |  rature.
+It is important to be
+The tubes into and out of the radiator should be regularly checked for dents,  |  It is important to wait until the engine is at ambient  |  aware if the motorcycle
+cracks or leaks that could impair the ¬cooling system. For correct mainte -  |  temperature to drain the radiator, to avoid any dan -  |  is overheating and the
+nance of the engine, make sure it has the right level of coolant. To do this,  |  ger of burns.  |  fan is not working. In
+you can top up the radiator tank through the cap at the top (preferably with  |  this case, it needs to be
+the recommended coolant).  |  replaced.
+22
+23 - Filling with coolant  |  /  |  24 - Bleeding air in the cooling system
+FILLING WITH COOLANT  |  BLEEDING AIR IN THE COOLING SYSTEM
+Remove the cap on the top of the radiator to fill it up  |  The factory-supplied coolant is a permanent-ty -
+with coolant, making sure you remove the air using  |  pe antifreeze of ethylene glycol, diluted in 50%
+the bleed screw on the cylinder head. For optimum  |  distilled water and containing anticorrosive ad -
+functioning, do not fill the radiator right up to the  |  ditives.
+top. We recommend using a suitable filling recep -
+tacle for greater control.  |  We recommend periodically bleeding the system
+and changing the coolant. Watch out for abnormal
+colour of the coolant: white stains (corroded alu -
+minium), brown stains (corroded steel). To respect
+the environment, dispose of the used coolant in
+a
+the designated places.  |  b
+b) Bleed screw for the coolant, located in the cylinder head.
+In order to ensure that the cooling circuit is fully
+bled, when you are filling it with coolant, loosen the
+screw located at the top of the cylinder head until
+the air has been released, and retighten it. Then fill
+the radia¬tor up to the correct level, not quite full,
+a) Filler cap located on the top of the radiator.  |  so that the air acts as an expansion vessel.
+23
+25 - Carburettor  |  /  |  26 - Carburetion of the mixture /  |  27 - Ajuste del Ralentí
+CARBURETTOR  |  CARBURETION OF THE MIXTURE  |  ADJUSTMENT OF THE
+IDLE SPEED
+It is advisable to periodically check the carburettor, washing and drying it with  |  An optimum petrol-air mixture will enable you to
+compressed air to improve its performance.  |  obtain maximum performance from your engine.
+Check the height of the float that marks the level of fuel in the carburettor and  |  To do this, you need to adjust the amounts of fuel
+adjust it so it is at 17mm within the specified margins.  |  and air entering the carburettor.
+A good way to find out the quality of the mixtu -
+re that is going into the engine is to inspect¬ the  |  b
+spark plug. If the plug is light brown in colour, the  |  c
+mixture is good, whereas if it is black (excess of pe -
+trol), or white (ex¬cess of air), the mixture reaching
+the engine is wrong.
+To control the amount of fuel reaching the engine  |  b) Idle speed c) Air
+you can adjust the position of the main jet, which
+has a graduated scale, where the higher the num -  |  The carburettor has two adjust -
+ber indicates the greater the flow of fuel. You can  |  ment screws: the air screw and
+a
+also control the mixture by adjusting the air screw,  |  the idle speed screw, which
+unscrewing it to enrich the mixture and vice versa.  |  allow you to change the speed
+of operation if you so require.
+a) Carburettor. When handling the carburettor and adjacent parts there may be traces of
+fuel that need to be drained first.
+Be cautious: fuel is highly flammable and toxic.
+24
+28 - Front suspension  |  /  |  29 - Rear suspension
+FRONT SUSPENSION  |  REAR SUSPENSION
+The front fork can be ad -  |  For correct functioning of the motorcycle, it is very
+justed with the screws  |  important to fit the suspension wishbone arm in
+a  |  b
+at the top  |  its original position. Its asymmetric triangle shape
+allows you to make sure that it is correctly positio -
+ned. Once it is in place it should be tilted¬ slightly
+upwards.
+The maintenance and lubrication of the bearings,
+seals and ball joints of the system is essential to
+guarantee smooth operation, in addition to ensu -
+a) Spring preload; b) Adjusting the length  |  ring that the screws are correctly tightened.
+To adjust the preload,  |  c) The hydraulic brake
+turn the screw on the  |  of the shock absorber
+left-hand  |  fork  |  tube,  |  can be adjusted using
+and to set the length,  |  c  |  the screw located on the
+turn the screw on the  |  bottom.
+right-hand tube.
+Important! It is essential
+to maintain and lubrica -
+te the bearings, ball joint
+and seals.
+a) On the right-hand side of the  |  b) On the left-hand side of the
+suspension you can set the pre -  |  suspension you can set the len -
+load .  |  gth.
+25
+30 - Drive chain
+DRIVE CHAIN
+It is important to assemble the connecting link ca -  |  The tension of the chain should allow a play of
+refully. The closed end must point in the direction  |  approximately 10-15mm in the area between the
+of chain rotation so that it doesn’t fly off if the chain  |  swinging arm and the slack adjusting bolt.
+is hit by a stone. Also, keeping the chain clean and
+lubricated prolongs the life of the drive pinion and  |  To tighten the chain, first loosen the rear axle nut
+sprocket. After the chain has been tightened multi -  |  and then adjust the chain with the drive chain
+ple times, it will need to be replaced.  |  slack adjusting bolt located on the swing arm.
+a
+When adjusted, tighten the nut on the rear axle,
+making sure that the chain is aligned and not twis -
+a) Drive chain  |  ted.
+The drive chain slack adjusting bolt is located on  |  You need to carry out this adjustment with care, as
+the sides of the swinging arm. Using the adjusting  |  a rear wheel axle that is misaligned or has a screw
+bolt you can obtain the right chain slack, making  |  not tightened sufficiently could cause an accident.
+sure to adjust both sides evenly for correct wheel
+alignment.  |  Keep the chain lubricated for smooth operation,
+preferably using viscous oil for longer life. It is also
+important to lubricate the shaft and the nut.
+c
+b
+c) Connecting link.
+b) Once you have adjusted the chain to the right tension, tighten
+up the axle.
+26
+31 - Reed valve  |  /  |  32 - Swing arm  |  /  |  33 - Rear brake pedal
+REED VALVE  |  SWING ARM  |  REAR BRAKE PEDAL
+The inlet is through a reed valve and its condition  |  For correct maintenance of the rear suspension  |  The screw for adjusting the brake pedal height in
+has a significant influence on the performance of  |  system and swing arm, it needs to be regularly dis -  |  relation to the footrest is at the front of the lever.
+the engine. Whenever the carburettor is removed  |  mantled for cleaning, checking and lubricating the
+for cleaning, make sure the reed valves are not  |  internal bearings, plus adjusting and lubricating of  |  At the rear there is a rod and lock nut that allow
+worn or broken and if so, replace the valve with a  |  the chain. Make sure that all the parts are in perfect  |  you to adjust the rear brake. It is very important that
+new one.  |  condition and replace any worn components as re -  |  when it has been tightened there is 2mm clearance
+quired.  |  gap at the front to ensure smooth operation.
+c
+2mm
+d
+a
+b
+b) Important ! The swing arm and the rear suspension need to be
+a) Reed valve, located between the carburettor and the engine.  |  regularly maintained.
+c) Tensioning rod rear brake pedal; (d) Screw for height adjustment
+of the brake pedal. For correct performance, you need to leave a
+small clearance gap.
+27
+34 - Footrest  |  /  |  35 - Exhaust muffler  |  /  |  36 - Tank clutch pump
+FOOTRESTS  |  EXHAUST MUFFLER  |  CLUTCH PUMP TANK
+The footrests are adjustable. By swapping the was -  |  The end of the muffler is detachable and allows you  |  It is necessary to periodically check the oil level in
+hers you can move them forward or backwards  |  to easily replace the exhaust packing fibreglass in  |  the clutch pump tank. As is indicated on the lid,
+from 2.5mm to 5.00mm.  |  order to improve the performance of the motorcycle.  |  only mineral oil may be used, in order not to dama -
+This allows you to customise the motorcycle for  |  ge the o-rings.
+greater efficiency and comfort, depending on your  |  We recommend NILS mineral oil. If you need to
+height or driving style.  |  bleed the circuit, push down the lever repeatedly
+until you note it has been bled, and then fill with oil
+up to 2mm from the top.
+a
+b
+c
+b) ) Important ! Remember that when the motorcycle is turned on,
+the exhaust get very hot.
+a) The footrests are adjustable, so that you can move them forwards
+or backwards by moving the washers 2.5mm to 5.00mm in either  |  c) Clutch pump tank. Only mineral oil may be used, in order not to
+direction.  |  damage the o-rings
+28
+37 - Motorcycle maintenance  |  /  |  38 - Pares de Apriete
+MOTORCYCLE MAINTENANCE  |  TIGHTENING TORQUES
+The greater the care given to the motorcycle, the  |  TORQUE  |  Nm  |  TORQUE  |  Nm
+longer its service life will be and the better it will  |  Swinging arm-Chassis  |  40-50  |  Ignition fasteners  |  7-8
+perform. Check all the elements listed below and  |  Upper shock absorber fastener  |  40-50  |  Clutch fasteners  |  20-25
+keep them clean and lubricated for optimum ser -  |  Lower shock absorber fastener  |  40-50  |  Cylinder stud fasteners  |  25
+vice:  |  Front wheel axle  |  40-50  |  Reed valve fasteners  |  7-8
+Connecting rods  |  40-50  |  Clutch spring fasteners  |  3-4
+Handlebar  |  25-30  |  Sump fasteners  |  7-8
+·LEVER ARTICULATIONS  |  Front mudguard bridge  |  7-10  |  Water pump cover fastener  |  7-8
+Muffler  |  10-15  |  Clutch cover fasteners  |  7-8
+·REAR BRAKE PEDAL  |  Rear wheel axle  |  40-50  |  Flywheel fasteners  |  40
+Front brake calliper fasteners  |  25-30  |  Ignition cover  |  7-8
+·GEAR LEVER  |  Exhaust pipe fasteners  |  10-15  |  Sump drain plug  |  12
+Engine fasteners  |  30-35  |  Starter pedal bolt  |  12-13
+·FOOTRESTS AND SIDE STAND  |  Rear brake master cylinder fasteners  |  7-10  |  Tornillo del pedal de cambio  |  7-8
+Spark plug  |  11  |  Gear change pedal bolt  |  12-13
+·STARTER PEDAL
+·THROTTLE
+·STEERING COLUMN
+·DRIVE CHAIN AND SWING ARM ARTICULATIONS
+·CHAIN TENSIONER
+29
+39 - Storage
+STORAGE
+If it is necessary to store the motorcycle for a long period of time, the following operations are recommen -
+ded before storage:
+•Clean the whole vehicle.
+•Lubricate or grease the components that need it.
+•Empty the fuel tank. (Take care with the fuel, which is inflammable and toxic)
+•Empty the sump, removing the old transmission oil and refilling with new oil (If the engine is cold, it is
+recommended to start up and leave running for a few minutes to warm up the oil and assist draining).
+•Cover the exhaust with a plastic bag, protecting it from the elements.
+•Any unpainted metal parts that could get rusty should be coated with oil.
+•Avoid the tyres touching the ground by placing a piece of cardboard or similar material under them.
+•Protect the motorcycle as much as possible form dust and dirt by covering it with a plastic or canvas
+sheet.
+When putting the motorcycle back into service, first:
+•Remove the plastic covers used.
+•Check the oil and lubrication of components.
+•Check the spark plug.
+•Adjust tyre pressure as recommended.
+•Fill the petrol tank.
+30
+40 - Maintenance operations
+MAINTENANCE WORK
+(Note: Note that cleaning your motorcycle prior to maintenance will aid you in detecting any faults and wear in the vehicle)
+COMPONENT  |  CHECK  |  ADJUST  |  REPLACE  |  CLEAN  |  LUBRICATE
+Rear shock absorber  |  Annually  |  Every 2 years
+Front fork suspension oil  |  60 hours
+Transmission oil  |  2 hours  |  10 hours
+Brake adjustment  |  After every use  |  Whenever necessary
+Spark plug  |  10 hours  |  30 hours  |  60 hours  |  15 hours
+Swinging arm and connecting rods  |  After every use  |  If damaged  |  After every use  |  After each wash
+Transmission chain  |  After every use  |  Whenever necessary  |  If damaged  |  After every use  |  After each wash
+Throttle cable and twist grip  |  After every use  |  Whenever necessary  |  If damaged  |  Whenever necessary  |  After each wash
+Reed valve box  |  30 hours  |  If damaged  |  After every use
+Carburettor  |  Whenever necessary  |  If damaged  |  After every use
+Chassis  |  If damaged  |  After every use
+Carburettor jet  |  Whenever necessary  |  If damaged  |  10 hours
+Steering bearing  |  If damaged
+Piston bearing  |  If damaged
+Wheel bearing  |  If damaged
+Engine bearings  |  If damaged
+Rear sprocket  |  30 hours  |  First 5 hours  |  If damaged  |  After each wash
+Cylinder head and cylinder  |  60 hours  |  Annually
+Brakes  |  After every use  |  Whenever necessary  |  If damaged
+Brake discs  |  After every use  |  First 5 hours  |  If damaged  |  Each two uses
+Clutch plates  |  If damaged
+Clutch  |  If damaged
+Wheel-muffler clearance  |  After every use  |  If there are any fall
+Exhaust  |  500 hours
+Muffler exhaust packing fibreglass  |  100 hours
+31
+COMPONENT  |  CHECK  |  ADJUST  |  REPLACE  |  CLEAN  |  LUBRICATE
+Air Filter  |  After every use  |  If damaged  |  After every use  |  After each wash
+Steering play  |  After every use  |  Whenever necessary
+Brake hoses  |  Whenever necessary  |  Every 2 years  |  After each wash
+Coolant  |  Whenever necessary  |  Annually
+General lubrication  |  After every use  |  After every use  |  After each wash
+Front and rear wheel  |  If damaged  |  After every use
+Tyres  |  After every use  |  If damaged  |  After every use
+Brake fluid level  |  Whenever necessary
+Chain guide slipper  |  If damaged
+Starter pedal and gear change pedal  |  If damaged  |  After each wash
+Brake master cylinder piston and  |  If damaged
+dust cover
+Brake piston and dust cover  |  In the event of a fall
+Piston and rings  |  60 hours  |  Annually
+Front and rear wheels  |  20 hours  |  If damaged  |  After every use
+Fuel system  |  After every use  |  If damaged
+Front suspension  |  Whenever necessary  |  If damaged
+Exhaust seal  |  If damaged
+Nuts, bolts and other fasteners  |  Whenever necessary  |  If damaged
+Petrol tube  |  After every use  |  Whenever necessary  |  If damaged
+Radiator tube and joints  |  After every use  |  Whenever necessary  |  If damaged
+Chassis protective adhesive elements  |  If damaged
+Sump protector  |  If damaged
+32
+41 - Approval
+APPROVAL
+All the components fitted in this vehicle comply with legal approval require -
+ments, including the identification marks on parts that require them.
+In particular, note that the following items are compulsory for using the motor -
+cycle on public roads and must be present on the vehicle in order to pass the
+Vehicle Technical Inspection Test:
+- Registration plate holder
+- Speedometer
+- Lighting system and reflectors
+- Indicators
+- Horn
+- Rear view mirrors
+- Steering lock
+- Manufacturer’s identification plate
+- Air filter restrictor
+- Exhaust system with catalyser
+- Exhaust muffler
+- Carburettor jets
+- Side stand
+IMPORTANT NOTE: The vehicle is also supplied with a RACING KIT contai -
+ning additional components. Bear in mind that the modifications provided
+by this kit are NOT covered by the vehicle approval.
+33
+42 - Xtrack Kit
+XTRACK KIT
+This kit is a competition accessory only and is not manufacturated for, nor should it be used on public streets, roads or highways. The use of this kit should be limited to
+participation in sanctioned competition events upon a closed course.
+34
+43 - Troubleshooting and Frequently Asked Questions
+TROUBLESHOOTING: FREQUENTLY ASKED QUESTIONS
+(IMPORTANT NOTE: We recommend you go to an authorised garage to carry out any internal adjustments to the engine or parts that are not the result of normal
+wear. Please note that tampering with the motorcycle is potentially dangerous to you and/or may lead to possible cancellation of the warrantee)
+PROBLEM  |  POSSIBLE CAUSES  |  STEPS TO TAKE
+- Dirty spark plug.  |  - Clean and dry the spark plug or change it.
+The engine won’t start  |  - Engine flooded.  |  - Open the throttle fully and kick the starter pedal 5 to 10 times and
+then start the engine.
+- Fuel badly mixed.  |  - Check for obstruction in the petrol tank tubes and air filter.
+The engine starts correctly and then stops  |  - Incorrect air supply, engine flooded.  |  - Close the choke, check the fuel pipes.
+- Insufficient fuel.  |  - Fill the fuel tank.
+Engine overheated  |  - Coolant running low.  |  - Add coolant, check for possible leaks.
+- Radiator dirty or obstructed.  |  - Clean the radiator fins.
+- Problems with the spark plug and/or plug cap.  |  - Check the condition of both.
+Engine runs erratically  |  - Fault in the ignition rotor.  |  - Change the rotor.
+- Water in the fuel.  |  - Empty the tank and refill with new petrol.
+35
+PROBLEM  |  POSSIBLE CAUSES  |  STEPS TO TAKE
+Engine makes strange noises  |  - Ignition problems.  |  - Take the motorcycle to an authorised workshop.
+- Overheated engine.  |  - Stop the engine and check the state of the cooling and exhaust
+systems.
+- Intake problems.  |  - Clean the fuel admission system and air filter.
+- Exhaust system problems.  |  - Check for leaks in the system and clean or replace the exhaust
+Engine lacks power  |  packing fiberglass.
+- Carburettor jets dirty.  |  - Remove the carburettor and clean it.
+- Damaged crankshaft bearings.  |  - Replace the bearings.
+- Clutch slipping.  |  - Check its adjustments. Take bike to a specialist garage.
+- Water is getting into the cylinder.  |  - Change the cylinder head O-ring.
+Exhaust gives off white smoke  |  - Accelerator cable incorrectly adjusted.  |  - Check accelerator adjustment.
+- Insufficient air in the mixture.  |  - Clean or change the air filter.
+Exhaust gives off brown smoke  |  - Main jet too high.  |  - Check the main jet
+- Carbon deposits in the combustion chamber.  |  - Clean the combustion chamber.
+- Incorrect type of fuel.  |  - Empty fuel tank and refill with correct type of fuel.
+Explosions in the exhaust  |  - Spark plug in bad condition or wrong type.  |  - Replace spark plug with correct type.
+- Exhaust system gaskets damaged.  |  - Check condition of gaskets and replace if necessary.
+- No play in the clutch lever.
+Clutch not working correctly  |  - Clutch worn.  |  - Take bike to a specialist garage.
+- Clutch springs broken or weak.
+36
+PROBLEM  |  POSSIBLE CAUSES  |  STEPS TO TAKE
+Gears engage badly  |  - Problems in forks, gears or additional gearbox systems.  |  - Take bike to a specialist garage.
+- Worn or badly adjusted chain  |  - Adjust or change chain.
+- Rear sprocket teeth worn.  |  - Change rear sprocket.
+- Chain needs lubrication.  |  - Apply appropriate chain lubricant.
+Abnormal noises  |  - Badly aligned rear wheel.  |  - Take bike to a specialist garage.
+- Lack of oil in the front fork.  |  - Add fork oil to the specified level.
+- Problems with the front fork springs.  |  - Replace front fork spring.
+- Worn brake disc.  |  - Replace brake disc.
+- Brake pads glazed or badly fitted.  |  - Refit or replace pads.
+- Steering shaft nut too tight.  |  - Loosen the steering nut a little.
+Unstable ride  |  - Steering bearings worn or damaged.  |  - Replace bearings.
+- Bent steering shaft.  |  - Take bike to a specialist garage.
+- Too much oil in fork.  |  - Remove excess oil.
+- Oil in fork too dense.  |  - Replace oil with correct density.
+Suspension too hard  |  - Twisted or bent fork.  |  - Take bike to a specialist garage.
+- Excessive tyre pressure.  |  - Adjust tyre pressure.
+- Rear shock absorber badly adjusted.  |  - Adjust rear shock absorber.
+37
+PROBLEM  |  POSSIBLE CAUSES  |  STEPS TO TAKE
+- Low oil level in fork.  |  - Add the right oil to the specified level.
+Suspension too soft  |  - Oil with excessively low density.  |  - Replace oil with correct density.
+- Rear shock absorber badly adjusted.  |  - Adjust rear shock absorber.
+- Worn tyre, swinging arm or bearings worn.  |  - Take bike to a specialist garage.
+- Rim off-centre.  |  - Take bike to a specialist garage.
+Handlebar vibration  |  - Badly aligned wheel.  |  - Take bike to a specialist garage.
+- Steering shafts, handlebar supports or fasteners with play.  |  - Tighten nuts and fasteners to specified torque.
+- Pads worn  |  - Change pads
+- Discs worn.  |  - Change discs.
+- Loss of brake fluid.  |  - Check circuits. Replace leaking parts and top up fluid to the
+Brakes working badly  |  correct level.
+- Brake fluid in bad condition.  |  - Remove brake fluid circuit and replace with fresh fluid of the
+right type.
+- Master cylinder piston worn.  |  - Replace master cylinder piston.
+- System incorrectly adjusted.  |  - Adjust brakes.
+Fusing bulbs  |  - Voltage regulator problems.  |  - Check connections. Check voltage regulator and fuses.
+38
+44 - Recommended products
+RECOMMENDED PRODUCTS
+TRS Motorcycles recommends the use of NILS lubricants and
+maintenance products.
+39
+Warning Symbols
+SAFETY/ATTENTION
+This symbol refers to points which, if ignored, could lead to physical danger for the user.
+VEHICLE PROPER ASSEMBLY
+This symbol refers to points which, if ignored, could lead to some kind of damage to your motorcycle. Non-observance of these warnings could render your mo -
+torcycle warranty void.
+DANGER DUE TO THE PRESENCE OF FLAMMABLE LIQUID
+Carefully read the use and maintenance manual.
+OBLIGATION TO USE PROTECTIVE CLOTHING AND ACCESSORIES
+The use of the vehicle is subordinate to the employment of clothing and accessories of protection (safety shoes).
+To use the vehicle it is mandatory to wear protective clothing and accessories.
+PROTECTIVE GLOVES MUST BE USED
+To take the action described, the use of protective gloves is obligatory.
+THE USE OF OPEN FIRES OR FORMS OF UNCONTROLLED SOURCES OF IGNITION IS PROHIBITED
+SMOKING IS PROHIBITED
+THE USE OF MOBILE PHONES IS PROHIBITED
+DANGER DUE TO THE PRESENCE OF CORROSIVE SUBSTANCES
+The liquids marked with this symbol are very corrosive: Handle with extreme care.
+DANGER OF POISONING
+40

@@ -721,7 +721,9 @@ if (window.matchMedia) {
 
 aplicarTema(localStorage.getItem(TEMA_STORAGE_KEY));
 
-const SERVER = 'https://virtual-mechanic.vercel.app/api';
+// Mismo dominio que la página (como el resto de llamadas): evita la petición
+// CORS previa en cada pregunta, que en redes móviles era otro punto de fallo.
+const SERVER = '/api';
 
 const brandsData = {
   KTM: {
@@ -1258,9 +1260,8 @@ async function votarFeedback(id, vote) {
   guardarChat();
 
   try {
-    await fetch('/api/feedback', {
+    await fetchApi('/api/feedback', {
       method: 'POST',
-      headers: await chatHeaders(),
       body: JSON.stringify({
         messageId: id,
         vote,
@@ -1449,7 +1450,7 @@ async function procesarRespuestaStream(r, question) {
     // incompleta/fallida; se deja visible lo que llego a generarse, si algo.
     textEl.innerHTML = renderMd(acumulado
       ? acumulado + '\n\n*⚠️ La respuesta se interrumpió. Vuelve a intentarlo.*'
-      : 'Error al conectar con el servidor. Inténtalo de nuevo.');
+      : 'Se perdió la conexión antes de recibir la respuesta. Vuelve a enviar la pregunta.');
     return;
   }
 
@@ -1474,6 +1475,17 @@ function addUser(text) {
   d.innerHTML = `<div class="msg-bubble-user">${text}</div>`;
   msgs.appendChild(d);
   msgs.scrollTop = msgs.scrollHeight;
+  return d;
+}
+
+// Si una pregunta no llega al servidor, se quita del chat y del historial y se
+// devuelve a la caja de texto para reenviarla con un toque (sin duplicados).
+function devolverPregunta(text, burbuja) {
+  if (burbuja) burbuja.remove();
+  const ultimo = chatHistory[chatHistory.length - 1];
+  if (ultimo && ultimo.role === 'user' && ultimo.content === text) chatHistory.pop();
+  const inp = document.getElementById('msg-input');
+  if (inp && !inp.value.trim()) { inp.value = text; resize(inp); }
 }
 
 // ── Chips de preguntas sugeridas (solo al empezar una consulta nueva) ────────
@@ -1523,15 +1535,114 @@ function showTyping() {
 
 function hideTyping() { const el = document.getElementById('typing'); if (el) el.remove(); }
 
-// Construye los headers para /api/chat incluyendo el token de sesión de Clerk
-async function chatHeaders() {
-  const headers = { 'Content-Type': 'application/json' };
+// ── Sesión: token de Clerk fiable ─────────────────────────────────────────────
+// Clerk da tokens de 60 s y los guarda en caché. En el móvil (pestaña congelada
+// días, vuelta del reposo, sesión restaurada) a veces devuelve uno ya caducado
+// como si fuera válido —en los logs llegó uno caducado hacía 8 días— y el
+// servidor lo rechaza. Por eso: se mira aquí la caducidad real del token y se
+// pide uno nuevo (skipCache) si le quedan menos de 15 s; si falla la red se
+// reintenta; y ante un 401 del servidor se renueva y se repite la petición.
+
+function segundosRestantesToken(token) {
   try {
-    const token = window.Clerk?.session ? await window.Clerk.session.getToken() : null;
-    if (token) headers['Authorization'] = 'Bearer ' + token;
-  } catch (e) { console.warn('[Clerk] getToken:', e.message); }
+    const payload = JSON.parse(atob(token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/')));
+    return payload.exp - Date.now() / 1000;
+  } catch (e) { return -1; }
+}
+
+// Error de Clerk que indica que la sesión ya no existe (caducada o revocada),
+// a diferencia de un fallo de red, que no debe sacar al usuario de la app.
+function esErrorDeSesion(e) {
+  return !!(e && (e.status === 401 || e.status === 404 || (Array.isArray(e.errors) && e.errors.length)));
+}
+
+async function obtenerToken({ forzar = false } = {}) {
+  for (let intento = 0; intento < 3; intento++) {
+    const sesion = window.Clerk?.session;
+    if (!sesion) return null;
+    try {
+      let token = await sesion.getToken(forzar ? { skipCache: true } : undefined);
+      if (token && !forzar && segundosRestantesToken(token) < 15) {
+        token = await sesion.getToken({ skipCache: true });
+      }
+      if (token) return token;
+    } catch (e) {
+      console.warn('[Clerk] getToken:', e.message);
+      if (esErrorDeSesion(e)) return null;
+    }
+    await esperar(500 * (intento + 1));
+  }
+  return null;
+}
+
+// Headers para la API con el token de sesión de Clerk
+async function chatHeaders({ forzar = false } = {}) {
+  const headers = { 'Content-Type': 'application/json' };
+  const token = await obtenerToken({ forzar });
+  if (token) headers['Authorization'] = 'Bearer ' + token;
   return headers;
 }
+
+// fetch a la API con sesión. Si la red falla antes de recibir respuesta, repite
+// una vez; si el servidor responde 401, renueva el token y repite una vez.
+async function fetchApi(url, opciones = {}) {
+  const intentar = async forzar => fetch(url, { ...opciones, headers: await chatHeaders({ forzar }) });
+  let r;
+  try {
+    r = await intentar(false);
+  } catch (e) {
+    console.warn('[api] reintento tras fallo de red:', e.message);
+    await esperar(1200);
+    r = await intentar(false);
+  }
+  if (r.status === 401) r = await intentar(true);
+  return r;
+}
+
+// ¿Sigue viva la sesión en Clerk? Un fallo de red cuenta como "sí": solo se
+// saca al usuario si Clerk confirma que la sesión ha terminado.
+async function sesionSigueActiva() {
+  if (!window.Clerk?.session) return false;
+  try {
+    return !!(await window.Clerk.session.getToken({ skipCache: true }));
+  } catch (e) {
+    return !esErrorDeSesion(e);
+  }
+}
+
+async function irALoginPorSesionTerminada() {
+  try { await window.Clerk.signOut(); } catch (e) {}
+  window.currentUserId = null;
+  document.getElementById('btn-historial').style.display = 'none';
+  document.querySelectorAll('.modal-overlay.show').forEach(m => m.classList.remove('show'));
+  showScreen('login');
+  volverAlLogin();
+  document.getElementById('login-err').textContent = 'Tu sesión ha terminado. Escribe tu correo para entrar de nuevo.';
+}
+
+// Tras un 401 que ha sobrevivido a la renovación del token: si la sesión ha
+// terminado de verdad, al login; si no, es un fallo puntual. Devuelve true si
+// ha mandado al login.
+async function gestionarSesionRechazada() {
+  if (await sesionSigueActiva()) return false;
+  await irALoginPorSesionTerminada();
+  return true;
+}
+
+// Al volver a la app tras un rato (reposo, otra app, pestaña congelada) se
+// renueva ya el token, así la siguiente pregunta sale con uno válido; y si la
+// sesión ha terminado, se lleva al login en vez de dejar navegar y fallar.
+let ocultaDesde = 0;
+async function revisarSesion() {
+  if (!window.currentUserId || !window.Clerk) return;
+  const token = await obtenerToken({ forzar: true });
+  if (!token && !(await sesionSigueActiva())) irALoginPorSesionTerminada();
+}
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'hidden') { ocultaDesde = Date.now(); return; }
+  if (ocultaDesde && Date.now() - ocultaDesde > 30000) revisarSesion();
+});
+window.addEventListener('pageshow', e => { if (e.persisted) revisarSesion(); });
 
 // Formatea un epoch ms como "<día> a las <hora>" en horario local del usuario
 function formatoFecha(epochMs) {
@@ -1548,7 +1659,7 @@ function mensajeErrorChat(status, data) {
     if (data && data.resetAt) return `Has agotado tus consultas ${cual}. Vuelven a estar disponibles el ${formatoFecha(data.resetAt)}.`;
     return 'Has agotado tus consultas. Vuelve a intentarlo más tarde.';
   }
-  if (status === 401) return 'Tu sesión ha caducado. Vuelve a iniciar sesión.';
+  if (status === 401) return 'No se pudo verificar tu sesión. Vuelve a enviar la pregunta en unos segundos.';
   return 'Error al conectar con el servidor. Inténtalo de nuevo.';
 }
 
@@ -1558,7 +1669,7 @@ async function send() {
   if (!text) return;
   inp.value = ''; resize(inp);
   quitarChipsSugeridos();
-  addUser(text);
+  const burbuja = addUser(text);
   chatHistory.push({ role: 'user', content: text });
   showTyping();
   try {
@@ -1568,14 +1679,12 @@ async function send() {
       body.checkMaintenance = true;
       pendingCheckMaintenance = false;
     }
-    const r = await fetch(`${SERVER}/chat`, {
-      method: 'POST',
-      headers: await chatHeaders(),
-      body: JSON.stringify(body)
-    });
+    const r = await fetchApi(`${SERVER}/chat`, { method: 'POST', body: JSON.stringify(body) });
     if (!r.ok) {
       hideTyping();
       const errData = await r.json().catch(() => ({}));
+      if (r.status !== 429) devolverPregunta(text, burbuja);
+      if (r.status === 401 && await gestionarSesionRechazada()) return;
       addBot(mensajeErrorChat(r.status, errData));
       if (r.status === 429) mostrarModalPremium(errData.resetAt, errData.limitType);
       return;
@@ -1583,7 +1692,8 @@ async function send() {
     await procesarRespuestaStream(r, text);
   } catch (e) {
     hideTyping();
-    addBot('Error al conectar con el servidor. Inténtalo de nuevo.');
+    devolverPregunta(text, burbuja);
+    addBot('No se pudo conectar con el servidor. Revisa tu conexión y vuelve a enviar la pregunta.');
   }
 }
 
@@ -1630,14 +1740,11 @@ function handlePhoto(e) {
           body.checkMaintenance = true;
           pendingCheckMaintenance = false;
         }
-        const r = await fetch(`${SERVER}/chat`, {
-          method: 'POST',
-          headers: await chatHeaders(),
-          body: JSON.stringify(body)
-        });
+        const r = await fetchApi(`${SERVER}/chat`, { method: 'POST', body: JSON.stringify(body) });
         if (!r.ok) {
           hideTyping();
           const errData = await r.json().catch(() => ({}));
+          if (r.status === 401 && await gestionarSesionRechazada()) return;
           addBot(mensajeErrorChat(r.status, errData));
           if (r.status === 429) mostrarModalPremium(errData.resetAt, errData.limitType);
           return;
@@ -1862,7 +1969,9 @@ if (!LOGIN_OTP) document.getElementById('login-subtitle').innerHTML = 'Introduce
 
   if (window.Clerk.user || window.Clerk.session) {
     sessionStorage.removeItem('vm_magic');
-    irAlHome(); return;
+    irAlHome();
+    revisarSesion();   // si Clerk restauró una sesión que ya terminó, al login
+    return;
   }
 
   if (isMagicLink) {
@@ -2160,7 +2269,7 @@ async function mostrarModalEliminarCuenta() {
   document.getElementById('modal-eliminar-cuenta').classList.add('show');
 
   try {
-    const r = await fetch('/api/subscription', { headers: await chatHeaders() });
+    const r = await fetchApi('/api/subscription');
     if (!r.ok) return;
     const sub = await r.json();
     if (!sub.premium) return;
@@ -2190,7 +2299,7 @@ async function eliminarCuenta() {
   errEl.textContent = '';
 
   try {
-    const r = await fetch('/api/account', { method: 'DELETE', headers: await chatHeaders() });
+    const r = await fetchApi('/api/account', { method: 'DELETE' });
     const data = await r.json().catch(() => ({}));
     if (!r.ok) throw new Error(data.error || 'No se pudo eliminar la cuenta. Inténtalo de nuevo.');
 
@@ -2292,7 +2401,7 @@ async function cargarEstadoSuscripcion() {
   if (cache) renderSubStatus(el, cache.premium, cache.source);
 
   try {
-    const r = await fetch('/api/subscription', { headers: await chatHeaders() });
+    const r = await fetchApi('/api/subscription');
     if (!r.ok) { if (!cache) el.innerHTML = ''; return; }
     const data = await r.json();
     renderSubStatus(el, data.premium, data.source);
@@ -2344,7 +2453,7 @@ async function manejarRetornoCheckout() {
 
   for (let intento = 0; intento < CHECKOUT_POLL_INTENTOS; intento++) {
     try {
-      const r = await fetch('/api/subscription', { headers: await chatHeaders() });
+      const r = await fetchApi('/api/subscription');
       if (r.ok) {
         const data = await r.json();
         if (data.premium) {
@@ -2449,9 +2558,8 @@ function cerrarModalPremium() {
 async function iniciarCheckout(plan) {
   if (APP_NATIVA) return;   // sin compras dentro de la app nativa
   try {
-    const r = await fetch('/api/stripe-checkout', {
+    const r = await fetchApi('/api/stripe-checkout', {
       method: 'POST',
-      headers: await chatHeaders(),
       body: JSON.stringify({ plan })
     });
     const data = await r.json();
@@ -2465,7 +2573,7 @@ async function iniciarCheckout(plan) {
 async function abrirPortal() {
   if (APP_NATIVA) return;
   try {
-    const r = await fetch('/api/stripe-portal', { method: 'POST', headers: await chatHeaders() });
+    const r = await fetchApi('/api/stripe-portal', { method: 'POST' });
     const data = await r.json();
     if (r.ok && data.url) { window.location.href = data.url; return; }
     alert(data.error || 'No se pudo abrir la gestión de tu suscripción.');
@@ -2864,14 +2972,14 @@ async function iniciarComparacion(yearB) {
   chatHistory.push({ role: 'user', content: pregunta });
   showTyping();
   try {
-    const r = await fetch(`${SERVER}/chat`, {
+    const r = await fetchApi(`${SERVER}/chat`, {
       method: 'POST',
-      headers: await chatHeaders(),
       body: JSON.stringify({ messages: chatHistory, brand: currentBrand, model: currentModel, year: yearA, compareYear: yearB })
     });
     if (!r.ok) {
       hideTyping();
       const errData = await r.json().catch(() => ({}));
+      if (r.status === 401 && await gestionarSesionRechazada()) return;
       addBot(mensajeErrorChat(r.status, errData));
       if (r.status === 429) mostrarModalPremium(errData.resetAt, errData.limitType);
       return;

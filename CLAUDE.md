@@ -130,7 +130,8 @@ En Vercel las variables se configuran en el dashboard del proyecto.
 - **Producción**: Vercel. Push a `master` → deploy automático.
 - URL producción: `https://virtual-mechanic.vercel.app`
 - `vercel.json` sirve `index.html` como estático y `api/*.js` como funciones serverless.
-- El frontend apunta siempre a Vercel (`const SERVER = 'https://virtual-mechanic.vercel.app/api'`). Para desarrollo local hay que cambiar esa constante.
+- El frontend llama a la API en su mismo dominio (`const SERVER = '/api'`).
+- Todas las llamadas autenticadas pasan por `fetchApi()` en `index.html`: comprueba la caducidad real del token de Clerk (pide uno nuevo con `skipCache` si le quedan <15 s), reintenta una vez si falla la red y, ante un 401, renueva el token y repite. Solo si Clerk confirma que la sesión terminó se manda al login (`gestionarSesionRechazada`). Al volver a la app tras >30 s se revisa la sesión (`revisarSesion`).
 
 ## Desarrollo local
 
